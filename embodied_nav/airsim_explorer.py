@@ -1,96 +1,142 @@
 import airsim
-import networkx as nx
 import time
-import matplotlib.pyplot as plt
-from .graph_builder import GraphBuilder
+import sys
+import signal
+import logging
+import threading
+from graph_builder import GraphBuilder
+from airsim_utils import AirSimUtils, DroneController, DetectionVisualizer
 
 # Hyperparameters
-DETECTION_RADIUS = 10  # Distance threshold in meters
+DETECTION_RADIUS = 5  # Distance threshold in meters
 
 class AirSimExplorer:
     def __init__(self):
+        self.initialize_airsim_client()
+        self.graph_builder = GraphBuilder()
+        self.is_running = True
+        self.drone_controller = DroneController(self.client)
+        self.detection_visualizer = DetectionVisualizer(self.client)
+        self.visualization_thread = None
+        logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
+
+    def initialize_airsim_client(self):
         self.client = airsim.MultirotorClient()
         self.client.confirmConnection()
         self.client.enableApiControl(True)
         self.client.armDisarm(True)
-        self.graph_builder = GraphBuilder()
-        self.G = nx.Graph()
 
     def take_off(self):
         self.client.takeoffAsync().join()
 
     def get_semantic_data(self):
-        drone_pose = self.client.simGetVehiclePose()
-        drone_position = drone_pose.position
-        all_objects = self.client.simListSceneObjects()
+        try:
+            camera_name = "0"
+            image_type = airsim.ImageType.Scene
 
-        semantic_labels = {}
-        for obj_name in all_objects:
-            object_pose = self.client.simGetObjectPose(obj_name)
-            object_position = object_pose.position
-            
-            distance = ((object_position.x_val - drone_position.x_val) ** 2 +
-                        (object_position.y_val - drone_position.y_val) ** 2 +
-                        (object_position.z_val - drone_position.z_val) ** 2) ** 0.5
-            
-            if distance < DETECTION_RADIUS:
-                object_id = self.client.simGetSegmentationObjectID(obj_name)
-                semantic_labels[obj_name] = {
-                    "id": object_id,
-                    "position": (object_position.x_val, object_position.y_val, object_position.z_val)
+            self.client.simClearDetectionMeshNames(camera_name, image_type)
+            self.client.simSetDetectionFilterRadius(camera_name, image_type, DETECTION_RADIUS * 100)
+            self.client.simAddDetectionFilterMeshName(camera_name, image_type, "*")
+
+            detections = self.client.simGetDetections(camera_name, image_type)
+
+            print(f"Number of detections: {len(detections)}")
+
+            semantic_labels = {}
+            drone_pose = self.client.simGetVehiclePose()
+
+            filter_words = ["floor", "ceiling"]
+
+            for detection in detections:
+                object_name = detection.name
+                
+                if any(word in object_name.lower() for word in filter_words):
+                    continue
+
+                relative_position = detection.relative_pose.position
+                
+                print(f"Detection: {object_name}, Position: {relative_position}")
+                
+                global_position = AirSimUtils.local_to_global_position(drone_pose, relative_position)
+                
+                semantic_labels[object_name] = {
+                    "id": object_name,
+                    "position": (global_position.x_val, global_position.y_val, global_position.z_val),
+                    "box2D": (detection.box2D.min.x_val, detection.box2D.min.y_val, 
+                              detection.box2D.max.x_val, detection.box2D.max.y_val),
+                    "box3D": (detection.box3D.min.x_val, detection.box3D.min.y_val, detection.box3D.min.z_val,
+                              detection.box3D.max.x_val, detection.box3D.max.y_val, detection.box3D.max.z_val)
                 }
+                logging.info(f"Detected object: {object_name} at global position {global_position}")
 
-        return semantic_labels
+            return semantic_labels
+        except Exception as e:
+            logging.error(f"Error in get_semantic_data: {str(e)}")
+            return {}
 
-    def log_to_graph(self, semantic_labels):
-        for label, data in semantic_labels.items():
-            self.G.add_node(label, id=data["id"], position=data["position"])
-        self.graph_builder.update_graph(self.G)
+    def update_graph_and_semantics(self):
+        while self.is_running:
+            try:
+                vehicle_pose = self.client.simGetVehiclePose()
+                position = AirSimUtils.vector3r_to_dict(vehicle_pose.position)
+                yaw = airsim.to_eularian_angles(vehicle_pose.orientation)[2]
+                node_id = self.graph_builder.add_drone_node(position, yaw)
+                logging.info(f"Added drone node: {node_id}")
 
-    def keyboard_control(self):
-        print("Use WASD keys to move the drone. Press 'q' to quit.")
-        while True:
-            key = input("Enter command: ")
-            if key == 'w':
-                self.client.moveByVelocityAsync(1, 0, 0, 1).join()
-            elif key == 's':
-                self.client.moveByVelocityAsync(-1, 0, 0, 1).join()
-            elif key == 'a':
-                self.client.moveByVelocityAsync(0, -1, 0, 1).join()
-            elif key == 'd':
-                self.client.moveByVelocityAsync(0, 1, 0, 1).join()
-            elif key == 'q':
-                break
+                semantic_labels = self.get_semantic_data()
+                for label, data in semantic_labels.items():
+                    self.graph_builder.add_object_node(label, data)
+                    logging.info(f"Added object node: {label}")
 
-            semantic_labels = self.get_semantic_data()
-            self.log_to_graph(semantic_labels)
+                logging.info(f"Current graph has {len(self.graph_builder.G.nodes)} nodes and {len(self.graph_builder.G.edges)} edges")
+                time.sleep(1.0)
+            except Exception as e:
+                logging.error(f"Error in update_graph_and_semantics: {str(e)}")
+                time.sleep(1)
 
-            time.sleep(0.1)
+    def run(self):
+        self.take_off()
+        
+        update_thread = threading.Thread(target=self.update_graph_and_semantics)
+        update_thread.start()
+
+        self.detection_visualizer.start()
+
+        self.drone_controller.keyboard_control()
+
+        self.is_running = False
+        self.drone_controller.is_running = False
+        self.detection_visualizer.stop()
+
+        update_thread.join()
 
         self.client.landAsync().join()
         self.client.armDisarm(False)
         self.client.enableApiControl(False)
 
-    def save_graph(self):
-        nx.write_gml(self.G, "semantic_graph.gml")
-        print("Graph saved to semantic_graph.gml")
-
-    def visualize_graph(self):
-        pos = {node: (data['position'][0], data['position'][1]) for node, data in self.G.nodes(data=True)}
-        labels = {node: f"{node}\nID: {data['id']}" for node, data in self.G.nodes(data=True)}
-        
-        plt.figure(figsize=(12, 8))
-        nx.draw(self.G, pos, labels=labels, with_labels=True, node_size=500, node_color='lightblue', font_size=8)
-        plt.title("Semantic Graph Visualization")
-        plt.show()
-
-    def run(self):
-        self.take_off()
-        self.keyboard_control()
         self.save_graph()
         self.visualize_graph()
         self.graph_builder.generate_relationships()
 
+    def save_graph(self):
+        logging.info(f"Saving graph with {len(self.graph_builder.G.nodes)} nodes and {len(self.graph_builder.G.edges)} edges")
+        self.graph_builder.save_graph("semantic_graph.gml")
+        print("Graph saved to semantic_graph.gml")
+
+    def visualize_graph(self):
+        self.graph_builder.visualize_graph()
+
+    def __del__(self):
+        if hasattr(self, 'detection_visualizer'):
+            self.detection_visualizer.stop()
+
+def signal_handler(sig, frame):
+    print("\nCtrl+C detected. Saving graph and exiting...")
+    explorer.is_running = False
+    explorer.save_graph()
+    sys.exit(0)
+
 if __name__ == "__main__":
     explorer = AirSimExplorer()
+    signal.signal(signal.SIGINT, signal_handler)
     explorer.run()

@@ -1,4 +1,4 @@
-from .utils import openai_complete_if_cache
+from lightrag.llm import openai_complete_if_cache
 
 class LLMInterface:
     def __init__(self):

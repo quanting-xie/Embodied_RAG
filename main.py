@@ -3,10 +3,7 @@ from embodied_nav.embodied_rag import EmbodiedRAG
 def main():
     embodied_rag = EmbodiedRAG(working_dir="./embodied_nav_cache")
     
-    # Explore the environment and build the graph
-    embodied_rag.explore_and_build_graph()
-    
-    # Load the graph into LightRAG
+    # Load the existing graph into LightRAG
     embodied_rag.load_graph_to_rag()
     
     # Perform queries
