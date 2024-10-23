@@ -429,7 +429,7 @@ if __name__ == "__main__":
 
     async def main():
         result = await gpt_4o_mini_complete("How are you?")
-        print(result)
+        # print(result)
 
     asyncio.run(main())
 

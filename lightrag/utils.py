@@ -19,6 +19,9 @@ logger = logging.getLogger("lightrag")
 
 
 def set_logger(log_file: str):
+    # Create the directory if it doesn't exist
+    os.makedirs(os.path.dirname(log_file), exist_ok=True)
+    
     logger.setLevel(logging.DEBUG)
 
     file_handler = logging.FileHandler(log_file)
