@@ -9,6 +9,9 @@ import numpy as np
 from queue import Queue, Empty
 
 class AirSimUtils:
+    def __init__(self, client):
+        self.client = client
+
     @staticmethod
     def vector3r_to_dict(vector):
         return {"x": vector.x_val, "y": vector.y_val, "z": vector.z_val}
@@ -31,6 +34,48 @@ class AirSimUtils:
         )
         
         return global_position
+
+    def generate_waypoints(self, start_position, target_position, planning_mode="direct"):
+
+        # Convert dict positions to Vector3r if necessary
+        if isinstance(start_position, dict):
+            start_position = airsim.Vector3r(
+                start_position['x'],
+                start_position['y'],
+                start_position['z']
+            )
+        if isinstance(target_position, dict):
+            target_position = airsim.Vector3r(
+                target_position['x'],
+                target_position['y'],
+                target_position['z']
+            )
+
+        if planning_mode == "direct":
+            # Simple direct path - just start and end points
+            return [start_position, target_position]
+        
+        elif planning_mode == "astar":
+            try:
+                # Use AirSim's path planner
+                path = self.client.moveOnPathAsync(
+                    [start_position, target_position],
+                    velocity=2,
+                    timeout_sec=30,
+                    drivetrain=airsim.DrivetrainType.MaxDegreeOfFreedom,
+                    yaw_mode=airsim.YawMode(False, 0),
+                    lookahead=5,
+                    adaptive_lookahead=True
+                ).join()
+                
+                return path
+            except Exception as e:
+                logging.error(f"Path planning failed: {str(e)}")
+                # Fallback to direct path if planning fails
+                return [start_position, target_position]
+        
+        else:
+            raise ValueError(f"Unknown planning mode: {planning_mode}")
 
 class DroneController:
     def __init__(self, client, speed=2, yaw_rate=45, vertical_speed=2):

@@ -1,4 +1,5 @@
 import setuptools
+from setuptools import setup, find_packages
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
@@ -20,7 +21,7 @@ with open("./requirements.txt") as f:
             continue
         deps.append(line.strip())
 
-setuptools.setup(
+setup(
     name="lightrag-hku",
     url=vars2readme["__url__"],
     version=vars2readme["__version__"],
@@ -28,7 +29,7 @@ setuptools.setup(
     description="LightRAG: Simple and Fast Retrieval-Augmented Generation",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    packages=["lightrag"],
+    packages=find_packages(),  # Use find_packages() instead of ["lightrag"]
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

@@ -3,9 +3,12 @@ from .graph_builder import GraphBuilder
 from .spatial_relationship_extractor import SpatialRelationshipExtractor
 from .embodied_retriever import EmbodiedRetriever
 import networkx as nx
+import logging
+
+logger = logging.getLogger(__name__)
 
 class EmbodiedRAG:
-    def __init__(self, working_dir):
+    def __init__(self, working_dir, airsim_utils=None):
         self.graph_builder = GraphBuilder()
         self.rag = LightRAG(working_dir=working_dir)
         self.relationship_extractor = SpatialRelationshipExtractor(
@@ -15,6 +18,7 @@ class EmbodiedRAG:
             vertical_threshold=2.0
         )
         self.retriever = None
+        self.airsim_utils = airsim_utils  # Add AirSimUtils instance
 
     async def load_graph_to_rag(self, enhanced_graph_file):
         # Load the enhanced graph
@@ -25,9 +29,10 @@ class EmbodiedRAG:
         self.retriever = EmbodiedRetriever(enhanced_graph, self.rag.embedding_func)
         
         # Convert graph data to a format suitable for LightRAG insertion
-        rag_data = self._convert_graph_to_rag_format(enhanced_graph)
-        await self.rag.ainsert(rag_data)
-
+        # rag_data = self._convert_graph_to_rag_format(enhanced_graph)
+        # await self.rag.ainsert(rag_data)
+        return enhanced_graph
+    
     def _convert_graph_to_rag_format(self, graph):
         rag_data = []
         
@@ -71,18 +76,44 @@ class EmbodiedRAG:
         
         return rag_data
 
-    async def query(self, query_text, query_type="global", start_position=None):
-        if self.retriever is None:
-            raise ValueError("Graph not loaded. Call load_graph_to_rag() first.")
+    async def query(self, query_text, query_type="explicit", start_position=None):
+        # Log the query details
+        logger.info(f"\nProcessing Query: '{query_text}' (Type: {query_type})")
         
+        # Get retrieved nodes
         retrieved_nodes = await self.retriever.retrieve(query_text, query_type=query_type)
+        
+        # Log retrieved nodes
+        logger.info("\nRetrieved Content:")
+        for idx, node in enumerate(retrieved_nodes, 1):
+            logger.info(f"\n--- Node {idx} ---")
+            if isinstance(node, dict):
+                logger.info(f"Type: {node.get('type', 'Unknown')}")
+                logger.info(f"Content: {node.get('content', 'No content')}")
+                logger.info(f"Coordinates: {node.get('coordinates', 'No coordinates')}")
+            else:
+                logger.info(f"Content: {node}")
+            logger.info("-------------------")
+
+        # Generate response
         response = await self.retriever.generate_response(query_text, retrieved_nodes, query_type)
         
-        if query_type in ["explicit", "implicit"] and start_position:
-            waypoints = self.retriever.generate_waypoints(start_position, retrieved_nodes)
-            return response, waypoints
-        else:
-            return response
+        # Generate waypoints for explicit and implicit queries
+        waypoints = []
+        if query_type in ["explicit", "implicit"] and self.airsim_utils is not None:
+            # Extract target position from response
+            target_position = self.retriever.extract_target_position(response)
+            
+            if target_position and start_position:
+                # Generate waypoints using AirSimUtils
+                waypoints = self.airsim_utils.generate_waypoints(
+                    start_position,
+                    target_position,
+                    planning_mode="astar"  # or "direct" for simple paths
+                )
+                logger.info(f"\nGenerated waypoints from {start_position} to {target_position}")
+        
+        return response, waypoints
 
     def visualize_graph(self):
         self.graph_builder.visualize_graph()

@@ -1,5 +1,5 @@
 import networkx as nx
-from llm import LLMInterface 
+from .llm import LLMInterface 
 import matplotlib.pyplot as plt
 import time
 import logging

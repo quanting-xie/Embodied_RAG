@@ -1,1 +1,152 @@
-{}
+{
+  "doc-3dd1dae2c508c5b6c1248b8c9a433a22": {
+    "content": "Node: drone_0, Level: 0, Position: (0.00, 0.00, -0.97), yaw: 0.0, type: drone, timestamp: 1729609135.280901"
+  },
+  "doc-f4605c166d58b2496b19025ce1436905": {
+    "content": "Node: BaseCharacter_Walking4_11, Level: 0, Position: (5.42, 0.68, 1.23), box2D: [143.3627166748047, 86.51652526855469, 173.70794677734375, 144.0], box3D: [3.78035044670105, 0.5090714693069458, 2.287933111190796, 4.76162576675415, 1.3993568420410156, 0.40927520394325256], type: object, timestamp: 1729609139.301382"
+  },
+  "doc-f0d0fbfce6a505bd62b69c25bcf8c08c": {
+    "content": "Node: Drone1, Level: 0, Position: (1.49, 0.32, -1.26), box2D: [0.0, 0.0, 129.47747802734375, 130.1183624267578], box3D: [-0.4707321524620056, -0.9901371598243713, 0.032604921609163284, -0.44926801323890686, 0.9901371598243713, -0.2592245936393738], type: object, timestamp: 1729609140.311384"
+  },
+  "doc-d3162b619050a322ec02998bab9e67c3": {
+    "content": "Node: planterLong4_Blueprint3, Level: 0, Position: (0.56, -4.98, -0.25), box2D: [0.0, 79.63496398925781, 77.189697265625, 132.07847595214844], box3D: [4.328840732574463, -3.6848866939544678, 1.3230171203613281, 3.596430540084839, -1.6558932065963745, 0.228787362575531], type: object, timestamp: 1729609142.3244777"
+  },
+  "doc-a4d8a1c65e1796465eca6dab790d406d": {
+    "content": "Node: drone_1, Level: 0, Position: (2.87, -3.98, -1.22), yaw: -1.8887754937715275, type: drone, timestamp: 1729609144.3269684"
+  },
+  "doc-7402e92978346fc907bbe7aa770e3791": {
+    "content": "Node: drone_2, Level: 0, Position: (0.05, -8.75, -1.34), yaw: -3.133008010462549, type: drone, timestamp: 1729609147.3311632"
+  },
+  "doc-b0f26dfb79ac1e88ec719ffedf8d3ede": {
+    "content": "Node: chair_cafeCharcoalGrey10, Level: 0, Position: (-2.83, -6.32, 0.24), box2D: [0.0, 104.13322448730469, 50.141456604003906, 144.0], box3D: [3.278258800506592, -2.0540390014648438, 1.605775237083435, 2.401993751525879, -2.7828829288482666, 0.7039139270782471], type: object, timestamp: 1729609147.3419774"
+  },
+  "doc-eb2c43ffbbd33c754a18139720251e10": {
+    "content": "Node: The group of objects comprises two drones located in a 3D space. The first drone, referred to as \"drone_0,\" is positioned at coordinates (0.0, 0.0, -0.9707), indicating it is near the origin but slightly below the reference plane (z-axis). The second drone, named \"Drone1,\" is at coordinates approximately (1.495, 0.325, -1.257), placing it slightly forward and to the right of \"drone_0,\" also below the reference plane. Both drones are situated close to each other in a three-dimensional environment, differing in their x, y, and z values., Level: 1, Position: (0.75, 0.16, -1.11),"
+  },
+  "doc-8f0994b3b4a704d984fc496c567f6ebe": {
+    "content": "Node: The object \"BaseCharacter_Walking4_11\" is a 3D character model positioned at coordinates [5.422, 0.683, 1.227] within a three-dimensional environment. This likely indicates that the character is in a walking state, suggested by its name, and is positioned moderately elevated above the ground plane, as indicated by the z-coordinate. The specific position suggests it may be a part of a larger scene or game environment, with its coordinates reflecting its placement in relation to other elements in that space., Level: 1, Position: (5.42, 0.68, 1.23),"
+  },
+  "doc-5439742f7b26de20bb0775ac55965c10": {
+    "content": "Node: The summary of the objects in the 3D environment is as follows:\n\n- **Planter (planterLong4_Blueprint3)**: Positioned at coordinates [0.56, -4.98, -0.25]. This object likely serves as a planter and is placed in a specific location within the environment.\n\n- **Drone (drone_1)**: Located at coordinates {'x': 2.87, 'y': -3.98, 'z': -1.22}. This drone may be intended for tasks such as surveillance, delivery, or monitoring within the space.\n\nThe two objects are situated in different locations, with the drone being further along the x-axis compared to the planter., Level: 1, Position: (1.71, -4.48, -0.73),"
+  },
+  "doc-2a12935c1f4d87691245b1f3e35acb54": {
+    "content": "Node: In this 3D environment, there are two distinct objects: a drone and a chair. The drone, referred to as \"drone_2,\" is positioned at coordinates (0.054, -8.754, -1.345), suggesting it is hovering slightly above a lower surface. The chair, known as \"chair_cafeCharcoalGrey10,\" is located at coordinates (-2.827, -6.318, 0.241), indicating it is placed above ground level. The drone is situated closer to the center of the scene, while the chair is positioned further away, likely providing seating in a café or casual setting., Level: 1, Position: (-1.39, -7.54, -0.55),"
+  },
+  "doc-8c51d920afd4aa8572c90da5fa1696c6": {
+    "content": "Node: The object \"BaseCharacter_Walking4_11\" is a character model in a 3D environment, indicating that it is likely animated to represent movement, specifically walking. Its current position is [5.422, 0.683, 1.227], suggesting that it is situated in a three-dimensional space where the X-coordinate is approximately 5.422, the Y-coordinate is around 0.683, and the Z-coordinate is roughly 1.227. This positioning indicates that the character is likely in a scene that allows for interaction or navigation within the space., Level: 2, Position: (5.42, 0.68, 1.23),"
+  },
+  "doc-2b22b78e2b8b77d2c98a421bd87c1129": {
+    "content": "Node: In the 3D environment, there are two objects: a blueprint for a long blue planter located at coordinates [0.56, -4.98, -0.25] and a drone labeled as \"drone_1\" positioned at [2.87, -3.98, -1.22]. The planter is situated at a higher elevation compared to the drone, which is positioned further along the x-axis and slightly deeper along the z-axis., Level: 2, Position: (1.71, -4.48, -0.73),"
+  },
+  "doc-04ecef17d6d14ae0266aedfbbdab4f6a": {
+    "content": "Node: The group consists of two objects located within a 3D environment. The first object is a drone (drone_2), positioned at coordinates (0.054, -8.754, -1.345), indicating it is slightly elevated in the negative z-axis, suggesting it may be hovering or just above ground level. The second object is a chair (chair_cafeCharcoalGrey10), located at coordinates (-2.827, -6.318, 0.241), which places it on the surface, higher than the drone in the z-axis. Overall, the drone is closer to the origin point while the chair is positioned further back in the negative x and y directions, both objects existing in the same 3D space but at different elevations., Level: 2, Position: (-1.39, -7.54, -0.55),"
+  },
+  "doc-45f0643660df282da9e425abf14dfe5f": {
+    "content": "Node: In the described 3D environment, there are two objects: \n\n1. **Planter (planterLong4_Blueprint3)** - This object is located at the coordinates [0.56, -4.98, -0.25]. It likely serves as a decorative or functional planter, possibly for housing plants or flowers.\n\n2. **Drone (drone_1)** - This object is positioned at coordinates {'x': 2.87, 'y': -3.98, 'z': -1.22}. The drone may be utilized for various tasks such as surveillance, delivery, or data collection.\n\nThe two objects are positioned in a 3D space, with the drone located further along the x-axis and slightly above the planter in the z-axis, suggesting they occupy distinct functional roles within this environment., Level: 3, Position: (1.71, -4.48, -0.73),"
+  },
+  "doc-83b7d684fda6039e51cbbae24f9f5273": {
+    "content": "Node: The summary of the objects in the 3D environment is as follows:\n\n1. **Drone (drone_2)**: \n   - Position: X = 0.0542, Y = -8.7543, Z = -1.3447\n   - This drone is located slightly above the ground, positioned primarily along the negative Y-axis.\n\n2. **Chair (chair_cafeCharcoalGrey10)**: \n   - Position: X = -2.8272, Y = -6.3181, Z = 0.2410\n   - This chair is situated on the ground level, also toward the negative Y-axis but further back on the X-axis.\n\nThese two objects are both positioned in a similarly negative Y-space, but the drone is elevated and located closer to the origin, while the chair is further back in the negative X direction., Level: 3, Position: (-1.39, -7.54, -0.55),"
+  },
+  "doc-4d4cc3b2ebc6bc00642497cdf2f91286": {
+    "content": "Node: The scene contains two objects: a drone and a chair. The drone, labeled as \"drone_2,\" is positioned at coordinates approximately (0.05, -8.75, -1.34) in a 3D space. The second object, a chair identified as \"chair_cafeCharcoalGrey10,\" is located at coordinates roughly (-2.83, -6.32, 0.24). The drone is situated slightly above the ground, while the chair is positioned on an elevated surface, indicating a potential indoor or outdoor setting., Level: 4, Position: (-1.39, -7.54, -0.55),"
+  },
+  "doc-0c640d5419b88566148a4fb29c0a3b93": {
+    "content": "Relationship: drone_0 to The group of objects comprises two drones located in a 3D space. The first drone, referred to as \"drone_0,\" is positioned at coordinates (0.0, 0.0, -0.9707), indicating it is near the origin but slightly below the reference plane (z-axis). The second drone, named \"Drone1,\" is at coordinates approximately (1.495, 0.325, -1.257), placing it slightly forward and to the right of \"drone_0,\" also below the reference plane. Both drones are situated close to each other in a three-dimensional environment, differing in their x, y, and z values., Type: part_of,"
+  },
+  "doc-88790a91a9803b73972cdf638e1d7662": {
+    "content": "Relationship: drone_0 to Drone1, Type: to_the_left_of,"
+  },
+  "doc-66f641065475b9b197defd71bf69e82f": {
+    "content": "Relationship: drone_0 to drone_1, Type: to_the_right_of,"
+  },
+  "doc-a2fd2fa6a370bfca2543526fec127bc1": {
+    "content": "Relationship: drone_0 to planterLong4_Blueprint3, Type: to_the_right_of,"
+  },
+  "doc-d6f35efb65ccb0805eb46164a46cb009": {
+    "content": "Relationship: drone_0 to BaseCharacter_Walking4_11, Type: to_the_left_of,"
+  },
+  "doc-839f8a74054c2c9df962c360c6280e1b": {
+    "content": "Relationship: drone_0 to chair_cafeCharcoalGrey10, Type: to_the_right_of,"
+  },
+  "doc-854fb8eb7dcc27bdd981909de9945ce8": {
+    "content": "Relationship: drone_0 to drone_2, Type: to_the_right_of,"
+  },
+  "doc-eeccda1bdcc26b155fc03b71aa8858a8": {
+    "content": "Relationship: BaseCharacter_Walking4_11 to The object \"BaseCharacter_Walking4_11\" is a 3D character model positioned at coordinates [5.422, 0.683, 1.227] within a three-dimensional environment. This likely indicates that the character is in a walking state, suggested by its name, and is positioned moderately elevated above the ground plane, as indicated by the z-coordinate. The specific position suggests it may be a part of a larger scene or game environment, with its coordinates reflecting its placement in relation to other elements in that space., Type: part_of,"
+  },
+  "doc-8fc440f95684095ac11786fcc6c7a8ab": {
+    "content": "Relationship: BaseCharacter_Walking4_11 to Drone1, Type: to_the_right_of,"
+  },
+  "doc-1759e6f189008a691ce1a10ea97a4fcd": {
+    "content": "Relationship: BaseCharacter_Walking4_11 to drone_1, Type: to_the_right_of,"
+  },
+  "doc-2f953b53ae3af68436d7bf737b0fe3a0": {
+    "content": "Relationship: BaseCharacter_Walking4_11 to planterLong4_Blueprint3, Type: to_the_left_of,"
+  },
+  "doc-34aaef2f4359a2cd141902afff622051": {
+    "content": "Relationship: BaseCharacter_Walking4_11 to chair_cafeCharcoalGrey10, Type: to_the_left_of,"
+  },
+  "doc-5b8be2ef40518fc5d6d85f6f6d6a8159": {
+    "content": "Relationship: Drone1 to The group of objects comprises two drones located in a 3D space. The first drone, referred to as \"drone_0,\" is positioned at coordinates (0.0, 0.0, -0.9707), indicating it is near the origin but slightly below the reference plane (z-axis). The second drone, named \"Drone1,\" is at coordinates approximately (1.495, 0.325, -1.257), placing it slightly forward and to the right of \"drone_0,\" also below the reference plane. Both drones are situated close to each other in a three-dimensional environment, differing in their x, y, and z values., Type: part_of,"
+  },
+  "doc-82f06e4ca709d11732057177781ac28f": {
+    "content": "Relationship: Drone1 to drone_1, Type: to_the_right_of,"
+  },
+  "doc-c843e5ffbf9f0aa77f639ff37b08de46": {
+    "content": "Relationship: Drone1 to planterLong4_Blueprint3, Type: to_the_right_of,"
+  },
+  "doc-c3a0aaed3c1c559f939c6d822dd2b4a2": {
+    "content": "Relationship: Drone1 to chair_cafeCharcoalGrey10, Type: to_the_right_of,"
+  },
+  "doc-c877d38a6dc157297dd3f653d110a60a": {
+    "content": "Relationship: Drone1 to drone_2, Type: to_the_right_of,"
+  },
+  "doc-9dbedeefc4498380117a51a1fa0c4dcb": {
+    "content": "Relationship: planterLong4_Blueprint3 to The summary of the objects in the 3D environment is as follows:\n\n- **Planter (planterLong4_Blueprint3)**: Positioned at coordinates [0.56, -4.98, -0.25]. This object likely serves as a planter and is placed in a specific location within the environment.\n\n- **Drone (drone_1)**: Located at coordinates {'x': 2.87, 'y': -3.98, 'z': -1.22}. This drone may be intended for tasks such as surveillance, delivery, or monitoring within the space.\n\nThe two objects are situated in different locations, with the drone being further along the x-axis compared to the planter., Type: part_of,"
+  },
+  "doc-2101dc9b71ca0d7c4303539a75081ebb": {
+    "content": "Relationship: planterLong4_Blueprint3 to drone_1, Type: to_the_left_of,"
+  },
+  "doc-fff8dc8f3c3ecaaccc7b1344d232fa3b": {
+    "content": "Relationship: planterLong4_Blueprint3 to chair_cafeCharcoalGrey10, Type: to_the_right_of,"
+  },
+  "doc-b912c38150639fc3cdc895d68a4ac90f": {
+    "content": "Relationship: planterLong4_Blueprint3 to drone_2, Type: to_the_right_of,"
+  },
+  "doc-29ae12bd95a6546386c34b2557ec6d44": {
+    "content": "Relationship: drone_1 to The summary of the objects in the 3D environment is as follows:\n\n- **Planter (planterLong4_Blueprint3)**: Positioned at coordinates [0.56, -4.98, -0.25]. This object likely serves as a planter and is placed in a specific location within the environment.\n\n- **Drone (drone_1)**: Located at coordinates {'x': 2.87, 'y': -3.98, 'z': -1.22}. This drone may be intended for tasks such as surveillance, delivery, or monitoring within the space.\n\nThe two objects are situated in different locations, with the drone being further along the x-axis compared to the planter., Type: part_of,"
+  },
+  "doc-485f799ad70c750307ee33e2b97b0a98": {
+    "content": "Relationship: drone_1 to drone_2, Type: to_the_right_of,"
+  },
+  "doc-209b7603bd26c226f4b813c1c8853018": {
+    "content": "Relationship: drone_1 to chair_cafeCharcoalGrey10, Type: to_the_right_of,"
+  },
+  "doc-7ad84b2ff11f2d6018fdb25416b13108": {
+    "content": "Relationship: drone_2 to In this 3D environment, there are two distinct objects: a drone and a chair. The drone, referred to as \"drone_2,\" is positioned at coordinates (0.054, -8.754, -1.345), suggesting it is hovering slightly above a lower surface. The chair, known as \"chair_cafeCharcoalGrey10,\" is located at coordinates (-2.827, -6.318, 0.241), indicating it is placed above ground level. The drone is situated closer to the center of the scene, while the chair is positioned further away, likely providing seating in a café or casual setting., Type: part_of,"
+  },
+  "doc-fe1197847ca31f9cd72d33261f022a63": {
+    "content": "Relationship: drone_2 to chair_cafeCharcoalGrey10, Type: to_the_left_of,"
+  },
+  "doc-12b20bdc273ab3c4642137044336ce39": {
+    "content": "Relationship: chair_cafeCharcoalGrey10 to In this 3D environment, there are two distinct objects: a drone and a chair. The drone, referred to as \"drone_2,\" is positioned at coordinates (0.054, -8.754, -1.345), suggesting it is hovering slightly above a lower surface. The chair, known as \"chair_cafeCharcoalGrey10,\" is located at coordinates (-2.827, -6.318, 0.241), indicating it is placed above ground level. The drone is situated closer to the center of the scene, while the chair is positioned further away, likely providing seating in a café or casual setting., Type: part_of,"
+  },
+  "doc-7cdf2e10026b39a6610007ff63257d0e": {
+    "content": "Relationship: The object \"BaseCharacter_Walking4_11\" is a 3D character model positioned at coordinates [5.422, 0.683, 1.227] within a three-dimensional environment. This likely indicates that the character is in a walking state, suggested by its name, and is positioned moderately elevated above the ground plane, as indicated by the z-coordinate. The specific position suggests it may be a part of a larger scene or game environment, with its coordinates reflecting its placement in relation to other elements in that space. to The object \"BaseCharacter_Walking4_11\" is a character model in a 3D environment, indicating that it is likely animated to represent movement, specifically walking. Its current position is [5.422, 0.683, 1.227], suggesting that it is situated in a three-dimensional space where the X-coordinate is approximately 5.422, the Y-coordinate is around 0.683, and the Z-coordinate is roughly 1.227. This positioning indicates that the character is likely in a scene that allows for interaction or navigation within the space., Type: part_of,"
+  },
+  "doc-d3e5314dfbe21b137956267f8189bfbe": {
+    "content": "Relationship: The summary of the objects in the 3D environment is as follows:\n\n- **Planter (planterLong4_Blueprint3)**: Positioned at coordinates [0.56, -4.98, -0.25]. This object likely serves as a planter and is placed in a specific location within the environment.\n\n- **Drone (drone_1)**: Located at coordinates {'x': 2.87, 'y': -3.98, 'z': -1.22}. This drone may be intended for tasks such as surveillance, delivery, or monitoring within the space.\n\nThe two objects are situated in different locations, with the drone being further along the x-axis compared to the planter. to In the 3D environment, there are two objects: a blueprint for a long blue planter located at coordinates [0.56, -4.98, -0.25] and a drone labeled as \"drone_1\" positioned at [2.87, -3.98, -1.22]. The planter is situated at a higher elevation compared to the drone, which is positioned further along the x-axis and slightly deeper along the z-axis., Type: part_of,"
+  },
+  "doc-90bdb4e24df07be840376b4733060f54": {
+    "content": "Relationship: In this 3D environment, there are two distinct objects: a drone and a chair. The drone, referred to as \"drone_2,\" is positioned at coordinates (0.054, -8.754, -1.345), suggesting it is hovering slightly above a lower surface. The chair, known as \"chair_cafeCharcoalGrey10,\" is located at coordinates (-2.827, -6.318, 0.241), indicating it is placed above ground level. The drone is situated closer to the center of the scene, while the chair is positioned further away, likely providing seating in a café or casual setting. to The group consists of two objects located within a 3D environment. The first object is a drone (drone_2), positioned at coordinates (0.054, -8.754, -1.345), indicating it is slightly elevated in the negative z-axis, suggesting it may be hovering or just above ground level. The second object is a chair (chair_cafeCharcoalGrey10), located at coordinates (-2.827, -6.318, 0.241), which places it on the surface, higher than the drone in the z-axis. Overall, the drone is closer to the origin point while the chair is positioned further back in the negative x and y directions, both objects existing in the same 3D space but at different elevations., Type: part_of,"
+  },
+  "doc-281875b3970934022624e7881dfef4d7": {
+    "content": "Relationship: In the 3D environment, there are two objects: a blueprint for a long blue planter located at coordinates [0.56, -4.98, -0.25] and a drone labeled as \"drone_1\" positioned at [2.87, -3.98, -1.22]. The planter is situated at a higher elevation compared to the drone, which is positioned further along the x-axis and slightly deeper along the z-axis. to In the described 3D environment, there are two objects: \n\n1. **Planter (planterLong4_Blueprint3)** - This object is located at the coordinates [0.56, -4.98, -0.25]. It likely serves as a decorative or functional planter, possibly for housing plants or flowers.\n\n2. **Drone (drone_1)** - This object is positioned at coordinates {'x': 2.87, 'y': -3.98, 'z': -1.22}. The drone may be utilized for various tasks such as surveillance, delivery, or data collection.\n\nThe two objects are positioned in a 3D space, with the drone located further along the x-axis and slightly above the planter in the z-axis, suggesting they occupy distinct functional roles within this environment., Type: part_of,"
+  },
+  "doc-3dcbd536f5c482d916593354835d333a": {
+    "content": "Relationship: The group consists of two objects located within a 3D environment. The first object is a drone (drone_2), positioned at coordinates (0.054, -8.754, -1.345), indicating it is slightly elevated in the negative z-axis, suggesting it may be hovering or just above ground level. The second object is a chair (chair_cafeCharcoalGrey10), located at coordinates (-2.827, -6.318, 0.241), which places it on the surface, higher than the drone in the z-axis. Overall, the drone is closer to the origin point while the chair is positioned further back in the negative x and y directions, both objects existing in the same 3D space but at different elevations. to The summary of the objects in the 3D environment is as follows:\n\n1. **Drone (drone_2)**: \n   - Position: X = 0.0542, Y = -8.7543, Z = -1.3447\n   - This drone is located slightly above the ground, positioned primarily along the negative Y-axis.\n\n2. **Chair (chair_cafeCharcoalGrey10)**: \n   - Position: X = -2.8272, Y = -6.3181, Z = 0.2410\n   - This chair is situated on the ground level, also toward the negative Y-axis but further back on the X-axis.\n\nThese two objects are both positioned in a similarly negative Y-space, but the drone is elevated and located closer to the origin, while the chair is further back in the negative X direction., Type: part_of,"
+  },
+  "doc-813a08dede10fe54449554bd3b80cf12": {
+    "content": "Relationship: The summary of the objects in the 3D environment is as follows:\n\n1. **Drone (drone_2)**: \n   - Position: X = 0.0542, Y = -8.7543, Z = -1.3447\n   - This drone is located slightly above the ground, positioned primarily along the negative Y-axis.\n\n2. **Chair (chair_cafeCharcoalGrey10)**: \n   - Position: X = -2.8272, Y = -6.3181, Z = 0.2410\n   - This chair is situated on the ground level, also toward the negative Y-axis but further back on the X-axis.\n\nThese two objects are both positioned in a similarly negative Y-space, but the drone is elevated and located closer to the origin, while the chair is further back in the negative X direction. to The scene contains two objects: a drone and a chair. The drone, labeled as \"drone_2,\" is positioned at coordinates approximately (0.05, -8.75, -1.34) in a 3D space. The second object, a chair identified as \"chair_cafeCharcoalGrey10,\" is located at coordinates roughly (-2.83, -6.32, 0.24). The drone is situated slightly above the ground, while the chair is positioned on an elevated surface, indicating a potential indoor or outdoor setting., Type: part_of,"
+  }
+}

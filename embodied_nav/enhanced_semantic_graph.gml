@@ -1341,7 +1341,7 @@ graph [
     position 0.16237884741114691
     position -1.1140676587820053
     level 1
-    summary "The summary of the group of objects is as follows: &#10;&#10;There are two drones in the 3D environment. The first drone, referred to as drone_0, is positioned at coordinates (0.0, 0.0, -0.97), indicating it is situated directly above the ground at a shallow depth in the negative z-axis. The second drone, named Drone1, is located at coordinates approximately (1.49, 0.32, -1.26), placing it slightly offset in the x and y directions while also below the ground level. Both drones are positioned close to each other with a minor z-axis difference."
+    summary "In the given 3D environment, there are two drones with specific positions. The first drone, referred to as drone_0, is located at the coordinates (0.0, 0.0, -0.9707). The second drone, labeled Drone1, is positioned at (1.4946, 0.3248, -1.2574). Drone0 is situated directly on the x-y plane but slightly below it, while Drone1 is offset in both the x and y directions and is also lower along the z-axis."
   ]
   node [
     id 73
@@ -1350,7 +1350,7 @@ graph [
     position 0.6825918733927643
     position 1.2266992330551147
     level 1
-    summary "The object labeled &#34;BaseCharacter_Walking4_11&#34; is a character model situated in a 3D environment at the coordinates [5.422, 0.683, 1.227]. This position indicates the character's location within the space, likely involved in a walking animation given the &#34;Walking&#34; designation in its name. The coordinates suggest that the character is a few units away from the origin, elevated slightly above the ground (z-coordinate), implying it might be on a surface or terrain feature."
+    summary "The object &#34;BaseCharacter_Walking4_11&#34; is a 3D character model positioned at the coordinates [5.4223, 0.6826, 1.2267]. This indicates that the character is likely in a walking stance and located in a spatial environment where its position is defined in a three-dimensional space. The specific coordinates suggest it may be placed relatively close to the origin point of the environment. Further details regarding its appearance or context in the environment are not provided in this summary."
   ]
   node [
     id 74
@@ -1359,7 +1359,7 @@ graph [
     position -4.479154604118245
     position -0.7328165471553802
     level 1
-    summary "The group consists of two objects: a blueprint for a long blue planter named &#34;planterLong4_Blueprint3&#34; located at the coordinates [0.56, -4.98, -0.25] in the 3D environment, and a drone identified as &#34;drone_1&#34; positioned at [2.87, -3.98, -1.22]. The planter is set above ground level, while the drone is positioned slightly lower, suggesting it may be hovering or flying at a low altitude near the planter. The two objects are relatively close in the x-axis but separated in the y-axis."
+    summary "The group of objects consists of two items: a long blue planter, referred to as &#34;planterLong4_Blueprint3,&#34; located at the coordinates [0.56, -4.98, -0.25], and a drone labeled &#34;drone_1,&#34; positioned at [2.87, -3.98, -1.22]. The planter is situated above ground level, while the drone is positioned slightly lower, suggesting it may be hovering or flying at a lower altitude in the 3D space."
   ]
   node [
     id 75
@@ -1368,7 +1368,7 @@ graph [
     position -10.126800435807283
     position 0.1883343756198883
     level 1
-    summary "In the described 3D environment, there are four distinct objects positioned as follows:&#10;&#10;1. **Drone (drone_2)**: Located at coordinates (0.054, -8.754, -1.345), indicating it is positioned slightly above ground level and is likely hovering or in flight above the other objects.&#10;&#10;2. **Sofa Recliner (sofa_recliner4)**: Situated at (-2.214, -11.792, 0.806), this recliner is placed on the ground and has a height of approximately 0.806, making it suitable for seated lounging.&#10;&#10;3. **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)**: Found at (-2.790, -10.619, 0.664), this coffee table is also on the ground, slightly lower than the sofa recliner, and features a height conducive for placing items like drinks or books.&#10;&#10;4. **Base Character Sitting (BaseCharacter_Sitting_2)**: Positioned at (-0.940, -9.342, 0.628), this character is sitting above the ground, possibly on or near the sofa recliner, with a similar height to the coffee table.&#10;&#10;Overall, the objects are organized in a way that suggests a casual seating arrangement, with the drone positioned above the setup, possibly observing the scene from above."
+    summary "The summary of the objects in the 3D environment is as follows:&#10;&#10;1. **drone_2**: Positioned at (0.054, -8.754, -1.345), this drone hovers above other furniture in the space.&#10;2. **sofa_recliner4**: Located at (-2.214, -11.792, 0.806), this recliner offers a comfortable seating option.&#10;3. **woodenCageCoffeeTable_58**: Found at (-2.790, -10.619, 0.664), this wooden coffee table complements the seating arrangements.&#10;4. **BaseCharacter_Sitting_2**: This character is seated at (-0.940, -9.342, 0.628), indicating an interactive element within the environment.&#10;&#10;Overall, these objects create a cozy living area, with the drone adding a modern, technological aspect to the traditional furniture setup."
   ]
   node [
     id 76
@@ -1377,7 +1377,7 @@ graph [
     position -6.282484605617604
     position 0.24738198518753052
     level 1
-    summary "The group of objects consists of two charcoal grey caf&#233; chairs and a small grey table, positioned in a 3D space suggesting a cozy caf&#233; setting. The chairs, &#34;chair_cafeCharcoalGrey10&#34; and &#34;chair_cafeCharcoalGrey9,&#34; are placed at coordinates [-2.8272, -6.3181, 0.2410] and [-2.5619, -5.3417, 0.1582], respectively, indicating they are positioned closely together. The &#34;smallGreyTable3&#34; is located at [-3.4625, -6.3638, 0.2150], slightly offset from the chairs. Additionally, there is a sitting character, &#34;BaseCharacter_Sitting6_17,&#34; positioned at [-1.6387, -7.1063, 0.3753], which suggests this character is situated near the caf&#233; area, possibly interacting with the chairs or table. Overall, the arrangement implies a casual dining or social space."
+    summary "The group of objects consists of two charcoal grey cafe chairs and a small grey table, positioned in a slightly cluttered arrangement. The first chair, &#34;chair_cafeCharcoalGrey10,&#34; is located at coordinates [-2.83, -6.32, 0.24], while the second chair, &#34;chair_cafeCharcoalGrey9,&#34; sits nearby at [-2.56, -5.34, 0.16]. The small grey table, &#34;smallGreyTable3,&#34; is placed at [-3.46, -6.36, 0.22], creating a cozy cafe-like setup. Additionally, a character named &#34;BaseCharacter_Sitting6_17&#34; is positioned at [-1.64, -7.11, 0.38], suggesting a scene where the character may be interacting with the chairs and table. Overall, this arrangement indicates a casual social space conducive to sitting and conversation."
   ]
   node [
     id 77
@@ -1386,7 +1386,7 @@ graph [
     position -9.030493106606345
     position 0.42355822026729584
     level 1
-    summary "The scene features a variety of furniture and architectural elements arranged in a 3D environment, likely indicating a cafe or lounge area. &#10;&#10;- **Chairs**: There are two charcoal grey chairs (chair_cafeCharcoalGrey2 and chair_cafeCharcoalGrey3) and two orange chairs (chair_cafeOrange4 and chair_cafeOrange5) placed at different positions, providing seating options for patrons.&#10;  &#10;- **Tables**: Several small white tables (smallWhiteTable3, smallWhiteTable5, smallWhiteTable6) are positioned around the chairs, suggesting spaces for dining, studying, or socializing.&#10;&#10;- **Walls**: The officeGlassWallA_19 and snackShopWall_32 suggest a division between different areas within the environment. These elements contribute to the ambiance and structure of the space.&#10;&#10;- **Sofa and Work Areas**: A small sofa (sofa_small_48) is present, along with a laptop table (table_laptop2) indicating spaces designated for comfort and work.&#10;&#10;- **Character and Drone**: The presence of a seated character (BaseCharacter_Sitting9_26) and a drone (drone_3) indicates dynamic activity within the scene, adding a layer of interaction or movement.&#10;&#10;- **Atrium Towers**: The atriumTower_2 and associated components (atriumTowerVent_27 and sideBaseWall_2) suggest an architectural design element that may enhance the aesthetic or functional quality of the environment.&#10;&#10;Overall, the layout indicates a multifunctional area designed for casual use, relaxation, and possible work activities, with a mix of furniture and structural features supporting various interactions."
+    summary "This summary describes a cozy caf&#233; environment featuring a mix of seating and tables, primarily in shades of grey and orange. &#10;&#10;- Two **caf&#233; chairs** in **charcoal grey** (positions: [-3.63, -7.71, 0.34] and [-4.58, -7.95, 0.52]) are positioned near two **small white tables** (positions: [-4.08, -8.26, 0.37] and [-5.98, -7.66, 0.49]).&#10;- An additional **orange caf&#233; chair** (position: [-3.43, -8.82, 0.58]) complements the seating arrangement, along with another orange chair (position: [-5.74, -8.35, 0.52]).&#10;- A **sofa** (position: [-4.89, -10.13, 0.62]) adds a relaxed seating option, while a **table for laptops** (position: [-5.62, -9.49, 0.58]) offers workspace.&#10;- **Glass walls** (specifically **officeGlassWallA_19** at [-4.57, -9.14, 0.58] and **snackShopWall_32** at the same position) contribute to an open ambiance.&#10;- The environment is further populated by a **drone** hovering nearby (position: {'x': -5.60, 'y': -8.85, 'z': -1.47}), a **BaseCharacter** sitting (position: [-5.32, -9.84, 0.60]), and structures like **atrium towers** and **side base walls** that provide architectural interest.&#10;&#10;The setup suggests a vibrant yet relaxed social space, perfect for gatherings or casual work."
   ]
   node [
     id 78
@@ -1395,7 +1395,7 @@ graph [
     position -5.809399258600855
     position 0.35304107666015627
     level 1
-    summary "The group consists of five furniture objects arranged in a 3D space, primarily focused on functional seating and tables. &#10;&#10;1. **Bench (woodenSlats2)**: Positioned at coordinates [-4.79, -5.60, 0.25], this wooden slatted bench serves as a communal seating option.&#10;   &#10;2. **Caf&#233; Chair (CharcoalGrey14_6)**: Located at [-7.01, -5.80, 0.40], this chair offers a modern design in charcoal grey, suitable for caf&#233; environments.&#10;&#10;3. **Caf&#233; Chair (CharcoalGrey15_8)**: Found at [-6.62, -6.67, 0.46], this is another caf&#233;-style chair featuring a similar design to the previous one, enhancing seating capacity.&#10;&#10;4. **Small Grey Table (Table6)**: At [-6.21, -4.99, 0.28], this table provides a functional surface for dining or work, complementing the caf&#233; chairs.&#10;&#10;5. **Small Grey Table (Table8)**: Situated at [-6.36, -5.98, 0.38], this additional small table adds versatility to the arrangement, offering more options for use in the setting.&#10;&#10;Overall, the layout encourages a cozy, inviting atmosphere suitable for social interactions or casual dining."
+    summary "The group of objects includes a wooden slats bench and several caf&#233;-style chairs, all positioned within a small area. The bench is located at coordinates [-4.79, -5.60, 0.25], while two charcoal grey caf&#233; chairs are positioned at [-7.01, -5.80, 0.40] and [-6.62, -6.67, 0.46]. Additionally, there are two small grey tables, one at [-6.21, -4.99, 0.28] and the other at [-6.36, -5.98, 0.38]. This configuration suggests a cozy seating arrangement suitable for a relaxed social environment such as a caf&#233; or outdoor gathering space."
   ]
   node [
     id 79
@@ -1404,7 +1404,7 @@ graph [
     position -7.000822040373613
     position 0.6003863215446472
     level 1
-    summary "In a 3D environment, there are four objects arranged in close proximity. The first object is a charcoal grey cafe chair, referred to as &#34;chair_cafeCharcoalGrey12,&#34; located at the coordinates [-8.33, -5.67, 0.47]. Nearby, at [-8.09, -7.45, 0.63], sits a small white table, labeled &#34;smallWhiteTable7.&#34; Two seated characters are also positioned in the scene: &#34;BaseCharacter_Sitting10_29&#34; is located at [-8.53, -7.99, 0.71], and &#34;BaseCharacter_Sitting12&#34; is at [-8.51, -6.89, 0.60]. The arrangement suggests a cozy seating area, likely conducive to social interaction or relaxation."
+    summary "In the described 3D environment, there are several objects arranged as follows:&#10;&#10;1. **Chair (cafeCharcoalGrey12)**: Positioned at coordinates [-8.33, -5.67, 0.47], this charcoal grey chair provides seating in the vicinity.&#10;2. **Table (smallWhiteTable7)**: Located at [-8.09, -7.45, 0.63], this small white table is likely intended for use alongside the seating.&#10;3. **Base Character (Sitting10_29)**: Situated at [-8.53, -7.99, 0.71], this character is seated, possibly at the table or nearby.&#10;4. **Base Character (Sitting12)**: Found at [-8.51, -6.89, 0.60], this character is also seated, adding to the atmosphere of a communal space.&#10;&#10;Together, these objects depict a cozy caf&#233;-like setting with two characters engaging in a relaxed environment."
   ]
   node [
     id 80
@@ -1413,7 +1413,7 @@ graph [
     position -2.2917215824127197
     position -1.5484551191329956
     level 1
-    summary "The object &#34;drone_4&#34; is situated in a 3D environment at the coordinates x: -9.66, y: -2.29, and z: -1.55. This positions the drone in a specific location that is likely defined by a spatial framework where negative values indicate its location in relation to the origin point. The drone could be used for various purposes such as surveillance, cargo delivery, or recreational use, depending on its capabilities."
+    summary "The object &#34;drone_4&#34; is located in a 3D space at the coordinates x: -9.66, y: -2.29, and z: -1.55. This indicates that it is positioned relatively to the negative side along the x and y axes, and slightly above the ground in the negative z direction, suggesting it may be hovering or operating at a low altitude."
   ]
   node [
     id 81
@@ -1422,7 +1422,7 @@ graph [
     position -1.041554967683692
     position 0.7243479490280151
     level 1
-    summary "The objects &#34;staircaseBottom_6&#34; and &#34;staircaseMid_8&#34; are positioned at identical coordinates, specifically at [-13.3845, -1.0416, 0.7243]. This suggests that they are likely components of the same staircase structure, with the bottom and mid sections stacked or aligned at the same point in the 3D space. Their overlapping position indicates that they may be designed to function together as a continuous staircase."
+    summary "The objects &#34;staircaseBottom_6&#34; and &#34;staircaseMid_8&#34; are both located at the exact same position in the 3D environment, which is [-13.3845, -1.0416, 0.7243]. This suggests that they may be parts of a single staircase structure, with &#34;staircaseBottom_6&#34; likely representing the bottom section and &#34;staircaseMid_8&#34; representing a mid-level section. Their alignment indicates they are intended to function together in a seamless stairway design."
   ]
   node [
     id 82
@@ -1431,7 +1431,7 @@ graph [
     position 1.9636689843757698
     position 0.023861080408096313
     level 1
-    summary "In the described 3D environment, there are several objects with specific positions. The character identified as **BaseCharacter_Walking_2** is located at coordinates approximately [-9.39, 1.03, 0.57]. Nearby, there are two poster boards: **posterBoard6** situated at about [-8.15, 2.84, 0.54], and **posterBoard_24** at roughly [-7.69, 2.39, 0.54]. Additionally, **drone_5** is positioned at coordinates {'x': -10.54, 'y': 1.59, 'z': -1.56}. The arrangement suggests the character is interacting with the poster boards, while the drone is positioned lower and further away, likely monitoring or surveying the area."
+    summary "In the 3D environment, there are four notable objects: &#10;&#10;1. **BaseCharacter_Walking_2** - A character model located at coordinates [-9.39, 1.03, 0.57], indicating it is positioned slightly elevated with a positive y-axis value. &#10;&#10;2. **posterBoard6** - Situated at [-8.15, 2.84, 0.54], this poster board is notably higher on the y-axis compared to the character and likely serves as a display or information board.&#10;&#10;3. **posterBoard_24** - This poster board is found at [-7.69, 2.39, 0.54], slightly lower on the y-axis than posterBoard6, suggesting it may be another display or informative object.&#10;&#10;4. **drone_5** - This drone is positioned at a significantly lower elevation [-10.54, 1.59, -1.56], indicating it is hovering closer to the ground or in a lower airspace compared to the other objects.&#10;&#10;Overall, these objects are distributed across a small area, with two poster boards positioned relatively close together and the character and drone located at different elevations, reflecting a dynamic interaction space in the environment."
   ]
   node [
     id 83
@@ -1440,7 +1440,7 @@ graph [
     position 3.498806402708373
     position 0.5429845452308655
     level 1
-    summary "The specified group of objects includes a Bucket Seat positioned at coordinates [-11.92, 3.71, 0.63], a Mangrove Fan Palm planter located at [-13.35, 2.06, 0.23], a Corner Sofa at [-12.74, 4.57, 0.66], and a Sitting Base Character at [-12.17, 3.65, 0.65]. The Bucket Seat and the Base Character are relatively close in the 3D space, indicating the character is likely seated on the bucket. The Corner Sofa is positioned nearby, which may suggest a relaxed seating area. The Mangrove Fan Palm adds a decorative element to the environment, enhancing its aesthetic appeal. Overall, these objects create a cozy and functional seating area with a touch of greenery."
+    summary "In the given 3D environment, there are several objects situated at distinct positions:&#10;&#10;1. **BucketSeat_24** is located at coordinates [-11.92, 3.71, 0.63], likely serving as a designated seating area.&#10;2. **planter_Mangrove_Fan_Palm3_Blueprint_344** is positioned at [-13.35, 2.06, 0.23], adding a decorative and natural element to the scene.&#10;3. **CornerSofa_26** is found at [-12.74, 4.57, 0.66], providing additional seating that complements the BucketSeat.&#10;4. **BaseCharacter_Sitting2_5** is situated at [-12.17, 3.65, 0.65], representing a character interacting with the seating environment.&#10;&#10;Together, these elements create a cozy and functional seating area enhanced by a decorative planter."
   ]
   node [
     id 84
@@ -1449,7 +1449,7 @@ graph [
     position 7.70782567168192
     position -1.894558886686961
     level 1
-    summary "The group of objects consists of two exit signs and a drone, each positioned in a 3D environment. The first exit sign, exitSign13_16, is located at coordinates [-12.13, 7.08, -2.07]. The second exit sign, exitSign12_9, is positioned nearby at [-11.57, 9.16, -1.97]. The drone, identified as drone_6, is situated at a close proximity with coordinates [-10.71, 6.89, -1.64]. This arrangement indicates that the drone is hovering near the exit signs, potentially related to navigation or surveillance activities in the area."
+    summary "In the described 3D environment, there are three objects: two exit signs and a drone. &#10;&#10;1. **Exit Sign 13_16** is located at position [-12.13, 7.08, -2.07]. &#10;2. **Drone 6** is situated slightly closer to the origin at position (-10.71, 6.89, -1.64), indicating it is hovering above the ground level and between the two exit signs. &#10;3. **Exit Sign 12_9** is positioned at [-11.57, 9.16, -1.97], which is higher than Exit Sign 13_16. &#10;&#10;The drone appears to be in a range between the two exit signs, suggesting potential monitoring or navigating between these two points."
   ]
   node [
     id 85
@@ -1458,7 +1458,7 @@ graph [
     position 6.336187999307684
     position 0.5384354591369629
     level 1
-    summary "The object &#34;posterBoard8_Blueprint&#34; is positioned in a 3D environment at the coordinates [-7.7621, 6.3362, 0.5384]. This suggests it may be part of a design or mapping project, possibly indicating dimensions or layouts relevant to the surrounding area. The specific position indicates it is placed somewhat to the left and slightly in front of the origin point, with a height that is moderately elevated above the ground level."
+    summary "The object &#34;posterBoard8_Blueprint&#34; is a blueprint poster board located in a 3D environment at the coordinates [-7.762, 6.336, 0.538]. It serves as a visual representation or plan, possibly detailing design elements or layouts related to a project or concept. The position suggests it may be part of a larger arrangement or workspace, positioned slightly above ground level, indicated by the Z-coordinate of 0.538."
   ]
   node [
     id 86
@@ -1467,7 +1467,7 @@ graph [
     position 6.706288825082154
     position -0.02110443115234375
     level 1
-    summary "The group of objects includes a Corner Sofa located at coordinates [-14.53, 5.84, 0.08], providing a seating area in the environment. Adjacent to it is a Lap Top Table at position [-15.22, 6.13, -0.005], likely serving as a workspace or surface for various activities. The Office Door is positioned at [-13.81, 8.92, 0.25], suggesting an entrance or exit leading to another space. Additionally, there is a Recliner Sofa situated at [-14.64, 4.55, 0.03], offering a comfortable seating option. Lastly, a drone is present at coordinates [-14.06, 8.08, -0.46], which may be used for aerial tasks or surveillance within this environment. Overall, the objects indicate a cozy and functional area, potentially designed for relaxation and work."
+    summary "The 3D environment contains the following objects:&#10;&#10;1. **CornerSofa2** positioned at approximately (-14.53, 5.84, 0.08), serving as a seating area.&#10;2. **LapTopTable_32** located at around (-15.22, 6.13, -0.00), presumably used for work or meals.&#10;3. **OfficeDoor13** situated at about (-13.81, 8.92, 0.25), providing access to another space.&#10;4. **ReclinerSofa_40** at (-14.64, 4.55, 0.03), offering a more relaxed seating option.&#10;5. **drone_7** floating in the air at coordinates (-14.06, 8.08, -0.46), suggesting it may have a functional role in the space.&#10;&#10;The objects are arranged with the seating areas (CornerSofa2 and ReclinerSofa_40) and the workstation (LapTopTable_32) closer together, while the OfficeDoor13 presents a point of entry or exit. The drone appears to be positioned higher, potentially for surveillance or operational purposes."
   ]
   node [
     id 87
@@ -1476,7 +1476,7 @@ graph [
     position 8.131022214889526
     position -0.6350338459014893
     level 1
-    summary "The summary of the two drones is as follows:&#10;&#10;- **drone_8** is positioned at coordinates (-17.76, 8.40, -0.54), indicating it is relatively high on the y-axis and slightly above the ground level on the z-axis.&#10;- **drone_9** is located at coordinates (-21.41, 7.86, -0.73), which also places it high on the y-axis but slightly lower than drone_8 on the z-axis.&#10;&#10;Both drones are situated close to each other in the 3D space, with drone_9 positioned further back along the x-axis compared to drone_8."
+    summary "The group consists of two drones, drone_8 and drone_9. Drone_8 is positioned at approximately (-17.76, 8.40, -0.54), while drone_9 is located at around (-21.41, 7.86, -0.73). Both drones are situated in a 3D space, with drone_9 being slightly further along the negative x-axis compared to drone_8. Their z-coordinates indicate that they are at a similar elevation above a reference plane, likely indicating they are operating in the same horizontal slice of the environment."
   ]
   node [
     id 88
@@ -1485,7 +1485,7 @@ graph [
     position 8.466860294342041
     position -0.9761256277561188
     level 1
-    summary "The summary of the objects is as follows:&#10;&#10;There are two drones in close proximity within a 3D space. &#10;&#10;1. **drone_10** is located at the coordinates (-26.81, 8.58, -0.86).&#10;2. **drone_11** is positioned nearby at (-30.13, 8.35, -1.09).&#10;&#10;Both drones are situated at similar heights (around 8.5 on the y-axis), but drone_11 is further along the negative x-axis and slightly lower on the z-axis compared to drone_10. Their spatial relationship suggests they may be operating within a similar area, possibly for coordinated tasks."
+    summary "The summary describes two drones in a 3D environment. &#10;&#10;- **Drone 10** is positioned at coordinates (-26.81, 8.58, -0.86).&#10;- **Drone 11** is located at coordinates (-30.13, 8.35, -1.09).&#10;&#10;Both drones are situated at a similar height along the y-axis, with slight differences in their x and z positions, indicating they are relatively close to each other in the horizontal plane while also having a small variation in their vertical alignment."
   ]
   node [
     id 89
@@ -1494,7 +1494,7 @@ graph [
     position 8.504061511181282
     position -0.1350379685560862
     level 1
-    summary "In the described 3D environment, there are three objects: &#10;&#10;1. **door_officeA10_8** - This door is positioned at coordinates [-34.68, 9.28, 0.56], which places it at a height of approximately 0.56 units above the base level. &#10;&#10;2. **drone_12** - This drone is located at coordinates [-33.33, 8.41, -0.56], indicating it is slightly lower than the previous door, positioned below the base level by approximately 0.56 units.&#10;&#10;3. **drone_13** - Found at coordinates [-37.86, 7.82, -0.41], this drone is also located below the base level, yet at a slightly higher altitude than drone_12, hovering around -0.41 units.&#10;&#10;Overall, the objects display a spatial distribution where the door is positioned higher within the environment, while both drones are below the reference level, with drone_12 being the lowest."
+    summary "In the described 3D environment, there are three objects: &#10;&#10;1. **door_officeA10_8** is located at coordinates [-34.68, 9.28, 0.56], serving as access to office A10.&#10;2. **drone_12** is positioned nearby at roughly [-33.33, 8.41, -0.56], indicating it is flying slightly lower than the door.&#10;3. **drone_13** is further away, at approximately [-37.86, 7.82, -0.41], also flying slightly below the door's elevation.&#10;&#10;The door serves as a fixed entry point, while the two drones are mobile objects in the vicinity, both below the door's height and in close proximity to each other."
   ]
   node [
     id 90
@@ -1503,7 +1503,7 @@ graph [
     position -2.3221290209226875
     position 0.4511977349008833
     level 1
-    summary "The summarized group of objects presents a small gathering of items in a 3D kitchen and living area. &#10;&#10;1. **Drone (drone_14)**: Positioned at (-35.91, -0.21, -0.96), this drone hovers above the kitchen area.&#10;2. **Chairs (chair_kitchen2 and chair_kitchen_2)**: &#10;   - **chair_kitchen2** is located at (-37.91, -2.33, 0.68).&#10;   - **chair_kitchen_2** is nearby at (-37.12, -3.61, 0.71), suggesting they are part of a seating arrangement.&#10;3. **Coffee Table (kitchen_coffeeTable_6)**: Situated at (-38.10, -3.31, 0.70), it serves as a central piece for the kitchen area.&#10;4. **Sofa (sofa_doubleLeatherCream2_406)**: Positioned at (-39.47, -3.06, 0.69), this cream-colored leather sofa enhances the living space's comfort.&#10;5. **Laptop Tables (table_laptop6_364 and table_laptop7)**: &#10;   - **table_laptop6_364** is located at (-37.28, -2.01, 0.67).&#10;   - **table_laptop7** is slightly farther at (-39.51, -1.72, 0.67), providing dedicated workspace areas.&#10;&#10;Overall, the arrangement of these objects indicates a functional space combining utility and comfort, likely serving both leisure and work purposes."
+    summary "The group of objects consists of various items within a 3D kitchen and living room environment. &#10;&#10;1. **Drones**: The drone_14 is positioned at coordinates (-35.91, -0.21, -0.96), suggesting it may be hovering or flying at a low height.&#10;   &#10;2. **Chairs**: &#10;   - chair_kitchen2 is located at (-37.91, -2.33, 0.68).&#10;   - chair_kitchen_2 is slightly closer at (-37.12, -3.61, 0.71).&#10;   &#10;3. **Tables**: &#10;   - kitchen_coffeeTable_6 is placed at (-38.10, -3.31, 0.70), indicating it is part of the kitchen area.&#10;   - table_laptop6_364 at (-37.28, -2.01, 0.67) and table_laptop7 at (-39.51, -1.72, 0.67) are positioned for work or study, possibly in a living area or an office setup.&#10;&#10;4. **Sofa**: The sofa_doubleLeatherCream2_406 is situated at (-39.47, -3.06, 0.69), indicating a comfortable seating option in the living room.&#10;&#10;Overall, the layout suggests a combination of functional spaces for both relaxation (sofa and chairs) and work (tables), with a drone potentially adding a dynamic element to the environment."
   ]
   node [
     id 91
@@ -1512,7 +1512,7 @@ graph [
     position 0.16237884741114691
     position -1.1140676587820053
     level 2
-    summary "The group consists of two drones positioned in a 3D environment. The first drone, referred to as drone_0, is located at coordinates (0.0, 0.0, -0.97). The second drone, named Drone1, is situated at coordinates approximately (1.49, 0.32, -1.26). Both drones are at similar altitudes, with the second drone slightly forward and to the right of the first."
+    summary "The objects in this group consist of two drones: drone_0 and Drone1. &#10;&#10;- **drone_0** is located at the coordinates (0.0, 0.0, -0.9707). &#10;- **Drone1** is positioned at (1.4946, 0.3248, -1.2574).&#10;&#10;Both drones are situated in a 3D space with variations in their x, y, and z coordinates, indicating that they are not only at different horizontal positions but also at different heights below the reference plane (as inferred by their negative z-values)."
   ]
   node [
     id 92
@@ -1521,7 +1521,7 @@ graph [
     position 0.6825918733927643
     position 1.2266992330551147
     level 2
-    summary "The object BaseCharacter_Walking4_11 is positioned in a 3D environment at coordinates [5.4223, 0.6826, 1.2267]. This suggests that it is located slightly above the origin, possibly indicating an elevated surface or a platform. The naming convention &#34;BaseCharacter&#34; indicates that this object is likely a character model designed for walking animation, possibly part of a game or simulation. The specific instance &#34;Walking4_11&#34; might denote a particular walking animation or variant, suggesting it could be part of a larger set of animations for different characters or movement styles."
+    summary "The object &#34;BaseCharacter_Walking4_11&#34; is positioned in a 3D environment at coordinates [5.4223, 0.6826, 1.2267]. It appears to represent a character that is in a walking state, indicated by its name. The specific numerical values denote its location along the x, y, and z axes, suggesting the character is situated slightly elevated or above the ground level, given the positive z-coordinate."
   ]
   node [
     id 93
@@ -1530,7 +1530,7 @@ graph [
     position -4.479154604118245
     position -0.7328165471553802
     level 2
-    summary "The scene contains two objects: a planter designated as &#34;planterLong4_Blueprint3&#34; and a drone labeled &#34;drone_1.&#34; The planter is positioned at coordinates [0.56, -4.98, -0.25], suggesting it is slightly elevated above ground level, while the drone is located at coordinates [2.87, -3.98, -1.22], indicating it is further along the x-axis and lower along the z-axis compared to the planter. The planter likely serves a decorative or functional role in the environment, while the drone suggests an active element, possibly involved in monitoring or transporting tasks."
+    summary "The summary of the group of objects is as follows:&#10;&#10;1. **Planter (planterLong4_Blueprint3)**: This object is located at the coordinates [0.56, -4.98, -0.25]. It likely serves as a decorative or functional element in the environment, possibly used for growing plants or flowers.&#10;&#10;2. **Drone (drone_1)**: This drone is positioned at the coordinates {'x': 2.87, 'y': -3.98, 'z': -1.22}. It may be used for various purposes such as surveillance, delivery, or monitoring within the 3D environment.&#10;&#10;The two objects are situated at different positions, with the planter being lower on the vertical axis compared to the drone."
   ]
   node [
     id 94
@@ -1539,7 +1539,7 @@ graph [
     position -10.126800435807283
     position 0.1883343756198883
     level 2
-    summary "The scene consists of four objects arranged in a 3D environment:&#10;&#10;1. **Drone (drone_2)** is positioned at coordinates (0.054, -8.754, -1.345), suggesting it is hovering slightly above the ground.&#10;2. **Sofa Recliner (sofa_recliner4)** is located at (-2.214, -11.792, 0.806), indicating it is part of a seating area.&#10;3. **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)** is situated at (-2.790, -10.619, 0.664), suggesting it is placed near the sofa, potentially in a living room setting.&#10;4. **Base Character (BaseCharacter_Sitting_2)** is positioned at (-0.940, -9.342, 0.628), likely indicating a character seated comfortably, perhaps on or near the sofa.&#10;&#10;The arrangement of these objects suggests a cozy indoor environment, possibly a lounge or living room, with a character engaging in the space."
+    summary "In the described 3D environment, there are four objects arranged in close proximity:&#10;&#10;1. **Drone (drone_2)**: Hovering at a height of approximately -1.34 along the z-axis, its coordinates are (0.05, -8.75, -1.34).&#10;2. **Sofa Recliner (sofa_recliner4)**: Positioned slightly further along the negative x and y axes at (-2.21, -11.79, 0.81), rising to a height of about 0.81.&#10;3. **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)**: Located near the sofa at (-2.79, -10.62, 0.66), it complements the seating arrangement with a similar height of approximately 0.66.&#10;4. **Sitting Character (BaseCharacter_Sitting_2)**: This character is seated at (-0.94, -9.34, 0.63), suggesting interaction with the nearby sofa.&#10;&#10;Overall, these objects depict a cozy seating area with a drone positioned above, possibly indicating an overhead monitoring or decorative element in the scene."
   ]
   node [
     id 95
@@ -1548,7 +1548,7 @@ graph [
     position -6.282484605617604
     position 0.24738198518753052
     level 2
-    summary "The summary of the provided objects is as follows:&#10;&#10;- Two **cafe chairs** (chair_cafeCharcoalGrey10 and chair_cafeCharcoalGrey9) are positioned closely together, suggesting a cozy seating arrangement. Chair 10 is located at [-2.827, -6.318, 0.241], and chair 9 is at [-2.562, -5.342, 0.158].&#10;- A **small grey table** (smallGreyTable3) is placed nearby, at the coordinates [-3.462, -6.364, 0.215], likely intended for use alongside the chairs for dining or social purposes.&#10;- A **sitting character** (BaseCharacter_Sitting6_17) is situated at [-1.639, -7.106, 0.375], which indicates that this character is positioned somewhat away from the chairs and table, perhaps observing or interacting with the environment.&#10;&#10;Overall, this arrangement appears to depict a small gathering space with seating options and a central table, suitable for casual interactions."
+    summary "The summary of the group of objects is as follows:&#10;&#10;1. **Chair (cafeCharcoalGrey10)**: Positioned at coordinates [-2.83, -6.32, 0.24], this chair is part of a cafe-style seating arrangement.&#10;  &#10;2. **Chair (cafeCharcoalGrey9)**: Located at [-2.56, -5.34, 0.16], this is another cafe-style chair, complementing the first.&#10;&#10;3. **Table (smallGreyTable3)**: Found at [-3.46, -6.36, 0.22], this small grey table serves as a central Surface for the chairs.&#10;&#10;4. **Character (BaseCharacter_Sitting6_17)**: Situated at [-1.64, -7.11, 0.38], this character is depicted sitting, likely in proximity to the chairs and table, suggesting an interactive cafe scene.&#10;&#10;The arrangement indicates a cozy cafe setting with seating for conversations or dining, featuring two chairs and a small table around which the character is situated."
   ]
   node [
     id 96
@@ -1557,7 +1557,7 @@ graph [
     position -9.030493106606345
     position 0.42355822026729584
     level 2
-    summary "The group consists of various objects arranged in a 3D environment, primarily consisting of seating and table units alongside structural elements. &#10;&#10;- **Chair Objects**: There are four chairs, two in charcoal grey (cafeCharcoalGrey2 and cafeCharcoalGrey3) and two in orange (cafeOrange4 and cafeOrange5), located throughout the space. The grey chairs are positioned close to each other, while the orange chairs are more spread out.&#10;  &#10;- **Tables**: Three small white tables (smallWhiteTable3, smallWhiteTable5, and smallWhiteTable6) are present, providing surfaces for activities, likely related to the chairs nearby.&#10;&#10;- **Structural Elements**: The environment features a glass wall (officeGlassWallA_19) and a snack shop wall (snackShopWall_32) in the vicinity of seating arrangements, indicating a designed space for social interaction or relaxation.&#10;&#10;- **Additional Objects**: There is a sofa (sofa_small_48), a table for laptop use (table_laptop2), and a sitting character model (BaseCharacter_Sitting9_26) suggesting a dynamic or inhabited setting. &#10;&#10;- **Drones and Towers**: A drone (drone_3) is mentioned, indicating potential interactive or service elements within the environment. Additionally, the atrium tower and vent are present, likely contributing to the architectural aspect of the space.&#10;&#10;Overall, this summary depicts a well-furnished social area that combines functional seating with structural and decorative elements."
+    summary "This summary describes a collection of objects within a 3D environment, primarily consisting of caf&#233;-style seating and tables, along with structural elements. &#10;&#10;1. **Seating**: There are multiple chairs, including two grey caf&#233; chairs (chair_cafeCharcoalGrey2 and chair_cafeCharcoalGrey3), and two orange caf&#233; chairs (chair_cafeOrange4 and chair_cafeOrange5). These are distributed around various tables, creating an informal caf&#233; layout.&#10;&#10;2. **Tables**: Three small white tables (smallWhiteTable3, smallWhiteTable5, and smallWhiteTable6) are positioned within this vicinity, designed to facilitate dining or casual interactions.&#10;&#10;3. **Walls and Structural Elements**: The environment includes office glass walls (officeGlassWallA_19) and a snack shop wall (snackShopWall_32). There are also several components related to an atrium, including the atriumTower_2, atriumTowerVent_27, and a sideBaseWall_2, indicating structural design in the space.&#10;&#10;4. **Furniture and Accessories**: A small sofa (sofa_small_48) and a desk (table_laptop2) suggest a mix of relaxation and work-oriented spaces. A character representation is included (BaseCharacter_Sitting9_26), implying a scenario where individuals may be interacting with the space or each other.&#10;&#10;5. **Equipment**: There is a drone (drone_3) present, suggesting a technology aspect to the environment, possibly indicating surveillance or delivery capabilities.&#10;&#10;The overall setup presents a cozy and functional area that accommodates both leisure and work activities, organized around tables and seating arrangements, with thoughtful attention to structural elements."
   ]
   node [
     id 97
@@ -1566,7 +1566,7 @@ graph [
     position -5.809399258600855
     position 0.35304107666015627
     level 2
-    summary "The group of objects consists of a wooden bench and several caf&#233; chairs along with small grey tables, forming a cozy seating area. The wooden bench (bench_woodenSlats2) is located at coordinates [-4.79, -5.60, 0.25], while two caf&#233; chairs in charcoal grey (chair_cafeCharcoalGrey14_6 at [-7.01, -5.80, 0.40] and chair_cafeCharcoalGrey15_8 at [-6.62, -6.67, 0.46]) provide additional seating. Additionally, there are two small grey tables (smallGreyTable6 at [-6.21, -4.99, 0.28] and smallGreyTable8 at [-6.36, -5.98, 0.38]) positioned nearby, enhancing the functionality of the space for socializing or dining. The arrangement suggests a welcoming atmosphere suitable for gatherings or casual meetings."
+    summary "This summary describes a small seating area featuring a wooden slats bench and several cafe-style chairs arranged around two small grey tables. &#10;&#10;1. **Bench**: The wooden slats bench is located at coordinates [-4.79, -5.60, 0.25], providing a place for multiple people to sit.&#10;2. **Chairs**: &#10;   - The first chair, cafe_cafeCharcoalGrey14_6, is positioned at [-7.01, -5.80, 0.40].&#10;   - The second chair, cafe_cafeCharcoalGrey15_8, is at [-6.62, -6.67, 0.46].&#10;   &#10;   Both chairs are designed in a charcoal grey color, complementing the overall aesthetic.&#10;   &#10;3. **Tables**: Two small grey tables are situated nearby.&#10;   - smallGreyTable6 is located at [-6.21, -4.99, 0.28].&#10;   - smallGreyTable8 is positioned at [-6.36, -5.98, 0.38].&#10;&#10;This setup creates a cozy environment suitable for social gatherings or casual meetings. The arrangements suggest a layout that encourages interaction, with easy access to seating and surfaces for drinks or food."
   ]
   node [
     id 98
@@ -1575,7 +1575,7 @@ graph [
     position -7.000822040373613
     position 0.6003863215446472
     level 2
-    summary "In the described 3D environment, there are several objects positioned close to one another, creating a cozy seating area. The **chair_cafeCharcoalGrey12** is located at coordinates [-8.3267, -5.6705, 0.4689], providing a comfortable seating option. Nearby, **smallWhiteTable7** is positioned at [-8.0916, -7.4522, 0.6276], serving as a table that likely complements the seating arrangement. Two characters are seated in this space: **BaseCharacter_Sitting10_29** at [-8.5260, -7.9877, 0.7061], and **BaseCharacter_Sitting12** sitting at [-8.5111, -6.8930, 0.5989]. Together, these objects suggest a relaxed atmosphere suitable for social interaction or a casual gathering."
+    summary "In this 3D environment, we have a cozy seating arrangement featuring two chairs and a small table. The **chair_cafeCharcoalGrey12** is positioned at [-8.33, -5.67, 0.47], providing a stylish, charcoal gray seat. Nearby, the **smallWhiteTable7** sits at [-8.09, -7.45, 0.63], offering a contrasting white surface for drinks or snacks. &#10;&#10;Two characters are present in this scene: **BaseCharacter_Sitting10_29** is located at [-8.53, -7.99, 0.71], and **BaseCharacter_Sitting12** is positioned slightly away at [-8.51, -6.89, 0.60]. Both characters appear to be engaged in a relaxed setting, enhancing the inviting atmosphere created by the furniture arrangement."
   ]
   node [
     id 99
@@ -1584,7 +1584,7 @@ graph [
     position -2.2917215824127197
     position -1.5484551191329956
     level 2
-    summary "The object &#34;drone_4&#34; is a drone positioned in a 3D space at the coordinates (-9.66, -2.29, -1.55). Its location indicates it is situated towards the negative x and y axes, while being slightly below a reference plane (as denoted by the negative z value)."
+    summary "The object &#34;drone_4&#34; is a drone located at the coordinates x: -9.66, y: -2.29, and z: -1.55 in a 3D space. This position indicates that the drone is placed in a negative region along the x and y axes while being slightly below the reference point on the z-axis."
   ]
   node [
     id 100
@@ -1593,7 +1593,7 @@ graph [
     position -1.041554967683692
     position 0.7243479490280151
     level 2
-    summary "The group of objects consists of two staircases: staircaseBottom_6 and staircaseMid_8. Both staircases are positioned at the exact same coordinates: [-13.384497201367042, -1.041554967683692, 0.7243479490280151]. This suggests that they may function as a continuous structure within a 3D environment, likely forming part of a multi-level design where the bottom and mid sections of the staircase are aligned at the same point in space."
+    summary "The group of objects consists of two elements: &#34;staircaseBottom_6&#34; and &#34;staircaseMid_8.&#34; Both objects are positioned at the same coordinates: [-13.3845, -1.0416, 0.7243]. This indicates they share the same spatial location within the 3D environment. The naming suggests that &#34;staircaseBottom_6&#34; represents the lower part of a staircase, while &#34;staircaseMid_8&#34; likely represents the middle segment, implying a vertical structure composed of multiple connected sections. The identical position could indicate they are either overlapping or part of a multi-level staircase system."
   ]
   node [
     id 101
@@ -1602,7 +1602,7 @@ graph [
     position 1.9636689843757698
     position 0.023861080408096313
     level 2
-    summary "In the 3D environment, there are four objects with the following properties:&#10;&#10;1. **BaseCharacter_Walking_2**: Located at the coordinates [-9.39, 1.03, 0.57], this object likely represents a character model in a walking state.&#10; &#10;2. **posterBoard6**: Positioned at [-8.15, 2.84, 0.54], this object appears to be a vertical display board, possibly used for presentations or advertisements.&#10;&#10;3. **posterBoard_24**: Found at [-7.69, 2.39, 0.54], this is another poster board, possibly similar in function to posterBoard6 but located slightly lower than it.&#10;&#10;4. **drone_5**: This object is at the coordinates [-10.54, 1.59, -1.56], indicating a drone that is likely hovering or positioned above the ground level.&#10;&#10;Overall, the arrangement of these objects suggests an interactive environment that includes both animated characters and informational displays, along with a flying drone."
+    summary "In the described 3D environment, there are four objects with distinct positions:&#10;&#10;1. **BaseCharacter_Walking_2**: A character, presumably animated for walking, is located at coordinates [-9.39, 1.03, 0.57].&#10;2. **posterBoard6**: A poster board situated at [-8.15, 2.84, 0.54], possibly intended for displaying information or art.&#10;3. **posterBoard_24**: Another poster board placed at [-7.69, 2.39, 0.54], which might serve a similar purpose as posterBoard6.&#10;4. **drone_5**: A drone positioned at {'x': -10.54, 'y': 1.59, 'z': -1.56}, indicating it may be hovering or located at a height lower than the other objects.&#10;&#10;These objects are arranged within a proximity that suggests they could be part of an interactive scene, with the character potentially engaging with the poster boards while the drone observes the surroundings."
   ]
   node [
     id 102
@@ -1611,7 +1611,7 @@ graph [
     position 3.498806402708373
     position 0.5429845452308655
     level 2
-    summary "In the described 3D environment, there are four objects observed, each positioned distinctively:&#10;&#10;1. **BucketSeat_24** is located at coordinates [-11.9159, 3.7056, 0.6319], suggesting a potential seating area.&#10;2. **planter_Mangrove_Fan_Palm3_Blueprint_344** is situated at [-13.3521, 2.0642, 0.2277], indicating that it serves as a decorative or functional landscaping element nearby.&#10;3. **CornerSofa_26** can be found at [-12.7386, 4.5735, 0.6604], providing comfort and possibly a gathering space within the arrangement.&#10;4. **BaseCharacter_Sitting2_5** is positioned at [-12.1745, 3.6519, 0.6520], suggesting it is interacting with the environment, likely seated either on the BucketSeat_24 or CornerSofa_26.&#10;&#10;These objects collectively create a cozy seating arrangement enhanced by the greenery from the planter, contributing to the overall aesthetic and functional layout of the space."
+    summary "The group of objects consists of furniture and a decorative planter in a 3D environment. &#10;&#10;1. **BucketSeat_24** is positioned at coordinates [-11.92, 3.71, 0.63], offering a comfortable seating option.&#10;2. **planter_Mangrove_Fan_Palm3_Blueprint_344** is located at [-13.35, 2.06, 0.23], featuring a vibrant plant that adds greenery to the space. &#10;3. **CornerSofa_26** is situated at [-12.74, 4.57, 0.66], providing a cozy lounging area for multiple occupants.&#10;4. **BaseCharacter_Sitting2_5**, placed at [-12.17, 3.65, 0.65], appears to represent a seated character, likely interacting with the surrounding furniture.&#10;&#10;These elements are arranged in a spatial configuration that suggests a relaxed living area, combining comfort and aesthetics."
   ]
   node [
     id 103
@@ -1620,7 +1620,7 @@ graph [
     position 7.70782567168192
     position -1.894558886686961
     level 2
-    summary "The group of objects consists of two exit signs and a drone, each positioned in a 3D space. The first exit sign, exitSign13_16, is located at coordinates approximately (-12.13, 7.08, -2.07). The second exit sign, exitSign12_9, is situated nearby at approximately (-11.57, 9.16, -1.97). The drone, labeled drone_6, is positioned slightly closer to the origin at coordinates (-10.71, 6.89, -1.64). Overall, these objects are in close proximity to each other, with the exit signs being aligned along the x-axis and the drone positioned in between them."
+    summary "In the described 3D environment, there are three notable objects: two exit signs and a drone. The first exit sign, labeled exitSign13_16, is located at the coordinates [-12.13, 7.08, -2.07]. The second exit sign, exitSign12_9, is positioned slightly to the northeast at [-11.57, 9.16, -1.97]. The drone, identified as drone_6, occupies a position nearby at approximately [-10.71, 6.89, -1.64]. The exit signs are relatively close to each other, while the drone is positioned to the southwest of the exit signs, indicating a potential path of movement or interaction in this environment."
   ]
   node [
     id 104
@@ -1629,7 +1629,7 @@ graph [
     position 6.336187999307684
     position 0.5384354591369629
     level 2
-    summary "The object &#34;posterBoard8_Blueprint&#34; is a blueprint-style poster board located at the coordinates [-7.7621, 6.3362, 0.5384]. It appears to be a flat, likely rectangular object positioned above the ground level (0.5384 on the Z-axis) within a 3D space. The specific designation suggests it may be part of a series of blueprints or designs, possibly used for display or informational purposes."
+    summary "The object &#34;posterBoard8_Blueprint&#34; is positioned in a 3D space at the coordinates [-7.7621, 6.3362, 0.5384]. This suggests that the object is located towards the left side and slightly in front of the origin point in this environment, with an elevation of approximately 0.54 units above the ground plane. It likely serves as a display or information board, possibly featuring design elements or graphics intended for presentation."
   ]
   node [
     id 105
@@ -1638,7 +1638,7 @@ graph [
     position 6.706288825082154
     position -0.02110443115234375
     level 2
-    summary "This summary details a collection of objects situated in a 3D environment:&#10;&#10;1. **CornerSofa2** - Positioned at coordinates [-14.53, 5.84, 0.08], this object serves as a seating area, likely placed in a living space.&#10;   &#10;2. **LapTopTable_32** - Located at [-15.22, 6.13, -0.00], this table is intended for use with laptops, suggesting a workspace or study area nearby.&#10;&#10;3. **OfficeDoor13** - Found at [-13.81, 8.92, 0.25], this door provides access to an office space, indicating an entrance or exit point in the layout.&#10;&#10;4. **ReclinerSofa_40** - At position [-14.64, 4.55, 0.03], this recliner adds additional seating, possibly for relaxation purposes, complementing the CornerSofa2.&#10;&#10;5. **drone_7** - Hovering at coordinates [-14.06, 8.08, -0.46], this drone is likely being utilized for surveillance or delivery tasks within the space.&#10;&#10;These objects together create a functional living and working space, incorporating seating, workspace, access points, and a technology element."
+    summary "The group of objects is situated within a 3D environment and includes a variety of furniture and a drone. &#10;&#10;1. **CornerSofa2** is located at coordinates [-14.53, 5.84, 0.08], offering a comfortable seating area in the space.&#10;2. **LapTopTable_32** is positioned slightly to the west at [-15.22, 6.13, -0.00], likely serving as a workspace adjacent to the sofa.&#10;3. **OfficeDoor13** is situated to the north at [-13.81, 8.92, 0.25], providing access to the room or office area.&#10;4. **ReclinerSofa_40** is found at [-14.64, 4.55, 0.03], adding another seating option lower in the space in front of the CornerSofa2.&#10;5. Finally, **drone_7** is hovering at a higher elevation with coordinates {'x': -14.06, 'y': 8.08, 'z': -0.46}, indicating it might be involved in monitoring or providing a view of the environment. &#10;&#10;Together, these objects create a functional and interactive living or office space with multiple seating options and a drone for added functionality."
   ]
   node [
     id 106
@@ -1647,7 +1647,7 @@ graph [
     position 8.131022214889526
     position -0.6350338459014893
     level 2
-    summary "The group consists of two drones: drone_8 and drone_9. Drone_8 is positioned at coordinates (-17.76, 8.40, -0.54), while drone_9 is at (-21.41, 7.86, -0.73). Both drones are situated in a 3D space with similar height (z-coordinates close to -0.54) but different x and y positions, indicating that they are relatively close together in the horizontal plane but not at the same location."
+    summary "The objects in this group consist of two drones: drone_8 and drone_9. &#10;&#10;- **drone_8** is located at coordinates (-17.76, 8.40, -0.54) in the 3D space, indicating it is positioned slightly above ground level with a y-coordinate of 8.40.&#10;- **drone_9** is situated at (-21.41, 7.86, -0.73), also positioned above ground but slightly lower than drone_8 with a y-coordinate of 7.86.&#10;&#10;Both drones have similar z-coordinates, suggesting they are operating at relatively close altitudes. They are approximately 3.65 units apart along the x-axis and slightly aligned along the y-axis."
   ]
   node [
     id 107
@@ -1656,7 +1656,7 @@ graph [
     position 8.466860294342041
     position -0.9761256277561188
     level 2
-    summary "The group consists of two drones, drone_10 and drone_11. Drone_10 is located at the coordinates (-26.81, 8.58, -0.86), while drone_11 is positioned slightly farther away at (-30.13, 8.35, -1.09). Both drones are situated in close proximity to each other in a 3D space, with drone_11 being positioned to the left and slightly lower than drone_10. The z-coordinates indicate that both drones are hovering at a similar altitude above a reference point, but drone_11 is marginally lower."
+    summary "The summary of the group of objects includes two drones: drone_10 and drone_11. &#10;&#10;- **drone_10** is located at coordinates (-26.81, 8.58, -0.86). &#10;- **drone_11** is positioned nearby at (-30.13, 8.35, -1.09). &#10;&#10;Both drones are situated at similar elevations, with drone_10 being slightly higher than drone_11. They are relatively close to each other in the 3D space, suggesting potential coordination or interaction between them."
   ]
   node [
     id 108
@@ -1665,7 +1665,7 @@ graph [
     position 8.504061511181282
     position -0.1350379685560862
     level 2
-    summary "In the described 3D environment, there are three objects of interest: &#10;&#10;1. **Door (door_officeA10_8)**: Located at position [-34.68, 9.28, 0.56]. This is an office door likely serving as an entrance or exit point in the environment.&#10;&#10;2. **Drone 12**: Situated at position [-33.33, 8.41, -0.56]. This drone is hovering or positioned relatively closely to the door, suggesting it may be monitoring or interacting with that area.&#10;&#10;3. **Drone 13**: Found at position [-37.86, 7.82, -0.41]. This drone is positioned further away from both the door and Drone 12, which could indicate it is covering a different area or functionality within the environment.&#10;&#10;Overall, the presence of the door and the two drones suggests a scenario involving observation or access management, possibly in a controlled area like an office or research space."
+    summary "The group consists of an office door and two drones positioned within a 3D environment. The office door (door_officeA10_8) is located at coordinates [-34.68, 9.28, 0.56]. Drone_12 is positioned nearby at approximately [-33.33, 8.41, -0.56], and drone_13 is situated further away at around [-37.86, 7.82, -0.41]. The drones are both hovering at lower elevations compared to the door, which is situated at a positive height above ground level."
   ]
   node [
     id 109
@@ -1674,7 +1674,7 @@ graph [
     position 0.16237884741114691
     position -1.1140676587820053
     level 3
-    summary "The summary of the group of objects includes two drones with distinct positions in a 3D environment. &#10;&#10;- **Drone_0** is located at the coordinates (0.0, 0.0, -0.9707), indicating it is positioned directly above the origin point on the z-axis.&#10;- **Drone1** is positioned at approximately (1.495, 0.325, -1.2574), indicating it is situated to the right and slightly above Drone_0, with a more negative z-coordinate suggesting it is lower than Drone_0. &#10;&#10;Both drones are positioned within close proximity to each other, with a slight offset in their x, y, and z coordinates."
+    summary "In the described 3D environment, there are two drones with distinct positions. The first drone, referred to as &#34;drone_0,&#34; is positioned at coordinates (0.0, 0.0, -0.97), indicating that it is located at the origin of the x and y axes while slightly below the zeroth level on the z-axis. The second drone, labeled &#34;Drone1,&#34; is situated at (1.49, 0.32, -1.26), placing it to the right and slightly above drone_0 in the x and y dimensions, while also being below the zero level on the z-axis. This positioning suggests a close proximity between the two drones, with Drone1 being offset in the horizontal plane."
   ]
   node [
     id 110
@@ -1683,7 +1683,7 @@ graph [
     position 0.6825918733927643
     position 1.2266992330551147
     level 3
-    summary "The object &#34;BaseCharacter_Walking4_11&#34; is a character model positioned at coordinates [5.4223, 0.6826, 1.2267] in a 3D environment. This position indicates that the character is set slightly above a ground plane, likely indicating a walking animation or state, given its name. The coordinates suggest the character is situated within a defined space, potentially on a designated path or in relation to other objects."
+    summary "The object &#34;BaseCharacter_Walking4_11&#34; is positioned in a 3D environment at the coordinates [5.4223, 0.6826, 1.2267]. This indicates that the character is located approximately 5.42 units along the X-axis, 0.68 units along the Y-axis, and 1.23 units along the Z-axis. The naming suggests that it is likely a character model intended to depict a walking animation, possibly as part of a game or simulation."
   ]
   node [
     id 111
@@ -1692,7 +1692,7 @@ graph [
     position -4.479154604118245
     position -0.7328165471553802
     level 3
-    summary "The group of objects consists of a blue blueprint for a long planter, identified as `planterLong4_Blueprint3`, located at the coordinates [0.56, -4.98, -0.25]. Additionally, there is a drone, referred to as `drone_1`, positioned at [2.87, -3.98, -1.22]. The planter blueprint is situated slightly above the drone's position and both objects are placed in a 3D space, suggesting they may interact or be part of a gardening or landscaping project."
+    summary "The summary of the provided objects is as follows:&#10;&#10;1. **Planter (planterLong4_Blueprint3)**: This is a long planter object positioned at coordinates approximately (0.56, -4.98, -0.25). It is likely used for planting flowers or shrubs, contributing to the aesthetics of the environment.&#10;&#10;2. **Drone (drone_1)**: The drone is located at coordinates (2.87, -3.98, -1.22). This suggests it is hovering or flying in the 3D space, perhaps for surveillance or delivery purposes.&#10;&#10;Together, these objects are part of a dynamic scene, with the stationary planter likely serving as a decorative or functional element on the ground, while the drone operates in the airspace above it."
   ]
   node [
     id 112
@@ -1701,7 +1701,7 @@ graph [
     position -10.126800435807283
     position 0.1883343756198883
     level 3
-    summary "In the given 3D environment, we have four distinct objects with specific positions:&#10;&#10;1. **Drone (drone_2)**: Positioned at coordinates (0.05, -8.75, -1.34), indicating it is likely hovering or suspended above the ground level.&#10;   &#10;2. **Sofa Recliner (sofa_recliner4)**: Located at (-2.21, -11.79, 0.81), suggesting it is a part of the seating area, possibly angled for comfort.&#10;&#10;3. **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)**: Found at (-2.79, -10.62, 0.66), indicating it is nearby the sofa recliner, serving as a functional surface for placing items.&#10;&#10;4. **Base Character Sitting (BaseCharacter_Sitting_2)**: Positioned at (-0.94, -9.34, 0.63), this object represents a character seated, likely in relation to the sofa recliner and coffee table.&#10;&#10;Overall, the layout suggests a cozy gathering area with seating and a coffee table, with the drone positioned separately in the space above."
+    summary "The group of objects consists of a drone, a sofa recliner, a wooden cage coffee table, and a sitting character, each positioned within a 3D environment. &#10;&#10;1. **drone_2** is situated at a relatively high position in the space, specifically at coordinates (0.054, -8.754, -1.345), suggesting it might be hovering or flying.&#10;2. **sofa_recliner4** is located at (-2.214, -11.792, 0.806), indicating it is placed on the ground and slightly elevated, likely providing comfort as part of a seating arrangement.&#10;3. **woodenCageCoffeeTable_58** is positioned closely to the sofa at (-2.790, -10.619, 0.664), which suggests it may be utilized as a functional surface for placing items like drinks or decorative objects.&#10;4. **BaseCharacter_Sitting_2** occupies a seat at (-0.940, -9.342, 0.628), possibly in proximity to the sofa, enhancing the scene's liveliness as it depicts a human presence interacting with the furniture.&#10;&#10;Overall, the arrangement indicates a living space with seating accommodations, a central coffee table for utility, and an aerial element provided by the drone, contributing to the depiction of a modern or casual environment."
   ]
   node [
     id 113
@@ -1710,7 +1710,7 @@ graph [
     position -6.282484605617604
     position 0.24738198518753052
     level 3
-    summary "The summarized group of objects consists of two charcoal grey cafe chairs, identified as chair_cafeCharcoalGrey10 and chair_cafeCharcoalGrey9, positioned near each other at coordinates that suggest they are part of a seating arrangement. The chairs are situated at positions [-2.827, -6.318] and [-2.561, -5.342], respectively. A small grey table, smallGreyTable3, is located at position [-3.462, -6.364], indicating it may be intended for use with the chairs nearby. Additionally, there is a seated character, BaseCharacter_Sitting6_17, positioned at [-1.639, -7.106], which suggests that this character is interacting with or using the seating and table set-up in this 3D environment. Overall, the arrangement implies a casual cafe-like setting."
+    summary "In the described 3D environment, there are several objects arranged as follows: &#10;&#10;1. **Chair (CafeCharcoalGrey10)** is positioned at coordinates [-2.83, -6.32, 0.24].&#10;2. **Chair (CafeCharcoalGrey9)** is located nearby at coordinates [-2.56, -5.34, 0.16].&#10;3. **Small Grey Table (smallGreyTable3)** is placed at coordinates [-3.46, -6.36, 0.22], slightly offset from the chairs.&#10;4. **Base Character (Sitting)** is seated at coordinates [-1.64, -7.11, 0.38], indicating a space ideal for dining or relaxation.&#10;&#10;The arrangement suggests a casual cafe-like setting, with the chairs and table positioned to facilitate interaction or conversation."
   ]
   node [
     id 114
@@ -1719,7 +1719,7 @@ graph [
     position -9.030493106606345
     position 0.42355822026729584
     level 3
-    summary "The described environment features a cozy cafe or lounge area. A variety of seating options are present, including five chairs&#8212;three in a charcoal grey color and two in orange&#8212;arranged around three small white tables, creating an inviting atmosphere for guests. &#10;&#10;Key furniture items include a small white table located near chairs and others positioned strategically in the space, such as chair_cafeCharcoalGrey2, chair_cafeCharcoalGrey3, and chair_cafeOrange4. The tables provide surfaces suitable for drinks or snacks.&#10;&#10;To enhance the aesthetic, there's a sofa placed slightly away from the other seating, alongside several walls including a glass wall and a snack shop wall, which likely contributes to an open and engaging environment. &#10;&#10;Notably, there is a BaseCharacter_Sitting9 positioned on the chair, adding a sense of life to the scene, while a drone indicates an element of technology within this 3D space. Additional structural features such as atrium towers and base walls suggest that the area is part of a larger architectural design, enhancing both functionality and style."
+    summary "The described group of objects features various pieces of furniture and structural elements situated in a 3D environment. Highlights include multiple chairs, such as two charcoal grey cafe chairs and two orange cafe chairs, positioned near small white tables. The seating arrangements are complemented by a sofa, suggesting a recreational or communal space.&#10;&#10;Key elements include:&#10;- Furniture: Two small white tables and five chairs (three charcoal grey and two orange) are arranged in an area that likely serves as a cafe or lounge.&#10;- Structural Features: An office glass wall and a snack shop wall indicate a mixed-use space, enhancing the environment's functionality.&#10;- Technologies: A drone is situated nearby, hinting at a tech-savvy or modern aspect to the space.&#10;- Additional Elements: Several atrium and tower features, alongside a side base wall, provide architectural context, possibly creating an indoor atrium.&#10;&#10;Overall, the arrangement suggests a dynamic social area with seating for relaxation, accompanied by modern structural elements and tech integration."
   ]
   node [
     id 115
@@ -1728,7 +1728,7 @@ graph [
     position -5.809399258600855
     position 0.35304107666015627
     level 3
-    summary "The summarized group of objects includes a wooden slats bench located at coordinates [-4.79, -5.60, 0.25] and two charcoal grey caf&#233; chairs positioned nearby: one at [-7.01, -5.80, 0.40] and another at [-6.62, -6.67, 0.46]. Additionally, there are two small grey tables; one is at [-6.21, -4.99, 0.28] and the other at [-6.36, -5.98, 0.38]. This arrangement creates a cozy seating area, likely suitable for relaxing or socializing."
+    summary "This summary describes a cozy seating area in a 3D environment featuring a combination of wooden and grey furniture. &#10;&#10;1. **Bench (woodenSlats2)**: Positioned at coordinates [-4.79, -5.60, 0.25], this bench is likely designed for multiple people, offering a rustic touch with its wooden slats.&#10;&#10;2. **Chair (cafeCharcoalGrey14_6)**: Located at [-7.01, -5.80, 0.40], this charcoal grey caf&#233; chair adds a modern element to the seating arrangement, suggesting a relaxed atmosphere.&#10;&#10;3. **Chair (cafeCharcoalGrey15_8)**: Found at [-6.62, -6.67, 0.46], this chair complements the previous one, maintaining a consistent aesthetic with its charcoal grey shade and a slightly higher position.&#10;&#10;4. **Small Grey Table (smallGreyTable6)**: Set at [-6.21, -4.99, 0.28], this table provides a convenient surface for drinks or snacks, enhancing the social aspect of the seating area.&#10;&#10;5. **Small Grey Table (smallGreyTable8)**: Positioning it at [-6.36, -5.98, 0.38], this additional small table contributes to the overall functionality of the space, accommodating various needs.&#10;&#10;Overall, these objects create a welcoming and stylish environment suitable for casual gatherings or relaxation."
   ]
   node [
     id 116
@@ -1737,7 +1737,7 @@ graph [
     position -7.000822040373613
     position 0.6003863215446472
     level 3
-    summary "In this 3D environment, there are two chairs and a small white table positioned closely together, suggesting a casual dining or caf&#233; setting. The chair, identified as &#34;chair_cafeCharcoalGrey12,&#34; is located at coordinates [-8.3267, -5.6705, 0.4689], while the &#34;smallWhiteTable7&#34; sits nearby at [-8.0916, -7.4522, 0.6276]. Two characters are depicted sitting in this arrangement: &#34;BaseCharacter_Sitting10_29&#34; is positioned at [-8.5260, -7.9877, 0.7061], and &#34;BaseCharacter_Sitting12&#34; is slightly elevated at [-8.5111, -6.8930, 0.5989]. The proximity and orientation of these objects suggest an interactive social environment."
+    summary "In this 3D environment, there are a group of objects arranged in close proximity, suggesting a cozy, cafe-like setting. The **charcoal grey cafe chair** (chair_cafeCharcoalGrey12) is positioned at coordinates [-8.3267, -5.6705, 0.4689], providing seating for patrons. Nearby, a **small white table** (smallWhiteTable7) is located at [-8.0916, -7.4522, 0.6276], likely intended for placing drinks or food. Sitting at the table is a **BaseCharacter** model (BaseCharacter_Sitting10_29) at [-8.5260, -7.9877, 0.7061], which implies the character is enjoying the cafe atmosphere. Another **BaseCharacter** model (BaseCharacter_Sitting12) is located at [-8.5111, -6.8930, 0.5989], indicating additional presence and interaction within this casual setting. Overall, the arrangement features seating and social interaction typical of a relaxed dining area."
   ]
   node [
     id 117
@@ -1746,7 +1746,7 @@ graph [
     position -2.2917215824127197
     position -1.5484551191329956
     level 3
-    summary "The object &#34;drone_4&#34; is positioned at the coordinates (-9.66, -2.29, -1.55) in a 3D environment. Its location indicates that it is placed in the negative quadrants of the x, y, and z axes, suggesting it may be situated below and to the left of a reference point, likely close to the ground or another surface, given the negative z-coordinate."
+    summary "The object &#34;drone_4&#34; is positioned in a 3D environment at the coordinates x: -9.66, y: -2.29, and z: -1.55. This indicates that the drone is located in a negative space along the x and y axes, and slightly below the reference plane along the z-axis."
   ]
   node [
     id 118
@@ -1755,7 +1755,7 @@ graph [
     position -1.041554967683692
     position 0.7243479490280151
     level 3
-    summary "The objects &#34;staircaseBottom_6&#34; and &#34;staircaseMid_8&#34; are located at the exact same position in a 3D environment, specifically at the coordinates [-13.3845, -1.0416, 0.7243]. This suggests that they may be components of a staircase structure, where the &#34;staircaseBottom&#34; likely represents the lower segment and the &#34;staircaseMid&#34; represents a middle section. Given their identical positioning, it is possible that they are overlapping or part of a multi-tiered staircase."
+    summary "The two objects, staircaseBottom_6 and staircaseMid_8, are located at the exact same coordinates in the 3D environment: [-13.3845, -1.0416, 0.7243]. This suggests that they could be part of a multi-tiered staircase system, with the bottom and mid segments potentially stacked or aligned together at this position."
   ]
   node [
     id 119
@@ -1764,7 +1764,7 @@ graph [
     position 1.9636689843757698
     position 0.023861080408096313
     level 3
-    summary "The group of objects consists of a walking character and two poster boards, along with a drone. &#10;&#10;1. **BaseCharacter_Walking_2**: This character is located at coordinates \([-9.39, 1.03, 0.57]\), indicating it is positioned fairly low to the ground (z-coordinate) and slightly towards the left side of the space (negative x-coordinate). &#10;&#10;2. **posterBoard6**: This poster board is positioned at \([-8.15, 2.84, 0.54]\), suggesting it is elevated slightly higher than the character and situated to the right.&#10;&#10;3. **posterBoard_24**: Located at \([-7.69, 2.39, 0.54]\), this poster board is also above the ground and nearby the first poster board, slightly to the right.&#10;&#10;4. **drone_5**: The drone is positioned at \([-10.54, 1.59, -1.56]\), indicating it is above the ground (negative z-coordinate) and located further left compared to the walking character.&#10;&#10;Overall, the arrangement indicates a dynamic scene with a walking character interacting with nearby poster boards and a drone operating above them, creating a layered and interactive environment."
+    summary "In the given 3D environment, there are four notable objects:&#10;&#10;1. **BaseCharacter_Walking_2**: Positioned at coordinates [-9.39, 1.03, 0.57], this character appears to be in motion, contributing to the dynamic aspect of the scene.&#10;&#10;2. **posterBoard6**: Located at [-8.15, 2.84, 0.54], this poster board is likely displaying some information or artwork, elevated above the character's position, which may make it more visible.&#10;&#10;3. **posterBoard_24**: Found at [-7.69, 2.39, 0.54], this poster board is slightly lower than the previous one but also serves a similar purpose of conveying visual information within the space.&#10;&#10;4. **drone_5**: Hovering at coordinates [-10.54, 1.59, -1.56], this drone is positioned lower than the character and boards, suggesting it might be surveying the area from a different height or engaging in an aerial task.&#10;&#10;Overall, this collection of objects includes a walking character, two poster boards, and a drone, indicating an interactive environment where movement and information dissemination are key elements."
   ]
   node [
     id 120
@@ -1773,7 +1773,7 @@ graph [
     position 3.498806402708373
     position 0.5429845452308655
     level 3
-    summary "In this 3D environment, we have a small collection of objects positioned in close proximity. The **BucketSeat_24** is located at coordinates [-11.92, 3.71, 0.63] and is likely designed for seating. The **planter_Mangrove_Fan_Palm3_Blueprint_344**, positioned at [-13.35, 2.06, 0.23], adds a touch of greenery, possibly containing a decorative plant. The **CornerSofa_26**, found at [-12.74, 4.57, 0.66], serves as a comfortable seating option. Lastly, the **BaseCharacter_Sitting2_5** is situated at [-12.17, 3.65, 0.65], presumably depicting a character seated, possibly on the BucketSeat or the CornerSofa. Overall, this arrangement suggests a cozy seating area with decorative elements, enhancing the environment's aesthetic appeal."
+    summary "In this 3D environment, there are four distinct objects positioned as follows:&#10;&#10;1. **BucketSeat_24** is located at coordinates [-11.92, 3.71, 0.63], suggesting it is a seat-type object.&#10;2. **planter_Mangrove_Fan_Palm3_Blueprint_344** is placed at [-13.35, 2.06, 0.23], indicating it is a decorative planter with a mangrove fan palm design.&#10;3. **CornerSofa_26** resides at [-12.74, 4.57, 0.66], which appears to be a corner sofa, likely designed for seating.&#10;4. **BaseCharacter_Sitting2_5** is situated at [-12.17, 3.65, 0.65], representing a character in a sitting position.&#10;&#10;These objects create a scene that likely includes a seating area accompanied by greenery, possibly designed for relaxation or social interaction."
   ]
   node [
     id 121
@@ -1782,7 +1782,7 @@ graph [
     position 7.70782567168192
     position -1.894558886686961
     level 3
-    summary "The group consists of three objects in a 3D environment:&#10;&#10;1. **exitSign13_16** is positioned at coordinates **[-12.13, 7.08, -2.07]**, indicating it's located slightly to the left and a bit higher compared to the others.&#10;2. **drone_6** is located at **[-10.71, 6.89, -1.64]**, which is nearer to the center and slightly lower in elevation compared to exitSign13_16.&#10;3. **exitSign12_9** is at **[-11.57, 9.16, -1.97]**, positioned higher than drone_6 and exitSign13_16, with a significant vertical separation.&#10;&#10;Overall, the exit signs are positioned at different heights and along the same lateral axis, while the drone is closer to the center but lower than the exit signs."
+    summary "In the specified 3D environment, there are three objects with notable positions. The first is **exitSign13_16**, located at coordinates [-12.13, 7.08, -2.07]. The second object, **drone_6**, is positioned at approximately [-10.71, 6.89, -1.64]. Finally, **exitSign12_9** is found at coordinates [-11.57, 9.16, -1.97]. The exit signs are relatively close to each other, while the drone is situated slightly further to the north-east, indicating a potential pathway or area of navigation between the exit signs and the drone."
   ]
   node [
     id 122
@@ -1791,7 +1791,7 @@ graph [
     position 6.336187999307684
     position 0.5384354591369629
     level 3
-    summary "The object &#34;posterBoard8_Blueprint&#34; is located at the coordinates [-7.7621, 6.3362, 0.5384]. This suggests that it is positioned in a 3D environment, likely on or near the ground level given the z-coordinate. Its designation implies that it may be a representation or plan, possibly related to construction or layout, featuring a blue print design. The location indicates it could be part of a larger scene or project where spatial organization is important."
+    summary "The object named **posterBoard8_Blueprint** is positioned at coordinates **[-7.76, 6.34, 0.54]** in a 3D environment. This object likely serves as a display or reference board for showcasing designs, plans, or information, indicated by its designation as a &#34;blueprint.&#34; The coordinates suggest it is situated slightly above ground level, possibly within a workspace or designed area."
   ]
   node [
     id 123
@@ -1800,7 +1800,7 @@ graph [
     position 6.706288825082154
     position -0.02110443115234375
     level 3
-    summary "This group of objects consists of various furnishings and a drone in a 3D environment. The **CornerSofa2** is situated at coordinates [-14.53, 5.84, 0.08], providing a comfortable seating area. Nearby, the **LapTopTable_32** is positioned at [-15.22, 6.13, -0.00], likely serving as a workspace. The **OfficeDoor13** is located at [-13.81, 8.92, 0.25], indicating access to another area. The **ReclinerSofa_40** is found at [-14.64, 4.55, 0.03], adding additional seating options. Finally, **drone_7** is placed at coordinates {'x': -14.06, 'y': 8.08, 'z': -0.46}, suggesting its use for monitoring or navigating the space. Overall, these objects appear to create a functional and dynamic area, combining seating, workspace, and technological elements."
+    summary "In this 3D environment, we have a collection of objects primarily oriented around a seating and work area. &#10;&#10;1. **CornerSofa2** is positioned at coordinates [-14.53, 5.84, 0.08], providing a comfortable seating option.&#10;2. **LapTopTable_32** is located nearby at [-15.22, 6.13, -0.00], serving as a workspace, likely suitable for a laptop or other work-related activities.&#10;3. **OfficeDoor13** stands at the entrance point at [-13.81, 8.92, 0.25], likely connecting this workspace to another area.&#10;4. **ReclinerSofa_40** is found at [-14.64, 4.55, 0.03], offering additional relaxed seating in the vicinity.&#10;5. Lastly, **drone_7** is situated in the upper area at {'x': -14.06, 'y': 8.08, 'z': -0.46}, suggesting it may be hovering or airborne within this space.&#10;&#10;Overall, these objects create a functional area for relaxation and work, with both furniture for comfort and tech for productivity."
   ]
   node [
     id 124
@@ -1809,7 +1809,7 @@ graph [
     position 8.131022214889526
     position -0.6350338459014893
     level 3
-    summary "The group consists of two drones: drone_8 and drone_9. &#10;&#10;- **drone_8** is located at coordinates (-17.76, 8.40, -0.54).&#10;- **drone_9** is at a position of (-21.41, 7.86, -0.73).&#10;&#10;Both drones are positioned in close proximity to each other along the x-axis, with drone_9 being further back in the negative x-direction compared to drone_8. The y-coordinates indicate that drone_8 is slightly higher than drone_9, while their z-coordinates are relatively similar, indicating they are at similar altitudes."
+    summary "The group consists of two drones, drone_8 and drone_9. &#10;&#10;- **drone_8** is located at coordinates (-17.76, 8.40, -0.54) in the 3D space.&#10;- **drone_9** is positioned at (-21.41, 7.86, -0.73). &#10;&#10;Both drones are situated at similar altitudes, with drone_8 slightly higher than drone_9. They are positioned within close proximity to each other, with a difference of about 3.65 units along the x-axis."
   ]
   node [
     id 125
@@ -1818,7 +1818,7 @@ graph [
     position 8.504061511181282
     position -0.1350379685560862
     level 3
-    summary "The summary of the given objects in the 3D environment is as follows:&#10;&#10;1. **Door (door_officeA10_8)** - Located at coordinates [-34.68151471155948, 9.280081662602685, 0.5592843294143677]. This door likely serves as an entrance or exit point in the office setting.&#10;&#10;2. **Drone 12** - Positioned at approximately x: -33.33, y: 8.41, z: -0.56. This drone is situated closer to Door A10, possibly indicating it is in the vicinity of the office.&#10;&#10;3. **Drone 13** - Positioned at approximately x: -37.86, y: 7.82, z: -0.41. This drone is located further away from Drone 12 and Door A10, suggesting more distance from the office area.&#10;&#10;Overall, the group consists of an office door and two drones, with the door serving as a fixed point in the environment and the drones positioned at varying distances from it."
+    summary "In the described 3D environment, there is an office door labeled &#34;door_officeA10_8&#34; located at the coordinates [-34.68, 9.28, 0.56]. Nearby, two drones are present: &#34;drone_12,&#34; positioned at approximately [-33.33, 8.41, -0.56], and &#34;drone_13,&#34; located at roughly [-37.86, 7.82, -0.41]. The drones are situated close to the door, with &#34;drone_12&#34; being in proximity to the door and &#34;drone_13&#34; positioned further away along the negative x-axis."
   ]
   node [
     id 126
@@ -1827,7 +1827,7 @@ graph [
     position 0.16237884741114691
     position -1.1140676587820053
     level 4
-    summary "The summary describes two drones positioned in a 3D space. The first drone, referred to as &#34;drone_0,&#34; is located at coordinates (0.0, 0.0, -0.97), while the second drone, labeled &#34;Drone1,&#34; is positioned at (1.49, 0.32, -1.26). Both drones have negative values for the z-coordinate, indicating that they are below a reference plane, likely positioned in an area that is below ground level or the origin point of the z-axis. Their relative positions suggest that &#34;Drone1&#34; is situated diagonally from &#34;drone_0,&#34; with an approximate distance separating them in the 3D space."
+    summary "The summary of the group of objects includes two drones located in a 3D space. &#10;&#10;- **Drone 0** is positioned at coordinates (0.0, 0.0, -0.97), which indicates it is at the origin of the x and y axes and slightly below the reference level on the z-axis. &#10;- **Drone 1** is situated at coordinates approximately (1.49, 0.32, -1.26), indicating that it is positioned to the right and slightly forward relative to Drone 0 while also being below the reference level on the z-axis.&#10;&#10;Both drones are hovering below the 0 z-axis plane, with Drone 1 being further away in the positive x direction and slightly higher in the y direction compared to Drone 0."
   ]
   node [
     id 127
@@ -1836,7 +1836,7 @@ graph [
     position 0.6825918733927643
     position 1.2266992330551147
     level 4
-    summary "The object, titled &#34;BaseCharacter_Walking4_11,&#34; is a character model likely representing a walking animation or state. It is positioned in a three-dimensional space at coordinates [5.422344285083111, 0.6825918733927643, 1.2266992330551147]. This position indicates that the character is situated slightly above the ground (given the z-coordinate), potentially indicating its placement within an environment where it is either part of a scene, an interactive application, or a gaming context. The specific name may imply that it is one of several character variations or animations in a larger system."
+    summary "The object &#34;BaseCharacter_Walking4_11&#34; is a 3D entity located at the coordinates [5.422, 0.683, 1.227]. This position suggests that the character is placed somewhat above ground level (indicated by the z-coordinate) and possibly in motion, as indicated by the &#34;Walking&#34; designation in its name. The numeric values for its position may imply its setting within a larger 3D environment, potentially interacting with other objects or elements in that space."
   ]
   node [
     id 128
@@ -1845,7 +1845,7 @@ graph [
     position -4.479154604118245
     position -0.7328165471553802
     level 4
-    summary "The group consists of two objects in a 3D environment:&#10;&#10;1. **Planter (planterLong4_Blueprint3)**: Located at coordinates [0.56, -4.98, -0.25], this object appears to be a long planter, likely designed for planting multiple types of vegetation.&#10;&#10;2. **Drone (drone_1)**: Positioned at coordinates {'x': 2.87, 'y': -3.98, 'z': -1.22}, this drone is presumably capable of flying and may be used for tasks such as monitoring or surveying the surrounding area.&#10;&#10;Together, these objects indicate an environment involving both gardening or landscaping (with the planter) and aerial surveillance or delivery capabilities (with the drone)."
+    summary "The scene features two distinct objects in a 3D environment: &#10;&#10;1. **Planter** (with identifier `planterLong4_Blueprint3`) is located at a coordinate position of approximately [0.56, -4.98, -0.25]. This suggests it is placed slightly elevated on the Y-axis with a negative Z-coordinate, indicating it might be near or below ground level.&#10;&#10;2. **Drone** (identifier `drone_1`) is situated at the position {'x': 2.87, 'y': -3.98, 'z': -1.22}. This drone is positioned higher on the X-axis relative to the planter and also has a negative Z-coordinate, indicating that it is hovering at a lower height in the 3D space.&#10;&#10;This summary highlights the relative positions of the two objects, suggesting a spatial arrangement where the planter is grounded while the drone is elevated but within proximity."
   ]
   node [
     id 129
@@ -1854,7 +1854,7 @@ graph [
     position -10.126800435807283
     position 0.1883343756198883
     level 4
-    summary "This summary describes a group of four objects within a 3D environment:&#10;&#10;1. **Drone (drone_2)**: Positioned at approximately (0.05, -8.75, -1.34), hovering in a slightly elevated spot.&#10;   &#10;2. **Sofa (sofa_recliner4)**: Located at (-2.21, -11.79, 0.81), positioned on the ground and likely intended for seating.&#10;   &#10;3. **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)**: Found at (-2.79, -10.62, 0.66), also on the ground, near the sofa, serving as a functional surface.&#10;   &#10;4. **Base Character (BaseCharacter_Sitting_2)**: Sitting at (-0.94, -9.34, 0.63), likely interacting with the nearby furniture, positioned in a natural seating posture.&#10;&#10;The objects appear to be arranged in a living or leisure space, with the sofa and coffee table close together, complemented by the seated character and the drone positioned higher in the environment."
+    summary "In the described 3D environment, there are four objects positioned as follows:&#10;&#10;1. **Drone (drone_2)**: Located at coordinates (0.0542, -8.7543, -1.3447), this object is situated slightly above the ground level, hovering in space.&#10;   &#10;2. **Sofa Recliner (sofa_recliner4)**: Positioned at (-2.2141, -11.7916, 0.8064), this piece of furniture is likely set as part of a seating arrangement, slightly elevated above the ground.&#10;&#10;3. **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)**: This table is at (-2.7895, -10.6190, 0.6639), indicating it is nearby the sofa recliner and is also above the ground level.&#10;&#10;4. **Base Character (BaseCharacter_Sitting_2)**: The character, seated at position (-0.9396, -9.3424, 0.6277), suggests a relaxed or interactive scenario within the environment, potentially engaging with the table or sofa.&#10;&#10;Overall, the objects appear to create a cozy, collaborative space, with the character likely interacting with the seated furniture and the nearby coffee table. The drone adds a dynamic element above the arrangement."
   ]
   node [
     id 130
@@ -1863,7 +1863,7 @@ graph [
     position -6.282484605617604
     position 0.24738198518753052
     level 4
-    summary "The group of objects consists of two charcoal grey cafe chairs, positioned closely together, and a small grey table. The chairs, labeled chair_cafeCharcoalGrey10 and chair_cafeCharcoalGrey9, are respectively located at coordinates [-2.83, -6.32, 0.24] and [-2.56, -5.34, 0.16]. The small grey table, designated as smallGreyTable3, is situated at [-3.46, -6.36, 0.22]. Additionally, there is a character model, BaseCharacter_Sitting6_17, positioned at [-1.64, -7.11, 0.38], suggesting a scene of someone seated nearby, possibly at the table. The arrangement indicates a cozy seating area common in cafes."
+    summary "In the 3D environment, there are a total of four objects arranged in proximity to one another, creating a cozy seating area. Two caf&#233; chairs, identified as &#34;chair_cafeCharcoalGrey10&#34; positioned at [-2.83, -6.32, 0.24] and &#34;chair_cafeCharcoalGrey9&#34; at [-2.56, -5.34, 0.16], are situated near a small grey table, labeled &#34;smallGreyTable3,&#34; located at [-3.46, -6.36, 0.22]. There is also a character, &#34;BaseCharacter_Sitting6_17,&#34; placed at [-1.64, -7.11, 0.38], suggesting that the character is likely seated to engage with the table or nearby chairs. The arrangement implies a social or intimate setting, perfect for conversation or shared activities."
   ]
   node [
     id 131
@@ -1872,7 +1872,7 @@ graph [
     position -9.030493106606345
     position 0.42355822026729584
     level 4
-    summary "The described group of objects appears to form a social or recreational space, featuring a mix of seating and tables in various colors and arrangements. Key elements include several chairs, notably in charcoal grey and orange, positioned around small white tables, indicating a setup for casual dining or conversations. There are distinct elements like two small tables (smallWhiteTable3 and smallWhiteTable5) located near the chairs, with another (smallWhiteTable6) further away, suggesting an area for gatherings or snacks.&#10;&#10;An office glass wall (officeGlassWallA_19), possibly part of a larger office space or caf&#233;, creates a boundary within this area. A sofa (sofa_small_48) and a laptop table (table_laptop2) highlight resources for relaxation or remote work. The presence of a drone adds a dynamic technology aspect, while the atrium tower and vent suggest an architectural design emphasizing height and space.&#10;&#10;Overall, the arrangement implies a multifunctional environment that combines work, relaxation, and social interaction, with various seating options and functional furniture to accommodate different activities."
+    summary "The summarized group of objects consists primarily of seating and tables positioned in a cozy caf&#233; environment. Key elements include several chairs, including two charcoal grey chairs (chair_cafeCharcoalGrey2 and chair_cafeCharcoalGrey3) and two orange chairs (chair_cafeOrange4 and chair_cafeOrange5), indicating a blend of colors for a vibrant atmosphere. Small white tables (smallWhiteTable3, smallWhiteTable5, and smallWhiteTable6) complement the seating arrangements, providing spaces for patrons to enjoy their meals or drinks.&#10;&#10;In addition, there are architectural features such as the office glass wall (officeGlassWallA_19) and the snack shop wall (snackShopWall_32), which might serve as dividers or displays. A small sofa (sofa_small_48) suggests a relaxed area within the caf&#233;. Strategic placements of tech elements, like a laptop table (table_laptop2) and a drone (drone_3), hint at modern functionalities within the space. The atrium tower (atriumTower_2) and its vent (atriumTowerVent_27), along with a wall (sideBaseWall_2) provide structural details, enhancing the overall environment. Additionally, there is a character sitting (BaseCharacter_Sitting9_26), adding a lively element to the scene. Overall, this collection reflects a well-designed, functional, and inviting space."
   ]
   node [
     id 132
@@ -1881,7 +1881,7 @@ graph [
     position -5.809399258600855
     position 0.35304107666015627
     level 4
-    summary "The group of objects consists of several pieces of furniture arranged in a 3D environment. There is a wooden slatted bench located at the coordinates [-4.79, -5.60, 0.25], providing a potential seating area. Surrounding this bench are two charcoal grey cafe chairs: one positioned at [-7.01, -5.80, 0.40] and another at [-6.62, -6.67, 0.46], suggesting a cohesive dining or lounging setup. Additionally, there are two small grey tables, one at [-6.21, -4.99, 0.28] and the other at [-6.36, -5.98, 0.38], which likely serve as surfaces for drinks or meals. The arrangement of these objects indicates a functional social space designed for comfort and interaction."
+    summary "The group of objects consists of a wooden slats bench and several cafe-style chairs, arranged alongside two small grey tables. The wooden slats bench is positioned at coordinates [-4.79, -5.60, 0.25], providing a seating area. Two charcoal grey chairs are present: the first (chair_cafeCharcoalGrey14_6) is located at [-7.01, -5.80, 0.40], and the second (chair_cafeCharcoalGrey15_8) at [-6.62, -6.67, 0.46], creating a cozy cafe-style setup. Additionally, there are two small grey tables positioned nearby&#8212;one at [-6.21, -4.99, 0.28] and the other at [-6.36, -5.98, 0.38]&#8212;which provide surfaces for drinks or snacks, enhancing the functionality of the seating arrangement. Overall, this setup offers a comfortable and inviting space for social interaction or relaxation."
   ]
   node [
     id 133
@@ -1890,7 +1890,7 @@ graph [
     position -7.000822040373613
     position 0.6003863215446472
     level 4
-    summary "In a 3D environment, there are several objects arranged closely together. The **cafe chair** (chair_cafeCharcoalGrey12) is positioned at coordinates [-8.3267, -5.6705, 0.4689], providing seating with a charcoal grey color. Nearby, a **small white table** (smallWhiteTable7) sits at [-8.0916, -7.4522, 0.6276], likely serving as a surface for drinks or food. Two characters are also present: **BaseCharacter_Sitting10_29**, located at [-8.5260, -7.9877, 0.7061], and **BaseCharacter_Sitting12**, at [-8.5111, -6.8930, 0.5989]. Both characters are seated, suggesting a social or relaxed setting centered around the table. Overall, the arrangement suggests a cozy cafe-like atmosphere."
+    summary "In this 3D environment, there are two chairs and a small white table arranged in close proximity. The **charcoal grey cafe chair** (chair_cafeCharcoalGrey12) is located at coordinates [-8.32, -5.67, 0.47]. It is positioned near a **small white table** (smallWhiteTable7) at [-8.09, -7.45, 0.63]. Two characters are seated nearby: **BaseCharacter_Sitting10_29** at [-8.53, -7.99, 0.71] and **BaseCharacter_Sitting12** at [-8.51, -6.89, 0.60]. The seating arrangement suggests a casual setting, likely intended for social interaction."
   ]
   node [
     id 134
@@ -1899,7 +1899,7 @@ graph [
     position -2.2917215824127197
     position -1.5484551191329956
     level 4
-    summary "The object &#34;drone_4&#34; is positioned in a 3D environment at the coordinates x: -9.66, y: -2.29, and z: -1.55. This indicates that the drone is located in a space that is slightly below a reference point (given the negative z value) and off to the side, given the negative x and y coordinates. The specific positioning suggests it may be operating within a constrained area or analyzing a specific section of the environment."
+    summary "The object &#34;drone_4&#34; is positioned in a 3D space at the coordinates x: -9.66, y: -2.29, and z: -1.55. This indicates that the drone is located in the negative sector of all three axes, suggesting it is placed relatively low and towards the left in the environment."
   ]
   node [
     id 135
@@ -1908,7 +1908,7 @@ graph [
     position -1.041554967683692
     position 0.7243479490280151
     level 4
-    summary "The objects &#34;staircaseBottom_6&#34; and &#34;staircaseMid_8&#34; are located at the exact same position in a 3D environment, which is given by the coordinates [-13.3845, -1.0416, 0.7243]. This suggests that the &#34;staircaseMid_8&#34; is likely positioned directly above or in continuation of the &#34;staircaseBottom_6,&#34; indicative of a staircase structure where the bottom and middle sections are aligned at the same point in space."
+    summary "The two objects, `staircaseBottom_6` and `staircaseMid_8`, are located at the same position in a 3D environment, specifically at coordinates [-13.384497201367042, -1.041554967683692, 0.7243479490280151]. This suggests that they are likely part of a staircase structure, with `staircaseBottom_6` representing the bottom portion and `staircaseMid_8` representing a middle section. Their identical positions imply they may be overlapping or directly connected within the spatial arrangement."
   ]
   node [
     id 136
@@ -1917,7 +1917,7 @@ graph [
     position 1.9636689843757698
     position 0.023861080408096313
     level 4
-    summary "In the 3D environment, there are four objects positioned as follows: &#10;&#10;1. **BaseCharacter_Walking_2** is located at coordinates [-9.39, 1.03, 0.57], suggesting it is likely a character in a walking animation, positioned slightly elevated above ground level.&#10;&#10;2. **posterBoard6** is situated at [-8.15, 2.84, 0.54], which indicates it is higher than the BaseCharacter and could be displaying information or art, making it prominent in the scene.&#10;&#10;3. **posterBoard_24** is found at [-7.69, 2.39, 0.54], also elevated, possibly providing additional visual content in proximity to posterBoard6.&#10;&#10;4. **drone_5** is positioned at coordinates {'x': -10.54, 'y': 1.59, 'z': -1.56}, indicating that it is lower in the Z-axis compared to the other objects and could be hovering or stationed above the ground.&#10;&#10;Overall, these objects suggest a dynamic scene where a character interacts with the environment, highlighted by the presence of informational or decorative poster boards and a hovering drone."
+    summary "In the described 3D environment, there are four distinct objects with their respective positions outlined as follows:&#10;&#10;1. **BaseCharacter_Walking_2**: This character is positioned at coordinates [-9.39, 1.03, 0.57], indicating it is relatively low to the ground with a slight elevation along the y-axis.&#10;&#10;2. **posterBoard6**: This poster board is located at [-8.15, 2.84, 0.54], suggesting it is placed higher than the BaseCharacter and possibly used for display purposes.&#10;&#10;3. **posterBoard_24**: Found at [-7.69, 2.39, 0.54], this poster board is also elevated but slightly lower than posterBoard6, emphasizing its role in visual information or decoration.&#10;&#10;4. **drone_5**: The drone is stationed at a different height with coordinates [-10.54, 1.59, -1.56], indicating it may be hovering or positioned above ground level.&#10;&#10;Overall, the scene contains a walking character, two display boards, and a drone, each positioned in a manner that suggests potential interaction or visual communication within the space."
   ]
   node [
     id 137
@@ -1926,7 +1926,7 @@ graph [
     position 3.498806402708373
     position 0.5429845452308655
     level 4
-    summary "In the described 3D environment, we have a collection of four objects situated at various coordinates:&#10;&#10;1. **BucketSeat_24**: Positioned at [-11.92, 3.71, 0.63], this seat is likely a compact seating option.&#10;2. **planter_Mangrove_Fan_Palm3_Blueprint_344**: Located at [-13.35, 2.06, 0.23], this object appears as a decorative planter, possibly featuring a fan palm.&#10;3. **CornerSofa_26**: Found at [-12.74, 4.57, 0.66], this object serves as a seating arrangement designed for corner placement, which suggests it may offer comfortable lounging space.&#10;4. **BaseCharacter_Sitting2_5**: At the position [-12.17, 3.65, 0.65], this character model depicts a seated figure, probably interacting with the surrounding environment.&#10;&#10;Overall, these objects suggest a cozy, designed space with seating and greenery, enhancing both utility and aesthetics."
+    summary "In the 3D environment, the following objects are positioned as detailed below:&#10;&#10;1. **BucketSeat_24**: Located at coordinates [-11.92, 3.71, 0.63], this seat provides a compact seating option.&#10;2. **planter_Mangrove_Fan_Palm3_Blueprint_344**: Positioned at [-13.35, 2.06, 0.23], this planter features a tropical fan palm, adding a natural element to the space.&#10;3. **CornerSofa_26**: Found at [-12.74, 4.57, 0.66], this sofa offers a comfortable seating arrangement designed for corners.&#10;4. **BaseCharacter_Sitting2_5**: Situated at [-12.17, 3.65, 0.65], this character model is in a seated position, possibly interacting with the surrounding seating arrangements.&#10;&#10;Together, these objects create a casual and inviting atmosphere, blending seating and natural decor in a cohesive layout."
   ]
   node [
     id 138
@@ -1935,7 +1935,7 @@ graph [
     position 7.70782567168192
     position -1.894558886686961
     level 4
-    summary "In the described 3D environment, there are three notable objects. &#10;&#10;1. **exitSign13_16** is located at coordinates approximately [-12.13, 7.08, -2.07]. &#10;2. **drone_6** is positioned nearby at coordinates [-10.71, 6.89, -1.64], indicating it is in the vicinity of the exit signs. &#10;3. **exitSign12_9** is situated at [-11.57, 9.16, -1.97], further contributing to the navigation elements in the area.&#10;&#10;Overall, these objects are positioned relatively close to each other, suggesting a space where exit signage is complemented by the presence of a drone, likely for surveillance or guidance purposes."
+    summary "In this 3D environment, there are three objects with specific positions. The first object, **exitSign13_16**, is located at the coordinates **[-12.13, 7.08, -2.07]**. The second object, **drone_6**, is positioned at **[-10.71, 6.89, -1.64]**. Lastly, the third object, **exitSign12_9**, is at **[-11.57, 9.16, -1.97]**. The exit signs are situated relatively close to each other, with the drone positioned slightly to the left and lower than the other two objects."
   ]
   node [
     id 139
@@ -1944,7 +1944,7 @@ graph [
     position 6.336187999307684
     position 0.5384354591369629
     level 4
-    summary "The object &#34;posterBoard8_Blueprint&#34; is situated at the coordinates [-7.7621, 6.3362, 0.5384] in a 3D environment. This indicates that it is positioned slightly to the left and forward in the space, about 0.54 units above the ground level. The designation &#34;Blueprint&#34; suggests that it may serve a design or planning purpose, potentially displaying plans, diagrams, or layouts. Its blue color could imply a focus on creativity, professionalism, or a specific thematic element within the environment."
+    summary "The object &#34;posterBoard8_Blueprint&#34; is located at the coordinates [-7.76, 6.34, 0.54] in a 3D environment. It appears to be a blueprint-style poster board, likely used for displaying plans or designs. The position suggests it is elevated slightly above the base level, which could indicate it is mounted on a wall or a similar surface."
   ]
   node [
     id 140
@@ -1953,7 +1953,7 @@ graph [
     position 6.706288825082154
     position -0.02110443115234375
     level 4
-    summary "The objects in this 3D environment include a Corner Sofa (CornerSofa2) positioned at [-14.53, 5.84, 0.08], which provides seating with a corner design. Nearby, at position [-15.22, 6.13, -0.00], is a LapTop Table (LapTopTable_32), suitable for working or placing devices. An Office Door (OfficeDoor13) is situated to the north at [-13.81, 8.92, 0.25], likely leading to another area, while a Recliner Sofa (ReclinerSofa_40) at [-14.64, 4.55, 0.03] offers a comfortable seating option. Lastly, a drone (drone_7) is located at [-14.06, 8.08, -0.46], hovering above, indicating possible interaction or surveillance within this space."
+    summary "This summary describes a collection of objects in a 3D environment with their respective positions:&#10;&#10;1. **CornerSofa2**: Located at approximately (-14.53, 5.84, 0.08), this piece serves as a seating area.&#10;2. **LapTopTable_32**: Positioned at around (-15.22, 6.13, -0.005), this table is likely designed for using laptops or other similar activities.&#10;3. **OfficeDoor13**: Found at (-13.81, 8.92, 0.25), this door provides an entry or exit point within the office space.&#10;4. **ReclinerSofa_40**: At (-14.64, 4.55, 0.03), this recliner offers a comfortable seating option.&#10;5. **drone_7**: Hovering at position (-14.06, 8.08, -0.46), this drone might be used for surveillance, delivery, or other UAV-related functions.&#10;&#10;These objects are arranged within a defined space, suggesting a functional area combining seating, workspace, and mobility (drone)."
   ]
   node [
     id 141
@@ -1962,7 +1962,7 @@ graph [
     position 8.131022214889526
     position -0.6350338459014893
     level 4
-    summary "In the 3D environment, there are two drones positioned as follows: drone_8 is located at coordinates (-17.76, 8.40, -0.54) and drone_9 is situated at (-21.41, 7.86, -0.73). Both drones are relatively close in the y-axis, indicating they are at similar vertical levels, but are separated in the x-axis, with drone_9 being further to the left. The z-coordinates suggest they are positioned just above ground level."
+    summary "The summary of the group of objects includes two drones: drone_8 and drone_9. &#10;&#10;- **drone_8** is located at coordinates (-17.76, 8.40, -0.54), positioned in the 3D space with a slightly elevated y-coordinate.&#10;- **drone_9** is at coordinates (-21.41, 7.86, -0.73), also elevated above the z-plane, but further to the left along the x-axis compared to drone_8.&#10;&#10;Both drones appear to be in close proximity to each other, with a slight vertical difference and positioned at similar y-coordinates."
   ]
   node [
     id 142
@@ -1971,7 +1971,7 @@ graph [
     position 0.16237884741114691
     position -1.1140676587820053
     level 5
-    summary "In the given 3D environment, there are two drones with different positions. The first drone, labeled drone_0, is located at the coordinates (0.0, 0.0, -0.97), indicating it is positioned at the origin along the x and y axes and slightly below the z-axis. The second drone, labeled Drone1, has coordinates approximately (1.49, 0.32, -1.26), which places it diagonally from the origin, slightly elevated along the x and y axes while also positioned below the z-axis. The drones are in close proximity in the 3D space, with Drone1 offset from drone_0 along both x and y dimensions."
+    summary "The group consists of two drones positioned in a 3D space. Drone_0 is located at the coordinates (0.0, 0.0, -0.97), while Drone1 is positioned at approximately (1.49, 0.32, -1.26). Both drones have a negative z-coordinate, indicating that they are situated below a reference point in the vertical axis. Their relative positions suggest that Drone1 is offset from Drone_0 by approximately 1.49 units along the x-axis and 0.32 units along the y-axis."
   ]
   node [
     id 143
@@ -1980,7 +1980,7 @@ graph [
     position 0.6825918733927643
     position 1.2266992330551147
     level 5
-    summary "The object described is &#34;BaseCharacter_Walking4_11,&#34; which appears to be a character model in a 3D environment. It is positioned at the coordinates [5.422, 0.683, 1.227]. This indicates that the character is located slightly above the ground level (as suggested by the positive z-coordinate) and is primarily situated on the x-axis at around 5.422 units, while being close to the origin on the y-axis at approximately 0.683 units. The character&#8217;s pose suggests it is in a walking animation or state, likely indicating movement or dynamic interaction within the environment."
+    summary "The object &#34;BaseCharacter_Walking4_11&#34; is a 3D entity located at the coordinates [5.4223, 0.6826, 1.2267]. This character appears to be in a walking state, suggesting movement and animation are involved. The position indicates it is situated slightly off the ground level, likely on a surface that corresponds to its height and possibly in a dynamic environment."
   ]
   node [
     id 144
@@ -1989,7 +1989,7 @@ graph [
     position -4.479154604118245
     position -0.7328165471553802
     level 5
-    summary "The group of objects consists of a blue planter, identified as &#34;planterLong4_Blueprint3,&#34; located at the coordinates [0.56, -4.98, -0.25], and a drone, labeled &#34;drone_1,&#34; situated at the coordinates [2.87, -3.98, -1.22]. The planter is positioned slightly above ground level, while the drone is located further away in the x-direction and lower in the z-direction, indicating it may be hovering or at a lower altitude compared to the planter."
+    summary "The objects in the given 3D environment consist of a planter designated as &#34;planterLong4_Blueprint3,&#34; which is positioned at coordinates [0.5625, -4.9821, -0.2455]. Additionally, there is a drone labeled &#34;drone_1&#34; located at the coordinates [2.8656, -3.9762, -1.2202]. This suggests a spatial arrangement where the planter is likely on the ground or a surface, while the drone is positioned higher up, potentially indicating it is in flight or hovering above the planar area where the planter is placed."
   ]
   node [
     id 145
@@ -1998,7 +1998,7 @@ graph [
     position -10.126800435807283
     position 0.1883343756198883
     level 5
-    summary "The described group of objects includes a drone (drone_2) positioned slightly above ground with coordinates (0.05, -8.75, -1.34), suggesting it is hovering or navigating in a low space. Nearby, there is a sofa recliner (sofa_recliner4) located at (-2.21, -11.79, 0.81), indicating it is in a living or lounge area. A wooden cage coffee table (woodenCageCoffeeTable_58) is also present at (-2.79, -10.62, 0.66), likely accompanying the sofa. Finally, a sitting character (BaseCharacter_Sitting_2) is positioned at (-0.94, -9.34, 0.63), suggesting interaction with the sofa or the surrounding space. These objects collectively create a casual, relaxed environment, possibly for a living room setting."
+    summary "In this 3D environment, there are four objects positioned as follows:&#10;&#10;1. **Drone (drone_2)** is located at coordinates (0.054, -8.754, -1.345), hovering relatively close to the ground.&#10;2. **Sofa Recliner (sofa_recliner4)** is situated at (-2.214, -11.792, 0.806), indicating it is set in a living space, likely facing an entertainment area.&#10;3. **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)** is positioned nearby at (-2.790, -10.619, 0.664), suggesting it is likely intended for use with the sofa.&#10;4. **Base Character (BaseCharacter_Sitting_2)** is seated at (-0.940, -9.342, 0.628), indicating a person is interacting in the environment, possibly engaging with the sofa or coffee table.&#10;&#10;Overall, the setup implies a cozy living area with a drone present, likely for surveillance or entertainment purposes."
   ]
   node [
     id 146
@@ -2007,7 +2007,7 @@ graph [
     position -6.282484605617604
     position 0.24738198518753052
     level 5
-    summary "The group of objects consists of two charcoal grey cafe chairs, labeled chair_cafeCharcoalGrey10 and chair_cafeCharcoalGrey9, positioned at coordinates approximately [-2.83, -6.32, 0.24] and [-2.56, -5.34, 0.16] respectively. There is also a small grey table, smallGreyTable3, located at [-3.46, -6.36, 0.22]. Additionally, there is a sitting character, BaseCharacter_Sitting6_17, placed at [-1.64, -7.11, 0.38]. The arrangement suggests a casual cafe setting, with the chairs and table likely intended for dining or socializing, while the character adds a sense of occupancy to the environment."
+    summary "The group of objects consists of two charcoal grey cafe chairs, labeled chair_cafeCharcoalGrey10 and chair_cafeCharcoalGrey9, positioned at coordinates [-2.827, -6.318, 0.241] and [-2.562, -5.342, 0.158], respectively. There is also a small grey table, identified as smallGreyTable3, located at [-3.462, -6.364, 0.215]. Additionally, a sitting character, named BaseCharacter_Sitting6_17, is positioned at [-1.639, -7.106, 0.375]. The arrangement suggests a casual seating area, typical for a cafe setting, with the chairs and table forming a social space around the seated character."
   ]
   node [
     id 147
@@ -2016,7 +2016,7 @@ graph [
     position -9.030493106606345
     position 0.42355822026729584
     level 5
-    summary "This summary describes a small caf&#233;-like environment that includes various seating and furniture options. &#10;&#10;- **Chairs**: There are three charcoal grey chairs positioned at [-3.63, -7.71, 0.34], [-4.58, -7.95, 0.52], and an orange chair at [-3.43, -8.82, 0.58]. Additionally, another orange chair is located at [-5.74, -8.35, 0.52].&#10;  &#10;- **Tables**: Three small white tables are present, with one at [-4.08, -8.26, 0.37], another at [-5.98, -7.66, 0.49], and a third at [-5.53, -11.07, 0.66]. There is also a dedicated laptop table at [-5.62, -9.49, 0.58].&#10;&#10;- **Walls and Structures**: The space features an office glass wall and a snack shop wall located at the same coordinates [-4.57, -9.14, 0.58]. Nearby, a small sofa is situated at [-4.89, -10.13, 0.62]. &#10;&#10;- **Other Elements**: The environment includes a character sitting at position [-5.32, -9.84, 0.60], a drone hovering nearby at [-5.60, -8.85, -1.47], and multiple atrium tower structures at [-4.70, -9.36, 0.61] alongside a side base wall at the same coordinates.&#10;&#10;Overall, this setting appears to be a bustling caf&#233; area combining seating arrangements, workspace, and structural elements creating an inviting atmosphere."
+    summary "The described group of objects features a variety of seating and table arrangements within a caf&#233;-like setting. It includes five chairs&#8212;two in charcoal grey and three in orange&#8212;arranged around several small white tables. Notably, the arrangement consists of two small white tables with one located slightly elevated at position [-5.981357641239276, -7.658614051877459, 0.48669958114624023] and another at [-4.079998918753402, -8.26209075029929, 0.37125885486602783]. There are also two walls functioning as boundaries in the environment: an office glass wall and a snack shop wall, both situated at the same coordinate of [-4.571407135943408, -9.139894998583689, 0.5769398212432861], indicating they might serve a single architectural purpose. Additionally, a small sofa is positioned nearby at [-4.891205318304795, -10.130721534978404, 0.6200143098831177]. The environment features an atrium tower and its vent, alongside a side wall base, all located closely at the coordinate [-4.701039904532265, -9.35589258997351, 0.6064099073410034]. A character is seated on the sofa while a drone hovers nearby at a lower elevation, creating a lively caf&#233; atmosphere enriched with functional furniture and structural elements."
   ]
   node [
     id 148
@@ -2025,7 +2025,7 @@ graph [
     position -5.809399258600855
     position 0.35304107666015627
     level 5
-    summary "The group of objects consists of a wooden slatted bench and several caf&#233; chairs and small tables, all positioned closely together in a 3D space. The **bench** is located at approximately (-4.79, -5.60, 0.25) and features wooden slats. Nearby, there are two **cafe chairs**: one at (-7.01, -5.80, 0.40) and the other at (-6.62, -6.67, 0.46), both in a charcoal grey color. Additionally, there are two **small grey tables** situated at positions (-6.21, -4.99, 0.28) and (-6.36, -5.98, 0.38). The arrangement suggests a cozy caf&#233;-like setting, ideal for informal gatherings or dining."
+    summary "The summary of the group of objects includes a wooden slatted bench located at coordinates [-4.79, -5.60, 0.25], two charcoal-grey caf&#233; chairs positioned nearby &#8212; one at [-7.01, -5.80, 0.40] and the other at [-6.62, -6.67, 0.46]. Additionally, there are two small grey tables; one is situated at [-6.21, -4.99, 0.28] and the other at [-6.36, -5.98, 0.38]. Overall, this collection of objects creates a cozy seating area likely suitable for casual dining or relaxation."
   ]
   node [
     id 149
@@ -2034,7 +2034,7 @@ graph [
     position -7.000822040373613
     position 0.6003863215446472
     level 5
-    summary "In the described 3D environment, there are four distinct objects arranged in proximity to each other. The first object is a caf&#233;-style chair (chair_cafeCharcoalGrey12), located at the coordinates [-8.33, -5.67, 0.47]. Nearby, a small white table (smallWhiteTable7) is positioned at [-8.09, -7.45, 0.63]. Two characters are also present: BaseCharacter_Sitting10_29 is situated at [-8.53, -7.99, 0.71], while BaseCharacter_Sitting12 is slightly farther away at [-8.51, -6.89, 0.60]. The arrangement suggests a casual seating area, likely for dining or socializing."
+    summary "In the described 3D environment, a cozy seating arrangement is presented, featuring a charcoal grey caf&#233; chair (chair_cafeCharcoalGrey12) positioned at coordinates [-8.3267, -5.6705, 0.4689]. Nearby, a small white table (smallWhiteTable7) sits at [-8.0916, -7.4522, 0.6276], creating a functional space for drinks or conversation. Additionally, two sitting characters enhance the scene: BaseCharacter_Sitting10_29, located at [-8.5260, -7.9877, 0.7061], and BaseCharacter_Sitting12, positioned at [-8.5111, -6.8930, 0.5989]. The arrangement suggests a casual social setting conducive to relaxation and interaction."
   ]
   node [
     id 150
@@ -2043,7 +2043,7 @@ graph [
     position -2.2917215824127197
     position -1.5484551191329956
     level 5
-    summary "The object &#34;drone_4&#34; is located in a 3D environment at the coordinates (-9.66, -2.29, -1.55). This position indicates that the drone is situated relatively far along the negative x-axis and the negative y-axis, while being low on the z-axis, suggesting it is near or below a reference plane. The coordinates provide a spatial context for the drone's operation, potentially indicating its role in surveillance, delivery, or monitoring in the designated area."
+    summary "The object &#34;drone_4&#34; is situated in a 3D space at the coordinates (-9.66, -2.29, -1.55). This position indicates that the drone is located in a negative x and y quadrant, with a slight elevation or depth below the z-axis (assuming the z-axis represents height). The specific coordinates suggest that the drone is positioned closer to the origin point at the lower end of the z-axis."
   ]
   node [
     id 151
@@ -2052,7 +2052,7 @@ graph [
     position 1.9636689843757698
     position 0.023861080408096313
     level 5
-    summary "In the described 3D environment, there is a walking character (BaseCharacter_Walking_2) positioned at approximately (-9.39, 1.03, 0.57). Nearby, there are two poster boards: posterBoard6 located at (-8.15, 2.84, 0.54) and posterBoard_24 at (-7.69, 2.39, 0.54). Additionally, a drone (drone_5) is situated at a lower altitude, with coordinates (-10.54, 1.59, -1.56). The arrangement suggests a scene where the walking character interacts with the poster boards, while the drone hovers above or around them."
+    summary "In the 3D environment, there are several objects with specified positions. The main character, **BaseCharacter_Walking_2**, is positioned at coordinates [-9.39, 1.03, 0.57], indicating a location slightly elevated above the ground. Nearby, two poster boards are present: **posterBoard6** is located at [-8.15, 2.84, 0.54], and **posterBoard_24** is at [-7.69, 2.39, 0.54], both of which are positioned at a similar height and suggest a visual or informational display area. Additionally, **drone_5** is positioned at [-10.54, 1.59, -1.56], significantly lower than the other objects, possibly indicating it's hovering or situated on a lower level. Together, these objects contribute to a dynamic scene, likely involving interaction between the character and the surrounding displays, with the drone possibly serving a monitoring or delivery function."
   ]
   node [
     id 152
@@ -2061,7 +2061,7 @@ graph [
     position 3.498806402708373
     position 0.5429845452308655
     level 5
-    summary "In the described 3D environment, there are four distinct objects positioned as follows:&#10;&#10;1. **BucketSeat_24** is located at coordinates [-11.92, 3.71, 0.63]. This object likely serves as a seating option, designed for comfort.&#10;  &#10;2. **planter_Mangrove_Fan_Palm3_Blueprint_344** is situated at [-13.35, 2.06, 0.23]. This object represents a planter featuring a mangrove fan palm, enhancing the aesthetic and natural ambiance of the space.&#10;&#10;3. **CornerSofa_26** is positioned at [-12.74, 4.57, 0.66]. This object serves as a corner sofa, providing ample seating for social interactions.&#10;&#10;4. **BaseCharacter_Sitting2_5** is found at [-12.17, 3.65, 0.65]. This object is a character model depicted in a sitting posture, likely intended to interact with the seating arrangements.&#10;&#10;Together, these objects create a cozy, interactive environment that combines seating and greenery."
+    summary "The objects in this 3D environment include a Bucket Seat located at coordinates [-11.92, 3.71, 0.63], a Planter featuring a Mangrove Fan Palm at position [-13.35, 2.06, 0.23], a Corner Sofa situated at [-12.74, 4.57, 0.66], and a Sitting Character positioned at [-12.17, 3.65, 0.65]. The arrangement suggests a cozy seating area, with the sofa and seat offering comfort, while the planter adds a natural element to the setting. The seated character indicates an interactive aspect, possibly engaged in an activity within this environment."
   ]
   node [
     id 153
@@ -2070,7 +2070,7 @@ graph [
     position 7.70782567168192
     position -1.894558886686961
     level 5
-    summary "The group of objects consists of two exit signs and a drone. The first exit sign, identified as exitSign13_16, is located at the coordinates [-12.12, 7.08, -2.07]. The second exit sign, exitSign12_9, is positioned at [-11.57, 9.16, -1.97]. The drone, labeled drone_6, is situated at the coordinates [-10.71, 6.89, -1.64]. All objects are arranged in a 3D space, with the exit signs offering directional guidance and the drone possibly serving a monitoring or transport function."
+    summary "In the described 3D environment, there are three objects: two exit signs and a drone. &#10;&#10;1. **exitSign13_16** is located at coordinates approximately [-12.13, 7.08, -2.07].&#10;2. **drone_6** is found at coordinates around [-10.71, 6.89, -1.64], indicating it is positioned slightly closer to the x and y axes than exitSign13_16.&#10;3. **exitSign12_9** is positioned at approximately [-11.57, 9.16, -1.97], situated higher along the y-axis than both previous objects and slightly to the right on the x-axis compared to exitSign13_16.&#10;&#10;Overall, exitSign12_9 is higher in elevation compared to the other two objects, while the drone is positioned closest to exitSign13_16 in the negative x and proximity to ground level."
   ]
   node [
     id 154
@@ -2079,7 +2079,7 @@ graph [
     position 6.336187999307684
     position 0.5384354591369629
     level 5
-    summary "The object &#34;posterBoard8_Blueprint&#34; is located at the coordinates [-7.7621, 6.3362, 0.5384]. This suggests it is positioned in a 3D space with the x-coordinate approximately -7.76, the y-coordinate approximately 6.34, and the z-coordinate indicating it is slightly above the ground level, at around 0.54 units in height. The designation &#34;BluePrint&#34; suggests that this object may serve as a detailed plan or schematic, potentially for construction, layout, or informational purposes in the environment it occupies."
+    summary "The object &#34;posterBoard8_Blueprint&#34; is located at the coordinates [-7.7621, 6.3362, 0.5384]. As indicated by its name, it likely represents a blueprint or design that is displayed on a poster board, possibly for instructional or informational purposes. Its positioning within a 3D environment suggests it could be part of an exhibition, presentation area, or similar setting. The specific coordinates designate its location in relation to other objects in the space, allowing for navigation and reference to nearby elements."
   ]
   node [
     id 155
@@ -2088,7 +2088,7 @@ graph [
     position 6.706288825082154
     position -0.02110443115234375
     level 5
-    summary "The described group of objects includes a Corner Sofa, positioned at [-14.53, 5.84, 0.08], and a Recliner Sofa located at [-14.64, 4.55, 0.03]. Both sofas are situated relatively close to each other, indicating a cozy seating area. Nearby, there is a Lap Top Table, found at [-15.22, 6.13, -0.00], suggesting a workspace area, likely for the use of a laptop. An Office Door, positioned at [-13.81, 8.92, 0.25], provides access to the room or area, hinting at an enclosed environment. Finally, a drone is positioned at [-14.06, 8.08, -0.46], which may indicate an ongoing activity or surveillance above this arrangement. Overall, these objects create a functional and relaxed space with both seating and workspace capabilities."
+    summary "In the described 3D environment, several objects are positioned strategically:&#10;&#10;1. **CornerSofa2** is located at coordinates [-14.53, 5.84, 0.08], serving as a cozy seating option.&#10;2. **LapTopTable_32** is positioned nearby at [-15.22, 6.13, -0.005], providing a workspace surface, likely for placing a laptop.&#10;3. **OfficeDoor13** is situated at [-13.81, 8.92, 0.25], acting as an entry or exit point within the space.&#10;4. **ReclinerSofa_40** is at [-14.64, 4.55, 0.03], offering additional seating with the comfort of a recliner design.&#10;5. **drone_7** is located at a different elevation with coordinates [-14.06, 8.08, -0.46], indicating a hovering or mounted position.&#10;&#10;This arrangement showcases a small office or lounge area with both seating and work surfaces, along with a drone that may serve a monitoring or delivery function."
   ]
   node [
     id 156
@@ -2097,7 +2097,7 @@ graph [
     position 8.131022214889526
     position -0.6350338459014893
     level 5
-    summary "The summary of the specified objects is as follows:&#10;&#10;- **drone_8** is positioned at coordinates (-17.76, 8.40, -0.54), indicating it is located slightly above ground level and to the left in the 3D space.&#10;- **drone_9** is situated at coordinates (-21.41, 7.86, -0.73), which places it further left and slightly lower than drone_8, also above floor level.&#10;&#10;Both drones are in close proximity horizontally, but drone_9 is positioned farther to the left and slightly lower in height compared to drone_8."
+    summary "The summary of the specified objects is as follows: &#10;&#10;There are two drones in the environment, identified as drone_8 and drone_9. &#10;&#10;- **drone_8** is located at coordinates:&#10;  - X: -17.76&#10;  - Y: 8.40&#10;  - Z: -0.54 &#10;&#10;- **drone_9** is positioned at coordinates:&#10;  - X: -21.41&#10;  - Y: 7.86&#10;  - Z: -0.73 &#10;&#10;Both drones are situated at similar heights above the ground (around -0.54 and -0.73 on the Z-axis), with drone_8 being closer to the positive Y-axis and drone_9 being farther away in the negative X direction. Their proximity suggests potential interaction or coordination in a shared operational space."
   ]
   node [
     id 157
@@ -2106,7 +2106,7 @@ graph [
     position 0.16237884741114691
     position -1.1140676587820053
     level 6
-    summary "The group consists of two drones with distinct positions in a 3D space. Drone_0 is located at coordinates (0.0, 0.0, -0.97), while Drone1 is positioned at approximately (1.49, 0.32, -1.26). The two drones are relatively close to each other, with Drone1 being slightly offset in the positive x and y directions compared to Drone_0, and both drones are situated at similar negative z coordinates, indicating they are positioned below a reference point, likely ground level."
+    summary "The summary of the group of objects includes two drones in a 3D environment. &#10;&#10;- **drone_0** is positioned at coordinates (0.0, 0.0, -0.971), indicating it is located at the origin point on the x and y axes, and slightly below the ground level on the z-axis.&#10;  &#10;- **Drone1** is positioned at coordinates (1.495, 0.325, -1.257), which places it to the right and slightly forward relative to drone_0, while also being positioned below ground level on the z-axis.&#10;&#10;Both drones are operating in close proximity, with Drone1 being offset from drone_0."
   ]
   node [
     id 158
@@ -2115,7 +2115,7 @@ graph [
     position 0.6825918733927643
     position 1.2266992330551147
     level 6
-    summary "The object &#34;BaseCharacter_Walking4_11&#34; is positioned at coordinates [5.422, 0.683, 1.227] in a 3D space. This suggests that the object is likely a character model representing a walking animation or state, and its specific coordinates indicate its placement within the environment, potentially on a defined path or terrain. The values suggest that it is positioned slightly above the ground level, which might indicate the presence of a floor or surface for the character to walk upon."
+    summary "The object &#34;BaseCharacter_Walking4_11&#34; is a 3D character positioned at the coordinates [5.42, 0.68, 1.23]. It appears to be in a walking state, suggesting a dynamic animation or posture. The specific position indicates its location within a 3D environment, likely on a flat surface given the Z-coordinate representing height. This character may be part of an animated scene or game, interacting with other elements in its surroundings."
   ]
   node [
     id 159
@@ -2124,7 +2124,7 @@ graph [
     position -4.479154604118245
     position -0.7328165471553802
     level 6
-    summary "The group consists of two objects in a 3D environment:&#10;&#10;1. **Planter (planterLong4_Blueprint3)** - Positioned at coordinates approximately (0.56, -4.98, -0.25). This object could be used for holding plants or flowers and likely contributes to the aesthetics of the space.&#10;&#10;2. **Drone (drone_1)** - Located at coordinates (2.87, -3.98, -1.22). This object is likely designed for aerial operations, potentially for surveillance, delivery, or monitoring purposes.&#10;&#10;The two objects are distinct in function and appearance, situated at different positions in the environment, suggesting they may interact or coexist without direct connection."
+    summary "In this 3D environment, there are two notable objects: &#10;&#10;1. **Planter (planterLong4_Blueprint3)**: This object is located at the coordinates [0.56, -4.98, -0.25]. It is likely a long planter, probably designed for growing plants or flowers.&#10;&#10;2. **Drone (drone_1)**: The drone is positioned at the coordinates {x: 2.87, y: -3.98, z: -1.22}. This object may be used for aerial tasks such as surveillance, delivery, or photography.&#10;&#10;Both objects have distinct functionalities and are positioned at different coordinates within the 3D space."
   ]
   node [
     id 160
@@ -2133,7 +2133,7 @@ graph [
     position -10.126800435807283
     position 0.1883343756198883
     level 6
-    summary "The group of objects consists of a drone, a sofa recliner, a wooden cage coffee table, and a sitting character. &#10;&#10;1. **drone_2** is positioned at approximately (0.05, -8.75, -1.34), possibly hovering or flying in the vicinity.&#10;2. **sofa_recliner4** is located at (-2.21, -11.79, 0.81), suggesting it is part of a seating arrangement.&#10;3. **woodenCageCoffeeTable_58** is positioned at (-2.79, -10.62, 0.66), typically indicating it is near the recliner and used as a surface for items.&#10;4. **BaseCharacter_Sitting_2** is at (-0.94, -9.34, 0.63), likely seated on or near the sofa recliner, engaging with the environment.&#10;&#10;Overall, these objects appear to create a cozy seating area, with the drone potentially providing an aerial view or monitoring the surroundings."
+    summary "In this 3D environment, there are four distinct objects positioned as follows:&#10;&#10;1. **drone_2** is situated at coordinates (0.05, -8.75, -1.34), indicating it may be hovering or flying at a low altitude above the ground.&#10;2. **sofa_recliner4** is placed at (-2.21, -11.79, 0.81), suggesting it is a piece of furniture within a space that is likely meant for relaxation.&#10;3. **woodenCageCoffeeTable_58** lies slightly further back at (-2.79, -10.62, 0.66), commonly located near seating, implying it serves as a surface for drinks or decor.&#10;4. **BaseCharacter_Sitting_2** is positioned at (-0.94, -9.34, 0.63), indicating a character model in a seated pose, possibly interacting with the nearby furniture.&#10;&#10;Overall, the arrangement of these objects suggests a cozy, interactive living space, with the seated character likely engaging with the sofa and coffee table nearby, and the drone potentially serving as a tech accessory in this environment."
   ]
   node [
     id 161
@@ -2142,7 +2142,7 @@ graph [
     position -6.282484605617604
     position 0.24738198518753052
     level 6
-    summary "The group of objects consists of two charcoal grey caf&#233; chairs (chair_cafeCharcoalGrey10 and chair_cafeCharcoalGrey9) positioned near each other, with chair_cafeCharcoalGrey10 located at coordinates [-2.83, -6.32, 0.24] and chair_cafeCharcoalGrey9 at [-2.56, -5.34, 0.16]. A small grey table (smallGreyTable3) is situated at [-3.46, -6.36, 0.22], positioned close to the chairs. Additionally, a sitting character (BaseCharacter_Sitting6_17) can be found at [-1.64, -7.11, 0.38], indicating a social space, likely a caf&#233; setting. The arrangement suggests a cozy area for conversation or relaxation."
+    summary "In this 3D environment, there is a collection of objects centered around a casual cafe setting. The assembly includes two charcoal grey chairs, designated as chair_cafeCharcoalGrey10 positioned at [-2.83, -6.32, 0.24] and chair_cafeCharcoalGrey9 at [-2.56, -5.34, 0.16]. Additionally, there is a small grey table, smallGreyTable3, located at [-3.46, -6.36, 0.22]. Accompanying these furnishings is a sitting character, BaseCharacter_Sitting6_17, who is located at [-1.64, -7.11, 0.38]. This arrangement suggests a cozy interaction space likely intended for seating and socializing."
   ]
   node [
     id 162
@@ -2151,7 +2151,7 @@ graph [
     position -9.030493106606345
     position 0.42355822026729584
     level 6
-    summary "The described environment features a cozy caf&#233; setting with a variety of furniture. Central to the arrangement are two small white tables, positioned at coordinates [-4.079998918753402, -8.26209075029929, 0.37125885486602783] and [-5.981357641239276, -7.658614051877459, 0.48669958114624023], providing gathering spots for patrons. Surrounding these tables are several chairs in different colors, including charcoal grey and orange, creating a vibrant atmosphere. Notably, there are four chairs: two charcoal grey ([[-3.627549995921744, -7.71147387869952, 0.33906352519989014] and [-4.584124278018753, -7.952529433288231, 0.5199109315872192]]) and two orange ([[-3.4305659722040494, -8.816221937221044, 0.5770285129547119] and [-5.744677218174906, -8.353194745400728, 0.5231846570968628]]). &#10;&#10;Alongside the dining area, there are additional functional elements such as a small sofa, a table designed for laptops, and areas marked by glass walls and structural elements (officeGlassWallA_19 and snackShopWall_32) that enhance the space's modernity. The presence of character models and a drone suggests an interactive or animated environment, particularly around the coordinates of the BaseCharacter_Sitting9_26 and drone, which add a dynamic aspect to the caf&#233;. &#10;&#10;Overall, this collection of objects combines furniture and structural elements to create an inviting caf&#233; atmosphere that supports social interaction and leisure."
+    summary "This summary describes a collection of objects found within a 3D caf&#233; environment, featuring various furniture pieces and structural elements positioned in close proximity. &#10;&#10;1. **Chairs**: There are three caf&#233; chairs in charcoal grey and two in orange, positioned around the tables&#8212;providing a casual seating arrangement. The charcoal grey chairs are located at:&#10;   - Chair 2: [-3.63, -7.71, 0.34]&#10;   - Chair 3: [-4.58, -7.95, 0.52]&#10;   &#10;   The orange chairs are at:&#10;   - Chair 4: [-3.43, -8.82, 0.58]&#10;   - Chair 5: [-5.74, -8.35, 0.52]&#10;&#10;2. **Tables**: Three small white tables serve as surfaces for dining or work:&#10;   - Small white table 3: [-4.08, -8.26, 0.37]&#10;   - Small white table 5: [-5.98, -7.66, 0.49]&#10;   - Small white table 6: [-5.53, -11.07, 0.66]&#10;&#10;3. **Structural Elements**: The office glass wall and snack shop wall create divisions in the space, located at:&#10;   - Office glass wall: [-4.57, -9.14, 0.58]&#10;   - Snack shop wall: [-4.57, -9.14, 0.58] (overlapping with the glass wall)&#10;&#10;4. **Seating Options**: A small sofa adds comfort to the setting, situated at:&#10;   - Sofa: [-4.89, -10.13, 0.62]&#10;&#10;5. **Work Area**: A table designed for laptop use at:&#10;   - Laptop table: [-5.62, -9.49, 0.58]&#10;&#10;6. **Character &#38; Drone**: A seated character is interacting with the space near the laptop table:&#10;   - Character: [-5.32, -9.84, 0.60]&#10;&#10;   Additionally, there is a drone hovering nearby at:&#10;   - Drone: {-5.60, -8.85, -1.47}&#10;&#10;7. **Atrium Features**: Several structures indicating the presence of an atrium include:&#10;   - Atrium tower: [-4.70, -9.36, 0.61]&#10;   - Atrium tower vent: [-4.70, -9.36, 0.61] (same position as the tower)&#10;   - Side base wall: [-4.70, -9.36, 0.61] (also overlapping)&#10;&#10;This collection of objects creates a dynamic and functional caf&#233; space, where individuals can enjoy meals, work, or socialize in a structured yet relaxed environment."
   ]
   node [
     id 163
@@ -2160,7 +2160,7 @@ graph [
     position -5.809399258600855
     position 0.35304107666015627
     level 6
-    summary "The group of objects consists of two types of chairs and two small grey tables, along with a wooden slat bench. The **bench** is positioned at **[-4.79, -5.60, 0.25]**. There are **two cafe chairs** in charcoal grey: the first chair is located at **[-7.01, -5.80, 0.40]** and the second chair at **[-6.62, -6.67, 0.46]**. The **first small grey table** is situated at **[-6.21, -5.00, 0.28]**, while the **second table** is at **[-6.36, -5.98, 0.38]**. The arrangement suggests a cozy seating area, likely intended for casual use or social gatherings."
+    summary "The group of objects consists of a wooden slatted bench and several chairs and tables, all positioned in close proximity within a 3D space. &#10;&#10;1. **Bench**: The wooden slats bench is located at coordinates [-4.79, -5.60, 0.25].&#10;  &#10;2. **Chairs**: &#10;   - Chair 1 (cafe style, charcoal grey) is positioned at [-7.01, -5.80, 0.40].&#10;   - Chair 2 (cafe style, charcoal grey) is slightly closer to the first chair at [-6.62, -6.67, 0.46].&#10;&#10;3. **Tables**: &#10;   - Small Grey Table 6 is situated at [-6.21, -4.99, 0.28], offering a nearby flat surface.&#10;   - Small Grey Table 8 is a little further away at [-6.36, -5.98, 0.38].&#10;&#10;This arrangement suggests a cozy, casual seating area suitable for social interactions."
   ]
   node [
     id 164
@@ -2169,7 +2169,7 @@ graph [
     position -7.000822040373613
     position 0.6003863215446472
     level 6
-    summary "In this 3D environment, there are several objects positioned closely together. The **charcoal grey cafe chair** (chair_cafeCharcoalGrey12) is located at coordinates [-8.33, -5.67, 0.47]. Nearby, a **small white table** (smallWhiteTable7) is positioned at [-8.09, -7.45, 0.63]. Two **sitting characters** are also present: **BaseCharacter_Sitting10_29** at [-8.53, -7.99, 0.71] and **BaseCharacter_Sitting12** at [-8.51, -6.89, 0.60]. The objects are arranged in a manner that suggests a social or communal setting, likely indicating a space designed for interaction or relaxation."
+    summary "The summarized group of objects consists of two chairs and two sitting characters in a caf&#233; setting. The chair labeled `chair_cafeCharcoalGrey12` is positioned at coordinates [-8.33, -5.67, 0.47], while `smallWhiteTable7` is situated nearby at [-8.09, -7.45, 0.63]. The first sitting character, `BaseCharacter_Sitting10_29`, is located at [-8.53, -7.99, 0.71], and another sitting character, `BaseCharacter_Sitting12`, is positioned at [-8.51, -6.89, 0.60]. This arrangement suggests a cozy dining area where the characters are seated around the small white table."
   ]
   node [
     id 165
@@ -2178,7 +2178,7 @@ graph [
     position 1.9636689843757698
     position 0.023861080408096313
     level 6
-    summary "The group of objects includes a character and several poster boards along with a drone. &#10;&#10;1. **BaseCharacter_Walking_2** is located at coordinates [-9.39, 1.03, 0.57], suggesting it is positioned on the ground with a slight elevation.&#10;2. **posterBoard6** is situated at [-8.15, 2.84, 0.54], elevated higher than the character, likely displaying information or art.&#10;3. **posterBoard_24** is found at [-7.69, 2.39, 0.54], also positioned above the ground and nearby the first poster board.&#10;4. **drone_5** is positioned at [-10.54, 1.59, -1.56], indicating it is in the air, positioned lower than the ground level of the other objects.&#10;&#10;Overall, the arrangement suggests an interactive environment with a walking character and visual displays (poster boards), alongside a drone that could be monitoring or surveying the area."
+    summary "The group consists of four objects positioned in a 3D environment:&#10;&#10;1. **BaseCharacter_Walking_2** is located at coordinates [-9.39, 1.03, 0.57], suggesting it is likely a character in motion.&#10;2. **posterBoard6** is situated at [-8.15, 2.84, 0.54], indicating it is elevated, possibly displaying information or advertisements.&#10;3. **posterBoard_24** is found at [-7.69, 2.39, 0.54], also indicating an elevated position similar to posterBoard6.&#10;4. **drone_5** is positioned at [-10.54, 1.59, -1.56], suggesting it is hovering lower than the other objects, potentially performing tasks or providing aerial surveillance.&#10;&#10;Overall, the scene appears to include a walking character, two poster boards for display purposes, and a drone, indicating a dynamic environment with interactive elements."
   ]
   node [
     id 166
@@ -2187,7 +2187,7 @@ graph [
     position 3.498806402708373
     position 0.5429845452308655
     level 6
-    summary "In this 3D environment, there is a collection of objects positioned as follows: &#10;&#10;1. **BucketSeat_24** is located at coordinates [-11.92, 3.71, 0.63], suggesting it is a standalone seating option.&#10;2. **planter_Mangrove_Fan_Palm3_Blueprint_344** is found at [-13.35, 2.06, 0.23], likely serving as decorative landscaping.&#10;3. **CornerSofa_26** is placed at [-12.74, 4.57, 0.66], indicating a social seating area, perhaps intended for relaxation or gathering.&#10;4. **BaseCharacter_Sitting2_5** is situated at [-12.17, 3.65, 0.65], representing a character in a seated position, likely engaging with the nearby furniture.&#10;&#10;The arrangement of these objects suggests a cozy, inviting setting, possibly a lounge or gathering space that includes furniture for seating as well as decorative elements."
+    summary "The group of objects consists of a cozy living area with a bucket seat, a corner sofa, and a seated character, creating an inviting space. &#10;&#10;1. **BucketSeat_24** is positioned at [-11.92, 3.71, 0.63], offering a comfortable spot for relaxation.&#10;2. **planter_Mangrove_Fan_Palm3_Blueprint_344**, located at [-13.35, 2.06, 0.23], adds a touch of greenery to the environment.&#10;3. **CornerSofa_26** sits at [-12.74, 4.57, 0.66], enhancing the social aspect of the area with ample seating.&#10;4. **BaseCharacter_Sitting2_5** is positioned at [-12.17, 3.65, 0.65], likely engaging with the furniture or enjoying the ambiance.&#10;&#10;Together, these objects form a well-furnished, relaxing setting that blends comfort with a natural touch."
   ]
   node [
     id 167
@@ -2196,7 +2196,7 @@ graph [
     position 7.70782567168192
     position -1.894558886686961
     level 6
-    summary "In the 3D environment, there are three notable objects: two exit signs and a drone. The first exit sign, labeled exitSign13_16, is located at the coordinates [-12.13, 7.08, -2.07]. The second exit sign, exitSign12_9, is situated nearby at [-11.57, 9.16, -1.97]. The drone, identified as drone_6, is positioned at approximately [-10.71, 6.89, -1.64]. The exit signs are relatively close to each other, while the drone is slightly further away, positioned lower than both exit signs."
+    summary "The group of objects consists of two exit signs and a drone, each positioned in a 3D environment. &#10;&#10;1. **exitSign13_16** is located at coordinates [-12.13, 7.08, -2.07]. &#10;2. **drone_6** is positioned nearby at approximately [-10.71, 6.89, -1.64]. &#10;3. **exitSign12_9** is situated at [-11.57, 9.16, -1.97], slightly higher in the y-coordinate compared to the other objects.&#10;&#10;The exit signs are intended to guide individuals, while the drone may serve a monitoring or delivery function in the vicinity."
   ]
   node [
     id 168
@@ -2205,7 +2205,7 @@ graph [
     position 6.336187999307684
     position 0.5384354591369629
     level 6
-    summary "The object &#34;posterBoard8_Blueprint&#34; is positioned at coordinates [-7.76, 6.34, 0.54] in a 3D environment. This suggests that the object is likely a blueprint or a template, possibly representing a design or plan, and its placement indicates it is situated above the ground level (z = 0.54). The specific coordinate values suggest it may be part of a larger layout or assembly, potentially indicating its role in a spatial arrangement or visual presentation."
+    summary "The object &#34;posterBoard8_Blueprint&#34; is located at the coordinates [-7.7621, 6.3362, 0.5384] in a 3D environment. This object appears to be a blueprint or representation of a poster board, likely intended for illustrative or planning purposes. Its position indicates it is situated slightly above the ground level, suggesting it may be displayed or referenced within a space where spatial arrangement or layout dynamics are relevant."
   ]
   node [
     id 169
@@ -2214,7 +2214,7 @@ graph [
     position 6.706288825082154
     position -0.02110443115234375
     level 6
-    summary "In this 3D environment, a variety of objects are positioned as follows:&#10;&#10;1. **CornerSofa2** is located at coordinates [-14.53, 5.84, 0.08], serving as a seating area.&#10;2. **LapTopTable_32** is nearby at [-15.22, 6.13, -0.005], likely functioning as a workspace for laptops or similar devices.&#10;3. **OfficeDoor13** is positioned at [-13.81, 8.92, 0.25], providing access to the office area.&#10;4. **ReclinerSofa_40** is situated at [-14.64, 4.55, 0.03], offering another seating option for relaxation.&#10;5. **drone_7** is located at a height of -0.46 at coordinates [-14.06, 8.08, -0.46], suggesting it may be hovering or resting just above ground level.&#10;&#10;Overall, these objects create a functional and diverse space, combining seating, workspace, and access points."
+    summary "In the specified 3D environment, there are several notable objects with their respective positions:&#10;&#10;1. **CornerSofa2**: Located at coordinates [-14.53, 5.84, 0.08], this sofa is positioned low, offering seating in a corner arrangement.&#10;   &#10;2. **LapTopTable_32**: Found at [-15.22, 6.13, -0.005], this table serves as a workspace or surface area, slightly lower in height compared to the sofa.&#10;&#10;3. **OfficeDoor13**: Positioned at [-13.81, 8.92, 0.25], this door likely leads to another room, set higher in the space, indicating it might be an entry point.&#10;&#10;4. **ReclinerSofa_40**: At [-14.64, 4.55, 0.03], this recliner is also situated low, suggesting it is intended for relaxation.&#10;&#10;5. **drone_7**: Hovering at coordinates [-14.06, 8.08, -0.46], this drone is positioned much higher in the vertical space, indicating it is likely in a flying state.&#10;&#10;Overall, the group includes seating furniture (corner sofa and recliner), a workspace (laptop table), an access point (office door), and a flying object (drone), indicating a diverse and functional area, possibly an office or lounge setting."
   ]
   node [
     id 170
@@ -2223,7 +2223,7 @@ graph [
     position 8.131022214889526
     position -0.6350338459014893
     level 6
-    summary "The summary outlines two drones operating within a 3D environment. Drone_8 is positioned at coordinates (-17.76, 8.40, -0.54) and Drone_9 is located at (-21.41, 7.86, -0.73). Both drones are situated at similar elevations above a reference point (z-coordinates are close), but Drone_9 is positioned further to the left (more negative x-value) and slightly lower in the y-direction compared to Drone_8."
+    summary "The group consists of two drones, drone_8 and drone_9, each positioned in a 3D space. Drone_8 is located at coordinates (-17.76, 8.40, -0.54), while drone_9 is situated at (-21.41, 7.86, -0.73). Both drones are relatively close to each other on the y-axis, but drone_9 is positioned further along the negative x-axis and slightly lower on the z-axis compared to drone_8."
   ]
   node [
     id 171
@@ -2232,7 +2232,7 @@ graph [
     position 0.16237884741114691
     position -1.1140676587820053
     level 7
-    summary "The summary of the group of objects consists of two drones positioned in a 3D environment. &#10;&#10;- **Drone 0** is located at coordinates (0.0, 0.0, -0.97), indicating it is situated close to the origin and slightly below the reference plane (z-axis).&#10;- **Drone 1** is positioned at approximately (1.49, 0.32, -1.26), which places it further along the x-axis and slightly above the z-coordinate of Drone 0, while also being elevated slightly above its own z-coordinate.&#10;&#10;Both drones are positioned below the reference plane, with Drone 1 being located diagonally away from Drone 0."
+    summary "In this 3D environment, there are two drones: drone_0 and Drone1. &#10;&#10;- **drone_0** is located at the coordinates (0.0, 0.0, -0.97), placing it slightly below the reference plane.&#10;- **Drone1** is positioned at (1.49, 0.32, -1.26), also below the reference plane but further along the x-axis and slightly elevated in the y-axis compared to drone_0.&#10;&#10;Both drones are situated in close proximity, with Drone1 being approximately 1.5 units to the right and having a minor upward offset relative to drone_0."
   ]
   node [
     id 172
@@ -2241,7 +2241,7 @@ graph [
     position 0.6825918733927643
     position 1.2266992330551147
     level 7
-    summary "The object &#34;BaseCharacter_Walking4_11&#34; is positioned at coordinates [5.4223, 0.6826, 1.2267] in a 3D environment. It appears to be a character model, likely indicating a walking animation or state, as suggested by its name. The coordinates suggest its location in the scene, indicating a moderate distance from the origin along the x-axis and a lower elevation on the y-axis, with a forward placement along the z-axis. This positioning may imply interaction or movement potential within the specified space."
+    summary "The object &#34;BaseCharacter_Walking4_11&#34; is a character model located in a 3D environment at the coordinates [5.4223, 0.6826, 1.2267]. It appears to be in a walking animation or state, as indicated by its designation. The character's position suggests it is situated slightly above the ground plane, likely on a surface that allows for movement. The coordinates indicate a specific location within the 3D space, allowing for interaction or collision with other objects in the environment."
   ]
   node [
     id 173
@@ -2250,7 +2250,7 @@ graph [
     position -4.479154604118245
     position -0.7328165471553802
     level 7
-    summary "The group consists of two objects in a 3D environment: a &#34;planterLong4_Blueprint3&#34; positioned at approximately coordinates [0.56, -4.98, -0.25] and a &#34;drone_1&#34; located at about [2.87, -3.98, -1.22]. The planter is situated above ground level, likely serving as a decorative or functional element for plant arrangements, while the drone is placed in close proximity but at a lower elevation, suggesting it might be in operation or hovering nearby."
+    summary "The group consists of two objects: a planter named &#34;planterLong4_Blueprint3&#34; located at the coordinates [0.56, -4.98, -0.25], and a drone labeled &#34;drone_1&#34; positioned at [2.87, -3.98, -1.22]. The planter is situated at a higher elevation relative to the drone, which is positioned further along the positive x-axis and negative y-axis in a 3D space."
   ]
   node [
     id 174
@@ -2259,7 +2259,7 @@ graph [
     position -10.126800435807283
     position 0.1883343756198883
     level 7
-    summary "In this 3D environment, we have four objects positioned as follows:&#10;&#10;1. **Drone (drone_2)**: Located at coordinates (0.054, -8.754, -1.345), suggesting it is hovering slightly above ground level.&#10;  &#10;2. **Sofa Recliner (sofa_recliner4)**: Positioned at (-2.214, -11.792, 0.806), indicating it is a piece of furniture set at a higher elevation above the ground.&#10;  &#10;3. **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)**: Found at (-2.790, -10.619, 0.664), this table is also situated at a similar elevation, likely nearby the sofa.&#10;  &#10;4. **Sitting Character (BaseCharacter_Sitting_2)**: Placed at (-0.940, -9.342, 0.628), this character is positioned in a manner suggesting interaction, possibly sitting on or near the sofa.&#10;&#10;Overall, the objects are arranged in a cozy seating area, with the sofa, coffee table, and sitting character in close proximity, while the drone is positioned nearby at a slightly higher level."
+    summary "The scene consists of four objects arranged in a 3D environment:&#10;&#10;1. **drone_2** is positioned at coordinates (0.05, -8.75, -1.34), suggesting it might be hovering or flying slightly above ground level.&#10;2. **sofa_recliner4** is located at (-2.21, -11.79, 0.81), indicating it is likely a comfortable seating option positioned away from the central area.&#10;3. **woodenCageCoffeeTable_58** is placed near the recliner at (-2.79, -10.62, 0.66), possibly serving as a surface for placing items within reach of the sofa.&#10;4. **BaseCharacter_Sitting_2** is situated at (-0.94, -9.34, 0.63), implying a human character seated, likely interacting with the surrounding furniture. &#10;&#10;Overall, the arrangement suggests a cozy area with seating and functional furniture centered around a gathering space."
   ]
   node [
     id 175
@@ -2268,7 +2268,7 @@ graph [
     position -6.282484605617604
     position 0.24738198518753052
     level 7
-    summary "The described group of objects consists of two charcoal grey caf&#233; chairs and a small grey table, along with a seated character. The chairs, designated as chair_cafeCharcoalGrey10 and chair_cafeCharcoalGrey9, are positioned close to each other at coordinates [-2.83, -6.32] and [-2.56, -5.34], respectively. Nearby, the smallGreyTable3 is located at [-3.46, -6.36], providing a surface for interaction. Additionally, BaseCharacter_Sitting6_17 is situated at [-1.64, -7.11], indicating that it's likely seated next to the table or in proximity to the chairs. The arrangement suggests a cozy caf&#233; setting, conducive for socializing or relaxing."
+    summary "The group of objects comprises two charcoal grey caf&#233; chairs (chair_cafeCharcoalGrey10 and chair_cafeCharcoalGrey9) and a small grey table (smallGreyTable3), all situated in a caf&#233;-like setting. The chairs are positioned at coordinates [-2.827, -6.318] and [-2.562, -5.342], while the small table is located at [-3.462, -6.364]. Additionally, there is a seated character (BaseCharacter_Sitting6_17) positioned at [-1.639, -7.106]. This arrangement suggests a cozy dining area or social space within the 3D environment, emphasizing a casual atmosphere for interaction."
   ]
   node [
     id 176
@@ -2277,7 +2277,7 @@ graph [
     position -9.030493106606345
     position 0.42355822026729584
     level 7
-    summary "The described group of objects appears to represent a cozy cafe or lounge area. &#10;&#10;Key components include:&#10;- **Chairs and Tables:** There are several cafe chairs, including two in charcoal grey and two in orange, arranged around at least three small white tables, creating a seating arrangement for patrons.&#10;- **Walls and Partitions:** An office glass wall and a snack shop wall are present, suggesting a separation of spaces or privacy features within the environment.&#10;- **Sofa:** A small sofa is included, providing additional seating comfort.&#10;- **Drone and Other Objects:** A drone is noted, indicating potential for a technological element in this setting, possibly related to food delivery or surveillance.&#10;- **Atrium Tower Features:** The area includes structures identified as atrium towers and vents, hinting at a multi-level design or an architectural feature that enhances the ambiance.&#10;&#10;Overall, the layout suggests an inviting gathering space where people can relax, socialize, or work, with the combination of furniture and architectural elements contributing to a functional and aesthetically pleasing environment."
+    summary "The described group of objects primarily consists of caf&#233; furniture and structural elements within a 3D environment, likely simulating a casual or lounge area. Key items include multiple chairs in charcoal grey and orange colors, suggesting a vibrant seating arrangement. There are also three small white tables, providing dining or workspace options. Notable features include an office glass wall and a snack shop wall, indicating the presence of different functional areas. A small sofa is included for added comfort, along with a table designed for laptop use, enhancing the versatile space for social and work-related activities. Additionally, a drone is present in the scene, possibly for monitoring or delivery purposes. Several atrium towers and walls contribute to the architectural layout, reinforcing the intricate design of this 3D environment. Overall, this collection of objects creates an inviting and multifunctional space catered to social interaction and leisure."
   ]
   node [
     id 177
@@ -2286,7 +2286,7 @@ graph [
     position -5.809399258600855
     position 0.35304107666015627
     level 7
-    summary "The summarized group of objects includes a wooden slatted bench positioned at coordinates [-4.79, -5.60, 0.25], and two cafe chairs in charcoal grey: one located at [-7.01, -5.80, 0.40] and another at [-6.62, -6.67, 0.46]. Additionally, there are two small grey tables, with one situated at [-6.21, -5.00, 0.28] and the other at [-6.36, -5.98, 0.38]. This collection suggests an outdoor or casual seating area, potentially suitable for a caf&#233; or park setting."
+    summary "The group of objects consists of a wooden slat bench and several caf&#233;-style chairs and tables arranged in a spatial setting. The wooden bench, located at position [-4.79, -5.60, 0.25], provides a seated area for relaxation. The caf&#233; chairs, identified as &#34;chair_cafeCharcoalGrey14_6&#34; at position [-7.01, -5.80, 0.40] and &#34;chair_cafeCharcoalGrey15_8&#34; at position [-6.62, -6.67, 0.46], offer additional seating options, both exuding a charcoal grey color that complements the aesthetic. There are also two small grey tables positioned nearby; &#34;smallGreyTable6&#34; at [-6.21, -4.99, 0.28] and &#34;smallGreyTable8&#34; at [-6.36, -5.98, 0.38], providing surfaces for dining or drinks, contributing to a cozy caf&#233;-like atmosphere."
   ]
   node [
     id 178
@@ -2295,7 +2295,7 @@ graph [
     position -7.000822040373613
     position 0.6003863215446472
     level 7
-    summary "In the described 3D environment, there is a seating arrangement consisting of a charcoal grey cafe chair positioned at coordinates [-8.3267, -5.6705, 0.4689] and a small white table located nearby at [-8.0916, -7.4522, 0.6276]. Additionally, there are two characters seated: one character (BaseCharacter_Sitting10_29) is situated at [-8.5260, -7.9877, 0.7061], while another (BaseCharacter_Sitting12) is positioned at [-8.5111, -6.8930, 0.5989]. The layout suggests a cozy and casual setting, likely conducive to relaxation or conversation."
+    summary "In this 3D environment, there are four objects arranged in close proximity, indicative of a casual caf&#233; setting. &#10;&#10;1. **Chair**: The &#34;chair_cafeCharcoalGrey12&#34; is positioned at coordinates [-8.33, -5.67, 0.47], featuring a charcoal grey color that adds a modern touch.&#10;   &#10;2. **Table**: Nearby is the &#34;smallWhiteTable7&#34; located at [-8.09, -7.45, 0.63], which offers a contrast with its white surface, creating a bright focal point in the setting.&#10;&#10;3. **Characters**: Two seated characters are present:&#10;   - &#34;BaseCharacter_Sitting10_29&#34; is at [-8.53, -7.99, 0.71], suggesting engagement with the space, likely at the table.&#10;   - &#34;BaseCharacter_Sitting12&#34; sits at [-8.51, -6.89, 0.60], hinting at a potential interaction with the other character or the surrounding ambiance.&#10;&#10;Overall, the arrangement of these objects suggests a social setting ideal for conversations or casual meetings."
   ]
   node [
     id 179
@@ -2304,7 +2304,7 @@ graph [
     position 1.9636689843757698
     position 0.023861080408096313
     level 7
-    summary "In the described 3D environment, there are four distinct objects positioned as follows:&#10;&#10;1. **BaseCharacter_Walking_2**: This character is located at coordinates [-9.39, 1.03, 0.57], suggesting a standing posture with a slight elevation above the ground.&#10;&#10;2. **posterBoard6**: Positioned at [-8.15, 2.84, 0.54], this poster board is raised higher than the BaseCharacter, indicating it might be intended for viewing from a distance.&#10;&#10;3. **posterBoard_24**: This object is found at [-7.69, 2.39, 0.54], slightly closer to the BaseCharacter and positioned lower than posterBoard6, yet still elevated to be noticeable.&#10;&#10;4. **drone_5**: The drone is located at [-10.54, 1.59, -1.56], indicating it is at a lower altitude than the other objects, suggesting it might be hovering close to the ground or positioned beneath the plane of the other items.&#10;&#10;Overall, the collection of objects includes a walking character, two elevated poster boards, and a hovering drone, creating a dynamic scene with varying heights and positions."
+    summary "In the 3D environment, we have the following objects: &#10;&#10;1. **BaseCharacter_Walking_2** is positioned at coordinates [-9.3909, 1.0298, 0.5723], indicating a location close to the center of the scene.&#10;2. **posterBoard6** is located at [-8.1520, 2.8364, 0.5447], slightly higher in the vertical axis compared to the BaseCharacter.&#10;3. **posterBoard_24** is positioned at [-7.6936, 2.3937, 0.5371], also elevated and situated further along the x-axis than posterBoard6.&#10;4. **drone_5** is at coordinates {'x': -10.5433, 'y': 1.5947, 'z': -1.5587}, which places it lower in the z-axis relative to the other objects, hovering further left in the scene.&#10;&#10;This setup suggests a dynamic environment where a walking character navigates around various poster boards while a drone moves above."
   ]
   node [
     id 180
@@ -2313,7 +2313,7 @@ graph [
     position 7.70782567168192
     position -1.894558886686961
     level 7
-    summary "The group of objects consists of two exit signs and a drone, all positioned in a 3D space. &#10;&#10;1. **exitSign13_16** is located at the coordinates [-12.13, 7.08, -2.07].&#10;2. **drone_6** is positioned slightly higher and to the right, at {'x': -10.71, 'y': 6.89, 'z': -1.64}.&#10;3. **exitSign12_9** is situated further left and higher compared to the drone, at [-11.57, 9.16, -1.97].&#10;&#10;The exit signs appear to be marking different paths, while the drone may potentially be monitoring or interacting with the surrounding environment."
+    summary "The summary of the specified group of objects is as follows:&#10;&#10;1. **exitSign13_16**: Located at coordinates [-12.13, 7.08, -2.07], this exit sign is positioned relatively low in the 3D space.&#10;&#10;2. **drone_6**: Positioned at approximately (-10.71, 6.89, -1.64), this drone is situated nearby, slightly closer to the exit sign and at a higher elevation than exitSign13_16.&#10;&#10;3. **exitSign12_9**: Found at coordinates [-11.57, 9.16, -1.97], this exit sign is higher than exitSign13_16 and located southwest of both the drone and the first exit sign.&#10;&#10;Overall, these objects are positioned in close proximity within the 3D environment, with the exit signs facilitating navigation and the drone potentially serving a monitoring or transportation function."
   ]
   node [
     id 181
@@ -2322,7 +2322,7 @@ graph [
     position 6.336187999307684
     position 0.5384354591369629
     level 7
-    summary "The object &#34;posterBoard8_Blueprint&#34; is situated at the coordinates [-7.76, 6.34, 0.54]. This suggests it is located in a 3D space, possibly within a virtual environment or simulation. The name indicates that it may serve as a visual graphic or schematic, potentially used for displaying information, plans, or designs, given the context of a &#34;blueprint.&#34; The specific position suggests it could be part of an organized layout or arrangement within that environment."
+    summary "The object &#34;posterBoard8_Blueprint&#34; is located at the coordinates [-7.7621, 6.3362, 0.5384]. It appears to be a blueprint or plan displayed on a blue poster board, likely utilized for presentations, designs, or project outlines. The position suggests it is situated in a 3D space, possibly within a room or an area designated for displaying information."
   ]
   node [
     id 182
@@ -2331,7 +2331,7 @@ graph [
     position 6.706288825082154
     position -0.02110443115234375
     level 7
-    summary "The summarized group of objects in the 3D environment includes:&#10;&#10;1. **CornerSofa2** - Located at position [-14.53, 5.84, 0.08], this piece of furniture is likely designed for seating and is positioned centrally within a room or space.&#10;   &#10;2. **LapTopTable_32** - Situated at [-15.22, 6.13, -0.00], this table is intended for a laptop setup, suggesting an area for work or study adjacent to the sofa.&#10;&#10;3. **OfficeDoor13** - Found at [-13.81, 8.92, 0.25], this door provides entry or exit to the office area, indicating proximity to the seating and work areas.&#10;&#10;4. **ReclinerSofa_40** - Placed at [-14.64, 4.55, 0.03], this recliner offers additional seating comfort, likely complementing the CornerSofa2 in the relaxation area.&#10;&#10;5. **drone_7** - Positioned at {'x': -14.06, 'y': 8.08, 'z': -0.46}, this drone is located slightly elevated, possibly for surveillance or activity purposes, hovering above the office space.&#10;&#10;Overall, these objects suggest a functional office or relaxation area, combining seating, work, and tech elements in close proximity."
+    summary "In the specified 3D environment, the following objects are present:&#10;&#10;1. **CornerSofa2**: Located at coordinates [-14.53, 5.84, 0.08], this corner sofa is positioned relatively low, providing a cozy seating area.&#10;   &#10;2. **LapTopTable_32**: Situated at [-15.22, 6.13, -0.00], this laptop table is slightly lower than the sofa, making it a functional workspace.&#10;&#10;3. **OfficeDoor13**: This door is found at [-13.81, 8.92, 0.25], positioned higher than the other objects, likely allowing access to another space or room.&#10;&#10;4. **ReclinerSofa_40**: Located at [-14.64, 4.55, 0.03], this recliner is also relatively low and is arranged for comfortable lounging.&#10;&#10;5. **drone_7**: The drone is hovering in the air at coordinates [-14.06, 8.08, -0.46], indicating its position above the ground level, likely in a flight mode or temporarily stationed.&#10;&#10;These objects collectively suggest a living or working space, with seating areas, a work table, an entrance, and an airborne drone, creating a dynamic and functional environment."
   ]
   node [
     id 183
@@ -2340,7 +2340,7 @@ graph [
     position 8.131022214889526
     position -0.6350338459014893
     level 7
-    summary "The summary of the group of objects includes two drones: drone_8 and drone_9. &#10;&#10;- **drone_8** is located at the coordinates (-17.76, 8.40, -0.54), positioned slightly above ground level.&#10;- **drone_9** is situated at (-21.41, 7.86, -0.73), also above ground but further along the negative x-axis compared to drone_8.&#10;&#10;Both drones are in close proximity, hovering at similar elevations above the ground in a 3D space."
+    summary "The summary of the group of objects consists of two drones: **drone_8** and **drone_9**. &#10;&#10;- **drone_8** is positioned at coordinates **(-17.76, 8.40, -0.54)**, indicating its location in a 3D space with a slight elevation above the ground level.&#10;- **drone_9** is located at **(-21.41, 7.86, -0.73)**, which is slightly further along the negative x-axis compared to drone_8, and also indicates a comparable height above the ground.&#10;&#10;Both drones appear to be relatively close to each other, with drone_8 being more to the east on the x-axis than drone_9, while maintaining similar y-coordinates."
   ]
   node [
     id 184
@@ -2349,7 +2349,7 @@ graph [
     position 0.16237884741114691
     position -1.1140676587820053
     level 8
-    summary "The group of objects consists of two drones positioned in a 3D space. Drone_0 is located at coordinates (0.0, 0.0, -0.97), while Drone1 is situated at approximately (1.49, 0.32, -1.26). Both drones are positioned below the z=0 plane, indicating they are likely at a lower altitude. Drone1 is slightly offset in the positive x and y directions compared to Drone_0."
+    summary "The group consists of two drones positioned in a 3D environment. Drone_0 is located at coordinates (0.0, 0.0, -0.971), while Drone1 is at (1.495, 0.325, -1.257). Both drones have a negative z-coordinate, indicating they are positioned below a reference plane, likely ground level. The first drone (Drone_0) is at the origin, while Drone1 is offset in the x and y dimensions, suggesting they are in close proximity to each other in the 3D space."
   ]
   node [
     id 185
@@ -2358,7 +2358,7 @@ graph [
     position 0.6825918733927643
     position 1.2266992330551147
     level 8
-    summary "The object &#34;BaseCharacter_Walking4_11&#34; is positioned at the coordinates [5.4223, 0.6826, 1.2267] within a 3D environment. This object appears to represent a character that is currently in a walking animation or movement state. The precise location indicates its placement within the spatial dimensions, likely in relation to other objects or terrain within the scene."
+    summary "The object &#34;BaseCharacter_Walking4_11&#34; is a character model positioned at the coordinates [5.422, 0.683, 1.227] within a 3D environment. This suggests that the character is likely in a walking animation or stance, with its location indicating it is roughly 5.4 units along the X-axis, 0.7 units along the Y-axis, and 1.2 units vertically along the Z-axis from the origin point of the environment. The details suggest an active state, indicating movement or interaction within the scene."
   ]
   node [
     id 186
@@ -2367,7 +2367,7 @@ graph [
     position -4.479154604118245
     position -0.7328165471553802
     level 8
-    summary "In this 3D environment, there are two key objects: a long blue planter (planterLong4_Blueprint3) positioned at coordinates [0.56, -4.98, -0.25], and a drone (drone_1) located at coordinates [2.87, -3.98, -1.22]. The planter is situated closer to the origin on the x-axis, while the drone is further along the x-axis and lowered in the z-axis, indicating it is hovering slightly above ground level."
+    summary "The scene includes two primary objects: a **planterLong4_Blueprint3** positioned at coordinates [0.56, -4.98, -0.25] and a **drone_1** located at [2.87, -3.98, -1.22]. The planter is likely a long rectangular object, possibly intended for planting or displaying plants, while the drone is a flying device, positioned significantly farther along the x-axis and slightly lower on the z-axis compared to the planter. This suggests that the drone may be in the process of navigating through the environment, while the planter remains stationary."
   ]
   node [
     id 187
@@ -2376,7 +2376,7 @@ graph [
     position -10.126800435807283
     position 0.1883343756198883
     level 8
-    summary "In the described 3D environment, there are four distinct objects with specific positions:&#10;&#10;1. **Drone (drone_2)**: Positioned at (0.05, -8.75, -1.34), indicating it is slightly elevated in the z-axis.&#10;2. **Sofa Recliner (sofa_recliner4)**: Located at (-2.21, -11.79, 0.81), this object is situated further back and at a higher elevation compared to the drone.&#10;3. **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)**: Found at (-2.79, -10.62, 0.66), it is near the sofa recliner, slightly lower in elevation but close in proximity.&#10;4. **Base Character Sitting (BaseCharacter_Sitting_2)**: Situated at (-0.94, -9.34, 0.63), this character is in a sitting pose, positioned to the right of the sofa recliner and table.&#10;&#10;Overall, the arrangement suggests a cozy seating area, with the sofa recliner and coffee table forming a central gathering spot, while the drone hovers nearby."
+    summary "The objects in the described 3D environment consist of a drone and several furniture pieces. The drone, identified as &#34;drone_2,&#34; is positioned at coordinates (0.054, -8.754, -1.345). Nearby, there is a &#34;sofa_recliner4&#34; located at (-2.214, -11.792, 0.806), a &#34;woodenCageCoffeeTable_58&#34; situated at a slightly different location of (-2.790, -10.619, 0.664), and a character named &#34;BaseCharacter_Sitting_2&#34; found at (-0.940, -9.342, 0.628). The arrangement suggests a living space with the drone hovering above, while the furniture and character occupy distinct yet closely related positions within the environment."
   ]
   node [
     id 188
@@ -2385,7 +2385,7 @@ graph [
     position -6.282484605617604
     position 0.24738198518753052
     level 8
-    summary "The summary of the described group of objects includes two caf&#233; chairs and a small table, along with a seated character. &#10;&#10;1. **Chair_cafeCharcoalGrey10** is located at coordinates [-2.83, -6.32, 0.24].&#10;2. **Chair_cafeCharcoalGrey9** is positioned at [-2.56, -5.34, 0.16].&#10;3. **SmallGreyTable3** is situated at [-3.46, -6.36, 0.22].&#10;4. **BaseCharacter_Sitting6_17**, representing a character in a seated position, is found at [-1.64, -7.11, 0.38].&#10;&#10;This arrangement suggests a casual caf&#233; setting, with the chairs and table likely forming a small dining or social area, while the seated character adds life to the environment."
+    summary "In this 3D environment, we have a group of objects primarily consisting of cafe furniture. The group includes two charcoal grey chairs: &#34;chair_cafeCharcoalGrey10&#34; located at approximately [-2.83, -6.32, 0.24] and &#34;chair_cafeCharcoalGrey9&#34; at about [-2.56, -5.34, 0.16]. Additionally, there is a small grey table, &#34;smallGreyTable3,&#34; positioned at [-3.46, -6.36, 0.22]. Completing the scene is a seated character, &#34;BaseCharacter_Sitting6_17,&#34; who is placed at [-1.64, -7.11, 0.38]. This arrangement suggests a cozy cafe setting for social interaction or relaxation."
   ]
   node [
     id 189
@@ -2394,7 +2394,7 @@ graph [
     position -9.030493106606345
     position 0.42355822026729584
     level 8
-    summary "The described group of objects appears to be part of a cafe or casual dining environment, featuring a mix of seating, tables, and structural elements. The **chairs** are predominantly in charcoal grey and orange colors, suggesting a modern aesthetic, with multiple chairs positioned around small white tables, indicating an arrangement for dining or socializing. **SmallWhiteTable3** and **smallWhiteTable5** are situated in proximity to several chairs, creating inviting seating arrangements. &#10;&#10;Additionally, a **sofa** is included, which provides an alternative seating option, while **snackShopWall_32** hints at potential snack offerings in the vicinity. The presence of **officeGlassWallA_19** suggests a separation or enclosure, likely making the space feel more intimate. &#10;&#10;Structural elements like **atriumTower_2**, **atriumTowerVent_27**, and **sideBaseWall_2** are notable, indicating vertical integration in the design, possibly allowing for natural light or ventilation. A **drone** positioned at a lower elevation might denote a tech-friendly environment, perhaps interacting with customers or serving functions within the cafe. &#10;&#10;Overall, this environment seems curated for comfort and interaction, suitable for casual meetings or leisure."
+    summary "The provided group of objects comprises a variety of furniture and architectural features within a 3D environment, primarily set in a caf&#233; or casual dining space. Key items include multiple caf&#233; chairs in charcoal grey and orange, arranged around small white tables that provide seating areas. Notable furniture includes the sofa_small_48, which adds comfort to the area, as well as tables meant for laptop use. The presence of officeGlassWallA_19 and snackShopWall_32 suggests a structured environment, while the atriumTower_2 and associated elements hint at a more open or luxurious architectural design. A drone object is also included, indicating potential interactive or dynamic elements in this environment. Overall, this summary depicts a cozy, multifunctional space conducive to leisure and work."
   ]
   node [
     id 190
@@ -2403,7 +2403,7 @@ graph [
     position -5.809399258600855
     position 0.35304107666015627
     level 8
-    summary "In this 3D environment, there are several objects positioned as follows:&#10;&#10;1. **Wooden Bench** (bench_woodenSlats2) - Located at coordinates [-4.79, -5.60, 0.25], this bench has a simplistic design with slatted seating.&#10;&#10;2. **Cafe Chair (Charcoal Grey 14)** (chair_cafeCharcoalGrey14_6) - Positioned at [-7.01, -5.80, 0.40], this chair offers a modern appearance and is likely designed for small dining or caf&#233; settings.&#10;&#10;3. **Cafe Chair (Charcoal Grey 15)** (chair_cafeCharcoalGrey15_8) - Found at [-6.62, -6.67, 0.46], this chair complements the previous one, providing additional seating.&#10;&#10;4. **Small Grey Table 6** (smallGreyTable6) - Situated at [-6.21, -4.99, 0.28], this table is likely intended for casual dining or coffee service, matching the overall aesthetic of the chairs.&#10;&#10;5. **Small Grey Table 8** (smallGreyTable8) - Located at [-6.36, -5.98, 0.38], this table serves a similar function as the previous one, enhancing the informal dining arrangement.&#10;&#10;Together, these objects create a cohesive caf&#233; or casual dining area, featuring a wooden bench and multiple seating options with accompanying tables, primarily in grey tones for a modern look."
+    summary "The summarized group of objects consists of a wooden bench and multiple caf&#233;-style chairs and tables, all positioned in a 3D space. The wooden bench, identified as &#34;bench_woodenSlats2,&#34; is located at coordinates [-4.79, -5.60, 0.25]. Two caf&#233; chairs, &#34;chair_cafeCharcoalGrey14_6&#34; and &#34;chair_cafeCharcoalGrey15_8,&#34; are situated nearby at [-7.01, -5.80, 0.40] and [-6.62, -6.67, 0.46], respectively. Additionally, there are two small grey tables, &#34;smallGreyTable6&#34; at [-6.21, -4.99, 0.28] and &#34;smallGreyTable8&#34; at [-6.36, -5.98, 0.38]. This arrangement suggests a social or dining area setting with ample seating and surfaces for engaging activities."
   ]
   node [
     id 191
@@ -2412,7 +2412,7 @@ graph [
     position -7.000822040373613
     position 0.6003863215446472
     level 8
-    summary "In this 3D environment, there are four objects closely positioned to each other, suggesting a cafe or cozy gathering area. &#10;&#10;1. **Chair (cafeCharcoalGrey12)**: Positioned at coordinates [-8.33, -5.67, 0.47], this charcoal grey chair serves as seating for patrons.&#10;2. **Small Table (smallWhiteTable7)**: Located at [-8.09, -7.45, 0.63], this small white table is likely intended for drinks or small meals, complementing the chairs around it.&#10;3. **Sitting Character (BaseCharacter_Sitting10_29)**: Found at [-8.53, -7.99, 0.71], this character is seated, possibly at the small white table, contributing to the social atmosphere of the scene.&#10;4. **Sitting Character (BaseCharacter_Sitting12)**: Positioned at [-8.51, -6.89, 0.60], another character is also seated nearby, indicating a friendly interaction or conversation in this space.&#10;&#10;Overall, the arrangement of the chair, table, and sitting characters creates an inviting and interactive environment typical of a cafe setting."
+    summary "In this 3D environment, there are two chairs and two characters seated around a small white table. &#10;&#10;1. **Chair**: The caf&#233;-style chair, &#34;chair_cafeCharcoalGrey12&#34;, is positioned at coordinates [-8.3267, -5.6705, 0.4689].&#10;2. **Table**: A small white table, labeled &#34;smallWhiteTable7&#34;, is located nearby at [-8.0916, -7.4522, 0.6276].&#10;3. **Characters**: &#10;   - &#34;BaseCharacter_Sitting10_29&#34; is seated to the right of the table at [-8.5260, -7.9877, 0.7061].&#10;   - &#34;BaseCharacter_Sitting12&#34; is seated slightly further away at [-8.5111, -6.8930, 0.5989].&#10;&#10;The arrangement suggests a casual setting where the two seated characters interact while positioned around the small white table, creating a cozy atmosphere."
   ]
   node [
     id 192
@@ -2421,7 +2421,7 @@ graph [
     position 7.70782567168192
     position -1.894558886686961
     level 8
-    summary "In this 3D environment, there are three notable objects: two exit signs and a drone. &#10;&#10;1. **exitSign13_16**: Located at the coordinates [-12.12, 7.08, -2.07], this exit sign serves as a navigation aid in the space. &#10;2. **drone_6**: Positioned at {'x': -10.71, 'y': 6.89, 'z': -1.64}, this drone is likely a flying object that may be used for surveillance, delivery, or exploration purposes within the area.&#10;3. **exitSign12_9**: Found at the coordinates [-11.57, 9.16, -1.97], this exit sign also provides directional assistance, potentially marking another exit route.&#10;&#10;The exit signs are in close proximity to each other, with the drone positioned nearby, indicating a likely area of movement or activity among these objects."
+    summary "The group of objects consists of two exit signs and a drone, all positioned in a 3D space. &#10;&#10;1. **exitSign13_16** is located at the coordinates [-12.1255, 7.0760, -2.0748].&#10;2. **drone_6** is positioned nearby at [-10.7141, 6.8919, -1.6412].&#10;3. **exitSign12_9** is situated further along the y-axis at [-11.5694, 9.1555, -1.9677].&#10;&#10;The exit signs are intended for navigation, while the drone appears to be in close proximity to both signs, possibly engaged in monitoring or transportation tasks within the area."
   ]
   node [
     id 193
@@ -2430,7 +2430,7 @@ graph [
     position 6.336187999307684
     position 0.5384354591369629
     level 8
-    summary "The object &#34;posterBoard8_Blueprint&#34; is a blueprint or design sheet intended for presentation or illustrative purposes. It is located at the coordinates [-7.7621, 6.3362, 0.5384], placing it in a 3D environment where it is likely positioned on a surface or wall, given its blueprint nature. The blue color suggests it may be used to convey information visually, possibly related to architectural or design concepts."
+    summary "The object &#34;posterBoard8_Blueprint&#34; is a blueprint or diagram representation typically used for planning or design purposes. It is located in a 3D environment at the coordinates [-7.76, 6.34, 0.54], which indicates its position in the space relative to a defined origin. The coordinates suggest it is situated slightly towards the negative x-axis and positive y-axis, with a slight elevation above the ground level."
   ]
   node [
     id 194
@@ -2439,7 +2439,7 @@ graph [
     position 6.706288825082154
     position -0.02110443115234375
     level 8
-    summary "The group of objects consists of a Corner Sofa (CornerSofa2) positioned at coordinates [-14.53, 5.84, 0.08], which provides seating in a corner layout. Adjacent to it is a Laptop Table (LapTopTable_32) located at [-15.22, 6.13, -0.00], serving as a workspace for laptops and other items. The Office Door (OfficeDoor13) is positioned at [-13.81, 8.92, 0.25], allowing entry and exit into the office space. Additionally, there is a Recliner Sofa (ReclinerSofa_40) placed at [-14.64, 4.55, 0.03], designed for relaxation. Lastly, a drone (drone_7) is found at coordinates [-14.06, 8.08, -0.46], indicating its operational position within the environment. This arrangement suggests a cozy workspace or lounge area with seating and amenities for both relaxation and productivity."
+    summary "The group of objects comprises several pieces of furniture and a drone, each positioned within a 3D space. &#10;&#10;1. **CornerSofa2** is located at the coordinates [-14.53, 5.84, 0.08], providing a cozy seating area.&#10;2. **LapTopTable_32** is situated nearby at [-15.22, 6.13, -0.00], offering a workspace for laptops and related activities.&#10;3. **OfficeDoor13** is set at [-13.81, 8.92, 0.25], likely serving as the entry point to an office area.&#10;4. **ReclinerSofa_40** is positioned at [-14.64, 4.55, 0.03], indicating an additional seating option, perhaps for relaxation.&#10;5. **drone_7** is found in the vicinity at a lower elevation of [-14.06, 8.08, -0.46], which suggests it may be in the process of hovering or maneuvering through the space.&#10;&#10;This collection indicates a casual indoor environment with both stationary furniture and a mobile drone capable of navigation or surveillance."
   ]
   node [
     id 195
@@ -2448,7 +2448,7 @@ graph [
     position 8.131022214889526
     position -0.6350338459014893
     level 8
-    summary "The group consists of two drones, drone_8 and drone_9, located in a 3D space. &#10;&#10;- **drone_8** is positioned at coordinates (-17.76, 8.40, -0.54), slightly elevated along the y-axis.&#10;- **drone_9** is located at (-21.41, 7.86, -0.73), also above the ground but at a more negative x-coordinate compared to drone_8. &#10;&#10;Both drones are situated in close horizontal proximity, with drone_9 being slightly lower in the y-dimension. The z-coordinates indicate they are hovering or positioned above a common reference plane, potentially the ground."
+    summary "The summary of the group of objects includes two drones: drone_8 and drone_9. &#10;&#10;- **drone_8** is located at coordinates (-17.76, 8.40, -0.54), indicating it is positioned slightly below the ground level (z-coordinate close to 0) and relatively far along the negative x-axis. &#10;- **drone_9** is at coordinates (-21.41, 7.86, -0.73), also positioned slightly below ground level, and further along the negative x-axis compared to drone_8.&#10;&#10;Both drones are situated in close proximity to each other, with drone_9 being positioned more negatively along the x-axis and slightly lower along the y-axis compared to drone_8."
   ]
   node [
     id 196
@@ -2457,7 +2457,7 @@ graph [
     position 0.16237884741114691
     position -1.1140676587820053
     level 9
-    summary "The summary describes two drones positioned in a 3D environment. The first drone, referred to as &#34;drone_0,&#34; is located at coordinates (0.0, 0.0, -0.9707), indicating it is directly above the ground with a slight negative elevation. The second drone, &#34;Drone1,&#34; is positioned at coordinates approximately (1.495, 0.325, -1.257), suggesting it is offset to the right and slightly above drone_0, also at a negative elevation. The two drones are spatially distinct, with a clear separation in their x, y, and z coordinates."
+    summary "In the specified 3D environment, there are two drones with distinct positions. The first drone, identified as drone_0, is located at coordinates (0.0, 0.0, -0.97), which places it near the origin, slightly below the zero plane on the z-axis. The second drone, labeled Drone1, is situated at coordinates (1.49, 0.32, -1.26), indicating that it is positioned to the right and slightly forward relative to drone_0 while also being below the zero plane on the z-axis. Both drones are at a similar depth below the zero plane but diverge in their horizontal positioning."
   ]
   node [
     id 197
@@ -2466,7 +2466,7 @@ graph [
     position 0.6825918733927643
     position 1.2266992330551147
     level 9
-    summary "The object &#34;BaseCharacter_Walking4_11&#34; is positioned in a 3D environment at the coordinates [5.422, 0.683, 1.227]. This object likely represents an animated character model in a walking pose, given its designation. The coordinates indicate its location in the 3D space, with the first value representing the X-axis (horizontal position), the second the Y-axis (depth), and the third the Z-axis (vertical position). The character appears to be situated in a relatively elevated position, possibly on a terrain or platform within the environment."
+    summary "The object &#34;BaseCharacter_Walking4_11&#34; is positioned in a 3D space with coordinates [5.4223, 0.6826, 1.2267]. This indicates that the character is situated approximately 5.42 units along the X-axis, 0.68 units along the Y-axis, and 1.23 units along the Z-axis. The name suggests that this object represents a walking character, potentially part of an animation sequence or a game environment."
   ]
   node [
     id 198
@@ -2475,7 +2475,7 @@ graph [
     position -4.479154604118245
     position -0.7328165471553802
     level 9
-    summary "The summary of the objects is as follows: &#10;&#10;1. **Object**: planterLong4_Blueprint3&#10;   - **Position**: [0.56, -4.98, -0.25] (in a 3D space)&#10;&#10;2. **Object**: drone_1&#10;   - **Position**: {x: 2.87, y: -3.98, z: -1.22} (in a 3D space)&#10;&#10;The planter is positioned at a point that is considerably to the left and slightly above ground level, while the drone is further away on the x-axis and lower in the z-axis, indicating that it is positioned further on the horizontal plane and at a greater depth in the vertical axis compared to the planter."
+    summary "The group consists of two objects: a &#34;planterLong4_Blueprint3&#34; and &#34;drone_1.&#34; The planter is located at the coordinates [0.56, -4.98, -0.25], which places it above ground level within a 3D space. The drone, identified as &#34;drone_1,&#34; is positioned at [2.87, -3.98, -1.22], suggesting that it is flying or hovering slightly lower in the environment compared to the planter. The two objects are situated in proximity to one another, with the drone being farther along the X-axis while both share similar Y-coordinates."
   ]
   node [
     id 199
@@ -2484,7 +2484,7 @@ graph [
     position -10.126800435807283
     position 0.1883343756198883
     level 9
-    summary "The group of objects consists of a drone, a sofa recliner, a wooden cage coffee table, and a sitting character, each positioned in a 3D environment. &#10;&#10;- **Drone (drone_2)** is located at coordinates (0.054, -8.754, -1.345), hovering near the floor level.&#10;- **Sofa Recliner (sofa_recliner4)** is placed at (-2.214, -11.792, 0.806), suggesting it is a furniture piece likely meant for seating.&#10;- **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)** accompanies the sofa at (-2.790, -10.619, 0.664), positioned slightly lower than the sofa, providing a surface for items above floor height.&#10;- **Base Character (BaseCharacter_Sitting_2)** is positioned at (-0.940, -9.342, 0.628), indicating it is seated, likely close to the sofa to interact with the furniture or the coffee table.&#10;&#10;Overall, this arrangement suggests a cozy or social setting, possibly a living area where the character can relax, with the drone potentially serving as a mobile device for activities or monitoring."
+    summary "In the given 3D environment, the objects are organized as follows:&#10;&#10;1. **Drone (drone_2)** is positioned slightly above ground level at coordinates (0.0542, -8.7543, -1.3447), suggesting it might be hovering or preparing for movement.&#10;   &#10;2. **Sofa Recliner (sofa_recliner4)** is located at (-2.2141, -11.7916, 0.8064), indicating it's a seating object, with its height slightly elevated above the origin ground level.&#10;&#10;3. **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)** is placed at (-2.7895, -10.6190, 0.6639), adjacent to the sofa recliner, likely intended for functionality in a living space setup.&#10;&#10;4. **Base Character Sitting (BaseCharacter_Sitting_2)** is situated at (-0.9396, -9.3424, 0.6277), indicating a character is seated, potentially interacting with either the sofa or table nearby.&#10;&#10;Overall, these objects appear to depict a cozy seating arrangement, with the drone positioned above, possibly observing or interacting with the setting."
   ]
   node [
     id 200
@@ -2493,7 +2493,7 @@ graph [
     position -6.282484605617604
     position 0.24738198518753052
     level 9
-    summary "The set of objects consists of three chairs and a small table, all positioned in a 3D environment, likely resembling a cafe setting. &#10;&#10;1. **Chair: chair_cafeCharcoalGrey10** is located at coordinates [-2.83, -6.32, 0.24].&#10;2. **Chair: chair_cafeCharcoalGrey9** is situated at slightly different coordinates [-2.56, -5.34, 0.16].&#10;3. **Table: smallGreyTable3** is positioned further back at [-3.46, -6.36, 0.22].&#10;4. A **BaseCharacter: BaseCharacter_Sitting6_17** is placed at [-1.64, -7.11, 0.38], indicating someone seated nearby.&#10;&#10;Overall, the arrangement suggests a cozy seating area, with the chairs facing towards the small table, providing a functional space for interaction."
+    summary "The group of objects consists of two charcoal grey caf&#233; chairs, identified as chair_cafeCharcoalGrey10 and chair_cafeCharcoalGrey9, positioned close to each other at coordinates [-2.827, -6.318] and [-2.562, -5.342], respectively. Nearby, a small grey table, labeled smallGreyTable3, is located at [-3.462, -6.364]. Additionally, a character model designated as BaseCharacter_Sitting6_17 is situated at [-1.639, -7.106], appearing to be seated in the vicinity of the chairs and table. This arrangement suggests a cozy caf&#233; setting designed for social interaction or relaxation."
   ]
   node [
     id 201
@@ -2502,7 +2502,7 @@ graph [
     position -9.030493106606345
     position 0.42355822026729584
     level 9
-    summary "The described scene features a collection of furniture and structural elements within a 3D environment. Key objects include several chairs in varying colors, such as charcoal grey and orange, positioned around small white tables, creating a cozy caf&#233;-like atmosphere. The caf&#233; area consists of two chairs in a charcoal grey color located close to a small white table, along with additional chairs and tables scattered nearby.&#10;&#10;Significant structural components are present, including office glass walls and walls belonging to a snack shop, which suggest a multi-functional space. There is also a small sofa, indicating a relaxation area. A table designated for laptops suggests that this environment supports both social and work-related activities.&#10;&#10;An intriguing feature is the presence of a drone, indicating a potentially automated or tech-savvy environment, while two identical atrium towers and a side base wall suggest vertical expansion or architectural layers within the space. The arrangement of these objects reflects a thoughtfully designed area for socializing, working, and possibly recreational activities."
+    summary "The described group of objects is situated in a cozy caf&#233; or lounge environment. Key elements include multiple chairs&#8212;two in charcoal grey and two in orange&#8212;arranged around three small white tables, creating inviting seating areas. The positions of the chairs suggest a layout conducive to social interaction, with the tables likely used for dining or informal gatherings. &#10;&#10;Additionally, a glass wall and walls associated with a snack shop are present, enhancing the atmosphere. A small sofa adds a comfort element to the space. A table designated for laptops indicates a functional workspace. The environment includes a character sitting, suggesting an interactive or populated space, and a drone is positioned nearby, likely used for delivery or monitoring purposes. &#10;&#10;Prominent structures like atrium towers and side walls frame the area, contributing to the overall architectural design. The arrangement of these objects displays a blend of comfort, utility, and accessibility, catering to both casual socializing and work-related activities."
   ]
   node [
     id 202
@@ -2511,7 +2511,7 @@ graph [
     position -5.809399258600855
     position 0.35304107666015627
     level 9
-    summary "In this 3D environment, there are several furniture objects positioned close to each other, creating a cozy space. The wooden slatted bench is located at coordinates [-4.79, -5.60, 0.25], offering ample seating. Nearby, there are two cafe-style chairs in charcoal grey: one is positioned at [-7.01, -5.80, 0.40] and the other at [-6.62, -6.67, 0.46], providing additional seating options. There are also two small grey tables, one at [-6.21, -4.99, 0.28] and the other at [-6.36, -5.98, 0.38], which serve as surfaces for dining or placing items, complementing the seating arrangement. Overall, the layout suggests a communal or inviting area suitable for social interactions."
+    summary "The summarized group of objects consists of two types of chairs and two small tables, accompanied by a wooden slatted bench. &#10;&#10;- **Bench**: A wooden slatted bench is located at coordinates [-4.79, -5.60, 0.25].&#10;- **Chairs**: &#10;  - The first chair, labeled as chair_cafeCharcoalGrey14_6, is positioned at [-7.01, -5.80, 0.40].&#10;  - The second chair, chair_cafeCharcoalGrey15_8, is found at [-6.62, -6.67, 0.46].&#10;- **Tables**: &#10;  - The first small grey table, smallGreyTable6, is situated at [-6.21, -4.99, 0.28].&#10;  - The second table, smallGreyTable8, is located at [-6.36, -5.98, 0.38].&#10;&#10;In summary, this collection includes a bench, two cafe-style chairs, and two small grey tables, arranged in close proximity within the 3D space."
   ]
   node [
     id 203
@@ -2520,7 +2520,7 @@ graph [
     position -7.000822040373613
     position 0.6003863215446472
     level 9
-    summary "In a 3D environment, there's a small caf&#233; setup featuring two chairs and a table. The **charcoal grey chair** (chair_cafeCharcoalGrey12) is positioned at coordinates [-8.3267, -5.6705, 0.4689], providing seating for patrons. Adjacent to it is a **small white table** (smallWhiteTable7) located at [-8.0916, -7.4522, 0.6276], serving as a surface for drinks or snacks. Two characters are seated nearby: **BaseCharacter_Sitting10_29**, positioned at [-8.5260, -7.9877, 0.7061], and **BaseCharacter_Sitting12**, located at [-8.5111, -6.8930, 0.5989]. This arrangement creates a cozy atmosphere ideal for socializing or relaxing."
+    summary "The summarized group of objects consists of a chair, a small white table, and two characters sitting nearby. The chair, labeled as &#34;chair_cafeCharcoalGrey12,&#34; is positioned at coordinates [-8.3267, -5.6705, 0.4689]. Nearby, a &#34;smallWhiteTable7&#34; is located at [-8.0916, -7.4522, 0.6276]. The first seated character, named &#34;BaseCharacter_Sitting10_29,&#34; is situated at [-8.5260, -7.9877, 0.7061], while the second character, &#34;BaseCharacter_Sitting12,&#34; is at [-8.5111, -6.8930, 0.5989]. The arrangement suggests a cozy setting, likely in a caf&#233; environment, conducive for conversation or relaxation."
   ]
   node [
     id 204
@@ -2529,7 +2529,7 @@ graph [
     position 7.70782567168192
     position -1.894558886686961
     level 9
-    summary "In the described 3D environment, there are three notable objects: two exit signs and a drone. The first exit sign, labeled exitSign13_16, is located at the coordinates [-12.13, 7.08, -2.07]. The second exit sign, exitSign12_9, is positioned slightly further along the y-axis at [-11.57, 9.16, -1.97]. The drone, identified as drone_6, is situated at the coordinates [-10.71, 6.89, -1.64], positioned between the two exit signs but closer to exitSign13_16. The exit signs serve as navigational aids, while the drone may be operating in surveillance or delivery roles within this spatial arrangement."
+    summary "The summarized group of objects includes two exit signs and a drone, all positioned within a 3D space. &#10;&#10;1. **exitSign13_16** is located at coordinates approximately [-12.13, 7.08, -2.07].&#10;2. **drone_6** is positioned nearby at approximately [-10.71, 6.89, -1.64].&#10;3. **exitSign12_9** is situated at approximately [-11.57, 9.16, -1.97].&#10;&#10;The exit signs are placed relatively close to each other, while the drone is also within a short distance, suggesting potential interactions or pathways in this environment."
   ]
   node [
     id 205
@@ -2538,7 +2538,7 @@ graph [
     position 6.336187999307684
     position 0.5384354591369629
     level 9
-    summary "The object named &#34;posterBoard8_Blueprint&#34; is positioned at coordinates [-7.76, 6.34, 0.54]. This suggests that it is located in a 3D space, possibly representing a planning or display area. The designation &#34;blueprint&#34; implies that it may contain design information or plans, likely for architectural or project purposes, and the blue color may signify a certain theme or branding element associated with the content displayed on it. The relatively low height (0.54) indicates it is positioned close to the ground or base plane of the environment."
+    summary "The object &#34;posterBoard8_Blueprint&#34; is a blueprint of a poster board, positioned in a 3D environment at the coordinates [-7.7621, 6.3362, 0.5384]. This position indicates that the object is located towards the negative x-axis and positive y-axis, with a slight elevation above the ground level on the z-axis. The blueprint likely serves as a visual representation or plan for constructing or utilizing the poster board in the environment."
   ]
   node [
     id 206
@@ -2547,7 +2547,7 @@ graph [
     position 6.706288825082154
     position -0.02110443115234375
     level 9
-    summary "In this 3D environment, we have a collection of furniture and a drone situated at various coordinates. The **CornerSofa2** is positioned at [-14.53, 5.84, 0.08], serving as a comfortable seating option. Nearby, the **LapTopTable_32** is located at [-15.22, 6.13, -0.005], likely providing a workspace. The **OfficeDoor13**, situated at [-13.81, 8.92, 0.25], marks the entry point of this area. Additionally, there is a **ReclinerSofa_40** located at [-14.64, 4.55, 0.03], offering a more relaxed seating arrangement. Lastly, **drone_7** hovers at coordinates {'x': -14.06, 'y': 8.08, 'z': -0.46}, suggesting an active presence within the spatial layout. These objects collectively contribute to a functional and cozy office or living area."
+    summary "This summary describes a small group of furniture and an object in a 3D environment:&#10;&#10;1. **CornerSofa2** is located at the coordinates [-14.53, 5.84, 0.08]. It is positioned relatively low in the 3D space.&#10;2. **LapTopTable_32** is situated near the corner sofa at [-15.22, 6.13, -0.00], slightly lower than the corner sofa.&#10;3. **OfficeDoor13** is positioned further away at [-13.81, 8.92, 0.25], suggesting it is likely an entrance or exit point in the environment, raised slightly above the other objects.&#10;4. **ReclinerSofa_40** is also nearby at [-14.64, 4.55, 0.03], positioned close to the corner sofa but lower than the laptop table.&#10;5. **drone_7** is situated at the coordinates {'x': -14.06, 'y': 8.08, 'z': -0.46}, hovering above other objects, creating a layered interaction with the space.&#10;&#10;Overall, this grouping includes seating arrangements and workspace elements with a hovering drone, creating a mixed-use area that balances functionality and comfort."
   ]
   node [
     id 207
@@ -2556,7 +2556,7 @@ graph [
     position 0.16237884741114691
     position -1.1140676587820053
     level 10
-    summary "The summary of the group of objects includes two drones: &#10;&#10;1. **drone_0** is positioned at coordinates (0.0, 0.0, -0.9707), indicating it is located directly above the ground level, slightly below the zero elevation reference.&#10;   &#10;2. **Drone1** is positioned at (1.4946, 0.3248, -1.2574), which places it further away from the origin than drone_0, also slightly below the zero elevation but with a positive offset in both x and y axes. &#10;&#10;Both drones are hovering just below ground level in a 3D environment."
+    summary "The summary of the specified group of objects is as follows:&#10;&#10;- **Drone_0** is located at the coordinates (0.0, 0.0, -0.97), which positions it slightly below the zero level on the Z-axis.&#10;- **Drone1** is positioned at (1.49, 0.32, -1.26), indicating it is further along the X-axis and slightly upwards on the Y-axis compared to Drone_0, while also being below the Z-axis level.&#10;&#10;Both drones are situated in a 3D space, with Drone1 approximately 1.49 units to the right and 0.32 units above Drone_0, both at similar depths below the reference plane along the Z-axis."
   ]
   node [
     id 208
@@ -2565,7 +2565,7 @@ graph [
     position 0.6825918733927643
     position 1.2266992330551147
     level 10
-    summary "The object &#34;BaseCharacter_Walking4_11&#34; is located at the coordinates [5.4223, 0.6826, 1.2267]. It appears to represent a character in a walking animation or state, positioned within a 3D environment. The specific coordinates indicate its placement in relation to the surrounding space, which may include other objects or elements within the scene."
+    summary "The object &#34;BaseCharacter_Walking4_11&#34; is a character model positioned at the coordinates [5.4223, 0.6826, 1.2267] in a 3D environment. This position suggests that the character is located in a spatial area where the X-coordinate is approximately 5.42, the Y-coordinate is around 0.68, and the Z-coordinate indicates a height of about 1.23. The naming convention implies that this character is part of a walking animation sequence or behavior, likely designed for use in a game or simulation."
   ]
   node [
     id 209
@@ -2574,7 +2574,7 @@ graph [
     position -4.479154604118245
     position -0.7328165471553802
     level 10
-    summary "In the 3D environment, there are two distinct objects: &#10;&#10;1. **Planter (planterLong4_Blueprint3)**: This object is located at the coordinates [0.56, -4.98, -0.25]. Its position suggests it may be intended for a surface that is slightly above the ground level, possibly displaying or containing plants.&#10;&#10;2. **Drone (drone_1)**: This object is positioned at coordinates [2.87, -3.98, -1.22]. The drone's position indicates it is hovering or flying slightly above a lower elevation, possibly level with or just above ground.&#10;&#10;The two objects are spatially separated, with the drone being located towards the positive x-axis and similarly in the negative y-axis compared to the planter."
+    summary "The group consists of two objects: a `planterLong4_Blueprint3` located at the coordinates [0.56, -4.98, -0.25], and a `drone_1` positioned at approximately [2.87, -3.98, -1.22]. The planter is situated slightly above ground level, while the drone is positioned further along the x-axis and slightly lower in the z-axis. This indicates that the planter is likely part of a gardening or landscaping setup, while the drone may be utilized for monitoring or delivering supplies in that environment."
   ]
   node [
     id 210
@@ -2583,7 +2583,7 @@ graph [
     position -10.126800435807283
     position 0.1883343756198883
     level 10
-    summary "In this 3D environment, we have a collection of objects with varying positions. The **drone_2** is positioned at approximately (0.05, -8.75, -1.34), suggesting it's hovering slightly above ground level in a central area. The **sofa_recliner4** is located at around (-2.21, -11.79, 0.81), indicating it's placed in a seating area potentially toward the corner of the space. Nearby, the **woodenCageCoffeeTable_58** is situated at (-2.79, -10.62, 0.66), likely serving as a table in front of the recliner, facilitating interaction in this living area. Lastly, **BaseCharacter_Sitting_2** is positioned at (-0.94, -9.34, 0.63), suggesting a character seated comfortably, possibly on the recliner or in close proximity to the coffee table. The arrangement indicates a cozy setting conducive to relaxation and social interaction."
+    summary "In the given 3D environment, we have four objects with the following notable details: &#10;&#10;1. **Drone (drone_2)** - Located close to the origin at approximately (0.05, -8.75, -1.34), suggesting it may be hovering or in an elevated position.&#10;   &#10;2. **Sofa Recliner (sofa_recliner4)** - Positioned at (-2.21, -11.79, 0.81), this object is likely a seating arrangement that implies functionality and comfort.&#10;&#10;3. **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)** - Found at (-2.79, -10.62, 0.66), this coffee table is situated near the sofa, indicating it is part of a living area setup.&#10;&#10;4. **Sitting Character (BaseCharacter_Sitting_2)** - Positioned at (-0.94, -9.34, 0.63), this character seems to be seated, potentially on or near one of the sitting furniture pieces.&#10;&#10;The arrangement suggests a living space where the sofa recliner and the coffee table create a cozy area for the sitting character, while the drone may provide a view or interact with the environment from above."
   ]
   node [
     id 211
@@ -2592,7 +2592,7 @@ graph [
     position -6.282484605617604
     position 0.24738198518753052
     level 10
-    summary "In this 3D environment, there are two charcoal grey cafe chairs, identified as chair_cafeCharcoalGrey10 and chair_cafeCharcoalGrey9, positioned at coordinates [-2.827, -6.318, 0.241] and [-2.561, -5.342, 0.158], respectively. A small grey table, smallGreyTable3, is located at [-3.462, -6.364, 0.215]. Additionally, there is a sitting character, BaseCharacter_Sitting6_17, positioned at [-1.639, -7.106, 0.375]. The overall arrangement suggests a compact cafe or dining setup, with the chairs arranged around the small table, while the character appears to be seated nearby."
+    summary "The summary of the objects in the 3D environment includes two charcoal grey cafe chairs, designated as chair_cafeCharcoalGrey10 and chair_cafeCharcoalGrey9, positioned near each other with chair_cafeCharcoalGrey10 at coordinates [-2.827, -6.318, 0.241] and chair_cafeCharcoalGrey9 at coordinates [-2.562, -5.342, 0.158]. A small grey table, smallGreyTable3, is situated nearby at position [-3.462, -6.364, 0.215]. Additionally, there is a character modeled as BaseCharacter_Sitting6_17, which is seated at coordinates [-1.639, -7.106, 0.375]. These objects suggest a cafe or dining setting with a focus on comfort and social interaction."
   ]
   node [
     id 212
@@ -2601,7 +2601,7 @@ graph [
     position -9.030493106606345
     position 0.42355822026729584
     level 10
-    summary "In the described environment, there are several seating and table objects, primarily in shades of charcoal grey and orange, indicative of a cafe or informal gathering area. Key objects include two charcoal grey chairs positioned near a small white table, suggesting a social seating arrangement. &#10;&#10;Additional items include an orange chair further away and two more white tables, which may serve various purposes such as dining or workspace. A small sofa is also present, creating a cozy corner for relaxation. &#10;&#10;Nearby, there are structural elements such as a glass wall and a designated snack shop wall that enhance the cafe-like atmosphere. The presence of a character sitting may imply interaction in the space, while a drone suggests technological integration within this environment. &#10;&#10;Overall, these objects reflect a casual yet functional setting aimed at social interaction, work, and leisure."
+    summary "The described objects are primarily seating and tables arranged within a cafe or snack shop environment, alongside some architectural elements and a character model. &#10;&#10;- **Seating**: Multiple chairs are present, including two charcoal grey chairs (chair_cafeCharcoalGrey2 and chair_cafeCharcoalGrey3) and two orange chairs (chair_cafeOrange4 and chair_cafeOrange5). Their positions indicate a grouping likely aimed at social interaction or dining.&#10;&#10;- **Tables**: There are several small white tables (smallWhiteTable3, smallWhiteTable5, and smallWhiteTable6) positioned around the chairs, suggesting areas for dining or leisure activities.&#10;&#10;- **Architectural Elements**: The environment features a glass wall (officeGlassWallA_19) and a wall from a snack shop (snackShopWall_32), enhancing the cafe atmosphere.&#10;&#10;- **Additional Features**: A sofa (sofa_small_48) is included for comfortable seating, along with a laptop table (table_laptop2), indicating a space that caters to both relaxation and work. The presence of a drone (drone_3) adds a unique tech element to the scene.&#10;&#10;- **Character Model**: A sitting character (BaseCharacter_Sitting9_26) suggests that the environment is interactive, potentially designed for virtual experiences.&#10;&#10;- **Atrium and Vent**: The atriumTower_2 and atriumTowerVent_27, along with the sideBaseWall_2, suggest a more complex architectural structure in the environment.&#10;&#10;Overall, these objects indicate a well-designed space that accommodates both casual seating and functional areas for work, integrated within a visually engaging caf&#233; layout."
   ]
   node [
     id 213
@@ -2610,7 +2610,7 @@ graph [
     position -5.809399258600855
     position 0.35304107666015627
     level 10
-    summary "The described group of objects consists of various seating and table arrangements in a 3D space. The **bench** (bench_woodenSlats2) is located at coordinates [-4.79, -5.60, 0.25], offering a wooden slatted surface suitable for seating. Two **cafe chairs** are positioned nearby: chair_cafeCharcoalGrey14_6 at [-7.01, -5.80, 0.40] and chair_cafeCharcoalGrey15_8 at [-6.62, -6.67, 0.46], both in charcoal grey, providing comfortable seating options. Additionally, there are two **small grey tables**: smallGreyTable6 at [-6.21, -4.99, 0.28] and smallGreyTable8 at [-6.36, -5.98, 0.38]. Together, these objects create a cozy area suitable for casual gatherings or dining, with an appealing combination of seating and table surfaces in soft grey tones."
+    summary "The summarized group of objects consists of a wooden slat bench and two charcoal grey cafe chairs, along with two small grey tables, all positioned in close proximity to one another within a 3D space. &#10;&#10;- **Bench**: The wooden slat bench is located at coordinates [-4.79, -5.60, 0.25].&#10;- **Chairs**: &#10;  - The first chair, also in charcoal grey, is situated at [-7.01, -5.80, 0.40].&#10;  - The second chair is positioned slightly closer at [-6.62, -6.67, 0.46].&#10;- **Tables**: &#10;  - The first grey table is found at [-6.21, -4.99, 0.28].&#10;  - The second grey table is located at [-6.36, -5.98, 0.38].&#10;&#10;Overall, this arrangement of furniture suggests a cozy seating area, likely designed for casual gatherings or dining experiences. The juxtaposition of tables and chairs indicates a thoughtful layout for functionality and comfort."
   ]
   node [
     id 214
@@ -2619,7 +2619,7 @@ graph [
     position -7.000822040373613
     position 0.6003863215446472
     level 10
-    summary "In this 3D environment, there is a cozy caf&#233; setup featuring two chairs and a small white table. The first chair, identified as &#34;chair_cafeCharcoalGrey12,&#34; is positioned at coordinates [-8.3267, -5.6705, 0.4689], providing a neutral, modern aesthetic. Next to it is &#34;smallWhiteTable7,&#34; located at [-8.0916, -7.4522, 0.6276], offering a contrasting vibrant look suitable for light dining or casual meetings.&#10;&#10;Seated at this table is &#34;BaseCharacter_Sitting10_29,&#34; located at [-8.5260, -7.9877, 0.7061], suggesting a relaxed posture typical of a caf&#233; setting. Another character, &#34;BaseCharacter_Sitting12,&#34; is positioned nearby at [-8.5111, -6.8930, 0.5989], also adopting a seated position, creating an inviting atmosphere for social interaction within this space."
+    summary "In the described 3D environment, there is a cozy seating arrangement featuring two characters and a small table. The **chair (cafeCharcoalGrey12)** is positioned slightly elevated at coordinates [-8.3267, -5.6705, 0.4689]. Nearby, a **small white table (smallWhiteTable7)** is placed at [-8.0916, -7.4522, 0.6276], providing a surface for potential drinks or snacks. One character, **BaseCharacter_Sitting10_29**, occupies a position at [-8.5260, -7.9877, 0.7061], while another character, **BaseCharacter_Sitting12**, is seated at [-8.5111, -6.8930, 0.5989]. The arrangement suggests a casual gathering or social interaction in a caf&#233;-like setting."
   ]
   node [
     id 215
@@ -2628,7 +2628,7 @@ graph [
     position 7.70782567168192
     position -1.894558886686961
     level 10
-    summary "The group of objects includes two exit signs and a drone, all located in a 3D environment. &#10;&#10;1. **exitSign13_16** is positioned at coordinates [-12.13, 7.08, -2.07].  &#10;2. **drone_6** is located nearby at {'x': -10.71, 'y': 6.89, 'z': -1.64}.  &#10;3. **exitSign12_9** is situated at [-11.57, 9.16, -1.97].  &#10;&#10;The exit signs appear to be arranged in the space with varying heights, while the drone is placed lower relative to the exit signs, indicating a configuration that likely relates to directional or navigational support in the area."
+    summary "The group of objects consists of two exit signs and a drone, each situated in a 3D environment. The **exitSign13_16** is located at coordinates approximately [-12.13, 7.08, -2.07], while the **exitSign12_9** is positioned at [-11.57, 9.16, -1.97]. The **drone_6** is nearby, situated at coordinates [-10.71, 6.89, -1.64]. The exit signs are likely intended for guiding or indicating exits in the environment, while the drone may be performing surveillance, navigation, or delivery tasks in the vicinity of the signs."
   ]
   node [
     id 216
@@ -2637,7 +2637,7 @@ graph [
     position 6.336187999307684
     position 0.5384354591369629
     level 10
-    summary "The object &#34;posterBoard8_Blueprint&#34; is positioned at the coordinates [-7.7621, 6.3362, 0.5384] in a 3D environment. This suggests it is likely a flat, blue-colored surface, possibly used for displaying information, plans, or designs. The specific coordinates indicate that it is located in a space that may have architectural or design significance. The elevation of approximately 0.54 suggests that it is positioned slightly above ground level."
+    summary "The object &#34;posterBoard8_Blueprint&#34; is a 3D object positioned at the coordinates [-7.7621, 6.3362, 0.5384]. This indicates that it is located in a spatial environment, possibly acting as a reference point or a display surface. The specific term &#34;Blueprint&#34; suggests that it may be intended for displaying plans, designs, or schematics. The position indicates it is elevated slightly above the ground level, given the positive z-coordinate."
   ]
   node [
     id 217
@@ -2646,7 +2646,7 @@ graph [
     position 0.16237884741114691
     position -1.1140676587820053
     level 11
-    summary "The group consists of two drones: &#34;drone_0&#34; and &#34;Drone1.&#34; &#10;&#10;- &#34;drone_0&#34; is positioned at (0.0, 0.0, -0.971), which places it at the origin of the X and Y axes, slightly below the reference level along the Z-axis.&#10;- &#34;Drone1&#34; is located at approximately (1.495, 0.325, -1.257), positioned about 1.495 units along the X-axis and 0.325 units along the Y-axis, also below the reference level but at a higher Z value than &#34;drone_0.&#34; &#10;&#10;Overall, both drones are in close proximity to each other, with &#34;Drone1&#34; slightly offset in the positive X and Y directions relative to &#34;drone_0.&#34;"
+    summary "The group consists of two drones positioned in a 3D space. &#10;&#10;- **drone_0** is located at coordinates (0.0, 0.0, -0.97), which places it close to the origin and slightly below the reference plane.&#10;- **Drone1** is positioned at (1.49, 0.32, -1.26), making it slightly offset to the right and above drone_0 while also below the reference plane.&#10;&#10;Both drones are at similar altitudes, with drone_1 being further along the x-axis and slightly upward on the y-axis compared to drone_0."
   ]
   node [
     id 218
@@ -2655,7 +2655,7 @@ graph [
     position 0.6825918733927643
     position 1.2266992330551147
     level 11
-    summary "The object &#34;BaseCharacter_Walking4_11&#34; is a character in a 3D environment positioned at the coordinates [5.4223, 0.6826, 1.2267]. This indicates its location along the x, y, and z axes, suggesting it is slightly elevated above a reference plane. The character appears to be in a walking pose or state, likely animated for movement through the environment. The specific position may imply its placement in relation to other objects or landmarks within the scene."
+    summary "The object &#34;BaseCharacter_Walking4_11&#34; is a character model designated for a walking animation or pose. It is situated in a 3D environment at the coordinates [5.4223, 0.6826, 1.2267]. This position indicates it is likely placed on a horizontal plane, with its x-coordinate suggesting some distance from the origin, a y-coordinate that might represent elevation or height, and a z-coordinate indicating depth or forward/backward positioning in the scene."
   ]
   node [
     id 219
@@ -2664,7 +2664,7 @@ graph [
     position -4.479154604118245
     position -0.7328165471553802
     level 11
-    summary "The group of objects consists of two items in a 3D environment. &#10;&#10;1. **Planter (planterLong4_Blueprint3)**: This object is located at the coordinates [0.56, -4.98, -0.25]. It appears to be a long, blue planter, likely used for holding plants or flowers.&#10;&#10;2. **Drone (drone_1)**: This object is positioned at the coordinates {'x': 2.87, 'y': -3.98, 'z': -1.22}. It is identified as a drone, suggesting it may be an aerial vehicle used for surveillance, delivery, or other functions.&#10;&#10;Together, these objects are situated within a spatial context, where the drone is further along the x-axis and somewhat lower along the z-axis compared to the planter."
+    summary "The group consists of two objects in a 3D environment: &#10;&#10;1. **Planter (planterLong4_Blueprint3)**: Positioned at coordinates [0.56, -4.98, -0.25], this planter appears to have a long design and is likely intended for planting or displaying greenery.&#10;&#10;2. **Drone (drone_1)**: Located at coordinates {'x': 2.87, 'y': -3.98, 'z': -1.22}, this drone may be used for tasks such as surveillance, delivery, or monitoring the planter area.&#10;&#10;The two objects are situated at different positions within the environment, with the drone positioned further along the x-axis compared to the planter, and both objects are set below the reference plane (indicated by negative z-values)."
   ]
   node [
     id 220
@@ -2673,7 +2673,7 @@ graph [
     position -10.126800435807283
     position 0.1883343756198883
     level 11
-    summary "In the described 3D environment, the objects are positioned as follows:&#10;&#10;1. **drone_2** is located at coordinates (0.05, -8.75, -1.34), hovering slightly above the ground level.&#10;2. **sofa_recliner4** is situated at approximately (-2.21, -11.79, 0.81), likely serving as a comfortable seating option.&#10;3. **woodenCageCoffeeTable_58** is placed nearby at (-2.79, -10.62, 0.66), complementing the sofa with a matching design where drinks or decor might rest.&#10;4. **BaseCharacter_Sitting_2** is perched at (-0.94, -9.34, 0.63), suggesting a character is engaged in a seated activity, possibly interacting with the surrounding objects.&#10;&#10;The arrangement showcases a cozy living space with a mix of furniture elements and a drone positioned discretely above."
+    summary "In this 3D environment, we have a set of objects with distinct positions:&#10;&#10;1. **Drone (drone_2)**: Located at approximately (0.05, -8.75, -1.34), this drone is hovering slightly below the level of other objects.&#10;   &#10;2. **Sofa Recliner (sofa_recliner4)**: Positioned at around (-2.21, -11.79, 0.81), this recliner is situated towards the negative x-axis and y-axis, indicating it is likely in a corner or a side of the space.&#10;&#10;3. **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)**: Found at approximately (-2.79, -10.62, 0.66), this coffee table is close to the sofa recliner, suggesting a cozy seating arrangement.&#10;&#10;4. **Sitting Character (BaseCharacter_Sitting_2)**: This character is seated at about (-0.94, -9.34, 0.63), placing them near the drone and in proximity to the other furniture items.&#10;&#10;Overall, the arrangement indicates a living space scenario with the recliner and coffee table likely creating a seating area, while the drone is positioned nearby, potentially for interaction or observation."
   ]
   node [
     id 221
@@ -2682,7 +2682,7 @@ graph [
     position -6.282484605617604
     position 0.24738198518753052
     level 11
-    summary "In the 3D environment, there are four objects positioned in close proximity to one another. The first two objects are chairs: **chair_cafeCharcoalGrey10** at coordinates [-2.83, -6.32, 0.24] and **chair_cafeCharcoalGrey9** at [-2.56, -5.34, 0.16]. Both chairs are part of a charcoal grey-themed cafe setting. A **smallGreyTable3** is located nearby at position [-3.46, -6.36, 0.22], complementing the cafe ambiance. Finally, there is a character, **BaseCharacter_Sitting6_17**, situated at [-1.64, -7.11, 0.38], implying an activity taking place, likely involving the use of the chairs and table. Overall, the arrangement suggests a cozy cafe scene where a character is seated among the furniture."
+    summary "In this summary, we have a group of objects situated within a 3D environment that includes two charcoal grey caf&#233; chairs, a small grey table, and a sitting character. &#10;&#10;1. **Chair (cafeCharcoalGrey10)** - Positioned at [-2.83, -6.32, 0.24], this chair is located towards the left side of the scene. &#10;2. **Chair (cafeCharcoalGrey9)** - Located at [-2.56, -5.34, 0.16], this chair is slightly above the first chair, closer to the table.&#10;3. **Table (smallGreyTable3)** - Found at [-3.46, -6.36, 0.22], this small table is near the two chairs, providing a central point for them.&#10;4. **Character (BaseCharacter_Sitting6_17)** - Positioned at [-1.64, -7.11, 0.38], this character is seated, likely interacting with the caf&#233; setting, sitting away from the table and chairs toward the front of the arrangement.&#10;&#10;Overall, the arrangement appears to create a cozy caf&#233; environment, with the chairs and table positioned for social interaction, while the character is placed in a way that suggests engagement with the space."
   ]
   node [
     id 222
@@ -2691,7 +2691,7 @@ graph [
     position -9.030493106606345
     position 0.42355822026729584
     level 11
-    summary "The described group of objects includes a variety of furniture pieces and structural elements situated within a 3D environment. Key components include multiple chairs, two of which are charcoal grey, and two orange chairs, creating a cohesive caf&#233; seating area. There are three small white tables, providing space for dining or work. &#10;&#10;Prominent structural elements include an office glass wall and a snack shop wall, both of which enhance the architectural integrity of the setting. Additionally, there is a small sofa and a laptop table within the environment, indicating a versatile space for relaxation and productivity. &#10;&#10;Notably, a character is seated nearby, suggesting that the space is active and occupied. A drone is also present, adding a layer of technological interaction. The atrium tower and accompanying vent, along with the side base wall, contribute to the overall structure and aesthetics of the environment, indicating a potentially multi-purpose or communal area. Overall, this set of objects indicates a socially inclusive, functional, and well-designed space."
+    summary "The scene features a variety of furniture and structural elements within a 3D environment, primarily centered around seating and tables. Notable objects include:&#10;&#10;- Five chairs (two in charcoal grey and three in orange) positioned near small white tables, suggesting a cozy cafe or lounge area.&#10;- Two small white tables, strategically placed to complement the seating arrangement.&#10;- A sofa, providing additional seating.&#10;- A glass wall and a wall for a snack shop, indicating a delineation of spaces.&#10;- Several elements related to an atrium, including two atrium towers and a vent, enhancing the architectural depth of the environment.&#10;- A table designated for a laptop, indicating a workspace.&#10;- A drone positioned above the seating area, adding a dynamic element to the scene.&#10;- A seated character suggests use and interaction within this space.&#10;&#10;Overall, the layout creates a communal and functional area, ideal for relaxation and social interaction."
   ]
   node [
     id 223
@@ -2700,7 +2700,7 @@ graph [
     position -5.809399258600855
     position 0.35304107666015627
     level 11
-    summary "The summarized group of objects consists of a wooden slats bench and several caf&#233;-style chairs and tables, forming a small outdoor or informal seating area. The **bench** is positioned at coordinates [-4.79, -5.60, 0.25], providing a resting spot. Nearby, two **caf&#233; chairs** (Charcoal Grey 14 and 15) are located at positions [-7.01, -5.80, 0.40] and [-6.62, -6.67, 0.46], respectively, allowing for casual seating. Additionally, there are two **small grey tables**&#8212;one at [-6.21, -4.99, 0.28] and the other at [-6.36, -5.98, 0.38]&#8212;which can serve as surfaces for drinks or food. Overall, the arrangement suggests a cozy yet functional space for relaxation and socializing."
+    summary "The group of objects consists of various seating and table elements arranged within a 3D space. &#10;&#10;1. **Bench**: A wooden slats bench is located at position `[-4.79, -5.60, 0.25]`, providing a long seating option.&#10;2. **Chairs**: &#10;   - Chair 1 (cafe style, charcoal grey) is positioned at `[-7.01, -5.80, 0.40]`.&#10;   - Chair 2 (also cafe style, charcoal grey) is situated at `[-6.62, -6.67, 0.46]`.&#10;3. **Tables**: &#10;   - Small grey table 1 is at `[-6.21, -5.00, 0.28]`, potentially serving as a dining or study surface.&#10;   - Small grey table 2 is placed at `[-6.36, -5.98, 0.38]`, also likely for similar purposes.&#10;&#10;The arrangement suggests a cozy gathering area, such as a cafe or informal meeting spot, with a mix of seating and surfaces for dining or socializing."
   ]
   node [
     id 224
@@ -2709,7 +2709,7 @@ graph [
     position -7.000822040373613
     position 0.6003863215446472
     level 11
-    summary "In this 3D environment, there are several seating and tabletop objects arranged in close proximity. The **cafe chair** (chair_cafeCharcoalGrey12) is positioned at coordinates [-8.33, -5.67, 0.47], providing a stylish and comfortable seating option. Nearby, the **small white table** (smallWhiteTable7) is located at [-8.09, -7.45, 0.63], likely serving as a surface for drinks or snacks. &#10;&#10;Two **sitting characters** are present: **BaseCharacter_Sitting10_29**, located at [-8.53, -7.99, 0.71], and **BaseCharacter_Sitting12**, situated at [-8.51, -6.89, 0.60]. These characters are positioned around the table, suggesting that they might be engaged in conversation or enjoying a meal together. The arrangement indicates a casual social setting."
+    summary "In the specified 3D environment, there are four key objects clustered together, likely in a cozy caf&#233; setting. The first object is a chair, specifically a charcoal grey caf&#233; chair, positioned at coordinates [-8.3267, -5.6705, 0.4689]. Next, there is a small white table located close by at [-8.0916, -7.4522, 0.6276]. Additionally, two characters are seated nearby: one is identified as BaseCharacter_Sitting10_29 at position [-8.5260, -7.9877, 0.7061], and the other as BaseCharacter_Sitting12 at [-8.5111, -6.8930, 0.5989]. This arrangement suggests a casual gathering or social interaction taking place around the small white table, with the caf&#233; chair and seated characters enhancing the scene's atmosphere."
   ]
   node [
     id 225
@@ -2718,7 +2718,7 @@ graph [
     position 6.336187999307684
     position 0.5384354591369629
     level 11
-    summary "The object &#34;posterBoard8_Blueprint&#34; is a blueprint representation or model positioned in the 3D space at the coordinates [-7.7621, 6.3362, 0.5384]. This object may serve as a visual aid or reference, typically utilized in architectural, design, or instructional contexts. Its specific location suggests it is situated within a defined area, potentially indicating its relevance to nearby objects or features in the environment."
+    summary "The object named &#34;posterBoard8_Blueprint&#34; is positioned in a 3D environment at the coordinates [-7.76, 6.34, 0.54]. This object likely represents a blueprint or a plan displayed on a blue poster board, and is located at a point where its X-coordinate is approximately -7.76, the Y-coordinate is approximately 6.34, and the Z-coordinate indicates it is slightly elevated at about 0.54. The specific color and type suggest that it may be used for visual presentations or informational purposes within the environment."
   ]
   node [
     id 226
@@ -2727,7 +2727,7 @@ graph [
     position 0.16237884741114691
     position -1.1140676587820053
     level 12
-    summary "The group consists of two drones located in a 3D environment. The first drone, referred to as &#34;drone_0,&#34; is positioned at coordinates (0.0, 0.0, -0.9707), indicating it is slightly below ground level. The second drone, labeled &#34;Drone1,&#34; is positioned at (1.4946, 0.3248, -1.2574), which places it further along the x-axis and slightly above drone_0, also below ground level. Their relative positions suggest a spatial dimension where both drones are operating close to each other in a low altitude setting."
+    summary "The group of objects consists of two drones: drone_0, located at the coordinates (0.0, 0.0, -0.971), and Drone1, positioned at approximately (1.495, 0.325, -1.257). Both drones are situated in a 3D space, with drone_0 being slightly lower on the z-axis compared to Drone1, indicating that it is positioned closer to the ground or a reference plane. The spatial arrangement suggests that they are relatively close to each other, with Drone1 being offset in both the x and y directions."
   ]
   node [
     id 227
@@ -2736,7 +2736,7 @@ graph [
     position 0.6825918733927643
     position 1.2266992330551147
     level 12
-    summary "The object &#34;BaseCharacter_Walking4_11&#34; is positioned at the coordinates [5.422, 0.683, 1.227] in a 3D environment. This suggests that the character is likely involved in a walking animation or behavior, given its designation. The specific position indicates a location that is slightly elevated on the Z-axis, which could imply it is on a surface above sea level or at a specific height in the scene."
+    summary "The object &#34;BaseCharacter_Walking4_11&#34; is a character model positioned in a 3D environment at the coordinates [5.4223, 0.6826, 1.2267]. This object likely represents a walking character, possibly within a game or simulation, and its position indicates a specific location in the 3D space where it is active or performing actions. The coordinates suggest it is situated slightly above the ground level, as the y-coordinate (0.6826) is relatively low."
   ]
   node [
     id 228
@@ -2745,7 +2745,7 @@ graph [
     position -4.479154604118245
     position -0.7328165471553802
     level 12
-    summary "The scene includes two objects: a planter named &#34;planterLong4_Blueprint3,&#34; which is positioned at coordinates (0.56, -4.98, -0.25), and a drone labeled &#34;drone_1,&#34; located at (2.87, -3.98, -1.22). The planter appears to be situated slightly above the ground level, while the drone is positioned nearby, lower in height, suggesting an aerial presence in close proximity to the planter."
+    summary "The group of objects includes a blue blueprint of a long planter, located at coordinates approximately [0.56, -4.98, -0.25], and a drone designated as &#34;drone_1,&#34; positioned at approximately [2.87, -3.98, -1.22]. The planter is situated above the drone in the 3D space, with the drone positioned further along the x-axis while remaining lower on the z-axis."
   ]
   node [
     id 229
@@ -2754,7 +2754,7 @@ graph [
     position -10.126800435807283
     position 0.1883343756198883
     level 12
-    summary "In the given 3D environment, there are four distinct objects with the following characteristics:&#10;&#10;1. **Drone (drone_2)**: Positioned at coordinates (0.054, -8.754, -1.345), this object is likely hovering or stationary above the ground level.&#10;   &#10;2. **Sofa Recliner (sofa_recliner4)**: Located at (-2.214, -11.792, 0.806), this recliner is situated at a relatively higher elevation compared to the other objects, implying it serves as a seating area.&#10;   &#10;3. **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)**: Found at coordinates (-2.790, -10.619, 0.664), this coffee table is placed closely to the sofa recliner, suggesting it may be used alongside it for placing items while seated.&#10;   &#10;4. **Base Character (BaseCharacter_Sitting_2)**: This character is at position (-0.940, -9.342, 0.628), indicating that it is sitting, possibly on the sofa recliner, given the proximity to it.&#10;&#10;These objects appear to be part of a living or lounge area, with the drone positioned nearby, potentially for monitoring or interactive purposes."
+    summary "The group of objects consists of four key elements situated in a 3D environment. &#10;&#10;1. **Drone (drone_2)**: Positioned at coordinates (0.0542, -8.7543, -1.3447), this object is likely flying or hovering, indicated by its negative z-coordinate. &#10;&#10;2. **Sofa Recliner (sofa_recliner4)**: Located at (-2.2141, -11.7916, 0.8064), this piece of furniture suggests a cozy seating arrangement.&#10;&#10;3. **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)**: Found at (-2.7895, -10.6190, 0.6639), this coffee table complements the sofa recliner, likely serving as a centerpiece for the seating area.&#10;&#10;4. **Base Character (BaseCharacter_Sitting_2)**: This character is situated at (-0.9396, -9.3424, 0.6277), indicating that it is sitting, possibly engaged with the sofa or coffee table.&#10;&#10;Overall, the arrangement suggests a cozy interior space with a gaming or lounging theme, featuring a drone above, complemented by a sofa recliner, a coffee table, and a seated character."
   ]
   node [
     id 230
@@ -2763,7 +2763,7 @@ graph [
     position -6.282484605617604
     position 0.24738198518753052
     level 12
-    summary "The described group of objects consists of two charcoal grey cafe chairs and a small grey table, along with a sitting character. The chairs, identified as chair_cafeCharcoalGrey10 and chair_cafeCharcoalGrey9, are positioned closely together at coordinates [-2.83, -6.32, 0.24] and [-2.56, -5.34, 0.16], respectively. The small grey table, referred to as smallGreyTable3, is located at [-3.46, -6.36, 0.22], slightly further from the chairs. A character, designated as BaseCharacter_Sitting6_17, is situated at [-1.64, -7.11, 0.38], implying that it is interacting with the seating area created by the chairs and table. Overall, this setup suggests a cozy cafe-like environment, with seating arrangements suitable for casual gatherings or dining."
+    summary "The group of objects consists of two charcoal grey cafe chairs and one small grey table, along with a seated character. The two chairs, positioned near the coordinates of the table, have the following placements: chair_cafeCharcoalGrey10 is located at [-2.83, -6.32, 0.24], and chair_cafeCharcoalGrey9 at [-2.56, -5.34, 0.16]. The smallGreyTable3 is positioned at [-3.46, -6.36, 0.22], slightly south of the chairs. Additionally, the BaseCharacter_Sitting6_17 is sitting at [-1.64, -7.11, 0.38], indicating a social or interactive environment, likely within a cafe setting."
   ]
   node [
     id 231
@@ -2772,7 +2772,7 @@ graph [
     position -9.030493106606345
     position 0.42355822026729584
     level 12
-    summary "The objects in this 3D environment primarily consist of seating and tables, creating a casual cafe-like atmosphere. Notable items include five chairs &#8212; three in charcoal grey and two in orange &#8212; arranged around two small white tables. The arrangement suggests a social or collaborative space, conducive for interaction. A sofa is also present, adding comfort to the environment. &#10;&#10;Key structural elements like an office glass wall and snack shop wall create defined areas within the space. Associated with these walls are several other objects, including laptop tables and drone, contributing to a modern, tech-friendly environment. Additionally, two atrium towers are positioned nearby, enhancing the architectural design while providing a viewpoint of the surrounding areas. The presence of a character sitting indicates potential activity or engagement within this setting. Overall, this collection of objects emphasizes functionality, comfort, and a blend of modern aesthetics."
+    summary "The described group of objects comprises a collection of furniture and architectural elements situated in a 3D environment, potentially representing a caf&#233; or lounge area. &#10;&#10;Key objects include:&#10;&#10;1. **Chairs**: There are multiple caf&#233; chairs, with colors ranging from charcoal grey to orange, positioned at various locations conducive to social interaction.&#10;2. **Tables**: Several small white tables are interspersed among the chairs, providing surfaces for dining or working.&#10;3. **Sofa**: A small sofa offers additional seating and comfort in the area.&#10;4. **Office and Wall Elements**: Architectural features include a glass wall and other structural components that suggest a separation of spaces or aesthetic enhancement.&#10;5. **Character and Drone**: An avatar sitting on a chair indicates a designed interaction space, while a drone adds a dynamic element to the environment.&#10;&#10;Overall, the arrangement emphasizes comfort and functionality in a social setting, fostering engagement among users."
   ]
   node [
     id 232
@@ -2781,7 +2781,7 @@ graph [
     position -5.809399258600855
     position 0.35304107666015627
     level 12
-    summary "The group of objects includes two wooden benches and two charcoal grey cafe chairs, along with two small grey tables, all positioned in a compact area. &#10;&#10;1. **Bench**: The wooden slats bench is located at coordinates [-4.79, -5.60, 0.25].&#10;2. **Chairs**: &#10;   - The first cafe chair (Charcoal Grey 14) is positioned at [-7.01, -5.80, 0.40].&#10;   - The second cafe chair (Charcoal Grey 15) is situated at [-6.62, -6.67, 0.46].&#10;3. **Tables**: &#10;   - The first small grey table is found at [-6.21, -4.99, 0.28].&#10;   - The second small grey table is at [-6.36, -5.98, 0.38].&#10;&#10;These objects appear to be part of a seating area, likely intended for socializing or dining, given the presence of chairs and tables. The arrangement indicates a focus on comfort and functionality, fostering interaction in a shared environment."
+    summary "The group of objects consists of a wooden bench and several caf&#233; chairs, along with two small grey tables. &#10;&#10;- The **wooden bench** (bench_woodenSlats2) is located at coordinates [-4.79, -5.60, 0.25].&#10;- There are two **caf&#233; chairs** in a charcoal grey finish: &#10;  - The first (chair_cafeCharcoalGrey14_6) is positioned at [-7.01, -5.80, 0.40].&#10;  - The second (chair_cafeCharcoalGrey15_8) is at [-6.62, -6.67, 0.46].&#10;- Two **small grey tables** complement the seating:&#10;  - The first table (smallGreyTable6) is found at [-6.21, -5.00, 0.28].&#10;  - The second table (smallGreyTable8) is at [-6.36, -5.98, 0.38].&#10;&#10;This arrangement suggests a cozy caf&#233; or outdoor seating area designed for relaxation and social interaction."
   ]
   node [
     id 233
@@ -2790,7 +2790,7 @@ graph [
     position -7.000822040373613
     position 0.6003863215446472
     level 12
-    summary "The group of objects consists of two chairs and two characters situated in close proximity in a 3D environment. The first chair, labeled &#34;chair_cafeCharcoalGrey12,&#34; is located at coordinates [-8.3267, -5.6705, 0.4689]. Nearby, a &#34;smallWhiteTable7&#34; is positioned at [-8.0916, -7.4522, 0.6276]. The characters include &#34;BaseCharacter_Sitting10_29,&#34; found at [-8.5260, -7.9877, 0.7061], and &#34;BaseCharacter_Sitting12,&#34; situated at [-8.5111, -6.8930, 0.5989]. The arrangement suggests a casual caf&#233; setting where the chairs and table are set up for sitting and potential social interaction among the characters."
+    summary "In the described 3D environment, there are four objects positioned close to each other, creating a cozy caf&#233;-like setting. &#10;&#10;1. **Chair (cafeCharcoalGrey12)**: Located at coordinates [-8.3267, -5.6705, 0.4689], this charcoal grey chair is likely designed for comfort and style, suitable for a caf&#233; atmosphere.&#10;&#10;2. **Table (smallWhiteTable7)**: This small white table is positioned at [-8.0916, -7.4522, 0.6276], providing a surface for drinks or snacks, complementing the seating arrangement.&#10;&#10;3. **Character (BaseCharacter_Sitting10_29)**: At coordinates [-8.5260, -7.9877, 0.7061], this sitting character appears to be utilizing the chair, possibly engaged in conversation or enjoying the setting.&#10;&#10;4. **Character (BaseCharacter_Sitting12)**: Nearby at position [-8.5111, -6.8930, 0.5989], this character is also seated, suggesting a social interaction is taking place within this dynamic environment.&#10;&#10;Overall, the arrangement indicates a small, intimate gathering space typical of a casual dining or cafe area, with seating and a table designed to facilitate interaction."
   ]
   node [
     id 234
@@ -2799,7 +2799,7 @@ graph [
     position 0.16237884741114691
     position -1.1140676587820053
     level 13
-    summary "The summary of the group of objects consists of two drones positioned in a 3D environment. &#10;&#10;- **drone_0** is located at coordinates **(0.0, 0.0, -0.97)**.&#10;- **Drone1** is positioned at **(1.49, 0.32, -1.26)**.&#10;&#10;Both drones have negative z-coordinates, indicating they are positioned below a reference plane, and they are situated relatively close to each other in the x-y plane."
+    summary "The summary of the group of objects includes two drones: &#10;&#10;1. **drone_0** is located at the coordinates (0.0, 0.0, -0.9707), which means it is positioned at the origin in the x and y-axes and slightly below the ground on the z-axis.&#10;   &#10;2. **Drone1** is situated at the coordinates (1.4946, 0.3248, -1.2574), indicating it is positioned to the northeast of drone_0 on the x and y-axes while also being below the ground level on the z-axis.&#10;&#10;Overall, both drones are operating in a 3D space, with drone_0 at the origin and Drone1 at a nearby location."
   ]
   node [
     id 235
@@ -2808,7 +2808,7 @@ graph [
     position 0.6825918733927643
     position 1.2266992330551147
     level 13
-    summary "The object &#34;BaseCharacter_Walking4_11&#34; is located in a 3D environment at the coordinates [5.422, 0.683, 1.227]. It is likely a character model representing a walking animation, given its naming convention. The position suggests it is situated slightly above the ground level, potentially on a flat surface or terrain where characters are intended to move."
+    summary "The object &#34;BaseCharacter_Walking4_11&#34; is a character model positioned in a 3D space at the coordinates [5.422, 0.683, 1.227]. This character appears to be in a walking pose, indicated by its name, suggesting it is likely part of a dynamic scene or animation within a virtual environment. The specific coordinates suggest it is situated slightly above a ground level (given the positive Z value), perhaps indicating an elevation or a platform."
   ]
   node [
     id 236
@@ -2817,7 +2817,7 @@ graph [
     position -10.126800435807283
     position 0.1883343756198883
     level 13
-    summary "The described group of objects consists of a drone, a sofa recliner, a wooden cage coffee table, and a sitting character, all positioned within a 3D environment. &#10;&#10;1. **Drone (drone_2)** is located near the origin at coordinates (0.05, -8.75, -1.34), hovering slightly above ground level.&#10;2. **Sofa Recliner (sofa_recliner4)** is positioned at (-2.21, -11.79, 0.81), suggesting it is placed further back in the scene, at a height slightly above ground.&#10;3. **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)** is situated near the recliner at (-2.79, -10.62, 0.66), indicating it is close to the seating area, also raised above ground level.&#10;4. **Sitting Character (BaseCharacter_Sitting_2)** is placed at (-0.94, -9.34, 0.63), indicating that it is seated, likely on or near the sofa.&#10;&#10;Overall, the arrangement suggests a cozy sitting area, featuring a recliner and a coffee table, with a character relaxing and a drone positioned in the vicinity, possibly for monitoring or interaction."
+    summary "The group of objects consists of a drone, a sofa recliner, a wooden coffee table, and a character seated in a sitting position. The drone (drone_2) is positioned at roughly (0.05, -8.75, -1.34), hovering above the ground. Nearby, the sofa recliner (sofa_recliner4) is located at approximately (-2.21, -11.79, 0.81), while the wooden coffee table (woodenCageCoffeeTable_58) is slightly further at around (-2.79, -10.62, 0.66). Lastly, a base character seated (BaseCharacter_Sitting_2) is positioned at (-0.94, -9.34, 0.63), indicating a relaxed setting, likely within a living area where the furniture and character interact."
   ]
   node [
     id 237
@@ -2826,7 +2826,7 @@ graph [
     position -6.282484605617604
     position 0.24738198518753052
     level 13
-    summary "The group of objects consists of two chairs, two of which are designated as &#34;chair_cafeCharcoalGrey10&#34; and &#34;chair_cafeCharcoalGrey9,&#34; both in a charcoal grey color and positioned near a small grey table. The chairs are located at coordinates [-2.827, -6.318, 0.241] and [-2.561, -5.342, 0.158], respectively, suggesting they are arranged in close proximity to each other. The &#34;smallGreyTable3&#34; is positioned at [-3.462, -6.364, 0.215], indicating a compact setup ideal for casual seating. Additionally, there is a character, identified as &#34;BaseCharacter_Sitting6_17,&#34; located at [-1.639, -7.106, 0.375], likely occupying one of the nearby chairs. Overall, this setup reflects a cozy caf&#233;-like environment suitable for social interactions or casual meetings."
+    summary "The group of objects consists of two chairs and one small table positioned in a cozy cafe-like setting. The chairs, identified as chair_cafeCharcoalGrey10 and chair_cafeCharcoalGrey9, are placed at coordinates that suggest they are arranged around the smallGreyTable3 for communal seating. The first chair is located at position [-2.827, -6.318, 0.241], while the second chair is closer at [-2.562, -5.342, 0.158]. The small grey table is positioned at [-3.462, -6.364, 0.215], providing a central gathering point. Additionally, there is a seated character (BaseCharacter_Sitting6_17) nearby at position [-1.639, -7.106, 0.375], indicating an active interaction in this environment. The overall arrangement suggests a social and relaxed atmosphere."
   ]
   node [
     id 238
@@ -2835,7 +2835,7 @@ graph [
     position -9.030493106606345
     position 0.42355822026729584
     level 13
-    summary "The scene consists of various objects arranged in a social and functional environment, likely a cafe or snack shop area. Central to the layout are multiple seating options including five chairs (two in charcoal grey and three in orange), reflecting a contemporary design, positioned around two small white tables. &#10;&#10;- The chairs are scattered near the tables, creating communal spaces for patrons to relax or dine.&#10;- The small white tables are located nearby to facilitate interaction.&#10;  &#10;Further back, there are two small white tables (5 and 6) alongside a sofa, enhancing the comfort and seating capacity of the area. &#10;&#10;A glass wall (officeGlassWallA_19) and a snack shop wall (snackShopWall_32) suggest a demarcation of space, potentially separating the cafe from other areas or enhancing its aesthetic appeal.&#10;&#10;Additional elements in the environment include a table suitable for laptop use, a character sitting, and a drone, introducing aspects of technology and social interaction. &#10;&#10;The atrium tower and its vent highlight architectural features, reinforcing a modern ambiance. The overall arrangement indicates a thoughtfully designed area meant for socializing, relaxation, and productivity within a dynamic 3D space."
+    summary "The summarized group of objects consists of various furniture and architectural elements arranged within a 3D environment, likely representing a caf&#233; or communal area. &#10;&#10;1. **Seating:** Several chairs are present, including two charcoal grey chairs (chair_cafeCharcoalGrey2 and chair_cafeCharcoalGrey3) and two orange chairs (chair_cafeOrange4 and chair_cafeOrange5), indicating a stylish seating arrangement. &#10;&#10;2. **Tables:** Two small white tables (smallWhiteTable3 and smallWhiteTable5) are strategically placed between the chairs, adding functionality for patrons. There is also a third table (smallWhiteTable6) located further away.&#10;&#10;3. **Walls and Architecture:** An office glass wall (officeGlassWallA_19), a snack shop wall (snackShopWall_32), and several atrium structures (atriumTower_2, atriumTowerVent_27, and sideBaseWall_2) define the space, creating a well-structured layout.&#10;&#10;4. **Lounge Area:** A small sofa (sofa_small_48) provides a comfortable sitting space, while a laptop table (table_laptop2) caters to work or leisure activities.&#10;&#10;5. **Dynamic Elements:** A drone (drone_3) is present, suggesting activities beyond traditional seating and dining, possibly for deliveries or surveillance.&#10;&#10;Overall, this environment integrates various elements for comfort, functionality, and interaction in a modern caf&#233; setting."
   ]
   node [
     id 239
@@ -2844,7 +2844,7 @@ graph [
     position -5.809399258600855
     position 0.35304107666015627
     level 13
-    summary "The group of objects consists of two wooden benches and two charcoal grey caf&#233; chairs positioned closely to two small grey tables. The first object is a wooden bench (bench_woodenSlats2) located at coordinates [-4.79, -5.60, 0.25]. The caf&#233; chairs, labeled chair_cafeCharcoalGrey14_6 and chair_cafeCharcoalGrey15_8, are situated at positions [-7.01, -5.80, 0.40] and [-6.62, -6.67, 0.46] respectively, indicating a cozy seating arrangement. Additionally, two small grey tables, smallGreyTable6 at [-6.21, -4.99, 0.28] and smallGreyTable8 at [-6.36, -5.98, 0.38], complement the seating, creating a comfortable area for relaxation or dining. The arrangement suggests an inviting space, likely suitable for casual meetings or social interactions."
+    summary "The summarized group of objects consists of a wooden slats bench and several caf&#233;-style chairs and tables, all positioned within a close vicinity. The wooden bench is located at coordinates [-4.79, -5.60, 0.25]. Two chairs, both in charcoal grey, are nearby: one is situated at [-7.01, -5.80, 0.40] and the other at [-6.62, -6.67, 0.46]. Additionally, two small grey tables can be found in the area, with one at [-6.21, -4.99, 0.28] and the other at [-6.36, -5.98, 0.38]. This arrangement indicates a casual seating area, likely intended for social interaction or dining."
   ]
   node [
     id 240
@@ -2853,7 +2853,7 @@ graph [
     position -7.000822040373613
     position 0.6003863215446472
     level 13
-    summary "The group of objects consists of a cafe-style chair, identified as &#34;chair_cafeCharcoalGrey12,&#34; positioned at coordinates [-8.3267, -5.6705, 0.4689]. Nearby, there is a &#34;smallWhiteTable7&#34; located at [-8.0916, -7.4522, 0.6276]. Two characters are seated in this arrangement: &#34;BaseCharacter_Sitting10_29&#34; is situated at [-8.5260, -7.9877, 0.7061], and &#34;BaseCharacter_Sitting12&#34; is positioned at [-8.5111, -6.8930, 0.5989]. This setup suggests a cozy cafe scene, with the characters comfortably seated around the small white table."
+    summary "The group of objects consists of two chairs and two characters seated at a cafe-like arrangement. The chair, identified as &#34;chair_cafeCharcoalGrey12,&#34; is located at coordinates [-8.3267, -5.6705, 0.4689]. Nearby, at position [-8.0916, -7.4522, 0.6276], there is a small white table labeled &#34;smallWhiteTable7.&#34; &#10;&#10;The characters are positioned around the table, with &#34;BaseCharacter_Sitting10_29&#34; situated at [-8.5260, -7.9877, 0.7061] and &#34;BaseCharacter_Sitting12&#34; at [-8.5111, -6.8930, 0.5989]. The arrangement creates an intimate setting, likely for social interaction or conversation within a cafe environment."
   ]
   node [
     id 241
@@ -2862,7 +2862,7 @@ graph [
     position 0.6825918733927643
     position 1.2266992330551147
     level 14
-    summary "The object &#34;BaseCharacter_Walking4_11&#34; is a character model positioned in a 3D environment at the coordinates [5.422, 0.683, 1.227]. This character appears to be on a walking animation, suggesting it may be part of a game or simulation where movement is a critical component. The specific coordinates indicate its location in the space, likely relative to other surrounding objects or elements in the scene."
+    summary "The object &#34;BaseCharacter_Walking4_11&#34; is positioned in a 3D environment at the coordinates [5.4223, 0.6826, 1.2267]. This object represents a character that is currently in a walking state, likely indicating its movement or animation pattern. The specified coordinates suggest that it is located slightly forward on the X-axis, elevated on the Y-axis, and at a moderate height on the Z-axis."
   ]
   node [
     id 242
@@ -2871,7 +2871,7 @@ graph [
     position -10.126800435807283
     position 0.1883343756198883
     level 14
-    summary "In this 3D environment, we have a collection of four objects: &#10;&#10;1. **Drone (drone_2)** - Positioned at (0.054, -8.754, -1.345), likely hovering or moving in the space.&#10;  &#10;2. **Sofa Recliner (sofa_recliner4)** - Located at (-2.214, -11.792, 0.806), suggesting a piece of furniture designed for comfort, oriented in the space.&#10;  &#10;3. **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)** - Found at (-2.790, -10.619, 0.664), complementing the sofa with its design, possibly serving as a surface for decor or drinks.&#10;  &#10;4. **Sitting Base Character (BaseCharacter_Sitting_2)** - Situated at (-0.940, -9.342, 0.628), indicating an avatar or model in a seated position, likely interacting with the furniture around.&#10;&#10;These objects collectively create a cozy and interactive setting, with the recliner and coffee table designed for relaxation, while the drone adds a technological element to the environment."
+    summary "In the described 3D environment, four objects are positioned as follows:&#10;&#10;1. **Drone (drone_2)**: Located at coordinates (0.054, -8.754, -1.345), this drone hovers slightly above ground level in a relatively central position.&#10;&#10;2. **Sofa Recliner (sofa_recliner4)**: This recliner is situated at (-2.214, -11.792, 0.806), placed further back in the space and slightly elevated above the ground.&#10;&#10;3. **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)**: Positioned at (-2.790, -10.619, 0.664), this coffee table is adjacent to the recliner, creating a cozy lounge area.&#10;&#10;4. **Base Character Sitting (BaseCharacter_Sitting_2)**: This character is at (-0.940, -9.342, 0.628), seated in close proximity to the drone and positioned to interact with the surrounding furniture.&#10;&#10;Overall, the arrangement shows a living space where the drone is hovering near a seating area, which includes a recliner and a coffee table, with a character sitting nearby, suggesting a relaxed and interactive setting."
   ]
   node [
     id 243
@@ -2880,7 +2880,7 @@ graph [
     position -6.282484605617604
     position 0.24738198518753052
     level 14
-    summary "In this 3D environment, there are a few notable objects in close proximity to each other. Two grey cafe chairs, designated as chair_cafeCharcoalGrey10 and chair_cafeCharcoalGrey9, are positioned at coordinates [-2.827, -6.318, 0.241] and [-2.562, -5.342, 0.158], respectively. These chairs are likely designed for seating, with one being slightly higher than the other. Also present is a small grey table, smallGreyTable3, located at [-3.462, -6.364, 0.215], suggesting a setting suitable for casual dining or social gatherings. Additionally, there is a seated character, BaseCharacter_Sitting6_17, positioned at [-1.639, -7.106, 0.375], which implies that the character may be interacting with the nearby chairs or table. The arrangement of these objects indicates a cozy cafe or casual dining area."
+    summary "The group of objects consists of two charcoal grey cafe chairs, identified as chair_cafeCharcoalGrey10 and chair_cafeCharcoalGrey9, which are positioned at coordinates [-2.827, -6.318, 0.241] and [-2.562, -5.342, 0.158], respectively. There is also a small grey table, smallGreyTable3, located at [-3.462, -6.364, 0.215]. Additionally, there is a sitting character, BaseCharacter_Sitting6_17, situated at [-1.639, -7.106, 0.375]. This arrangement suggests a cozy cafe setting with seating and a table, creating an inviting space for relaxation or social interaction."
   ]
   node [
     id 244
@@ -2889,7 +2889,7 @@ graph [
     position -9.030493106606345
     position 0.42355822026729584
     level 14
-    summary "The group of objects presented includes a variety of furniture and structural elements within a caf&#233; or lounge-like environment. Key objects include:&#10;&#10;1. **Chairs**: Several caf&#233; chairs in different colors (charcoal grey and orange) are scattered throughout the area, indicating a seating arrangement for patrons. Notable placements include four caf&#233; chairs positioned at various coordinates, providing a mix of seating options.&#10;&#10;2. **Tables**: There are multiple small white tables (three distinct instances) situated near the chairs, potentially serving as surfaces for food and drinks. These tables vary slightly in height and positioning, contributing to the arrangement.&#10;&#10;3. **Walls and Partitions**: An office glass wall and a snack shop wall are located closely together, suggesting a transition area or boundary between different functional spaces.&#10;&#10;4. **Sofa and Lounge Furniture**: A small sofa is positioned nearby, which adds to the seating capacity and comfort of the space.&#10;&#10;5. **Workstation**: A table designated for laptops indicates that the environment accommodates working or studying, which aligns with the caf&#233; setting.&#10;&#10;6. **Drones and Architectural Features**: The presence of a drone along with architectural elements like towers and walls suggests either a modern or technologically integrated environment.&#10;&#10;Overall, this layout indicates a flexible and multifunctional space conducive to both relaxation and work, featuring a mix of communal seating and private spaces."
+    summary "The described objects form a lively scene primarily in a caf&#233; or lounge environment, incorporating elements of casual dining and communal space. &#10;&#10;Key components include several caf&#233; chairs in various colors: two charcoal grey chairs (chair_cafeCharcoalGrey2 and chair_cafeCharcoalGrey3) and two orange chairs (chair_cafeOrange4 and chair_cafeOrange5), which are positioned around small white tables (smallWhiteTable3, smallWhiteTable5, and smallWhiteTable6), suggesting a setup conducive to cafe-style seating. &#10;&#10;The presence of a sofa (sofa_small_48) enhances the comfort aspect of the area, while the tables (table_laptop2) might indicate a space for work or leisure activities. &#10;&#10;Additionally, architectural elements like the office glass wall (officeGlassWallA_19), snack shop wall (snackShopWall_32), and multiple atrium towers and vents create structural interest and define the space. &#10;&#10;Finally, there is a BaseCharacter_Sitting9_26 which adds a human-like presence, engaging with the environment, and a drone (drone_3) contributing a technological element. Overall, this collection of objects illustrates a multifunctional social area, combining seating, dining, and workspaces in a cohesive layout."
   ]
   node [
     id 245
@@ -2898,7 +2898,7 @@ graph [
     position -5.809399258600855
     position 0.35304107666015627
     level 14
-    summary "The objects represent various seating and table arrangements in a 3D space, likely designed for a casual cafe or gathering area. &#10;&#10;1. **Bench**: A wooden slatted bench located at [-4.79, -5.60, 0.25], providing a communal seating option.&#10;2. **Chairs**: Two caf&#233;-style chairs in charcoal grey:&#10;   - **Chair 14** is positioned at [-7.01, -5.80, 0.40], offering individual seating.&#10;   - **Chair 15** is slightly offset at [-6.62, -6.67, 0.46], also designed for personal use.&#10;3. **Tables**: Two small grey tables that complement the seating:&#10;   - **Small Grey Table 6** is located at [-6.21, -5.00, 0.28], suitable for placing drinks or snacks.&#10;   - **Small Grey Table 8** sits at [-6.36, -5.98, 0.38], providing another surface for use in the area.&#10;&#10;Together, they form a cozy setup conducive to social interaction."
+    summary "The group of objects consists of a wooden slatted bench and several cafe-style chairs, accompanied by two small grey tables. &#10;&#10;1. **Bench**: A wooden slatted bench located at position [-4.79, -5.60, 0.25]. &#10;2. **Chairs**: &#10;   - One charcoal grey cafe chair at position [-7.01, -5.80, 0.40].&#10;   - Another charcoal grey cafe chair at position [-6.62, -6.67, 0.46].&#10;3. **Tables**: &#10;   - A small grey table at position [-6.21, -4.99, 0.28].&#10;   - Another small grey table at position [-6.36, -5.98, 0.38].&#10;&#10;These objects appear to be arranged in a social or casual seating area, suitable for small gatherings or casual dining settings."
   ]
   node [
     id 246
@@ -2907,7 +2907,7 @@ graph [
     position -7.000822040373613
     position 0.6003863215446472
     level 14
-    summary "In this 3D environment, there are several objects arranged closely together, suggesting a cozy seating area. The first object is a charcoal grey caf&#233; chair, positioned at coordinates [-8.3267, -5.6705, 0.4689]. Nearby, a small white table is located at [-8.0916, -7.4522, 0.6276], likely serving as a surface for drinks or conversation. Two seated characters are present: one at [-8.5260, -7.9877, 0.7061] and the other at [-8.5111, -6.8930, 0.5989], suggesting an interaction or gathering at the table. The arrangement of these objects indicates a social space designed for relaxation and interaction."
+    summary "In this 3D environment, there are several objects arranged in proximity to one another. The **chair_cafeCharcoalGrey12** is positioned at coordinates [-8.3267, -5.6705, 0.4689], suggesting it is largely centered within the space. Nearby, the **smallWhiteTable7** is located at [-8.0916, -7.4522, 0.6276], indicating it is likely intended for use with chairs. Two seated characters, **BaseCharacter_Sitting10_29** and **BaseCharacter_Sitting12**, are placed at [-8.5260, -7.9877, 0.7061] and [-8.5111, -6.8930, 0.5989] respectively. This grouping suggests a social or dining setup, with the characters positioned around the small table and chair, enhancing the interaction within this environment."
   ]
   node [
     id 247
@@ -2916,7 +2916,7 @@ graph [
     position -10.126800435807283
     position 0.1883343756198883
     level 15
-    summary "The group of objects consists of a drone (drone_2) positioned at coordinates (0.05, -8.75, -1.34), hovering above a low altitude. Nearby, there is a recliner sofa (sofa_recliner4) located at approximately (-2.21, -11.79, 0.81), providing a seating option. Additionally, a wooden coffee table (woodenCageCoffeeTable_58) is situated close to the recliner at (-2.79, -10.62, 0.66). Lastly, there is a base character (BaseCharacter_Sitting_2) seated at (-0.94, -9.34, 0.63), likely in proximity to the sofa and coffee table, indicating a social or relaxed environment. Overall, these objects create a cozy setting with a drone observation above."
+    summary "The group of objects consists of a drone, a recliner sofa, a wooden coffee table, and a seated character, positioned within a 3D space. The drone (drone_2) is located at coordinates (0.05, -8.75, -1.34), hovering above the scene. The recliner sofa (sofa_recliner4) is situated at (-2.21, -11.79, 0.81), while the wooden coffee table (woodenCageCoffeeTable_58) is positioned nearby at (-2.79, -10.62, 0.66). A sitting character (BaseCharacter_Sitting_2) is placed at (-0.94, -9.34, 0.63), suggesting a relaxed setting among the furniture. Overall, the arrangement indicates a cozy area with seating options and an overhead drone for surveillance or assistance."
   ]
   node [
     id 248
@@ -2925,7 +2925,7 @@ graph [
     position -6.282484605617604
     position 0.24738198518753052
     level 15
-    summary "The summarized group of objects includes two charcoal grey cafe chairs: chair_cafeCharcoalGrey10 located at coordinates [-2.83, -6.32, 0.24] and chair_cafeCharcoalGrey9 at position [-2.56, -5.34, 0.16]. Additionally, there is a small grey table, smallGreyTable3, positioned at [-3.46, -6.36, 0.22]. A sitting character, BaseCharacter_Sitting6_17, is situated nearby at [-1.64, -7.11, 0.38]. The arrangement suggests a cozy cafe setting where the character is likely interacting with the chairs and table."
+    summary "The described group of objects consists of two charcoal grey cafe chairs and a small grey table, along with a sitting character. The chairs, labeled chair_cafeCharcoalGrey10 and chair_cafeCharcoalGrey9, are positioned at coordinates [-2.83, -6.32, 0.24] and [-2.56, -5.34, 0.16] respectively. The small grey table, identified as smallGreyTable3, is located at [-3.46, -6.36, 0.22]. Meanwhile, the character positioned at [-1.64, -7.11, 0.38], labeled BaseCharacter_Sitting6_17, appears to be seated nearby. Overall, these objects create a cozy cafe-like scene, suggesting a social or dining area within the 3D environment."
   ]
   node [
     id 249
@@ -2934,7 +2934,7 @@ graph [
     position -9.030493106606345
     position 0.42355822026729584
     level 15
-    summary "The described group of objects forms a cozy caf&#233; or lounge setting, featuring various seating and table arrangements. Key elements include:&#10;&#10;1. **Chairs**: &#10;   - Multiple caf&#233; chairs in charcoal grey (two different models) and orange create a lively atmosphere. Their positions indicate a mix of group seating and individual spots.&#10;   &#10;2. **Tables**: &#10;   - Several small white tables are scattered throughout, providing surfaces for drinks or snacks. Their positioning complements the chairs, facilitating casual dining or conversation.&#10;  &#10;3. **Office and Snack Elements**: &#10;   - An office glass wall and a snack shop wall suggest the space is multifunctional, potentially serving both as a caf&#233; and a workspace.&#10;   &#10;4. **Additional Seating**: &#10;   - A small sofa offers a more relaxed seating option, further enhancing comfort.&#10;  &#10;5. **Tech and Decorative Features**: &#10;   - A table designed for laptops adds a modern touch, indicating the area may cater to students or professionals.&#10;   - A drone in the vicinity hints at a tech-friendly environment, possibly for deliveries or interactive experiences within the caf&#233;.&#10;&#10;6. **Structural Components**: &#10;   - Atrium towers and related walls provide architectural interest while defining the space.&#10;&#10;Overall, the positioning and variety of furniture suggest an inviting, multifunctional area for socializing, working, or relaxing."
+    summary "This summary describes a cluster of objects in a 3D environment, primarily focused on seating and tables within a cafe-setting:&#10;&#10;- **Seating**: There are five chairs, with varying colors (Charcoal Grey and Orange) distributed across the area. Two of the chairs (Charcoal Grey) are positioned closely, while one (Orange) is more isolated. The seating arrangement suggests a casual cafe vibe.&#10;&#10;- **Tables**: Three small white tables are present, indicating areas for dining or studying. Their positions suggest they might serve various seating arrangements. Additional tables like the laptop table provide functional spaces for work or leisure.&#10;&#10;- **Walls and Structure**: The office glass wall and snack shop wall suggest a division of spaces, likely creating distinct areas within the cafe. The atrium tower and its vent also contribute to the structural design of the environment.&#10;&#10;- **Other Objects**: A small sofa adds comfort to the setting, while a drone indicates a potential interactive or dynamic element in the scene. The presence of a seated character hints at user engagement, suggesting elements such as gaming or social interaction.&#10;&#10;Overall, the objects create a cozy, multifunctional cafe atmosphere, blending seating, dining, and structural components in a spatially organized manner."
   ]
   node [
     id 250
@@ -2943,7 +2943,7 @@ graph [
     position -5.809399258600855
     position 0.35304107666015627
     level 15
-    summary "The scene features a combination of seating and small table objects positioned in close proximity. At the coordinates [-4.79, -5.60, 0.25], there is a wooden slats bench, providing a more communal seating option. The area includes two cafe-style chairs: chair_cafeCharcoalGrey14_6 located at [-7.01, -5.80, 0.40] and chair_cafeCharcoalGrey15_8 at [-6.62, -6.67, 0.46], both in a charcoal grey finish, offering individual seating. Additionally, there are two small grey tables: smallGreyTable6 at [-6.21, -4.99, 0.28] and smallGreyTable8 at [-6.36, -5.98, 0.38], which can be used for dining or workspace setups. Overall, the arrangement suggests a cozy space conducive for casual gatherings or dining."
+    summary "The group of objects consists of two wooden benches and several cafe-style chairs, alongside small grey tables. &#10;&#10;1. **Bench**: The wooden bench (bench_woodenSlats2) is positioned at [-4.79, -5.60, 0.25], providing seating for a group while potentially complementing the surrounding decor.&#10;   &#10;2. **Chairs**: &#10;   - **Chair 1**: The first cafe chair (chair_cafeCharcoalGrey14_6) is located at [-7.01, -5.80, 0.40].&#10;   - **Chair 2**: The second cafe chair (chair_cafeCharcoalGrey15_8) is at position [-6.62, -6.67, 0.46]. &#10;   Both chairs are likely designed for casual dining or relaxation in a cafe-like setting.&#10;&#10;3. **Tables**: &#10;   - **Table 1**: The small grey table (smallGreyTable6) at [-6.21, -4.99, 0.28] provides desktop space for activities such as eating or socializing.&#10;   - **Table 2**: Another small grey table (smallGreyTable8) is placed at [-6.36, -5.98, 0.38].&#10;&#10;Overall, this collection creates a cozy, functional seating area suitable for casual gatherings or dining experiences."
   ]
   node [
     id 251
@@ -2952,7 +2952,7 @@ graph [
     position -7.000822040373613
     position 0.6003863215446472
     level 15
-    summary "In this 3D environment, we have a cozy seating arrangement consisting of two characters and a small table. The **chair_cafeCharcoalGrey12** is positioned at coordinates [-8.3267, -5.6705, 0.4689], while the **smallWhiteTable7** is placed nearby at [-8.0916, -7.4522, 0.6276], creating a compact space for interaction. There are two characters: **BaseCharacter_Sitting10_29** located at [-8.5260, -7.9877, 0.7061], and **BaseCharacter_Sitting12** positioned at [-8.5111, -6.8930, 0.5989]. Together, these elements form a charming, intimate setting, likely intended for conversation or leisure."
+    summary "In this 3D environment, there are several objects situated in close proximity to one another, creating a small seating arrangement. The **chair_cafeCharcoalGrey12** is positioned at coordinates [-8.3267, -5.6705, 0.4689], providing a comfortable spot for sitting. Nearby, the **smallWhiteTable7** is located at [-8.0916, -7.4522, 0.6276], serving as a table for drinks or small items. Additionally, two characters are present: **BaseCharacter_Sitting10_29** at [-8.5260, -7.9877, 0.7061] and **BaseCharacter_Sitting12** at [-8.5111, -6.8930, 0.5989], both engaged in a seated pose, suggesting a relaxed social interaction at the cafe setting."
   ]
   node [
     id 252
@@ -2961,7 +2961,7 @@ graph [
     position -10.126800435807283
     position 0.1883343756198883
     level 16
-    summary "The summary of the group of objects in the 3D environment is as follows:&#10;&#10;1. **drone_2** is positioned near the coordinates (0.05, -8.75, -1.34), likely hovering in the air.&#10;2. **sofa_recliner4** is located at (-2.21, -11.79, 0.81), indicating it is placed in a seated area.&#10;3. **woodenCageCoffeeTable_58** is situated at (-2.79, -10.62, 0.66), which is close to the sofa, suggesting it serves as a coffee table for that seating area.&#10;4. **BaseCharacter_Sitting_2** is positioned at (-0.94, -9.34, 0.63), depicting a character seated, likely on or near the sofa.&#10;&#10;Overall, the objects create a cozy living space with a drone hovering above and a seated character near a sofa and coffee table arrangement."
+    summary "The group of objects includes a drone, a recliner, a coffee table, and a sitting character, each positioned in a 3D environment. &#10;&#10;- **Drone**: Located at coordinates (0.05, -8.75, -1.34), it hovers or operates in a space slightly above the ground.&#10;- **Sofa Recliner**: Positioned at (-2.21, -11.79, 0.81), this object is likely part of a seating area.&#10;- **Wooden Cage Coffee Table**: Found at (-2.79, -10.62, 0.66), it is situated near the recliner, suggesting a cozy living space.&#10;- **Base Character Sitting**: This character occupies the coordinates (-0.94, -9.34, 0.63), indicating that it is seated, possibly on or near the recliner.&#10;&#10;The arrangement of these objects suggests a domestic setting featuring a relaxed environment with a seating area and the presence of a drone, potentially indicating a modern or technologically enriched space."
   ]
   node [
     id 253
@@ -2970,7 +2970,7 @@ graph [
     position -6.282484605617604
     position 0.24738198518753052
     level 16
-    summary "The group of objects includes two charcoal grey chairs (chair_cafeCharcoalGrey10 and chair_cafeCharcoalGrey9) positioned near a small grey table (smallGreyTable3). The chairs are situated at coordinates close to each other, with chair_cafeCharcoalGrey10 at approximately [-2.83, -6.32, 0.24] and chair_cafeCharcoalGrey9 at around [-2.56, -5.34, 0.16]. The small grey table is located at [-3.46, -6.36, 0.22], slightly further away. Additionally, there is a character model (BaseCharacter_Sitting6_17) sitting at [-1.64, -7.11, 0.38], indicating an interactive or social setting, possibly a cafe or dining area. Overall, the arrangement suggests a cozy seating area conducive for conversation or relaxation."
+    summary "The group of objects consists of two charcoal grey cafe chairs, positioned near each other: chair_cafeCharcoalGrey10 is located at coordinates approximately [-2.83, -6.32, 0.24], and chair_cafeCharcoalGrey9 is at [-2.56, -5.34, 0.16]. Nearby, there is a small grey table (smallGreyTable3) positioned at [-3.46, -6.36, 0.22]. Additionally, a character (BaseCharacter_Sitting6_17) is seated at coordinates [-1.64, -7.11, 0.38]. This setup suggests a cozy cafe-like environment where patrons can sit around the table while enjoying their time."
   ]
   node [
     id 254
@@ -2979,7 +2979,7 @@ graph [
     position -9.030493106606345
     position 0.42355822026729584
     level 16
-    summary "The described group of objects consists mainly of caf&#233; furniture and architectural elements in a 3D environment. Key features include:&#10;&#10;1. **Seating**: Several chairs are present, including two charcoal grey chairs (chair_cafeCharcoalGrey2 and chair_cafeCharcoalGrey3) located near a small white table (smallWhiteTable3) and an orange chair (chair_cafeOrange4) positioned nearby. Another orange chair (chair_cafeOrange5) is also part of the setup.&#10;&#10;2. **Tables**: There are multiple small white tables (smallWhiteTable3, smallWhiteTable5, and smallWhiteTable6) distributed throughout the space, providing surfaces for interaction.&#10;&#10;3. **Architectural Features**: An office glass wall (officeGlassWallA_19) and a snack shop wall (snackShopWall_32) are included, indicating a transitional space or caf&#233; environment. &#10;&#10;4. **Seating Arrangement**: A small sofa (sofa_small_48) and a laptop table (table_laptop2) are strategically placed, likely intended for relaxation and work tasks.&#10;&#10;5. **Occupant**: A sitting character (BaseCharacter_Sitting9_26) is integrated into the scene, suggesting the area is intended for user engagement.&#10;&#10;6. **Drones and Towers**: A drone (drone_3) and a pair of atrium towers (atriumTower_2 and atriumTowerVent_27) add dynamic and structural components to the environment, possibly indicating a more complex layout or immersive setting.&#10;&#10;Overall, this environment depicts a cozy caf&#233; or lounge area conducive to social interactions and work, equipped with various seating and tables, complemented by architectural structures."
+    summary "The summary of the described 3D object group includes several seating arrangements, tables, and architectural elements:&#10;&#10;1. **Seating**: There are five chairs situated in a caf&#233;-style layout&#8212;three charcoal grey chairs (chair_cafeCharcoalGrey2, chair_cafeCharcoalGrey3) and two orange chairs (chair_cafeOrange4, chair_cafeOrange5)&#8212;distributed across various positions, creating a cozy seating area.&#10;&#10;2. **Tables**: Three small white tables (smallWhiteTable3, smallWhiteTable5, smallWhiteTable6) complement the seating, offering surfaces for dining or working.&#10;&#10;3. **Walls and Architectural Features**: An office glass wall (officeGlassWallA_19) and a snack shop wall (snackShopWall_32) provide structural and aesthetic boundaries. The presence of atrium towers (atriumTower_2) and their vent (atriumTowerVent_27) suggests a multi-level environment.&#10;&#10;4. **Additional Objects**: A small sofa (sofa_small_48) adds to the comfort, while a laptop table (table_laptop2) indicates a functional work area. A drone (drone_3) is noted, perhaps suggesting a dynamic or interactive component to the setting.&#10;&#10;5. **Character**: The presence of a sitting character (BaseCharacter_Sitting9_26) indicates that the space is designed for relaxation or social interaction.&#10;&#10;Overall, this layout reflects a modern caf&#233; or lounge environment, combining elements of comfort, functionality, and design aesthetics."
   ]
   node [
     id 255
@@ -2988,7 +2988,7 @@ graph [
     position -5.809399258600855
     position 0.35304107666015627
     level 16
-    summary "The described group of objects consists of a wooden slatted bench and multiple caf&#233;-style chairs and small grey tables, all situated within a 3D environment. The bench is positioned at coordinates [-4.79, -5.60, 0.25], while two charcoal grey caf&#233; chairs can be found at coordinates [-7.01, -5.80, 0.40] and [-6.62, -6.67, 0.46]. Additionally, there are two small grey tables located at [-6.21, -4.99, 0.28] and [-6.36, -5.98, 0.38]. The arrangement of these objects suggests a social or dining area, emphasizing a cozy and inviting atmosphere."
+    summary "The summarized group of objects includes a wooden slatted bench located at position [-4.79, -5.60, 0.25], providing a seating area. Nearby, there are two charcoal grey caf&#233; chairs: one positioned at [-7.01, -5.80, 0.40] and the other at [-6.62, -6.67, 0.46]. These chairs complement the seating arrangement. Additionally, there are two small grey tables: one situated at [-6.21, -4.99, 0.28] and the other at [-6.36, -5.98, 0.38], which likely serve as surfaces for drinks or meals, enhancing the overall setting for casual gatherings."
   ]
   node [
     id 256
@@ -2997,7 +2997,7 @@ graph [
     position -10.126800435807283
     position 0.1883343756198883
     level 17
-    summary "In the specified 3D environment, there are four distinct objects positioned as follows:&#10;&#10;1. **Drone (drone_2)**: Located at coordinates (0.05, -8.75, -1.34), indicating it is hovering or situated at a low altitude.&#10;  &#10;2. **Sofa Recliner (sofa_recliner4)**: Positioned at (-2.21, -11.79, 0.81), suggesting it is part of a seating arrangement in the space.&#10;&#10;3. **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)**: Located nearby at (-2.79, -10.62, 0.66), indicating it is likely used in conjunction with the sofa recliner.&#10;&#10;4. **Base Character (BaseCharacter_Sitting_2)**: This character is seated at coordinates (-0.94, -9.34, 0.63), likely interacting with or situated near the other objects.&#10;&#10;Overall, the arrangement presents a living or lounge area, featuring a drone in close proximity to a seating area that includes a recliner and a coffee table, with a sitting character enhancing the scene's dynamic."
+    summary "In the described 3D environment, there are four objects positioned as follows:&#10;&#10;1. **Drone (drone_2)**: Located at coordinates (0.0542, -8.7543, -1.3447), this drone is slightly elevated above the ground, indicating a potential flying or hovering state.&#10;&#10;2. **Sofa Recliner (sofa_recliner4)**: Positioned at (-2.2141, -11.7916, 0.8064), this reclining sofa is situated lower in the space, likely intended for seating.&#10;&#10;3. **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)**: Found at coordinates (-2.7895, -10.6190, 0.6639), this coffee table is also low to the ground and positioned close to the sofa, suggesting a collaborative arrangement for relaxation or social gathering.&#10;&#10;4. **Base Character Sitting (BaseCharacter_Sitting_2)**: This character is located at (-0.9396, -9.3424, 0.6277), seated and possibly interacting with the surrounding furniture.&#10;&#10;Overall, the arrangement suggests a cozy area intended for social interaction, with the drone hovering above, while the sofa and coffee table facilitate seated comfort."
   ]
   node [
     id 257
@@ -3006,7 +3006,7 @@ graph [
     position -6.282484605617604
     position 0.24738198518753052
     level 17
-    summary "In the 3D environment, there are five notable objects: two charcoal grey cafe chairs, identified as chair_cafeCharcoalGrey10 and chair_cafeCharcoalGrey9, positioned at coordinates [-2.827, -6.318, 0.241] and [-2.562, -5.342, 0.158] respectively. A small grey table, labeled smallGreyTable3, is situated at [-3.462, -6.364, 0.215]. Additionally, there is a character, BaseCharacter_Sitting6_17, seated at position [-1.639, -7.106, 0.375]. This arrangement suggests a cozy cafe setting, where the chairs and table are likely intended for informal gatherings or dining."
+    summary "The group of objects consists of two charcoal grey cafe chairs and one small grey table, alongside a character positioned in a seated posture. The chairs, named chair_cafeCharcoalGrey10 and chair_cafeCharcoalGrey9, are located at coordinates [-2.83, -6.32, 0.24] and [-2.56, -5.34, 0.16] respectively. The small grey table, referred to as smallGreyTable3, is positioned at [-3.46, -6.36, 0.22]. The seated character, identified as BaseCharacter_Sitting6_17, is located at [-1.64, -7.11, 0.38]. The arrangement suggests a casual cafe setting, with the table likely intended for use alongside the chairs, facilitating interaction around the seated character."
   ]
   node [
     id 258
@@ -3015,7 +3015,7 @@ graph [
     position -9.030493106606345
     position 0.42355822026729584
     level 17
-    summary "The provided group of objects includes a variety of furniture and structural elements positioned within a 3D environment, likely representing a caf&#233; or relaxation area. &#10;&#10;1. **Chairs**: There are three caf&#233; chairs in charcoal grey and two in orange, providing seating options. The chairs are arranged at different coordinates, suggesting a casual seating layout. Notably, the charcoal grey chairs are located at:&#10;   - Chair 2: [-3.63, -7.71, 0.34]&#10;   - Chair 3: [-4.58, -7.95, 0.52]&#10;   The orange chairs are placed at:&#10;   - Chair 4: [-3.43, -8.82, 0.58]&#10;   - Chair 5: [-5.74, -8.35, 0.52]&#10;&#10;2. **Tables**: There are three small white tables positioned at:&#10;   - Table 3: [-4.08, -8.26, 0.37]&#10;   - Table 5: [-5.98, -7.66, 0.49]&#10;   - Table 6: [-5.53, -11.07, 0.66]&#10;&#10;3. **Walls and Structural Elements**: The scene includes an office glass wall, a snack shop wall, atrium towers, and a side base wall, all indicating an enclosed environment. The walls are positioned closely together at the same coordinates:&#10;   - Office Glass Wall: [-4.57, -9.14, 0.58] &#10;   - Snack Shop Wall: [-4.57, -9.14, 0.58] &#10;   - Atrium Tower and Vent: [-4.70, -9.36, 0.61]&#10;&#10;4. **Sofa and Laptop Tables**: There is a small sofa at [-4.89, -10.13, 0.62] for additional seating, along with a table designated for laptop use located at [-5.62, -9.49, 0.58].&#10;&#10;5. **Character and Drone**: An animated character is seated at [-5.32, -9.84, 0.60], hinting at interactive use of the space. A drone is flying nearby at [-5.60, -8.85, -1.47], suggesting a dynamic element within the environment.&#10;&#10;The arrangement of these objects indicates a functional and social space that accommodates both relaxation and work, with a mix of seating, tables, and technological elements."
+    summary "The scene features a collection of objects commonly found in a casual dining or social gathering area. Central to this environment are multiple chairs, including two charcoal grey chairs (chair_cafeCharcoalGrey2 and chair_cafeCharcoalGrey3) and two orange chairs (chair_cafeOrange4 and chair_cafeOrange5). &#10;&#10;There are also three small white tables (smallWhiteTable3, smallWhiteTable5, and smallWhiteTable6) providing surfaces for dining or social interaction. A sofa (sofa_small_48) is included for comfort, likely enhancing the seating arrangement. &#10;&#10;The environment appears to have some kind of division or screening, as indicated by the office glass wall (officeGlassWallA_19) and the snack shop wall (snackShopWall_32), which are positioned to offer structure while maintaining visibility. Additionally, a small table designed for a laptop (table_laptop2) suggests a space for work or casual browsing.&#10;&#10;The presence of a drone (drone_3) adds a modern touch, suggesting interaction with technology. Lastly, the atrium tower and its vent, along with the side base wall, suggest a structured architectural element that could form part of a larger building or open concept area.&#10;&#10;Overall, this grouping of objects creates a dynamic, multifunctional space aimed at fostering social interaction, relaxation, and productivity."
   ]
   node [
     id 259
@@ -3024,7 +3024,7 @@ graph [
     position -10.126800435807283
     position 0.1883343756198883
     level 18
-    summary "The summary of the group of objects is as follows:&#10;&#10;1. **Drone (drone_2)**: Located at coordinates (0.054, -8.754, -1.345), suggesting it is suspended in a space slightly above a lower plane.&#10;   &#10;2. **Sofa Recliner (sofa_recliner4)**: Positioned at approximately (-2.214, -11.792, 0.806), indicating its presence in a more distant area on the x-y plane but elevated on the z-axis.&#10;&#10;3. **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)**: Situated at approximately (-2.790, -10.619, 0.664), close to the sofa recliner and also at an elevated height.&#10;&#10;4. **Base Character Sitting (BaseCharacter_Sitting_2)**: Found at (-0.940, -9.342, 0.628), this character is seated, likely on or near the furniture, positioned relatively centrally between the drone and the reclining sofa.&#10;&#10;Overall, the objects are arranged in a 3D space with different elevations, indicative of a living area setup where the drone is overhead while the furniture and the sitting character are at lower levels."
+    summary "The group of objects consists of a drone, a sofa recliner, a wooden cage coffee table, and a sitting character, all positioned in a 3D space. The drone (drone_2) is located at approximately (0.054, -8.754, -1.345), hovering slightly above ground level. The sofa recliner (sofa_recliner4) is situated at (-2.214, -11.792, 0.806), indicating it is positioned further back in the scene. Nearby, the wooden cage coffee table (woodenCageCoffeeTable_58) is found at (-2.790, -10.619, 0.664), creating a cozy arrangement with the recliner. Lastly, a character (BaseCharacter_Sitting_2) is seated at (-0.940, -9.342, 0.628), likely interacting with the environment around the sofa and coffee table. This arrangement suggests a casual, relaxed setting, potentially a living room or social area."
   ]
   node [
     id 260
@@ -3033,7 +3033,7 @@ graph [
     position -6.282484605617604
     position 0.24738198518753052
     level 18
-    summary "The summarized group of objects includes:&#10;&#10;1. **Chair (cafeCharcoalGrey10)** - Positioned at coordinates [-2.83, -6.32, 0.24], this chair serves as part of the cafe seating arrangement.&#10;2. **Chair (cafeCharcoalGrey9)** - Located at [-2.56, -5.34, 0.16], this additional chair complements the seating setup.&#10;3. **Small Grey Table (smallGreyTable3)** - This table is situated at [-3.46, -6.36, 0.22], providing a surface for food or drinks for the cafe setting.&#10;4. **Base Character (Sitting)** - The character is positioned at [-1.64, -7.11, 0.38], depicting a person seated, likely utilizing the chairs and table nearby.&#10;&#10;Overall, these objects create a cozy cafe seating area, with multiple chairs around a small table accommodating a seated character."
+    summary "In this 3D environment, there are two charcoal grey caf&#233; chairs positioned near each other, with chair_cafeCharcoalGrey10 located at [-2.83, -6.32, 0.24] and chair_cafeCharcoalGrey9 at [-2.56, -5.34, 0.16]. A small grey table, smallGreyTable3, is situated at [-3.46, -6.36, 0.22], providing a surface likely intended for use with the chairs. Additionally, there is a sitting character, BaseCharacter_Sitting6_17, positioned at [-1.64, -7.11, 0.38], suggesting that the character is engaged in an activity within this caf&#233;-like setting. The arrangement of these objects indicates a cozy dining or social area."
   ]
   node [
     id 261
@@ -3042,35 +3042,32 @@ graph [
     position -10.126800435807283
     position 0.1883343756198883
     level 19
-    summary "In the specified 3D environment, there are four objects arranged as follows:&#10;&#10;1. **Drone (drone_2)**: Positioned at coordinates (0.054, -8.754, -1.345), suggesting it is hovering or flying slightly above the ground.&#10;&#10;2. **Sofa Recliner (sofa_recliner4)**: Located at (-2.214, -11.792, 0.806), it is a comfortable seating option that appears to be placed in a living or lounge area.&#10;&#10;3. **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)**: Found at (-2.790, -10.619, 0.664), this table complements the sofa and serves as a central piece for placing beverages or decorative items.&#10;&#10;4. **Sitting Character (BaseCharacter_Sitting_2)**: Positioned at (-0.940, -9.342, 0.628), this character is seated, likely on or near the sofa, engaging with the surrounding objects.&#10;&#10;Overall, the objects suggest a cozy living space where the sitting character interacts with the sofa and coffee table, while the drone may be observing or providing a unique perspective of the scene."
+    summary "In this 3D environment, there are several notable objects positioned as follows:&#10;&#10;- **Drone (drone_2)**: Located at coordinates (0.054, -8.754, -1.345), hovering in the space.&#10;- **Sofa Recliner (sofa_recliner4)**: Positioned at (-2.214, -11.792, 0.806), indicating it is in a relaxed seating arrangement.&#10;- **Wooden Cage Coffee Table (woodenCageCoffeeTable_58)**: Found at (-2.790, -10.619, 0.664), situated nearby the sofa recliner, likely serving as a functional centerpiece for the setting.&#10;- **Base Character (BaseCharacter_Sitting_2)**: Seated at (-0.940, -9.342, 0.628), suggesting interaction with the surrounding environment, possibly engaging with the sofa or coffee table.&#10;&#10;These objects reveal a cozy, casual arrangement, potentially indicative of a living room or relaxation area within the 3D space."
   ]
   edge [
     source 0
     target 1
     type "observed"
-    relationship "near"
-    distance 5.890376082780313
+    relationship "to_the_left_of"
   ]
   edge [
     source 0
     target 2
     type "observed"
-    relationship "near"
-    distance 1.556134617451096
+    relationship "to_the_left_of"
   ]
   edge [
     source 0
     target 3
     type "observed"
-    relationship "near"
-    distance 5.065967435630772
+    relationship "to_the_left_of"
   ]
   edge [
     source 0
     target 4
     type "path"
     distance 4.907515634610351
-    relationship "near"
+    relationship "to_the_right_of"
   ]
   edge [
     source 0
@@ -3079,123 +3076,8 @@ graph [
   ]
   edge [
     source 0
-    target 5
-    relationship "near"
-    distance 8.762451816909808
-  ]
-  edge [
-    source 0
-    target 6
-    relationship "near"
-    distance 7.027113119469058
-  ]
-  edge [
-    source 0
-    target 7
-    relationship "near"
-    distance 8.622155105605948
-  ]
-  edge [
-    source 0
     target 8
-    relationship "near"
-    distance 6.030914369122554
-  ]
-  edge [
-    source 0
-    target 9
-    relationship "near"
-    distance 7.341178828986442
-  ]
-  edge [
-    source 0
-    target 10
-    relationship "near"
-    distance 9.311794742195419
-  ]
-  edge [
-    source 0
-    target 13
-    relationship "near"
-    distance 7.415966541517798
-  ]
-  edge [
-    source 0
-    target 14
-    relationship "near"
-    distance 9.524581014660573
-  ]
-  edge [
-    source 0
-    target 15
-    relationship "near"
-    distance 9.299407963732216
-  ]
-  edge [
-    source 0
-    target 16
-    relationship "near"
-    distance 9.585936004891291
-  ]
-  edge [
-    source 0
-    target 19
-    relationship "near"
-    distance 9.826248847773135
-  ]
-  edge [
-    source 0
-    target 28
-    relationship "near"
-    distance 7.466720865355411
-  ]
-  edge [
-    source 0
-    target 30
-    relationship "near"
-    distance 9.200582100872003
-  ]
-  edge [
-    source 0
-    target 31
-    relationship "near"
-    distance 9.51132325229973
-  ]
-  edge [
-    source 0
-    target 33
-    relationship "near"
-    distance 8.07154570007278
-  ]
-  edge [
-    source 0
-    target 34
-    relationship "near"
-    distance 8.836937410442996
-  ]
-  edge [
-    source 0
-    target 38
-    relationship "near"
-    distance 9.941832764310103
-  ]
-  edge [
-    source 0
-    target 41
-    relationship "near"
-    distance 9.572432597373314
-  ]
-  edge [
-    source 0
-    target 43
-    relationship "near"
-    distance 8.763403075172649
-  ]
-  edge [
-    source 0
-    target 44
-    relationship "near"
-    distance 8.197216982181002
+    relationship "to_the_left_of"
   ]
   edge [
     source 1
@@ -3205,20 +3087,22 @@ graph [
   edge [
     source 1
     target 2
-    relationship "near"
-    distance 4.661077280374693
-  ]
-  edge [
-    source 1
-    target 3
-    relationship "near"
-    distance 7.607497396447463
+    relationship "to_the_right_of"
   ]
   edge [
     source 1
     target 4
-    relationship "near"
-    distance 5.850516005706459
+    relationship "to_the_left_of"
+  ]
+  edge [
+    source 1
+    target 3
+    relationship "to_the_left_of"
+  ]
+  edge [
+    source 1
+    target 8
+    relationship "to_the_left_of"
   ]
   edge [
     source 2
@@ -3227,69 +3111,18 @@ graph [
   ]
   edge [
     source 2
-    target 3
-    relationship "near"
-    distance 5.482314691077409
-  ]
-  edge [
-    source 2
     target 4
-    relationship "near"
-    distance 4.51430531307114
+    relationship "to_the_right_of"
   ]
   edge [
     source 2
-    target 5
-    relationship "near"
-    distance 9.193022668902008
-  ]
-  edge [
-    source 2
-    target 6
-    relationship "near"
-    distance 8.065458215146263
-  ]
-  edge [
-    source 2
-    target 7
-    relationship "near"
-    distance 9.662630302625038
+    target 3
+    relationship "to_the_left_of"
   ]
   edge [
     source 2
     target 8
-    relationship "near"
-    distance 7.1111554796927
-  ]
-  edge [
-    source 2
-    target 9
-    relationship "near"
-    distance 8.454459812637198
-  ]
-  edge [
-    source 2
-    target 13
-    relationship "near"
-    distance 8.22823845724283
-  ]
-  edge [
-    source 2
-    target 28
-    relationship "near"
-    distance 8.764967732525607
-  ]
-  edge [
-    source 2
-    target 33
-    relationship "near"
-    distance 9.49252073210223
-  ]
-  edge [
-    source 2
-    target 44
-    relationship "near"
-    distance 9.587682726270065
+    relationship "to_the_left_of"
   ]
   edge [
     source 3
@@ -3299,213 +3132,34 @@ graph [
   edge [
     source 3
     target 4
-    relationship "near"
-    distance 2.6955332290642944
-  ]
-  edge [
-    source 3
-    target 5
-    relationship "near"
-    distance 3.96182398598074
-  ]
-  edge [
-    source 3
-    target 6
-    relationship "near"
-    distance 3.6758762251610726
-  ]
-  edge [
-    source 3
-    target 7
-    relationship "near"
-    distance 5.034662037400117
-  ]
-  edge [
-    source 3
-    target 8
-    relationship "near"
-    distance 3.1708994896063896
-  ]
-  edge [
-    source 3
-    target 9
-    relationship "near"
-    distance 4.28039890671669
-  ]
-  edge [
-    source 3
-    target 10
-    relationship "near"
-    distance 5.717660016238746
-  ]
-  edge [
-    source 3
-    target 11
-    relationship "near"
-    distance 7.428625180280507
-  ]
-  edge [
-    source 3
-    target 12
-    relationship "near"
-    distance 6.6210008499755135
+    relationship "to_the_left_of"
   ]
   edge [
     source 3
     target 13
-    relationship "near"
-    distance 3.1213537220621617
+    relationship "to_the_left_of"
   ]
   edge [
     source 3
-    target 14
-    relationship "near"
-    distance 4.693661742550284
+    target 8
+    relationship "to_the_left_of"
   ]
   edge [
     source 3
-    target 15
-    relationship "near"
-    distance 5.991426431858369
+    target 6
+    relationship "to_the_left_of"
   ]
   edge [
     source 3
-    target 16
-    relationship "near"
-    distance 5.596574562616837
-  ]
-  edge [
-    source 3
-    target 17
-    relationship "near"
-    distance 7.192763162583281
-  ]
-  edge [
-    source 3
-    target 18
-    relationship "near"
-    distance 6.657383527195292
-  ]
-  edge [
-    source 3
-    target 19
-    relationship "near"
-    distance 7.107894699509784
-  ]
-  edge [
-    source 3
-    target 20
-    relationship "near"
-    distance 8.665190534690991
-  ]
-  edge [
-    source 3
-    target 21
-    relationship "near"
-    distance 6.657383527195292
-  ]
-  edge [
-    source 3
-    target 22
-    relationship "near"
-    distance 7.549859624329816
-  ]
-  edge [
-    source 3
-    target 23
-    relationship "near"
-    distance 7.694449513704583
-  ]
-  edge [
-    source 3
-    target 24
-    relationship "near"
-    distance 7.6765827314291535
-  ]
-  edge [
-    source 3
-    target 25
-    relationship "near"
-    distance 7.381999857297121
-  ]
-  edge [
-    source 3
-    target 26
-    relationship "near"
-    distance 6.896430052518601
-  ]
-  edge [
-    source 3
-    target 27
-    relationship "near"
-    distance 6.896430052518601
-  ]
-  edge [
-    source 3
-    target 28
-    relationship "near"
-    distance 5.409939528572161
-  ]
-  edge [
-    source 3
-    target 29
-    relationship "near"
-    distance 8.944453694251857
-  ]
-  edge [
-    source 3
-    target 30
-    relationship "near"
-    distance 7.645840970590082
-  ]
-  edge [
-    source 3
-    target 31
-    relationship "near"
-    distance 7.416683728405781
-  ]
-  edge [
-    source 3
-    target 32
-    relationship "near"
-    distance 6.896430052518601
-  ]
-  edge [
-    source 3
-    target 33
-    relationship "near"
-    distance 6.796752021091797
-  ]
-  edge [
-    source 3
-    target 34
-    relationship "near"
-    distance 7.024774471972575
-  ]
-  edge [
-    source 3
-    target 35
-    relationship "near"
-    distance 9.042020349577447
-  ]
-  edge [
-    source 3
-    target 36
-    relationship "near"
-    distance 9.619798691352022
-  ]
-  edge [
-    source 3
-    target 37
-    relationship "near"
-    distance 9.311025747265694
+    target 5
+    relationship "to_the_right_of"
   ]
   edge [
     source 4
     target 5
     type "path"
     distance 5.545217037442433
-    relationship "near"
+    relationship "to_the_left_of"
   ]
   edge [
     source 4
@@ -3514,275 +3168,113 @@ graph [
   ]
   edge [
     source 4
-    target 6
-    relationship "near"
-    distance 6.326740784126084
-  ]
-  edge [
-    source 4
-    target 7
-    relationship "near"
-    distance 7.6514090757402995
-  ]
-  edge [
-    source 4
-    target 8
-    relationship "near"
-    distance 5.763883664756777
-  ]
-  edge [
-    source 4
-    target 9
-    relationship "near"
-    distance 6.9140868876849995
-  ]
-  edge [
-    source 4
-    target 10
-    relationship "near"
-    distance 8.31519163619336
-  ]
-  edge [
-    source 4
-    target 11
-    relationship "near"
-    distance 9.538863137303855
-  ]
-  edge [
-    source 4
-    target 12
-    relationship "near"
-    distance 8.925067170465516
-  ]
-  edge [
-    source 4
     target 13
-    relationship "near"
-    distance 5.712388076739707
-  ]
-  edge [
-    source 4
-    target 14
-    relationship "near"
-    distance 6.83297846734181
-  ]
-  edge [
-    source 4
-    target 15
-    relationship "near"
-    distance 8.62188979528319
-  ]
-  edge [
-    source 4
-    target 16
-    relationship "near"
-    distance 8.142301233350853
-  ]
-  edge [
-    source 4
-    target 17
-    relationship "near"
-    distance 9.814971977257803
-  ]
-  edge [
-    source 4
-    target 18
-    relationship "near"
-    distance 9.230491389328904
-  ]
-  edge [
-    source 4
-    target 19
-    relationship "near"
-    distance 9.733531336565223
-  ]
-  edge [
-    source 4
-    target 21
-    relationship "near"
-    distance 9.230491389328904
-  ]
-  edge [
-    source 4
-    target 25
-    relationship "near"
-    distance 9.775552995961865
-  ]
-  edge [
-    source 4
-    target 26
-    relationship "near"
-    distance 9.46208580253339
-  ]
-  edge [
-    source 4
-    target 27
-    relationship "near"
-    distance 9.46208580253339
-  ]
-  edge [
-    source 4
-    target 28
-    relationship "near"
-    distance 7.96133940125684
-  ]
-  edge [
-    source 4
-    target 32
-    relationship "near"
-    distance 9.46208580253339
-  ]
-  edge [
-    source 4
-    target 33
-    relationship "near"
-    distance 9.258660367183806
-  ]
-  edge [
-    source 4
-    target 34
-    relationship "near"
-    distance 9.578161608918876
+    relationship "to_the_left_of"
   ]
   edge [
     source 5
     target 6
     type "observed"
-    relationship "near"
-    distance 4.09297087087726
   ]
   edge [
     source 5
     target 7
     type "observed"
-    relationship "near"
-    distance 4.18068523236478
   ]
   edge [
     source 5
     target 8
     type "observed"
-    relationship "near"
-    distance 4.555096219808215
   ]
   edge [
     source 5
     target 9
     type "observed"
-    relationship "near"
-    distance 4.529292304144145
   ]
   edge [
     source 5
     target 10
     type "observed"
-    relationship "near"
-    distance 4.503189652234377
   ]
   edge [
     source 5
     target 11
     type "observed"
-    relationship "near"
-    distance 4.358607239184433
   ]
   edge [
     source 5
     target 12
     type "observed"
-    relationship "near"
-    distance 3.949531902578881
+    relationship "to_the_left_of"
   ]
   edge [
     source 5
     target 13
     type "observed"
-    relationship "near"
-    distance 2.922377666029854
+    relationship "to_the_right_of"
   ]
   edge [
     source 5
     target 14
     type "observed"
-    relationship "near"
-    distance 2.2856194819993556
+    relationship "to_the_right_of"
   ]
   edge [
     source 5
     target 15
     type "observed"
-    relationship "near"
-    distance 5.0630062600130215
   ]
   edge [
     source 5
     target 16
     type "observed"
-    relationship "near"
-    distance 3.980045492325963
+    relationship "to_the_left_of"
   ]
   edge [
     source 5
     target 17
     type "observed"
-    relationship "near"
-    distance 6.105514282986922
   ]
   edge [
     source 5
     target 18
     type "observed"
-    relationship "near"
-    distance 5.023743159771307
   ]
   edge [
     source 5
     target 19
     type "observed"
-    relationship "near"
-    distance 6.4017944732599625
   ]
   edge [
     source 5
     target 20
     type "observed"
-    relationship "near"
-    distance 6.372304907470809
   ]
   edge [
     source 5
     target 21
     type "observed"
-    relationship "near"
-    distance 5.023743159771307
   ]
   edge [
     source 5
     target 22
     type "observed"
-    relationship "near"
-    distance 5.496550367262624
   ]
   edge [
     source 5
     target 23
     type "observed"
-    relationship "near"
-    distance 6.0346165530917775
   ]
   edge [
     source 5
     target 24
     type "observed"
-    relationship "near"
-    distance 5.8186582508791425
   ]
   edge [
     source 5
     target 25
     type "path"
     distance 5.660605917805278
-    relationship "near"
   ]
   edge [
     source 5
@@ -3790,476 +3282,69 @@ graph [
     relationship "part_of"
   ]
   edge [
-    source 5
-    target 26
-    relationship "near"
-    distance 5.175077829686088
-  ]
-  edge [
-    source 5
-    target 27
-    relationship "near"
-    distance 5.175077829686088
-  ]
-  edge [
-    source 5
-    target 28
-    relationship "near"
-    distance 5.9970125501793206
-  ]
-  edge [
-    source 5
-    target 29
-    relationship "near"
-    distance 9.112624702510134
-  ]
-  edge [
-    source 5
-    target 30
-    relationship "near"
-    distance 7.857095049362004
-  ]
-  edge [
-    source 5
-    target 31
-    relationship "near"
-    distance 7.224616792220469
-  ]
-  edge [
-    source 5
-    target 32
-    relationship "near"
-    distance 5.175077829686088
-  ]
-  edge [
-    source 5
-    target 33
-    relationship "near"
-    distance 7.485081324639902
-  ]
-  edge [
-    source 5
-    target 34
-    relationship "near"
-    distance 7.199546377116691
-  ]
-  edge [
-    source 5
-    target 35
-    relationship "near"
-    distance 8.481798787254546
-  ]
-  edge [
-    source 5
-    target 36
-    relationship "near"
-    distance 8.855195674968934
-  ]
-  edge [
-    source 5
-    target 37
-    relationship "near"
-    distance 8.978140004728806
-  ]
-  edge [
     source 6
     target 76
     relationship "part_of"
+  ]
+  edge [
+    source 6
+    target 9
+    relationship "to_the_right_of"
+  ]
+  edge [
+    source 6
+    target 8
+    relationship "to_the_left_of"
+  ]
+  edge [
+    source 6
+    target 13
+    relationship "to_the_right_of"
   ]
   edge [
     source 6
     target 7
-    relationship "near"
-    distance 1.609829684803968
-  ]
-  edge [
-    source 6
-    target 8
-    relationship "near"
-    distance 1.0151950505540535
-  ]
-  edge [
-    source 6
-    target 9
-    relationship "near"
-    distance 0.6374186210087693
-  ]
-  edge [
-    source 6
-    target 10
-    relationship "near"
-    distance 2.31633404552459
-  ]
-  edge [
-    source 6
-    target 11
-    relationship "near"
-    distance 5.536601806810371
-  ]
-  edge [
-    source 6
-    target 12
-    relationship "near"
-    distance 4.321774039717133
-  ]
-  edge [
-    source 6
-    target 13
-    relationship "near"
-    distance 1.4324256603019159
-  ]
-  edge [
-    source 6
-    target 14
-    relationship "near"
-    distance 3.585920108108685
-  ]
-  edge [
-    source 6
-    target 15
-    relationship "near"
-    distance 2.4157269440381968
-  ]
-  edge [
-    source 6
-    target 16
-    relationship "near"
-    distance 2.5917965218761587
-  ]
-  edge [
-    source 6
-    target 17
-    relationship "near"
-    distance 3.568280789631825
-  ]
-  edge [
-    source 6
-    target 18
-    relationship "near"
-    distance 3.334274887060764
-  ]
-  edge [
-    source 6
-    target 19
-    relationship "near"
-    distance 3.4359556081842895
-  ]
-  edge [
-    source 6
-    target 20
-    relationship "near"
-    distance 5.487779349775998
-  ]
-  edge [
-    source 6
-    target 21
-    relationship "near"
-    distance 3.334274887060764
-  ]
-  edge [
-    source 6
-    target 22
-    relationship "near"
-    distance 4.351957645326406
-  ]
-  edge [
-    source 6
-    target 23
-    relationship "near"
-    distance 4.238784661050027
-  ]
-  edge [
-    source 6
-    target 24
-    relationship "near"
-    distance 4.330176364324298
-  ]
-  edge [
-    source 6
-    target 25
-    relationship "near"
-    distance 4.129431767130892
-  ]
-  edge [
-    source 6
-    target 26
-    relationship "near"
-    distance 3.587856292188381
-  ]
-  edge [
-    source 6
-    target 27
-    relationship "near"
-    distance 3.587856292188381
+    relationship "to_the_right_of"
   ]
   edge [
     source 6
     target 28
-    relationship "near"
-    distance 2.0907777992833787
-  ]
-  edge [
-    source 6
-    target 29
-    relationship "near"
-    distance 5.542200510620977
-  ]
-  edge [
-    source 6
-    target 30
-    relationship "near"
-    distance 4.22051732026431
-  ]
-  edge [
-    source 6
-    target 31
-    relationship "near"
-    distance 3.8197294327254867
-  ]
-  edge [
-    source 6
-    target 32
-    relationship "near"
-    distance 3.587856292188381
-  ]
-  edge [
-    source 6
-    target 33
-    relationship "near"
-    distance 3.635304737852667
-  ]
-  edge [
-    source 6
-    target 34
-    relationship "near"
-    distance 3.5539462268842756
-  ]
-  edge [
-    source 6
-    target 35
-    relationship "near"
-    distance 5.399029589625109
-  ]
-  edge [
-    source 6
-    target 36
-    relationship "near"
-    distance 5.95649653394916
-  ]
-  edge [
-    source 6
-    target 37
-    relationship "near"
-    distance 5.724066577267635
-  ]
-  edge [
-    source 6
-    target 38
-    relationship "near"
-    distance 8.12758123982637
-  ]
-  edge [
-    source 6
-    target 41
-    relationship "near"
-    distance 9.858222416007125
-  ]
-  edge [
-    source 6
-    target 44
-    relationship "near"
-    distance 9.983241376476998
+    relationship "to_the_left_of"
   ]
   edge [
     source 7
     target 77
     relationship "part_of"
+  ]
+  edge [
+    source 7
+    target 10
+    relationship "to_the_right_of"
+  ]
+  edge [
+    source 7
+    target 15
+    relationship "to_the_right_of"
+  ]
+  edge [
+    source 7
+    target 16
+    relationship "to_the_right_of"
+  ]
+  edge [
+    source 7
+    target 9
+    relationship "to_the_left_of"
   ]
   edge [
     source 7
     target 8
-    relationship "near"
-    distance 2.6046137544833963
-  ]
-  edge [
-    source 7
-    target 9
-    relationship "near"
-    distance 1.3633886759857339
-  ]
-  edge [
-    source 7
-    target 10
-    relationship "near"
-    distance 0.7133901501381671
-  ]
-  edge [
-    source 7
-    target 11
-    relationship "near"
-    distance 4.343180276048317
-  ]
-  edge [
-    source 7
-    target 12
-    relationship "near"
-    distance 3.043264455118038
+    relationship "to_the_left_of"
   ]
   edge [
     source 7
     target 13
-    relationship "near"
-    distance 2.079201044908587
-  ]
-  edge [
-    source 7
-    target 14
-    relationship "near"
-    distance 3.157272973386884
-  ]
-  edge [
-    source 7
-    target 15
-    relationship "near"
-    distance 1.0029196986621127
-  ]
-  edge [
-    source 7
-    target 16
-    relationship "near"
-    distance 1.1471261106801829
-  ]
-  edge [
-    source 7
-    target 17
-    relationship "near"
-    distance 2.2198950284137675
-  ]
-  edge [
-    source 7
-    target 18
-    relationship "near"
-    distance 1.728536470173639
-  ]
-  edge [
-    source 7
-    target 19
-    relationship "near"
-    distance 2.359025433831165
-  ]
-  edge [
-    source 7
-    target 20
-    relationship "near"
-    distance 3.8782197373534446
-  ]
-  edge [
-    source 7
-    target 21
-    relationship "near"
-    distance 1.728536470173639
-  ]
-  edge [
-    source 7
-    target 22
-    relationship "near"
-    distance 2.7438143777617334
-  ]
-  edge [
-    source 7
-    target 23
-    relationship "near"
-    distance 2.6804198930887027
-  ]
-  edge [
-    source 7
-    target 24
-    relationship "near"
-    distance 2.7324045898720204
-  ]
-  edge [
-    source 7
-    target 25
-    relationship "near"
-    distance 2.9113720787317225
-  ]
-  edge [
-    source 7
-    target 26
-    relationship "near"
-    distance 1.9819100811895023
-  ]
-  edge [
-    source 7
-    target 27
-    relationship "near"
-    distance 1.9819100811895023
-  ]
-  edge [
-    source 7
-    target 28
-    relationship "near"
-    distance 2.4144616714949
-  ]
-  edge [
-    source 7
-    target 29
-    relationship "near"
-    distance 5.124937004181555
-  ]
-  edge [
-    source 7
-    target 30
-    relationship "near"
-    distance 3.889535282345738
-  ]
-  edge [
-    source 7
-    target 31
-    relationship "near"
-    distance 3.173529235198564
-  ]
-  edge [
-    source 7
-    target 32
-    relationship "near"
-    distance 1.9819100811895023
-  ]
-  edge [
-    source 7
-    target 33
-    relationship "near"
-    distance 3.7493252617768604
-  ]
-  edge [
-    source 7
-    target 34
-    relationship "near"
-    distance 3.2361172252383277
-  ]
-  edge [
-    source 7
-    target 35
-    relationship "near"
-    distance 4.4809114503161815
-  ]
-  edge [
-    source 7
-    target 36
-    relationship "near"
-    distance 4.919961455119152
-  ]
-  edge [
-    source 7
-    target 37
-    relationship "near"
-    distance 4.958477329333968
-  ]
-  edge [
-    source 7
-    target 38
-    relationship "near"
-    distance 8.323978763288086
+    relationship "to_the_left_of"
   ]
   edge [
     source 8
@@ -4269,200 +3354,17 @@ graph [
   edge [
     source 8
     target 9
-    relationship "near"
-    distance 1.363407241110925
-  ]
-  edge [
-    source 8
-    target 10
-    relationship "near"
-    distance 3.2982590534338154
-  ]
-  edge [
-    source 8
-    target 11
-    relationship "near"
-    distance 6.49165693680837
-  ]
-  edge [
-    source 8
-    target 12
-    relationship "near"
-    distance 5.306342306781797
+    relationship "to_the_right_of"
   ]
   edge [
     source 8
     target 13
-    relationship "near"
-    distance 2.00331662117059
-  ]
-  edge [
-    source 8
-    target 14
-    relationship "near"
-    distance 4.342555989409078
-  ]
-  edge [
-    source 8
-    target 15
-    relationship "near"
-    distance 3.3221123278435516
-  ]
-  edge [
-    source 8
-    target 16
-    relationship "near"
-    distance 3.6058516612235927
-  ]
-  edge [
-    source 8
-    target 17
-    relationship "near"
-    distance 4.396822233773115
-  ]
-  edge [
-    source 8
-    target 18
-    relationship "near"
-    distance 4.317348993234344
-  ]
-  edge [
-    source 8
-    target 19
-    relationship "near"
-    distance 4.14347002363632
-  ]
-  edge [
-    source 8
-    target 20
-    relationship "near"
-    distance 6.47601706498343
-  ]
-  edge [
-    source 8
-    target 21
-    relationship "near"
-    distance 4.317348993234344
-  ]
-  edge [
-    source 8
-    target 22
-    relationship "near"
-    distance 5.3454066075084405
-  ]
-  edge [
-    source 8
-    target 23
-    relationship "near"
-    distance 5.170121239205261
-  ]
-  edge [
-    source 8
-    target 24
-    relationship "near"
-    distance 5.295351930179153
-  ]
-  edge [
-    source 8
-    target 25
-    relationship "near"
-    distance 4.921266151631285
-  ]
-  edge [
-    source 8
-    target 26
-    relationship "near"
-    distance 4.5705900802329245
-  ]
-  edge [
-    source 8
-    target 27
-    relationship "near"
-    distance 4.5705900802329245
+    relationship "to_the_right_of"
   ]
   edge [
     source 8
     target 28
-    relationship "near"
-    distance 2.244154900455789
-  ]
-  edge [
-    source 8
-    target 29
-    relationship "near"
-    distance 5.782512561392883
-  ]
-  edge [
-    source 8
-    target 30
-    relationship "near"
-    distance 4.480092387905467
-  ]
-  edge [
-    source 8
-    target 31
-    relationship "near"
-    distance 4.285538099965591
-  ]
-  edge [
-    source 8
-    target 32
-    relationship "near"
-    distance 4.5705900802329245
-  ]
-  edge [
-    source 8
-    target 33
-    relationship "near"
-    distance 3.670282386641262
-  ]
-  edge [
-    source 8
-    target 34
-    relationship "near"
-    distance 3.860533223239558
-  ]
-  edge [
-    source 8
-    target 35
-    relationship "near"
-    distance 5.9373351309164715
-  ]
-  edge [
-    source 8
-    target 36
-    relationship "near"
-    distance 6.547628075614853
-  ]
-  edge [
-    source 8
-    target 37
-    relationship "near"
-    distance 6.163859238465551
-  ]
-  edge [
-    source 8
-    target 38
-    relationship "near"
-    distance 7.909007629912303
-  ]
-  edge [
-    source 8
-    target 41
-    relationship "near"
-    distance 9.348972434128536
-  ]
-  edge [
-    source 8
-    target 43
-    relationship "near"
-    distance 9.913645131454793
-  ]
-  edge [
-    source 8
-    target 44
-    relationship "near"
-    distance 9.290532231757624
+    relationship "to_the_left_of"
   ]
   edge [
     source 9
@@ -4471,189 +3373,18 @@ graph [
   ]
   edge [
     source 9
-    target 10
-    relationship "near"
-    distance 2.0023004147114274
-  ]
-  edge [
-    source 9
-    target 11
-    relationship "near"
-    distance 5.60075615973556
-  ]
-  edge [
-    source 9
-    target 12
-    relationship "near"
-    distance 4.331386933099245
-  ]
-  edge [
-    source 9
-    target 13
-    relationship "near"
-    distance 1.9756331045845987
-  ]
-  edge [
-    source 9
-    target 14
-    relationship "near"
-    distance 3.925194601540846
+    target 28
+    relationship "to_the_left_of"
   ]
   edge [
     source 9
     target 15
-    relationship "near"
-    distance 1.968520361760551
+    relationship "to_the_left_of"
   ]
   edge [
     source 9
-    target 16
-    relationship "near"
-    distance 2.4791896081104863
-  ]
-  edge [
-    source 9
-    target 17
-    relationship "near"
-    distance 3.0431967380745486
-  ]
-  edge [
-    source 9
-    target 18
-    relationship "near"
-    distance 3.011203750562306
-  ]
-  edge [
-    source 9
-    target 19
-    relationship "near"
-    distance 2.845185549764319
-  ]
-  edge [
-    source 9
-    target 20
-    relationship "near"
-    distance 5.164409144727302
-  ]
-  edge [
-    source 9
-    target 21
-    relationship "near"
-    distance 3.011203750562306
-  ]
-  edge [
-    source 9
-    target 22
-    relationship "near"
-    distance 4.049060717988305
-  ]
-  edge [
-    source 9
-    target 23
-    relationship "near"
-    distance 3.815219698653577
-  ]
-  edge [
-    source 9
-    target 24
-    relationship "near"
-    distance 3.9604230963315215
-  ]
-  edge [
-    source 9
-    target 25
-    relationship "near"
-    distance 3.6891731975630395
-  ]
-  edge [
-    source 9
-    target 26
-    relationship "near"
-    distance 3.2618659587414083
-  ]
-  edge [
-    source 9
-    target 27
-    relationship "near"
-    distance 3.2618659587414083
-  ]
-  edge [
-    source 9
-    target 28
-    relationship "near"
-    distance 1.533115187219605
-  ]
-  edge [
-    source 9
-    target 29
-    relationship "near"
-    distance 4.919982999611785
-  ]
-  edge [
-    source 9
-    target 30
-    relationship "near"
-    distance 3.599720431105473
-  ]
-  edge [
-    source 9
-    target 31
-    relationship "near"
-    distance 3.1862224509212553
-  ]
-  edge [
-    source 9
-    target 32
-    relationship "near"
-    distance 3.2618659587414083
-  ]
-  edge [
-    source 9
-    target 33
-    relationship "near"
-    distance 3.0726146731755435
-  ]
-  edge [
-    source 9
-    target 34
-    relationship "near"
-    distance 2.929703370688637
-  ]
-  edge [
-    source 9
-    target 35
-    relationship "near"
-    distance 4.773249683628585
-  ]
-  edge [
-    source 9
-    target 36
-    relationship "near"
-    distance 5.340179034390652
-  ]
-  edge [
-    source 9
-    target 37
-    relationship "near"
-    distance 5.090775995743614
-  ]
-  edge [
-    source 9
-    target 38
-    relationship "near"
-    distance 7.619826834334215
-  ]
-  edge [
-    source 9
-    target 41
-    relationship "near"
-    distance 9.483690036898102
-  ]
-  edge [
-    source 9
-    target 44
-    relationship "near"
-    distance 9.731404789481575
+    target 13
+    relationship "to_the_right_of"
   ]
   edge [
     source 10
@@ -4662,171 +3393,23 @@ graph [
   ]
   edge [
     source 10
-    target 11
-    relationship "near"
-    distance 4.015960927847774
-  ]
-  edge [
-    source 10
-    target 12
-    relationship "near"
-    distance 2.7029479637204945
-  ]
-  edge [
-    source 10
-    target 13
-    relationship "near"
-    distance 2.701077421102742
-  ]
-  edge [
-    source 10
-    target 14
-    relationship "near"
-    distance 3.3309268462976336
-  ]
-  edge [
-    source 10
     target 15
-    relationship "near"
-    distance 0.6099737918612269
+    relationship "to_the_left_of"
   ]
   edge [
     source 10
     target 16
-    relationship "near"
-    distance 0.8781603934208264
-  ]
-  edge [
-    source 10
-    target 17
-    relationship "near"
-    distance 1.6740774258891957
+    relationship "to_the_right_of"
   ]
   edge [
     source 10
     target 18
-    relationship "near"
-    distance 1.026804262826115
-  ]
-  edge [
-    source 10
-    target 19
-    relationship "near"
-    distance 1.998168080616676
-  ]
-  edge [
-    source 10
-    target 20
-    relationship "near"
-    distance 3.1782771849232496
+    relationship "to_the_left_of"
   ]
   edge [
     source 10
     target 21
-    relationship "near"
-    distance 1.026804262826115
-  ]
-  edge [
-    source 10
-    target 22
-    relationship "near"
-    distance 2.0522466003198487
-  ]
-  edge [
-    source 10
-    target 23
-    relationship "near"
-    distance 1.979327815122632
-  ]
-  edge [
-    source 10
-    target 24
-    relationship "near"
-    distance 2.02036558246617
-  ]
-  edge [
-    source 10
-    target 25
-    relationship "near"
-    distance 2.4613082407954314
-  ]
-  edge [
-    source 10
-    target 26
-    relationship "near"
-    distance 1.2796055595268334
-  ]
-  edge [
-    source 10
-    target 27
-    relationship "near"
-    distance 1.2796055595268334
-  ]
-  edge [
-    source 10
-    target 28
-    relationship "near"
-    distance 2.7606485447719242
-  ]
-  edge [
-    source 10
-    target 29
-    relationship "near"
-    distance 4.976031964960714
-  ]
-  edge [
-    source 10
-    target 30
-    relationship "near"
-    distance 3.8314080289544816
-  ]
-  edge [
-    source 10
-    target 31
-    relationship "near"
-    distance 3.000670107840449
-  ]
-  edge [
-    source 10
-    target 32
-    relationship "near"
-    distance 1.2796055595268334
-  ]
-  edge [
-    source 10
-    target 33
-    relationship "near"
-    distance 3.9010065398182316
-  ]
-  edge [
-    source 10
-    target 34
-    relationship "near"
-    distance 3.2261881349936905
-  ]
-  edge [
-    source 10
-    target 35
-    relationship "near"
-    distance 4.100598817385373
-  ]
-  edge [
-    source 10
-    target 36
-    relationship "near"
-    distance 4.4670525988470615
-  ]
-  edge [
-    source 10
-    target 37
-    relationship "near"
-    distance 4.643373040905351
-  ]
-  edge [
-    source 10
-    target 38
-    relationship "near"
-    distance 8.392354907236667
+    relationship "to_the_left_of"
   ]
   edge [
     source 11
@@ -4836,158 +3419,27 @@ graph [
   edge [
     source 11
     target 12
-    relationship "near"
-    distance 1.3138870945923242
-  ]
-  edge [
-    source 11
-    target 13
-    relationship "near"
-    distance 4.740103231682985
+    relationship "to_the_left_of"
   ]
   edge [
     source 11
     target 14
-    relationship "near"
-    distance 2.7667551837613766
-  ]
-  edge [
-    source 11
-    target 15
-    relationship "near"
-    distance 4.520741076609124
-  ]
-  edge [
-    source 11
-    target 16
-    relationship "near"
-    distance 3.222567798732001
-  ]
-  edge [
-    source 11
-    target 17
-    relationship "near"
-    distance 4.936330876527235
-  ]
-  edge [
-    source 11
-    target 18
-    relationship "near"
-    distance 3.555383081181775
-  ]
-  edge [
-    source 11
-    target 19
-    relationship "near"
-    distance 5.601382153009216
-  ]
-  edge [
-    source 11
-    target 20
-    relationship "near"
-    distance 3.3989992905832223
-  ]
-  edge [
-    source 11
-    target 21
-    relationship "near"
-    distance 3.555383081181775
+    relationship "to_the_left_of"
   ]
   edge [
     source 11
     target 22
-    relationship "near"
-    distance 3.155930094619698
+    relationship "to_the_right_of"
   ]
   edge [
     source 11
-    target 23
-    relationship "near"
-    distance 4.11463234149097
+    target 16
+    relationship "to_the_right_of"
   ]
   edge [
     source 11
-    target 24
-    relationship "near"
-    distance 3.6751683113796343
-  ]
-  edge [
-    source 11
-    target 25
-    relationship "near"
-    distance 5.0318203481790915
-  ]
-  edge [
-    source 11
-    target 26
-    relationship "near"
-    distance 3.486719832841116
-  ]
-  edge [
-    source 11
-    target 27
-    relationship "near"
-    distance 3.486719832841116
-  ]
-  edge [
-    source 11
-    target 28
-    relationship "near"
-    distance 6.731852755721901
-  ]
-  edge [
-    source 11
-    target 29
-    relationship "near"
-    distance 8.657127865931212
-  ]
-  edge [
-    source 11
-    target 30
-    relationship "near"
-    distance 7.689639374479856
-  ]
-  edge [
-    source 11
-    target 31
-    relationship "near"
-    distance 6.764643879900844
-  ]
-  edge [
-    source 11
-    target 32
-    relationship "near"
-    distance 3.486719832841116
-  ]
-  edge [
-    source 11
-    target 33
-    relationship "near"
-    distance 7.901533979927426
-  ]
-  edge [
-    source 11
-    target 34
-    relationship "near"
-    distance 7.151285776179817
-  ]
-  edge [
-    source 11
-    target 35
-    relationship "near"
-    distance 7.308030309487917
-  ]
-  edge [
-    source 11
-    target 36
-    relationship "near"
-    distance 7.370199134478325
-  ]
-  edge [
-    source 11
-    target 37
-    relationship "near"
-    distance 7.980661745591635
+    target 20
+    relationship "to_the_right_of"
   ]
   edge [
     source 12
@@ -4996,153 +3448,23 @@ graph [
   ]
   edge [
     source 12
-    target 13
-    relationship "near"
-    distance 3.7076630880802646
-  ]
-  edge [
-    source 12
-    target 14
-    relationship "near"
-    distance 2.2479945668609465
-  ]
-  edge [
-    source 12
-    target 15
-    relationship "near"
-    distance 3.2173433619714795
-  ]
-  edge [
-    source 12
     target 16
-    relationship "near"
-    distance 1.915317885027814
-  ]
-  edge [
-    source 12
-    target 17
-    relationship "near"
-    distance 3.7264587211223152
-  ]
-  edge [
-    source 12
-    target 18
-    relationship "near"
-    distance 2.3174020931703856
-  ]
-  edge [
-    source 12
-    target 19
-    relationship "near"
-    distance 4.356943758441281
-  ]
-  edge [
-    source 12
-    target 20
-    relationship "near"
-    distance 2.781178627497804
-  ]
-  edge [
-    source 12
-    target 21
-    relationship "near"
-    distance 2.3174020931703856
+    relationship "to_the_right_of"
   ]
   edge [
     source 12
     target 22
-    relationship "near"
-    distance 2.158088834619659
+    relationship "to_the_right_of"
   ]
   edge [
     source 12
-    target 23
-    relationship "near"
-    distance 3.0461598487751993
-  ]
-  edge [
-    source 12
-    target 24
-    relationship "near"
-    distance 2.6497418067522265
-  ]
-  edge [
-    source 12
-    target 25
-    relationship "near"
-    distance 3.949641813428392
+    target 14
+    relationship "to_the_left_of"
   ]
   edge [
     source 12
     target 26
-    relationship "near"
-    distance 2.291848318717157
-  ]
-  edge [
-    source 12
-    target 27
-    relationship "near"
-    distance 2.291848318717157
-  ]
-  edge [
-    source 12
-    target 28
-    relationship "near"
-    distance 5.421612409642508
-  ]
-  edge [
-    source 12
-    target 29
-    relationship "near"
-    distance 7.428769981233117
-  ]
-  edge [
-    source 12
-    target 30
-    relationship "near"
-    distance 6.415582485597559
-  ]
-  edge [
-    source 12
-    target 31
-    relationship "near"
-    distance 5.505544957817633
-  ]
-  edge [
-    source 12
-    target 32
-    relationship "near"
-    distance 2.291848318717157
-  ]
-  edge [
-    source 12
-    target 33
-    relationship "near"
-    distance 6.593495359058901
-  ]
-  edge [
-    source 12
-    target 34
-    relationship "near"
-    distance 5.860685041506449
-  ]
-  edge [
-    source 12
-    target 35
-    relationship "near"
-    distance 6.17593969720621
-  ]
-  edge [
-    source 12
-    target 36
-    relationship "near"
-    distance 6.311335370322256
-  ]
-  edge [
-    source 12
-    target 37
-    relationship "near"
-    distance 6.828146498012095
+    relationship "to_the_right_of"
   ]
   edge [
     source 13
@@ -5152,152 +3474,7 @@ graph [
   edge [
     source 13
     target 14
-    relationship "near"
-    distance 2.356374956364819
-  ]
-  edge [
-    source 13
-    target 15
-    relationship "near"
-    distance 3.0679892385255605
-  ]
-  edge [
-    source 13
-    target 16
-    relationship "near"
-    distance 2.485022367507352
-  ]
-  edge [
-    source 13
-    target 17
-    relationship "near"
-    distance 4.293679851338103
-  ]
-  edge [
-    source 13
-    target 18
-    relationship "near"
-    distance 3.5744883386601
-  ]
-  edge [
-    source 13
-    target 19
-    relationship "near"
-    distance 4.379058221353708
-  ]
-  edge [
-    source 13
-    target 20
-    relationship "near"
-    distance 5.566947869184011
-  ]
-  edge [
-    source 13
-    target 21
-    relationship "near"
-    distance 3.5744883386601
-  ]
-  edge [
-    source 13
-    target 22
-    relationship "near"
-    distance 4.4481276489261505
-  ]
-  edge [
-    source 13
-    target 23
-    relationship "near"
-    distance 4.643323358985325
-  ]
-  edge [
-    source 13
-    target 24
-    relationship "near"
-    distance 4.591642592277705
-  ]
-  edge [
-    source 13
-    target 25
-    relationship "near"
-    distance 4.7086796744441894
-  ]
-  edge [
-    source 13
-    target 26
-    relationship "near"
-    distance 3.806840697360383
-  ]
-  edge [
-    source 13
-    target 27
-    relationship "near"
-    distance 3.806840697360383
-  ]
-  edge [
-    source 13
-    target 28
-    relationship "near"
-    distance 3.496176620004111
-  ]
-  edge [
-    source 13
-    target 29
-    relationship "near"
-    distance 6.84107263979738
-  ]
-  edge [
-    source 13
-    target 30
-    relationship "near"
-    distance 5.531045002654353
-  ]
-  edge [
-    source 13
-    target 31
-    relationship "near"
-    distance 5.004764543551231
-  ]
-  edge [
-    source 13
-    target 32
-    relationship "near"
-    distance 3.806840697360383
-  ]
-  edge [
-    source 13
-    target 33
-    relationship "near"
-    distance 5.038857993890418
-  ]
-  edge [
-    source 13
-    target 34
-    relationship "near"
-    distance 4.855764168102203
-  ]
-  edge [
-    source 13
-    target 35
-    relationship "near"
-    distance 6.467125053296251
-  ]
-  edge [
-    source 13
-    target 36
-    relationship "near"
-    distance 6.951362232723124
-  ]
-  edge [
-    source 13
-    target 37
-    relationship "near"
-    distance 6.879347610377039
-  ]
-  edge [
-    source 13
-    target 38
-    relationship "near"
-    distance 9.548362427566973
+    relationship "to_the_right_of"
   ]
   edge [
     source 14
@@ -5306,141 +3483,8 @@ graph [
   ]
   edge [
     source 14
-    target 15
-    relationship "near"
-    distance 3.9020568285215083
-  ]
-  edge [
-    source 14
     target 16
-    relationship "near"
-    distance 2.546461305616857
-  ]
-  edge [
-    source 14
-    target 17
-    relationship "near"
-    distance 4.906980446391293
-  ]
-  edge [
-    source 14
-    target 18
-    relationship "near"
-    distance 3.6378333271593397
-  ]
-  edge [
-    source 14
-    target 19
-    relationship "near"
-    distance 5.317380685016193
-  ]
-  edge [
-    source 14
-    target 20
-    relationship "near"
-    distance 4.909345846325822
-  ]
-  edge [
-    source 14
-    target 21
-    relationship "near"
-    distance 3.6378333271593397
-  ]
-  edge [
-    source 14
-    target 22
-    relationship "near"
-    distance 4.029518120563688
-  ]
-  edge [
-    source 14
-    target 23
-    relationship "near"
-    distance 4.680824482909173
-  ]
-  edge [
-    source 14
-    target 24
-    relationship "near"
-    distance 4.409922652309102
-  ]
-  edge [
-    source 14
-    target 25
-    relationship "near"
-    distance 5.137928912258733
-  ]
-  edge [
-    source 14
-    target 26
-    relationship "near"
-    distance 3.761557168231682
-  ]
-  edge [
-    source 14
-    target 27
-    relationship "near"
-    distance 3.761557168231682
-  ]
-  edge [
-    source 14
-    target 28
-    relationship "near"
-    distance 5.384775254611127
-  ]
-  edge [
-    source 14
-    target 29
-    relationship "near"
-    distance 8.25096355355891
-  ]
-  edge [
-    source 14
-    target 30
-    relationship "near"
-    distance 7.035933212138872
-  ]
-  edge [
-    source 14
-    target 31
-    relationship "near"
-    distance 6.281941392869119
-  ]
-  edge [
-    source 14
-    target 32
-    relationship "near"
-    distance 3.761557168231682
-  ]
-  edge [
-    source 14
-    target 33
-    relationship "near"
-    distance 6.842449094204974
-  ]
-  edge [
-    source 14
-    target 34
-    relationship "near"
-    distance 6.3844585969988215
-  ]
-  edge [
-    source 14
-    target 35
-    relationship "near"
-    distance 7.397623472806655
-  ]
-  edge [
-    source 14
-    target 36
-    relationship "near"
-    distance 7.706855930330073
-  ]
-  edge [
-    source 14
-    target 37
-    relationship "near"
-    distance 7.9579117051344825
+    relationship "to_the_right_of"
   ]
   edge [
     source 15
@@ -5449,409 +3493,73 @@ graph [
   ]
   edge [
     source 15
-    target 16
-    relationship "near"
-    distance 1.4421941354634242
+    target 18
+    relationship "to_the_left_of"
+  ]
+  edge [
+    source 15
+    target 21
+    relationship "to_the_left_of"
   ]
   edge [
     source 15
     target 17
-    relationship "near"
-    distance 1.2277729987721704
-  ]
-  edge [
-    source 15
-    target 18
-    relationship "near"
-    distance 1.1888023408487087
+    relationship "to_the_right_of"
   ]
   edge [
     source 15
     target 19
-    relationship "near"
-    distance 1.4281982763343777
-  ]
-  edge [
-    source 15
-    target 20
-    relationship "near"
-    distance 3.2656736345133663
-  ]
-  edge [
-    source 15
-    target 21
-    relationship "near"
-    distance 1.1888023408487087
-  ]
-  edge [
-    source 15
-    target 22
-    relationship "near"
-    distance 2.20200823874818
-  ]
-  edge [
-    source 15
-    target 23
-    relationship "near"
-    distance 1.854217396960998
-  ]
-  edge [
-    source 15
-    target 24
-    relationship "near"
-    distance 2.027576148720642
-  ]
-  edge [
-    source 15
-    target 25
-    relationship "near"
-    distance 2.409389863530249
-  ]
-  edge [
-    source 15
-    target 26
-    relationship "near"
-    distance 1.4108789764083853
-  ]
-  edge [
-    source 15
-    target 27
-    relationship "near"
-    distance 1.4108789764083853
-  ]
-  edge [
-    source 15
-    target 28
-    relationship "near"
-    distance 2.3800772183393315
-  ]
-  edge [
-    source 15
-    target 29
-    relationship "near"
-    distance 4.3837907065132145
-  ]
-  edge [
-    source 15
-    target 30
-    relationship "near"
-    distance 3.249572191499846
-  ]
-  edge [
-    source 15
-    target 31
-    relationship "near"
-    distance 2.408392528516346
-  ]
-  edge [
-    source 15
-    target 32
-    relationship "near"
-    distance 1.4108789764083853
-  ]
-  edge [
-    source 15
-    target 33
-    relationship "near"
-    distance 3.3831734311666244
-  ]
-  edge [
-    source 15
-    target 34
-    relationship "near"
-    distance 2.6579887043519146
-  ]
-  edge [
-    source 15
-    target 35
-    relationship "near"
-    distance 3.5446558586748576
-  ]
-  edge [
-    source 15
-    target 36
-    relationship "near"
-    distance 3.946447987591278
-  ]
-  edge [
-    source 15
-    target 37
-    relationship "near"
-    distance 4.06817007725086
-  ]
-  edge [
-    source 15
-    target 38
-    relationship "near"
-    distance 7.877512061278257
+    relationship "to_the_left_of"
   ]
   edge [
     source 16
     target 77
     relationship "part_of"
-  ]
-  edge [
-    source 16
-    target 17
-    relationship "near"
-    distance 2.3605940353875843
   ]
   edge [
     source 16
     target 18
-    relationship "near"
-    distance 1.1858679603565738
-  ]
-  edge [
-    source 16
-    target 19
-    relationship "near"
-    distance 2.802633310112264
-  ]
-  edge [
-    source 16
-    target 20
-    relationship "near"
-    distance 3.086438297219184
+    relationship "to_the_left_of"
   ]
   edge [
     source 16
     target 21
-    relationship "near"
-    distance 1.1858679603565738
-  ]
-  edge [
-    source 16
-    target 22
-    relationship "near"
-    distance 1.9655086544249671
-  ]
-  edge [
-    source 16
-    target 23
-    relationship "near"
-    distance 2.288872888256571
-  ]
-  edge [
-    source 16
-    target 24
-    relationship "near"
-    distance 2.150052171749855
-  ]
-  edge [
-    source 16
-    target 25
-    relationship "near"
-    distance 2.985609115209537
+    relationship "to_the_left_of"
   ]
   edge [
     source 16
     target 26
-    relationship "near"
-    distance 1.380656254287748
-  ]
-  edge [
-    source 16
-    target 27
-    relationship "near"
-    distance 1.380656254287748
-  ]
-  edge [
-    source 16
-    target 28
-    relationship "near"
-    distance 3.509840194585318
-  ]
-  edge [
-    source 16
-    target 29
-    relationship "near"
-    distance 5.82065625392978
-  ]
-  edge [
-    source 16
-    target 30
-    relationship "near"
-    distance 4.688286783128399
-  ]
-  edge [
-    source 16
-    target 31
-    relationship "near"
-    distance 3.847401372963278
-  ]
-  edge [
-    source 16
-    target 32
-    relationship "near"
-    distance 1.380656254287748
-  ]
-  edge [
-    source 16
-    target 33
-    relationship "near"
-    distance 4.734770830479759
-  ]
-  edge [
-    source 16
-    target 34
-    relationship "near"
-    distance 4.082584935991135
-  ]
-  edge [
-    source 16
-    target 35
-    relationship "near"
-    distance 4.856822997715931
-  ]
-  edge [
-    source 16
-    target 36
-    relationship "near"
-    distance 5.163994952561211
-  ]
-  edge [
-    source 16
-    target 37
-    relationship "near"
-    distance 5.432414880604762
-  ]
-  edge [
-    source 16
-    target 38
-    relationship "near"
-    distance 9.265695419110157
+    relationship "to_the_left_of"
   ]
   edge [
     source 17
     target 77
     relationship "part_of"
+  ]
+  edge [
+    source 17
+    target 19
+    relationship "to_the_left_of"
+  ]
+  edge [
+    source 17
+    target 23
+    relationship "to_the_left_of"
   ]
   edge [
     source 17
     target 18
-    relationship "near"
-    distance 1.4136299345621004
-  ]
-  edge [
-    source 17
-    target 19
-    relationship "near"
-    distance 0.7347047864580151
-  ]
-  edge [
-    source 17
-    target 20
-    relationship "near"
-    distance 2.7325329387019646
+    relationship "to_the_left_of"
   ]
   edge [
     source 17
     target 21
-    relationship "near"
-    distance 1.4136299345621004
-  ]
-  edge [
-    source 17
-    target 22
-    relationship "near"
-    distance 1.9741812868105408
-  ]
-  edge [
-    source 17
-    target 23
-    relationship "near"
-    distance 1.1459888073778586
-  ]
-  edge [
-    source 17
-    target 24
-    relationship "near"
-    distance 1.5474988959418001
+    relationship "to_the_left_of"
   ]
   edge [
     source 17
     target 25
-    relationship "near"
-    distance 2.0586577354075337
-  ]
-  edge [
-    source 17
-    target 26
-    relationship "near"
-    distance 1.4496579776679508
-  ]
-  edge [
-    source 17
-    target 27
-    relationship "near"
-    distance 1.4496579776679508
-  ]
-  edge [
-    source 17
-    target 28
-    relationship "near"
-    distance 2.9298655165445306
-  ]
-  edge [
-    source 17
-    target 29
-    relationship "near"
-    distance 3.7238512922195874
-  ]
-  edge [
-    source 17
-    target 30
-    relationship "near"
-    distance 2.8565334721847453
-  ]
-  edge [
-    source 17
-    target 31
-    relationship "near"
-    distance 1.8969880142093571
-  ]
-  edge [
-    source 17
-    target 32
-    relationship "near"
-    distance 1.4496579776679508
-  ]
-  edge [
-    source 17
-    target 33
-    relationship "near"
-    distance 3.3968652943183693
-  ]
-  edge [
-    source 17
-    target 34
-    relationship "near"
-    distance 2.4544444973817403
-  ]
-  edge [
-    source 17
-    target 35
-    relationship "near"
-    distance 2.516137214050934
-  ]
-  edge [
-    source 17
-    target 36
-    relationship "near"
-    distance 2.8112200021075324
-  ]
-  edge [
-    source 17
-    target 37
-    relationship "near"
-    distance 3.129060827846551
-  ]
-  edge [
-    source 17
-    target 38
-    relationship "near"
-    distance 7.505868635405084
+    relationship "to_the_right_of"
   ]
   edge [
     source 18
@@ -5860,123 +3568,28 @@ graph [
   ]
   edge [
     source 18
-    target 19
-    relationship "near"
-    distance 2.0470214877699133
-  ]
-  edge [
-    source 18
-    target 20
-    relationship "near"
-    distance 2.161746308483963
-  ]
-  edge [
-    source 18
-    target 21
-    relationship "near"
-    distance 0.0
-  ]
-  edge [
-    source 18
-    target 22
-    relationship "near"
-    distance 1.0420477504592476
-  ]
-  edge [
-    source 18
-    target 23
-    relationship "near"
-    distance 1.1036397113428706
-  ]
-  edge [
-    source 18
-    target 24
-    relationship "near"
-    distance 1.025914798362692
-  ]
-  edge [
-    source 18
-    target 25
-    relationship "near"
-    distance 2.310378072268142
-  ]
-  edge [
-    source 18
     target 26
-    relationship "near"
-    distance 0.25362984870244176
+    relationship "to_the_right_of"
   ]
   edge [
     source 18
     target 27
-    relationship "near"
-    distance 0.25362984870244176
-  ]
-  edge [
-    source 18
-    target 28
-    relationship "near"
-    distance 3.564800281293019
-  ]
-  edge [
-    source 18
-    target 29
-    relationship "near"
-    distance 5.1138232021236485
-  ]
-  edge [
-    source 18
-    target 30
-    relationship "near"
-    distance 4.143535977580838
-  ]
-  edge [
-    source 18
-    target 31
-    relationship "near"
-    distance 3.2108672105695404
+    relationship "to_the_right_of"
   ]
   edge [
     source 18
     target 32
-    relationship "near"
-    distance 0.25362984870244176
+    relationship "to_the_right_of"
   ]
   edge [
     source 18
-    target 33
-    relationship "near"
-    distance 4.4659231120617635
+    target 24
+    relationship "to_the_left_of"
   ]
   edge [
     source 18
-    target 34
-    relationship "near"
-    distance 3.6357326067821334
-  ]
-  edge [
-    source 18
-    target 35
-    relationship "near"
-    distance 3.9042219245277314
-  ]
-  edge [
-    source 18
-    target 36
-    relationship "near"
-    distance 4.1210817493680185
-  ]
-  edge [
-    source 18
-    target 37
-    relationship "near"
-    distance 4.535442703437948
-  ]
-  edge [
-    source 18
-    target 38
-    relationship "near"
-    distance 8.790692675168676
+    target 25
+    relationship "to_the_left_of"
   ]
   edge [
     source 19
@@ -5985,248 +3598,53 @@ graph [
   ]
   edge [
     source 19
-    target 20
-    relationship "near"
-    distance 3.449112232670593
-  ]
-  edge [
-    source 19
-    target 21
-    relationship "near"
-    distance 2.0470214877699133
-  ]
-  edge [
-    source 19
-    target 22
-    relationship "near"
-    distance 2.7050915533677085
-  ]
-  edge [
-    source 19
-    target 23
-    relationship "near"
-    distance 1.8701587206823909
-  ]
-  edge [
-    source 19
-    target 24
-    relationship "near"
-    distance 2.2815594156620636
-  ]
-  edge [
-    source 19
-    target 25
-    relationship "near"
-    distance 2.3217180496593084
-  ]
-  edge [
-    source 19
-    target 26
-    relationship "near"
-    distance 2.129389232856617
-  ]
-  edge [
-    source 19
-    target 27
-    relationship "near"
-    distance 2.129389232856617
-  ]
-  edge [
-    source 19
-    target 28
-    relationship "near"
-    distance 2.393148082703783
-  ]
-  edge [
-    source 19
-    target 29
-    relationship "near"
-    distance 3.0747188997142034
-  ]
-  edge [
-    source 19
-    target 30
-    relationship "near"
-    distance 2.1303993111642954
-  ]
-  edge [
-    source 19
     target 31
-    relationship "near"
-    distance 1.1765154001981302
-  ]
-  edge [
-    source 19
-    target 32
-    relationship "near"
-    distance 2.129389232856617
-  ]
-  edge [
-    source 19
-    target 33
-    relationship "near"
-    distance 2.6790564059461284
+    relationship "to_the_left_of"
   ]
   edge [
     source 19
     target 34
-    relationship "near"
-    distance 1.7226006844756003
+    relationship "to_the_left_of"
   ]
   edge [
     source 19
-    target 35
-    relationship "near"
-    distance 2.1250295976011726
+    target 23
+    relationship "to_the_left_of"
   ]
   edge [
     source 19
     target 36
-    relationship "near"
-    distance 2.5752131347732123
-  ]
-  edge [
-    source 19
-    target 37
-    relationship "near"
-    distance 2.6454424883481344
-  ]
-  edge [
-    source 19
-    target 38
-    relationship "near"
-    distance 6.815751186868257
-  ]
-  edge [
-    source 19
-    target 39
-    relationship "near"
-    distance 9.932191249527813
-  ]
-  edge [
-    source 19
-    target 40
-    relationship "near"
-    distance 9.932191249527813
-  ]
-  edge [
-    source 19
-    target 41
-    relationship "near"
-    distance 9.333902713289222
+    relationship "to_the_right_of"
   ]
   edge [
     source 20
     target 77
     relationship "part_of"
-  ]
-  edge [
-    source 20
-    target 21
-    relationship "near"
-    distance 2.161746308483963
   ]
   edge [
     source 20
     target 22
-    relationship "near"
-    distance 1.1418190475330388
+    relationship "to_the_right_of"
+  ]
+  edge [
+    source 20
+    target 24
+    relationship "to_the_right_of"
   ]
   edge [
     source 20
     target 23
-    relationship "near"
-    distance 1.5876497816075246
-  ]
-  edge [
-    source 20
-    target 24
-    relationship "near"
-    distance 1.253935384983534
-  ]
-  edge [
-    source 20
-    target 25
-    relationship "near"
-    distance 3.0769989164482157
+    relationship "to_the_right_of"
   ]
   edge [
     source 20
     target 26
-    relationship "near"
-    distance 1.9099191537166296
+    relationship "to_the_right_of"
   ]
   edge [
     source 20
     target 27
-    relationship "near"
-    distance 1.9099191537166296
-  ]
-  edge [
-    source 20
-    target 28
-    relationship "near"
-    distance 5.542511892540359
-  ]
-  edge [
-    source 20
-    target 29
-    relationship "near"
-    distance 6.08607333292952
-  ]
-  edge [
-    source 20
-    target 30
-    relationship "near"
-    distance 5.487310098909642
-  ]
-  edge [
-    source 20
-    target 31
-    relationship "near"
-    distance 4.538191157921103
-  ]
-  edge [
-    source 20
-    target 32
-    relationship "near"
-    distance 1.9099191537166296
-  ]
-  edge [
-    source 20
-    target 33
-    relationship "near"
-    distance 6.12609927758949
-  ]
-  edge [
-    source 20
-    target 34
-    relationship "near"
-    distance 5.1666544658094535
-  ]
-  edge [
-    source 20
-    target 35
-    relationship "near"
-    distance 4.434635887142072
-  ]
-  edge [
-    source 20
-    target 36
-    relationship "near"
-    distance 4.299617985302331
-  ]
-  edge [
-    source 20
-    target 37
-    relationship "near"
-    distance 5.133648292431571
-  ]
-  edge [
-    source 20
-    target 38
-    relationship "near"
-    distance 9.949835944043429
+    relationship "to_the_right_of"
   ]
   edge [
     source 21
@@ -6235,206 +3653,58 @@ graph [
   ]
   edge [
     source 21
-    target 22
-    relationship "near"
-    distance 1.0420477504592476
-  ]
-  edge [
-    source 21
-    target 23
-    relationship "near"
-    distance 1.1036397113428706
-  ]
-  edge [
-    source 21
-    target 24
-    relationship "near"
-    distance 1.025914798362692
-  ]
-  edge [
-    source 21
-    target 25
-    relationship "near"
-    distance 2.310378072268142
-  ]
-  edge [
-    source 21
     target 26
-    relationship "near"
-    distance 0.25362984870244176
+    relationship "to_the_right_of"
   ]
   edge [
     source 21
     target 27
-    relationship "near"
-    distance 0.25362984870244176
-  ]
-  edge [
-    source 21
-    target 28
-    relationship "near"
-    distance 3.564800281293019
-  ]
-  edge [
-    source 21
-    target 29
-    relationship "near"
-    distance 5.1138232021236485
-  ]
-  edge [
-    source 21
-    target 30
-    relationship "near"
-    distance 4.143535977580838
-  ]
-  edge [
-    source 21
-    target 31
-    relationship "near"
-    distance 3.2108672105695404
+    relationship "to_the_right_of"
   ]
   edge [
     source 21
     target 32
-    relationship "near"
-    distance 0.25362984870244176
+    relationship "to_the_right_of"
   ]
   edge [
     source 21
-    target 33
-    relationship "near"
-    distance 4.4659231120617635
+    target 24
+    relationship "to_the_left_of"
   ]
   edge [
     source 21
-    target 34
-    relationship "near"
-    distance 3.6357326067821334
-  ]
-  edge [
-    source 21
-    target 35
-    relationship "near"
-    distance 3.9042219245277314
-  ]
-  edge [
-    source 21
-    target 36
-    relationship "near"
-    distance 4.1210817493680185
-  ]
-  edge [
-    source 21
-    target 37
-    relationship "near"
-    distance 4.535442703437948
-  ]
-  edge [
-    source 21
-    target 38
-    relationship "near"
-    distance 8.790692675168676
+    target 25
+    relationship "to_the_left_of"
   ]
   edge [
     source 22
     target 77
     relationship "part_of"
+  ]
+  edge [
+    source 22
+    target 24
+    relationship "to_the_left_of"
+  ]
+  edge [
+    source 22
+    target 26
+    relationship "to_the_right_of"
+  ]
+  edge [
+    source 22
+    target 27
+    relationship "to_the_right_of"
+  ]
+  edge [
+    source 22
+    target 32
+    relationship "to_the_right_of"
   ]
   edge [
     source 22
     target 23
-    relationship "near"
-    distance 0.9690918036553314
-  ]
-  edge [
-    source 22
-    target 24
-    relationship "near"
-    distance 0.5196870259556134
-  ]
-  edge [
-    source 22
-    target 25
-    relationship "near"
-    distance 2.551885880395039
-  ]
-  edge [
-    source 22
-    target 26
-    relationship "near"
-    distance 0.7979397586166525
-  ]
-  edge [
-    source 22
-    target 27
-    relationship "near"
-    distance 0.7979397586166525
-  ]
-  edge [
-    source 22
-    target 28
-    relationship "near"
-    distance 4.55004885718631
-  ]
-  edge [
-    source 22
-    target 29
-    relationship "near"
-    distance 5.632022971102663
-  ]
-  edge [
-    source 22
-    target 30
-    relationship "near"
-    distance 4.830598847625766
-  ]
-  edge [
-    source 22
-    target 31
-    relationship "near"
-    distance 3.8704491746724607
-  ]
-  edge [
-    source 22
-    target 32
-    relationship "near"
-    distance 0.7979397586166525
-  ]
-  edge [
-    source 22
-    target 33
-    relationship "near"
-    distance 5.311608417322127
-  ]
-  edge [
-    source 22
-    target 34
-    relationship "near"
-    distance 4.408333201437421
-  ]
-  edge [
-    source 22
-    target 35
-    relationship "near"
-    distance 4.173413486189469
-  ]
-  edge [
-    source 22
-    target 36
-    relationship "near"
-    distance 4.220431047881493
-  ]
-  edge [
-    source 22
-    target 37
-    relationship "near"
-    distance 4.856642334835499
-  ]
-  edge [
-    source 22
-    target 38
-    relationship "near"
-    distance 9.426734836423186
+    relationship "to_the_left_of"
   ]
   edge [
     source 23
@@ -6444,92 +3714,27 @@ graph [
   edge [
     source 23
     target 24
-    relationship "near"
-    distance 0.45835145885879974
-  ]
-  edge [
-    source 23
-    target 25
-    relationship "near"
-    distance 2.146523140489305
+    relationship "to_the_right_of"
   ]
   edge [
     source 23
     target 26
-    relationship "near"
-    distance 0.927007959060797
+    relationship "to_the_right_of"
   ]
   edge [
     source 23
     target 27
-    relationship "near"
-    distance 0.927007959060797
-  ]
-  edge [
-    source 23
-    target 28
-    relationship "near"
-    distance 3.9945545432723506
-  ]
-  edge [
-    source 23
-    target 29
-    relationship "near"
-    distance 4.684574102210248
-  ]
-  edge [
-    source 23
-    target 30
-    relationship "near"
-    distance 3.9529533648238497
-  ]
-  edge [
-    source 23
-    target 31
-    relationship "near"
-    distance 2.9939215116298903
+    relationship "to_the_right_of"
   ]
   edge [
     source 23
     target 32
-    relationship "near"
-    distance 0.927007959060797
+    relationship "to_the_right_of"
   ]
   edge [
     source 23
-    target 33
-    relationship "near"
-    distance 4.542273518795696
-  ]
-  edge [
-    source 23
-    target 34
-    relationship "near"
-    distance 3.592346452859714
-  ]
-  edge [
-    source 23
-    target 35
-    relationship "near"
-    distance 3.2059284929145693
-  ]
-  edge [
-    source 23
-    target 36
-    relationship "near"
-    distance 3.27614768928335
-  ]
-  edge [
-    source 23
-    target 37
-    relationship "near"
-    distance 3.8884378265518094
-  ]
-  edge [
-    source 23
-    target 38
-    relationship "near"
-    distance 8.524537428873828
+    target 25
+    relationship "to_the_left_of"
   ]
   edge [
     source 24
@@ -6538,178 +3743,89 @@ graph [
   ]
   edge [
     source 24
+    target 26
+    relationship "to_the_left_of"
+  ]
+  edge [
+    source 24
+    target 27
+    relationship "to_the_left_of"
+  ]
+  edge [
+    source 24
+    target 32
+    relationship "to_the_left_of"
+  ]
+  edge [
+    source 24
     target 25
-    relationship "near"
-    distance 2.31108601771483
-  ]
-  edge [
-    source 24
-    target 26
-    relationship "near"
-    distance 0.7866080042383791
-  ]
-  edge [
-    source 24
-    target 27
-    relationship "near"
-    distance 0.7866080042383791
-  ]
-  edge [
-    source 24
-    target 28
-    relationship "near"
-    distance 4.290256727648871
-  ]
-  edge [
-    source 24
-    target 29
-    relationship "near"
-    distance 5.141228145890215
-  ]
-  edge [
-    source 24
-    target 30
-    relationship "near"
-    distance 4.387296532442236
-  ]
-  edge [
-    source 24
-    target 31
-    relationship "near"
-    distance 3.426537742567036
-  ]
-  edge [
-    source 24
-    target 32
-    relationship "near"
-    distance 0.7866080042383791
-  ]
-  edge [
-    source 24
-    target 33
-    relationship "near"
-    distance 4.933932145477409
-  ]
-  edge [
-    source 24
-    target 34
-    relationship "near"
-    distance 4.001666245414934
-  ]
-  edge [
-    source 24
-    target 35
-    relationship "near"
-    distance 3.6572740293522035
-  ]
-  edge [
-    source 24
-    target 36
-    relationship "near"
-    distance 3.7029055090121354
-  ]
-  edge [
-    source 24
-    target 37
-    relationship "near"
-    distance 4.342554686616658
-  ]
-  edge [
-    source 24
-    target 38
-    relationship "near"
-    distance 8.965766799873974
+    relationship "to_the_left_of"
   ]
   edge [
     source 25
     target 26
     type "observed"
-    relationship "near"
-    distance 2.319454613337207
   ]
   edge [
     source 25
     target 27
     type "observed"
-    relationship "near"
-    distance 2.319454613337207
   ]
   edge [
     source 25
     target 28
     type "observed"
-    relationship "near"
-    distance 3.767631962599462
   ]
   edge [
     source 25
     target 29
     type "observed"
-    relationship "near"
-    distance 4.613543540755466
   ]
   edge [
     source 25
     target 30
     type "observed"
-    relationship "near"
-    distance 3.848754198713324
   ]
   edge [
     source 25
     target 31
     type "observed"
-    relationship "near"
-    distance 3.084627237241302
   ]
   edge [
     source 25
     target 32
     type "observed"
-    relationship "near"
-    distance 2.319454613337207
   ]
   edge [
     source 25
     target 33
     type "observed"
-    relationship "near"
-    distance 4.273127805254085
   ]
   edge [
     source 25
     target 34
     type "observed"
-    relationship "near"
-    distance 3.4963299079425303
   ]
   edge [
     source 25
     target 35
     type "observed"
-    relationship "near"
-    distance 3.5414333957120037
   ]
   edge [
     source 25
     target 36
     type "observed"
-    relationship "near"
-    distance 3.7437411735651405
   ]
   edge [
     source 25
     target 37
     type "observed"
-    relationship "near"
-    distance 4.06960255171197
   ]
   edge [
     source 25
     target 38
     type "path"
     distance 7.710589494446798
-    relationship "near"
   ]
   edge [
     source 25
@@ -6722,147 +3838,9 @@ graph [
     relationship "part_of"
   ]
   edge [
-    source 26
-    target 27
-    relationship "near"
-    distance 0.0
-  ]
-  edge [
-    source 26
-    target 28
-    relationship "near"
-    distance 3.776960909059703
-  ]
-  edge [
-    source 26
-    target 29
-    relationship "near"
-    distance 5.1717537012800845
-  ]
-  edge [
-    source 26
-    target 30
-    relationship "near"
-    distance 4.2491394922058925
-  ]
-  edge [
-    source 26
-    target 31
-    relationship "near"
-    distance 3.3036501889150127
-  ]
-  edge [
-    source 26
-    target 32
-    relationship "near"
-    distance 0.0
-  ]
-  edge [
-    source 26
-    target 33
-    relationship "near"
-    distance 4.624921021462075
-  ]
-  edge [
-    source 26
-    target 34
-    relationship "near"
-    distance 3.767527882793073
-  ]
-  edge [
-    source 26
-    target 35
-    relationship "near"
-    distance 3.8885341912835636
-  ]
-  edge [
-    source 26
-    target 36
-    relationship "near"
-    distance 4.063557149804296
-  ]
-  edge [
-    source 26
-    target 37
-    relationship "near"
-    distance 4.536793818651321
-  ]
-  edge [
-    source 26
-    target 38
-    relationship "near"
-    distance 8.894143060126305
-  ]
-  edge [
     source 27
     target 77
     relationship "part_of"
-  ]
-  edge [
-    source 27
-    target 28
-    relationship "near"
-    distance 3.776960909059703
-  ]
-  edge [
-    source 27
-    target 29
-    relationship "near"
-    distance 5.1717537012800845
-  ]
-  edge [
-    source 27
-    target 30
-    relationship "near"
-    distance 4.2491394922058925
-  ]
-  edge [
-    source 27
-    target 31
-    relationship "near"
-    distance 3.3036501889150127
-  ]
-  edge [
-    source 27
-    target 32
-    relationship "near"
-    distance 0.0
-  ]
-  edge [
-    source 27
-    target 33
-    relationship "near"
-    distance 4.624921021462075
-  ]
-  edge [
-    source 27
-    target 34
-    relationship "near"
-    distance 3.767527882793073
-  ]
-  edge [
-    source 27
-    target 35
-    relationship "near"
-    distance 3.8885341912835636
-  ]
-  edge [
-    source 27
-    target 36
-    relationship "near"
-    distance 4.063557149804296
-  ]
-  edge [
-    source 27
-    target 37
-    relationship "near"
-    distance 4.536793818651321
-  ]
-  edge [
-    source 27
-    target 38
-    relationship "near"
-    distance 8.894143060126305
   ]
   edge [
     source 28
@@ -6871,99 +3849,18 @@ graph [
   ]
   edge [
     source 28
-    target 29
-    relationship "near"
-    distance 3.544713758790981
-  ]
-  edge [
-    source 28
-    target 30
-    relationship "near"
-    distance 2.2367766803583997
-  ]
-  edge [
-    source 28
-    target 31
-    relationship "near"
-    distance 2.1375564046021047
-  ]
-  edge [
-    source 28
-    target 32
-    relationship "near"
-    distance 3.776960909059703
-  ]
-  edge [
-    source 28
     target 33
-    relationship "near"
-    distance 1.5455782186149458
+    relationship "to_the_left_of"
   ]
   edge [
     source 28
     target 34
-    relationship "near"
-    distance 1.6246688692512914
+    relationship "to_the_right_of"
   ]
   edge [
     source 28
-    target 35
-    relationship "near"
-    distance 3.806400775727839
-  ]
-  edge [
-    source 28
-    target 36
-    relationship "near"
-    distance 4.459289982668686
-  ]
-  edge [
-    source 28
-    target 37
-    relationship "near"
-    distance 3.9562201400360832
-  ]
-  edge [
-    source 28
-    target 38
-    relationship "near"
-    distance 6.151136076929028
-  ]
-  edge [
-    source 28
-    target 39
-    relationship "near"
-    distance 9.739159059029461
-  ]
-  edge [
-    source 28
-    target 40
-    relationship "near"
-    distance 9.739159059029461
-  ]
-  edge [
-    source 28
-    target 41
-    relationship "near"
-    distance 8.074277976112139
-  ]
-  edge [
-    source 28
-    target 43
-    relationship "near"
-    distance 9.084007174591356
-  ]
-  edge [
-    source 28
-    target 44
-    relationship "near"
-    distance 8.507090671682832
-  ]
-  edge [
-    source 28
-    target 46
-    relationship "near"
-    distance 9.3853181045314
+    target 31
+    relationship "to_the_left_of"
   ]
   edge [
     source 29
@@ -6972,99 +3869,43 @@ graph [
   ]
   edge [
     source 29
+    target 37
+    relationship "to_the_right_of"
+  ]
+  edge [
+    source 29
     target 30
-    relationship "near"
-    distance 1.3221852532056393
-  ]
-  edge [
-    source 29
-    target 31
-    relationship "near"
-    distance 1.97621001011766
-  ]
-  edge [
-    source 29
-    target 32
-    relationship "near"
-    distance 5.1717537012800845
-  ]
-  edge [
-    source 29
-    target 33
-    relationship "near"
-    distance 2.2253729629611447
-  ]
-  edge [
-    source 29
-    target 34
-    relationship "near"
-    distance 1.9907720478847137
+    relationship "to_the_right_of"
   ]
   edge [
     source 29
     target 35
-    relationship "near"
-    distance 1.8041676067350019
+    relationship "to_the_right_of"
+  ]
+  edge [
+    source 29
+    target 31
+    relationship "to_the_left_of"
+  ]
+  edge [
+    source 29
+    target 34
+    relationship "to_the_left_of"
+  ]
+  edge [
+    source 29
+    target 33
+    relationship "to_the_left_of"
   ]
   edge [
     source 29
     target 36
-    relationship "near"
-    distance 2.3378169277546412
-  ]
-  edge [
-    source 29
-    target 37
-    relationship "near"
-    distance 1.2431752964842697
+    relationship "to_the_right_of"
   ]
   edge [
     source 29
     target 38
-    relationship "near"
-    distance 4.153870951280865
-  ]
-  edge [
-    source 29
-    target 39
-    relationship "near"
-    distance 6.8609710182558326
-  ]
-  edge [
-    source 29
-    target 40
-    relationship "near"
-    distance 6.8609710182558326
-  ]
-  edge [
-    source 29
-    target 41
-    relationship "near"
-    distance 6.78506800093712
-  ]
-  edge [
-    source 29
-    target 43
-    relationship "near"
-    distance 8.509038646736755
-  ]
-  edge [
-    source 29
-    target 44
-    relationship "near"
-    distance 8.089287958545818
-  ]
-  edge [
-    source 29
-    target 45
-    relationship "near"
-    distance 9.226958211244954
-  ]
-  edge [
-    source 29
-    target 46
-    relationship "near"
-    distance 7.861682626759154
+    relationship "to_the_left_of"
   ]
   edge [
     source 30
@@ -7073,87 +3914,28 @@ graph [
   ]
   edge [
     source 30
-    target 31
-    relationship "near"
-    distance 0.9612378654302329
+    target 34
+    relationship "to_the_right_of"
   ]
   edge [
     source 30
-    target 32
-    relationship "near"
-    distance 4.2491394922058925
+    target 31
+    relationship "to_the_right_of"
   ]
   edge [
     source 30
     target 33
-    relationship "near"
-    distance 1.1356959860647928
-  ]
-  edge [
-    source 30
-    target 34
-    relationship "near"
-    distance 0.6761637557519266
-  ]
-  edge [
-    source 30
-    target 35
-    relationship "near"
-    distance 1.989582159587195
-  ]
-  edge [
-    source 30
-    target 36
-    relationship "near"
-    distance 2.6807996432126466
+    relationship "to_the_left_of"
   ]
   edge [
     source 30
     target 37
-    relationship "near"
-    distance 1.8677271147450314
+    relationship "to_the_right_of"
   ]
   edge [
     source 30
-    target 38
-    relationship "near"
-    distance 4.8037543266940625
-  ]
-  edge [
-    source 30
-    target 39
-    relationship "near"
-    distance 7.957162277120896
-  ]
-  edge [
-    source 30
-    target 40
-    relationship "near"
-    distance 7.957162277120896
-  ]
-  edge [
-    source 30
-    target 41
-    relationship "near"
-    distance 7.230665863923497
-  ]
-  edge [
-    source 30
-    target 43
-    relationship "near"
-    distance 8.70877729558841
-  ]
-  edge [
-    source 30
-    target 44
-    relationship "near"
-    distance 8.219371344566088
-  ]
-  edge [
-    source 30
-    target 46
-    relationship "near"
-    distance 8.422237280002038
+    target 35
+    relationship "to_the_right_of"
   ]
   edge [
     source 31
@@ -7162,81 +3944,28 @@ graph [
   ]
   edge [
     source 31
-    target 32
-    relationship "near"
-    distance 3.3036501889150127
-  ]
-  edge [
-    source 31
-    target 33
-    relationship "near"
-    distance 1.7348172045211556
-  ]
-  edge [
-    source 31
     target 34
-    relationship "near"
-    distance 0.7436654107347697
+    relationship "to_the_left_of"
   ]
   edge [
     source 31
     target 35
-    relationship "near"
-    distance 1.6696957804847083
+    relationship "to_the_right_of"
+  ]
+  edge [
+    source 31
+    target 33
+    relationship "to_the_left_of"
   ]
   edge [
     source 31
     target 36
-    relationship "near"
-    distance 2.3247585151226686
+    relationship "to_the_right_of"
   ]
   edge [
     source 31
     target 37
-    relationship "near"
-    distance 1.904774513590263
-  ]
-  edge [
-    source 31
-    target 38
-    relationship "near"
-    distance 5.695798758251024
-  ]
-  edge [
-    source 31
-    target 39
-    relationship "near"
-    distance 8.80289500582145
-  ]
-  edge [
-    source 31
-    target 40
-    relationship "near"
-    distance 8.80289500582145
-  ]
-  edge [
-    source 31
-    target 41
-    relationship "near"
-    distance 8.18582260448816
-  ]
-  edge [
-    source 31
-    target 43
-    relationship "near"
-    distance 9.632150941435093
-  ]
-  edge [
-    source 31
-    target 44
-    relationship "near"
-    distance 9.130269129189742
-  ]
-  edge [
-    source 31
-    target 46
-    relationship "near"
-    distance 9.370575292663275
+    relationship "to_the_right_of"
   ]
   edge [
     source 32
@@ -7244,42 +3973,6 @@ graph [
     relationship "part_of"
   ]
   edge [
-    source 32
-    target 33
-    relationship "near"
-    distance 4.624921021462075
-  ]
-  edge [
-    source 32
-    target 34
-    relationship "near"
-    distance 3.767527882793073
-  ]
-  edge [
-    source 32
-    target 35
-    relationship "near"
-    distance 3.8885341912835636
-  ]
-  edge [
-    source 32
-    target 36
-    relationship "near"
-    distance 4.063557149804296
-  ]
-  edge [
-    source 32
-    target 37
-    relationship "near"
-    distance 4.536793818651321
-  ]
-  edge [
-    source 32
-    target 38
-    relationship "near"
-    distance 8.894143060126305
-  ]
-  edge [
     source 33
     target 78
     relationship "part_of"
@@ -7287,68 +3980,7 @@ graph [
   edge [
     source 33
     target 34
-    relationship "near"
-    distance 1.0006232999163749
-  ]
-  edge [
-    source 33
-    target 35
-    relationship "near"
-    distance 3.1098932622831637
-  ]
-  edge [
-    source 33
-    target 36
-    relationship "near"
-    distance 3.8036240147107847
-  ]
-  edge [
-    source 33
-    target 37
-    relationship "near"
-    distance 2.9951717840542793
-  ]
-  edge [
-    source 33
-    target 38
-    relationship "near"
-    distance 4.743533724565427
-  ]
-  edge [
-    source 33
-    target 39
-    relationship "near"
-    distance 8.20175155456937
-  ]
-  edge [
-    source 33
-    target 40
-    relationship "near"
-    distance 8.20175155456937
-  ]
-  edge [
-    source 33
-    target 41
-    relationship "near"
-    distance 6.820252509173292
-  ]
-  edge [
-    source 33
-    target 43
-    relationship "near"
-    distance 8.075136304124772
-  ]
-  edge [
-    source 33
-    target 44
-    relationship "near"
-    distance 7.542953723672881
-  ]
-  edge [
-    source 33
-    target 46
-    relationship "near"
-    distance 8.097387706510553
+    relationship "to_the_right_of"
   ]
   edge [
     source 34
@@ -7356,66 +3988,6 @@ graph [
     relationship "part_of"
   ]
   edge [
-    source 34
-    target 35
-    relationship "near"
-    distance 2.2830482876359883
-  ]
-  edge [
-    source 34
-    target 36
-    relationship "near"
-    distance 2.968052199636012
-  ]
-  edge [
-    source 34
-    target 37
-    relationship "near"
-    distance 2.343937331522759
-  ]
-  edge [
-    source 34
-    target 38
-    relationship "near"
-    distance 5.309345233304675
-  ]
-  edge [
-    source 34
-    target 39
-    relationship "near"
-    distance 8.592784648351005
-  ]
-  edge [
-    source 34
-    target 40
-    relationship "near"
-    distance 8.592784648351005
-  ]
-  edge [
-    source 34
-    target 41
-    relationship "near"
-    distance 7.640416991943178
-  ]
-  edge [
-    source 34
-    target 43
-    relationship "near"
-    distance 8.999817198152
-  ]
-  edge [
-    source 34
-    target 44
-    relationship "near"
-    distance 8.482411742164482
-  ]
-  edge [
-    source 34
-    target 46
-    relationship "near"
-    distance 8.868120824092959
-  ]
-  edge [
     source 35
     target 79
     relationship "part_of"
@@ -7423,50 +3995,12 @@ graph [
   edge [
     source 35
     target 36
-    relationship "near"
-    distance 0.6939583480870202
+    relationship "to_the_right_of"
   ]
   edge [
     source 35
     target 37
-    relationship "near"
-    distance 0.6996221289741432
-  ]
-  edge [
-    source 35
-    target 38
-    relationship "near"
-    distance 5.815119305838245
-  ]
-  edge [
-    source 35
-    target 39
-    relationship "near"
-    distance 8.31383693471567
-  ]
-  edge [
-    source 35
-    target 40
-    relationship "near"
-    distance 8.31383693471567
-  ]
-  edge [
-    source 35
-    target 41
-    relationship "near"
-    distance 8.581134041763972
-  ]
-  edge [
-    source 35
-    target 44
-    relationship "near"
-    distance 9.854365359472052
-  ]
-  edge [
-    source 35
-    target 46
-    relationship "near"
-    distance 9.624761516940458
+    relationship "to_the_left_of"
   ]
   edge [
     source 36
@@ -7476,32 +4010,7 @@ graph [
   edge [
     source 36
     target 37
-    relationship "near"
-    distance 1.100000149827579
-  ]
-  edge [
-    source 36
-    target 38
-    relationship "near"
-    distance 6.229408717688862
-  ]
-  edge [
-    source 36
-    target 39
-    relationship "near"
-    distance 8.476638572279057
-  ]
-  edge [
-    source 36
-    target 40
-    relationship "near"
-    distance 8.476638572279057
-  ]
-  edge [
-    source 36
-    target 41
-    relationship "near"
-    distance 9.059859328017241
+    relationship "to_the_left_of"
   ]
   edge [
     source 37
@@ -7509,102 +4018,49 @@ graph [
     relationship "part_of"
   ]
   edge [
-    source 37
-    target 38
-    relationship "near"
-    distance 5.205328127066828
-  ]
-  edge [
-    source 37
-    target 39
-    relationship "near"
-    distance 7.616106043250419
-  ]
-  edge [
-    source 37
-    target 40
-    relationship "near"
-    distance 7.616106043250419
-  ]
-  edge [
-    source 37
-    target 41
-    relationship "near"
-    distance 7.97157743844433
-  ]
-  edge [
-    source 37
-    target 43
-    relationship "near"
-    distance 9.736218151109984
-  ]
-  edge [
-    source 37
-    target 44
-    relationship "near"
-    distance 9.322838892206425
-  ]
-  edge [
-    source 37
-    target 46
-    relationship "near"
-    distance 8.990282011923476
-  ]
-  edge [
     source 38
     target 39
     type "observed"
-    relationship "near"
-    distance 4.541373766049952
+    relationship "to_the_left_of"
   ]
   edge [
     source 38
     target 40
     type "observed"
-    relationship "near"
-    distance 4.541373766049952
+    relationship "to_the_left_of"
   ]
   edge [
     source 38
     target 41
     type "observed"
-    relationship "near"
-    distance 3.949823381724289
+    relationship "to_the_right_of"
   ]
   edge [
     source 38
     target 42
     type "observed"
-    relationship "near"
-    distance 6.769457187690784
   ]
   edge [
     source 38
     target 43
     type "observed"
-    relationship "near"
-    distance 5.739693771751806
   ]
   edge [
     source 38
     target 44
     type "observed"
-    relationship "near"
-    distance 5.491550324549535
   ]
   edge [
     source 38
     target 45
     type "observed"
-    relationship "near"
-    distance 5.981936808170819
   ]
   edge [
     source 38
     target 46
     type "path"
     distance 3.9862173201465265
-    relationship "near"
+    relationship "to_the_right_of"
   ]
   edge [
     source 38
@@ -7612,153 +4068,24 @@ graph [
     relationship "part_of"
   ]
   edge [
-    source 38
-    target 47
-    relationship "near"
-    distance 7.842703586179826
-  ]
-  edge [
-    source 38
-    target 48
-    relationship "near"
-    distance 6.8196211725910905
-  ]
-  edge [
-    source 38
-    target 49
-    relationship "near"
-    distance 9.701870891925443
-  ]
-  edge [
-    source 38
-    target 50
-    relationship "near"
-    distance 9.076669981264095
-  ]
-  edge [
-    source 38
-    target 51
-    relationship "near"
-    distance 9.24478878153718
-  ]
-  edge [
-    source 38
-    target 52
-    relationship "near"
-    distance 9.62369855687671
-  ]
-  edge [
-    source 38
-    target 56
-    relationship "near"
-    distance 8.610725371192798
-  ]
-  edge [
     source 39
     target 81
     relationship "part_of"
   ]
   edge [
     source 39
-    target 40
-    relationship "near"
-    distance 0.0
-  ]
-  edge [
-    source 39
-    target 41
-    relationship "near"
-    distance 4.5013578668017935
-  ]
-  edge [
-    source 39
-    target 42
-    relationship "near"
-    distance 4.970019145185622
-  ]
-  edge [
-    source 39
-    target 43
-    relationship "near"
-    distance 6.5153814649452295
-  ]
-  edge [
-    source 39
-    target 44
-    relationship "near"
-    distance 6.650029467009182
-  ]
-  edge [
-    source 39
     target 45
-    relationship "near"
-    distance 3.1453413123218708
+    relationship "to_the_left_of"
   ]
   edge [
     source 39
     target 46
-    relationship "near"
-    distance 4.49827212156279
+    relationship "to_the_right_of"
   ]
   edge [
     source 39
-    target 47
-    relationship "near"
-    distance 5.652474593015043
-  ]
-  edge [
-    source 39
-    target 48
-    relationship "near"
-    distance 4.8474546672577
-  ]
-  edge [
-    source 39
-    target 49
-    relationship "near"
-    distance 8.678443354574746
-  ]
-  edge [
-    source 39
-    target 50
-    relationship "near"
-    distance 9.277771256304
-  ]
-  edge [
-    source 39
-    target 51
-    relationship "near"
-    distance 8.698689806895443
-  ]
-  edge [
-    source 39
-    target 52
-    relationship "near"
-    distance 7.011087411260441
-  ]
-  edge [
-    source 39
-    target 54
-    relationship "near"
-    distance 7.442279739173733
-  ]
-  edge [
-    source 39
-    target 55
-    relationship "near"
-    distance 9.98361889688466
-  ]
-  edge [
-    source 39
-    target 56
-    relationship "near"
-    distance 5.770587094842965
-  ]
-  edge [
-    source 39
-    target 57
-    relationship "near"
-    distance 9.225399497869573
+    target 41
+    relationship "to_the_right_of"
   ]
   edge [
     source 40
@@ -7767,99 +4094,18 @@ graph [
   ]
   edge [
     source 40
+    target 45
+    relationship "to_the_right_of"
+  ]
+  edge [
+    source 40
+    target 46
+    relationship "to_the_right_of"
+  ]
+  edge [
+    source 40
     target 41
-    relationship "near"
-    distance 4.5013578668017935
-  ]
-  edge [
-    source 40
-    target 42
-    relationship "near"
-    distance 4.970019145185622
-  ]
-  edge [
-    source 40
-    target 43
-    relationship "near"
-    distance 6.5153814649452295
-  ]
-  edge [
-    source 40
-    target 44
-    relationship "near"
-    distance 6.650029467009182
-  ]
-  edge [
-    source 40
-    target 45
-    relationship "near"
-    distance 3.1453413123218708
-  ]
-  edge [
-    source 40
-    target 46
-    relationship "near"
-    distance 4.49827212156279
-  ]
-  edge [
-    source 40
-    target 47
-    relationship "near"
-    distance 5.652474593015043
-  ]
-  edge [
-    source 40
-    target 48
-    relationship "near"
-    distance 4.8474546672577
-  ]
-  edge [
-    source 40
-    target 49
-    relationship "near"
-    distance 8.678443354574746
-  ]
-  edge [
-    source 40
-    target 50
-    relationship "near"
-    distance 9.277771256304
-  ]
-  edge [
-    source 40
-    target 51
-    relationship "near"
-    distance 8.698689806895443
-  ]
-  edge [
-    source 40
-    target 52
-    relationship "near"
-    distance 7.011087411260441
-  ]
-  edge [
-    source 40
-    target 54
-    relationship "near"
-    distance 7.442279739173733
-  ]
-  edge [
-    source 40
-    target 55
-    relationship "near"
-    distance 9.98361889688466
-  ]
-  edge [
-    source 40
-    target 56
-    relationship "near"
-    distance 5.770587094842965
-  ]
-  edge [
-    source 40
-    target 57
-    relationship "near"
-    distance 9.225399497869573
+    relationship "to_the_right_of"
   ]
   edge [
     source 41
@@ -7868,99 +4114,28 @@ graph [
   ]
   edge [
     source 41
-    target 42
-    relationship "near"
-    distance 3.679515598931205
+    target 44
+    relationship "to_the_left_of"
   ]
   edge [
     source 41
     target 43
-    relationship "near"
-    distance 2.190799050220307
-  ]
-  edge [
-    source 41
-    target 44
-    relationship "near"
-    distance 2.177734485626686
-  ]
-  edge [
-    source 41
-    target 45
-    relationship "near"
-    distance 4.108444471512549
+    relationship "to_the_left_of"
   ]
   edge [
     source 41
     target 46
-    relationship "near"
-    distance 2.487565624819035
+    relationship "to_the_left_of"
   ]
   edge [
     source 41
-    target 47
-    relationship "near"
-    distance 4.875703018691185
+    target 42
+    relationship "to_the_right_of"
   ]
   edge [
     source 41
     target 48
-    relationship "near"
-    distance 3.824893345064211
-  ]
-  edge [
-    source 41
-    target 49
-    relationship "near"
-    distance 7.144332624837551
-  ]
-  edge [
-    source 41
-    target 50
-    relationship "near"
-    distance 5.550827939876766
-  ]
-  edge [
-    source 41
-    target 51
-    relationship "near"
-    distance 6.404274467954451
-  ]
-  edge [
-    source 41
-    target 52
-    relationship "near"
-    distance 7.061410088676966
-  ]
-  edge [
-    source 41
-    target 53
-    relationship "near"
-    distance 8.787716881814609
-  ]
-  edge [
-    source 41
-    target 54
-    relationship "near"
-    distance 7.766927115879579
-  ]
-  edge [
-    source 41
-    target 55
-    relationship "near"
-    distance 9.048402661954356
-  ]
-  edge [
-    source 41
-    target 56
-    relationship "near"
-    distance 6.3456506107997965
-  ]
-  edge [
-    source 41
-    target 57
-    relationship "near"
-    distance 8.519230611882856
+    relationship "to_the_right_of"
   ]
   edge [
     source 42
@@ -7969,99 +4144,43 @@ graph [
   ]
   edge [
     source 42
+    target 48
+    relationship "to_the_right_of"
+  ]
+  edge [
+    source 42
+    target 47
+    relationship "to_the_left_of"
+  ]
+  edge [
+    source 42
+    target 45
+    relationship "to_the_right_of"
+  ]
+  edge [
+    source 42
+    target 56
+    relationship "to_the_right_of"
+  ]
+  edge [
+    source 42
+    target 46
+    relationship "to_the_right_of"
+  ]
+  edge [
+    source 42
     target 43
-    relationship "near"
-    distance 3.863939004549132
+    relationship "to_the_right_of"
   ]
   edge [
     source 42
     target 44
-    relationship "near"
-    distance 4.42246385515369
-  ]
-  edge [
-    source 42
-    target 45
-    relationship "near"
-    distance 2.2182038940680173
-  ]
-  edge [
-    source 42
-    target 46
-    relationship "near"
-    distance 3.337487211938679
-  ]
-  edge [
-    source 42
-    target 47
-    relationship "near"
-    distance 1.1962158537880399
-  ]
-  edge [
-    source 42
-    target 48
-    relationship "near"
-    distance 0.26489517201508966
-  ]
-  edge [
-    source 42
-    target 49
-    relationship "near"
-    distance 4.3277681601979054
+    relationship "to_the_right_of"
   ]
   edge [
     source 42
     target 50
-    relationship "near"
-    distance 4.91758603346982
-  ]
-  edge [
-    source 42
-    target 51
-    relationship "near"
-    distance 4.094367870988172
-  ]
-  edge [
-    source 42
-    target 52
-    relationship "near"
-    distance 3.424885376650668
-  ]
-  edge [
-    source 42
-    target 53
-    relationship "near"
-    distance 6.048060026970999
-  ]
-  edge [
-    source 42
-    target 54
-    relationship "near"
-    distance 4.146895161517406
-  ]
-  edge [
-    source 42
-    target 55
-    relationship "near"
-    distance 5.561094640124038
-  ]
-  edge [
-    source 42
-    target 56
-    relationship "near"
-    distance 2.9182539513850037
-  ]
-  edge [
-    source 42
-    target 57
-    relationship "near"
-    distance 4.992985960277883
-  ]
-  edge [
-    source 42
-    target 58
-    relationship "near"
-    distance 7.5836229248286315
+    relationship "to_the_left_of"
   ]
   edge [
     source 43
@@ -8071,86 +4190,17 @@ graph [
   edge [
     source 43
     target 44
-    relationship "near"
-    distance 0.6373566223019035
-  ]
-  edge [
-    source 43
-    target 45
-    relationship "near"
-    distance 5.266682611762985
+    relationship "to_the_right_of"
   ]
   edge [
     source 43
     target 46
-    relationship "near"
-    distance 3.4182555267975263
-  ]
-  edge [
-    source 43
-    target 47
-    relationship "near"
-    distance 4.905906195721405
-  ]
-  edge [
-    source 43
-    target 48
-    relationship "near"
-    distance 4.1057345887600505
-  ]
-  edge [
-    source 43
-    target 49
-    relationship "near"
-    distance 6.3737529862565845
+    relationship "to_the_right_of"
   ]
   edge [
     source 43
     target 50
-    relationship "near"
-    distance 3.521398496793763
-  ]
-  edge [
-    source 43
-    target 51
-    relationship "near"
-    distance 5.271597521379481
-  ]
-  edge [
-    source 43
-    target 52
-    relationship "near"
-    distance 7.069630729960207
-  ]
-  edge [
-    source 43
-    target 53
-    relationship "near"
-    distance 7.610626368116591
-  ]
-  edge [
-    source 43
-    target 54
-    relationship "near"
-    distance 7.8154110146709055
-  ]
-  edge [
-    source 43
-    target 55
-    relationship "near"
-    distance 8.311312562159227
-  ]
-  edge [
-    source 43
-    target 56
-    relationship "near"
-    distance 6.734099136407076
-  ]
-  edge [
-    source 43
-    target 57
-    relationship "near"
-    distance 7.962116012275842
+    relationship "to_the_left_of"
   ]
   edge [
     source 44
@@ -8159,81 +4209,13 @@ graph [
   ]
   edge [
     source 44
-    target 45
-    relationship "near"
-    distance 5.676553292493023
-  ]
-  edge [
-    source 44
     target 46
-    relationship "near"
-    distance 3.626471870143171
-  ]
-  edge [
-    source 44
-    target 47
-    relationship "near"
-    distance 5.497210151650765
-  ]
-  edge [
-    source 44
-    target 48
-    relationship "near"
-    distance 4.6556483142191345
-  ]
-  edge [
-    source 44
-    target 49
-    relationship "near"
-    distance 6.9561335424919175
+    relationship "to_the_left_of"
   ]
   edge [
     source 44
     target 50
-    relationship "near"
-    distance 3.943060693363902
-  ]
-  edge [
-    source 44
-    target 51
-    relationship "near"
-    distance 5.839725719337062
-  ]
-  edge [
-    source 44
-    target 52
-    relationship "near"
-    distance 7.674138998684996
-  ]
-  edge [
-    source 44
-    target 53
-    relationship "near"
-    distance 8.186437089252832
-  ]
-  edge [
-    source 44
-    target 54
-    relationship "near"
-    distance 8.41877143435796
-  ]
-  edge [
-    source 44
-    target 55
-    relationship "near"
-    distance 8.94711770728141
-  ]
-  edge [
-    source 44
-    target 56
-    relationship "near"
-    distance 7.294801279536792
-  ]
-  edge [
-    source 44
-    target 57
-    relationship "near"
-    distance 8.593352967149787
+    relationship "to_the_left_of"
   ]
   edge [
     source 45
@@ -8242,169 +4224,55 @@ graph [
   ]
   edge [
     source 45
-    target 46
-    relationship "near"
-    distance 3.3617192474917297
+    target 48
+    relationship "to_the_left_of"
   ]
   edge [
     source 45
     target 47
-    relationship "near"
-    distance 2.6192483681093757
-  ]
-  edge [
-    source 45
-    target 48
-    relationship "near"
-    distance 2.021782180808203
-  ]
-  edge [
-    source 45
-    target 49
-    relationship "near"
-    distance 5.650207592768205
-  ]
-  edge [
-    source 45
-    target 50
-    relationship "near"
-    distance 7.042360945883488
-  ]
-  edge [
-    source 45
-    target 51
-    relationship "near"
-    distance 5.810278999439076
-  ]
-  edge [
-    source 45
-    target 52
-    relationship "near"
-    distance 3.963285356157612
-  ]
-  edge [
-    source 45
-    target 53
-    relationship "near"
-    distance 7.63445200565084
-  ]
-  edge [
-    source 45
-    target 54
-    relationship "near"
-    distance 4.483189604874005
-  ]
-  edge [
-    source 45
-    target 55
-    relationship "near"
-    distance 6.87253466769679
+    relationship "to_the_left_of"
   ]
   edge [
     source 45
     target 56
-    relationship "near"
-    distance 2.8060723547212567
+    relationship "to_the_left_of"
   ]
   edge [
     source 45
-    target 57
-    relationship "near"
-    distance 6.0986814684512884
-  ]
-  edge [
-    source 45
-    target 58
-    relationship "near"
-    distance 7.75383595545266
-  ]
-  edge [
-    source 45
-    target 59
-    relationship "near"
-    distance 9.974759117505563
+    target 46
+    relationship "to_the_right_of"
   ]
   edge [
     source 46
     target 47
     type "observed"
-    relationship "near"
-    distance 4.314770821896224
   ]
   edge [
     source 46
     target 48
     type "observed"
-    relationship "near"
-    distance 3.432210536490811
+    relationship "to_the_right_of"
   ]
   edge [
     source 46
     target 49
     type "observed"
-    relationship "near"
-    distance 5.728457477295154
   ]
   edge [
     source 46
     target 50
     type "observed"
-    relationship "near"
-    distance 5.883426506789612
   ]
   edge [
     source 46
     target 51
     type "path"
     distance 5.300667416743162
-    relationship "near"
   ]
   edge [
     source 46
     target 82
     relationship "part_of"
-  ]
-  edge [
-    source 46
-    target 52
-    relationship "near"
-    distance 6.054171210277062
-  ]
-  edge [
-    source 46
-    target 53
-    relationship "near"
-    distance 7.641101284302843
-  ]
-  edge [
-    source 46
-    target 54
-    relationship "near"
-    distance 6.697962317575672
-  ]
-  edge [
-    source 46
-    target 55
-    relationship "near"
-    distance 8.220863838572802
-  ]
-  edge [
-    source 46
-    target 56
-    relationship "near"
-    distance 5.297953749410136
-  ]
-  edge [
-    source 46
-    target 57
-    relationship "near"
-    distance 7.460756982416284
-  ]
-  edge [
-    source 46
-    target 58
-    relationship "near"
-    distance 9.969132644426479
   ]
   edge [
     source 47
@@ -8414,74 +4282,27 @@ graph [
   edge [
     source 47
     target 48
-    relationship "near"
-    distance 1.0806009340614313
-  ]
-  edge [
-    source 47
-    target 49
-    relationship "near"
-    distance 3.7575662111472745
-  ]
-  edge [
-    source 47
-    target 50
-    relationship "near"
-    distance 5.28087024988162
-  ]
-  edge [
-    source 47
-    target 51
-    relationship "near"
-    distance 3.8432840665263375
-  ]
-  edge [
-    source 47
-    target 52
-    relationship "near"
-    distance 2.2746236309348133
-  ]
-  edge [
-    source 47
-    target 53
-    relationship "near"
-    distance 5.410001584668505
-  ]
-  edge [
-    source 47
-    target 54
-    relationship "near"
-    distance 3.0028545276802263
-  ]
-  edge [
-    source 47
-    target 55
-    relationship "near"
-    distance 4.496209191416339
+    relationship "to_the_right_of"
   ]
   edge [
     source 47
     target 56
-    relationship "near"
-    distance 2.00760855143523
+    relationship "to_the_right_of"
   ]
   edge [
     source 47
-    target 57
-    relationship "near"
-    distance 3.911711161651427
+    target 52
+    relationship "to_the_left_of"
   ]
   edge [
     source 47
-    target 58
-    relationship "near"
-    distance 6.42265274337238
+    target 51
+    relationship "to_the_left_of"
   ]
   edge [
     source 47
-    target 59
-    relationship "near"
-    distance 9.379641578362678
+    target 54
+    relationship "to_the_left_of"
   ]
   edge [
     source 48
@@ -8490,63 +4311,13 @@ graph [
   ]
   edge [
     source 48
-    target 49
-    relationship "near"
-    distance 4.377467202543508
-  ]
-  edge [
-    source 48
-    target 50
-    relationship "near"
-    distance 5.166013150859746
-  ]
-  edge [
-    source 48
-    target 51
-    relationship "near"
-    distance 4.229575031236891
+    target 56
+    relationship "to_the_left_of"
   ]
   edge [
     source 48
     target 52
-    relationship "near"
-    distance 3.270887559445727
-  ]
-  edge [
-    source 48
-    target 53
-    relationship "near"
-    distance 6.125230794556756
-  ]
-  edge [
-    source 48
-    target 54
-    relationship "near"
-    distance 3.9807910612626745
-  ]
-  edge [
-    source 48
-    target 55
-    relationship "near"
-    distance 5.531257657296818
-  ]
-  edge [
-    source 48
-    target 56
-    relationship "near"
-    distance 2.699879112616707
-  ]
-  edge [
-    source 48
-    target 57
-    relationship "near"
-    distance 4.940341238018679
-  ]
-  edge [
-    source 48
-    target 58
-    relationship "near"
-    distance 7.423750474635125
+    relationship "to_the_right_of"
   ]
   edge [
     source 49
@@ -8555,63 +4326,33 @@ graph [
   ]
   edge [
     source 49
-    target 50
-    relationship "near"
-    distance 5.139610289509854
-  ]
-  edge [
-    source 49
     target 51
-    relationship "near"
-    distance 1.4879338387202996
-  ]
-  edge [
-    source 49
-    target 52
-    relationship "near"
-    distance 3.455754964178586
+    relationship "to_the_right_of"
   ]
   edge [
     source 49
     target 53
-    relationship "near"
-    distance 2.155191190024908
-  ]
-  edge [
-    source 49
-    target 54
-    relationship "near"
-    distance 3.836890936635053
-  ]
-  edge [
-    source 49
-    target 55
-    relationship "near"
-    distance 3.4079240594991393
-  ]
-  edge [
-    source 49
-    target 56
-    relationship "near"
-    distance 4.1449465316986815
+    relationship "to_the_left_of"
   ]
   edge [
     source 49
     target 57
-    relationship "near"
-    distance 2.713871607380499
+    relationship "to_the_left_of"
   ]
   edge [
     source 49
-    target 58
-    relationship "near"
-    distance 5.985414239175601
+    target 55
+    relationship "to_the_left_of"
   ]
   edge [
     source 49
-    target 59
-    relationship "near"
-    distance 9.415230020621426
+    target 52
+    relationship "to_the_left_of"
+  ]
+  edge [
+    source 49
+    target 50
+    relationship "to_the_right_of"
   ]
   edge [
     source 50
@@ -8621,86 +4362,40 @@ graph [
   edge [
     source 50
     target 51
-    relationship "near"
-    distance 3.71133545026242
-  ]
-  edge [
-    source 50
-    target 52
-    relationship "near"
-    distance 6.804006894838431
-  ]
-  edge [
-    source 50
-    target 53
-    relationship "near"
-    distance 5.359576657329578
-  ]
-  edge [
-    source 50
-    target 54
-    relationship "near"
-    distance 7.476276553630987
-  ]
-  edge [
-    source 50
-    target 55
-    relationship "near"
-    distance 6.579435743629523
-  ]
-  edge [
-    source 50
-    target 56
-    relationship "near"
-    distance 7.129721352161982
-  ]
-  edge [
-    source 50
-    target 57
-    relationship "near"
-    distance 6.607712619623299
+    relationship "to_the_left_of"
   ]
   edge [
     source 51
     target 52
     type "observed"
-    relationship "near"
-    distance 4.316421589114312
   ]
   edge [
     source 51
     target 53
     type "observed"
-    relationship "near"
-    distance 2.441695808751536
+    relationship "to_the_left_of"
   ]
   edge [
     source 51
     target 54
     type "observed"
-    relationship "near"
-    distance 4.849505851834581
   ]
   edge [
     source 51
     target 55
     type "observed"
-    relationship "near"
-    distance 4.1516626607738685
   ]
   edge [
     source 51
     target 56
     type "observed"
-    relationship "near"
-    distance 4.8732939337758445
   ]
   edge [
     source 51
     target 57
     type "path"
     distance 3.741277069581486
-    relationship "near"
+    relationship "to_the_right_of"
   ]
   edge [
     source 51
@@ -8708,57 +4403,44 @@ graph [
     relationship "part_of"
   ]
   edge [
-    source 51
-    target 58
-    relationship "near"
-    distance 7.286113418999677
-  ]
-  edge [
     source 52
     target 86
     relationship "part_of"
+  ]
+  edge [
+    source 52
+    target 54
+    relationship "to_the_left_of"
+  ]
+  edge [
+    source 52
+    target 56
+    relationship "to_the_right_of"
+  ]
+  edge [
+    source 52
+    target 57
+    relationship "to_the_left_of"
+  ]
+  edge [
+    source 52
+    target 55
+    relationship "to_the_left_of"
   ]
   edge [
     source 52
     target 53
-    relationship "near"
-    distance 4.891324726682861
-  ]
-  edge [
-    source 52
-    target 54
-    relationship "near"
-    distance 0.74692779092267
-  ]
-  edge [
-    source 52
-    target 55
-    relationship "near"
-    distance 3.166495010855257
-  ]
-  edge [
-    source 52
-    target 56
-    relationship "near"
-    distance 1.3033245130339615
-  ]
-  edge [
-    source 52
-    target 57
-    relationship "near"
-    distance 2.3500827746487913
+    relationship "to_the_left_of"
   ]
   edge [
     source 52
     target 58
-    relationship "near"
-    distance 4.15914264847803
+    relationship "to_the_left_of"
   ]
   edge [
     source 52
     target 59
-    relationship "near"
-    distance 7.21439864888304
+    relationship "to_the_left_of"
   ]
   edge [
     source 53
@@ -8767,68 +4449,43 @@ graph [
   ]
   edge [
     source 53
-    target 54
-    relationship "near"
-    distance 5.1258468290185375
+    target 57
+    relationship "to_the_right_of"
   ]
   edge [
     source 53
     target 55
-    relationship "near"
-    distance 3.154969122743721
-  ]
-  edge [
-    source 53
-    target 56
-    relationship "near"
-    distance 5.8902511252535374
-  ]
-  edge [
-    source 53
-    target 57
-    relationship "near"
-    distance 3.1018866115200683
-  ]
-  edge [
-    source 53
-    target 58
-    relationship "near"
-    distance 6.395119792345434
+    relationship "to_the_right_of"
   ]
   edge [
     source 54
     target 86
     relationship "part_of"
+  ]
+  edge [
+    source 54
+    target 56
+    relationship "to_the_right_of"
+  ]
+  edge [
+    source 54
+    target 57
+    relationship "to_the_left_of"
   ]
   edge [
     source 54
     target 55
-    relationship "near"
-    distance 3.133567245044251
-  ]
-  edge [
-    source 54
-    target 56
-    relationship "near"
-    distance 1.6879396311432024
-  ]
-  edge [
-    source 54
-    target 57
-    relationship "near"
-    distance 2.311648335195466
+    relationship "to_the_left_of"
   ]
   edge [
     source 54
     target 58
-    relationship "near"
-    distance 3.444763169671809
+    relationship "to_the_left_of"
   ]
   edge [
     source 54
     target 59
-    relationship "near"
-    distance 6.473054698421111
+    relationship "to_the_left_of"
   ]
   edge [
     source 55
@@ -8837,57 +4494,25 @@ graph [
   ]
   edge [
     source 55
-    target 56
-    relationship "near"
-    distance 4.459883681663839
-  ]
-  edge [
-    source 55
     target 57
-    relationship "near"
-    distance 1.1218842924468855
+    relationship "to_the_right_of"
   ]
   edge [
     source 55
     target 58
-    relationship "near"
-    distance 4.061614064229967
-  ]
-  edge [
-    source 55
-    target 59
-    relationship "near"
-    distance 7.742028287843212
+    relationship "to_the_right_of"
   ]
   edge [
     source 56
     target 86
     relationship "part_of"
-  ]
-  edge [
-    source 56
-    target 57
-    relationship "near"
-    distance 3.6180115496063556
-  ]
-  edge [
-    source 56
-    target 58
-    relationship "near"
-    distance 4.984789419940484
-  ]
-  edge [
-    source 56
-    target 59
-    relationship "near"
-    distance 7.5738023587619425
   ]
   edge [
     source 57
     target 58
     type "path"
     distance 3.7141263994055977
-    relationship "near"
+    relationship "to_the_left_of"
   ]
   edge [
     source 57
@@ -8897,15 +4522,14 @@ graph [
   edge [
     source 57
     target 59
-    relationship "near"
-    distance 7.363462833498769
+    relationship "to_the_right_of"
   ]
   edge [
     source 58
     target 59
     type "path"
     distance 3.6997368279202982
-    relationship "near"
+    relationship "to_the_right_of"
   ]
   edge [
     source 58
@@ -8915,15 +4539,14 @@ graph [
   edge [
     source 58
     target 60
-    relationship "near"
-    distance 9.065216004497797
+    relationship "to_the_left_of"
   ]
   edge [
     source 59
     target 60
     type "path"
     distance 5.451474548509187
-    relationship "near"
+    relationship "to_the_left_of"
   ]
   edge [
     source 59
@@ -8933,15 +4556,14 @@ graph [
   edge [
     source 59
     target 61
-    relationship "near"
-    distance 8.735524167149244
+    relationship "to_the_left_of"
   ]
   edge [
     source 60
     target 61
     type "path"
     distance 3.3276421667555285
-    relationship "near"
+    relationship "to_the_right_of"
   ]
   edge [
     source 60
@@ -8950,29 +4572,26 @@ graph [
   ]
   edge [
     source 60
-    target 62
-    relationship "near"
-    distance 8.025589454142716
+    target 63
+    relationship "to_the_right_of"
   ]
   edge [
     source 60
-    target 63
-    relationship "near"
-    distance 6.526296444074628
+    target 62
+    relationship "to_the_left_of"
   ]
   edge [
     source 61
     target 62
     type "observed"
-    relationship "near"
-    distance 4.932719067812741
+    relationship "to_the_left_of"
   ]
   edge [
     source 61
     target 63
     type "path"
     distance 3.249281212159835
-    relationship "near"
+    relationship "to_the_left_of"
   ]
   edge [
     source 61
@@ -8982,8 +4601,7 @@ graph [
   edge [
     source 61
     target 64
-    relationship "near"
-    distance 7.77974570998019
+    relationship "to_the_right_of"
   ]
   edge [
     source 62
@@ -8993,27 +4611,24 @@ graph [
   edge [
     source 62
     target 63
-    relationship "near"
-    distance 1.9566864228146994
+    relationship "to_the_right_of"
   ]
   edge [
     source 62
     target 64
-    relationship "near"
-    distance 3.625709631009963
+    relationship "to_the_right_of"
   ]
   edge [
     source 62
     target 65
-    relationship "near"
-    distance 9.687077585476342
+    relationship "to_the_left_of"
   ]
   edge [
     source 63
     target 64
     type "path"
     distance 4.567104067116121
-    relationship "near"
+    relationship "to_the_right_of"
   ]
   edge [
     source 63
@@ -9023,15 +4638,14 @@ graph [
   edge [
     source 63
     target 65
-    relationship "near"
-    distance 9.00424171726821
+    relationship "to_the_left_of"
   ]
   edge [
     source 64
     target 65
     type "path"
     distance 8.281835826853019
-    relationship "near"
+    relationship "to_the_left_of"
   ]
   edge [
     source 64
@@ -9040,57 +4654,43 @@ graph [
   ]
   edge [
     source 64
-    target 70
-    relationship "near"
-    distance 9.912429743646134
-  ]
-  edge [
-    source 64
     target 71
-    relationship "near"
-    distance 9.743575331254885
+    relationship "to_the_left_of"
   ]
   edge [
     source 65
     target 66
     type "observed"
-    relationship "near"
-    distance 3.348638533427948
+    relationship "to_the_left_of"
   ]
   edge [
     source 65
     target 67
     type "observed"
-    relationship "near"
-    distance 3.9800394700992343
+    relationship "to_the_left_of"
   ]
   edge [
     source 65
     target 68
     type "observed"
-    relationship "near"
-    distance 4.140666581901182
+    relationship "to_the_left_of"
   ]
   edge [
     source 65
     target 69
     type "observed"
-    relationship "near"
-    distance 4.854493409334911
   ]
   edge [
     source 65
     target 70
     type "observed"
-    relationship "near"
-    distance 2.7931686740840505
+    relationship "to_the_left_of"
   ]
   edge [
     source 65
     target 71
     type "observed"
-    relationship "near"
-    distance 4.231564972189886
+    relationship "to_the_left_of"
   ]
   edge [
     source 65
@@ -9101,36 +4701,31 @@ graph [
     source 66
     target 90
     relationship "part_of"
+  ]
+  edge [
+    source 66
+    target 70
+    relationship "to_the_left_of"
+  ]
+  edge [
+    source 66
+    target 68
+    relationship "to_the_right_of"
   ]
   edge [
     source 66
     target 67
-    relationship "near"
-    distance 1.5042566422788166
-  ]
-  edge [
-    source 66
-    target 68
-    relationship "near"
-    distance 0.9905249963172646
-  ]
-  edge [
-    source 66
-    target 69
-    relationship "near"
-    distance 1.7214787473799038
-  ]
-  edge [
-    source 66
-    target 70
-    relationship "near"
-    distance 0.7089678699630285
+    relationship "to_the_right_of"
   ]
   edge [
     source 66
     target 71
-    relationship "near"
-    distance 1.7138037111605902
+    relationship "to_the_left_of"
+  ]
+  edge [
+    source 66
+    target 69
+    relationship "to_the_right_of"
   ]
   edge [
     source 67
@@ -9140,26 +4735,22 @@ graph [
   edge [
     source 67
     target 68
-    relationship "near"
-    distance 1.0247186098636307
-  ]
-  edge [
-    source 67
-    target 69
-    relationship "near"
-    distance 2.414070020602372
+    relationship "to_the_left_of"
   ]
   edge [
     source 67
     target 70
-    relationship "near"
-    distance 1.6075363428868326
+    relationship "to_the_left_of"
+  ]
+  edge [
+    source 67
+    target 69
+    relationship "to_the_left_of"
   ]
   edge [
     source 67
     target 71
-    relationship "near"
-    distance 3.0495569713673243
+    relationship "to_the_left_of"
   ]
   edge [
     source 68
@@ -9169,20 +4760,17 @@ graph [
   edge [
     source 68
     target 69
-    relationship "near"
-    distance 1.3942096949057101
+    relationship "to_the_left_of"
   ]
   edge [
     source 68
     target 70
-    relationship "near"
-    distance 1.530682326855293
+    relationship "to_the_left_of"
   ]
   edge [
     source 68
     target 71
-    relationship "near"
-    distance 2.124258842736115
+    relationship "to_the_left_of"
   ]
   edge [
     source 69
@@ -9191,15 +4779,13 @@ graph [
   ]
   edge [
     source 69
-    target 70
-    relationship "near"
-    distance 2.4302004093345966
+    target 71
+    relationship "to_the_left_of"
   ]
   edge [
     source 69
-    target 71
-    relationship "near"
-    distance 1.3423513055119363
+    target 70
+    relationship "to_the_left_of"
   ]
   edge [
     source 70
@@ -9209,8 +4795,7 @@ graph [
   edge [
     source 70
     target 71
-    relationship "near"
-    distance 2.252153350471451
+    relationship "to_the_left_of"
   ]
   edge [
     source 71

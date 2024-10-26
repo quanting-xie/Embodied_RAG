@@ -32,7 +32,8 @@ class EmbodiedRetriever:
         spatial_results = self._spatial_retrieval(top_k * 2)
         # functional_results = self._functional_retrieval(top_k * 2)
         
-        combined_results = list(set(matching_objects + semantic_results + hierarchical_results + spatial_results + functional_results))
+        # Remove functional_results from the combination if it's not defined
+        combined_results = list(set(matching_objects + semantic_results + hierarchical_results + spatial_results))
         
         # Use LLM to rank the relevance of the combined results
         context = self._build_context(combined_results)
@@ -46,7 +47,7 @@ class EmbodiedRetriever:
         spatial_results = self._spatial_retrieval(top_k * 2)
         # functional_results = self._functional_retrieval(top_k * 2)
         
-        combined_results = list(set(semantic_results + hierarchical_results + spatial_results + functional_results))
+        combined_results = list(set(semantic_results + hierarchical_results + spatial_results))
         
         context = self._build_context(combined_results)
         ranked_results = await self.llm.rank_results(query, combined_results, context)
@@ -60,7 +61,7 @@ class EmbodiedRetriever:
         spatial_results = self._spatial_retrieval(top_k)
         # functional_results = self._functional_retrieval(top_k)
         
-        combined_results = list(set(semantic_results + hierarchical_results + spatial_results + functional_results))
+        combined_results = list(set(semantic_results + hierarchical_results + spatial_results))
         return combined_results[:top_k]
 
     async def _semantic_retrieval(self, query_embedding, top_k):
@@ -97,30 +98,28 @@ class EmbodiedRetriever:
         if query_type in ["explicit", "implicit"]:
             prompt = f"""Given the following context about objects in a 3D environment:
 
-{context}
+            {context}
 
-For the query: '{query}', provide the following:
-1. A brief description of the most relevant object(s)
-2. The position of the object(s)
-3. A suggested path to reach the object(s)
-4. An explanation of why these objects are relevant to the query, considering their semantic properties, hierarchical relationships, spatial context, and functional relevance."""
+            For the query: '{query}', provide the following:
+            1. A brief description of the most relevant object(s)
+            2. An explanation of why these objects are relevant to the query, considering their semantic properties, hierarchical relationships, spatial context.
+            3. Choose the best object to answer the query and output in this exact format at the end: <<object_name>>
+            
+            Make sure the object_name matches exactly with one of the objects in the context.
+            """
         else:  # global query
             prompt = f"Given the following context about objects in a 3D environment:\n\n{context}\n\nAnswer the following query: {query}"
         
         response = await self.llm.generate_response(prompt)
         return response
 
-    def generate_waypoints(self, start_position, target_nodes):
-        waypoints = []
-        current_position = start_position
-
-        for target in target_nodes:
-            target_position = self.graph.nodes[target]['position']
-            # Simple straight-line path (you might want to implement more sophisticated pathfinding)
-            waypoints.append(target_position)
-            current_position = target_position
-
-        return waypoints
+    def extract_target_object(self, response):
+        """Extract the target object from the LLM response."""
+        import re
+        match = re.search(r'<<(.+?)>>', response)
+        if match:
+            return match.group(1) #
+        return None
 
     def _build_context(self, nodes):
         context = []
@@ -137,3 +136,19 @@ For the query: '{query}', provide the following:
             context.append("")  # Add a blank line between objects
         
         return "\n".join(context)
+
+    def extract_target_position(self, response):
+        """Extract the target object and its position from the response."""
+        target_object = self.extract_target_object(response)
+        if not target_object or target_object not in self.graph.nodes:
+            return None
+        
+        # Get target position from graph
+        target_position = self.graph.nodes[target_object].get('position')
+        if target_position:
+            return {
+                'x': target_position[0],
+                'y': target_position[1],
+                'z': target_position[2]
+            }
+        return None

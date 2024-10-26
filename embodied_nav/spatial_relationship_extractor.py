@@ -128,8 +128,8 @@ class SpatialRelationshipExtractor:
         k_nearest = 5  # Number of nearest neighbors to consider
 
         for obj1 in objects:
-            node1 = obj1.get('id', obj1.get('name', str(obj1)))  # Use 'id' or 'name' as node identifier
-            pos1 = np.array(obj1.get('position', [0, 0, 0]))
+            node1 = obj1.get('id', obj1.get('name', str(obj1)))
+            pos1 = self._get_position(obj1)
             level1 = obj1.get('level', 0)
 
             # Calculate distances to all other objects
@@ -137,11 +137,11 @@ class SpatialRelationshipExtractor:
             for obj2 in objects:
                 if obj1 != obj2:
                     node2 = obj2.get('id', obj2.get('name', str(obj2)))
-                    pos2 = np.array(obj2.get('position', [0, 0, 0]))
+                    pos2 = self._get_position(obj2)
                     level2 = obj2.get('level', 0)
                     
                     if level1 == level2:
-                        diff = pos2 - pos1
+                        diff = np.array(pos2) - np.array(pos1)
                         distance = np.linalg.norm(diff)
                         distances.append((node2, obj2, diff, distance))
             
@@ -149,8 +149,8 @@ class SpatialRelationshipExtractor:
             nearest_neighbors = sorted(distances, key=lambda x: x[3])[:k_nearest]
 
             for node2, obj2, diff, distance in nearest_neighbors:
-                # Check vertical relationships
-                if abs(diff[2]) > self.vertical_threshold:
+                # Check vertical relationships (using only the sign of the z-difference)
+                if diff[2] != 0:  # If there's any vertical difference
                     if diff[2] > 0:
                         G.add_edge(node1, node2, relationship="below")
                         G.add_edge(node2, node1, relationship="above")
@@ -158,8 +158,8 @@ class SpatialRelationshipExtractor:
                         G.add_edge(node1, node2, relationship="above")
                         G.add_edge(node2, node1, relationship="below")
 
-                # Check horizontal relationships
-                if abs(diff[0]) > self.horizontal_threshold:
+                # Check horizontal relationships (using only the sign of x and y differences)
+                if diff[0] != 0:  # If there's any front/back difference
                     if diff[0] > 0:
                         G.add_edge(node1, node2, relationship="in_front_of")
                         G.add_edge(node2, node1, relationship="behind")
@@ -167,7 +167,7 @@ class SpatialRelationshipExtractor:
                         G.add_edge(node1, node2, relationship="behind")
                         G.add_edge(node2, node1, relationship="in_front_of")
 
-                if abs(diff[1]) > self.horizontal_threshold:
+                if diff[1] != 0:  # If there's any left/right difference
                     if diff[1] > 0:
                         G.add_edge(node1, node2, relationship="to_the_left_of")
                         G.add_edge(node2, node1, relationship="to_the_right_of")

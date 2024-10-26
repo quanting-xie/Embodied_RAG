@@ -1,4 +1,1370 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
-  <graph edgedefault="undirected" />
+  <key id="d6" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d5" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;DRONE_0&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"drone_0 is a drone located in a 3D space, positioned at the coordinates (0.0, 0.0, -0.9707), indicating its proximity to the origin and its placement slightly below the reference plane."&lt;SEP&gt;"drone_0 is an entity designated for potential surveillance, movement, or monitoring in a specified area."&lt;SEP&gt;"drone_0 is an entity responsible for tasks related to drone operation and management."&lt;SEP&gt;"drone_0 is an entity that is associated with the function of operating in relation to other entities, specifically referencing a relationship with a planter."&lt;SEP&gt;"drone_0 is another specific drone located in a 3D space, near the origin but slightly below the reference plane."&lt;SEP&gt;"drone_0 is identified as an entity in the context of a relationship involving spatial positioning, indicative of its operational nature."&lt;SEP&gt;"drone_0 is identified as an entity within a network or system of drones, with a specific reference to its spatial relationship to another drone."&lt;SEP&gt;"drone_0 is identified as an entity, likely representing a specific drone in the context of a relationship analysis."&lt;SEP&gt;"drone_0 is identified as an organization involved in a relational context with another entity."&lt;SEP&gt;"drone_0 is identified as one of the entities involved in a spatial relation with another drone entity."&lt;SEP&gt;"drone_0 is referenced as a node associated with drone technology, indicating its role in a system or network of drones."&lt;SEP&gt;"drone_0 is represented as an organization likely involved in surveillance or automated tasks in a particular context."</data>
+      <data key="d2">chunk-854fb8eb7dcc27bdd981909de9945ce8&lt;SEP&gt;chunk-88790a91a9803b73972cdf638e1d7662&lt;SEP&gt;chunk-3dd1dae2c508c5b6c1248b8c9a433a22&lt;SEP&gt;chunk-d6f35efb65ccb0805eb46164a46cb009&lt;SEP&gt;chunk-a2fd2fa6a370bfca2543526fec127bc1&lt;SEP&gt;chunk-5b8be2ef40518fc5d6d85f6f6d6a8159&lt;SEP&gt;chunk-0c640d5419b88566148a4fb29c0a3b93&lt;SEP&gt;chunk-839f8a74054c2c9df962c360c6280e1b&lt;SEP&gt;chunk-66f641065475b9b197defd71bf69e82f</data>
+    </node>
+    <node id="&quot;0.00&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"0.00 is a coordinate value representing a specific point in a three-dimensional space."&lt;SEP&gt;"0.00 is a coordinate value representing a specific point in a three-dimensional space.”</data>
+      <data key="d2">chunk-3dd1dae2c508c5b6c1248b8c9a433a22</data>
+    </node>
+    <node id="&quot;-0.97&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"-0.97 is a coordinate value representing a specific location in a three-dimensional space."</data>
+      <data key="d2">chunk-3dd1dae2c508c5b6c1248b8c9a433a22</data>
+    </node>
+    <node id="&quot;YAW&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"yaw refers to the orientation of the drone in a navigational context, indicating its direction."&lt;SEP&gt;"yaw represents the rotation of drone_1 along its vertical axis, influencing its directional orientation."</data>
+      <data key="d2">chunk-3dd1dae2c508c5b6c1248b8c9a433a22&lt;SEP&gt;chunk-a4d8a1c65e1796465eca6dab790d406d</data>
+    </node>
+    <node id="&quot;TIMESTAMP&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"timestamp is a numerical value that records a specific point in time associated with the drone's position."&lt;SEP&gt;"timestamp records the specific time (1729609139.301382) at which the data regarding the BaseCharacter_Walking4_11 was captured, indicating an exact moment in the simulation timeline."&lt;SEP&gt;"timestamp refers to the specific moment (1729609140.311384) when the data regarding Drone1 was recorded, marking its operational context in time."&lt;SEP&gt;"timestamp refers to the specific point in time (1729609144.3269684) when the data related to drone_1 was recorded, indicating the moment of the event."&lt;SEP&gt;"timestamp represents the specific time at which the drone's data was recorded, providing context for its operational status."&lt;SEP&gt;"timestamp signifies a specific moment in time, marking when an event or state is logged, often in seconds since a reference point."</data>
+      <data key="d2">chunk-a4d8a1c65e1796465eca6dab790d406d&lt;SEP&gt;chunk-3dd1dae2c508c5b6c1248b8c9a433a22&lt;SEP&gt;chunk-f4605c166d58b2496b19025ce1436905&lt;SEP&gt;chunk-7402e92978346fc907bbe7aa770e3791&lt;SEP&gt;chunk-b0f26dfb79ac1e88ec719ffedf8d3ede&lt;SEP&gt;chunk-f0d0fbfce6a505bd62b69c25bcf8c08c</data>
+    </node>
+    <node id="&quot;BASECHARACTER_WALKING4_11&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"BaseCharacter_Walking4_11 is a 3D character model designed for use in a game or virtual environment, indicating its functionality for animation and movement, particularly in a walking state."&lt;SEP&gt;"BaseCharacter_Walking4_11 is a 3D character model, representing a virtual entity within a game or simulation, characterized by its walking state and specific coordinates in a three-dimensional space."&lt;SEP&gt;"BaseCharacter_Walking4_11 is a character identified in a relationship with a drone, indicating a possible interaction or movement dynamic."&lt;SEP&gt;"BaseCharacter_Walking4_11 is a character involved in a relationship with another entity, indicating a spatial interaction."&lt;SEP&gt;"BaseCharacter_Walking4_11 is a character involved in movement, significant in understanding the relational dynamic with the drone."&lt;SEP&gt;"BaseCharacter_Walking4_11 is a character model in a 3D environment, specifically animated to represent movement, such as walking, indicating its role in a virtual interactive scene."&lt;SEP&gt;"BaseCharacter_Walking4_11 is a character who could represent an individual action or movement, specifically described in relation to a spatial position."&lt;SEP&gt;"BaseCharacter_Walking4_11 is likely a character involved in an activity or scenario, designated as 'Walking4_11', indicating a movement or action context."&lt;SEP&gt;"BaseCharacter_Walking4_11 is presented as an individual involved in a spatial relationship within a café environment."&lt;SEP&gt;"BaseCharacter_Walking4_11 refers to a 3D character model that is in a walking state, positioned within a three-dimensional environment at specific coordinates."&lt;SEP&gt;"BaseCharacter_Walking4_11 refers to a character entity within a structured framework, possibly indicating a gameplay element or virtual character in a digital environment."</data>
+      <data key="d2">chunk-1759e6f189008a691ce1a10ea97a4fcd&lt;SEP&gt;chunk-8f0994b3b4a704d984fc496c567f6ebe&lt;SEP&gt;chunk-34aaef2f4359a2cd141902afff622051&lt;SEP&gt;chunk-eeccda1bdcc26b155fc03b71aa8858a8&lt;SEP&gt;chunk-8c51d920afd4aa8572c90da5fa1696c6&lt;SEP&gt;chunk-7cdf2e10026b39a6610007ff63257d0e&lt;SEP&gt;chunk-2f953b53ae3af68436d7bf737b0fe3a0&lt;SEP&gt;chunk-f4605c166d58b2496b19025ce1436905&lt;SEP&gt;chunk-8fc440f95684095ac11786fcc6c7a8ab&lt;SEP&gt;chunk-d6f35efb65ccb0805eb46164a46cb009</data>
+    </node>
+    <node id="&quot;LEVEL 0&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Level 0 represents a state or stage within a game or simulation, indicating the current progression of the character BaseCharacter_Walking4_11."</data>
+      <data key="d2">chunk-f4605c166d58b2496b19025ce1436905</data>
+    </node>
+    <node id="&quot;POSITION&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Position denotes the spatial coordinates (2.87, -3.98, -1.22) of drone_1, indicating its location within a defined three-dimensional space."&lt;SEP&gt;"Position describes a precise location defined by coordinates, reflecting spatial attributes."&lt;SEP&gt;"Position describes the specific spatial arrangement of the Planter and Drone within the 3D environment, enhancing understanding of their layout."&lt;SEP&gt;"Position refers to the coordinates (1.49, 0.32, -1.26) that provide the spatial location of Drone1 in a three-dimensional space."&lt;SEP&gt;"Position refers to the spatial coordinates (5.42, 0.68, 1.23) of the BaseCharacter_Walking4_11 entity within a three-dimensional space, indicating its location in the digital environment."&lt;SEP&gt;"Position refers to the specific coordinates determining the placement of the objects within the 3D environment, highlighting spatial configuration."&lt;SEP&gt;"Position refers to the specific placement of objects within the 3D environment, described through coordinates."&lt;SEP&gt;"Position refers to the specific placement of the drones at given coordinates, influencing their spatial dynamics."&lt;SEP&gt;"Position represents the specific coordinates of an object in a 3D space, essential for determining its location and orientation within that environment."&lt;SEP&gt;"Position signifies the specific placement of objects in the 3D environment, encapsulating both their spatial relation and orientation."</data>
+      <data key="d2">chunk-45f0643660df282da9e425abf14dfe5f&lt;SEP&gt;chunk-eb2c43ffbbd33c754a18139720251e10&lt;SEP&gt;chunk-a4d8a1c65e1796465eca6dab790d406d&lt;SEP&gt;chunk-f4605c166d58b2496b19025ce1436905&lt;SEP&gt;chunk-8c51d920afd4aa8572c90da5fa1696c6&lt;SEP&gt;chunk-2a12935c1f4d87691245b1f3e35acb54&lt;SEP&gt;chunk-2b22b78e2b8b77d2c98a421bd87c1129&lt;SEP&gt;chunk-04ecef17d6d14ae0266aedfbbdab4f6a&lt;SEP&gt;chunk-b0f26dfb79ac1e88ec719ffedf8d3ede&lt;SEP&gt;chunk-f0d0fbfce6a505bd62b69c25bcf8c08c</data>
+    </node>
+    <node id="&quot;BOX2D&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"box2D denotes a two-dimensional bounding area defined by specific dimensions, useful for spatial representation in a plane."&lt;SEP&gt;"box2D is an event representing the two-dimensional boundary [0.0, 0.0, 129.47747802734375, 130.1183624267578] that outlines the Drone1's presence in a planar view."&lt;SEP&gt;"box2D refers to a two-dimensional bounding box defined by the coordinates [0.0, 79.63496398925781, 77.189697265625, 132.07847595214844], which likely outlines the 2D space for the entity's projection or dimensions."&lt;SEP&gt;"box2D refers to the two-dimensional bounding box dimensions [143.3627166748047, 86.51652526855469, 173.70794677734375, 144.0] used for collision detection or visual representation in a digital setting."</data>
+      <data key="d2">chunk-f0d0fbfce6a505bd62b69c25bcf8c08c&lt;SEP&gt;chunk-b0f26dfb79ac1e88ec719ffedf8d3ede&lt;SEP&gt;chunk-f4605c166d58b2496b19025ce1436905&lt;SEP&gt;chunk-d3162b619050a322ec02998bab9e67c3</data>
+    </node>
+    <node id="&quot;BOX3D&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"box3D is an event indicating the three-dimensional boundary defined by the coordinates [-0.4707321524620056, -0.9901371598243713, 0.032604921609163284, -0.44926801323890686, 0.9901371598243713, -0.2592245936393738] for Drone1."&lt;SEP&gt;"box3D refers to a three-dimensional bounding box defined by the coordinates [4.328840732574463, -3.6848866939544678, 1.3230171203613281, 3.596430540084839, -1.6558932065963745, 0.228787362575531], providing depth to the spatial representation of the entity."&lt;SEP&gt;"box3D refers to a three-dimensional bounding volume characterized by specific coordinates and dimensions in spatial terms."&lt;SEP&gt;"box3D refers to the three-dimensional bounding box dimensions [3.78035044670105, 0.5090714693069458, 2.287933111190796, 4.76162576675415, 1.3993568420410156, 0.40927520394325256] representing the spatial volume occupied by the BaseCharacter_Walking4_11 entity."</data>
+      <data key="d2">chunk-f0d0fbfce6a505bd62b69c25bcf8c08c&lt;SEP&gt;chunk-b0f26dfb79ac1e88ec719ffedf8d3ede&lt;SEP&gt;chunk-f4605c166d58b2496b19025ce1436905&lt;SEP&gt;chunk-d3162b619050a322ec02998bab9e67c3</data>
+    </node>
+    <node id="&quot;DRONE1&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Drone1 is a drone located in a 3D space, positioned at approximately (1.495, 0.325, -1.257), making it slightly forward and to the right of drone_0, also below the reference plane."&lt;SEP&gt;"Drone1 is a drone located in a 3D space, positioned at coordinates approximately (1.495, 0.325, -1.257), placing it slightly forward and to the right of Drone0."&lt;SEP&gt;"Drone1 is a specific drone located in a 3D space, positioned slightly forward and to the right of another drone, 'drone_0'."&lt;SEP&gt;"Drone1 is an entity involved in the operational deployment or management of drones, indicating a functional role in a aerial context."&lt;SEP&gt;"Drone1 is an entity referred to in the context of spatial relationships, indicating it has a function or role in relation to the provided spatial reference."&lt;SEP&gt;"Drone1 is another entity that represents a type of drone and is relevant in the context of spatial relationships."&lt;SEP&gt;"Drone1 is identified as an entity involved in a relationship, potentially indicating an operational or technological significance."&lt;SEP&gt;"Drone1 is identified as an object with specific positioning attributes and timestamp information, indicating its role in a broader operational context."&lt;SEP&gt;"Drone1 is identified as an organization, likely responsible for the operation or management of drones in a specific context."&lt;SEP&gt;"Drone1 is identified as another organization that shares a positional relationship with drone_0."&lt;SEP&gt;"Drone1 is indicated as an organization in the context of the spatial relationship provided, suggesting it is likely a designated unit or system with specific functions related to the scenario."&lt;SEP&gt;"Drone1 represents a robotic entity, designated as the first of its type, likely involved in monitoring or performing tasks in a specific context."</data>
+      <data key="d2">chunk-eb2c43ffbbd33c754a18139720251e10&lt;SEP&gt;chunk-88790a91a9803b73972cdf638e1d7662&lt;SEP&gt;chunk-82f06e4ca709d11732057177781ac28f&lt;SEP&gt;chunk-c843e5ffbf9f0aa77f639ff37b08de46&lt;SEP&gt;chunk-5b8be2ef40518fc5d6d85f6f6d6a8159&lt;SEP&gt;chunk-c3a0aaed3c1c559f939c6d822dd2b4a2&lt;SEP&gt;chunk-f0d0fbfce6a505bd62b69c25bcf8c08c&lt;SEP&gt;chunk-0c640d5419b88566148a4fb29c0a3b93&lt;SEP&gt;chunk-8fc440f95684095ac11786fcc6c7a8ab&lt;SEP&gt;chunk-c877d38a6dc157297dd3f653d110a60a</data>
+    </node>
+    <node id="&quot;PLANTERLONG4_BLUEPRINT3&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"planterLong4_Blueprint3 appears to be a designated name or identifier for an organization involved in a project or initiative related to design or architecture."&lt;SEP&gt;"planterLong4_Blueprint3 appears to be a structured entity, possibly involved in agricultural or horticultural activities, indicated by its name suggesting a blueprint design."&lt;SEP&gt;"planterLong4_Blueprint3 is a blueprint for a long blue planter, indicating its design or structural specifications within the 3D environment."&lt;SEP&gt;"planterLong4_Blueprint3 is a specific type of planter object in the 3D environment, serving the purpose of planting in designated coordinates."&lt;SEP&gt;"planterLong4_Blueprint3 is a specific version of a planter within the 3D environment, indicating it is a designed object with unique attributes or functionalities."&lt;SEP&gt;"planterLong4_Blueprint3 is an entity associated with the context of the relationship, likely involving agricultural or technological functions."&lt;SEP&gt;"planterLong4_Blueprint3 is an entity that represents a specific design or model for a planter, indicating its operational capacity in conjunction with drone_0."&lt;SEP&gt;"planterLong4_Blueprint3 is identified as an organization involved in a relationship with a drone, possibly related to agricultural or robotic activities."&lt;SEP&gt;"planterLong4_Blueprint3 is referenced in relation to a specific arrangement within a scene, indicating its position relative to another entity."&lt;SEP&gt;"planterLong4_Blueprint3 is the model or design of the Planter object, utilized for decorative or functional purposes within the 3D environment."&lt;SEP&gt;"planterLong4_Blueprint3 is the specific blueprint or design for the planter object located at coordinates [0.56, -4.98, -0.25] in the 3D environment."&lt;SEP&gt;"planterLong4_Blueprint3 represents an entity that is likely an object or structure within the spatial context, possibly referenced in a gameplay or visual representation."</data>
+      <data key="d2">chunk-fff8dc8f3c3ecaaccc7b1344d232fa3b&lt;SEP&gt;chunk-9dbedeefc4498380117a51a1fa0c4dcb&lt;SEP&gt;chunk-d3e5314dfbe21b137956267f8189bfbe&lt;SEP&gt;chunk-d3162b619050a322ec02998bab9e67c3&lt;SEP&gt;chunk-a2fd2fa6a370bfca2543526fec127bc1&lt;SEP&gt;chunk-b912c38150639fc3cdc895d68a4ac90f&lt;SEP&gt;chunk-29ae12bd95a6546386c34b2557ec6d44&lt;SEP&gt;chunk-45f0643660df282da9e425abf14dfe5f&lt;SEP&gt;chunk-2f953b53ae3af68436d7bf737b0fe3a0&lt;SEP&gt;chunk-c843e5ffbf9f0aa77f639ff37b08de46&lt;SEP&gt;chunk-2101dc9b71ca0d7c4303539a75081ebb&lt;SEP&gt;chunk-5439742f7b26de20bb0775ac55965c10</data>
+    </node>
+    <node id="&quot;0.56, -4.98, -0.25&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"The coordinates (0.56, -4.98, -0.25) indicate a specific geographical or spatial position related to the planterLong4_Blueprint3's context."</data>
+      <data key="d2">chunk-d3162b619050a322ec02998bab9e67c3</data>
+    </node>
+    <node id="&quot;1729609142.3244777&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"timestamp 1729609142.3244777 represents a specific point in time, potentially indicating when the entity data was recorded or relevant to the project's timeline."</data>
+      <data key="d2">chunk-d3162b619050a322ec02998bab9e67c3</data>
+    </node>
+    <node id="&quot;DRONE_1&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"drone_1 is a 3D object that operates in the environment, serving as a tool or vehicle for various tasks, positioned at specific coordinates."&lt;SEP&gt;"drone_1 is a technological entity categorized as a drone, indicating its function in the context of data collection or surveillance."&lt;SEP&gt;"drone_1 is a technological entity representing a specific drone in the given relationship."&lt;SEP&gt;"drone_1 is another entity mentioned in the context of drones, potentially involved in a similar operational capacity as drone_0 and drone_2."&lt;SEP&gt;"drone_1 is identified as a drone, likely representing a technology or unit in a relationship context presumably involving observation or navigation."&lt;SEP&gt;"drone_1 is identified as another entity, representing a second specific drone in the same context."&lt;SEP&gt;"drone_1 is the designation of the drone located at coordinates {'x': 2.87, 'y': -3.98, 'z': -1.22}, which may be used for various tasks such as surveillance or delivery in the environment."&lt;SEP&gt;"drone_1 is the model or designation of the Drone object, associated with tasks like surveillance, delivery, or data collection in the 3D environment."&lt;SEP&gt;"drone_1 is the specific designation of the drone in this environment, indicating it is an object for tasks such as surveillance or data collection."&lt;SEP&gt;"drone_1 refers to a specific Drone object located in the 3D environment, which is designed for various tasks such as surveillance or monitoring."&lt;SEP&gt;"drone_1 refers to a specific organization or entity involved in operations related to drone technology."&lt;SEP&gt;"drone_1 represents a specific drone entity that interacts with planterLong4_Blueprint3, likely in the context of an operational task or project."&lt;SEP&gt;"drone_1 represents another organizational entity involved in drone operations or management."</data>
+      <data key="d2">chunk-1759e6f189008a691ce1a10ea97a4fcd&lt;SEP&gt;chunk-854fb8eb7dcc27bdd981909de9945ce8&lt;SEP&gt;chunk-a4d8a1c65e1796465eca6dab790d406d&lt;SEP&gt;chunk-82f06e4ca709d11732057177781ac28f&lt;SEP&gt;chunk-281875b3970934022624e7881dfef4d7&lt;SEP&gt;chunk-9dbedeefc4498380117a51a1fa0c4dcb&lt;SEP&gt;chunk-2101dc9b71ca0d7c4303539a75081ebb&lt;SEP&gt;chunk-2b22b78e2b8b77d2c98a421bd87c1129&lt;SEP&gt;chunk-45f0643660df282da9e425abf14dfe5f&lt;SEP&gt;chunk-485f799ad70c750307ee33e2b97b0a98&lt;SEP&gt;chunk-209b7603bd26c226f4b813c1c8853018&lt;SEP&gt;chunk-66f641065475b9b197defd71bf69e82f&lt;SEP&gt;chunk-5439742f7b26de20bb0775ac55965c10</data>
+    </node>
+    <node id="&quot;NODE&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Node is a foundational component or structure within a larger system that drones like drone_1 operate in, indicating its significance in system architecture."&lt;SEP&gt;"Node refers to a conceptual representation of a point or element within a specific context, possibly in a data structure or spatial framework."&lt;SEP&gt;"Node refers to the central point or reference in the 3D environment where the objects are positioned, indicating organization and structure within the space."&lt;SEP&gt;"Node refers to the conceptual location or environment in which the objects drone_2 and chair_cafeCharcoalGrey10 exist, highlighting the spatial arrangement."&lt;SEP&gt;"Node refers to the virtual environment where the distinct objects, such as a drone and a chair, are located, indicating the setting for interaction."</data>
+      <data key="d2">chunk-a4d8a1c65e1796465eca6dab790d406d&lt;SEP&gt;chunk-2a12935c1f4d87691245b1f3e35acb54&lt;SEP&gt;chunk-2b22b78e2b8b77d2c98a421bd87c1129&lt;SEP&gt;chunk-04ecef17d6d14ae0266aedfbbdab4f6a&lt;SEP&gt;chunk-b0f26dfb79ac1e88ec719ffedf8d3ede</data>
+    </node>
+    <node id="&quot;LEVEL&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Level indicates a hierarchical position or depth within a particular structure, suggesting organization or classification."&lt;SEP&gt;"Level indicates a specific altitude or floor within the 3D environment, suggesting that there might be multiple layers to this virtual space."&lt;SEP&gt;"Level indicates the depth or height of positioning within the 3D space, affecting the relationship between the objects."&lt;SEP&gt;"Level refers to the hierarchical or operational tier within which drone_1 is categorized, pointing to its functionality and role in the overall system."</data>
+      <data key="d2">chunk-2a12935c1f4d87691245b1f3e35acb54&lt;SEP&gt;chunk-b0f26dfb79ac1e88ec719ffedf8d3ede&lt;SEP&gt;chunk-04ecef17d6d14ae0266aedfbbdab4f6a&lt;SEP&gt;chunk-a4d8a1c65e1796465eca6dab790d406d</data>
+    </node>
+    <node id="&quot;DRONE_2&quot;">
+      <data key="d0">"TECHNOLOGY"</data>
+      <data key="d1">"drone_2 is a device designed for hovering and possibly for surveillance or delivery, situated at specific spatial coordinates in a 3D environment."&lt;SEP&gt;"drone_2 is a distinct 3D object hovering above a lower surface, specified by its coordinates in a 3D environment."&lt;SEP&gt;"drone_2 is a hovering object in a 3D environment, positioned slightly above ground level with specific coordinates, indicating functionality and spatial awareness."&lt;SEP&gt;"drone_2 is a specific drone entity characterized by its operational parameters such as position, yaw, and associated timestamp."&lt;SEP&gt;"drone_2 is a specific identifier for the Drone object in the 3D environment that represents its unique attributes and position."&lt;SEP&gt;"drone_2 is a specific model of a drone positioned within a 3D environment, indicating it may be used for hovering or monitoring tasks."&lt;SEP&gt;"drone_2 is also an entity related to drone_0, defined by its spatial relationship in the environment."&lt;SEP&gt;"drone_2 is an entity identified as an organization, possibly referring to a group or technology related to drone operations."&lt;SEP&gt;"drone_2 is an object in a 3D environment, positioned slightly above a lower surface and is likely performing some aerial function."&lt;SEP&gt;"drone_2 is an object positioned within a 3D environment, indicating potential functionality such as hovering just above ground level."&lt;SEP&gt;"drone_2 is an unmanned aerial vehicle positioned at coordinates (0.0542, -8.7543, -1.3447) in a 3D environment."&lt;SEP&gt;"drone_2 is an unmanned aerial vehicle positioned in a 3D space, indicating potential uses in various applications such as surveillance or delivery."&lt;SEP&gt;"drone_2 is another entity that operates in conjunction with Drone1, suggesting a relationship based on relative positioning."&lt;SEP&gt;"drone_2 is likely a technological entity, possibly representing a specific drone used for tasks such as monitoring or assisting in agricultural processes."&lt;SEP&gt;"drone_2 is positioned within a network of drones and has a specific relationship with drone_0 indicated by their spatial placement."&lt;SEP&gt;"drone_2 refers to another organization or entity similar to drone_1 that operates in conjunction with drone_1."</data>
+      <data key="d2">chunk-854fb8eb7dcc27bdd981909de9945ce8&lt;SEP&gt;chunk-3dcbd536f5c482d916593354835d333a&lt;SEP&gt;chunk-fe1197847ca31f9cd72d33261f022a63&lt;SEP&gt;chunk-7402e92978346fc907bbe7aa770e3791&lt;SEP&gt;chunk-90bdb4e24df07be840376b4733060f54&lt;SEP&gt;chunk-2a12935c1f4d87691245b1f3e35acb54&lt;SEP&gt;chunk-b912c38150639fc3cdc895d68a4ac90f&lt;SEP&gt;chunk-813a08dede10fe54449554bd3b80cf12&lt;SEP&gt;chunk-12b20bdc273ab3c4642137044336ce39&lt;SEP&gt;chunk-04ecef17d6d14ae0266aedfbbdab4f6a&lt;SEP&gt;chunk-485f799ad70c750307ee33e2b97b0a98&lt;SEP&gt;chunk-83b7d684fda6039e51cbbae24f9f5273&lt;SEP&gt;chunk-7ad84b2ff11f2d6018fdb25416b13108&lt;SEP&gt;chunk-c877d38a6dc157297dd3f653d110a60a&lt;SEP&gt;chunk-4d4cc3b2ebc6bc00642497cdf2f91286</data>
+    </node>
+    <node id="&quot;0.05&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"0.05 is a coordinate representing the x-axis position of the drone in a 3D space."</data>
+      <data key="d2">chunk-7402e92978346fc907bbe7aa770e3791</data>
+    </node>
+    <node id="&quot;-8.75&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"-8.75 is a coordinate representing the y-axis position of the drone in a 3D space."</data>
+      <data key="d2">chunk-7402e92978346fc907bbe7aa770e3791</data>
+    </node>
+    <node id="&quot;-1.34&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"-1.34 is a coordinate representing the z-axis position of the drone in a 3D space."</data>
+      <data key="d2">chunk-7402e92978346fc907bbe7aa770e3791</data>
+    </node>
+    <node id="&quot;-3.133008010462549&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"-3.133008010462549 is the yaw angle of the drone, indicating its orientation in relation to a reference direction."</data>
+      <data key="d2">chunk-7402e92978346fc907bbe7aa770e3791</data>
+    </node>
+    <node id="&quot;DRONE0&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Drone0 is a drone located in a 3D space, positioned at coordinates (0.0, 0.0, -0.9707), indicating it is near the origin but slightly below the reference plane."</data>
+      <data key="d2">chunk-eb2c43ffbbd33c754a18139720251e10</data>
+    </node>
+    <node id="&quot;GROUP OF OBJECTS&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The Group of Objects comprises the two drones, Drone0 and Drone1, that are positioned in a 3D space."</data>
+      <data key="d2">chunk-eb2c43ffbbd33c754a18139720251e10</data>
+    </node>
+    <node id="&quot;3D SPACE&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"3D Space refers to the three-dimensional environment where the objects are positioned, providing context for their spatial arrangement."&lt;SEP&gt;"3D space is the three-dimensional environment where the drones are located, defined by coordinates in x, y, and z axes."&lt;SEP&gt;"The 3D Space is the environment in which the two drones are located, characterized by three-dimensional coordinates."&lt;SEP&gt;"The 3D space refers to the three-dimensional environment where the drones are located, characterized by coordinates and depth relative to a reference plane."</data>
+      <data key="d2">chunk-5b8be2ef40518fc5d6d85f6f6d6a8159&lt;SEP&gt;chunk-eb2c43ffbbd33c754a18139720251e10&lt;SEP&gt;chunk-0c640d5419b88566148a4fb29c0a3b93&lt;SEP&gt;chunk-4d4cc3b2ebc6bc00642497cdf2f91286</data>
+    </node>
+    <node id="&quot;COORDINATES&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Coordinates are numerical values that define a specific location in space, used here to indicate the precise position of the character within a three-dimensional environment."&lt;SEP&gt;"Coordinates are numerical values that signify the specific locations of the objects within the 3D space, providing a framework for positioning."&lt;SEP&gt;"Coordinates are numerical values that specify the position of objects like drone_2 and chair_cafeCharcoalGrey10 in the 3D environment."&lt;SEP&gt;"Coordinates are the specific locations defined for both the Planter and Drone, indicating their spatial relationship within the 3D environment."&lt;SEP&gt;"Coordinates are the specific numerical values that indicate the location of the Planter and Drone within the 3D environment."&lt;SEP&gt;"Coordinates refer to a set of numerical values (X, Y, Z) that define the position of objects in a three-dimensional space."&lt;SEP&gt;"Coordinates refer to a specific numerical representation of an object's position in a 3D space, used to define its location relative to other elements."&lt;SEP&gt;"Coordinates refer to specific locations in the 3D environment, indicating where objects like the planter and drone are placed."&lt;SEP&gt;"Coordinates refer to specific points in 3D space that indicate the locations of the drone and chair, important for understanding their placement and relation to each other."&lt;SEP&gt;"Coordinates refer to the numerical values that define the specific locations of objects in the 3D environment, essential for positioning and navigation."&lt;SEP&gt;"Coordinates refer to the specific locations of Drone0 and Drone1 in 3D space, which are key to their positioning and relationship."&lt;SEP&gt;"Coordinates refer to the specific numerical values that define the location of objects within the 3D space, allowing precise spatial positioning."&lt;SEP&gt;"Coordinates represent the specific points in 3D space that denote the positions of the drones, significant for understanding their spatial relationships."&lt;SEP&gt;"Coordinates represent the specific spatial location of objects in the 3D environment, determining their physical placement."&lt;SEP&gt;"Coordinates represent the specific spatial positioning of objects in the 3D environment, allowing for precise location tracking."&lt;SEP&gt;"coordinates represent the specific locations of the drone and chair within the 3D environment, providing a framework for spatial awareness."</data>
+      <data key="d2">chunk-8f0994b3b4a704d984fc496c567f6ebe&lt;SEP&gt;chunk-eb2c43ffbbd33c754a18139720251e10&lt;SEP&gt;chunk-45f0643660df282da9e425abf14dfe5f&lt;SEP&gt;chunk-7ad84b2ff11f2d6018fdb25416b13108&lt;SEP&gt;chunk-4d4cc3b2ebc6bc00642497cdf2f91286&lt;SEP&gt;chunk-eeccda1bdcc26b155fc03b71aa8858a8&lt;SEP&gt;chunk-d3e5314dfbe21b137956267f8189bfbe&lt;SEP&gt;chunk-281875b3970934022624e7881dfef4d7&lt;SEP&gt;chunk-29ae12bd95a6546386c34b2557ec6d44&lt;SEP&gt;chunk-2b22b78e2b8b77d2c98a421bd87c1129&lt;SEP&gt;chunk-12b20bdc273ab3c4642137044336ce39&lt;SEP&gt;chunk-7cdf2e10026b39a6610007ff63257d0e&lt;SEP&gt;chunk-04ecef17d6d14ae0266aedfbbdab4f6a&lt;SEP&gt;chunk-0c640d5419b88566148a4fb29c0a3b93&lt;SEP&gt;chunk-90bdb4e24df07be840376b4733060f54&lt;SEP&gt;chunk-5439742f7b26de20bb0775ac55965c10</data>
+    </node>
+    <node id="&quot;3D CHARACTER MODEL&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"A 3D character model is a digital representation designed for use in video games or simulations, allowing for animations such as walking and interaction in virtual spaces."&lt;SEP&gt;"A 3D character model is a digital representation of a character designed for use in simulations or video games, characterized by its movements and interactions within a virtual environment."&lt;SEP&gt;"A 3D character model represents a digital figure designed for interaction within a virtual environment, characterized by its attributes and movements, including a walking state."</data>
+      <data key="d2">chunk-eeccda1bdcc26b155fc03b71aa8858a8&lt;SEP&gt;chunk-8f0994b3b4a704d984fc496c567f6ebe&lt;SEP&gt;chunk-7cdf2e10026b39a6610007ff63257d0e</data>
+    </node>
+    <node id="&quot;WALKING STATE&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"The walking state is an activity that signifies movement within a 3D environment, indicating the character's current mode of interaction."&lt;SEP&gt;"The walking state is an event describing the movement of the character model, indicating its current activity in the simulation or game context."&lt;SEP&gt;"Walking State is the action or condition representing the character's animation and movement, indicating its functionality within the environment."</data>
+      <data key="d2">chunk-eeccda1bdcc26b155fc03b71aa8858a8&lt;SEP&gt;chunk-8f0994b3b4a704d984fc496c567f6ebe&lt;SEP&gt;chunk-7cdf2e10026b39a6610007ff63257d0e</data>
+    </node>
+    <node id="&quot;SCENE&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"A scene is a specific setting within the 3D environment where character models interact, showcasing dynamic capabilities, and animations."&lt;SEP&gt;"A scene refers to a specific setting within a game or simulation, composed of various characters and objects positioned in a defined space."&lt;SEP&gt;"Scene describes the overall setup including interactions and positioning of the drone and chair, creating a context for observation."</data>
+      <data key="d2">chunk-7ad84b2ff11f2d6018fdb25416b13108&lt;SEP&gt;chunk-8f0994b3b4a704d984fc496c567f6ebe&lt;SEP&gt;chunk-8c51d920afd4aa8572c90da5fa1696c6</data>
+    </node>
+    <node id="&quot;LEVEL 1&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Level 1 indicates a specific stage or layer within a game or simulation, suggesting a particular environment or setting in which characters exist."</data>
+      <data key="d2">chunk-8f0994b3b4a704d984fc496c567f6ebe</data>
+    </node>
+    <node id="&quot;PLANTER&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"A Planter is an object designed for planting and is placed within a 3D environment, indicating its functional purpose."&lt;SEP&gt;"Planter is a decorative or functional object in a 3D environment, possibly housing plants or flowers."&lt;SEP&gt;"Planter is a long blue planter located in a 3D environment, possibly used for housing plants or flowers, situated at coordinates [0.56, -4.98, -0.25]."&lt;SEP&gt;"Planter is an object defined in a 3D environment, likely serving as a decorative or functional planter placed at specific coordinates."&lt;SEP&gt;"Planter is an object in a 3D environment that likely serves a functional purpose of holding plants, positioned at specific coordinates."&lt;SEP&gt;"Planter is an object in a 3D environment, functioning as a planter situated at specific coordinates."&lt;SEP&gt;"planter is a device used for planting seeds or crops efficiently, often incorporated into agricultural technology."</data>
+      <data key="d2">chunk-281875b3970934022624e7881dfef4d7&lt;SEP&gt;chunk-d3e5314dfbe21b137956267f8189bfbe&lt;SEP&gt;chunk-9dbedeefc4498380117a51a1fa0c4dcb&lt;SEP&gt;chunk-a2fd2fa6a370bfca2543526fec127bc1&lt;SEP&gt;chunk-29ae12bd95a6546386c34b2557ec6d44&lt;SEP&gt;chunk-45f0643660df282da9e425abf14dfe5f&lt;SEP&gt;chunk-5439742f7b26de20bb0775ac55965c10</data>
+    </node>
+    <node id="&quot;3D ENVIRONMENT&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"3D Environment indicates a simulated or virtual space where objects like the drone and chair are represented, enabling spatial orientation and interaction."&lt;SEP&gt;"3D Environment indicates a virtual or physical space where objects like drone_2 and chair_cafeCharcoalGrey10 are positioned in relation to one another."&lt;SEP&gt;"3D Environment refers to a virtual space where objects like the drone and chair are positioned, allowing for spatial interaction and visualization."&lt;SEP&gt;"3D Environment refers to the simulated space in which the drone and chair are positioned, encompassing various objects and their spatial relationships."&lt;SEP&gt;"3D Environment refers to the spatial setting in which the Planter and Drone exist, providing context for their placement and function."&lt;SEP&gt;"3D Environment refers to the virtual space in which the drone and chair exist, allowing for spatial interactions among objects."&lt;SEP&gt;"3D environment is the virtual space where the objects such as the drone and the planter blueprint exist and interact with each other."&lt;SEP&gt;"3D environment refers to the entire virtual space where the planter and drone are located, providing context for their positioning and function."&lt;SEP&gt;"The 3D Environment is a virtual space where various objects, such as the planter and the drone, are positioned and interact."&lt;SEP&gt;"The 3D Environment refers to the virtual space in which the Drone and Chair are placed, characterized by three-dimensional coordinates."&lt;SEP&gt;"The 3D environment is a virtual space where objects like the planter and drone are positioned and interact with each other."&lt;SEP&gt;"The 3D environment is the spatial context where the Planter and Drone are situated, providing a virtual space for interaction between objects."&lt;SEP&gt;"The 3D environment refers to the virtual space where the character model is situated, facilitating interaction and navigation."</data>
+      <data key="d2">chunk-45f0643660df282da9e425abf14dfe5f&lt;SEP&gt;chunk-281875b3970934022624e7881dfef4d7&lt;SEP&gt;chunk-9dbedeefc4498380117a51a1fa0c4dcb&lt;SEP&gt;chunk-8c51d920afd4aa8572c90da5fa1696c6&lt;SEP&gt;chunk-2a12935c1f4d87691245b1f3e35acb54&lt;SEP&gt;chunk-29ae12bd95a6546386c34b2557ec6d44&lt;SEP&gt;chunk-2b22b78e2b8b77d2c98a421bd87c1129&lt;SEP&gt;chunk-12b20bdc273ab3c4642137044336ce39&lt;SEP&gt;chunk-04ecef17d6d14ae0266aedfbbdab4f6a&lt;SEP&gt;chunk-83b7d684fda6039e51cbbae24f9f5273&lt;SEP&gt;chunk-7ad84b2ff11f2d6018fdb25416b13108&lt;SEP&gt;chunk-90bdb4e24df07be840376b4733060f54&lt;SEP&gt;chunk-5439742f7b26de20bb0775ac55965c10</data>
+    </node>
+    <node id="&quot;CHARACTER MODEL&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"A character model in a 3D environment, such as BaseCharacter_Walking4_11, represents a digital avatar designed for animation, indicating the capabilities of animated designs in interactive scenarios."</data>
+      <data key="d2">chunk-8c51d920afd4aa8572c90da5fa1696c6</data>
+    </node>
+    <node id="&quot;MOVEMENT&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Movement refers to the ability of the character model to traverse or navigate within the 3D environment, which is essential for dynamic interactions."</data>
+      <data key="d2">chunk-8c51d920afd4aa8572c90da5fa1696c6</data>
+    </node>
+    <node id="&quot;BLUEPRINT FOR A LONG BLUE PLANTER&quot;">
+      <data key="d0">"TECHNOLOGY"</data>
+      <data key="d1">"The blueprint for a long blue planter is a 3D object representing a design for a planter, located at certain coordinates in the environment."</data>
+      <data key="d2">chunk-2b22b78e2b8b77d2c98a421bd87c1129</data>
+    </node>
+    <node id="&quot;CHAIR&quot;">
+      <data key="d0">"FURNITURE"</data>
+      <data key="d1">"Chair is a common piece of furniture designed for sitting, represented by chair_cafeCharcoalGrey10 in this context."&lt;SEP&gt;"Chair is a piece of furniture that provides seating, associated here with a specific design and color, located within a café setting."&lt;SEP&gt;"Chair is a static object located on the ground level, positioned further back along the negative Y-axis and X-axis in the 3D environment."&lt;SEP&gt;"Chair is an object labeled as 'chair_cafeCharcoalGrey10', situated on the ground level in the 3D environment, suggesting it is part of a seating arrangement."&lt;SEP&gt;"Chair refers to a piece of furniture typically used for seating, located in the café environment."&lt;SEP&gt;"The Chair (chair_cafeCharcoalGrey10) is an object situated on the ground level in a 3D environment, positioned further back in the negative X direction."&lt;SEP&gt;"The chair_cafeCharcoalGrey10 serves as an event marker by indicating an interaction point in the café environment, demonstrating social positioning."&lt;SEP&gt;"a chair is a common piece of furniture designed for seating, referenced here as chair_cafeCharcoalGrey10 in a café-like setting."&lt;SEP&gt;"chair refers to a furniture piece that is categorized under the description of cafeCharcoalGrey10, indicating its design and color."</data>
+      <data key="d2">chunk-34aaef2f4359a2cd141902afff622051&lt;SEP&gt;chunk-3dcbd536f5c482d916593354835d333a&lt;SEP&gt;chunk-fe1197847ca31f9cd72d33261f022a63&lt;SEP&gt;chunk-813a08dede10fe54449554bd3b80cf12&lt;SEP&gt;chunk-12b20bdc273ab3c4642137044336ce39&lt;SEP&gt;chunk-83b7d684fda6039e51cbbae24f9f5273&lt;SEP&gt;chunk-7ad84b2ff11f2d6018fdb25416b13108&lt;SEP&gt;chunk-209b7603bd26c226f4b813c1c8853018&lt;SEP&gt;chunk-fff8dc8f3c3ecaaccc7b1344d232fa3b</data>
+    </node>
+    <node id="&quot;THE SCENE&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"The Scene describes a specific setup involving two distinct objects, a drone and a chair, which suggests an action or observation occurring in that environment."</data>
+      <data key="d2">chunk-4d4cc3b2ebc6bc00642497cdf2f91286</data>
+    </node>
+    <node id="&quot;LEVEL 4&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Level 4 indicates a specific elevation or level designation within the environment where the scene takes place, implying structure or organization."</data>
+      <data key="d2">chunk-4d4cc3b2ebc6bc00642497cdf2f91286</data>
+    </node>
+    <node id="&quot;THE GROUP OF OBJECTS&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The group of objects consists of two drones, drone_0 and Drone1, situated within a 3D space, indicating it functions as a collective entity."&lt;SEP&gt;"The group of objects is a formation that includes multiple drones operating in a 3D spatial environment."</data>
+      <data key="d2">chunk-5b8be2ef40518fc5d6d85f6f6d6a8159&lt;SEP&gt;chunk-0c640d5419b88566148a4fb29c0a3b93</data>
+    </node>
+    <node id="&quot;REFERENCE PLANE&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"The reference plane is a plane of reference in the 3D space, typically associated with the z-axis, used to determine the relative height of the drones."</data>
+      <data key="d2">chunk-0c640d5419b88566148a4fb29c0a3b93</data>
+    </node>
+    <node id="&quot;TO_THE_LEFT_OF&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"to_the_left_of denotes the specific relational event that describes the positioning of drone_0 in relation to Drone1."&lt;SEP&gt;"to_the_left_of describes the spatial positioning of planterLong4_Blueprint3 in relation to drone_1."</data>
+      <data key="d2">chunk-88790a91a9803b73972cdf638e1d7662&lt;SEP&gt;chunk-2101dc9b71ca0d7c4303539a75081ebb</data>
+    </node>
+    <node id="&quot;RELATIONSHIP&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Relationship refers to the connection established between planterLong4_Blueprint3 and drone_1, outlining the nature of their interaction."&lt;SEP&gt;"Relationship refers to the event that describes the interaction or connection between the entities drone_1 and drone_2."&lt;SEP&gt;"Relationship refers to the interaction or connection established between BaseCharacter_Walking4_11 and drone_1 indicated by their spatial arrangement."&lt;SEP&gt;"The relationship indicates a dynamic interaction between two entities, Drone1 and drone_1, showcasing a positional relationship."&lt;SEP&gt;"The term 'relationship' denotes the interaction or position held between drone_0 and drone_1."&lt;SEP&gt;"The term 'relationship' signifies the connection being described in terms of spatial orientation."</data>
+      <data key="d2">chunk-1759e6f189008a691ce1a10ea97a4fcd&lt;SEP&gt;chunk-82f06e4ca709d11732057177781ac28f&lt;SEP&gt;chunk-485f799ad70c750307ee33e2b97b0a98&lt;SEP&gt;chunk-66f641065475b9b197defd71bf69e82f&lt;SEP&gt;chunk-c3a0aaed3c1c559f939c6d822dd2b4a2&lt;SEP&gt;chunk-2101dc9b71ca0d7c4303539a75081ebb</data>
+    </node>
+    <node id="&quot;TYPE&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Type indicates the manner in which the relationship is categorized, which in this case is defined as 'to_the_left_of'."&lt;SEP&gt;"Type indicates the nature of the relationship being described, which in this case is positional."&lt;SEP&gt;"Type refers to the designation of the relationship being described, indicating a category of interaction between the drones."</data>
+      <data key="d2">chunk-485f799ad70c750307ee33e2b97b0a98&lt;SEP&gt;chunk-2101dc9b71ca0d7c4303539a75081ebb&lt;SEP&gt;chunk-66f641065475b9b197defd71bf69e82f</data>
+    </node>
+    <node id="&quot;TO_THE_RIGHT_OF&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"The concept 'to_the_right_of' describes a spatial relationship between entities, suggesting directional placement."&lt;SEP&gt;"to_the_right_of describes a specific positional relationship or event that signifies the spatial arrangement of entities in a defined context, possibly in a mapping or layout scenario."&lt;SEP&gt;"to_the_right_of indicates a specific positional relationship or movement event between two entities, suggesting spatial dynamics."&lt;SEP&gt;"to_the_right_of is a directional relationship that describes the relative positioning of one entity in relation to another."&lt;SEP&gt;"to_the_right_of refers to the spatial relationship that describes the positioning of Drone1 in relation to planterLong4_Blueprint3."&lt;SEP&gt;"to_the_right_of specifies the directional relationship indicating the positioning of one drone in relation to another."</data>
+      <data key="d2">chunk-82f06e4ca709d11732057177781ac28f&lt;SEP&gt;chunk-485f799ad70c750307ee33e2b97b0a98&lt;SEP&gt;chunk-c843e5ffbf9f0aa77f639ff37b08de46&lt;SEP&gt;chunk-8fc440f95684095ac11786fcc6c7a8ab&lt;SEP&gt;chunk-66f641065475b9b197defd71bf69e82f&lt;SEP&gt;chunk-b912c38150639fc3cdc895d68a4ac90f</data>
+    </node>
+    <node id="&quot;LONG4&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"Long4 refers to a geographical or coded reference possibly indicating the location or specifications related to the planter."</data>
+      <data key="d2">chunk-a2fd2fa6a370bfca2543526fec127bc1</data>
+    </node>
+    <node id="&quot;BLUEPRINT3&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Blueprint3 indicates a design or schematic that outlines the structure or arrangement of planterLong, suggesting its purpose within the context."&lt;SEP&gt;"Blueprint3 indicates a specific design phase, project, or plan related to the Planter operation, showcasing its intended design or function."&lt;SEP&gt;"Blueprint3 is an event indicating a design plan or architectural layout that includes the planterLong4."&lt;SEP&gt;"Blueprint3 likely represents a specific design or project plan associated with planterLong4, indicating a structured approach to its purpose."&lt;SEP&gt;"Blueprint3 signifies a design or schematic that is likely connected to the functionality of planterLong4, suggesting technological implications."</data>
+      <data key="d2">chunk-a2fd2fa6a370bfca2543526fec127bc1&lt;SEP&gt;chunk-2f953b53ae3af68436d7bf737b0fe3a0&lt;SEP&gt;chunk-c843e5ffbf9f0aa77f639ff37b08de46&lt;SEP&gt;chunk-fff8dc8f3c3ecaaccc7b1344d232fa3b&lt;SEP&gt;chunk-b912c38150639fc3cdc895d68a4ac90f</data>
+    </node>
+    <node id="&quot;CAFE&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"The cafe serves as the location context wherein the chair exists, facilitating social interactions and experiences."&lt;SEP&gt;"cafe is a social establishment providing food and beverages, typically where individuals gather for casual meetings or relaxation."</data>
+      <data key="d2">chunk-c3a0aaed3c1c559f939c6d822dd2b4a2&lt;SEP&gt;chunk-839f8a74054c2c9df962c360c6280e1b</data>
+    </node>
+    <node id="&quot;CHARCOAL GREY&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"Charcoal Grey appears to be a specific name or descriptor, possibly indicating a theme or style within the cafe's decor or seating arrangements."</data>
+      <data key="d2">chunk-839f8a74054c2c9df962c360c6280e1b</data>
+    </node>
+    <node id="&quot;THREE-DIMENSIONAL ENVIRONMENT&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"A three-dimensional environment refers to a digital space where objects and characters are represented in three dimensions, allowing for depth and interaction."</data>
+      <data key="d2">chunk-eeccda1bdcc26b155fc03b71aa8858a8</data>
+    </node>
+    <node id="&quot;RIGHT&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"Right refers to a spatial direction in relation to the positioning of BaseCharacter_Walking4_11 and drone_1."&lt;SEP&gt;"The term 'right' refers to a directional orientation indicating the spatial arrangement of the entities involved."</data>
+      <data key="d2">chunk-1759e6f189008a691ce1a10ea97a4fcd&lt;SEP&gt;chunk-c3a0aaed3c1c559f939c6d822dd2b4a2</data>
+    </node>
+    <node id="&quot;BASECHARACTER&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"BaseCharacter refers to the generic character type from which BaseCharacter_Walking4_11 is derived, indicating a role within the context."</data>
+      <data key="d2">chunk-2f953b53ae3af68436d7bf737b0fe3a0</data>
+    </node>
+    <node id="&quot;WALKING4&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Walking4 denotes an action or state in which the BaseCharacter is engaged, likely related to movement or gameplay mechanics."</data>
+      <data key="d2">chunk-2f953b53ae3af68436d7bf737b0fe3a0</data>
+    </node>
+    <node id="&quot;PLANTERLONG&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"planterLong describes a specific type of planter that may serve as a functional or decorative object in the environment."</data>
+      <data key="d2">chunk-2f953b53ae3af68436d7bf737b0fe3a0</data>
+    </node>
+    <node id="&quot;CAFECHARCOALGREY&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"cafeCharcoalGrey is a café establishment that features a chair described as chair_cafeCharcoalGrey10, providing a setting for social interaction."</data>
+      <data key="d2">chunk-34aaef2f4359a2cd141902afff622051</data>
+    </node>
+    <node id="&quot;BASECHARACTER_WALKING4&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"BaseCharacter_Walking4 is characterized as an individual in a dynamic interaction scenario within the café environment, moving in relation to objects."</data>
+      <data key="d2">chunk-34aaef2f4359a2cd141902afff622051</data>
+    </node>
+    <node id="&quot;PLANTERLONG4&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"planterLong4 appears to be a part of a larger system or project, possibly related to agricultural or ecological efforts as indicated by its name."&lt;SEP&gt;"planterLong4 is an organizational entity associated with the planter, indicating it may be involved in agricultural technology or related activities."&lt;SEP&gt;"planterLong4 is part of a specific design or architecture, indicated by its association with the blueprint."</data>
+      <data key="d2">chunk-c843e5ffbf9f0aa77f639ff37b08de46&lt;SEP&gt;chunk-fff8dc8f3c3ecaaccc7b1344d232fa3b&lt;SEP&gt;chunk-b912c38150639fc3cdc895d68a4ac90f</data>
+    </node>
+    <node id="&quot;LEFT&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"The term 'left' refers to a directional orientation used to describe the position of entities in relation to one another."&lt;SEP&gt;"left symbolizes a direction in spatial orientation, relevant to the positioning of the entities involved."</data>
+      <data key="d2">chunk-c3a0aaed3c1c559f939c6d822dd2b4a2&lt;SEP&gt;chunk-2101dc9b71ca0d7c4303539a75081ebb</data>
+    </node>
+    <node id="&quot;CAFECHARCOALGREY10&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"cafeCharcoalGrey10 specifies a distinct style or design of a chair within the context of a cafe setting."</data>
+      <data key="d2">chunk-fff8dc8f3c3ecaaccc7b1344d232fa3b</data>
+    </node>
+    <node id="&quot;CAFÉ&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"Café is a casual establishment where various beverages and light meals are served, serving as the setting for the entities mentioned."&lt;SEP&gt;"Café is a casual setting suggested by the presence of the chair, indicating a social or leisure environment."&lt;SEP&gt;"Café refers to a casual establishment that serves coffee and other refreshments, where drone_1 and chair_cafeCharcoalGrey10 are situated."</data>
+      <data key="d2">chunk-fe1197847ca31f9cd72d33261f022a63&lt;SEP&gt;chunk-209b7603bd26c226f4b813c1c8853018&lt;SEP&gt;chunk-90bdb4e24df07be840376b4733060f54</data>
+    </node>
+    <node id="&quot;CAFÉ ENVIRONMENT&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"Café Environment refers to the overall setting that encompasses the café atmosphere where social interactions and activities occur."</data>
+      <data key="d2">chunk-209b7603bd26c226f4b813c1c8853018</data>
+    </node>
+    <node id="&quot;CHARCOAL GREY COLOR&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Charcoal Grey Color refers to the specific color associated with the design of chair_cafeCharcoalGrey10, indicating aesthetic choices in furniture."</data>
+      <data key="d2">chunk-fe1197847ca31f9cd72d33261f022a63</data>
+    </node>
+    <node id="&quot;GAME ENVIRONMENT&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"Game Environment refers to a virtual space designed for interaction, navigation, and gameplay, where various elements and characters exist."</data>
+      <data key="d2">chunk-7cdf2e10026b39a6610007ff63257d0e</data>
+    </node>
+    <node id="&quot;X-AXIS&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"The x-axis is a reference line in a three-dimensional coordinate system that denotes horizontal positioning of objects."</data>
+      <data key="d2">chunk-d3e5314dfbe21b137956267f8189bfbe</data>
+    </node>
+    <node id="&quot;Y-AXIS&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"The y-axis is a reference line in a three-dimensional coordinate system that denotes vertical positioning of objects."</data>
+      <data key="d2">chunk-d3e5314dfbe21b137956267f8189bfbe</data>
+    </node>
+    <node id="&quot;Z-AXIS&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"The z-axis is a reference line in a three-dimensional coordinate system that denotes depth positioning of objects."</data>
+      <data key="d2">chunk-d3e5314dfbe21b137956267f8189bfbe</data>
+    </node>
+    <node id="&quot;SURVEILLANCE&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Surveillance describes tasks in which the drone may be engaged, often associated with monitoring an area or situation."</data>
+      <data key="d2">chunk-d3e5314dfbe21b137956267f8189bfbe</data>
+    </node>
+    <node id="&quot;DELIVERY&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Delivery represents potential tasks assigned to the drone, indicating its capability to transport items."</data>
+      <data key="d2">chunk-d3e5314dfbe21b137956267f8189bfbe</data>
+    </node>
+    <node id="&quot;MONITORING&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Monitoring refers to the drone's function of observing and reporting conditions within the 3D environment."</data>
+      <data key="d2">chunk-d3e5314dfbe21b137956267f8189bfbe</data>
+    </node>
+    <node id="&quot;ORIGIN POINT&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"Origin Point is the reference point in the 3D environment from which all other positions are measured, typically designated as (0, 0, 0)."</data>
+      <data key="d2">chunk-90bdb4e24df07be840376b4733060f54</data>
+    </node>
+    <node id="&quot;NEGATIVE Z-AXIS&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Negative Z-axis refers to the vertical axis in the 3D environment, where a higher negative value indicates lower elevations."</data>
+      <data key="d2">chunk-90bdb4e24df07be840376b4733060f54</data>
+    </node>
+    <node id="&quot;NEGATIVE X AND Y DIRECTIONS&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Negative X and Y Directions refer to the horizontal axes in the 3D space where the chair is positioned further back relative to the drone."</data>
+      <data key="d2">chunk-90bdb4e24df07be840376b4733060f54</data>
+    </node>
+    <node id="&quot;BLUEPRINT FOR PLANTER&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"The Blueprint for the long blue planter serves as a design or model for creating the actual planter in the 3D environment."</data>
+      <data key="d2">chunk-281875b3970934022624e7881dfef4d7</data>
+    </node>
+    <node id="&quot;X-COORDINATE&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"X-coordinate represents the horizontal positioning in the 3D environment, determining the left-right placement of objects."</data>
+      <data key="d2">chunk-813a08dede10fe54449554bd3b80cf12</data>
+    </node>
+    <node id="&quot;Y-COORDINATE&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Y-coordinate indicates the vertical positioning in the 3D environment, crucial for understanding the height of objects."</data>
+      <data key="d2">chunk-813a08dede10fe54449554bd3b80cf12</data>
+    </node>
+    <node id="&quot;Z-COORDINATE&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Z-coordinate represents the depth positioning in the 3D environment, giving insight into the front-back arrangement of objects."</data>
+      <data key="d2">chunk-813a08dede10fe54449554bd3b80cf12</data>
+    </node>
+    <node id="&quot;DRONE&quot;">
+      <data key="d0">"TECHNOLOGY"</data>
+      <data key="d1">The entity "DRONE" refers to a type of unmanned aerial vehicle (UAV) designed for various applications, primarily within a three-dimensional environment. Drones can perform a range of tasks, including surveillance, delivery, monitoring, data collection, and transportation of goods. They are generally characterized by their ability to fly autonomously or be remotely controlled, allowing them to hover and maneuver in 3D spaces.
+
+In this context, two specific drones are mentioned: 'drone_1' and 'drone_2'. Drone_1 is identified as being situated at coordinates [2.87, -3.98, -1.22], while drone_2 is positioned slightly above ground level, indicating that it may be hovering or in motion. Both drones are likely employed for tasks such as surveillance or data collection within their operational environments.
+
+In summary, drones represent a versatile category of technological objects or robotic systems that operate aerially, capable of executing various missions in different settings, with specific examples like drone_1 and drone_2 illustrating their applications and configurations.</data>
+      <data key="d2">chunk-281875b3970934022624e7881dfef4d7&lt;SEP&gt;chunk-3dd1dae2c508c5b6c1248b8c9a433a22&lt;SEP&gt;chunk-29ae12bd95a6546386c34b2557ec6d44&lt;SEP&gt;chunk-45f0643660df282da9e425abf14dfe5f&lt;SEP&gt;chunk-839f8a74054c2c9df962c360c6280e1b&lt;SEP&gt;chunk-2101dc9b71ca0d7c4303539a75081ebb&lt;SEP&gt;chunk-b912c38150639fc3cdc895d68a4ac90f&lt;SEP&gt;chunk-7402e92978346fc907bbe7aa770e3791&lt;SEP&gt;chunk-83b7d684fda6039e51cbbae24f9f5273&lt;SEP&gt;chunk-7ad84b2ff11f2d6018fdb25416b13108&lt;SEP&gt;chunk-a4d8a1c65e1796465eca6dab790d406d&lt;SEP&gt;chunk-d3e5314dfbe21b137956267f8189bfbe&lt;SEP&gt;chunk-9dbedeefc4498380117a51a1fa0c4dcb&lt;SEP&gt;chunk-813a08dede10fe54449554bd3b80cf12&lt;SEP&gt;chunk-12b20bdc273ab3c4642137044336ce39&lt;SEP&gt;chunk-209b7603bd26c226f4b813c1c8853018&lt;SEP&gt;chunk-3dcbd536f5c482d916593354835d333a&lt;SEP&gt;chunk-a2fd2fa6a370bfca2543526fec127bc1&lt;SEP&gt;chunk-5439742f7b26de20bb0775ac55965c10</data>
+    </node>
+    <node id="&quot;CHAIR_CAFECHARCOALGREY10&quot;">
+      <data key="d0">"FURNITURE"</data>
+      <data key="d1">The entity "CHAIR_CAFECHARCOALGREY10" is identified as a specific chair within a 3D environment, designed for seating in a café or casual setting. It is positioned above ground level, which suggests its intended use within a social or informal context. The chair is located at coordinates (-2.8272, -6.3181, 0.2410), marking its distinct placement in the virtual space. Additionally, "CHAIR_CAFECHARCOALGREY10" is characterized by its charcoal grey color and represents a specific model designed for functionality in the given environment.
+
+The entity serves as part of a seating arrangement in a café, possibly referred to as "Charcoal Grey." It is noted for its fixed position on the surface of the 3D environment, indicating that it is an object meant for use rather than movement. Furthermore, "CHAIR_CAFECHARCOALGREY10" is linked to the positioning of drones in the scene, highlighting its relevance in a virtual layout where it may represent a geographical or spatial reference within the café setting.
+
+Overall, "CHAIR_CAFECHARCOALGREY10" is a distinct 3D object serving a purposeful role as a piece of furniture, integral to the design and function of a café space. Its representation in the virtual environment is key to understanding seating arrangements and interactive elements within that setting.</data>
+      <data key="d2">chunk-34aaef2f4359a2cd141902afff622051&lt;SEP&gt;chunk-3dcbd536f5c482d916593354835d333a&lt;SEP&gt;chunk-c3a0aaed3c1c559f939c6d822dd2b4a2&lt;SEP&gt;chunk-fe1197847ca31f9cd72d33261f022a63&lt;SEP&gt;chunk-90bdb4e24df07be840376b4733060f54&lt;SEP&gt;chunk-2a12935c1f4d87691245b1f3e35acb54&lt;SEP&gt;chunk-813a08dede10fe54449554bd3b80cf12&lt;SEP&gt;chunk-12b20bdc273ab3c4642137044336ce39&lt;SEP&gt;chunk-04ecef17d6d14ae0266aedfbbdab4f6a&lt;SEP&gt;chunk-b0f26dfb79ac1e88ec719ffedf8d3ede&lt;SEP&gt;chunk-83b7d684fda6039e51cbbae24f9f5273&lt;SEP&gt;chunk-7ad84b2ff11f2d6018fdb25416b13108&lt;SEP&gt;chunk-209b7603bd26c226f4b813c1c8853018&lt;SEP&gt;chunk-839f8a74054c2c9df962c360c6280e1b&lt;SEP&gt;chunk-fff8dc8f3c3ecaaccc7b1344d232fa3b&lt;SEP&gt;chunk-4d4cc3b2ebc6bc00642497cdf2f91286</data>
+    </node>
+    <node id="&quot;THE OBJECT&quot;">
+      <data key="d2">chunk-eeccda1bdcc26b155fc03b71aa8858a8</data>
+      <data key="d1">"BaseCharacter_Walking4_11 is a 3D character model in a walking state and is positioned within a larger game environment, indicating its role as part of the scene."</data>
+      <data key="d0">"UNKNOWN"</data>
+    </node>
+    <edge source="&quot;DRONE_0&quot;" target="&quot;DRONE&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"drone_0 represents an instance or application of drone technology in a specific position and designation."</data>
+      <data key="d5">"application of technology, specific instance"</data>
+      <data key="d6">chunk-3dd1dae2c508c5b6c1248b8c9a433a22</data>
+    </edge>
+    <edge source="&quot;DRONE_0&quot;" target="&quot;0.00&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"drone_0's position is marked at the coordinates (0.00, 0.00, -0.97), indicating its spatial location."</data>
+      <data key="d5">"spatial positioning, coordinates"</data>
+      <data key="d6">chunk-3dd1dae2c508c5b6c1248b8c9a433a22</data>
+    </edge>
+    <edge source="&quot;DRONE_0&quot;" target="&quot;-0.97&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"drone_0's position includes a z-coordinate of -0.97, reflecting its altitude or depth."</data>
+      <data key="d5">"altitude, dimensionality"</data>
+      <data key="d6">chunk-3dd1dae2c508c5b6c1248b8c9a433a22</data>
+    </edge>
+    <edge source="&quot;DRONE_0&quot;" target="&quot;YAW&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"yaw indicates the orientation of drone_0, which is essential for navigating its 3D space."</data>
+      <data key="d5">"navigation, orientation"</data>
+      <data key="d6">chunk-3dd1dae2c508c5b6c1248b8c9a433a22</data>
+    </edge>
+    <edge source="&quot;DRONE_0&quot;" target="&quot;TIMESTAMP&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"timestamp logs the moment when drone_0's position was recorded, linking its data to a specific time."</data>
+      <data key="d5">"data logging, temporal context"</data>
+      <data key="d6">chunk-3dd1dae2c508c5b6c1248b8c9a433a22</data>
+    </edge>
+    <edge source="&quot;DRONE_0&quot;" target="&quot;DRONE1&quot;">
+      <data key="d3">26.0</data>
+      <data key="d4">"Drone1 is part of a group of objects that includes drone_0, emphasizing their proximity in the 3D space."&lt;SEP&gt;"drone_0 and Drone1 are both drones situated close to each other in a 3D space, indicating a spatial relationship between them."&lt;SEP&gt;"drone_0 is positioned to the left of Drone1, indicating a clear spatial relationship between the two organizations."&lt;SEP&gt;"drone_0 is positioned to the left of Drone1, indicating a spatial relationship between the two organizations."</data>
+      <data key="d5">"spatial relationship, positioning"&lt;SEP&gt;"spatial relationship, proximity"</data>
+      <data key="d6">chunk-5b8be2ef40518fc5d6d85f6f6d6a8159&lt;SEP&gt;chunk-0c640d5419b88566148a4fb29c0a3b93&lt;SEP&gt;chunk-88790a91a9803b73972cdf638e1d7662</data>
+    </edge>
+    <edge source="&quot;DRONE_0&quot;" target="&quot;COORDINATES&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"drone_0's position is defined by specific coordinates, emphasizing its placement in the 3D space."</data>
+      <data key="d5">"positional context, coordinates"</data>
+      <data key="d6">chunk-0c640d5419b88566148a4fb29c0a3b93</data>
+    </edge>
+    <edge source="&quot;DRONE_0&quot;" target="&quot;REFERENCE PLANE&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"drone_0 is positioned slightly below the reference plane, indicating its vertical relationship to the z-axis."</data>
+      <data key="d5">"vertical positioning, spatial relationship"</data>
+      <data key="d6">chunk-0c640d5419b88566148a4fb29c0a3b93</data>
+    </edge>
+    <edge source="&quot;DRONE_0&quot;" target="&quot;DRONE_1&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"drone_0 is positioned to the right of drone_1, indicating a spatial relationship between the two drones."</data>
+      <data key="d5">"spatial relationship, positioning"</data>
+      <data key="d6">chunk-66f641065475b9b197defd71bf69e82f</data>
+    </edge>
+    <edge source="&quot;DRONE_0&quot;" target="&quot;PLANTERLONG4_BLUEPRINT3&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"drone_0 is positioned to the right of planterLong4_Blueprint3, indicating a spatial relationship."&lt;'space relation'&gt;</data>
+      <data key="d5">5</data>
+      <data key="d6">chunk-a2fd2fa6a370bfca2543526fec127bc1</data>
+    </edge>
+    <edge source="&quot;DRONE_0&quot;" target="&quot;BASECHARACTER_WALKING4_11&quot;">
+      <data key="d3">11.0</data>
+      <data key="d4">"BaseCharacter_Walking4_11 is being tracked or observed by drone_0, suggesting an interaction based on movement."&lt;SEP&gt;"drone_0 is positioned relative to BaseCharacter_Walking4_11, indicating a spatial relationship between the organization and the character."</data>
+      <data key="d5">"spatial relationship, positioning"&lt;SEP&gt;"tracking, observation"</data>
+      <data key="d6">chunk-d6f35efb65ccb0805eb46164a46cb009</data>
+    </edge>
+    <edge source="&quot;DRONE_0&quot;" target="&quot;CHAIR_CAFECHARCOALGREY10&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"drone_0 is positioned to the right of chair_cafeCharcoalGrey10, indicating a spatial relationship between the drone and the seating.")</data>
+      <data key="d5">"spatial relationship"</data>
+      <data key="d6">chunk-839f8a74054c2c9df962c360c6280e1b</data>
+    </edge>
+    <edge source="&quot;DRONE_0&quot;" target="&quot;DRONE_2&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"drone_0 is positioned to the right of drone_2, indicating a spatial relationship between the two entities."</data>
+      <data key="d5">"spatial positioning"</data>
+      <data key="d6">chunk-854fb8eb7dcc27bdd981909de9945ce8</data>
+    </edge>
+    <edge source="&quot;DRONE_0&quot;" target="&quot;THE GROUP OF OBJECTS&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"drone_0 is also a member of the group of objects alongside Drone1, emphasizing their collective presence in the environment."</data>
+      <data key="d5">"membership, collective"</data>
+      <data key="d6">chunk-5b8be2ef40518fc5d6d85f6f6d6a8159</data>
+    </edge>
+    <edge source="&quot;DRONE_0&quot;" target="&quot;3D SPACE&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"drone_0's position is defined within the 3D space by specific coordinates indicating its spatial location."</data>
+      <data key="d5">"spatial reference, geographic context"</data>
+      <data key="d6">chunk-5b8be2ef40518fc5d6d85f6f6d6a8159</data>
+    </edge>
+    <edge source="&quot;YAW&quot;" target="&quot;DRONE_1&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"drone_1's yaw influences its ability to navigate and orient itself in the operational space."</data>
+      <data key="d5">"navigation, orientation"</data>
+      <data key="d6">chunk-a4d8a1c65e1796465eca6dab790d406d</data>
+    </edge>
+    <edge source="&quot;TIMESTAMP&quot;" target="&quot;BASECHARACTER_WALKING4_11&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"The timestamp denotes the moment when data regarding BaseCharacter_Walking4_11 was recorded, tying its state to a specific time in the simulation."</data>
+      <data key="d5">"data logging, temporal reference"</data>
+      <data key="d6">chunk-f4605c166d58b2496b19025ce1436905</data>
+    </edge>
+    <edge source="&quot;TIMESTAMP&quot;" target="&quot;DRONE1&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"The timestamp records when the Drone1 data was captured, linking its information to a specific time frame in operations."</data>
+      <data key="d5">"data capture, temporal context"</data>
+      <data key="d6">chunk-f0d0fbfce6a505bd62b69c25bcf8c08c</data>
+    </edge>
+    <edge source="&quot;TIMESTAMP&quot;" target="&quot;PLANTERLONG4_BLUEPRINT3&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"The timestamp provides a temporal context for the planterLong4_Blueprint3, indicating when the related information was documented or relevant."</data>
+      <data key="d5">"temporal context, documentation"</data>
+      <data key="d6">chunk-d3162b619050a322ec02998bab9e67c3</data>
+    </edge>
+    <edge source="&quot;TIMESTAMP&quot;" target="&quot;DRONE_2&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"timestamp provides the specific time context for the operational data of drone_2."</data>
+      <data key="d5">"temporal data, logging"</data>
+      <data key="d6">chunk-7402e92978346fc907bbe7aa770e3791</data>
+    </edge>
+    <edge source="&quot;BASECHARACTER_WALKING4_11&quot;" target="&quot;LEVEL 0&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"BaseCharacter_Walking4_11 is situated at Level 0, signifying its current status or position within a game or simulation framework."</data>
+      <data key="d5">"status, progression"</data>
+      <data key="d6">chunk-f4605c166d58b2496b19025ce1436905</data>
+    </edge>
+    <edge source="&quot;BASECHARACTER_WALKING4_11&quot;" target="&quot;POSITION&quot;">
+      <data key="d3">17.0</data>
+      <data key="d4">"BaseCharacter_Walking4_11's Position specifies its exact coordinates in the digital space, indicating its location."&lt;SEP&gt;"BaseCharacter_Walking4_11's position is defined by its specific coordinates in the 3D environment, crucial for its placement and movement behavior."</data>
+      <data key="d5">"location, spatial reference"&lt;SEP&gt;"spatial placement, positioning"</data>
+      <data key="d6">chunk-f4605c166d58b2496b19025ce1436905&lt;SEP&gt;chunk-8c51d920afd4aa8572c90da5fa1696c6</data>
+    </edge>
+    <edge source="&quot;BASECHARACTER_WALKING4_11&quot;" target="&quot;BOX2D&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The box2D defines the two-dimensional representation of BaseCharacter_Walking4_11 within the game environment."</data>
+      <data key="d5">"visual representation, collision detection"</data>
+      <data key="d6">chunk-f4605c166d58b2496b19025ce1436905</data>
+    </edge>
+    <edge source="&quot;BASECHARACTER_WALKING4_11&quot;" target="&quot;BOX3D&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The box3D outlines the three-dimensional space occupied by BaseCharacter_Walking4_11 for interaction and representation."</data>
+      <data key="d5">"3D representation, space occupation"</data>
+      <data key="d6">chunk-f4605c166d58b2496b19025ce1436905</data>
+    </edge>
+    <edge source="&quot;BASECHARACTER_WALKING4_11&quot;" target="&quot;3D ENVIRONMENT&quot;">
+      <data key="d3">24.0</data>
+      <data key="d4">"BaseCharacter_Walking4_11 exists and operates within the 3D environment, showcasing its intended functionality of movement and interaction."&lt;SEP&gt;"BaseCharacter_Walking4_11 is positioned within a 3D environment, indicating its active role in that space."&lt;SEP&gt;"BaseCharacter_Walking4_11 is situated within a 3D environment, indicating its role as an animated model that interacts within that space."</data>
+      <data key="d5">"interactive model, virtual environment"&lt;SEP&gt;"virtual entity, spatial relationship"&lt;SEP&gt;"virtual interaction, navigation"</data>
+      <data key="d6">chunk-8f0994b3b4a704d984fc496c567f6ebe&lt;SEP&gt;chunk-8c51d920afd4aa8572c90da5fa1696c6&lt;SEP&gt;chunk-7cdf2e10026b39a6610007ff63257d0e</data>
+    </edge>
+    <edge source="&quot;BASECHARACTER_WALKING4_11&quot;" target="&quot;WALKING STATE&quot;">
+      <data key="d3">27.0</data>
+      <data key="d4">"BaseCharacter_Walking4_11 is animated to represent its Walking State, indicating active movement within the environment."&lt;SEP&gt;"BaseCharacter_Walking4_11 is currently in a walking state, showing its active movement in the simulated environment."&lt;SEP&gt;"BaseCharacter_Walking4_11 is currently in a walking state, which defines its movement behavior in the 3D environment."</data>
+      <data key="d5">"action, activity status"&lt;SEP&gt;"animation, character movement"&lt;SEP&gt;"movement behavior, interaction"</data>
+      <data key="d6">chunk-eeccda1bdcc26b155fc03b71aa8858a8&lt;SEP&gt;chunk-8f0994b3b4a704d984fc496c567f6ebe&lt;SEP&gt;chunk-7cdf2e10026b39a6610007ff63257d0e</data>
+    </edge>
+    <edge source="&quot;BASECHARACTER_WALKING4_11&quot;" target="&quot;COORDINATES&quot;">
+      <data key="d3">26.0</data>
+      <data key="d4">"BaseCharacter_Walking4_11 is defined by its coordinates, which determine its location in the 3D environment."&lt;SEP&gt;"BaseCharacter_Walking4_11 is located at specific coordinates, reflecting its position within the three-dimensional environment."&lt;SEP&gt;"BaseCharacter_Walking4_11's position is defined by its Coordinates, reflecting its specific location within the 3D space."</data>
+      <data key="d5">"location, positioning"&lt;SEP&gt;"positioning, spatial orientation"&lt;SEP&gt;"spatial positioning, digital representation"</data>
+      <data key="d6">chunk-eeccda1bdcc26b155fc03b71aa8858a8&lt;SEP&gt;chunk-8f0994b3b4a704d984fc496c567f6ebe&lt;SEP&gt;chunk-7cdf2e10026b39a6610007ff63257d0e</data>
+    </edge>
+    <edge source="&quot;BASECHARACTER_WALKING4_11&quot;" target="&quot;LEVEL 1&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"BaseCharacter_Walking4_11 is part of Level 1, indicating its role within this specific stage of the game or simulation."</data>
+      <data key="d5">"game structure, level designation"</data>
+      <data key="d6">chunk-8f0994b3b4a704d984fc496c567f6ebe</data>
+    </edge>
+    <edge source="&quot;BASECHARACTER_WALKING4_11&quot;" target="&quot;MOVEMENT&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"BaseCharacter_Walking4_11 is designed to perform movement within the 3D environment, indicating its functional purpose of animation."</data>
+      <data key="d5">"animation, functionality"</data>
+      <data key="d6">chunk-8c51d920afd4aa8572c90da5fa1696c6</data>
+    </edge>
+    <edge source="&quot;BASECHARACTER_WALKING4_11&quot;" target="&quot;SCENE&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"BaseCharacter_Walking4_11 exists within a scene in the 3D environment, allowing for animated interactions and events."</data>
+      <data key="d5">"interactive scene, animation"</data>
+      <data key="d6">chunk-8c51d920afd4aa8572c90da5fa1696c6</data>
+    </edge>
+    <edge source="&quot;BASECHARACTER_WALKING4_11&quot;" target="&quot;THE OBJECT&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"BaseCharacter_Walking4_11 is a 3D character model in a walking state and is positioned within a larger game environment, indicating its role as part of the scene."</data>
+      <data key="d5">"character model, scene integration"</data>
+      <data key="d6">chunk-eeccda1bdcc26b155fc03b71aa8858a8</data>
+    </edge>
+    <edge source="&quot;BASECHARACTER_WALKING4_11&quot;" target="&quot;3D CHARACTER MODEL&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"BaseCharacter_Walking4_11 represents a specific instance of a 3D character model, indicating that it functions as a typical example of this technology."</data>
+      <data key="d5">"example, digital representation"</data>
+      <data key="d6">chunk-eeccda1bdcc26b155fc03b71aa8858a8</data>
+    </edge>
+    <edge source="&quot;BASECHARACTER_WALKING4_11&quot;" target="&quot;THREE-DIMENSIONAL ENVIRONMENT&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"BaseCharacter_Walking4_11 exists within a three-dimensional environment, indicating its role in that digital space."</data>
+      <data key="d5">"virtual interaction, scene context"</data>
+      <data key="d6">chunk-eeccda1bdcc26b155fc03b71aa8858a8</data>
+    </edge>
+    <edge source="&quot;BASECHARACTER_WALKING4_11&quot;" target="&quot;DRONE1&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"BaseCharacter_Walking4_11 is positioned to the right of Drone1, indicating a spatial relationship in their environment."</data>
+      <data key="d5">"spatial relationship, positioning"</data>
+      <data key="d6">chunk-8fc440f95684095ac11786fcc6c7a8ab</data>
+    </edge>
+    <edge source="&quot;BASECHARACTER_WALKING4_11&quot;" target="&quot;DRONE_1&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"BaseCharacter_Walking4_11 is positioned to the right of drone_1, indicating a spatial relationship or interaction between them."</data>
+      <data key="d5">"spatial relationship, interaction"</data>
+      <data key="d6">chunk-1759e6f189008a691ce1a10ea97a4fcd</data>
+    </edge>
+    <edge source="&quot;BASECHARACTER_WALKING4_11&quot;" target="&quot;RIGHT&quot;">
+      <data key="d3">4.0</data>
+      <data key="d4">"The position of BaseCharacter_Walking4_11 relative to drone_1 indicates the directional relationship, specifically to the right."</data>
+      <data key="d5">"directional positioning, spatial relationship"</data>
+      <data key="d6">chunk-1759e6f189008a691ce1a10ea97a4fcd</data>
+    </edge>
+    <edge source="&quot;BASECHARACTER_WALKING4_11&quot;" target="&quot;PLANTERLONG4_BLUEPRINT3&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"BaseCharacter_Walking4_11 is positioned to the left of planterLong4_Blueprint3, indicating a spatial relationship between the two entities."</data>
+      <data key="d5">"spatial relationship, interaction"</data>
+      <data key="d6">chunk-2f953b53ae3af68436d7bf737b0fe3a0</data>
+    </edge>
+    <edge source="&quot;BASECHARACTER_WALKING4_11&quot;" target="&quot;BASECHARACTER&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"BaseCharacter_Walking4_11 is a specific instance of BaseCharacter engaged in action, demonstrating an evolution of the character role."</data>
+      <data key="d5">"character variation, role"</data>
+      <data key="d6">chunk-2f953b53ae3af68436d7bf737b0fe3a0</data>
+    </edge>
+    <edge source="&quot;BASECHARACTER_WALKING4_11&quot;" target="&quot;PLANTERLONG&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"BaseCharacter_Walking4_11 interacts with planterLong in a spatial context, designated by the description to the left."</data>
+      <data key="d5">"interaction, spatial orientation"</data>
+      <data key="d6">chunk-2f953b53ae3af68436d7bf737b0fe3a0</data>
+    </edge>
+    <edge source="&quot;BASECHARACTER_WALKING4_11&quot;" target="&quot;CHAIR_CAFECHARCOALGREY10&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"BaseCharacter_Walking4_11 is positioned to the left of the chair_cafeCharcoalGrey10 in a café setting."</data>
+      <data key="d5">"spatial relationship, positioning"</data>
+      <data key="d6">chunk-34aaef2f4359a2cd141902afff622051</data>
+    </edge>
+    <edge source="&quot;BASECHARACTER_WALKING4_11&quot;" target="&quot;BASECHARACTER_WALKING4&quot;">
+      <data key="d3">4.0</data>
+      <data key="d4">"BaseCharacter_Walking4_11 and BaseCharacter_Walking4 may represent different aspects or stages of the same character, indicating continuity in character development."</data>
+      <data key="d5">"character development, continuity"</data>
+      <data key="d6">chunk-34aaef2f4359a2cd141902afff622051</data>
+    </edge>
+    <edge source="&quot;LEVEL 0&quot;" target="&quot;DRONE1&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"Drone1 is assigned to Level 0, representing its hierarchical function in the operational structure."</data>
+      <data key="d5">"hierarchical structure, operational role"</data>
+      <data key="d6">chunk-f0d0fbfce6a505bd62b69c25bcf8c08c</data>
+    </edge>
+    <edge source="&quot;POSITION&quot;" target="&quot;DRONE1&quot;">
+      <data key="d3">15.0</data>
+      <data key="d4">"Drone1's Position provides vital spatial data essential for understanding its location in the operational environment."&lt;SEP&gt;"The Position of Drone1 is described by its coordinates, further clarifying its location in the 3D environment."</data>
+      <data key="d5">"placement, definition"&lt;SEP&gt;"spatial data, operational context"</data>
+      <data key="d6">chunk-f0d0fbfce6a505bd62b69c25bcf8c08c&lt;SEP&gt;chunk-eb2c43ffbbd33c754a18139720251e10</data>
+    </edge>
+    <edge source="&quot;POSITION&quot;" target="&quot;DRONE_1&quot;">
+      <data key="d3">14.0</data>
+      <data key="d4">"drone_1 exists at a specific Position within the 3D environment, showing its arrangement and orientation in space."."&lt;SEP&gt;"drone_1's Position is critical for defining its operational parameters and potential mission outcomes."</data>
+      <data key="d5">"spatial arrangement, orientation"&lt;SEP&gt;"spatial orientation, mission parameters"</data>
+      <data key="d6">chunk-2b22b78e2b8b77d2c98a421bd87c1129&lt;SEP&gt;chunk-a4d8a1c65e1796465eca6dab790d406d</data>
+    </edge>
+    <edge source="&quot;POSITION&quot;" target="&quot;DRONE0&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The Position of Drone0 is described by its coordinates, further clarifying its location in the 3D environment."</data>
+      <data key="d5">"placement, definition"</data>
+      <data key="d6">chunk-eb2c43ffbbd33c754a18139720251e10</data>
+    </edge>
+    <edge source="&quot;POSITION&quot;" target="&quot;LEVEL&quot;">
+      <data key="d3">14.0</data>
+      <data key="d4">"Level determines instances of Position within the 3D Environment, indicating the specific placement and organization of objects."&lt;SEP&gt;"Level utilizes Position to describe the arrangement of objects in the 3D environment, establishing how height and depth are represented."</data>
+      <data key="d5">"depth representation, positioning"&lt;SEP&gt;"spatial representation, organization"</data>
+      <data key="d6">chunk-2a12935c1f4d87691245b1f3e35acb54&lt;SEP&gt;chunk-04ecef17d6d14ae0266aedfbbdab4f6a</data>
+    </edge>
+    <edge source="&quot;POSITION&quot;" target="&quot;DRONE_2&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"drone_2 has specific Position coordinates, indicating its exact location in the 3D Environment relative to other objects."</data>
+      <data key="d5">"spatial coordinates, positioning"</data>
+      <data key="d6">chunk-2a12935c1f4d87691245b1f3e35acb54</data>
+    </edge>
+    <edge source="&quot;POSITION&quot;" target="&quot;CHAIR_CAFECHARCOALGREY10&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"chair_cafeCharcoalGrey10’s Position is defined by its coordinates in the 3D Environment, determining its arrangement and interaction potential."</data>
+      <data key="d5">"spatial coordinates, positioning"</data>
+      <data key="d6">chunk-2a12935c1f4d87691245b1f3e35acb54</data>
+    </edge>
+    <edge source="&quot;POSITION&quot;" target="&quot;MOVEMENT&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Movement of the character model is directly associated with its position in the 3D environment, essential for dynamic animations."</data>
+      <data key="d5">"dynamic action, spatial interaction"</data>
+      <data key="d6">chunk-8c51d920afd4aa8572c90da5fa1696c6</data>
+    </edge>
+    <edge source="&quot;POSITION&quot;" target="&quot;3D ENVIRONMENT&quot;">
+      <data key="d3">13.0</data>
+      <data key="d4">"Position is an aspect that describes the arrangement of objects within the 3D environment, detailing their spatial relationships."."&lt;SEP&gt;"Position provides a reference for any objects including Planter and Drone within the 3D Environment, establishing their exact locations."</data>
+      <data key="d5">"spatial arrangement, environmental reference"&lt;SEP&gt;"spatial arrangement, organization"</data>
+      <data key="d6">chunk-45f0643660df282da9e425abf14dfe5f&lt;SEP&gt;chunk-2b22b78e2b8b77d2c98a421bd87c1129</data>
+    </edge>
+    <edge source="&quot;POSITION&quot;" target="&quot;BLUEPRINT FOR A LONG BLUE PLANTER&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Blueprint for a long blue planter also has a defined Position within the 3D environment, contributing to the overall structure."."</data>
+      <data key="d5">"spatial arrangement, orientation"</data>
+      <data key="d6">chunk-2b22b78e2b8b77d2c98a421bd87c1129</data>
+    </edge>
+    <edge source="&quot;POSITION&quot;" target="&quot;NODE&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Node encompasses Position as part of the description of how objects are arranged in the 3D space, highlighting the dynamic interaction between them."</data>
+      <data key="d5">"spatial configuration, relationship dynamics"</data>
+      <data key="d6">chunk-04ecef17d6d14ae0266aedfbbdab4f6a</data>
+    </edge>
+    <edge source="&quot;POSITION&quot;" target="&quot;PLANTER&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Position indicates the specific spatial placement of the Planter within the 3D Environment."</data>
+      <data key="d5">"spatial placement, object positioning"</data>
+      <data key="d6">chunk-45f0643660df282da9e425abf14dfe5f</data>
+    </edge>
+    <edge source="&quot;POSITION&quot;" target="&quot;DRONE&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Position indicates the specific spatial placement of the Drone within the 3D Environment."</data>
+      <data key="d5">"spatial placement, object positioning"</data>
+      <data key="d6">chunk-45f0643660df282da9e425abf14dfe5f</data>
+    </edge>
+    <edge source="&quot;BOX2D&quot;" target="&quot;DRONE1&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"The box2D event outlines the planar representation of Drone1's boundaries, essential for spatial understanding in 2D.""</data>
+      <data key="d5">"spatial representation, operational analysis"</data>
+      <data key="d6">chunk-f0d0fbfce6a505bd62b69c25bcf8c08c</data>
+    </edge>
+    <edge source="&quot;BOX2D&quot;" target="&quot;PLANTERLONG4_BLUEPRINT3&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"The box2D defines the two-dimensional space occupied by the planterLong4_Blueprint3, illustrating its size and area within the project context."</data>
+      <data key="d5">"spatial dimensions, area"</data>
+      <data key="d6">chunk-d3162b619050a322ec02998bab9e67c3</data>
+    </edge>
+    <edge source="&quot;BOX3D&quot;" target="&quot;DRONE1&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The box3D event outlines the three-dimensional representation of Drone1's boundaries, crucial for understanding its spatial dimensions.""</data>
+      <data key="d5">"3D representation, operational analysis"</data>
+      <data key="d6">chunk-f0d0fbfce6a505bd62b69c25bcf8c08c</data>
+    </edge>
+    <edge source="&quot;BOX3D&quot;" target="&quot;PLANTERLONG4_BLUEPRINT3&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The box3D defines the three-dimensional volume occupied by the planterLong4_Blueprint3, indicating the spatial parameters of the entity in design space."</data>
+      <data key="d5">"spatial dimensions, volume"</data>
+      <data key="d6">chunk-d3162b619050a322ec02998bab9e67c3</data>
+    </edge>
+    <edge source="&quot;DRONE1&quot;" target="&quot;DRONE0&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Drone0 and Drone1 are both drones located close to each other in a three-dimensional environment, indicating a spatial relationship between them."</data>
+      <data key="d5">"spatial relationship, proximity"</data>
+      <data key="d6">chunk-eb2c43ffbbd33c754a18139720251e10</data>
+    </edge>
+    <edge source="&quot;DRONE1&quot;" target="&quot;GROUP OF OBJECTS&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The Group of Objects includes Drone1, indicating that it is part of a larger collective of entities."</data>
+      <data key="d5">"collective entity, inclusion"</data>
+      <data key="d6">chunk-eb2c43ffbbd33c754a18139720251e10</data>
+    </edge>
+    <edge source="&quot;DRONE1&quot;" target="&quot;3D SPACE&quot;">
+      <data key="d3">16.0</data>
+      <data key="d4">"Drone1 exists within the 3D Space, meaning its position is defined by coordinates in this environment."&lt;SEP&gt;"Drone1's position is also defined within the 3D space by its coordinates, showing its location in relation to other drones."</data>
+      <data key="d5">"spatial context, environment"&lt;SEP&gt;"spatial reference, geographic context"</data>
+      <data key="d6">chunk-5b8be2ef40518fc5d6d85f6f6d6a8159&lt;SEP&gt;chunk-eb2c43ffbbd33c754a18139720251e10</data>
+    </edge>
+    <edge source="&quot;DRONE1&quot;" target="&quot;COORDINATES&quot;">
+      <data key="d3">18.0</data>
+      <data key="d4">"Drone1's position is defined by specific coordinates, highlighting its location relative to drone_0 in the 3D space."&lt;SEP&gt;"The coordinates define the exact location of Drone1 within the 3D Space, indicating its placement relative to other entities."</data>
+      <data key="d5">"location, spatial specification"&lt;SEP&gt;"positional context, coordinates"</data>
+      <data key="d6">chunk-eb2c43ffbbd33c754a18139720251e10&lt;SEP&gt;chunk-0c640d5419b88566148a4fb29c0a3b93</data>
+    </edge>
+    <edge source="&quot;DRONE1&quot;" target="&quot;REFERENCE PLANE&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Drone1 is also located below the reference plane, demonstrating its vertical relationship in the 3D space."</data>
+      <data key="d5">"vertical positioning, spatial relationship"</data>
+      <data key="d6">chunk-0c640d5419b88566148a4fb29c0a3b93</data>
+    </edge>
+    <edge source="&quot;DRONE1&quot;" target="&quot;THE GROUP OF OBJECTS&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Drone1 is a member of the group of objects that comprises multiple drones in the 3D space."</data>
+      <data key="d5">"membership, collective"</data>
+      <data key="d6">chunk-5b8be2ef40518fc5d6d85f6f6d6a8159</data>
+    </edge>
+    <edge source="&quot;DRONE1&quot;" target="&quot;DRONE_1&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Drone1 is positioned to the right of drone_1, indicating a spatial relationship within a drone operation setting."</data>
+      <data key="d5">"spatial relationship, drone operations"</data>
+      <data key="d6">chunk-82f06e4ca709d11732057177781ac28f</data>
+    </edge>
+    <edge source="&quot;DRONE1&quot;" target="&quot;PLANTERLONG4_BLUEPRINT3&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"Drone1 is positioned to the right of planterLong4_Blueprint3, which suggests a spatial relationship between the two entities."</data>
+      <data key="d5">"spatial relationship, positioning"</data>
+      <data key="d6">chunk-c843e5ffbf9f0aa77f639ff37b08de46</data>
+    </edge>
+    <edge source="&quot;DRONE1&quot;" target="&quot;PLANTERLONG4&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"Drone1 is positioned in relation to planterLong4, indicating their operational proximity and potential collaboration."</data>
+      <data key="d5">"spatial relationship, operational proximity"</data>
+      <data key="d6">chunk-c843e5ffbf9f0aa77f639ff37b08de46</data>
+    </edge>
+    <edge source="&quot;DRONE1&quot;" target="&quot;BLUEPRINT3&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"The position of Drone1 relative to the Blueprint3 suggests that Drone1 may be utilizing or implementing the designs specified by Blueprint3."</data>
+      <data key="d5">"design application, technology utilization"</data>
+      <data key="d6">chunk-c843e5ffbf9f0aa77f639ff37b08de46</data>
+    </edge>
+    <edge source="&quot;DRONE1&quot;" target="&quot;CHAIR_CAFECHARCOALGREY10&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"Drone1 is positioned to the right of chair_cafeCharcoalGrey10, indicating a spatial relationship between the two entities."</data>
+      <data key="d5">"spatial relationship, positioning"</data>
+      <data key="d6">chunk-c3a0aaed3c1c559f939c6d822dd2b4a2</data>
+    </edge>
+    <edge source="&quot;DRONE1&quot;" target="&quot;DRONE_2&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"Drone1 is positioned to the right of drone_2, indicating their spatial relationship in an operational context."</data>
+      <data key="d5">"spatial relationship, positioning"</data>
+      <data key="d6">chunk-c877d38a6dc157297dd3f653d110a60a</data>
+    </edge>
+    <edge source="&quot;PLANTERLONG4_BLUEPRINT3&quot;" target="&quot;LEVEL&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"planterLong4_Blueprint3 signifies a specific level within a design or project context, indicating its hierarchy or stage in the development process."</data>
+      <data key="d5">"hierarchical structure, project development"</data>
+      <data key="d6">chunk-d3162b619050a322ec02998bab9e67c3</data>
+    </edge>
+    <edge source="&quot;PLANTERLONG4_BLUEPRINT3&quot;" target="&quot;DRONE&quot;">
+      <data key="d3">13.0</data>
+      <data key="d4">"The planterLong4_Blueprint3 and drone_1 exist within the same 3D environment, each serving different functions related to the spatial layout."&lt;SEP&gt;"planterLong4_Blueprint3 may utilize drone technology to enhance its operational efficiency in agricultural tasks."</data>
+      <data key="d5">"spatial relationship, environmental context"&lt;SEP&gt;"technological enhancement, operational efficiency"</data>
+      <data key="d6">chunk-b912c38150639fc3cdc895d68a4ac90f&lt;SEP&gt;chunk-5439742f7b26de20bb0775ac55965c10</data>
+    </edge>
+    <edge source="&quot;PLANTERLONG4_BLUEPRINT3&quot;" target="&quot;PLANTER&quot;">
+      <data key="d3">23.0</data>
+      <data key="d4">"The planterLong4_Blueprint3 is the design from which the Planter object is derived, serving as its blueprint."&lt;SEP&gt;"The planterLong4_Blueprint3 serves as the design reference for the Planter in the 3D environment, establishing its identity."&lt;SEP&gt;"The planterLong4_Blueprint3 serves as the design specification for the Planter, guiding its physical implementation in the environment."&lt;SEP&gt;"The planterLong4_Blueprint3 serves the same function as the generic Planter, reinforcing its role in the 3D environment."</data>
+      <data key="d5">"design reference, identity"&lt;SEP&gt;"design relationship, object origin"&lt;SEP&gt;"design relationship, object specification"&lt;SEP&gt;"object role, functionality"</data>
+      <data key="d6">chunk-45f0643660df282da9e425abf14dfe5f&lt;SEP&gt;chunk-9dbedeefc4498380117a51a1fa0c4dcb&lt;SEP&gt;chunk-29ae12bd95a6546386c34b2557ec6d44&lt;SEP&gt;chunk-d3e5314dfbe21b137956267f8189bfbe</data>
+    </edge>
+    <edge source="&quot;PLANTERLONG4_BLUEPRINT3&quot;" target="&quot;DRONE_1&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"planterLong4_Blueprint3 is to the left of drone_1, indicating a spatial relationship in their operational setup."</data>
+      <data key="d5">"spatial relationship, operational setup"</data>
+      <data key="d6">chunk-2101dc9b71ca0d7c4303539a75081ebb</data>
+    </edge>
+    <edge source="&quot;PLANTERLONG4_BLUEPRINT3&quot;" target="&quot;CHAIR_CAFECHARCOALGREY10&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"planterLong4_Blueprint3 is positioned to the right of chair_cafeCharcoalGrey10, indicating a spatial relationship between the two entities."</data>
+      <data key="d5">"spatial relationship, positioning"</data>
+      <data key="d6">chunk-fff8dc8f3c3ecaaccc7b1344d232fa3b</data>
+    </edge>
+    <edge source="&quot;PLANTERLONG4_BLUEPRINT3&quot;" target="&quot;BLUEPRINT3&quot;">
+      <data key="d3">4.0</data>
+      <data key="d4">"The relationship suggests that the planterLong4_Blueprint3 is represented within the framework of Blueprint3, linking design elements."</data>
+      <data key="d5">"design relationship, layout"</data>
+      <data key="d6">chunk-fff8dc8f3c3ecaaccc7b1344d232fa3b</data>
+    </edge>
+    <edge source="&quot;PLANTERLONG4_BLUEPRINT3&quot;" target="&quot;DRONE_2&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"planterLong4_Blueprint3 and drone_2 are connected in a spatial relationship, with drone_2 positioned to the right of planterLong4_Blueprint3, indicating a physical interaction between the two entities."</data>
+      <data key="d5">"spatial relationship, interaction"</data>
+      <data key="d6">chunk-b912c38150639fc3cdc895d68a4ac90f</data>
+    </edge>
+    <edge source="&quot;PLANTERLONG4_BLUEPRINT3&quot;" target="&quot;PLANTERLONG4&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"planterLong4 is likely the physical entity or project represented by the Blueprint3, indicating a structural hierarchy between the two."</data>
+      <data key="d5">"design hierarchy, structural relationship"</data>
+      <data key="d6">chunk-b912c38150639fc3cdc895d68a4ac90f</data>
+    </edge>
+    <edge source="&quot;DRONE_1&quot;" target="&quot;NODE&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"drone_1 operates within a specific node structure, implicating its role in a larger system or network."</data>
+      <data key="d5">"technology, system integration"</data>
+      <data key="d6">chunk-a4d8a1c65e1796465eca6dab790d406d</data>
+    </edge>
+    <edge source="&quot;DRONE_1&quot;" target="&quot;LEVEL&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"drone_1 is positioned at a specific Level within the operational hierarchy, determining its role and capabilities."</data>
+      <data key="d5">"operational hierarchy, role definition"</data>
+      <data key="d6">chunk-a4d8a1c65e1796465eca6dab790d406d</data>
+    </edge>
+    <edge source="&quot;DRONE_1&quot;" target="&quot;BLUEPRINT FOR A LONG BLUE PLANTER&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"The drone_1 and the blueprint are both objects in the 3D environment, likely involved in a spatial interaction considering their defined locations."."</data>
+      <data key="d5">"3D environment, interaction"</data>
+      <data key="d6">chunk-2b22b78e2b8b77d2c98a421bd87c1129</data>
+    </edge>
+    <edge source="&quot;DRONE_1&quot;" target="&quot;COORDINATES&quot;">
+      <data key="d3">14.0</data>
+      <data key="d4">"Coordinates specify the location of the drone_1 in the 3D Environment, ensuring its precise placement."&lt;SEP&gt;"drone_1 is positioned at specific coordinates, illustrating its location within the 3D environment."."</data>
+      <data key="d5">"spatial information, localization"&lt;SEP&gt;"spatial positioning, location"</data>
+      <data key="d6">chunk-2b22b78e2b8b77d2c98a421bd87c1129&lt;SEP&gt;chunk-281875b3970934022624e7881dfef4d7</data>
+    </edge>
+    <edge source="&quot;DRONE_1&quot;" target="&quot;DRONE&quot;">
+      <data key="d3">12.0</data>
+      <data key="d4">"The drone_1 serves as the designated model for the Drone in the 3D environment, establishing its functionality and utility."&lt;SEP&gt;"drone_1 refers to the specific instance of the Drone object, defining its purpose within the 3D environment."</data>
+      <data key="d5">"instance relationship, functional object"&lt;SEP&gt;"model designation, functionality"</data>
+      <data key="d6">chunk-45f0643660df282da9e425abf14dfe5f&lt;SEP&gt;chunk-9dbedeefc4498380117a51a1fa0c4dcb</data>
+    </edge>
+    <edge source="&quot;DRONE_1&quot;" target="&quot;RIGHT&quot;">
+      <data key="d3">4.0</data>
+      <data key="d4">"drone_1's position is defined in relation to the Right, indicating its spatial orientation with respect to BaseCharacter_Walking4_11."</data>
+      <data key="d5">"directional orientation, spatial relationship"</data>
+      <data key="d6">chunk-1759e6f189008a691ce1a10ea97a4fcd</data>
+    </edge>
+    <edge source="&quot;DRONE_1&quot;" target="&quot;DRONE_2&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"drone_1 is positioned to the right of drone_2, indicating a spatial relationship between the two entities."</data>
+      <data key="d5">"spatial relationship"</data>
+      <data key="d6">chunk-485f799ad70c750307ee33e2b97b0a98</data>
+    </edge>
+    <edge source="&quot;DRONE_1&quot;" target="&quot;CHAIR_CAFECHARCOALGREY10&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"drone_1 is positioned to the right of chair_cafeCharcoalGrey10, indicating its spatial relationship in the café setting."</data>
+      <data key="d5">"spatial relationship, positioning"</data>
+      <data key="d6">chunk-209b7603bd26c226f4b813c1c8853018</data>
+    </edge>
+    <edge source="&quot;DRONE_1&quot;" target="&quot;CHAIR&quot;">
+      <data key="d3">4.0</data>
+      <data key="d4">"drone_1 is placed in relation to the chair, indicating how technology interacts with physical objects in a café setting."</data>
+      <data key="d5">"technological interaction, spatial arrangement"</data>
+      <data key="d6">chunk-209b7603bd26c226f4b813c1c8853018</data>
+    </edge>
+    <edge source="&quot;DRONE_1&quot;" target="&quot;CAFÉ&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"drone_1 operates within the café environment, suggesting its role in service or monitoring activities in that setting."</data>
+      <data key="d5">"operational context, service environment"</data>
+      <data key="d6">chunk-209b7603bd26c226f4b813c1c8853018</data>
+    </edge>
+    <edge source="&quot;DRONE_1&quot;" target="&quot;3D ENVIRONMENT&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"drone_1 is positioned in the 3D Environment, indicating its functional role among other objects present."</data>
+      <data key="d5">"object placement, virtual space"</data>
+      <data key="d6">chunk-281875b3970934022624e7881dfef4d7</data>
+    </edge>
+    <edge source="&quot;NODE&quot;" target="&quot;DRONE&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"Node serves as a structural framework within which drones operate, supporting their functionality and mission objectives."</data>
+      <data key="d5">"system architecture, operational framework"</data>
+      <data key="d6">chunk-a4d8a1c65e1796465eca6dab790d406d</data>
+    </edge>
+    <edge source="&quot;NODE&quot;" target="&quot;3D ENVIRONMENT&quot;">
+      <data key="d3">17.0</data>
+      <data key="d4">"Node defines the setting for the interaction of objects within the 3D Environment."&lt;SEP&gt;"Node is a central concept that defines the context in which the 3D Environment is referenced, as it encompasses both objects with their spatial attributes."&lt;SEP&gt;"Node serves as the reference point within the 3D environment that organizes the various objects present."."</data>
+      <data key="d5">"conceptual context, spatial awareness"&lt;SEP&gt;"structure, reference point"&lt;SEP&gt;"virtual space, context"</data>
+      <data key="d6">chunk-2a12935c1f4d87691245b1f3e35acb54&lt;SEP&gt;chunk-2b22b78e2b8b77d2c98a421bd87c1129&lt;SEP&gt;chunk-04ecef17d6d14ae0266aedfbbdab4f6a</data>
+    </edge>
+    <edge source="&quot;LEVEL&quot;" target="&quot;3D ENVIRONMENT&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"The 3D Environment incorporates levels, suggesting that there are different heights or layers present in the setting."</data>
+      <data key="d5">"multi-level, spatial organization"</data>
+      <data key="d6">chunk-2a12935c1f4d87691245b1f3e35acb54</data>
+    </edge>
+    <edge source="&quot;LEVEL&quot;" target="&quot;DRONE_2&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"drone_2 exists at a specific Level within the 3D Environment, contributing to its placement and interaction with other objects."</data>
+      <data key="d5">"object placement, spatial interaction"</data>
+      <data key="d6">chunk-2a12935c1f4d87691245b1f3e35acb54</data>
+    </edge>
+    <edge source="&quot;LEVEL&quot;" target="&quot;CHAIR_CAFECHARCOALGREY10&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"chair_cafeCharcoalGrey10 is situated at a particular Level within the 3D Environment, impacting its functional arrangement and accessibility."</data>
+      <data key="d5">"object placement, spatial arrangement"</data>
+      <data key="d6">chunk-2a12935c1f4d87691245b1f3e35acb54</data>
+    </edge>
+    <edge source="&quot;DRONE_2&quot;" target="&quot;DRONE_2&quot;">
+      <data key="d3">0.0</data>
+      <data key="d4">"This entity does not have a related entity pair to form a relationship with, as it's singular and represents its operational data."."</data>
+      <data key="d5">"none"</data>
+      <data key="d6">chunk-7402e92978346fc907bbe7aa770e3791</data>
+    </edge>
+    <edge source="&quot;DRONE_2&quot;" target="&quot;DRONE&quot;">
+      <data key="d3">17.0</data>
+      <data key="d4">"drone_2 exemplifies the category of Drones, embodying the characteristics of unmanned aerial vehicles."&lt;SEP&gt;"drone_2 is a specific instance of a drone, which is a type of technology used for various functions."</data>
+      <data key="d5">"category, technology"&lt;SEP&gt;"instance, technology"</data>
+      <data key="d6">chunk-7ad84b2ff11f2d6018fdb25416b13108&lt;SEP&gt;chunk-7402e92978346fc907bbe7aa770e3791</data>
+    </edge>
+    <edge source="&quot;DRONE_2&quot;" target="&quot;0.05&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"drone_2's x-axis position is defined as 0.05, indicating its location in space."</data>
+      <data key="d5">"positioning, spatial coordinates"</data>
+      <data key="d6">chunk-7402e92978346fc907bbe7aa770e3791</data>
+    </edge>
+    <edge source="&quot;DRONE_2&quot;" target="&quot;-8.75&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"drone_2's y-axis position is defined as -8.75, indicating its location in space."</data>
+      <data key="d5">"positioning, spatial coordinates"</data>
+      <data key="d6">chunk-7402e92978346fc907bbe7aa770e3791</data>
+    </edge>
+    <edge source="&quot;DRONE_2&quot;" target="&quot;-1.34&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"drone_2's z-axis position is defined as -1.34, indicating its location in space."</data>
+      <data key="d5">"positioning, spatial coordinates"</data>
+      <data key="d6">chunk-7402e92978346fc907bbe7aa770e3791</data>
+    </edge>
+    <edge source="&quot;DRONE_2&quot;" target="&quot;-3.133008010462549&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"-3.133008010462549 indicates the yaw angle of drone_2, describing its orientation."</data>
+      <data key="d5">"orientation, operational parameters"</data>
+      <data key="d6">chunk-7402e92978346fc907bbe7aa770e3791</data>
+    </edge>
+    <edge source="&quot;DRONE_2&quot;" target="&quot;CHAIR_CAFECHARCOALGREY10&quot;">
+      <data key="d3">53.0</data>
+      <data key="d4">"Both drone_2 and chair_cafeCharcoalGrey10 occupy the same 3D environment, with distinct spatial positioning, indicating a functional relationship in that they are both integral objects in the space."&lt;SEP&gt;"The drone and the chair are positioned in the same 3D space, suggesting they may have some functional or contextual relationship within the scene."&lt;SEP&gt;"The drone and the chair exist in the same 3D environment, indicating simultaneous presence and possibly a functional relationship within the spatial context."&lt;SEP&gt;"The drone_2 is part of a 3D environment that includes the chair_cafeCharcoalGrey10, suggesting a scene that facilitates interaction or observation within a casual setting."&lt;SEP&gt;"drone_2 and chair_cafeCharcoalGrey10 are both components of the 3D Environment, each occupying distinct positions."&lt;&lt;"component relationship"&lt;SEP&gt;"drone_2 and chair_cafeCharcoalGrey10 are both distinct objects within the same 3D environment, contributing to the spatial arrangement of the scene."&lt;SEP&gt;"drone_2 and chair_cafeCharcoalGrey10 are both key objects in the 3D environment, defined by their specific spatial coordinates."&lt;SEP&gt;"drone_2 and chair_cafeCharcoalGrey10 are both objects located within the same 3D environment, illustrating their coexistence in a defined space."&lt;SEP&gt;"drone_2 is part of the same 3D environment as chair_cafeCharcoalGrey10, but serves a different functional purpose, indicating a spatial relationship."&lt;SEP&gt;"drone_2 is positioned in relation to chair_cafeCharcoalGrey10, suggesting a spatial relationship where the drone is located to the left of the chair."&lt;&lt;"spatial relationship, positioning"</data>
+      <data key="d5">"3D environment, spatial arrangement"&lt;SEP&gt;"object coexistence, spatial relationship"&lt;SEP&gt;"object relationship, spatial positioning"&lt;SEP&gt;"spatial arrangement, functional contrast"&lt;SEP&gt;"spatial relationship, contextual placement"&lt;SEP&gt;"spatial relationship, environment"&lt;SEP&gt;"spatial relationship, functional context"&lt;SEP&gt;"spatial relationship, functional objects"&lt;SEP&gt;5</data>
+      <data key="d6">chunk-3dcbd536f5c482d916593354835d333a&lt;SEP&gt;chunk-fe1197847ca31f9cd72d33261f022a63&lt;SEP&gt;chunk-2a12935c1f4d87691245b1f3e35acb54&lt;SEP&gt;chunk-813a08dede10fe54449554bd3b80cf12&lt;SEP&gt;chunk-12b20bdc273ab3c4642137044336ce39&lt;SEP&gt;chunk-04ecef17d6d14ae0266aedfbbdab4f6a&lt;SEP&gt;chunk-83b7d684fda6039e51cbbae24f9f5273&lt;SEP&gt;chunk-7ad84b2ff11f2d6018fdb25416b13108&lt;SEP&gt;chunk-90bdb4e24df07be840376b4733060f54&lt;SEP&gt;chunk-4d4cc3b2ebc6bc00642497cdf2f91286</data>
+    </edge>
+    <edge source="&quot;DRONE_2&quot;" target="&quot;COORDINATES&quot;">
+      <data key="d3">32.0</data>
+      <data key="d4">"The coordinates provide the location of the drone_2, showing its precise position in the 3D space."&lt;SEP&gt;"The coordinates provided define the specific location of drone_2 in the 3D Environment."&lt;SEP&gt;"The specific Coordinates indicate the location of drone_2 within the 3D Environment, providing essential data for its positioning."&lt;SEP&gt;"coordinates provide the specific spatial position of drone_2 within the 3D environment, indicating its placement in terms of x, y, and z values."</data>
+      <data key="d5">"location tracking, spatial awareness"&lt;SEP&gt;"location, positioning"&lt;SEP&gt;"location, spatial data"&lt;SEP&gt;"spatial data, positional information"</data>
+      <data key="d6">chunk-04ecef17d6d14ae0266aedfbbdab4f6a&lt;SEP&gt;chunk-7ad84b2ff11f2d6018fdb25416b13108&lt;SEP&gt;chunk-90bdb4e24df07be840376b4733060f54&lt;SEP&gt;chunk-4d4cc3b2ebc6bc00642497cdf2f91286</data>
+    </edge>
+    <edge source="&quot;DRONE_2&quot;" target="&quot;THE SCENE&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The Scene is defined by the presence of drone_2, which is a key object within the described environment."</data>
+      <data key="d5">"object presence, scene definition"</data>
+      <data key="d6">chunk-4d4cc3b2ebc6bc00642497cdf2f91286</data>
+    </edge>
+    <edge source="&quot;DRONE_2&quot;" target="&quot;BLUEPRINT3&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Blueprint3 may include specifications for the operations or tasks for drone_2, indicating that drone_2 operates under the guidelines laid out by Blueprint3."</data>
+      <data key="d5">"operational guidelines, project management"</data>
+      <data key="d6">chunk-b912c38150639fc3cdc895d68a4ac90f</data>
+    </edge>
+    <edge source="&quot;DRONE_2&quot;" target="&quot;TO_THE_RIGHT_OF&quot;">
+      <data key="d3">4.0</data>
+      <data key="d4">"drone_2 is positioned to the right of planterLong4 as indicated, which suggests a specific spatial organization in a layout or operation."</data>
+      <data key="d5">"spatial organization, positioning"</data>
+      <data key="d6">chunk-b912c38150639fc3cdc895d68a4ac90f</data>
+    </edge>
+    <edge source="&quot;DRONE_2&quot;" target="&quot;3D ENVIRONMENT&quot;">
+      <data key="d3">14.0</data>
+      <data key="d4">"The drone exists within the 3D Environment, which defines the space for its functionality and interactions."&lt;SEP&gt;"drone_2 exists within the 3D Environment, which allows for its visualization and interaction with other objects."</data>
+      <data key="d5">"spatial context, technology"&lt;SEP&gt;"virtual space, interaction"</data>
+      <data key="d6">chunk-7ad84b2ff11f2d6018fdb25416b13108&lt;SEP&gt;chunk-90bdb4e24df07be840376b4733060f54</data>
+    </edge>
+    <edge source="&quot;DRONE_2&quot;" target="&quot;SCENE&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The Scene includes the presence of drone_2, showcasing its function within the 3D Environment."</data>
+      <data key="d5">"interaction, observation"</data>
+      <data key="d6">chunk-7ad84b2ff11f2d6018fdb25416b13108</data>
+    </edge>
+    <edge source="&quot;DRONE_2&quot;" target="&quot;CHAIR&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"drone_2's positioning to the left of chair_cafeCharcoalGrey10 suggests a spatial orientation in relation to the Chair."</data>
+      <data key="d5">"spatial orientation, positioning"</data>
+      <data key="d6">chunk-fe1197847ca31f9cd72d33261f022a63</data>
+    </edge>
+    <edge source="&quot;DRONE_2&quot;" target="&quot;ORIGIN POINT&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The position of drone_2 is measured relative to the Origin Point, which serves as the reference in the 3D Environment."</data>
+      <data key="d5">"reference point, positioning"</data>
+      <data key="d6">chunk-90bdb4e24df07be840376b4733060f54</data>
+    </edge>
+    <edge source="&quot;DRONE_2&quot;" target="&quot;NEGATIVE Z-AXIS&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The elevation of drone_2 is defined by its position on the Negative Z-axis, indicating its height above the ground level."</data>
+      <data key="d5">"elevation, vertical positioning"</data>
+      <data key="d6">chunk-90bdb4e24df07be840376b4733060f54</data>
+    </edge>
+    <edge source="&quot;DRONE_2&quot;" target="&quot;X-COORDINATE&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The position of drone_2 is defined by its X-coordinate, which determines its horizontal placement in the 3D space."</data>
+      <data key="d5">"coordinate system, positioning"</data>
+      <data key="d6">chunk-813a08dede10fe54449554bd3b80cf12</data>
+    </edge>
+    <edge source="&quot;DRONE_2&quot;" target="&quot;Y-COORDINATE&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The drone's Y-coordinate indicates that it is located slightly above the ground level, affecting its perceived height and position."</data>
+      <data key="d5">"height, positioning"</data>
+      <data key="d6">chunk-813a08dede10fe54449554bd3b80cf12</data>
+    </edge>
+    <edge source="&quot;DRONE0&quot;" target="&quot;GROUP OF OBJECTS&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The Group of Objects includes Drone0, indicating that it is part of a larger collective of entities."</data>
+      <data key="d5">"collective entity, inclusion"</data>
+      <data key="d6">chunk-eb2c43ffbbd33c754a18139720251e10</data>
+    </edge>
+    <edge source="&quot;DRONE0&quot;" target="&quot;3D SPACE&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Drone0 exists within the 3D Space, meaning its position is defined by coordinates in this environment."</data>
+      <data key="d5">"spatial context, environment"</data>
+      <data key="d6">chunk-eb2c43ffbbd33c754a18139720251e10</data>
+    </edge>
+    <edge source="&quot;DRONE0&quot;" target="&quot;COORDINATES&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"The coordinates define the exact location of Drone0 within the 3D Space, indicating its placement relative to other entities."</data>
+      <data key="d5">"location, spatial specification"</data>
+      <data key="d6">chunk-eb2c43ffbbd33c754a18139720251e10</data>
+    </edge>
+    <edge source="&quot;3D SPACE&quot;" target="&quot;LEVEL 4&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"Level 4 indicates a specific elevation within the 3D Space, suggesting a structured environment with different levels of height."</data>
+      <data key="d5">"spatial organization, structure"</data>
+      <data key="d6">chunk-4d4cc3b2ebc6bc00642497cdf2f91286</data>
+    </edge>
+    <edge source="&quot;3D SPACE&quot;" target="&quot;THE GROUP OF OBJECTS&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The group of objects, consisting of drone_0 and Drone1, exists within the 3D space, defining their spatial context."</data>
+      <data key="d5">"existence, spatial context"</data>
+      <data key="d6">chunk-0c640d5419b88566148a4fb29c0a3b93</data>
+    </edge>
+    <edge source="&quot;COORDINATES&quot;" target="&quot;3D ENVIRONMENT&quot;">
+      <data key="d3">24.0</data>
+      <data key="d4">"Coordinates are utilized within the 3D environment to determine where objects like the planter and drone are located."&lt;SEP&gt;"The 3D environment provides a context for the coordinates that specify the locations of both the Planter and Drone."&lt;SEP&gt;"coordinates provide a necessary reference framework for understanding object placement and movement within the 3D Environment."</data>
+      <data key="d5">"spatial context, location tracking"&lt;SEP&gt;"spatial framework, object relationships"&lt;SEP&gt;"spatial organization, virtual space"</data>
+      <data key="d6">chunk-29ae12bd95a6546386c34b2557ec6d44&lt;SEP&gt;chunk-12b20bdc273ab3c4642137044336ce39&lt;SEP&gt;chunk-5439742f7b26de20bb0775ac55965c10</data>
+    </edge>
+    <edge source="&quot;COORDINATES&quot;" target="&quot;BLUEPRINT FOR A LONG BLUE PLANTER&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The blueprint for a long blue planter is situated at specific coordinates, defining its location in the 3D environment."."</data>
+      <data key="d5">"spatial positioning, location"</data>
+      <data key="d6">chunk-2b22b78e2b8b77d2c98a421bd87c1129</data>
+    </edge>
+    <edge source="&quot;COORDINATES&quot;" target="&quot;CHAIR_CAFECHARCOALGREY10&quot;">
+      <data key="d3">32.0</data>
+      <data key="d4">"The Coordinates describe the placement of chair_cafeCharcoalGrey10 within the 3D Environment, essential for understanding its spatial relation to the drone."&lt;SEP&gt;"The coordinates indicate the specific position of chair_cafeCharcoalGrey10 within the 3D Environment."&lt;SEP&gt;"The coordinates reflect the location of chair_cafeCharcoalGrey10 in the 3D space, indicating its placement relative to the drone."&lt;SEP&gt;"coordinates furnish necessary positional data for chair_cafeCharcoalGrey10 within the 3D environment, illustrating its exact location in the space."</data>
+      <data key="d5">"location tracking, spatial awareness"&lt;SEP&gt;"location, positioning"&lt;SEP&gt;"location, spatial data"&lt;SEP&gt;"spatial data, positional information"</data>
+      <data key="d6">chunk-04ecef17d6d14ae0266aedfbbdab4f6a&lt;SEP&gt;chunk-7ad84b2ff11f2d6018fdb25416b13108&lt;SEP&gt;chunk-90bdb4e24df07be840376b4733060f54&lt;SEP&gt;chunk-4d4cc3b2ebc6bc00642497cdf2f91286</data>
+    </edge>
+    <edge source="&quot;COORDINATES&quot;" target="&quot;PLANTER&quot;">
+      <data key="d3">30.0</data>
+      <data key="d4">"Coordinates are used to define the specific location of the Planter within the 3D Environment."&lt;SEP&gt;"Coordinates determine the Planter's location in the 3D Environment, providing essential information about its spatial positioning."&lt;SEP&gt;"Coordinates indicate the specific placement of the Planter within the 3D environment."&lt;SEP&gt;"The Planter's position is also defined by specific coordinates in the 3D environment, integral to its placement."</data>
+      <data key="d5">"location definition, positioning"&lt;SEP&gt;"spatial definition, location"&lt;SEP&gt;"spatial information, localization"&lt;SEP&gt;"spatial positioning, object placement"</data>
+      <data key="d6">chunk-45f0643660df282da9e425abf14dfe5f&lt;SEP&gt;chunk-29ae12bd95a6546386c34b2557ec6d44&lt;SEP&gt;chunk-d3e5314dfbe21b137956267f8189bfbe&lt;SEP&gt;chunk-281875b3970934022624e7881dfef4d7</data>
+    </edge>
+    <edge source="&quot;COORDINATES&quot;" target="&quot;DRONE&quot;">
+      <data key="d3">30.0</data>
+      <data key="d4">"Coordinates are used to define the specific location of the Drone within the 3D Environment."&lt;SEP&gt;"Coordinates denote the specific positioning of the Drone within the 3D environment."&lt;SEP&gt;"The Drone's location is defined by specific coordinates in the 3D environment, essential for its operations."&lt;SEP&gt;"the positioning of drone_2 is defined by its coordinates, which specify its location in the 3D Environment."</data>
+      <data key="d5">"location definition, positioning"&lt;SEP&gt;"location, positioning"&lt;SEP&gt;"spatial definition, location"&lt;SEP&gt;"spatial positioning, object placement"</data>
+      <data key="d6">chunk-45f0643660df282da9e425abf14dfe5f&lt;SEP&gt;chunk-29ae12bd95a6546386c34b2557ec6d44&lt;SEP&gt;chunk-d3e5314dfbe21b137956267f8189bfbe&lt;SEP&gt;chunk-12b20bdc273ab3c4642137044336ce39</data>
+    </edge>
+    <edge source="&quot;COORDINATES&quot;" target="&quot;THREE-DIMENSIONAL ENVIRONMENT&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Coordinates provide a means to define locations within the three-dimensional environment, crucial for placement of objects and characters."</data>
+      <data key="d5">"spatial definition, mapping"</data>
+      <data key="d6">chunk-eeccda1bdcc26b155fc03b71aa8858a8</data>
+    </edge>
+    <edge source="&quot;COORDINATES&quot;" target="&quot;CHAIR&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"the placement of chair_cafeCharcoalGrey10 is determined by its coordinates, indicating its exact location relative to other objects."</data>
+      <data key="d5">"location, spatial awareness"</data>
+      <data key="d6">chunk-12b20bdc273ab3c4642137044336ce39</data>
+    </edge>
+    <edge source="&quot;COORDINATES&quot;" target="&quot;GAME ENVIRONMENT&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Coordinates define how objects like BaseCharacter_Walking4_11 are positioned within the Game Environment."</data>
+      <data key="d5">"spatial relation, coordinates"</data>
+      <data key="d6">chunk-7cdf2e10026b39a6610007ff63257d0e</data>
+    </edge>
+    <edge source="&quot;3D CHARACTER MODEL&quot;" target="&quot;SCENE&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The 3D character model exists within a scene, suggesting it contributes to the overall narrative or interaction possibilities of the virtual environment."</data>
+      <data key="d5">"virtual interaction, environment design"</data>
+      <data key="d6">chunk-8f0994b3b4a704d984fc496c567f6ebe</data>
+    </edge>
+    <edge source="&quot;3D CHARACTER MODEL&quot;" target="&quot;GAME ENVIRONMENT&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"A 3D Character Model exists within a Game Environment, allowing interaction and animation as part of gameplay."</data>
+      <data key="d5">"interaction, virtual space"</data>
+      <data key="d6">chunk-7cdf2e10026b39a6610007ff63257d0e</data>
+    </edge>
+    <edge source="&quot;WALKING STATE&quot;" target="&quot;GAME ENVIRONMENT&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The Walking State indicates how the character functions within the Game Environment, showcasing its role in animations and gameplay dynamics."</data>
+      <data key="d5">"gameplay dynamics, character functionality"</data>
+      <data key="d6">chunk-7cdf2e10026b39a6610007ff63257d0e</data>
+    </edge>
+    <edge source="&quot;SCENE&quot;" target="&quot;LEVEL 1&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"The scene is situated in Level 1, indicating the specific layer within the game where the visual and interactive elements are presented."</data>
+      <data key="d5">"environmental context, game layering"</data>
+      <data key="d6">chunk-8f0994b3b4a704d984fc496c567f6ebe</data>
+    </edge>
+    <edge source="&quot;SCENE&quot;" target="&quot;3D ENVIRONMENT&quot;">
+      <data key="d3">16.0</data>
+      <data key="d4">"The Scene consists of elements like the drone and chair, occurring within the 3D Environment, defining its context."&lt;SEP&gt;"The scene is a component of the 3D environment, which encompasses the character models and facilitates their interactions."</data>
+      <data key="d5">"overall setup, interaction"&lt;SEP&gt;"spatial context, interactive environment"</data>
+      <data key="d6">chunk-7ad84b2ff11f2d6018fdb25416b13108&lt;SEP&gt;chunk-8c51d920afd4aa8572c90da5fa1696c6</data>
+    </edge>
+    <edge source="&quot;SCENE&quot;" target="&quot;CHAIR_CAFECHARCOALGREY10&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The Scene features chair_cafeCharcoalGrey10, indicating its role in providing seating within the 3D Environment."</data>
+      <data key="d5">"interaction, observation"</data>
+      <data key="d6">chunk-7ad84b2ff11f2d6018fdb25416b13108</data>
+    </edge>
+    <edge source="&quot;PLANTER&quot;" target="&quot;DRONE&quot;">
+      <data key="d3">39.0</data>
+      <data key="d4">"The Drone and Planter are distinct objects within the same 3D environment, serving different functional roles."&lt;SEP&gt;"The Drone is positioned in the 3D environment in a way that indicates it may monitor or interact with the Planter, suggesting a functional relationship between them."&lt;SEP&gt;"The Planter and Drone are both objects in the same 3D environment, serving different functions and located at specific coordinates."&lt;SEP&gt;"The Planter and Drone are both objects within the same 3D environment, with defined spatial relationships regarding their positions."&lt;SEP&gt;"The Planter and Drone are located in a 3D environment, serving distinct yet complementary purposes, with the Drone possibly monitoring the area around the Planter."&lt;SEP&gt;"The Planter and the Drone are both objects in a 3D environment, with the Drone being functional and possibly interacting with the environment that includes the Planter."&lt;SEP&gt;"drone works in conjunction with the planter technology to facilitate agricultural tasks."&lt;'collaboration'&gt;</data>
+      <data key="d5">"3D environment, functional distinction"&lt;SEP&gt;"functional interaction, positioning"&lt;SEP&gt;"functional relationship, environmental interaction"&lt;SEP&gt;"object relation, spatial positioning"&lt;SEP&gt;"spatial relationship, functional roles"&lt;SEP&gt;"spatial relationship, object interaction"&lt;SEP&gt;6</data>
+      <data key="d6">chunk-281875b3970934022624e7881dfef4d7&lt;SEP&gt;chunk-d3e5314dfbe21b137956267f8189bfbe&lt;SEP&gt;chunk-9dbedeefc4498380117a51a1fa0c4dcb&lt;SEP&gt;chunk-a2fd2fa6a370bfca2543526fec127bc1&lt;SEP&gt;chunk-29ae12bd95a6546386c34b2557ec6d44&lt;SEP&gt;chunk-45f0643660df282da9e425abf14dfe5f&lt;SEP&gt;chunk-5439742f7b26de20bb0775ac55965c10</data>
+    </edge>
+    <edge source="&quot;PLANTER&quot;" target="&quot;3D ENVIRONMENT&quot;">
+      <data key="d3">34.0</data>
+      <data key="d4">"The Planter is a part of the 3D Environment and serves a role within that spatial context."&lt;SEP&gt;"The Planter is an object situated within the 3D Environment, highlighting its role in this virtual space."&lt;SEP&gt;"The Planter is positioned within the 3D environment, showcasing its role as an object within that space."&lt;SEP&gt;"The Planter is situated within the 3D environment, confirming its relevance and role in that virtual space."&lt;SEP&gt;"The Planter is situated within the 3D environment, indicating its spatial context and relationship to the overall layout."</data>
+      <data key="d5">"object placement, virtual space"&lt;SEP&gt;"object positioning, environmental interaction"&lt;SEP&gt;"object presence, functional role"&lt;SEP&gt;"spatial relationship, environment context"&lt;SEP&gt;"spatial relationship, environmental context"</data>
+      <data key="d6">chunk-281875b3970934022624e7881dfef4d7&lt;SEP&gt;chunk-9dbedeefc4498380117a51a1fa0c4dcb&lt;SEP&gt;chunk-29ae12bd95a6546386c34b2557ec6d44&lt;SEP&gt;chunk-45f0643660df282da9e425abf14dfe5f&lt;SEP&gt;chunk-5439742f7b26de20bb0775ac55965c10</data>
+    </edge>
+    <edge source="&quot;PLANTER&quot;" target="&quot;LONG4&quot;">
+      <data key="d3">4.0</data>
+      <data key="d4">"Long4 represents a specific aspect of the planter's design or implementation, linking the geographical code to the function of the planter."&lt;'design specification'&gt;</data>
+      <data key="d5">4</data>
+      <data key="d6">chunk-a2fd2fa6a370bfca2543526fec127bc1</data>
+    </edge>
+    <edge source="&quot;PLANTER&quot;" target="&quot;BLUEPRINT3&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"Blueprint3 outlines the design and functionality of the planter, indicating how it is intended to be used."&lt;'design documentation'&gt;</data>
+      <data key="d5">6</data>
+      <data key="d6">chunk-a2fd2fa6a370bfca2543526fec127bc1</data>
+    </edge>
+    <edge source="&quot;PLANTER&quot;" target="&quot;Y-AXIS&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"The elevation of the Planter can be referenced along the y-axis, highlighting its vertical positioning relative to the Drone."</data>
+      <data key="d5">"spatial relationship, positional reference"</data>
+      <data key="d6">chunk-d3e5314dfbe21b137956267f8189bfbe</data>
+    </edge>
+    <edge source="&quot;PLANTER&quot;" target="&quot;BLUEPRINT FOR PLANTER&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The Blueprint for Planter serves as the design document for the physical Planter, indicating a direct relationship between design and implementation."</data>
+      <data key="d5">"design relationship, implementation"</data>
+      <data key="d6">chunk-281875b3970934022624e7881dfef4d7</data>
+    </edge>
+    <edge source="&quot;3D ENVIRONMENT&quot;" target="&quot;DRONE&quot;">
+      <data key="d3">40.0</data>
+      <data key="d4">"The Drone exists within the 3D environment, indicating its operational context and functionality."&lt;SEP&gt;"The Drone is also located within the 3D environment, indicating its functionality is connected to the space it occupies."&lt;SEP&gt;"The Drone is also situated within the 3D environment, reflecting its role and functionality in the same context."&lt;SEP&gt;"The Drone is an integral part of the 3D Environment, contributing to its functional diversity."&lt;SEP&gt;"The Drone operates within the 3D Environment, which includes various objects like the Planter, illustrating its functional context."&lt;SEP&gt;"drone operates within the 3D Environment, suggesting it is a functional entity designed for interaction in that space."</data>
+      <data key="d5">"functional context, interaction"&lt;SEP&gt;"functional entity, operational context"&lt;SEP&gt;"object positioning, operational context"&lt;SEP&gt;"operational context, virtual presence"&lt;SEP&gt;"spatial relationship, environment context"&lt;SEP&gt;"spatial relationship, functional context"</data>
+      <data key="d6">chunk-281875b3970934022624e7881dfef4d7&lt;SEP&gt;chunk-9dbedeefc4498380117a51a1fa0c4dcb&lt;SEP&gt;chunk-29ae12bd95a6546386c34b2557ec6d44&lt;SEP&gt;chunk-12b20bdc273ab3c4642137044336ce39&lt;SEP&gt;chunk-45f0643660df282da9e425abf14dfe5f&lt;SEP&gt;chunk-5439742f7b26de20bb0775ac55965c10</data>
+    </edge>
+    <edge source="&quot;3D ENVIRONMENT&quot;" target="&quot;CHAIR_CAFECHARCOALGREY10&quot;">
+      <data key="d3">14.0</data>
+      <data key="d4">"The chair is situated in the 3D Environment, emphasizing its function as a seating option in this virtual space."&lt;SEP&gt;"chair_cafeCharcoalGrey10 is placed within the 3D Environment, making it part of the virtual scene."</data>
+      <data key="d5">"spatial context, functional setting"&lt;SEP&gt;"virtual space, setting"</data>
+      <data key="d6">chunk-7ad84b2ff11f2d6018fdb25416b13108&lt;SEP&gt;chunk-90bdb4e24df07be840376b4733060f54</data>
+    </edge>
+    <edge source="&quot;3D ENVIRONMENT&quot;" target="&quot;CHAIR&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"chair_cafeCharcoalGrey10 exists within the 3D Environment, contributing to the setting and user experience."</data>
+      <data key="d5">"setting, spatial context"</data>
+      <data key="d6">chunk-12b20bdc273ab3c4642137044336ce39</data>
+    </edge>
+    <edge source="&quot;CHAIR&quot;" target="&quot;DRONE&quot;">
+      <data key="d3">16.0</data>
+      <data key="d4">"The Drone and Chair are both located in a 3D environment positioned along the negative Y-axis, indicating they share a spatial relationship in the environment."&lt;&lt;"spatial relationship"&lt;SEP&gt;"The Drone and Chair are both objects within the same 3D environment, indicating their spatial relationship and possibly thematic connection in the scene."&lt;SEP&gt;"The Drone is part of the 3D environment where the Chair is also located; they exist in the same space but at different elevations."</data>
+      <data key="d5">"3D space, object relation"&lt;SEP&gt;"spatial arrangement, environmental context"&lt;SEP&gt;6</data>
+      <data key="d6">chunk-813a08dede10fe54449554bd3b80cf12&lt;SEP&gt;chunk-83b7d684fda6039e51cbbae24f9f5273&lt;SEP&gt;chunk-3dcbd536f5c482d916593354835d333a</data>
+    </edge>
+    <edge source="&quot;CHAIR&quot;" target="&quot;CAFECHARCOALGREY10&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The chair is identified as the specific instance of the design described as cafeCharcoalGrey10, indicating a direct relationship based on style."</data>
+      <data key="d5">"design specification, furniture"</data>
+      <data key="d6">chunk-fff8dc8f3c3ecaaccc7b1344d232fa3b</data>
+    </edge>
+    <edge source="&quot;CHAIR&quot;" target="&quot;CAFÉ&quot;">
+      <data key="d3">12.0</data>
+      <data key="d4">"Café includes the chair as part of its furniture setup, establishing a place for patrons to sit and enjoy refreshments."&lt;SEP&gt;"The chair, specifically the Charcoal Grey colored one, is placed within the context of the café environment, reflecting its use in that setting."</data>
+      <data key="d5">"furniture setup, customer experience"&lt;SEP&gt;"furniture usage, café setting"</data>
+      <data key="d6">chunk-fe1197847ca31f9cd72d33261f022a63&lt;SEP&gt;chunk-209b7603bd26c226f4b813c1c8853018</data>
+    </edge>
+    <edge source="&quot;CHAIR&quot;" target="&quot;CHAIR_CAFECHARCOALGREY10&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"chair_cafeCharcoalGrey10 represents a specific instance of a Chair, illustrating typical features of seating furniture."</data>
+      <data key="d5">"category, furniture"</data>
+      <data key="d6">chunk-7ad84b2ff11f2d6018fdb25416b13108</data>
+    </edge>
+    <edge source="&quot;THE SCENE&quot;" target="&quot;CHAIR_CAFECHARCOALGREY10&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The Scene encompasses chair_cafeCharcoalGrey10, indicating its role in the overall environment being described."</data>
+      <data key="d5">"object presence, scene definition"</data>
+      <data key="d6">chunk-4d4cc3b2ebc6bc00642497cdf2f91286</data>
+    </edge>
+    <edge source="&quot;BLUEPRINT3&quot;" target="&quot;PLANTERLONG&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"planterLong is associated with Blueprint3 as the physical representation or manifestation of the design outlined in Blueprint3."</data>
+      <data key="d5">"design relationship, construction"</data>
+      <data key="d6">chunk-2f953b53ae3af68436d7bf737b0fe3a0</data>
+    </edge>
+    <edge source="&quot;BLUEPRINT3&quot;" target="&quot;PLANTERLONG4&quot;">
+      <data key="d3">12.0</data>
+      <data key="d4">"planterLong4 is an element featured within the Blueprint3 design, suggesting its inclusion in the overall architectural scheme."&lt;SEP&gt;"planterLong4's functionality is likely derived from the design provided by Blueprint3, indicating a dependency relationship."</data>
+      <data key="d5">"design dependency, technology"&lt;SEP&gt;"design inclusion, architectural significance"</data>
+      <data key="d6">chunk-c843e5ffbf9f0aa77f639ff37b08de46&lt;SEP&gt;chunk-fff8dc8f3c3ecaaccc7b1344d232fa3b</data>
+    </edge>
+    <edge source="&quot;BASECHARACTER&quot;" target="&quot;WALKING4&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Walking4 represents the action undertaken by BaseCharacter, showcasing the dynamic nature of character movement in the environment."</data>
+      <data key="d5">"movement, character dynamics"</data>
+      <data key="d6">chunk-2f953b53ae3af68436d7bf737b0fe3a0</data>
+    </edge>
+    <edge source="&quot;CAFECHARCOALGREY&quot;" target="&quot;BASECHARACTER_WALKING4&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"BaseCharacter_Walking4 is interacting within the caféCharcoalGrey, signifying a social context for activities occurring there."</data>
+      <data key="d5">"social interaction, environment"</data>
+      <data key="d6">chunk-34aaef2f4359a2cd141902afff622051</data>
+    </edge>
+    <edge source="&quot;CAFECHARCOALGREY&quot;" target="&quot;CHAIR_CAFECHARCOALGREY10&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"The chair_cafeCharcoalGrey10 is a part of the caféCharcoalGrey, contributing to the furnishings of the establishment."</data>
+      <data key="d5">"furnishings, spatial association"</data>
+      <data key="d6">chunk-34aaef2f4359a2cd141902afff622051</data>
+    </edge>
+    <edge source="&quot;CAFÉ&quot;" target="&quot;CHARCOAL GREY COLOR&quot;">
+      <data key="d3">4.0</data>
+      <data key="d4">"The café's furniture selection, including chairs, is influenced by design choices such as the Charcoal Grey color."</data>
+      <data key="d5">"design influence, aesthetic choice"</data>
+      <data key="d6">chunk-fe1197847ca31f9cd72d33261f022a63</data>
+    </edge>
+    <edge source="&quot;CAFÉ&quot;" target="&quot;CHAIR_CAFECHARCOALGREY10&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The presence of chair_cafeCharcoalGrey10 suggests it is likely used in the context of a Café, indicating a social space."</data>
+      <data key="d5">"social environment, casual setting"</data>
+      <data key="d6">chunk-90bdb4e24df07be840376b4733060f54</data>
+    </edge>
+    <edge source="&quot;X-AXIS&quot;" target="&quot;DRONE&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"The position of the Drone is defined along the x-axis, illustrating its location relative to other objects."</data>
+      <data key="d5">"spatial relationship, positional reference"</data>
+      <data key="d6">chunk-d3e5314dfbe21b137956267f8189bfbe</data>
+    </edge>
+    <edge source="&quot;Z-AXIS&quot;" target="&quot;DRONE&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"The depth of the Drone's position can be identified along the z-axis, contributing to its accurate placement within the environment."</data>
+      <data key="d5">"spatial relationship, positional reference"</data>
+      <data key="d6">chunk-d3e5314dfbe21b137956267f8189bfbe</data>
+    </edge>
+    <edge source="&quot;SURVEILLANCE&quot;" target="&quot;DRONE&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The Drone may perform surveillance tasks within the 3D environment, highlighting its functional use."</data>
+      <data key="d5">"functional capability, task execution"</data>
+      <data key="d6">chunk-d3e5314dfbe21b137956267f8189bfbe</data>
+    </edge>
+    <edge source="&quot;DELIVERY&quot;" target="&quot;DRONE&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The Drone's potential role in delivery clearly identifies its practical application in the environment's operations."</data>
+      <data key="d5">"functional capability, task execution"</data>
+      <data key="d6">chunk-d3e5314dfbe21b137956267f8189bfbe</data>
+    </edge>
+    <edge source="&quot;MONITORING&quot;" target="&quot;DRONE&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The Drone is indicated to engage in monitoring tasks, reinforcing its operational purpose."</data>
+      <data key="d5">"functional capability, task execution"</data>
+      <data key="d6">chunk-d3e5314dfbe21b137956267f8189bfbe</data>
+    </edge>
+    <edge source="&quot;ORIGIN POINT&quot;" target="&quot;CHAIR_CAFECHARCOALGREY10&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The location of chair_cafeCharcoalGrey10 is also determined from the Origin Point in the 3D Environment, affecting the overall layout."</data>
+      <data key="d5">"reference point, positioning"</data>
+      <data key="d6">chunk-90bdb4e24df07be840376b4733060f54</data>
+    </edge>
+    <edge source="&quot;NEGATIVE X AND Y DIRECTIONS&quot;" target="&quot;CHAIR_CAFECHARCOALGREY10&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The positioning of chair_cafeCharcoalGrey10 is defined by its distance in the Negative X and Y Directions in the 3D Environment."</data>
+      <data key="d5">"horizontal positioning, spatial layout"</data>
+      <data key="d6">chunk-90bdb4e24df07be840376b4733060f54</data>
+    </edge>
+    <edge source="&quot;Y-COORDINATE&quot;" target="&quot;CHAIR_CAFECHARCOALGREY10&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The position of chair_cafeCharcoalGrey10 is defined by its Y-coordinate, which indicates its elevation above the ground."</data>
+      <data key="d5">"coordinate system, elevation"</data>
+      <data key="d6">chunk-813a08dede10fe54449554bd3b80cf12</data>
+    </edge>
+  </graph>
 </graphml>
