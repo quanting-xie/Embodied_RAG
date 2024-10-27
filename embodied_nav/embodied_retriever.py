@@ -2,6 +2,7 @@ import networkx as nx
 from scipy.spatial.distance import cosine
 import numpy as np
 from .llm import LLMInterface
+import re
 
 class EmbodiedRetriever:
     def __init__(self, graph, embedding_func):
@@ -138,17 +139,32 @@ class EmbodiedRetriever:
         return "\n".join(context)
 
     def extract_target_position(self, response):
-        """Extract the target object and its position from the response."""
-        target_object = self.extract_target_object(response)
-        if not target_object or target_object not in self.graph.nodes:
+        print(f"\nExtracting target position from response:\n{response}")
+        
+        # Check if the response indicates no suitable object was found
+        if "<<none>>" in response.lower():
+            print("No suitable object found in the response.")
             return None
         
-        # Get target position from graph
-        target_position = self.graph.nodes[target_object].get('position')
-        if target_position:
-            return {
-                'x': target_position[0],
-                'y': target_position[1],
-                'z': target_position[2]
-            }
+        # Extract the object name from the response
+        object_name_match = re.search(r'<<(.+?)>>', response)
+        if object_name_match:
+            object_name = object_name_match.group(1)
+            print(f"Extracted object name: {object_name}")
+            
+            # Find the node in the graph corresponding to the object
+            for node, data in self.graph.nodes(data=True):
+                if node == object_name:
+                    if 'position' in data:
+                        position = data['position']
+                        print(f"Found position for {object_name}: {position}")
+                        return position
+                    else:
+                        print(f"No position data found for {object_name}")
+                        return None
+            
+            print(f"No node found for {object_name}")
+            return None
+        
+        print("No object name found in the response.")
         return None

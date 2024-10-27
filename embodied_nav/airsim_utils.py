@@ -35,7 +35,10 @@ class AirSimUtils:
         
         return global_position
 
-    def generate_waypoints(self, start_position, target_position, planning_mode="direct"):
+    def generate_waypoints(self, start_position, target_position, velocity=5):
+        print(f"\nGenerating waypoints:")
+        print(f"Start position: {start_position}")
+        print(f"Target position: {target_position}")
 
         # Convert dict positions to Vector3r if necessary
         if isinstance(start_position, dict):
@@ -51,31 +54,22 @@ class AirSimUtils:
                 target_position['z']
             )
 
-        if planning_mode == "direct":
-            # Simple direct path - just start and end points
+        print(f"Converted start position: {start_position}")
+        print(f"Converted target position: {target_position}")
+
+        try:
+            # Use AirSim's moveToPositionAsync API
+            self.client.moveToPositionAsync(
+                target_position.x_val,
+                target_position.y_val,
+                target_position.z_val,
+                velocity
+            ).join()
+            print(f"Moved to target position: {target_position}")
             return [start_position, target_position]
-        
-        elif planning_mode == "astar":
-            try:
-                # Use AirSim's path planner
-                path = self.client.moveOnPathAsync(
-                    [start_position, target_position],
-                    velocity=2,
-                    timeout_sec=30,
-                    drivetrain=airsim.DrivetrainType.MaxDegreeOfFreedom,
-                    yaw_mode=airsim.YawMode(False, 0),
-                    lookahead=5,
-                    adaptive_lookahead=True
-                ).join()
-                
-                return path
-            except Exception as e:
-                logging.error(f"Path planning failed: {str(e)}")
-                # Fallback to direct path if planning fails
-                return [start_position, target_position]
-        
-        else:
-            raise ValueError(f"Unknown planning mode: {planning_mode}")
+        except Exception as e:
+            print(f"Movement failed: {str(e)}")
+            return None
 
 class DroneController:
     def __init__(self, client, speed=2, yaw_rate=45, vertical_speed=2):

@@ -4,6 +4,7 @@ from .spatial_relationship_extractor import SpatialRelationshipExtractor
 from .embodied_retriever import EmbodiedRetriever
 import networkx as nx
 import logging
+import airsim
 
 logger = logging.getLogger(__name__)
 
@@ -99,19 +100,31 @@ class EmbodiedRAG:
         response = await self.retriever.generate_response(query_text, retrieved_nodes, query_type)
         
         # Generate waypoints for explicit and implicit queries
-        waypoints = []
+        waypoints = None
         if query_type in ["explicit", "implicit"] and self.airsim_utils is not None:
             # Extract target position from response
             target_position = self.retriever.extract_target_position(response)
+            print(f"\nExtracted target position: {target_position}")
             
             if target_position and start_position:
-                # Generate waypoints using AirSimUtils
+                print(f"\nMoving from {start_position} to {target_position}")
+                
+                # Generate waypoints and move using AirSimUtils
                 waypoints = self.airsim_utils.generate_waypoints(
                     start_position,
                     target_position,
-                    planning_mode="astar"  # or "direct" for simple paths
+                    velocity=5  # You can adjust this value as needed
                 )
-                logger.info(f"\nGenerated waypoints from {start_position} to {target_position}")
+                print(f"\nMovement completed. Waypoints: {waypoints}")
+            else:
+                if target_position is None:
+                    print("\nUnable to move: No target position found. The requested object may not exist in the environment.")
+                elif start_position is None:
+                    print("\nUnable to move: No start position provided.")
+                else:
+                    print("\nUnable to move: Unknown error occurred.")
+        else:
+            print("\nSkipping movement: query type not applicable or AirSimUtils not available")
         
         return response, waypoints
 
