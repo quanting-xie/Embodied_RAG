@@ -4,8 +4,13 @@ import sys
 import signal
 import logging
 import threading
-from graph_builder import GraphBuilder
-from airsim_utils import AirSimUtils, DroneController, DetectionVisualizer
+import os
+
+# Add the parent directory to the Python path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from embodied_nav.graph_builder import GraphBuilder
+from embodied_nav.airsim_utils import AirSimUtils, DroneController, DetectionVisualizer
 
 # Hyperparameters
 DETECTION_RADIUS = 5  # Distance threshold in meters
@@ -120,7 +125,7 @@ class AirSimExplorer:
 
     def save_graph(self):
         logging.info(f"Saving graph with {len(self.graph_builder.G.nodes)} nodes and {len(self.graph_builder.G.edges)} edges")
-        self.graph_builder.save_graph("semantic_graph.gml")
+        self.graph_builder.save_graph("semantic_graph2.gml")
         print("Graph saved to semantic_graph.gml")
 
     def visualize_graph(self):

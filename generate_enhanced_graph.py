@@ -22,6 +22,6 @@ async def generate_enhanced_graph(initial_graph_file, enhanced_graph_file):
     print(f"Enhanced graph saved to {enhanced_graph_file}")
 
 if __name__ == "__main__":
-    initial_graph_file = "/Users/danielxie/Embodied_RAG/embodied_nav/semantic_graph.gml"
-    enhanced_graph_file = "/Users/danielxie/Embodied_RAG/embodied_nav/enhanced_semantic_graph.gml"
+    initial_graph_file = "/home/quanting/Embodied_RAG/embodied_nav/semantic_graph.gml"
+    enhanced_graph_file = "/home/quanting/Embodied_RAG/embodied_nav/enhanced_semantic_graph.gml"
     asyncio.run(generate_enhanced_graph(initial_graph_file, enhanced_graph_file))

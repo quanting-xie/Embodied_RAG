@@ -3,112 +3,804 @@ graph [
     id 0
     label "drone_0"
     position [
-      x 0.0
-      y 0.0
-      z -0.97074955701828
+      x -5.908782958984375
+      y -3.0094966888427734
+      z -4.098608493804932
     ]
-    yaw 0.0
+    yaw 3.116915104510942
     type "drone"
-    timestamp 1729609135.280901
+    timestamp 1730127098.2510417
   ]
   node [
     id 1
-    label "BaseCharacter_Walking4_11"
-    position 5.422344285083111
-    position 0.6825918733927643
-    position 1.2266992330551147
-    box2D 143.3627166748047
-    box2D 86.51652526855469
-    box2D 173.70794677734375
+    label "planter_Macarthur_Palm_Blueprint_428"
+    position -5.195318161819267
+    position -3.688091132099121
+    position 0.25473833084106445
+    box2D 0.0
+    box2D 0.0
+    box2D 256.0
     box2D 144.0
-    box3D 3.78035044670105
-    box3D 0.5090714693069458
-    box3D 2.287933111190796
-    box3D 4.76162576675415
-    box3D 1.3993568420410156
-    box3D 0.40927520394325256
+    box3D 0.5633829236030579
+    box3D 1.9795377254486084
+    box3D 4.661694526672363
+    box3D -2.0046050548553467
+    box3D -0.6917169094085693
+    box3D 0.08109445124864578
     type "object"
-    timestamp 1729609139.301382
+    timestamp 1730127099.261013
   ]
   node [
     id 2
-    label "Drone1"
-    position 1.494632755599431
-    position 0.32475769482229383
-    position -1.2573857605457306
-    box2D 0.0
-    box2D 0.0
-    box2D 129.47747802734375
-    box2D 130.1183624267578
-    box3D -0.4707321524620056
-    box3D -0.9901371598243713
-    box3D 0.032604921609163284
-    box3D -0.44926801323890686
-    box3D 0.9901371598243713
-    box3D -0.2592245936393738
+    label "planterLong4_Blueprint5"
+    position -9.785178055411642
+    position -2.80604713740082
+    position 0.22553634643554688
+    box2D 101.60159301757812
+    box2D 128.11915588378906
+    box2D 143.48243713378906
+    box2D 144.0
+    box3D 4.912838459014893
+    box3D 0.41547542810440063
+    box3D 3.197293519973755
+    box3D 3.080817699432373
+    box3D -0.6353803277015686
+    box3D 2.018320083618164
     type "object"
-    timestamp 1729609140.311384
+    timestamp 1730127103.293955
   ]
   node [
     id 3
-    label "planterLong4_Blueprint3"
-    position 0.5625324414784298
-    position -4.982122217498573
-    position -0.2454623579978943
+    label "atriumTower2"
+    position -7.111485028589369
+    position -1.1590968700922697
+    position 0.6270081996917725
+    box2D 170.57223510742188
     box2D 0.0
-    box2D 79.63496398925781
-    box2D 77.189697265625
-    box2D 132.07847595214844
-    box3D 4.328840732574463
-    box3D -3.6848866939544678
-    box3D 1.3230171203613281
-    box3D 3.596430540084839
-    box3D -1.6558932065963745
-    box3D 0.228787362575531
+    box2D 256.0
+    box2D 144.0
+    box3D 14.706308364868164
+    box3D 9.465116500854492
+    box3D 2.963918924331665
+    box3D 2.139350652694702
+    box3D 9.228621482849121
+    box3D -10.180543899536133
     type "object"
-    timestamp 1729609142.3244777
+    timestamp 1730127105.3022811
   ]
   node [
     id 4
-    label "drone_1"
-    position [
-      x 2.865560293197632
-      y -3.976186990737915
-      z -1.2201707363128662
-    ]
-    yaw -1.8887754937715275
-    type "drone"
-    timestamp 1729609144.3269684
+    label "Drone1"
+    position -5.513959968336737
+    position -2.7734567745246985
+    position -2.4834066033363342
+    box2D 0.0
+    box2D 0.0
+    box2D 192.20989990234375
+    box2D 121.65191650390625
+    box3D 0.46321001648902893
+    box3D 0.2323649525642395
+    box3D 0.03318597748875618
+    box3D -1.3832099437713623
+    box3D -0.23236434161663055
+    box3D -0.2598056495189667
+    type "object"
+    timestamp 1730127105.3023372
   ]
   node [
     id 5
-    label "drone_2"
-    position [
-      x 0.054233964532613754
-      y -8.754300117492676
-      z -1.3447147607803345
-    ]
-    yaw -3.133008010462549
-    type "drone"
-    timestamp 1729609147.3311632
+    label "bench_woodenSlats3"
+    position -10.363216746671927
+    position -3.9898449822964865
+    position 0.4486355781555176
+    box2D 0.0
+    box2D 122.01303100585938
+    box2D 133.5465545654297
+    box2D 144.0
+    box3D 5.565543174743652
+    box3D -1.3988375663757324
+    box3D 2.416269540786743
+    box3D 1.7916308641433716
+    box3D -2.0702896118164062
+    box3D 2.1880223751068115
+    type "object"
+    timestamp 1730127107.325966
   ]
   node [
     id 6
-    label "chair_cafeCharcoalGrey10"
-    position -2.827229984264756
-    position -6.318121657466028
-    position 0.24103760719299316
-    box2D 0.0
-    box2D 104.13322448730469
-    box2D 50.141456604003906
+    label "chair_cafeCharcoalGrey12"
+    position -8.427811527720669
+    position -5.391837094818872
+    position 0.48367834091186523
+    box2D 121.2581787109375
+    box2D 136.6486358642578
+    box2D 184.11195373535156
     box2D 144.0
-    box3D 3.278258800506592
-    box3D -2.0540390014648438
-    box3D 1.605775237083435
-    box3D 2.401993751525879
-    box3D -2.7828829288482666
-    box3D 0.7039139270782471
+    box3D 3.574836254119873
+    box3D 0.6412988305091858
+    box3D 2.505171298980713
+    box3D 2.180619716644287
+    box3D 0.4002520740032196
+    box3D 1.699821949005127
     type "object"
-    timestamp 1729609147.3419774
+    timestamp 1730127107.326077
+  ]
+  node [
+    id 7
+    label "smallGreyTable5"
+    position -9.059774088138596
+    position -5.113862734737958
+    position 0.4676809310913086
+    box2D 98.62380981445312
+    box2D 132.69288635253906
+    box2D 154.1570281982422
+    box2D 144.0
+    box3D 3.9576847553253174
+    box3D 0.05858428776264191
+    box3D 2.4884538650512695
+    box3D 2.523101329803467
+    box3D -0.19446365535259247
+    box3D 1.7759480476379395
+    type "object"
+    timestamp 1730127107.3261588
+  ]
+  node [
+    id 8
+    label "BaseCharacter_Walking8_27"
+    position -8.91917266899045
+    position -6.120175062546562
+    position 0.4473226070404053
+    box2D 135.25216674804688
+    box2D 92.06820678710938
+    box2D 181.16139221191406
+    box2D 144.0
+    box3D 4.33983850479126
+    box3D 0.9511822462081909
+    box3D 2.531536102294922
+    box3D 3.008021116256714
+    box3D 0.7266036868095398
+    box3D 0.5750777125358582
+    type "object"
+    timestamp 1730127107.3262525
+  ]
+  node [
+    id 9
+    label "BaseCharacter_Sitting12"
+    position -8.595111928081902
+    position -6.623139258072708
+    position 0.4463961124420166
+    box2D 154.66122436523438
+    box2D 94.66178894042969
+    box2D 202.74034118652344
+    box2D 144.0
+    box3D 4.380685329437256
+    box3D 1.5556732416152954
+    box3D 2.775285243988037
+    box3D 3.0233421325683594
+    box3D 1.3179726600646973
+    box3D 0.6680784225463867
+    type "object"
+    timestamp 1730127107.3263183
+  ]
+  node [
+    id 10
+    label "BaseCharacter_Sitting7_20"
+    position -8.146661065768349
+    position -3.9242112386644386
+    position 0.5311071872711182
+    box2D 58.294212341308594
+    box2D 119.25607299804688
+    box2D 131.30177307128906
+    box2D 144.0
+    box3D 2.389777660369873
+    box3D -0.5154364109039307
+    box3D 2.854248046875
+    box3D 1.1273175477981567
+    box3D -0.49408984184265137
+    box3D 0.7522813081741333
+    type "object"
+    timestamp 1730127107.3263803
+  ]
+  node [
+    id 11
+    label "BaseCharacter_Sitting10_29"
+    position -8.44077071369505
+    position -7.615929190532469
+    position 0.6760377883911133
+    box2D 194.1502227783203
+    box2D 106.0321044921875
+    box2D 252.17364501953125
+    box2D 144.0
+    box3D 3.800041675567627
+    box3D 2.4538049697875977
+    box3D 3.029334306716919
+    box3D 2.574249267578125
+    box3D 2.227287530899048
+    box3D 0.8547093868255615
+    type "object"
+    timestamp 1730127109.3344734
+  ]
+  node [
+    id 12
+    label "chair_whiteTall10"
+    position -10.191044730838115
+    position -6.73932239335939
+    position 0.6278345584869385
+    box2D 136.16819763183594
+    box2D 120.63800048828125
+    box2D 159.4837646484375
+    box2D 144.0
+    box3D 4.411133289337158
+    box3D 0.6922472715377808
+    box3D 2.68715500831604
+    box3D 3.6952226161956787
+    box3D 0.552457869052887
+    box3D 1.529622197151184
+    type "object"
+    timestamp 1730127112.4199357
+  ]
+  node [
+    id 13
+    label "chair_cafeCharcoalGrey15_8"
+    position -6.9562073022594975
+    position -6.509920437843498
+    position 0.17712998390197754
+    box2D 133.0834503173828
+    box2D 133.68222045898438
+    box2D 209.979736328125
+    box2D 144.0
+    box3D 3.0881993770599365
+    box3D 0.2666390836238861
+    box3D 2.1284244060516357
+    box3D 1.7481756210327148
+    box3D 1.1196484565734863
+    box3D 1.4790409803390503
+    type "object"
+    timestamp 1730127114.4333544
+  ]
+  node [
+    id 14
+    label "chair_cafeCharcoalGrey7"
+    position -8.874585219886981
+    position -6.779077803261375
+    position 0.06458806991577148
+    box2D 38.25666046142578
+    box2D 119.37605285644531
+    box2D 107.93778991699219
+    box2D 144.0
+    box3D 3.6732821464538574
+    box3D -1.5834014415740967
+    box3D 2.0155997276306152
+    box3D 2.3301382064819336
+    box3D -0.7246954441070557
+    box3D 1.3667817115783691
+    type "object"
+    timestamp 1730127114.4334474
+  ]
+  node [
+    id 15
+    label "smallWhiteTable5"
+    position -6.389313172174915
+    position -7.664673340855841
+    position 0.01107931137084961
+    box2D 158.67391967773438
+    box2D 114.50164031982422
+    box2D 214.98387145996094
+    box2D 144.0
+    box3D 4.16023588180542
+    box3D 0.9969586133956909
+    box3D 1.9579626321792603
+    box3D 2.780588388442993
+    box3D 1.889580488204956
+    box3D 1.4076675176620483
+    type "object"
+    timestamp 1730127114.4335237
+  ]
+  node [
+    id 16
+    label "smallWhiteTable7"
+    position -8.404629625391108
+    position -7.320155817328841
+    position -0.00582575798034668
+    box2D 74.71821594238281
+    box2D 114.02340698242188
+    box2D 129.26016235351562
+    box2D 144.0
+    box3D 4.154651165008545
+    box3D -1.0475860834121704
+    box3D 1.9410580396652222
+    box3D 2.7750041484832764
+    box3D -0.15496429800987244
+    box3D 1.3907628059387207
+    type "object"
+    timestamp 1730127114.4335947
+  ]
+  node [
+    id 17
+    label "drone_1"
+    position [
+      x -7.386645317077637
+      y -4.9373674392700195
+      z -2.2115893363952637
+    ]
+    yaw -1.6623140960482061
+    type "drone"
+    timestamp 1730127115.4352775
+  ]
+  node [
+    id 18
+    label "cafeWallA_8"
+    position -5.076569995432401
+    position -8.410440790037683
+    position 0.8890664577484131
+    box2D 133.45510864257812
+    box2D 79.42372131347656
+    box2D 252.54397583007812
+    box2D 102.53472900390625
+    box3D 33.58430480957031
+    box3D 1.5907080173492432
+    box3D 6.128660678863525
+    box3D 26.963964462280273
+    box3D 25.833627700805664
+    box3D 1.4173561334609985
+    type "object"
+    timestamp 1730127116.5055275
+  ]
+  node [
+    id 19
+    label "snackShopWall_32"
+    position -5.076569995432401
+    position -8.410440790037683
+    position 0.8890664577484131
+    box2D 0.0
+    box2D 93.47607421875
+    box2D 107.47004699707031
+    box2D 144.0
+    box3D 8.844632148742676
+    box3D -8.90066146850586
+    box3D 4.3289642333984375
+    box3D 9.422179222106934
+    box3D -1.6053789854049683
+    box3D 1.5479950904846191
+    type "object"
+    timestamp 1730127116.5056207
+  ]
+  node [
+    id 20
+    label "BaseCharacter_Sitting9_26"
+    position -5.809525324379182
+    position -9.122942178730039
+    position 0.9763445854187012
+    box2D 119.82935333251953
+    box2D 120.25926208496094
+    box2D 172.57884216308594
+    box2D 144.0
+    box3D 3.7603955268859863
+    box3D -0.13536392152309418
+    box3D 3.6425836086273193
+    box3D 3.2125391960144043
+    box3D 0.928613543510437
+    box3D 1.3396488428115845
+    type "object"
+    timestamp 1730127116.5056942
+  ]
+  node [
+    id 21
+    label "elevatorPillars_103"
+    position -5.145164124104852
+    position -8.93845015274426
+    position 0.5147445201873779
+    box2D 155.77427673339844
+    box2D 68.3708267211914
+    box2D 256.0
+    box2D 144.0
+    box3D 15.082123756408691
+    box3D 3.2726128101348877
+    box3D 2.1934688091278076
+    box3D 4.822300910949707
+    box3D 11.887255668640137
+    box3D 0.0032285689376294613
+    type "object"
+    timestamp 1730127118.5160513
+  ]
+  node [
+    id 22
+    label "BaseCharacter_Standing4"
+    position -7.295949988354467
+    position -11.736597352037139
+    position 0.4311342239379883
+    box2D 10.8424072265625
+    box2D 104.36222076416016
+    box2D 63.457115173339844
+    box2D 144.0
+    box3D 3.47603178024292
+    box3D -2.7811245918273926
+    box3D 2.8470001220703125
+    box3D 2.99446439743042
+    box3D -1.5587562322616577
+    box3D 0.8544372916221619
+    type "object"
+    timestamp 1730127118.516122
+  ]
+  node [
+    id 23
+    label "BaseCharacter_Standing5"
+    position -6.2962027642429685
+    position -11.736012558065077
+    position 0.4086618423461914
+    box2D 66.4283447265625
+    box2D 100.57135009765625
+    box2D 101.79656219482422
+    box2D 144.0
+    box3D 3.92496395111084
+    box3D -1.8416215181350708
+    box3D 2.8255298137664795
+    box3D 3.477306365966797
+    box3D -0.7291648983955383
+    box3D 0.8300682902336121
+    type "object"
+    timestamp 1730127118.5161643
+  ]
+  node [
+    id 24
+    label "drone_2"
+    position [
+      x -4.520334720611572
+      y -10.408652305603027
+      z -2.4795777797698975
+    ]
+    yaw 0.13832431344814336
+    type "drone"
+    timestamp 1730127120.5193925
+  ]
+  node [
+    id 25
+    label "entryTop_2"
+    position -5.293406591323056
+    position -8.946667532990796
+    position 0.49621009826660156
+    box2D 118.27771759033203
+    box2D 22.832164764404297
+    box2D 256.0
+    box2D 70.85494232177734
+    box3D 11.162585258483887
+    box3D 0.3136274218559265
+    box3D -0.24635529518127441
+    box3D 25.092342376708984
+    box3D 12.810097694396973
+    box3D -5.59111213684082
+    type "object"
+    timestamp 1730127120.536358
+  ]
+  node [
+    id 26
+    label "entryWallRight_17"
+    position -5.293406591323056
+    position -8.946667532990796
+    position 0.49621009826660156
+    box2D 182.0572967529297
+    box2D 16.733200073242188
+    box2D 256.0
+    box2D 86.70243835449219
+    box3D 11.933876991271973
+    box3D 12.93557071685791
+    box3D 1.2242622375488281
+    box3D 25.74253273010254
+    box3D 17.554668426513672
+    box3D -6.074155330657959
+    type "object"
+    timestamp 1730127120.536642
+  ]
+  node [
+    id 27
+    label "sofa_recliner3"
+    position -1.4714471494318153
+    position -9.003373723159697
+    position 0.36347198486328125
+    box2D 133.65440368652344
+    box2D 134.55015563964844
+    box2D 222.38819885253906
+    box2D 144.0
+    box3D 2.1468558311462402
+    box3D 0.5329120755195618
+    box3D 2.942098379135132
+    box3D 4.155320167541504
+    box3D 1.3472412824630737
+    box3D 1.8840967416763306
+    type "object"
+    timestamp 1730127120.5368557
+  ]
+  node [
+    id 28
+    label "BaseCharacter_Sitting6_17"
+    position -2.2996484355359974
+    position -7.06151278879223
+    position 0.1902637481689453
+    box2D 231.59225463867188
+    box2D 110.32585906982422
+    box2D 256.0
+    box2D 144.0
+    box3D 2.087693452835083
+    box3D 2.7181596755981445
+    box3D 3.023162364959717
+    box3D 3.042532205581665
+    box3D 3.1789326667785645
+    box3D 0.76450115442276
+    type "object"
+    timestamp 1730127120.536941
+  ]
+  node [
+    id 29
+    label "BaseCharacter_Sitting_2"
+    position -1.5950339282745722
+    position -9.300359015412264
+    position 0.39903903007507324
+    box2D 129.99154663085938
+    box2D 111.3023681640625
+    box2D 208.48019409179688
+    box2D 144.0
+    box3D 2.5946664810180664
+    box3D 0.3635331988334656
+    box3D 3.187494993209839
+    box3D 3.4154462814331055
+    box3D 1.4401754140853882
+    box3D 0.9022155404090881
+    type "object"
+    timestamp 1730127120.5370078
+  ]
+  node [
+    id 30
+    label "BaseCharacter_Sitting13"
+    position -0.07488944497933003
+    position -12.992300344545747
+    position 0.6909916400909424
+    box2D 0.0
+    box2D 134.938232421875
+    box2D 38.72370910644531
+    box2D 144.0
+    box3D 1.8276151418685913
+    box3D -2.799870014190674
+    box3D 3.503117561340332
+    box3D 2.9451913833618164
+    box3D -2.1110129356384277
+    box3D 1.301669716835022
+    type "object"
+    timestamp 1730127121.549799
+  ]
+  node [
+    id 31
+    label "drone_3"
+    position [
+      x -0.6913848519325256
+      y -10.63192081451416
+      z -2.54884934425354
+    ]
+    yaw -0.7489796871607958
+    type "drone"
+    timestamp 1730127122.5511417
+  ]
+  node [
+    id 32
+    label "chair_cafeOrange_23"
+    position 0.7435972304518041
+    position -13.818474253536724
+    position 0.3514547348022461
+    box2D 45.372344970703125
+    box2D 142.7477264404297
+    box2D 105.21574401855469
+    box2D 144.0
+    box3D 3.196415662765503
+    box3D -2.0633788108825684
+    box3D 2.836033821105957
+    box3D 3.2055156230926514
+    box3D -0.570589005947113
+    box3D 2.1022000312805176
+    type "object"
+    timestamp 1730127122.5646653
+  ]
+  node [
+    id 33
+    label "TV_large_11"
+    position 2.4130315005388496
+    position -13.020026587325507
+    position -2.1577928364276886
+    box2D 116.75653839111328
+    box2D 60.885921478271484
+    box2D 167.7657470703125
+    box2D 96.55194091796875
+    box3D 4.163559436798096
+    box3D -0.36572563648223877
+    box3D 0.3187572658061981
+    box3D 3.461181879043579
+    box3D 1.0752843618392944
+    box3D -0.3486120402812958
+    type "object"
+    timestamp 1730127122.5650613
+  ]
+  node [
+    id 34
+    label "drone_4"
+    position [
+      x 1.5284746885299683
+      y -12.897890090942383
+      z -2.858783483505249
+    ]
+    yaw -1.9814610166384752
+    type "drone"
+    timestamp 1730127124.5680666
+  ]
+  edge [
+    source 0
+    target 1
+    type "observed"
+  ]
+  edge [
+    source 0
+    target 2
+    type "observed"
+  ]
+  edge [
+    source 0
+    target 3
+    type "observed"
+  ]
+  edge [
+    source 0
+    target 4
+    type "observed"
+  ]
+  edge [
+    source 0
+    target 5
+    type "observed"
+  ]
+  edge [
+    source 0
+    target 6
+    type "observed"
+  ]
+  edge [
+    source 0
+    target 7
+    type "observed"
+  ]
+  edge [
+    source 0
+    target 8
+    type "observed"
+  ]
+  edge [
+    source 0
+    target 9
+    type "observed"
+  ]
+  edge [
+    source 0
+    target 10
+    type "observed"
+  ]
+  edge [
+    source 0
+    target 11
+    type "observed"
+  ]
+  edge [
+    source 0
+    target 12
+    type "observed"
+  ]
+  edge [
+    source 0
+    target 13
+    type "observed"
+  ]
+  edge [
+    source 0
+    target 14
+    type "observed"
+  ]
+  edge [
+    source 0
+    target 15
+    type "observed"
+  ]
+  edge [
+    source 0
+    target 16
+    type "observed"
+  ]
+  edge [
+    source 0
+    target 17
+    type "path"
+    distance 3.0759720545305647
+  ]
+  edge [
+    source 17
+    target 18
+    type "observed"
+  ]
+  edge [
+    source 17
+    target 19
+    type "observed"
+  ]
+  edge [
+    source 17
+    target 20
+    type "observed"
+  ]
+  edge [
+    source 17
+    target 21
+    type "observed"
+  ]
+  edge [
+    source 17
+    target 22
+    type "observed"
+  ]
+  edge [
+    source 17
+    target 23
+    type "observed"
+  ]
+  edge [
+    source 17
+    target 24
+    type "path"
+    distance 6.182435792611242
+  ]
+  edge [
+    source 24
+    target 25
+    type "observed"
+  ]
+  edge [
+    source 24
+    target 26
+    type "observed"
+  ]
+  edge [
+    source 24
+    target 27
+    type "observed"
+  ]
+  edge [
+    source 24
+    target 28
+    type "observed"
+  ]
+  edge [
+    source 24
+    target 29
+    type "observed"
+  ]
+  edge [
+    source 24
+    target 30
+    type "observed"
+  ]
+  edge [
+    source 24
+    target 31
+    type "path"
+    distance 3.8360793101257307
+  ]
+  edge [
+    source 31
+    target 32
+    type "observed"
+  ]
+  edge [
+    source 31
+    target 33
+    type "observed"
+  ]
+  edge [
+    source 31
+    target 34
+    type "path"
+    distance 3.187232704364822
   ]
 ]

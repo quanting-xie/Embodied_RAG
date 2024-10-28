@@ -36,9 +36,13 @@ class AirSimUtils:
         return global_position
 
     def generate_waypoints(self, start_position, target_position, velocity=5):
-        print(f"\nGenerating waypoints:")
-        print(f"Start position: {start_position}")
-        print(f"Target position: {target_position}")
+        # Convert list/tuple target position to dict if necessary
+        if isinstance(target_position, (list, tuple)):
+            target_position = {
+                'x': float(target_position[0]),
+                'y': float(target_position[1]),
+                'z': float(target_position[2])
+            }
 
         # Convert dict positions to Vector3r if necessary
         if isinstance(start_position, dict):
@@ -54,22 +58,58 @@ class AirSimUtils:
                 target_position['z']
             )
 
-        print(f"Converted start position: {start_position}")
-        print(f"Converted target position: {target_position}")
-
         try:
-            # Use AirSim's moveToPositionAsync API
+            print(f"\nMoving to target position: ({target_position.x_val:.2f}, {target_position.y_val:.2f}, {target_position.z_val:.2f})")
             self.client.moveToPositionAsync(
                 target_position.x_val,
                 target_position.y_val,
                 target_position.z_val,
                 velocity
             ).join()
-            print(f"Moved to target position: {target_position}")
+            print("Movement completed!")
             return [start_position, target_position]
         except Exception as e:
             print(f"Movement failed: {str(e)}")
             return None
+
+    def direct_to_waypoint(self, target_position, velocity=5):
+        """
+        Move directly to a target position.
+        Args:
+            target_position: Can be a dict with x,y,z keys, a list/tuple, or Vector3r
+            velocity: Movement velocity in m/s
+        Returns:
+            bool: True if movement successful, False otherwise
+        """
+        # Convert list/tuple target position to dict if necessary
+        if isinstance(target_position, (list, tuple)):
+            target_position = {
+                'x': float(target_position[0]),
+                'y': float(target_position[1]),
+                'z': float(target_position[2])
+            }
+
+        # Convert dict position to Vector3r if necessary
+        if isinstance(target_position, dict):
+            target_position = airsim.Vector3r(
+                target_position['x'],
+                target_position['y'],
+                target_position['z']
+            )
+
+        try:
+            print(f"\nMoving to position: ({target_position.x_val:.2f}, {target_position.y_val:.2f}, {target_position.z_val:.2f})")
+            self.client.moveToPositionAsync(
+                target_position.x_val,
+                target_position.y_val,
+                target_position.z_val,
+                velocity
+            ).join()
+            print("Movement completed!")
+            return True
+        except Exception as e:
+            print(f"Movement failed: {str(e)}")
+            return False
 
 class DroneController:
     def __init__(self, client, speed=2, yaw_rate=45, vertical_speed=2):

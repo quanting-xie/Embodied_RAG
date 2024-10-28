@@ -5,6 +5,7 @@ from .embodied_retriever import EmbodiedRetriever
 import networkx as nx
 import logging
 import airsim
+import numpy as np
 
 logger = logging.getLogger(__name__)
 
@@ -24,14 +25,42 @@ class EmbodiedRAG:
     async def load_graph_to_rag(self, enhanced_graph_file):
         # Load the enhanced graph
         enhanced_graph = nx.read_gml(enhanced_graph_file)
-        print(f"Enhanced graph loaded with {len(enhanced_graph.nodes)} nodes and {len(enhanced_graph.edges)} edges")
+        print("\nDebug: Graph Loading Details:")
+        print(f"Number of nodes: {len(enhanced_graph.nodes())}")
+        
+        # Check if we need to generate embeddings
+        needs_embeddings = False
+        for node, data in enhanced_graph.nodes(data=True):
+            if 'embedding' not in data:
+                needs_embeddings = True
+                break
+        
+        # Generate embeddings only if needed
+        if needs_embeddings:
+            print("\nGenerating embeddings for nodes...")
+            for node, data in enhanced_graph.nodes(data=True):
+                if 'embedding' not in data:
+                    node_text = f"{data.get('label', node)} "
+                    if 'summary' in data:
+                        node_text += data['summary']
+                    
+                    embedding = await self.rag.embedding_func([node_text])
+                    # Convert numpy array to list before saving
+                    enhanced_graph.nodes[node]['embedding'] = embedding[0].tolist()
+                    print(f"Generated embedding for {node}")
+            
+            # Save the graph with embeddings
+            nx.write_gml(enhanced_graph, enhanced_graph_file)
+            print("Saved graph with embeddings")
+        else:
+            print("Loading existing embeddings from graph file")
+            # Convert loaded embeddings back to numpy arrays if needed
+            for node in enhanced_graph.nodes():
+                if 'embedding' in enhanced_graph.nodes[node]:
+                    enhanced_graph.nodes[node]['embedding'] = np.array(enhanced_graph.nodes[node]['embedding'])
 
         # Initialize the retriever with the enhanced graph
         self.retriever = EmbodiedRetriever(enhanced_graph, self.rag.embedding_func)
-        
-        # Convert graph data to a format suitable for LightRAG insertion
-        # rag_data = self._convert_graph_to_rag_format(enhanced_graph)
-        # await self.rag.ainsert(rag_data)
         return enhanced_graph
     
     def _convert_graph_to_rag_format(self, graph):
@@ -78,55 +107,33 @@ class EmbodiedRAG:
         return rag_data
 
     async def query(self, query_text, query_type="explicit", start_position=None):
-        # Log the query details
-        logger.info(f"\nProcessing Query: '{query_text}' (Type: {query_type})")
+        print(f"\n==== Processing Query: '{query_text}' ====")
         
         # Get retrieved nodes
         retrieved_nodes = await self.retriever.retrieve(query_text, query_type=query_type)
         
-        # Log retrieved nodes
-        logger.info("\nRetrieved Content:")
-        for idx, node in enumerate(retrieved_nodes, 1):
-            logger.info(f"\n--- Node {idx} ---")
-            if isinstance(node, dict):
-                logger.info(f"Type: {node.get('type', 'Unknown')}")
-                logger.info(f"Content: {node.get('content', 'No content')}")
-                logger.info(f"Coordinates: {node.get('coordinates', 'No coordinates')}")
-            else:
-                logger.info(f"Content: {node}")
-            logger.info("-------------------")
+        print("\nRetrieved Objects:")
+        for node in retrieved_nodes:
+            print(f"- {node}")
 
         # Generate response
         response = await self.retriever.generate_response(query_text, retrieved_nodes, query_type)
+        print("\nGenerated Response:")
+        print(response)
         
-        # Generate waypoints for explicit and implicit queries
-        waypoints = None
+        # Move to target for explicit and implicit queries
         if query_type in ["explicit", "implicit"] and self.airsim_utils is not None:
             # Extract target position from response
             target_position = self.retriever.extract_target_position(response)
-            print(f"\nExtracted target position: {target_position}")
-            
-            if target_position and start_position:
-                print(f"\nMoving from {start_position} to {target_position}")
-                
-                # Generate waypoints and move using AirSimUtils
-                waypoints = self.airsim_utils.generate_waypoints(
-                    start_position,
-                    target_position,
-                    velocity=5  # You can adjust this value as needed
-                )
-                print(f"\nMovement completed. Waypoints: {waypoints}")
+            print (f"\nTarget position: {target_position}")
+            if target_position:
+                success = self.airsim_utils.direct_to_waypoint(target_position, velocity=5)
+                return response, success
             else:
-                if target_position is None:
-                    print("\nUnable to move: No target position found. The requested object may not exist in the environment.")
-                elif start_position is None:
-                    print("\nUnable to move: No start position provided.")
-                else:
-                    print("\nUnable to move: Unknown error occurred.")
-        else:
-            print("\nSkipping movement: query type not applicable or AirSimUtils not available")
+                print("\nNo target position found.")
+                return response, False
         
-        return response, waypoints
+        return response
 
     def visualize_graph(self):
         self.graph_builder.visualize_graph()
