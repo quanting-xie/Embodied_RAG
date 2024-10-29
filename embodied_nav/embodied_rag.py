@@ -14,13 +14,10 @@ class EmbodiedRAG:
         self.graph_builder = GraphBuilder()
         self.rag = LightRAG(working_dir=working_dir)
         self.relationship_extractor = SpatialRelationshipExtractor(
-            llm_func=self.rag.llm_model_func,  # Changed from llm to llm_func
-            cluster_distance_threshold=5.0,
-            proximity_threshold=10.0,
-            vertical_threshold=2.0
+            llm_interface=self.rag
         )
         self.retriever = None
-        self.airsim_utils = airsim_utils  # Add AirSimUtils instance
+        self.airsim_utils = airsim_utils  
 
     async def load_graph_to_rag(self, enhanced_graph_file):
         # Load the enhanced graph
@@ -28,14 +25,12 @@ class EmbodiedRAG:
         print("\nDebug: Graph Loading Details:")
         print(f"Number of nodes: {len(enhanced_graph.nodes())}")
         
-        # Check if we need to generate embeddings
         needs_embeddings = False
         for node, data in enhanced_graph.nodes(data=True):
             if 'embedding' not in data:
                 needs_embeddings = True
                 break
         
-        # Generate embeddings only if needed
         if needs_embeddings:
             print("\nGenerating embeddings for nodes...")
             for node, data in enhanced_graph.nodes(data=True):

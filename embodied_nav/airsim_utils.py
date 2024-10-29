@@ -72,24 +72,23 @@ class AirSimUtils:
             print(f"Movement failed: {str(e)}")
             return None
 
-    def direct_to_waypoint(self, target_position, velocity=5):
+    def direct_to_waypoint(self, target_position, velocity=5, max_retries=3):
         """
-        Move directly to a target position.
+        Move directly to a target position with collision avoidance.
         Args:
             target_position: Can be a dict with x,y,z keys, a list/tuple, or Vector3r
             velocity: Movement velocity in m/s
+            max_retries: Maximum number of retry attempts after collision
         Returns:
             bool: True if movement successful, False otherwise
         """
-        # Convert list/tuple target position to dict if necessary
+        # Convert target position to Vector3r
         if isinstance(target_position, (list, tuple)):
             target_position = {
                 'x': float(target_position[0]),
                 'y': float(target_position[1]),
                 'z': float(target_position[2])
             }
-
-        # Convert dict position to Vector3r if necessary
         if isinstance(target_position, dict):
             target_position = airsim.Vector3r(
                 target_position['x'],
@@ -97,19 +96,63 @@ class AirSimUtils:
                 target_position['z']
             )
 
-        try:
-            print(f"\nMoving to position: ({target_position.x_val:.2f}, {target_position.y_val:.2f}, {target_position.z_val:.2f})")
-            self.client.moveToPositionAsync(
-                target_position.x_val,
-                target_position.y_val,
-                target_position.z_val,
-                velocity
-            ).join()
-            print("Movement completed!")
-            return True
-        except Exception as e:
-            print(f"Movement failed: {str(e)}")
-            return False
+        retry_count = 0
+        while retry_count < max_retries:
+            try:
+                print(f"\nAttempt {retry_count + 1}: Moving to position: ({target_position.x_val:.2f}, {target_position.y_val:.2f}, {target_position.z_val:.2f})")
+                
+                # First move up to a safe height
+                current_pose = self.client.simGetVehiclePose()
+                safe_height = current_pose.position.z_val - 2.0  # Move 2 meters up
+                
+                self.client.moveToPositionAsync(
+                    current_pose.position.x_val,
+                    current_pose.position.y_val,
+                    safe_height,
+                    velocity
+                ).join()
+                
+                # Then move to target X,Y position while maintaining height
+                self.client.moveToPositionAsync(
+                    target_position.x_val,
+                    target_position.y_val,
+                    safe_height,
+                    velocity
+                ).join()
+                
+                # Finally descend to target height
+                self.client.moveToPositionAsync(
+                    target_position.x_val,
+                    target_position.y_val,
+                    target_position.z_val,
+                    velocity/2  # Slower descent
+                ).join()
+                
+                print("Movement completed successfully!")
+                return True
+                
+            except Exception as e:
+                print(f"Movement failed: {str(e)}")
+                retry_count += 1
+                
+                if retry_count < max_retries:
+                    print("Collision detected! Initiating recovery...")
+                    # Recovery behavior
+                    try:
+                        # Move back and up
+                        current_pose = self.client.simGetVehiclePose()
+                        self.client.moveToPositionAsync(
+                            current_pose.position.x_val - 1.0,  # Back up 1 meter
+                            current_pose.position.y_val,
+                            current_pose.position.z_val - 1.0,  # Up 1 meter
+                            velocity/2
+                        ).join()
+                        time.sleep(1)  # Wait for stabilization
+                    except:
+                        print("Recovery movement failed")
+                        
+        print(f"Failed to reach target after {max_retries} attempts")
+        return False
 
 class DroneController:
     def __init__(self, client, speed=2, yaw_rate=45, vertical_speed=2):

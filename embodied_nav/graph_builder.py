@@ -4,13 +4,14 @@ import matplotlib.pyplot as plt
 import time
 import logging
 import asyncio
+from .config import Config
 
 class GraphBuilder:
     def __init__(self):
         self.G = nx.Graph()
         self.llm = LLMInterface()
         self.last_drone_node = None
-        self.drone_node_distance = 3.0  # Minimum distance threshold in meters
+        self.drone_node_distance = Config.GRAPH['drone_node_distance']
 
     def update_graph(self, new_graph):
         self.G = nx.compose(self.G, new_graph)

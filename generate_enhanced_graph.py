@@ -10,7 +10,7 @@ async def generate_enhanced_graph(initial_graph_file, enhanced_graph_file):
     objects = graph_builder.get_objects()
 
     llm_interface = LLMInterface()
-    relationship_extractor = SpatialRelationshipExtractor(llm_interface.generate_response)
+    relationship_extractor = SpatialRelationshipExtractor(llm_interface)
 
     enhanced_graph = await relationship_extractor.extract_relationships(objects)
     

@@ -28,11 +28,11 @@ async def main():
     current_position = airsim_utils.vector3r_to_dict(current_pose.position)
     
     print("\n" + "="*50)
-    print("IMPLICIT QUERY: 'Where can I eat at a quite place?'")
+    print("IMPLICIT QUERY: 'Where can I eat my lunch?'")
     print("="*50)
     # Implicit query
     response, waypoints = await embodied_rag.query(
-        "Where can I eat at a quite place?",
+        "Where can I eat my lunch?",
         query_type="implicit",
         start_position=current_position
     )
