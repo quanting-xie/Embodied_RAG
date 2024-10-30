@@ -1,12 +1,33 @@
-from lightrag.llm import openai_complete_if_cache
+from openai import AsyncOpenAI
 from .config import Config
 import re
+import os
 
 class LLMInterface:
     def __init__(self):
         self.model = Config.LLM['model']
         self.temperature = Config.LLM['temperature']
         self.max_tokens = Config.LLM['max_tokens']
+        self.client = AsyncOpenAI()
+
+    async def generate_response(self, prompt, system_prompt=None):
+        """Base method for generating responses from the LLM"""
+        if system_prompt is None:
+            system_prompt = "You are an AI assistant specialized in spatial navigation and environment understanding."
+            
+        messages = []
+        if system_prompt:
+            messages.append({"role": "system", "content": system_prompt})
+        messages.append({"role": "user", "content": prompt})
+
+        response = await self.client.chat.completions.create(
+            model=self.model,
+            messages=messages,
+            temperature=self.temperature,
+            max_tokens=self.max_tokens
+        )
+        
+        return response.choices[0].message.content.strip()
 
     async def generate_relationship(self, node1, node2):
         prompt = f"""
@@ -19,29 +40,10 @@ class LLMInterface:
         Output the relationship as a short phrase or sentence.
         """
 
-        response = await openai_complete_if_cache(
-            self.model,
+        return await self.generate_response(
             prompt,
-            temperature=self.temperature,
-            max_tokens=self.max_tokens,
-            system_prompt="You are an AI assistant specialized in describing spatial relationships between objects in a 3D environment.",
+            system_prompt="You are an AI assistant specialized in describing spatial relationships between objects in a 3D environment."
         )
-
-        return response.strip()
-
-    async def generate_response(self, prompt, system_prompt=None):
-        """Base method for generating responses from the LLM"""
-        if system_prompt is None:
-            system_prompt = "You are an AI assistant specialized in spatial navigation and environment understanding."
-            
-        response = await openai_complete_if_cache(
-            model=self.model,
-            prompt=prompt,
-            temperature=self.temperature,
-            max_tokens=self.max_tokens,
-            system_prompt=system_prompt
-        )
-        return response.strip()
 
     async def rank_results(self, query, results, context):
         prompt = f"""Given the following query and list of objects in a 3D environment, rank the objects based on their relevance to the query. Consider semantic similarity, hierarchical relationships, spatial proximity, and functional relevance.
@@ -53,8 +55,7 @@ class LLMInterface:
 
             Output a ranked list of object IDs, separated by commas, from most relevant to least relevant.
             """
-        response = await self.generate_response(prompt)
-        ranked_ids = [id.strip() for id in response.split(',')]
+        ranked_ids = [id.strip() for id in self.generate_response(prompt).split(',')]
         return [id for id in ranked_ids if id in results]  # Ensure we only return valid results
 
     async def generate_community_summary(self, objects):
@@ -144,5 +145,4 @@ class LLMInterface:
             Make sure the object_name matches exactly with one of the objects in the context.
             """
         
-        system_prompt = "You are an AI assistant specialized in spatial navigation and environment understanding."
-        return await self.generate_response(prompt, system_prompt=system_prompt)
+        return await self.generate_response(prompt)

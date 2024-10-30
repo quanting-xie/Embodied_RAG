@@ -10,10 +10,14 @@ import os
 logger = logging.getLogger(__name__)
 
 class EmbodiedRAG:
-    def __init__(self, working_dir, airsim_utils=None):
+    def __init__(self, working_dir, airsim_utils=None, use_ollama=False):
         self.working_dir = working_dir
         self.cache_file = os.path.join(working_dir, "llm_response_cache.json")
-        self.client = AsyncOpenAI()
+        if use_ollama:
+            from .ollama_llm import OllamaInterface
+            self.llm = OllamaInterface()
+        else:
+            self.client = AsyncOpenAI()
         self.relationship_extractor = SpatialRelationshipExtractor(self)
         self.retriever = None
         self.airsim_utils = airsim_utils

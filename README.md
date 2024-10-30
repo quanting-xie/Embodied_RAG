@@ -10,7 +10,7 @@
 - AirSim simulator
 - OpenAI API key for LLM functionality
 
-
+1. Clone the repository:
 ```bash
 git clone https://github.com/yourusername/Embodied_RAG.git
 cd Embodied_RAG
@@ -18,17 +18,16 @@ pip install -r requirements.txt
 
 ```
 
-Set your OpenAI API key:
+2. Set your OpenAI API key:
 ```bash
 export OPENAI_API_KEY=your_api_key_here
 ```
 
-Configure parameters (optional):
+3. Configure parameters (optional):
+
    Edit `embodied_nav/config.py` to adjust thresholds:
 
-Running AirSim:
-
-
+4. Running AirSim:
 ```bash
 cd AirSim/Unreal/Environments/Building99/LinuxNoEditor
 ./Building99.sh
