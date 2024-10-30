@@ -1,134 +1,110 @@
-from lightrag import LightRAG, QueryParam
-from .graph_builder import GraphBuilder
 from .spatial_relationship_extractor import SpatialRelationshipExtractor
 from .embodied_retriever import EmbodiedRetriever
 import networkx as nx
 import logging
-import airsim
 import numpy as np
+from openai import AsyncOpenAI
+import json
+import os
 
 logger = logging.getLogger(__name__)
 
 class EmbodiedRAG:
     def __init__(self, working_dir, airsim_utils=None):
-        self.graph_builder = GraphBuilder()
-        self.rag = LightRAG(working_dir=working_dir)
-        self.relationship_extractor = SpatialRelationshipExtractor(
-            llm_interface=self.rag
-        )
+        self.working_dir = working_dir
+        self.cache_file = os.path.join(working_dir, "llm_response_cache.json")
+        self.client = AsyncOpenAI()
+        self.relationship_extractor = SpatialRelationshipExtractor(self)
         self.retriever = None
-        self.airsim_utils = airsim_utils  
+        self.airsim_utils = airsim_utils
+        self._load_cache()
+
+    def _load_cache(self):
+        """Load LLM response cache from disk"""
+        try:
+            with open(self.cache_file, 'r') as f:
+                self.llm_cache = json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            self.llm_cache = {}
+            os.makedirs(self.working_dir, exist_ok=True)
+
+    async def embedding_func(self, texts):
+        """Generate embeddings using OpenAI API"""
+        response = await self.client.embeddings.create(
+            model="text-embedding-ada-002",
+            input=texts
+        )
+        return [np.array(embedding.embedding) for embedding in response.data]
+
 
     async def load_graph_to_rag(self, enhanced_graph_file):
-        # Load the enhanced graph
+        """Load and enhance graph with embeddings"""
         enhanced_graph = nx.read_gml(enhanced_graph_file)
-        print("\nDebug: Graph Loading Details:")
-        print(f"Number of nodes: {len(enhanced_graph.nodes())}")
+        print(f"Loaded graph with {len(enhanced_graph.nodes())} nodes")
         
-        needs_embeddings = False
-        for node, data in enhanced_graph.nodes(data=True):
-            if 'embedding' not in data:
-                needs_embeddings = True
-                break
+        # Generate embeddings if needed
+        await self._ensure_embeddings(enhanced_graph, enhanced_graph_file)
+        
+        # Initialize retriever with enhanced graph
+        self.retriever = EmbodiedRetriever(enhanced_graph, self.embedding_func)
+        return enhanced_graph
+
+    async def _ensure_embeddings(self, graph, graph_file):
+        """Ensure all nodes have embeddings"""
+        needs_embeddings = any('embedding' not in data for _, data in graph.nodes(data=True))
         
         if needs_embeddings:
-            print("\nGenerating embeddings for nodes...")
-            for node, data in enhanced_graph.nodes(data=True):
-                if 'embedding' not in data:
-                    node_text = f"{data.get('label', node)} "
-                    if 'summary' in data:
-                        node_text += data['summary']
-                    
-                    embedding = await self.rag.embedding_func([node_text])
-                    # Convert numpy array to list before saving
-                    enhanced_graph.nodes[node]['embedding'] = embedding[0].tolist()
-                    print(f"Generated embedding for {node}")
-            
-            # Save the graph with embeddings
-            nx.write_gml(enhanced_graph, enhanced_graph_file)
+            print("Generating missing embeddings...")
+            await self._generate_node_embeddings(graph)
+            nx.write_gml(graph, graph_file)
             print("Saved graph with embeddings")
         else:
-            print("Loading existing embeddings from graph file")
-            # Convert loaded embeddings back to numpy arrays if needed
-            for node in enhanced_graph.nodes():
-                if 'embedding' in enhanced_graph.nodes[node]:
-                    enhanced_graph.nodes[node]['embedding'] = np.array(enhanced_graph.nodes[node]['embedding'])
+            print("Using existing embeddings")
+            self._convert_embeddings_to_numpy(graph)
 
-        # Initialize the retriever with the enhanced graph
-        self.retriever = EmbodiedRetriever(enhanced_graph, self.rag.embedding_func)
-        return enhanced_graph
-    
-    def _convert_graph_to_rag_format(self, graph):
-        rag_data = []
-        
+    async def _generate_node_embeddings(self, graph):
+        """Generate embeddings for nodes"""
         for node, data in graph.nodes(data=True):
-            # Use summary as the node name if it exists, otherwise use the original node id
-            node_name = data.get('summary', node)
-            node_text = f"Node: {node_name}, "
-            node_text += f"Level: {data.get('level', 'N/A')}, "
-            
-            if 'position' in data:
-                pos = data['position']
-                if isinstance(pos, dict):
-                    # If pos is a dictionary, extract x, y, z values
-                    node_text += f"Position: ({pos.get('x', 0):.2f}, {pos.get('y', 0):.2f}, {pos.get('z', 0):.2f}), "
-                elif isinstance(pos, (list, tuple)) and len(pos) >= 3:
-                    # If pos is a list or tuple, use the first three elements
-                    node_text += f"Position: ({pos[0]:.2f}, {pos[1]:.2f}, {pos[2]:.2f}), "
-                else:
-                    # If pos is in an unexpected format, add a note about it
-                    node_text += f"Position: (format unknown), "
-            
-            # Add other attributes, excluding those we've already handled
-            node_text += ", ".join([f"{k}: {v}" for k, v in data.items() 
-                                    if k not in ['id', 'level', 'position', 'summary']])
-            
-            rag_data.append(node_text)
-        
-        for u, v, data in graph.edges(data=True):
-            # Use summaries as node names if they exist
-            u_name = graph.nodes[u].get('summary', u)
-            v_name = graph.nodes[v].get('summary', v)
-            
-            edge_text = f"Relationship: {u_name} to {v_name}, "
-            edge_text += f"Type: {data.get('relationship', 'Unknown')}, "
-            
-            # Add other edge attributes
-            edge_text += ", ".join([f"{k}: {v}" for k, v in data.items() 
-                                    if k != 'relationship'])
-            
-            rag_data.append(edge_text)
-        
-        return rag_data
+            if 'embedding' not in data:
+                node_text = self._get_node_text(node, data)
+                embedding = await self.embedding_func([node_text])
+                graph.nodes[node]['embedding'] = embedding[0].tolist()
+
+    def _convert_embeddings_to_numpy(self, graph):
+        """Convert stored embeddings to numpy arrays"""
+        for node in graph.nodes():
+            if 'embedding' in graph.nodes[node]:
+                graph.nodes[node]['embedding'] = np.array(graph.nodes[node]['embedding'])
+
+    def _get_node_text(self, node, data):
+        """Generate text representation of a node"""
+        return f"{data.get('label', node)} {data.get('summary', '')}"
 
     async def query(self, query_text, query_type="explicit", start_position=None):
+        """Process queries and handle navigation"""
         print(f"\n==== Processing Query: '{query_text}' ====")
         
-        # Get retrieved nodes
         retrieved_nodes = await self.retriever.retrieve(query_text, query_type=query_type)
-        
-        print("\nRetrieved Objects:")
-        for node in retrieved_nodes:
-            print(f"- {node}")
+        print("\nRetrieved Objects:", *[f"- {node}" for node in retrieved_nodes], sep="\n")
 
-        # Generate response
         response = await self.retriever.generate_response(query_text, retrieved_nodes, query_type)
-        print("\nGenerated Response:")
-        print(response)
+        print("\nGenerated Response:", response)
         
-        # Move to target for explicit and implicit queries
-        if query_type in ["explicit", "implicit"] and self.airsim_utils is not None:
-            # Extract target position from response
-            target_position = self.retriever.extract_target_position(response)
-            print (f"\nTarget position: {target_position}")
-            if target_position:
-                success = self.airsim_utils.direct_to_waypoint(target_position, velocity=5)
-                return response, success
-            else:
-                print("\nNo target position found.")
-                return response, False
+        if query_type in ["explicit", "implicit"] and self.airsim_utils:
+            return await self._handle_navigation(response)
         
         return response
 
-    def visualize_graph(self):
-        self.graph_builder.visualize_graph()
+    async def _handle_navigation(self, response):
+        """Handle navigation to target position"""
+        target_position = self.retriever.extract_target_position(response)
+        print(f"\nTarget position: {target_position}")
+        
+        if target_position:
+            success = self.airsim_utils.direct_to_waypoint(target_position, velocity=5)
+            return response, success
+        
+        print("\nNo target position found.")
+        return response, False
+
+

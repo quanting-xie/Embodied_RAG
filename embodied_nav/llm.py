@@ -29,14 +29,17 @@ class LLMInterface:
 
         return response.strip()
 
-
-    async def generate_response(self, prompt):
+    async def generate_response(self, prompt, system_prompt=None):
+        """Base method for generating responses from the LLM"""
+        if system_prompt is None:
+            system_prompt = "You are an AI assistant specialized in spatial navigation and environment understanding."
+            
         response = await openai_complete_if_cache(
-            self.model,
-            prompt,
+            model=self.model,
+            prompt=prompt,
             temperature=self.temperature,
             max_tokens=self.max_tokens,
-            system_prompt="You are an AI assistant specialized in answering queries about objects and their relationships in a 3D environment.",
+            system_prompt=system_prompt
         )
         return response.strip()
 
@@ -115,3 +118,31 @@ class LLMInterface:
                 'name': 'Unnamed Area',
                 'summary': response.strip()
             }
+
+    async def generate_navigation_response(self, query, context, query_type):
+        """Generate response based on query type"""
+        if query_type == "global":
+            # For global queries, just provide information without navigation
+            prompt = f"""Given the following context about objects in a 3D environment:
+
+            {context}
+
+            Answer the following query about the environment: {query}
+            Focus on describing the spatial relationships and overall layout.
+            """
+        else:
+            # For explicit/implicit queries, include navigation target
+            prompt = f"""Given the following context about objects in a 3D environment:
+
+            {context}
+
+            For the query: '{query}', provide:
+            1. A brief description of the most relevant object(s)
+            2. An explanation of why these objects are relevant and query
+            3. Choose the best target object and output it in this format: <<object_name>>
+            
+            Make sure the object_name matches exactly with one of the objects in the context.
+            """
+        
+        system_prompt = "You are an AI assistant specialized in spatial navigation and environment understanding."
+        return await self.generate_response(prompt, system_prompt=system_prompt)

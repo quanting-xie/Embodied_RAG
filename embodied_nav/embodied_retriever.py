@@ -15,102 +15,53 @@ class EmbodiedRetriever:
         self.max_hierarchical_level = Config.RETRIEVAL['max_hierarchical_level']
 
     async def retrieve(self, query, query_type="global", top_k=None):
+        """Main retrieval method for all query types"""
         top_k = top_k or self.top_k_default
         query_embedding = await self.embedding_func([query])
         
-        # Get initial nodes based on query type
-        initial_nodes = []
-        if query_type == "explicit":
-            initial_nodes = await self._explicit_retrieval(query, query_embedding, top_k)
-        elif query_type == "implicit":
-            initial_nodes = await self._implicit_retrieval(query, query_embedding, top_k)
-        elif query_type == "global":
-            initial_nodes = await self._global_retrieval(query, query_embedding, top_k)
+        # Get semantically similar nodes
+        semantic_results = await self._semantic_retrieval(query_embedding, top_k)
         
-        # Expand nodes to include their full hierarchical chains
-        expanded_nodes = set()
-        for node in initial_nodes:
+        # Get spatial and hierarchical context
+        expanded_nodes = set(semantic_results)
+        for node in semantic_results:
+            # Add hierarchical chain
             chain = self._get_hierarchical_chain(node)
             expanded_nodes.update(chain)
+            
+            # Add spatially related nodes
+            spatial_neighbors = self._get_spatial_neighbors(node)
+            expanded_nodes.update(spatial_neighbors)
         
         return list(expanded_nodes)
 
-    async def _explicit_retrieval(self, query, query_embedding, top_k):
-        # Get directly matching objects
-        matching_objects = [node for node, data in self.graph.nodes(data=True) 
-                          if query.lower() in data.get('label', '').lower()]
-        
-        # Get semantic matches if needed
-        if len(matching_objects) < top_k:
-            semantic_results = await self._semantic_retrieval(query_embedding, top_k)
-            matching_objects.extend(semantic_results)
-        
-        return matching_objects
-
-    async def _implicit_retrieval(self, query, query_embedding, top_k):
-        # Get semantic matches
-        semantic_results = await self._semantic_retrieval(query_embedding, top_k)
-        
-        # Get all relevant information
-        return semantic_results
-
-    async def _global_retrieval(self, query, query_embedding, top_k):
-        # Combine semantic, hierarchical, spatial, and functional retrieval
-        semantic_results = await self._semantic_retrieval(query_embedding, top_k)
-        hierarchical_results = self._hierarchical_retrieval(top_k)
-        spatial_results = self._spatial_retrieval(top_k)
-        # functional_results = self._functional_retrieval(top_k)
-        
-        combined_results = list(set(semantic_results + hierarchical_results + spatial_results))
-        return combined_results[:top_k]
+    def _get_spatial_neighbors(self, node):
+        """Get nodes with spatial relationships to the given node"""
+        neighbors = []
+        for neighbor, edge_data in self.graph[node].items():
+            if ('relationship' in edge_data and 
+                edge_data['relationship'] not in ['part_of']):
+                neighbors.append(neighbor)
+        return neighbors
 
     async def _semantic_retrieval(self, query_embedding, top_k):
-        print("\nDebug: Starting semantic retrieval")
+        """Get semantically similar nodes"""
         node_similarities = []
-        
         for node, data in self.graph.nodes(data=True):
             if 'embedding' in data:
-                similarity = 1 - cosine(query_embedding[0], data['embedding'])  # Note: using query_embedding[0]
+                similarity = 1 - cosine(query_embedding[0], data['embedding'])
                 node_similarities.append((node, similarity))
-                print(f"Debug: Node {node} similarity: {similarity}")
         
         node_similarities.sort(key=lambda x: x[1], reverse=True)
-        result = [node for node, sim in node_similarities[:top_k] if sim > 0.25]  # Add similarity threshold
-        print(f"Debug: Semantic retrieval results: {result}")
-        return result
-
-    def _hierarchical_retrieval(self, top_k):
-        hierarchical_nodes = [node for node, data in self.graph.nodes(data=True) if data.get('level', 0) > 0]
-        return sorted(hierarchical_nodes, key=lambda n: self.graph.nodes[n]['level'], reverse=True)[:top_k]
-
-    def _spatial_retrieval(self, top_k):
-        # Simplified to use relationship types from graph edges
-        spatial_edges = [
-            (u, v) for (u, v, d) in self.graph.edges(data=True) 
-            if 'relationship' in d and d['relationship'] not in ['part_of']  # Exclude hierarchical relationships
+        return [
+            node for node, sim in node_similarities[:top_k] 
+            if sim > self.semantic_threshold
         ]
-        return list(set([node for edge in spatial_edges for node in edge]))[:top_k]
 
     async def generate_response(self, query, retrieved_nodes, query_type):
+        """Generate response using context from retrieved nodes"""
         context = self._build_context(retrieved_nodes)
-        
-        if query_type in ["explicit", "implicit"]:
-            prompt = f"""Given the following context about objects in a 3D environment:
-
-            {context}
-
-            For the query: '{query}', provide the following:
-            1. A brief description of the most relevant object(s)
-            2. An explanation of why these objects are relevant to the query, considering their semantic properties, hierarchical relationships, spatial context.
-            3. Choose the best object to answer the query and output in this exact format at the end: <<object_name>>
-            
-            Make sure the object_name matches exactly with one of the objects in the context.
-            """
-        else:  # global query
-            prompt = f"Given the following context about objects in a 3D environment:\n\n{context}\n\nAnswer the following query: {query}"
-        
-        response = await self.llm.generate_response(prompt)
-        return response
+        return await self.llm.generate_navigation_response(query, context, query_type)
 
     def extract_target_object(self, response):
         """Extract the target object from the LLM response."""
@@ -143,7 +94,7 @@ class EmbodiedRetriever:
             
             current = parent
             level += 1
-            if level > 10:  # Safety check
+            if level > self.max_hierarchical_level:
                 break
                 
         return chain

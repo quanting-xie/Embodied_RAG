@@ -27,10 +27,13 @@ Configure parameters (optional):
    Edit `embodied_nav/config.py` to adjust thresholds:
 
 Running AirSim:
-    ```bash
-    cd AirSim/Unreal/Environments/Building99/LinuxNoEditor
-    ./Building99.sh
-    ```
+
+
+```bash
+cd AirSim/Unreal/Environments/Building99/LinuxNoEditor
+./Building99.sh
+
+```
 
 ## Core Components
 

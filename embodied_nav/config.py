@@ -9,7 +9,7 @@ class Config:
 
     # Retrieval Parameters
     RETRIEVAL = {
-        'semantic_similarity_threshold': 0.25,  # threshold for semantic matching
+        'semantic_similarity_threshold': 0.6,  # threshold for semantic matching
         'top_k_default': 5,                    # default number of results to return
         'max_hierarchical_level': 10,          # maximum levels in hierarchy
     }
