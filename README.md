@@ -3,6 +3,35 @@
 ## Overview
 **Embodied RAG** is a system that builds and queries spatial knowledge graphs by extracting relationships between objects in 3D environments. It combines spatial, hierarchical, and proximity relationships to create a rich understanding of object arrangements.
 
+## Setup
+
+**Prerequisites:**
+- Python >= 3.9 (required by LightRAG)
+- AirSim simulator
+- OpenAI API key for LLM functionality
+
+
+```bash
+git clone https://github.com/yourusername/Embodied_RAG.git
+cd Embodied_RAG
+pip install -r requirements.txt
+
+```
+
+Set your OpenAI API key:
+```bash
+export OPENAI_API_KEY=your_api_key_here
+```
+
+Configure parameters (optional):
+   Edit `embodied_nav/config.py` to adjust thresholds:
+
+Running AirSim:
+    ```bash
+    cd AirSim/Unreal/Environments/Building99/LinuxNoEditor
+    ./Building99.sh
+    ```
+
 ## Core Components
 
 ### 1. SpatialRelationshipExtractor
@@ -21,10 +50,17 @@ The main interface for the system that:
 ## Key Features
 
 ### 1. Topological Graph Building
+```bash
+cd embodied_rag
+python airsim_explorer.py
+```
 - Explore the environment with a drone and object detector
 - Logs object positions and realtionships as nodes and edges to NanoDB
 
 ### 2. Semantic Forest Building
+```bash
+python generate_semantic_forest.py
+```
 - Adding hierarhical information and relative relationships between nodes.
 - Three types of relationships are extracted for edges: spatial, proximity, and hierarchical
     - Spatial: Cardinal direction relationships between objects (north, south, east, west) with vertical components (above, below)
@@ -34,17 +70,16 @@ The main interface for the system that:
 - Computing embeddings for nodes and clusters and relationships
 
 ### 3. Retrieval Processing
+```bash
+cd ..
+python retrieval.py
+```
 - Retrieving relevant nodes and relationships based on query embeddings:
     - Compute semantic similarity between query and nodes
-    - Retrieve top k nodes with
+    - Retrieve top k nodes with highest similarity
+    - Retrieve each node's spatial, proximity, and hierarchical relationships(customizable in config.py)
 
-### 3. Query Processing
 Supports different types of queries:
 - Explicit spatial queries
 - Implicit spatial queries
-- Navigation queries with AirSim integration
-
-## Usage
-
-### 1. Generate Enhanced Graph
-Use the system to build and enhance the spatial knowledge graph, and query it to extract spatial relationships.
+- Global queries
