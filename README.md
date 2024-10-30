@@ -20,19 +20,23 @@ The main interface for the system that:
 
 ## Key Features
 
-### 1. Graph Building
-- Filters out drone nodes from relationship extraction
-- Creates hierarchical clusters of spatially related objects
-- Adds cardinal direction relationships between objects within threshold distances
-- Adds proximity relationships for nearby objects
-- Maintains separate thresholds for different relationship types
+### 1. Topological Graph Building
+- Explore the environment with a drone and object detector
+- Logs object positions and realtionships as nodes and edges to NanoDB
 
-### 2. Graph Enhancement
-The system enhances basic spatial graphs by:
-- Adding positional relationships
-- Creating hierarchical clusters
-- Generating summaries for object groups
-- Computing embeddings for nodes
+### 2. Semantic Forest Building
+- Adding hierarhical information and relative relationships between nodes.
+- Three types of relationships are extracted for edges: spatial, proximity, and hierarchical
+    - Spatial: Cardinal direction relationships between objects (north, south, east, west) with vertical components (above, below)
+    - Proximity: Is objects A near object B (within a threshold distance)
+    - Hierarchical: A part of B (forming a hierarchical structure of spaces)
+- Generating summaries for clustered object groups
+- Computing embeddings for nodes and clusters and relationships
+
+### 3. Retrieval Processing
+- Retrieving relevant nodes and relationships based on query embeddings:
+    - Compute semantic similarity between query and nodes
+    - Retrieve top k nodes with
 
 ### 3. Query Processing
 Supports different types of queries:
