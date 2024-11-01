@@ -27,10 +27,18 @@ export OPENAI_API_KEY=your_api_key_here
 
    Edit `embodied_nav/config.py` to adjust thresholds:
 
-4. Running AirSim:
+4. Running AirSim with Docker:
 ```bash
+# get docker envs
+docker pull jinhuiye/airsim_binary:1.2
+UNREAL_ROOT_PATH=your path for AirSim
+
+# enter docker
+bash run_with_docker.sh $UNREAL_ROOT_PATH
+
+# inside docker
 cd AirSim/Unreal/Environments/Building99/LinuxNoEditor
-./Building99.sh
+./Building99.sh -windowed -ResX=1080 -ResY=720
 
 ```
 

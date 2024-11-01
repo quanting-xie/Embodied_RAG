@@ -36,8 +36,8 @@ fi
 # set the environment varible SDL_VIDEODRIVER to SDL_VIDEODRIVER_VALUE
 
 
-UNREAL_ROOT_PATH=/home/daniel/Docker/AirSim
-AirSim_Setting=/home/daniel/Docker/AirSim/docker/settings.json
+UNREAL_ROOT_PATH=$1
+AirSim_Setting=${UNREAL_ROOT_PATH}/docker/settings.json
 
 
 sudo docker run --runtime=nvidia --gpus all -it \
@@ -57,6 +57,6 @@ sudo docker run --runtime=nvidia --gpus all -it \
     
     
 
-# run in your teminal
+# run inside docker terminal with your code (been mounted by UNREAL_ROOT_PATH)
 # bash path_to/Blocks/Blocks.sh -windowed -ResX=1080 -ResY=720
 
