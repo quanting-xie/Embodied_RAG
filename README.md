@@ -45,8 +45,7 @@ cd AirSim/Unreal/Environments/Building99/LinuxNoEditor
 ### 1. Data Collection
 
 ```bash
-cd embodied_rag
-python airsim_explorer.py
+python embodied_nav/airsim_explorer.py
 ```
 - Explore the environment with a drone and object detector
 - Logs object positions and realtionships as nodes and edges to NanoDB
@@ -54,7 +53,6 @@ python airsim_explorer.py
 ### 2. Semantic Forest Building
 
 ```bash
-cd ..
 python generate_semantic_forest.py
 ```
 
@@ -63,13 +61,21 @@ python generate_semantic_forest.py
 - Creates multi-level semantic forest with LLM summaries
 - Supports both proximity and cardinal direction relationships
 
+
+### 3. Graph Visualization
+
+```bash
+python graph_visualizer.py semantic_graphs/enhanced_semantic_graph_semantic_graph_Building99_20241118_160313.gml
+```
+
+Above is an example of the graph visualization, change to your own semantic graph file.
+
 ### 3. Retrieval Processing
 ```bash
 python experiment.py --method semantic --query-type implicit
-# or
-python experiment.py --method llm_hierarchical --query-type explicit --query "Find the nearest chair"
 ```
 - Remember to change the retreival method in the config.py file
+
 
 #### Retrieval Methods:
 1. **LLM-based Hierarchical Traversal(Original Method In Paper)**
@@ -82,8 +88,6 @@ python experiment.py --method llm_hierarchical --query-type explicit --query "Fi
    - Computes semantic similarity between query and nodes
    - Retrieves top k nodes with highest similarity
    - Customizable thresholds in config.py
-
-
 
 
 
