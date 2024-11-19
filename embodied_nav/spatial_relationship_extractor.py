@@ -7,6 +7,8 @@ from .config import Config
 import re
 from sklearn.neighbors import NearestNeighbors
 from .llm import LLMInterface
+import traceback
+from sklearn.cluster import AgglomerativeClustering
 
 class SpatialRelationshipExtractor:
     def __init__(self, llm_interface):
@@ -19,300 +21,321 @@ class SpatialRelationshipExtractor:
         
         # Get parameters from config
         self.cluster_distance_threshold = Config.SPATIAL['cluster_distance_threshold']
-        self.proximity_threshold = Config.SPATIAL['proximity_threshold']
         self.spatial_threshold = Config.SPATIAL['spatial_threshold']
         self.vertical_threshold = Config.SPATIAL['vertical_threshold']
         self.cardinal_directions = Config.CARDINAL_DIRECTIONS
 
+    def _get_leaf_positions(self, members, G=None, visited=None):
+        """Recursively get positions of all leaf nodes in a cluster"""
+        if visited is None:
+            visited = set()
+            
+        positions = []
+        print("\nDebug _get_leaf_positions:")
+        
+        for member in members:
+            if isinstance(member, dict):
+                member_id = member.get('id')
+                print(f"Processing member dict: {member_id}, type: {member.get('type')}")
+                
+                if member_id is None or member_id in visited:
+                    continue
+                    
+                visited.add(member_id)  # Mark as visited
+                
+                # For cluster nodes, get their children
+                if member.get('type') == 'cluster':
+                    print(f"Found cluster node: {member_id}")
+                    if G and member_id in G:
+                        # Get all neighbors that are connected by 'part_of' relationship
+                        neighbors = []
+                        for neighbor in G.neighbors(member_id):
+                            edge_data = G.get_edge_data(member_id, neighbor)
+                            if edge_data.get('relationship') == 'part_of' and neighbor not in visited:
+                                neighbors.append(neighbor)
+                        
+                        print(f"Cluster {member_id} has unvisited part_of neighbors: {neighbors}")
+                        
+                        # Process each neighbor
+                        for neighbor in neighbors:
+                            node_data = G.nodes[neighbor]
+                            # Get position directly if it's a leaf node
+                            if node_data.get('type') != 'cluster':
+                                pos = self._get_position(node_data)
+                                if not np.all(pos == 0):
+                                    positions.append(pos)
+                                    print(f"Added leaf position from neighbor: {neighbor}")
+                            else:
+                                # Recursively get positions for cluster neighbors
+                                child_positions = self._get_leaf_positions([{'id': neighbor, **node_data}], G, visited)
+                                positions.extend(child_positions)
+                                print(f"Added {len(child_positions)} positions from cluster neighbor: {neighbor}")
+                else:
+                    # For leaf nodes, get position directly
+                    print(f"Found leaf node: {member_id}")
+                    pos = self._get_position(member)
+                    if not np.all(pos == 0):
+                        positions.append(pos)
+                        print(f"Added position for leaf node: {member_id}")
+            
+            elif isinstance(member, str):
+                print(f"Processing string member: {member}")
+                if member not in visited and G and member in G:
+                    visited.add(member)  # Mark as visited
+                    node_data = G.nodes[member]
+                    if node_data.get('type') != 'cluster':
+                        pos = self._get_position(node_data)
+                        if not np.all(pos == 0):
+                            positions.append(pos)
+                            print(f"Added position for string node: {member}")
+                    else:
+                        # Recursively get positions for cluster nodes
+                        child_positions = self._get_leaf_positions([{'id': member, **node_data}], G, visited)
+                        positions.extend(child_positions)
+                        print(f"Added {len(child_positions)} positions from string cluster: {member}")
+        
+        print(f"Total positions found: {len(positions)}")
+        return positions
+
     async def extract_relationships(self, objects):
         print("Extracting relationships...")
+        G = nx.Graph()
         
-        # Filter out drone nodes BEFORE creating the graph
+        # Filter and add base objects
         filtered_objects = [
             obj for obj in objects 
             if not (isinstance(obj.get('id', ''), str) and 'drone' in obj.get('id', '').lower())
         ]
         
-        # Create a graph with only non-drone nodes
-        G = nx.Graph()
+        print(f"Processing {len(filtered_objects)} objects")
         
-        # Add filtered nodes to graph
-        for obj in tqdm(filtered_objects, desc="Adding object nodes"):
-            G.add_node(obj['id'], **obj, level=0)
-            
-        # Add drone nodes separately (they will be isolated)
-        drone_objects = [obj for obj in objects if isinstance(obj.get('id', ''), str) and 'drone' in obj.get('id', '').lower()]
-        for drone in drone_objects:
-            G.add_node(drone['id'], **drone, level=0)
+        # Get valid positions and add to graph
+        valid_positions = []
+        valid_objects = []
         
-        print(f"Added {len(filtered_objects)} regular nodes and {len(drone_objects)} drone nodes")
-        
-        # Process relationships using filtered objects only
-        positions = []
         for obj in filtered_objects:
             pos = self._get_position(obj)
-            positions.append(pos)
+            if not np.all(pos == 0):
+                valid_positions.append(pos)
+                valid_objects.append(obj)
+                G.add_node(obj['id'], **obj, level=0)
         
-        positions = np.array(positions)
-        Z = linkage(positions, 'ward')
-        base_clusters = fcluster(Z, self.cluster_distance_threshold, criterion='distance')
+        if len(valid_positions) < 2:
+            print("Not enough objects with valid positions for clustering")
+            return G
+            
+        positions_array = np.array(valid_positions)
+        current_nodes = valid_objects.copy()
+        current_level = 0
         
-        await self._process_base_clusters(G, filtered_objects, base_clusters)
-        await self._process_higher_level_clusters(G)
-        await self._add_positional_relationships(G, filtered_objects)
-        self._add_proximity_relationships(G, filtered_objects)
+        # Use exponential scaling for threshold
+        base_threshold = self.cluster_distance_threshold
+        max_level = 5  # Maximum levels to prevent infinite loops
+        
+        while len(current_nodes) > 1 and current_level < max_level:  # Continue until single top node
+            level = current_level + 1
+            print(f"\n=== Processing Level {level} ===")
+            
+            # Get current positions and IDs for clustering
+            current_positions = []
+            current_ids = []  # Add this
+            position_map = {}  # Add this for tracking positions
+            
+            for node in current_nodes:
+                pos = self._get_position(node)
+                if not np.all(pos == 0):
+                    current_positions.append(pos)
+                    current_ids.append(node['id'])  # Store ID
+                    position_map[node['id']] = pos  # Store position mapping
+            
+            positions_array = np.array(current_positions)
+            
+            # Calculate level threshold
+            level_threshold = self.cluster_distance_threshold * (1 + (level * 1.0))
+            print(f"Distance threshold for level {level}: {level_threshold}")
+            
+            try:
+                # Use for clustering
+                clustering = AgglomerativeClustering(
+                    n_clusters=None,
+                    distance_threshold=level_threshold,
+                    metric='euclidean',
+                    linkage='complete'
+                )
+                
+                labels = clustering.fit_predict(positions_array)
+                
+                # Debug clustering results
+                unique_labels = set(labels)
+                print(f"Found {len(unique_labels)} natural clusters at threshold {level_threshold}")
+                
+                # Group nodes by cluster
+                clusters = {}
+                single_nodes = []
+                
+                # First pass - identify clusters and single nodes
+                for idx, label in enumerate(labels):
+                    if label not in clusters:
+                        clusters[label] = []
+                    clusters[label].append(current_ids[idx])
+                
+                # Handle single-member clusters
+                final_clusters = {}
+                for label, members in clusters.items():
+                    if len(members) == 1:
+                        single_nodes.extend(members)
+                    else:
+                        final_clusters[label] = members
+                
+                # If we have single nodes, assign them to nearest clusters
+                if single_nodes:
+                    print(f"\nAssigning {len(single_nodes)} single nodes to nearest clusters")
+                    for node_id in single_nodes:
+                        node_pos = position_map[node_id]
+                        min_dist = float('inf')
+                        best_cluster = None
+                        
+                        # Find nearest cluster by average distance to members
+                        for label, members in final_clusters.items():
+                            cluster_positions = [position_map[m] for m in members]
+                            avg_pos = np.mean(cluster_positions, axis=0)
+                            dist = np.linalg.norm(node_pos - avg_pos)
+                            
+                            if dist < min_dist:
+                                min_dist = dist
+                                best_cluster = label
+                        
+                        if best_cluster is not None and min_dist <= level_threshold:
+                            print(f"Adding {node_id} to cluster {best_cluster} (distance: {min_dist:.2f})")
+                            final_clusters[best_cluster].append(node_id)
+                        else:
+                            print(f"Creating new cluster for {node_id} (no nearby clusters found)")
+                            new_label = max(final_clusters.keys()) + 1 if final_clusters else 0
+                            final_clusters[new_label] = [node_id]
+                
+                # Process final clusters
+                new_nodes = []
+                cluster_info = []
+                
+                print("\nValidating clusters and creating nodes:")
+                for label, members in final_clusters.items():
+                    print(f"\nProcessing cluster {label}:")
+                    print(f"Members: {members}")
+                    
+                    member_objects = []
+                    for member_id in members:
+                        if G.has_node(member_id):
+                            node_data = G.nodes[member_id]
+                            member_objects.append({'id': member_id, **node_data})
+                        else:
+                            print(f"Warning: Node {member_id} not found in graph")
+                    
+                    print(f"Found {len(member_objects)} valid member objects")
+                    
+                    leaf_positions = self._get_leaf_positions(member_objects, G)
+                    print(f"Found {len(leaf_positions)} leaf positions")
+                    
+                    if leaf_positions:
+                        center = np.mean(leaf_positions, axis=0)
+                        center_dict = {'x': float(center[0]), 'y': float(center[1]), 'z': float(center[2])}
+                        
+                        # Create temporary node name
+                        temp_name = f"area_{level}_cluster_{label}"
+                        print(f"Creating node: {temp_name}")
+                        
+                        # Create node immediately
+                        G.add_node(temp_name,
+                                  type='cluster',
+                                  level=level,
+                                  position=center_dict)
+                        
+                        # Add edges to members
+                        for member_id in members:
+                            G.add_edge(member_id, temp_name, relationship='part_of')
+                        
+                        new_nodes.append({
+                            'id': temp_name,
+                            'type': 'cluster',
+                            'level': level,
+                            'position': center_dict
+                        })
+                        
+                        # Save info for summary generation
+                        cluster_info.append({
+                            'node_name': temp_name,
+                            'member_data': member_objects,
+                        })
+                else:
+                    print("No valid leaf positions found - skipping cluster")
 
+                print(f"\nCreated {len(new_nodes)} new nodes")
+                
+                # Add spatial relationships using same threshold
+                if new_nodes:  # Only if we created new nodes
+                    await self._add_positional_relationships(G, level, level_threshold)
+                    
+                # Generate summaries after relationships are added
+                if cluster_info:
+                    summary_tasks = [
+                        self.llm.generate_community_summary(info['member_data'])
+                        for info in cluster_info
+                    ]
+                    area_infos = await asyncio.gather(*summary_tasks)
+                    # Update existing nodes with summaries
+                    for info, area_info in zip(cluster_info, area_infos):
+                        G.nodes[info['node_name']].update({
+                            'name': area_info['name'],
+                            'summary': area_info['summary']
+                        })
+                
+                if len(new_nodes) == 0:
+                    print("No valid clusters formed")
+                    break
+                
+                current_nodes = new_nodes
+                current_level = level
+                print(f"Created {len(new_nodes)} clusters at level {level}")
+            except Exception as e:
+                print(f"Clustering failed at level {level}: {str(e)}")
+                traceback.print_exc()
+                break
+        
         return G
 
-    async def _process_base_clusters(self, G, objects, clusters):
-        """Process first level clusters based on spatial proximity"""
-        print("\nProcessing base level clusters...")
-        cluster_members = {}
-        
-        # Group objects by cluster
-        for i, cluster_id in enumerate(clusters):
-            if cluster_id not in cluster_members:
-                cluster_members[cluster_id] = []
-            cluster_members[cluster_id].append(objects[i])
-        
-        # Process each cluster
-        for cluster_id, members in cluster_members.items():
-            if len(members) > 1:  # Only create area nodes for clusters with multiple members
-                # Calculate average position
-                member_positions = [self._get_position(obj) for obj in members]
-                avg_position = np.mean(member_positions, axis=0)
-
-                # Generate area summary
-                area_info = await self._create_community_summary(members)
-                node_name = f"area_1_{area_info['name'].lower().replace(' ', '_')}"
-
-                # Add area node
-                G.add_node(node_name,
-                          position=avg_position.tolist(),
-                          level=1,
-                          name=area_info['name'],
-                          summary=area_info['summary'])
-
-                # Add edges to members
-                for member in members:
-                    G.add_edge(member['id'], node_name, relationship="part_of")
-
-    async def _process_higher_level_clusters(self, G):
-        """Process higher level clusters using KNN"""
-        print("\nProcessing higher level clusters...")
-        current_level = 1
-        
-        while True:
-            # Get nodes from current level
-            current_nodes = [
-                (node, data) for node, data in G.nodes(data=True)
-                if data.get('level', 0) == current_level
-            ]
-            
-            if len(current_nodes) < 2:  # Stop if less than 2 nodes at current level
-                break
-                
-            # Get positions for current level nodes
-            positions = []
-            node_ids = []
-            for node, data in current_nodes:
-                if isinstance(data['position'], list):
-                    pos = data['position']
-                else:
-                    pos = [data['position'].get('x', 0), 
-                          data['position'].get('y', 0), 
-                          data['position'].get('z', 0)]
-                positions.append(pos)
-                node_ids.append(node)
-            
-            positions = np.array(positions)
-            
-            # Use KNN to find clusters (minimum 2 nodes per cluster)
-            n_neighbors = min(3, len(positions))  # Use at most 3 neighbors
-            nbrs = NearestNeighbors(n_neighbors=n_neighbors).fit(positions[:, :2])  # Only use x,y for clustering
-            distances, indices = nbrs.kneighbors(positions[:, :2])
-            
-            # Create clusters based on mutual nearest neighbors
-            clusters = []
-            used_nodes = set()
-            
-            for i in range(len(positions)):
-                if i in used_nodes:
-                    continue
-                    
-                cluster = {i}
-                for j in indices[i][1:]:  # Skip first index (self)
-                    if i in indices[j][1:]:  # Mutual nearest neighbor
-                        cluster.add(j)
-                        used_nodes.add(j)
-                
-                if len(cluster) > 1:  # Only keep clusters with multiple nodes
-                    clusters.append(cluster)
-                    used_nodes.add(i)
-            
-            if not clusters:  # No more clusters formed
-                break
-            
-            # Create next level nodes
-            next_level = current_level + 1
-            for cluster in clusters:
-                member_nodes = [node_ids[i] for i in cluster]
-                member_data = [G.nodes[node] for node in member_nodes]
-                
-                # Calculate average position from original member positions
-                member_positions = []
-                for data in member_data:
-                    if isinstance(data['position'], list):
-                        pos = data['position']
-                    else:
-                        pos = [data['position'].get('x', 0), 
-                              data['position'].get('y', 0), 
-                              data['position'].get('z', 0)]
-                    member_positions.append(pos)
-                
-                # Calculate average position WITHOUT adding height increment
-                avg_position = np.mean(member_positions, axis=0)
-                
-                # Generate area summary
-                area_info = await self._create_community_summary(member_data)
-                node_name = f"area_{next_level}_{area_info['name'].lower().replace(' ', '_')}"
-                
-                print(f"Creating level {next_level} node '{node_name}' at position {avg_position.tolist()}")
-                print(f"Members: {member_nodes}")
-                
-                # Add area node
-                G.add_node(node_name,
-                          position=avg_position.tolist(),
-                          level=next_level,
-                          name=area_info['name'],
-                          summary=area_info['summary'])
-                
-                # Add edges to members
-                for member in member_nodes:
-                    G.add_edge(member, node_name, relationship="part_of")
-            
-            current_level = next_level
-
-    def _add_proximity_relationships(self, G, objects):
-        print("Adding proximity relationships...")
-        # Filter out drone nodes first
-        filtered_objects = [
-            obj for obj in objects 
-            if not (isinstance(obj.get('id', ''), str) and 
-                   ('drone' in obj.get('id', '').lower() or 'area_' in str(obj.get('id', ''))))
-        ]
-        
-        for i, obj1 in tqdm(enumerate(filtered_objects), total=len(filtered_objects), desc="Processing object pairs"):
-            for j, obj2 in enumerate(filtered_objects[i+1:], start=i+1):
-                pos1 = self._get_position(obj1)
-                pos2 = self._get_position(obj2)
-                distance = np.linalg.norm(np.array(pos1) - np.array(pos2))
-                if distance <= self.proximity_threshold:
-                    G.add_edge(obj1['id'], obj2['id'], relationship="near", distance=distance)
-
     def _get_position(self, obj):
-        pos = obj.get('position', {})
-        if isinstance(pos, dict) and 'x' in pos and 'y' in pos and 'z' in pos:
-            return [pos['x'], pos['y'], pos['z']]
-        elif isinstance(pos, (list, tuple)) and len(pos) == 3:
-            return pos
-        else:
-            print(f"Warning: Unexpected position format for object: {obj['id']}")
-            return [0, 0, 0]  # Default position
-
-    async def _add_hierarchical_relationships(self, G, Z, filtered_objects):
-        print("\nAdding hierarchical relationships...")
-        n = len(filtered_objects)
-        clusters = fcluster(Z, self.cluster_distance_threshold, criterion='distance')
-        max_level = max(clusters)
-        print(f"Found {max_level} hierarchical levels")
-        
-        # Track cluster summaries for higher-level abstraction
-        cluster_summaries = {}
-        processed_clusters = set()  # Add this to track which clusters we've processed
-
-        for level in tqdm(range(1, max_level + 1), desc="Processing levels"):
-            print(f"\n=== Processing Level {level} ===")
-            cluster_members = {}
+        """Extract position from object data with better error handling"""
+        try:
+            if isinstance(obj, dict):
+                pos = obj.get('position')
+                if pos is None:
+                    print(f"Warning: No position found for object {obj.get('id')}")
+                    return np.array([0, 0, 0])
+                
+                # Handle dictionary format {'x': val, 'y': val, 'z': val}
+                if isinstance(pos, dict) and all(k in pos for k in ['x', 'y', 'z']):
+                    return np.array([pos['x'], pos['y'], pos['z']])
+                
+                # Handle string format
+                if isinstance(pos, str):
+                    try:
+                        # Try to parse string format "[x, y, z]"
+                        pos = eval(pos.replace('[', '').replace(']', ''))
+                    except:
+                        print(f"Warning: Could not parse position string {pos} for object {obj.get('id')}")
+                        return np.array([0, 0, 0])
+                
+                # Handle list/tuple format
+                if isinstance(pos, (list, tuple)) and len(pos) == 3:
+                    return np.array(pos)
+                
+                print(f"Warning: Invalid position format {pos} for object {obj.get('id')}")
+                return np.array([0, 0, 0])
+                
+            return np.array([0, 0, 0])
             
-            # Modified cluster assignment logic
-            for i, cluster_id in enumerate(clusters):
-                if cluster_id >= level:
-                    normalized_cluster_id = cluster_id - level + 1  # Normalize cluster IDs
-                    if normalized_cluster_id not in cluster_members:
-                        cluster_members[normalized_cluster_id] = []
-                    cluster_members[normalized_cluster_id].append(i)
-
-            print(f"Found {len(cluster_members)} clusters at level {level}")
-            
-            for cluster_id, members in cluster_members.items():
-                cluster_key = f"level_{level}_{cluster_id}"
-                
-                # Skip if we've already processed this cluster
-                if cluster_key in processed_clusters:
-                    continue
-                processed_clusters.add(cluster_key)
-                
-                print(f"\nProcessing cluster {cluster_id} with {len(members)} members:")
-                # Get member objects or their summaries
-                member_objects = []
-                for i in members:
-                    if i < len(filtered_objects):
-                        obj = filtered_objects[i]
-                        member_objects.append(obj)
-                        print(f"  - Object: {obj.get('id', 'Unknown')}")
-                    else:
-                        prev_cluster_key = f"level_{level-1}_{i}"
-                        if prev_cluster_key in cluster_summaries:
-                            summary = cluster_summaries[prev_cluster_key]
-                            member_objects.append(summary)
-                            print(f"  - Subcluster: {summary.get('label', 'Unknown')}")
-
-                if not member_objects:  # Skip empty clusters
-                    continue
-
-                # Calculate average position
-                member_positions = [self._get_position(obj) for obj in member_objects]
-                avg_position = np.mean(member_positions, axis=0)
-
-                # Generate area summary
-                print("\nGenerating area summary...")
-                area_info = await self._create_community_summary(member_objects)
-                print(f"Area Name: {area_info['name']}")
-                print(f"Summary: {area_info['summary']}")
-                print("-" * 50)
-                
-                # Create node name based on functional area
-                node_name = f"area_{level}_{area_info['name'].lower().replace(' ', '_')}"
-
-                # Store summary for higher-level clustering
-                cluster_summaries[cluster_key] = {
-                    'id': node_name,
-                    'label': area_info['name'],
-                    'summary': area_info['summary'],
-                    'position': avg_position.tolist()
-                }
-
-                # Add node to graph
-                G.add_node(node_name, 
-                          position=avg_position.tolist(), 
-                          level=level,
-                          name=area_info['name'],
-                          summary=area_info['summary'])
-
-                # Add edges to members
-                for member in members:
-                    if member < len(filtered_objects):
-                        member_node = filtered_objects[member]['id']
-                    else:
-                        member_node = f"area_{level-1}_{clusters[member-len(filtered_objects)]}"
-                    
-                    if G.has_node(member_node):  # Only add edge if member node exists
-                        G.add_edge(member_node, node_name, relationship="part_of")
-
-    async def _create_community_summary(self, objects):
-        """Create a summary for a group of objects using LLM interface"""
-        return await self.llm.generate_community_summary(objects)
+        except Exception as e:
+            print(f"Error extracting position for object {obj.get('id', 'unknown')}: {str(e)}")
+            return np.array([0, 0, 0])
 
     def _get_cardinal_direction(self, pos1, pos2):
         """Convert relative positions to cardinal directions"""
@@ -320,7 +343,6 @@ class SpatialRelationshipExtractor:
         dy = pos2[1] - pos1[1]
         dz = pos2[2] - pos1[2]
         
-        # Determine primary horizontal direction using angle
         angle = np.arctan2(dy, dx)
         angle_deg = np.degrees(angle)
         
@@ -333,55 +355,43 @@ class SpatialRelationshipExtractor:
         else:
             horizontal = "west"
             
-        # Add vertical component if significant
         vertical = ""
         if abs(dz) > self.vertical_threshold:
             vertical = "above" if dz > 0 else "below"
             
-        # Calculate distance
         distance = np.sqrt(dx**2 + dy**2 + dz**2)
-        
         return horizontal, vertical, distance
 
-    async def _add_positional_relationships(self, G, objects):
-        """Add spatial relationships based on distance threshold"""
-        filtered_objects = [
-            obj for obj in objects 
-            if not (isinstance(obj.get('id', ''), str) and 
-                   ('drone' in obj.get('id', '').lower() or 'area_' in str(obj.get('id', ''))))
+    async def _add_positional_relationships(self, G, current_level, level_threshold):
+        """Add spatial relationships based on provided threshold"""
+        print(f"Adding spatial relationships for level {current_level}")
+        
+        # Get nodes at the current level
+        level_nodes = [
+            (node, data) for node, data in G.nodes(data=True)
+            if data.get('level') == current_level and not (
+                isinstance(node, str) and 'drone' in node.lower()
+            )
         ]
         
-        print(f"Adding spatial relationships for {len(filtered_objects)} base objects...")
+        print(f"Processing {len(level_nodes)} nodes with spatial threshold {level_threshold:.2f}")
         
-        for obj1 in filtered_objects:
-            node1 = obj1.get('id', obj1.get('name', str(obj1)))
-            if isinstance(node1, str) and 'drone' in node1.lower():
-                continue
-                
-            pos1 = self._get_position(obj1)
-            level1 = obj1.get('level', 0)
-
-            for obj2 in filtered_objects:
-                if obj1 != obj2:
-                    node2 = obj2.get('id', obj2.get('name', str(obj2)))
-                    if isinstance(node2, str) and 'drone' in node2.lower():
-                        continue
+        for node1, data1 in level_nodes:
+            pos1 = self._get_position(data1)
+            
+            for node2, data2 in level_nodes:
+                if node1 != node2:
+                    pos2 = self._get_position(data2)
                     
-                    pos2 = self._get_position(obj2)
-                    level2 = obj2.get('level', 0)
+                    horizontal, vertical, distance = self._get_cardinal_direction(pos1, pos2)
                     
-                    if level1 == level2:
-                        horizontal, vertical, distance = self._get_cardinal_direction(pos1, pos2)
+                    if distance <= level_threshold:
+                        relationship = horizontal
+                        if vertical:
+                            relationship += f"_{vertical}"
                         
-                        # Use a separate threshold for spatial relationships
-                        if distance <= self.spatial_threshold:
-                            relationship = horizontal
-                            if vertical:
-                                relationship += f"_{vertical}"
-                            
-                            # Add both relationships in one edge
-                            G.add_edge(node1, node2, 
-                                     relationship=relationship,
-                                     cardinal_direction=relationship,  # Add explicit cardinal direction
-                                     distance=distance)
+                        G.add_edge(node1, node2, 
+                                 relationship=relationship,
+                                 cardinal_direction=relationship,
+                                 distance=distance)
 

@@ -1,0 +1,44 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Visualization outputs
+*.png
+*.html
+*.pdf
+
+# Log files
+*.log
+logs/
+*.out
+*.err
+
+# Copy files
+*.cpy
+*.copy
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Plot outputs
+plots/

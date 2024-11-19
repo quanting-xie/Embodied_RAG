@@ -1,10 +1,23 @@
+from enum import Enum
+
 class Config:
+
+    # Path configurations
+    PATHS = {
+        'semantic_graphs_dir': 'semantic_graphs',  # Directory containing semantic graphs
+        'latest_graph': 'enhanced_semantic_graph_semantic_graph_Building99_20241103_193232.gml',  # Your latest graph file
+        'experiment_logs_dir': 'experiment_logs'  # Directory for experiment logs
+    }
+    
     # Spatial Relationship Parameters
     SPATIAL = {
-        'cluster_distance_threshold': 10.0,  # meters, for hierarchical clustering
-        'proximity_threshold': 3.0,        # meters, for spatial relationships
-        'spatial_threshold': 5.0,          # meters, for cardinal directions
-        'vertical_threshold': 1.0,          # meters, for above/below relationships
+        'cluster_distance_threshold': 5.0,  # Base clustering distance
+        'proximity_threshold': 3.0,  # Distance threshold for proximity relationships
+        'spatial_threshold': 5.0,  # Distance threshold for spatial relationships
+        'vertical_threshold': 1.0,  # Threshold for vertical relationships
+        'max_members_per_cluster': 4,  # Maximum members per cluster
+        'min_members_per_cluster': 2,  # Minimum members per cluster
+        'level_distance_multiplier': 3  # Multiplier for distance threshold at each level
     }
 
     # Retrieval Parameters
@@ -12,6 +25,7 @@ class Config:
         'semantic_similarity_threshold': 0.6,  # threshold for semantic matching
         'top_k_default': 5,                    # default number of results to return
         'max_hierarchical_level': 10,          # maximum levels in hierarchy
+        'max_parallel_paths': 3,              # maximum number of parallel hierarchical chains
     }
 
     # LLM Parameters
@@ -30,10 +44,68 @@ class Config:
         }
     }
 
-    # Cardinal Directions
+    # Cardinal Directions(Don't need to change unless you want to change the cardinal directions)
     CARDINAL_DIRECTIONS = {
         'north': (0, 1),   # +y
         'south': (0, -1),  # -y
         'east': (1, 0),    # +x
         'west': (-1, 0)    # -x
-    } 
+    }
+
+    # Query Configuration
+    QUERIES = {
+        'implicit': {
+            'default': "Where can I eat my lunch?",
+            'examples': [
+                "I need a place to work",
+                "Where can I relax?",
+                "I'm looking for a place to have a meeting"
+            ]
+        },
+        'explicit': {
+            'default': "Find the dining table",
+            'examples': [
+                "Navigate to the nearest chair",
+                "Find the coffee table",
+                "Locate the bookshelf"
+            ]
+        },
+        'global': {
+            'default': "What are the main types of furniture in this environment?",
+            'examples': [
+                "Describe the layout of this space",
+                "What are the different functional areas?",
+                "Give me an overview of this environment"
+            ]
+        }
+    }
+
+    # Retrieval Method Configuration
+    RETRIEVAL_METHODS = {
+        'semantic': {
+            'name': 'Semantic Similarity',
+            'description': 'Uses embedding-based semantic similarity for retrieval',
+            'parameters': {
+                'similarity_threshold': 0.6,
+                'top_k': 5
+            }
+        },
+        'llm_hierarchical': {
+            'name': 'LLM Hierarchical',
+            'description': 'Uses LLM for hierarchical traversal and node selection',
+            'parameters': {
+                'max_chains': 3,
+                'max_depth': 5
+            }
+        },
+        'hybrid': {
+            'name': 'Hybrid',
+            'description': 'Combines semantic similarity with LLM-based selection',
+            'parameters': {
+                'similarity_weight': 0.5,
+                'llm_weight': 0.5,
+                'top_k': 5
+            }
+        }
+    }
+

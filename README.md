@@ -33,6 +33,51 @@ cd AirSim/Unreal/Environments/Building99/LinuxNoEditor
 ./Building99.sh
 
 ```
+## Usage
+### 1. Data Collection
+
+```bash
+cd embodied_rag
+python airsim_explorer.py
+```
+- Explore the environment with a drone and object detector
+- Logs object positions and realtionships as nodes and edges to NanoDB
+
+### 2. Semantic Forest Building
+
+```bash
+cd ..
+python generate_semantic_forest.py
+```
+
+- Builds hierarchical structure
+- Extracts spatial relationships
+- Creates multi-level semantic forest with LLM summaries
+- Supports both proximity and cardinal direction relationships
+
+### 3. Retrieval Processing
+```bash
+python experiment.py --method semantic --query-type implicit
+# or
+python experiment.py --method llm_hierarchical --query-type explicit --query "Find the nearest chair"
+```
+- Remember to change the retreival method in the config.py file
+
+#### Retrieval Methods:
+1. **LLM-based Hierarchical Traversal(Original Method In Paper)**
+   - Intelligent node selection using LLM
+   - Hierarchical traversal through semantic forest
+   - Supports context-aware selection
+   - Maximum 3 parallel paths for diverse results
+
+2. **Embedding-based Retrieval(New and Faster)**
+   - Computes semantic similarity between query and nodes
+   - Retrieves top k nodes with highest similarity
+   - Customizable thresholds in config.py
+
+
+
+
 
 ## Core Components
 
@@ -49,39 +94,3 @@ The main interface for the system that:
 - Handles queries about spatial relationships
 - Integrates with AirSim for physical navigation
 
-## Key Features
-
-### 1. Topological Graph Building
-```bash
-cd embodied_rag
-python airsim_explorer.py
-```
-- Explore the environment with a drone and object detector
-- Logs object positions and realtionships as nodes and edges to NanoDB
-
-### 2. Semantic Forest Building
-```bash
-python generate_semantic_forest.py
-```
-- Adding hierarhical information and relative relationships between nodes.
-- Three types of relationships are extracted for edges: spatial, proximity, and hierarchical
-    - Spatial: Cardinal direction relationships between objects (north, south, east, west) with vertical components (above, below)
-    - Proximity: Is objects A near object B (within a threshold distance)
-    - Hierarchical: A part of B (forming a hierarchical structure of spaces)
-- Generating summaries for clustered object groups
-- Computing embeddings for nodes and clusters and relationships
-
-### 3. Retrieval Processing
-```bash
-cd ..
-python retrieval.py
-```
-- Retrieving relevant nodes and relationships based on query embeddings:
-    - Compute semantic similarity between query and nodes
-    - Retrieve top k nodes with highest similarity
-    - Retrieve each node's spatial, proximity, and hierarchical relationships(customizable in config.py)
-
-Supports different types of queries:
-- Explicit spatial queries
-- Implicit spatial queries
-- Global queries
