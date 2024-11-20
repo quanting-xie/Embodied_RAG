@@ -80,65 +80,61 @@ def visualize_enhanced_graph_3d(G, output_path=None):
                          'east_above', 'east_below',
                          'west_above', 'west_below']
 
+    # Process edges
     for edge in G.edges(data=True):
-        if edge[0] in pos and edge[1] in pos:
-            x0, y0, z0 = pos[edge[0]]
-            x1, y1, z1 = pos[edge[1]]
-            
-            # Create hover text for edge with distance if available
-            relationship = edge[2].get('relationship', 'connected')
-            distance = edge[2].get('distance', None)
-            
-            if distance is not None and isinstance(distance, (int, float)):
-                hover_text = [
-                    f"From: {edge[0]}",
-                    f"Relationship: {relationship}",
-                    f"Distance: {distance:.2f}m",
-                    f"To: {edge[1]}"
-                ]
-                hover_text = '<br>'.join(hover_text)
-            else:
-                hover_text = '<br>'.join([
-                    f"From: {edge[0]}",
-                    f"Relationship: {relationship}",
-                    f"To: {edge[1]}"
-                ])
-            
-            # Check if this is a drone path edge
-            is_drone_path = (
-                isinstance(edge[0], str) and 'drone' in edge[0].lower() and
-                isinstance(edge[1], str) and 'drone' in edge[1].lower()
-            )
-            
-            if is_drone_path:
-                drone_edge_x.extend([x0, x1, None])
-                drone_edge_y.extend([y0, y1, None])
-                drone_edge_z.extend([z0, z1, None])
-                drone_edge_text.extend([hover_text, hover_text, None])
-            else:
-                relationship = edge[2].get('relationship', '')
-                distance = edge[2].get('distance', None)
-                
-                # Check relationship type
-                if isinstance(relationship, str):
-                    if relationship == 'part_of':
-                        part_of_edge_x.extend([x0, x1, None])
-                        part_of_edge_y.extend([y0, y1, None])
-                        part_of_edge_z.extend([z0, z1, None])
-                        part_of_edge_text.extend([hover_text, hover_text, None])
-                    elif any(direction in relationship.lower() for direction in cardinal_directions):
-                        spatial_edge_x.extend([x0, x1, None])
-                        spatial_edge_y.extend([y0, y1, None])
-                        spatial_edge_z.extend([z0, z1, None])
-                        spatial_edge_text.extend([hover_text, hover_text, None])
+        x0, y0, z0 = pos[edge[0]]
+        x1, y1, z1 = pos[edge[1]]
+        
+        # Get edge type and relationship
+        edge_type = edge[2].get('type', '')
+        relationship = edge[2].get('relationship', '')
+        distance = edge[2].get('distance', None)
+        
+        # Create edge coordinates
+        edge_x = [x0, x1, None]
+        edge_y = [y0, y1, None]
+        edge_z = [z0, z1, None]
+        
+        # Create hover text
+        if distance is not None and isinstance(distance, (int, float)):
+            hover_text = [
+                f"From: {edge[0]}",
+                f"Relationship: {relationship}",
+                f"Distance: {distance:.2f}m",
+                f"To: {edge[1]}"
+            ]
+            hover_text = '<br>'.join(hover_text)
+        else:
+            hover_text = '<br>'.join([
+                f"From: {edge[0]}",
+                f"Relationship: {relationship}",
+                f"To: {edge[1]}"
+            ])
+        
+        # Add to appropriate edge collection
+        if edge_type == 'drone_path':
+            drone_edge_x.extend(edge_x)
+            drone_edge_y.extend(edge_y)
+            drone_edge_z.extend(edge_z)
+            drone_edge_text.append(hover_text)
+        elif relationship in ['part_of', 'contains']:
+            part_of_edge_x.extend(edge_x)
+            part_of_edge_y.extend(edge_y)
+            part_of_edge_z.extend(edge_z)
+            part_of_edge_text.append(hover_text)
+        else:  # All other relationships are spatial
+            spatial_edge_x.extend(edge_x)
+            spatial_edge_y.extend(edge_y)
+            spatial_edge_z.extend(edge_z)
+            spatial_edge_text.append(hover_text)
 
     # Create traces for different edge types
     spatial_edge_trace = go.Scatter3d(
         x=spatial_edge_x, y=spatial_edge_y, z=spatial_edge_z,
         line=dict(
-            color='rgba(200, 200, 200, 0.4)',  # Light grey with transparency
+            color='rgba(150, 150, 150, 0.4)',  # Lighter grey
             width=1,
-            dash='dot'  # Dotted line style
+            dash='dot'
         ),
         name='Spatial Relationship',
         hoverinfo='text',
@@ -147,12 +143,12 @@ def visualize_enhanced_graph_3d(G, output_path=None):
         showlegend=True
     )
 
-    # Create part-of edge trace with solid red lines
+    # Update part-of edge trace with light orange lines
     part_of_edge_trace = go.Scatter3d(
         x=part_of_edge_x, y=part_of_edge_y, z=part_of_edge_z,
         line=dict(
-            color='rgba(255, 0, 0, 0.7)',  # Red with some transparency
-            width=2  # Thicker than spatial relationships
+            color='rgba(255, 165, 0, 0.7)',  # Light orange
+            width=2
         ),
         name='Hierarchical Relationship',
         hoverinfo='text',
@@ -163,12 +159,17 @@ def visualize_enhanced_graph_3d(G, output_path=None):
 
     drone_edge_trace = go.Scatter3d(
         x=drone_edge_x, y=drone_edge_y, z=drone_edge_z,
-        line=dict(color='blue', width=2, dash='dot'),
+        line=dict(
+            color='cyan',  # Changed to cyan
+            width=2,
+            dash='dot'
+        ),
         name='Drone Path',
         hoverinfo='text',
-        text=drone_edge_text,  # Use drone specific hover text
+        text=drone_edge_text,
         mode='lines',
-        showlegend=True)
+        showlegend=True
+    )
 
     # Create separate node traces for different types of nodes
     node_x, node_y, node_z = [], [], []
@@ -232,10 +233,10 @@ def visualize_enhanced_graph_3d(G, output_path=None):
         name='Objects',
         marker=dict(
             showscale=True,
-            colorscale='Viridis',
+            colorscale='Plasma',  # Changed from Viridis for better contrast on dark background
             color=node_color,
             size=node_size,
-            sizemode='diameter',  # Ensure consistent size scaling
+            sizemode='diameter',
             colorbar=dict(
                 thickness=10,
                 title='Node Level',
@@ -246,12 +247,19 @@ def visualize_enhanced_graph_3d(G, output_path=None):
                 y=0.5,
                 tickfont=dict(
                     size=10,
-                    color='black'
+                    color='white'  # Changed to white
+                ),
+                title_font=dict(
+                    color='white'  # Added white color for title
                 )
             ),
-            line_width=2))
+            line=dict(
+                color='rgba(255, 255, 255, 0.3)',  # Added white border
+                width=1
+            )
+        ))
 
-    # Create drone node trace with smaller size
+    # Update drone node trace with darker blue
     drone_node_trace = go.Scatter3d(
         x=drone_node_x, y=drone_node_y, z=drone_node_z,
         mode='markers',
@@ -259,13 +267,16 @@ def visualize_enhanced_graph_3d(G, output_path=None):
         text=drone_node_text,
         name='Drone Positions',
         marker=dict(
-            color='blue',
+            color='rgb(0, 102, 204)',  # Darker blue
             size=1.5,
             symbol='diamond',
-            line_width=1
+            line=dict(
+                color='white',
+                width=1
+            )
         ))
 
-    # Create the figure with all traces
+    # Create the figure with dark theme
     fig = go.Figure(data=[
         part_of_edge_trace, 
         spatial_edge_trace,
@@ -277,13 +288,47 @@ def visualize_enhanced_graph_3d(G, output_path=None):
     fig.update_layout(
         title='3D Graph Visualization with Hierarchical Layout and Drone Path',
         scene=dict(
-            xaxis_title='X',
-            yaxis_title='Y',
-            zaxis_title='Z',
-            aspectmode='data'
+            xaxis=dict(
+                showbackground=True,
+                backgroundcolor='rgb(30, 30, 30)',
+                gridcolor='white',
+                title=dict(
+                    text='X',
+                    font=dict(color='white')
+                ),
+                tickfont=dict(color='white')
+            ),
+            yaxis=dict(
+                showbackground=True,
+                backgroundcolor='rgb(30, 30, 30)',
+                gridcolor='white',
+                title=dict(
+                    text='Y',
+                    font=dict(color='white')
+                ),
+                tickfont=dict(color='white')
+            ),
+            zaxis=dict(
+                showbackground=True,
+                backgroundcolor='rgb(30, 30, 30)',
+                gridcolor='white',
+                title=dict(
+                    text='Z',
+                    font=dict(color='white')
+                ),
+                tickfont=dict(color='white')
+            ),
+            bgcolor='rgb(10, 10, 10)'  # Dark background
         ),
+        paper_bgcolor='black',  # Page background
+        plot_bgcolor='black',   # Plot background
         showlegend=True,
-        margin=dict(b=0, l=0, r=0, t=40)
+        margin=dict(b=0, l=0, r=0, t=40),
+        title_font=dict(color='white'),  # Title color
+        legend=dict(
+            font=dict(color='white'),
+            bgcolor='rgba(0,0,0,0)'  # Transparent legend background
+        )
     )
     
     if output_path:

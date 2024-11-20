@@ -70,11 +70,14 @@ python graph_visualizer.py semantic_graphs/enhanced_semantic_graph_semantic_grap
 
 Above is an example of the graph visualization, change to your own semantic graph file.
 
-### 3. Retrieval Processing
+### 4. Retrieval Processing
 ```bash
 python experiment.py --method semantic --query-type implicit
 ```
-- Remember to change the retreival method in the config.py file
+or 
+```bash
+python experiment.py --method llm_hierarchical --query-type implicit
+```
 
 
 #### Retrieval Methods:

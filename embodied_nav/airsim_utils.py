@@ -124,8 +124,8 @@ class AirSimUtils:
         except nx.NetworkXNoPath:
             return None
             
-    def direct_to_waypoint(self, target_position, velocity=5, max_retries=3):
-        """Move to target position using explored drone nodes"""
+    def direct_to_waypoint(self, target_position, velocity=5):
+        """Move to target position using single intermediate waypoint for safety"""
         print("\n=== Starting Movement Process ===")
         
         # Convert target position to Vector3r if needed
@@ -133,93 +133,53 @@ class AirSimUtils:
             target_position = {
                 'x': float(target_position[0]),
                 'y': float(target_position[1]),
-                'z': float(target_position[2])
+                'z': -float(target_position[2])  # Invert Z for AirSim
             }
         if isinstance(target_position, dict):
+            target_position = {
+                'x': float(target_position['x']),
+                'y': float(target_position['y']),
+                'z': -float(target_position['z'])  # Invert Z for AirSim
+            }
             target_position = self.dict_to_vector3r(target_position)
 
         print(f"\nTarget destination: ({target_position.x_val:.2f}, {target_position.y_val:.2f}, {target_position.z_val:.2f})")
-
-        retry_count = 0
-        while retry_count < max_retries:
-            try:
-                # Get current position
-                current_pose = self.client.simGetVehiclePose()
-                print(f"\nCurrent position: ({current_pose.position.x_val:.2f}, {current_pose.position.y_val:.2f}, {current_pose.position.z_val:.2f})")
-                
-                # Find path through drone nodes
-                print("\nFinding path through drone nodes...")
-                path = self.find_path_through_drone_nodes(
-                    current_pose.position, 
-                    target_position
-                )
-                
-                if path:
-                    print(f"\n=== Following path through {len(path)} waypoints ===")
-                    
-                    # First, ensure we're at a safe height
-                    safe_height = -2.0  # 2 meters above ground
-                    print(f"\nMoving to safe height: {safe_height}")
-                    
-                    try:
-                        # Move to each waypoint in the path
-                        for i, node in enumerate(path, 1):
-                            print(f"\n--- Moving to waypoint {i}/{len(path)} ---")
-                            node_data = self.graph.nodes[node]
-                            waypoint_pos = self.get_position_from_node(node_data)
-                            
-                            if waypoint_pos:
-                                print(f"Waypoint position: ({waypoint_pos['x']:.2f}, {waypoint_pos['y']:.2f}, {waypoint_pos['z']:.2f})")
-                                try:
-                                    # Move to waypoint
-                                    self.client.moveToPositionAsync(
-                                        waypoint_pos['x'],
-                                        waypoint_pos['y'],
-                                        safe_height,  # Keep constant height
-                                        velocity
-                                    ).join()
-                                    time.sleep(1)  # Give time to stabilize
-                                except Exception as e:
-                                    if "IOLoop" not in str(e):  # Ignore IOLoop errors
-                                        print(f"Error during waypoint movement: {e}")
-                                        raise
-                    
-                        # Finally, move to exact target position
-                        print("\n=== Moving to final target position ===")
-                        print(f"\nFinal position: ({target_position.x_val:.2f}, {target_position.y_val:.2f}, {target_position.z_val:.2f})")
-                        
-                        try:
-                            self.client.moveToPositionAsync(
-                                target_position.x_val,
-                                target_position.y_val,
-                                safe_height,  # Keep constant height
-                                velocity
-                            ).join()
-                            print("\nMovement completed successfully!")
-                            return True
-                        except Exception as e:
-                            if "IOLoop" not in str(e):  # Ignore IOLoop errors
-                                print(f"Error during final movement: {e}")
-                                raise
-                            
-                    except Exception as e:
-                        if "IOLoop" not in str(e):  # Ignore IOLoop errors
-                            print(f"Error during movement execution: {e}")
-                            retry_count += 1
-                            continue
-                        
-                else:
-                    print("No valid path found")
-                    retry_count += 1
-                    
-            except Exception as e:
-                if "IOLoop" not in str(e):  # Ignore IOLoop errors
-                    print(f"Error during movement attempt: {e}")
-                retry_count += 1
-                time.sleep(1)
-                
-        print("Failed to reach target after", max_retries, "attempts")
-        return False
+        
+        try:
+            # Get current position
+            current_pose = self.client.simGetVehiclePose()
+            print(f"\nCurrent position: ({current_pose.position.x_val:.2f}, {current_pose.position.y_val:.2f}, {current_pose.position.z_val:.2f})")
+            
+            # Use single intermediate waypoint at safe height
+            safe_height = -2.0  # Negative for up in AirSim
+            print(f"\nMoving to safe height: {safe_height}")
+            
+            # First move to safe height above current position
+            self.client.moveToPositionAsync(
+                current_pose.position.x_val,
+                current_pose.position.y_val,
+                safe_height,
+                velocity
+            ).join()
+            
+            # Then move to target position
+            print("\n=== Moving to target position ===")
+            print(f"Final position: ({target_position.x_val:.2f}, {target_position.y_val:.2f}, {target_position.z_val:.2f})")
+            
+            self.client.moveToPositionAsync(
+                target_position.x_val,
+                target_position.y_val,
+                target_position.z_val,
+                velocity
+            ).join()
+            
+            print("\nMovement completed successfully!")
+            return True
+            
+        except Exception as e:
+            if "IOLoop" not in str(e):
+                print(f"Error during movement: {e}")
+            return False
 
     def get_position_from_node(self, node_data):
         """Extract position from node data"""
@@ -237,6 +197,45 @@ class AirSimUtils:
                 return self.vector3r_to_dict(pos)
         print(f"Warning: Could not extract position from node data: {node_data}")
         return None
+
+    def direct_to_position(self, target_position, velocity=5):
+        """Directly move to target position in a single step"""
+        print("\n=== Starting Direct Movement ===")
+        
+        # Convert target position to Vector3r if needed
+        if isinstance(target_position, (list, tuple)):
+            target_position = {
+                'x': float(target_position[0]),
+                'y': float(target_position[1]),
+                'z': -float(target_position[2])  # Invert Z for AirSim
+            }
+        if isinstance(target_position, dict):
+            target_position = {
+                'x': float(target_position['x']),
+                'y': float(target_position['y']),
+                # 'z': -float(target_position['z'])  # Invert Z for AirSim
+                'z': 0.2 # Safe hover height
+            }
+            target_position = self.dict_to_vector3r(target_position)
+
+        print(f"\nTarget destination: ({target_position.x_val:.2f}, {target_position.y_val:.2f}, {target_position.z_val:.2f})")
+        
+        try:
+            # Single step: Move directly to target position
+            self.client.moveToPositionAsync(
+                target_position.x_val,
+                target_position.y_val,
+                target_position.z_val,
+                velocity
+            ).join()
+            
+            print("\nMovement completed successfully!")
+            return True
+                
+        except Exception as e:
+            if "IOLoop" not in str(e):
+                print(f"Error during movement: {e}")
+            return False
 
 class AirSimClientWrapper:
     def __init__(self):

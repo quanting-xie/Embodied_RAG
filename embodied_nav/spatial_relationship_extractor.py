@@ -270,23 +270,28 @@ class SpatialRelationshipExtractor:
 
                 print(f"\nCreated {len(new_nodes)} new nodes")
                 
-                # Add spatial relationships using same threshold
-                if new_nodes:  # Only if we created new nodes
-                    await self._add_positional_relationships(G, level, level_threshold)
+                # Add spatial relationships for base objects (level 0) first time
+                if level == 1:
+                    await self._add_positional_relationships(G, 0, self.spatial_threshold)
+                
+                # Process clusters and add their relationships
+                if new_nodes:
+                    # Add spatial relationships for the current level
+                    await self._add_positional_relationships(G, level, self.spatial_threshold)
                     
-                # Generate summaries after relationships are added
-                if cluster_info:
-                    summary_tasks = [
-                        self.llm.generate_community_summary(info['member_data'])
-                        for info in cluster_info
-                    ]
-                    area_infos = await asyncio.gather(*summary_tasks)
-                    # Update existing nodes with summaries
-                    for info, area_info in zip(cluster_info, area_infos):
-                        G.nodes[info['node_name']].update({
-                            'name': area_info['name'],
-                            'summary': area_info['summary']
-                        })
+                    # Generate summaries after relationships are added
+                    if cluster_info:
+                        summary_tasks = [
+                            self.llm.generate_community_summary(info['member_data'])
+                            for info in cluster_info
+                        ]
+                        area_infos = await asyncio.gather(*summary_tasks)
+                        # Update existing nodes with summaries
+                        for info, area_info in zip(cluster_info, area_infos):
+                            G.nodes[info['node_name']].update({
+                                'name': area_info['name'],
+                                'summary': area_info['summary']
+                            })
                 
                 if len(new_nodes) == 0:
                     print("No valid clusters formed")
@@ -366,32 +371,48 @@ class SpatialRelationshipExtractor:
         """Add spatial relationships based on provided threshold"""
         print(f"Adding spatial relationships for level {current_level}")
         
-        # Get nodes at the current level
-        level_nodes = [
-            (node, data) for node, data in G.nodes(data=True)
-            if data.get('level') == current_level and not (
-                isinstance(node, str) and 'drone' in node.lower()
-            )
-        ]
+        # Get ONLY nodes at the current level (remove children)
+        level_nodes = []
+        for node, data in G.nodes(data=True):
+            if data.get('level') == current_level:  # Only include nodes at current level
+                level_nodes.append((node, data))
         
-        print(f"Processing {len(level_nodes)} nodes with spatial threshold {level_threshold:.2f}")
+        print(f"Processing {len(level_nodes)} nodes at level {current_level} with spatial threshold {level_threshold:.2f}")
         
-        for node1, data1 in level_nodes:
+        # Track added relationships for debugging
+        added_relationships = 0
+        
+        for i, (node1, data1) in enumerate(level_nodes):
             pos1 = self._get_position(data1)
-            
-            for node2, data2 in level_nodes:
+            if np.all(pos1 == 0):
+                continue
+                
+            for node2, data2 in level_nodes[i+1:]:  # Start from i+1 to avoid duplicates
                 if node1 != node2:
                     pos2 = self._get_position(data2)
+                    if np.all(pos2 == 0):
+                        continue
+                        
+                    # Calculate actual distance
+                    distance = np.linalg.norm(pos1 - pos2)
                     
-                    horizontal, vertical, distance = self._get_cardinal_direction(pos1, pos2)
-                    
-                    if distance <= level_threshold:
+                    # Use spatial_threshold from config instead of level_threshold
+                    if distance <= Config.SPATIAL['spatial_threshold']:
+                        horizontal, vertical, _ = self._get_cardinal_direction(pos1, pos2)
+                        
                         relationship = horizontal
                         if vertical:
                             relationship += f"_{vertical}"
                         
-                        G.add_edge(node1, node2, 
-                                 relationship=relationship,
-                                 cardinal_direction=relationship,
-                                 distance=distance)
+                        # Only add if not already connected
+                        if not G.has_edge(node1, node2):
+                            G.add_edge(node1, node2, 
+                                     relationship=relationship,
+                                     type='spatial',
+                                     cardinal_direction=relationship,
+                                     distance=float(distance))  # Convert to float for serialization
+                            added_relationships += 1
+                            print(f"Added spatial relationship: {node1} is {relationship} of {node2} ({distance:.2f}m)")
+        
+        print(f"Added {added_relationships} spatial relationships at level {current_level}")
 

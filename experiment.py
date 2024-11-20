@@ -16,15 +16,26 @@ _cached_rag = None
 
 method_map = {
     'semantic': RetrievalMethod.SEMANTIC,
-    'llm_hierarchical': RetrievalMethod.LLM_HIERARCHICAL,
-    'hybrid': RetrievalMethod.HYBRID
+    'llm_hierarchical': RetrievalMethod.LLM_HIERARCHICAL
 }
 
 
 def setup_logging(method_name, query_type):
     """Setup logging configuration"""
+    # Create logs directory if it doesn't exist
+    os.makedirs('experiment_logs', exist_ok=True)
+    
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     log_filename = f'experiment_logs/{method_name}_{query_type}_{timestamp}.log'
+    
+    # Get the logger
+    logger = logging.getLogger('experiment')
+    
+    # Remove any existing handlers
+    logger.handlers = []
+    
+    # Set level
+    logger.setLevel(logging.INFO)
     
     # Create formatter
     formatter = logging.Formatter(
@@ -40,9 +51,7 @@ def setup_logging(method_name, query_type):
     console_handler = logging.StreamHandler()
     console_handler.setFormatter(formatter)
     
-    # Setup logger
-    logger = logging.getLogger('experiment')
-    logger.setLevel(logging.INFO)
+    # Add handlers
     logger.addHandler(file_handler)
     logger.addHandler(console_handler)
     
@@ -63,35 +72,51 @@ async def interactive_session(embodied_rag, airsim_utils, client, query_type, lo
             query = input("\nEnter your query: ").strip()
             if query.lower() == 'exit':
                 break
-                
-            current_pose = client.simGetVehiclePose()
-            current_position = airsim_utils.vector3r_to_dict(current_pose.position)
             
-            # Run the query
-            start_time = time.time()
+            # Log query start time
+            query_start_time = time.time()
+            logger.info("\n=== New Query ===")
+            logger.info(f"Query: '{query}'")
+            
+            # Get current position if needed
+            current_position = None
+            if query_type != "global":
+                drone_state = client.getMultirotorState()
+                current_position = {
+                    'x': drone_state.kinematics_estimated.position.x_val,
+                    'y': drone_state.kinematics_estimated.position.y_val,
+                    'z': drone_state.kinematics_estimated.position.z_val
+                }
+                logger.info(f"Current Position: {current_position}")
+            
+            # Retrieval timing
+            retrieval_start_time = time.time()
             retrieved_nodes = await embodied_rag.retriever.retrieve(query, query_type=query_type)
+            retrieval_time = time.time() - retrieval_start_time
             
-            # Log retrieval results
-            logger.info("\nRetrieval Results:")
-            logger.info(f"Number of retrieved nodes: {len(retrieved_nodes)}")
-            for node in retrieved_nodes:
-                logger.info(f"- {node}")
-            
-            # Generate and execute response
+            # Navigation timing
+            navigation_start_time = time.time()
             response, waypoints = await embodied_rag.query(
                 query,
                 query_type=query_type,
-                start_position=current_position if query_type != "global" else None
+                start_position=current_position
             )
+            navigation_time = time.time() - navigation_start_time
             
-            # Log results
-            logger.info(f"\nResponse: {response}")
+            # Total query time
+            total_query_time = time.time() - query_start_time
+            
+            # Log timing statistics
+            logger.info("\n=== Query Statistics ===")
+            logger.info(f"Retrieval Time: {retrieval_time:.2f} seconds")
+            logger.info(f"Navigation Time: {navigation_time:.2f} seconds")
+            logger.info(f"Total Query Time: {total_query_time:.2f} seconds")
+            
             if waypoints:
                 if isinstance(waypoints, bool):
                     logger.info(f"Navigation success: {waypoints}")
                 else:
                     logger.info(f"Waypoints: {waypoints}")
-            logger.info(f"Query completed in {time.time() - start_time:.2f} seconds")
             
         except KeyboardInterrupt:
             logger.info("\nSession interrupted by user")
@@ -200,25 +225,6 @@ async def main():
                 print("No object nodes found for navigation test")
         except Exception as e:
             print(f"Navigation test failed: {str(e)}")
-        
-        # Start height maintenance thread
-        def maintain_height():
-            while True:
-                try:
-                    state = client.getMultirotorState()
-                    current_height = state.kinematics_estimated.position.z_val
-                    if current_height > MIN_HEIGHT + 0.1:  # If too high
-                        client.moveToZAsync(MIN_HEIGHT, 1).join()
-                    time.sleep(0.1)
-                except Exception as e:
-                    # Only log non-IOLoop errors
-                    if "IOLoop" not in str(e):
-                        logger.error(f"Error in height maintenance: {str(e)}")
-                    time.sleep(0.1)
-        
-        # Start height maintenance thread as daemon
-        height_thread = threading.Thread(target=maintain_height, daemon=True)
-        height_thread.start()
         
         # Start interactive session
         await interactive_session(_cached_rag, airsim_utils, client, args.query_type, logger)

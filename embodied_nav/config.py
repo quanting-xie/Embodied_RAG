@@ -13,18 +13,16 @@ class Config:
     SPATIAL = {
         'cluster_distance_threshold': 5.0,  # Base clustering distance
         'proximity_threshold': 3.0,  # Distance threshold for proximity relationships
-        'spatial_threshold': 5.0,  # Distance threshold for spatial relationships
+        'spatial_threshold': 3.0,  # Distance threshold for spatial relationships (reduced from 5.0)
         'vertical_threshold': 1.0,  # Threshold for vertical relationships
-        'max_members_per_cluster': 4,  # Maximum members per cluster
-        'min_members_per_cluster': 2,  # Minimum members per cluster
-        'level_distance_multiplier': 3  # Multiplier for distance threshold at each level
+        'level_multiplier': 3.0,  # Multiplier for clustering threshold per level
     }
 
     # Retrieval Parameters
     RETRIEVAL = {
         'semantic_similarity_threshold': 0.6,  # threshold for semantic matching
         'top_k_default': 5,                    # default number of results to return
-        'max_hierarchical_level': 10,          # maximum levels in hierarchy
+        'max_hierarchical_level': 3,          # maximum levels in hierarchy
         'max_parallel_paths': 3,              # maximum number of parallel hierarchical chains
     }
 
@@ -82,30 +80,7 @@ class Config:
 
     # Retrieval Method Configuration
     RETRIEVAL_METHODS = {
-        'semantic': {
-            'name': 'Semantic Similarity',
-            'description': 'Uses embedding-based semantic similarity for retrieval',
-            'parameters': {
-                'similarity_threshold': 0.6,
-                'top_k': 5
-            }
-        },
-        'llm_hierarchical': {
-            'name': 'LLM Hierarchical',
-            'description': 'Uses LLM for hierarchical traversal and node selection',
-            'parameters': {
-                'max_chains': 3,
-                'max_depth': 5
-            }
-        },
-        'hybrid': {
-            'name': 'Hybrid',
-            'description': 'Combines semantic similarity with LLM-based selection',
-            'parameters': {
-                'similarity_weight': 0.5,
-                'llm_weight': 0.5,
-                'top_k': 5
-            }
-        }
+        'semantic': 'Semantic-based retrieval',
+        'llm_hierarchical': 'LLM-guided hierarchical retrieval'
     }
 

@@ -4,11 +4,12 @@ import numpy as np
 from .llm import LLMInterface
 import re
 from .config import Config
+import logging
+import time
 
 class RetrievalMethod:
     SEMANTIC = "semantic"  # Fast retrieval method
     LLM_HIERARCHICAL = "llm_hierarchical"  # Original semantic-based method in paper
-    HYBRID = "hybrid"  # Combination of both methods
 
 class EmbodiedRetriever:
     def __init__(self, graph, embedding_func, retrieval_method=RetrievalMethod.SEMANTIC):
@@ -19,78 +20,115 @@ class EmbodiedRetriever:
         self.semantic_threshold = Config.RETRIEVAL['semantic_similarity_threshold']
         self.max_hierarchical_level = Config.RETRIEVAL['max_hierarchical_level']
         self.retrieval_method = retrieval_method
+        self.top_k_nodes = []
         
         # Initialize LLM hierarchical retriever if needed
-        if retrieval_method in [RetrievalMethod.LLM_HIERARCHICAL, RetrievalMethod.HYBRID]:
+        if retrieval_method == RetrievalMethod.LLM_HIERARCHICAL:
             from .use_llm_selection import LLMHierarchicalRetriever
             self.llm_retriever = LLMHierarchicalRetriever(self.graph, self.llm)
 
     async def retrieve(self, query, query_type="global", top_k=None):
         """Main retrieval method with support for different retrieval strategies"""
-        if self.retrieval_method == RetrievalMethod.SEMANTIC:
-            return await self._semantic_based_retrieval(query, query_type, top_k)
-        elif self.retrieval_method == RetrievalMethod.LLM_HIERARCHICAL:
-            return await self._llm_based_retrieval(query, query_type)
-        else:  # HYBRID
-            return await self._hybrid_retrieval(query, query_type, top_k)
+        logger = logging.getLogger('experiment')
+        start_time = time.time()
+        
+        logger.info("\n=== Starting Retrieval Process ===")
+        logger.info(f"Method: {self.retrieval_method}")
+        logger.info(f"Query: '{query}'")
+        
+        try:
+            if self.retrieval_method == RetrievalMethod.SEMANTIC:
+                results = await self._semantic_based_retrieval(query, query_type, top_k)
+            elif self.retrieval_method == RetrievalMethod.LLM_HIERARCHICAL:
+                results = await self._llm_based_retrieval(query, query_type)
+            
+            end_time = time.time()
+            total_time = end_time - start_time
+            logger.info("\n=== Retrieval Statistics ===")
+            logger.info(f"Total Retrieval Time: {total_time:.2f} seconds")
+            logger.info(f"Number of Retrieved Nodes: {len(results)}")
+            logger.info("Retrieved Nodes:")
+            for node in results:
+                logger.info(f"- {node}")
+            
+            return results
+            
+        except Exception as e:
+            logger.error(f"Error in retrieval: {str(e)}")
+            import traceback
+            logger.error(traceback.format_exc())
+            return []
 
     async def _semantic_based_retrieval(self, query, query_type="global", top_k=None):
         """Enhanced semantic retrieval with hierarchical and spatial boosting"""
+        logger = logging.getLogger('experiment')
+        start_time = time.time()
+        
+        logger.info(f"\n=== Starting Semantic-Based Retrieval ===")
+        logger.info(f"Query: '{query}' (Type: {query_type})")
+        logger.info("="*50)
+        
         top_k = top_k or self.top_k_default
         query_embedding = await self.embedding_func([query])
         
-        # 1. Get initial semantic matches (get more candidates)
+        # 1. Get initial semantic matches
         initial_nodes, initial_scores = await self._semantic_retrieval(query_embedding, top_k * 2)
         
-        print("\nInitial semantic scores:")
+        logger.info("\nInitial Semantic Scores:")
+        logger.info("-" * 30)
         for node, score in zip(initial_nodes, initial_scores):
-            print(f"- {node}: {score:.3f}")
+            logger.info(f"{node:30} {score:.3f}")
         
         # 2. Apply hierarchical boosting
         hierarchical_scores = self._apply_hierarchical_boost(initial_nodes, initial_scores, query_embedding)
         
-        print("\nAfter hierarchical boost:")
+        logger.info("\nAfter Hierarchical Boost:")
+        logger.info("-" * 30)
         for node, score in zip(initial_nodes, hierarchical_scores):
-            print(f"- {node}: {score:.3f}")
+            logger.info(f"{node:30} {score:.3f}")
         
         # 3. Apply spatial boosting
         final_scores = self._apply_spatial_boost(initial_nodes, hierarchical_scores)
         
-        print("\nAfter spatial boost:")
-        for node, score in zip(initial_nodes, final_scores):
-            print(f"- {node}: {score:.3f}")
+        # Only normalize once at the end
+        normalized_final = self._normalize_scores(final_scores)
         
-        # 4. Normalize scores
-        normalized_scores = self._normalize_scores(final_scores)
+        logger.info("\nFinal Normalized Scores:")
+        logger.info("-" * 30)
+        for node, raw, norm in zip(initial_nodes, final_scores, normalized_final):
+            logger.info(f"{node:30} Raw: {raw:.3f} Norm: {norm:.3f}")
         
-        print("\nFinal normalized scores:")
-        for node, score in zip(initial_nodes, normalized_scores):
-            print(f"- {node}: {score:.3f}")
+        # Store top_k_nodes using normalized scores
+        sorted_indices = np.argsort(normalized_final)[-top_k:][::-1]
+        self.top_k_nodes = [initial_nodes[i] for i in sorted_indices]
         
-        # 5. Re-rank and select top K
-        node_scores = list(zip(initial_nodes, normalized_scores))
-        node_scores.sort(key=lambda x: x[1], reverse=True)
-        
-        print("\nFinal top K nodes:")
-        for node, score in node_scores[:top_k]:
-            print(f"- {node}: {score:.3f}")
-        
-        # Store top K nodes for context building
-        self.top_k_nodes = [node for node, _ in node_scores[:top_k]]
-        
-        # 6. Get context for final nodes
-        context_nodes = set()
+        logger.info("\nSelected Top-K Nodes:")
+        logger.info("-" * 30)
         for node in self.top_k_nodes:
-            context_nodes.add(node)
-            chain = self._get_hierarchical_chain(node)
-            context_nodes.update(chain)
-            spatial_neighbors = self._get_spatial_neighbors(node)
-            context_nodes.update(spatial_neighbors)
+            logger.info(f"- {node}")
         
-        return list(context_nodes)
+        # Build context
+        context = self._build_context(self.top_k_nodes)
+        logger.info("\nGenerated Context:")
+        logger.info("-" * 30)
+        logger.info(context)
+        
+        logger.info("\n=== Retrieval Complete ===")
+        end_time = time.time()
+        retrieval_time = end_time - start_time
+        logger.info(f"Retrieval Time: {retrieval_time:.2f} seconds")
+        
+        return self.top_k_nodes
 
     async def _llm_based_retrieval(self, query, query_type):
         """LLM-guided hierarchical retrieval method"""
+        logger = logging.getLogger('experiment')
+        start_time = time.time()
+        
+        logger.info(f"\n=== Starting LLM-Based Retrieval ===")
+        logger.info(f"Query: '{query}' (Type: {query_type})")
+        logger.info("="*50)
+        
         # Just use the results directly from LLM hierarchical retriever
         results = await self.llm_retriever.retrieve(query)
         
@@ -107,24 +145,12 @@ class EmbodiedRetriever:
                 expanded_nodes.update(spatial_neighbors)
             return list(expanded_nodes)
         
+        logger.info("\n=== Retrieval Complete ===")
+        end_time = time.time()
+        retrieval_time = end_time - start_time
+        logger.info(f"Retrieval Time: {retrieval_time:.2f} seconds")
+        
         return results
-
-    async def _hybrid_retrieval(self, query, query_type="global", top_k=None):
-        """Combine both semantic and LLM-guided approaches"""
-        # Get results from both methods
-        semantic_results = await self._semantic_based_retrieval(query, query_type, top_k)
-        llm_results = await self._llm_based_retrieval(query, query_type)
-        
-        # Combine and deduplicate results
-        combined_results = list(set(semantic_results + llm_results))
-        
-        # If we have too many results, use LLM to rank and filter them
-        if len(combined_results) > self.top_k_default:
-            context = self._build_context(combined_results)
-            ranked_results = await self.llm.rank_results(query, combined_results, context)
-            return ranked_results[:self.top_k_default]
-        
-        return combined_results
 
     def _get_spatial_neighbors(self, node):
         """Get nodes with spatial relationships to the given node"""
@@ -137,7 +163,9 @@ class EmbodiedRetriever:
 
     async def _semantic_retrieval(self, query_embedding, top_k):
         """Get semantically similar nodes with their scores"""
+        logger = logging.getLogger('experiment')
         node_similarities = []
+        
         for node, data in self.graph.nodes(data=True):
             if ('embedding' in data and 
                 data.get('type') not in ['drone', 'structural']):
@@ -152,7 +180,7 @@ class EmbodiedRetriever:
         top_scores = []
         for node, sim in node_similarities[:top_k]:
             if sim > self.semantic_threshold:
-                print(f"- {node} (similarity: {sim:.3f})")
+                logger.info(f"- {node} (similarity: {sim:.3f})")
                 top_nodes.append(node)
                 top_scores.append(sim)
         
@@ -160,12 +188,15 @@ class EmbodiedRetriever:
 
     async def generate_response(self, query, retrieved_nodes, query_type):
         """Generate response using context from retrieved nodes"""
-        # Build and print context
-        context = self._build_context(retrieved_nodes[:self.top_k_default])  # Only use top K nodes
-        print("\nGenerated Context for LLM:")
-        print("="*50)
-        print(context)
-        print("="*50)
+        logger = logging.getLogger('experiment')
+        
+        # Build context
+        context = self._build_context(retrieved_nodes[:self.top_k_default])
+        
+        logger.info("\nContext for LLM Generation:")
+        logger.info("="*50)
+        logger.info(context)
+        logger.info("="*50)
 
         # Generate LLM response
         prompt = await self.llm.generate_navigation_response(query, context, query_type)
@@ -214,6 +245,7 @@ class EmbodiedRetriever:
 
     def _build_context(self, nodes):
         """Build rich context for retrieved nodes"""
+        logger = logging.getLogger('experiment')
         context = []
         
         # 1. Hierarchical Structure
@@ -248,6 +280,7 @@ class EmbodiedRetriever:
         
         # 2. Object Information
         context.append("\n=== Object Information ===")
+        
         for node in self.top_k_nodes:  # Only show info for top K nodes
             data = self.graph.nodes[node]
             context.append(f"\nObject: {node}")
@@ -330,33 +363,28 @@ class EmbodiedRetriever:
 
     def _apply_hierarchical_boost(self, nodes, similarities, query_embedding):
         """Boost scores based on hierarchical relationships"""
+        logger = logging.getLogger('experiment')
         boosted_scores = similarities.copy()
         
         for i, node in enumerate(nodes):
-            # Get hierarchical chain
             chain = self._get_hierarchical_chain(node)
-            
-            # Check if node is in a relevant area
             for area in chain:
                 area_data = self.graph.nodes[area]
                 if 'summary' in area_data and 'embedding' in area_data:
-                    # Calculate semantic similarity between query and area summary
                     area_similarity = 1 - cosine(query_embedding[0], area_data['embedding'])
-                    
-                    # Boost score if area is relevant
                     if area_similarity > self.semantic_threshold:
-                        boost_factor = 1.2  # Can be adjusted
+                        boost_factor = 1.2
                         original_score = boosted_scores[i]
                         boosted_scores[i] *= boost_factor
-                        print(f"Boosting {node} (in {area}) from {original_score:.3f} to {boosted_scores[i]:.3f}")
+                        logger.info(f"Boosting {node} (in {area}) from {original_score:.3f} to {boosted_scores[i]:.3f}")
         
         return boosted_scores
 
     def _apply_spatial_boost(self, nodes, similarities):
         """Boost scores based on spatial relationships"""
+        logger = logging.getLogger('experiment')
         boosted_scores = similarities.copy()
         
-        # Find clusters of related objects
         for i, node in enumerate(nodes):
             neighbors = self._get_spatial_neighbors(node)
             neighbor_scores = []
@@ -369,19 +397,19 @@ class EmbodiedRetriever:
                     relevant_neighbors.append(neighbor)
             
             if neighbor_scores:
-                # Boost score if nearby objects are also relevant
                 avg_neighbor_score = sum(neighbor_scores) / len(neighbor_scores)
-                boost_factor = 1 + (avg_neighbor_score * 0.2)  # Adjustable
+                boost_factor = 1 + (avg_neighbor_score * 0.2)
                 original_score = boosted_scores[i]
                 boosted_scores[i] *= boost_factor
-                print(f"Boosting {node} (near {', '.join(relevant_neighbors)}) from {original_score:.3f} to {boosted_scores[i]:.3f}")
+                logger.info(f"Boosting {node} (near {', '.join(relevant_neighbors)}) from {original_score:.3f} to {boosted_scores[i]:.3f}")
         
         return boosted_scores
 
     def _normalize_scores(self, scores):
         """Normalize scores to [0,1] range"""
-        min_score = min(scores)
-        max_score = max(scores)
+        scores = np.array(scores)
+        min_score = scores.min()
+        max_score = scores.max()
         if max_score == min_score:
-            return [1.0] * len(scores)
-        return [(s - min_score) / (max_score - min_score) for s in scores]
+            return np.ones_like(scores)
+        return (scores - min_score) / (max_score - min_score)

@@ -10,6 +10,10 @@ from .embodied_retriever import EmbodiedRetriever, RetrievalMethod
 from .config import Config
 import time
 import pickle
+from tqdm import tqdm
+import asyncio
+from itertools import islice
+from datetime import datetime
 
 logger = logging.getLogger(__name__)
 
@@ -22,6 +26,7 @@ class EmbodiedRAG:
 
     def __init__(self, working_dir, airsim_utils=None, retrieval_method=RetrievalMethod.SEMANTIC):
         self.working_dir = working_dir
+        self.logger = logging.getLogger('experiment')
         self.cache_file = os.path.join(working_dir, "llm_response_cache.json")
         self.client = AsyncOpenAI()
         
@@ -76,9 +81,7 @@ class EmbodiedRAG:
     async def load_graph_to_rag(self, enhanced_graph_file):
         """Load and enhance graph with embeddings"""
         start_time = time.time()
-        
-        print(f"\nDebug: Loading graph from {enhanced_graph_file}")
-        
+                
         # Verify file exists
         if not os.path.exists(enhanced_graph_file):
             raise FileNotFoundError(f"Graph file not found: {enhanced_graph_file}")
@@ -86,21 +89,13 @@ class EmbodiedRAG:
         # First check if exact same graph is already cached in memory
         if (EmbodiedRAG._cached_graph is not None and 
             EmbodiedRAG._cached_graph_path == enhanced_graph_file):
-            print("Debug: Using in-memory cached graph")
             self.graph = EmbodiedRAG._cached_graph
-            print(f"Debug: Graph has {len(self.graph.nodes)} nodes")
             return self.graph
 
-        print("Debug: Loading graph from GML file...")
         
         try:
             self.graph = nx.read_gml(enhanced_graph_file)
-            print(f"Debug: Loaded graph with {len(self.graph.nodes)} nodes")
-            print("Debug: Node types present:", set(data.get('type') for _, data in self.graph.nodes(data=True)))
-            
-            # Ensure all nodes have proper attributes
-            for node, data in self.graph.nodes(data=True):
-                print(f"Debug: Node {node} data: {data}")
+
                 
             # Generate embeddings if needed
             await self._ensure_embeddings(self.graph, enhanced_graph_file)
@@ -111,12 +106,9 @@ class EmbodiedRAG:
             
             # Initialize retriever
             self._initialize_retriever()
-            
-            print(f"Debug: Graph loading completed in {time.time() - start_time:.2f} seconds")
             return self.graph
             
         except Exception as e:
-            print(f"Debug: Error loading graph: {str(e)}")
             import traceback
             print(traceback.format_exc())
             return None
@@ -176,12 +168,50 @@ class EmbodiedRAG:
             print("Embeddings cached")
 
     async def _generate_node_embeddings(self, graph):
-        """Generate embeddings for nodes"""
-        for node, data in graph.nodes(data=True):
-            if 'embedding' not in data:
-                node_text = self._get_node_text(node, data)
-                embedding = await self.embedding_func([node_text])
-                graph.nodes[node]['embedding'] = embedding[0].tolist()
+        """Generate embeddings for nodes in parallel batches"""
+        logger = logging.getLogger('EmbodiedRAG')
+        nodes_needing_embeddings = [
+            (node, data) for node, data in graph.nodes(data=True)
+            if 'embedding' not in data
+        ]
+        
+        logger.info(f"Generating embeddings for {len(nodes_needing_embeddings)} nodes...")
+        
+        # Configure batch size based on API limits
+        batch_size = 100
+        
+        async def process_batch(batch):
+            texts = [self._get_node_text(node, data) for node, data in batch]
+            try:
+                embeddings = await self.embedding_func(texts)
+                return list(zip([node for node, _ in batch], embeddings))
+            except Exception as e:
+                logger.error(f"Error in batch: {str(e)}")
+                return []
+
+        try:
+            with tqdm(total=len(nodes_needing_embeddings), desc="Generating embeddings", unit="node") as pbar:
+                for i in range(0, len(nodes_needing_embeddings), batch_size):
+                    batch = nodes_needing_embeddings[i:i + batch_size]
+                    
+                    results = await process_batch(batch)
+                    for node, embedding in results:
+                        graph.nodes[node]['embedding'] = embedding.tolist()
+                    
+                    pbar.update(len(batch))
+                    
+                    if i % (batch_size * 5) == 0 and EmbodiedRAG._cached_graph_path:
+                        try:
+                            nx.write_gml(graph, EmbodiedRAG._cached_graph_path)
+                            logger.info(f"Saved progress after {i} nodes")
+                        except Exception as save_error:
+                            logger.warning(f"Could not save progress - {str(save_error)}")
+
+        except Exception as e:
+            logger.error(f"Error generating embeddings: {str(e)}")
+            raise
+        
+        logger.info("Finished generating embeddings")
 
     def _convert_embeddings_to_numpy(self, graph):
         """Convert stored embeddings to numpy arrays"""
@@ -194,24 +224,37 @@ class EmbodiedRAG:
         """Generate text representation of a node"""
         return f"{data.get('label', node)} {data.get('summary', '')}"
 
-    async def query(self, query_text, query_type="explicit", start_position=None):
+    async def query(self, query_text, query_type="explicit", start_position=None, use_topological=False):
         """Process queries and handle navigation"""
-        print(f"\n==== Processing Query: '{query_text}' ====")
+        self.logger.info(f"\n{'='*50}")
+        self.logger.info(f"New Query: '{query_text}'")
+        self.logger.info(f"Type: {query_type}")
+        self.logger.info(f"{'='*50}\n")
         
         try:
             retrieved_nodes = await self.retriever.retrieve(query_text, query_type=query_type)
-            # print("\nRetrieved Objects:", *[f"- {node}" for node in retrieved_nodes], sep="\n")
+            self.logger.info("\nRetrieved Nodes:")
+            self.logger.info("-" * 30)
+            for node in retrieved_nodes:
+                self.logger.info(f"- {node}")
 
             response = await self.retriever.generate_response(query_text, retrieved_nodes, query_type)
-            # print("\nGenerated Response:", response)
+            self.logger.info("\nGenerated Response:")
+            self.logger.info("-" * 30)
+            self.logger.info(response)
             
             if query_type in ["explicit", "implicit"] and self.airsim_utils:
-                # Extract target position from response
                 target_position = self.retriever.extract_target_position(response)
                 
                 if target_position:
                     print(f"\nNavigating to position: {target_position}")
-                    success = self.airsim_utils.direct_to_waypoint(target_position, velocity=5)
+                    if use_topological:
+                        success = self.airsim_utils.direct_to_waypoint(target_position, velocity=5)
+                    else:
+                        success = self.airsim_utils.direct_to_position(
+                            target_position, 
+                            velocity=5
+                        )
                     return response, success
                 else:
                     print("\nNo valid target position found in response")

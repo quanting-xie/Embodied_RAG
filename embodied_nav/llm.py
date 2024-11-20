@@ -141,62 +141,84 @@ class LLMInterface:
             }
 
     async def generate_navigation_response(self, query, context, query_type):
-        """Generate response based on query type"""
-        if query_type == "global":
-            # For global queries, just provide information without navigation
-            prompt = f"""Given the following context about objects in a 3D environment:
-
-            {context}
-
-            Answer the following query about the environment: {query}
-            Focus on describing the spatial relationships and overall layout.
-            """
-        else:
-            # For explicit/implicit queries, include navigation target
-            prompt = f"""Given the following context about objects in a 3D environment:
-
-            {context}
-
-            For the query: '{query}', provide:
-            1. A brief description of the most relevant object(s)
-            2. An explanation of why these objects are relevant and query
-            3. Choose the best target object and output it in this format: <<object_name>>
-            
-            Make sure the object_name matches exactly with one of the objects in the context.
-            """
-        
-        return await self.generate_response(prompt)
-
-    async def select_best_node(self, query, nodes, context):
-        """Select the most relevant node from a list of candidates based on the query."""
-        prompt = f"""Given the following query and a list of nodes in a 3D environment, select the single most relevant node that best matches the query's intent.
+        """Generate a navigation response based on the retrieved nodes."""
+        prompt = f"""Given the following navigation query and context about available locations,
+        generate a response that helps navigate to the most relevant location.
 
         Query: {query}
+        Query Type: {query_type}
 
-        Available nodes and their context:
+        Available Context:
         {context}
 
-        Output ONLY the exact name of the chosen node, nothing else. The name must match one of the provided nodes exactly."""
+        Instructions:
+        1. Analyze the query and available locations
+        2. Select the most specific and appropriate destination (prefer specific objects over general areas)
+        3. Format your response as follows:
+           - Include the exact location name in double angle brackets: <<exact_name>>
+           - Provide a brief explanation of why this location is relevant
+           - Include any relevant spatial relationships or navigation hints
+
+        IMPORTANT: Use the exact name as it appears in the context, maintaining exact spelling and format.
+        """
 
         response = await self.generate_response(prompt)
-        # Clean up response to ensure we get just the node name
-        response = response.strip().split('\n')[0].strip()
+        return response.strip()
+
+    async def select_best_node(self, query, nodes, context):
+        """Select the single most relevant node from a list of candidates based on the query."""
+        prompt = f"""Given the following navigation query and available nodes in a 3D environment, 
+        select the SINGLE most relevant node that best matches the query's intent.
+
+        Navigation Query: {query}
+
+        Available Nodes:
+        {context}
+
+        Instructions:
+        1. Consider each node's summary and function
+        2. Evaluate relevance to the navigation query
+        3. Prioritize specific object nodes over general areas when possible
+        4. Select the single most specific and relevant node for navigation
+
+        CRITICAL: You must respond with ONLY the exact Node ID from the list above.
+        For example, if you see 'Node ID: cafeteria_table_1', respond with exactly 'cafeteria_table_1'.
+        Do not add any explanation or additional text.
+
+        Your response must be one of these exact Node IDs: {[n['id'] for n in nodes]}"""
+
+        response = await self.generate_response(prompt)
+        response = response.strip()
         
-        # Verify the response matches one of the provided nodes
+        # Debug print
+        print(f"\nLLM Selection Process:")
+        print(f"Query: {query}")
+        print(f"Available Node IDs: {[n['id'] for n in nodes]}")
+        print(f"Node Types: {[(n['id'], n['type']) for n in nodes]}")
+        print(f"LLM Response: '{response}'")
+        
+        # Verify response matches an available node
         if response in [n['id'] for n in nodes]:
+            print(f"✓ Valid selection: {response}")
             return response
-        return None
+        else:
+            print(f"✗ Invalid selection: '{response}' not in available nodes")
+            return None
 
     async def generate_hierarchical_context(self, nodes):
         """Generate a readable context for a list of nodes."""
-        context = []
-        for node in nodes:
-            node_desc = [f"Node: {node['id']}"]
-            for key, value in node.items():
-                if key not in ['id', 'embedding', 'position']:
-                    node_desc.append(f"{key}: {value}")
-            context.append("\n".join(node_desc))
-        return "\n\n".join(context)
+        context_parts = ["Available Locations for Selection:"]
+        
+        for i, node in enumerate(nodes, 1):
+            context_parts.extend([
+                f"\n{i}. Location Details:",
+                f"   Name: {node['name']}",
+                f"   Type: {node['type']}",
+                f"   Level: {node['level']}",
+                f"   Summary: {node['summary']}",
+                "   ---"
+            ])
+        return "\n".join(context_parts)
 
     async def select_nodes_for_query(self, query, nodes_context, system_prompt=None):
         """Helper method for selecting nodes during hierarchical traversal"""

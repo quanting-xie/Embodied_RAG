@@ -3,6 +3,8 @@ from typing import List, Dict, Any
 import networkx as nx
 from .llm import LLMInterface
 from .config import Config
+import time
+import logging
 
 class LLMHierarchicalRetriever:
     def __init__(self, graph, llm_interface, max_parallel_paths=None):
@@ -13,119 +15,154 @@ class LLMHierarchicalRetriever:
         print(f"Initialized LLMHierarchicalRetriever with {self.max_parallel_paths} parallel paths")
 
     async def retrieve(self, query: str, query_type="global", top_k=None) -> List[str]:
-        """
-        Retrieve relevant nodes using parallel LLM-guided hierarchical traversal.
-        """
-        print("\n=== Starting LLM Hierarchical Retrieval ===")
-        self._chains = []  # Reset chains for new query
+        """Retrieve relevant nodes using parallel LLM-guided hierarchical traversal."""
+        logger = logging.getLogger('experiment')
+        start_time = time.time()
         
-        # Get all top-level nodes
-        max_level = max(data.get('level', 0) for _, data in self.graph.nodes(data=True))
-        top_nodes = [
-            node for node, data in self.graph.nodes(data=True)
-            if data.get('level', 0) == max_level
-        ]
-        print(f"\nFound {len(top_nodes)} top-level nodes at level {max_level}")
+        logger.info("\n=== Starting LLM Hierarchical Traversal ===")
+        logger.info(f"Query: '{query}'")
         
-        # Format top-level nodes for LLM
-        top_nodes_context = "\n".join([
-            f"Area {i+1}:\n"
-            f"- Name: {node}\n"
-            f"- Summary: {self.graph.nodes[node].get('summary', 'No summary')}\n"
-            f"- Level: {self.graph.nodes[node].get('level', 'Unknown')}"
-            for i, node in enumerate(top_nodes)
-        ])
+        # Track timing for each level
+        level_times = {}
         
-        # LLM selection of top nodes
-        system_prompt = """You are an AI assistant helping to navigate a 3D environment.
-        Given a user query and available areas, select the most relevant areas.
-        You MUST select exactly 3 areas (or all areas if less than 3 are available).
-        Respond ONLY with the exact area names, separated by commas."""
+        self._chains = []
+        top_k = top_k or Config.RETRIEVAL['top_k_default']
         
-        user_prompt = f"""Query: {query}
-
-Available areas:
-{top_nodes_context}
-
-Select exactly 3 most relevant areas (or all if less than 3). Return only the area names, separated by commas:"""
-
-        print("\n=== Top-Level Selection ===")
-        print(f"Sending prompt to LLM:\n{user_prompt}")
+        # Get all nodes by level and print debug info
+        level_nodes = {}
+        for node, data in self.graph.nodes(data=True):
+            level = data.get('level', 0)
+            if level not in level_nodes:
+                level_nodes[level] = []
+            level_nodes[level].append((node, data))
+            
+        max_level = max(level_nodes.keys())
+        print(f"\nFound nodes at {len(level_nodes)} levels (max level: {max_level})")
         
-        selected_areas = await self.llm.generate_response(user_prompt, system_prompt)
-        print(f"\nLLM Response: {selected_areas}")
+        # Debug print for top level nodes
+        print("\nTop level nodes with full details:")
+        for node, data in level_nodes[max_level]:
+            print(f"\nNode ID: {node}")
+            print(f"Name: {data.get('name', 'unnamed')}")
+            print(f"Type: {data.get('type', 'unknown')}")
+            print(f"Level: {data.get('level', 'unknown')}")
         
-        selected_top_nodes = [node.strip() for node in selected_areas.split(',') if node.strip() in top_nodes]
-        print(f"Validated selected nodes: {selected_top_nodes}")
-
+        # Start traversal
         expanded_results = set()
-        print("\n=== Building Hierarchical Chains ===")
+        current_level = max_level
+        chain = []
         
-        # Process each selected top node
-        for i, top_node in enumerate(selected_top_nodes[:self.max_parallel_paths], 1):
-            print(f"\nProcessing Chain {i} starting from: {top_node}")
-            chain = [top_node]
-            current = top_node
+        while current_level >= 0:
+            level_start_time = time.time()
             
-            while current:
-                children = [
-                    n for n in self.graph.neighbors(current)
-                    if self.graph.nodes[n].get('level', 0) < self.graph.nodes[current].get('level', 0)
-                ]
-                
-                print(f"\nNode: {current}")
-                print(f"Found {len(children)} children: {children}")
-                
-                if children:
-                    children_context = "\n".join([
-                        f"Object {i+1}:\n"
-                        f"- Name: {node}\n"
-                        f"- Summary: {self.graph.nodes[node].get('summary', 'No summary')}\n"
-                        f"- Level: {self.graph.nodes[node].get('level', 'Unknown')}"
-                        for i, node in enumerate(children)
-                    ])
-                    
-                    child_system_prompt = """You are an AI assistant helping to find relevant objects.
-                    Given a user query and available objects, select the most relevant object.
-                    Respond ONLY with the exact object name."""
-                    
-                    child_prompt = f"""Query: {query}
-
-Available objects:
-{children_context}
-
-Select the single most relevant object. Return only the exact object name:"""
-
-                    print(f"\nSending child selection prompt for {current}:")
-                    print(child_prompt)
-                    
-                    selected_child = await self.llm.generate_response(child_prompt, child_system_prompt)
-                    selected_child = selected_child.strip()
-                    print(f"LLM selected child: '{selected_child}'")
-                    
-                    if selected_child in children:
-                        chain.append(selected_child)
-                        current = selected_child
-                        print(f"Added {selected_child} to chain")
-                    else:
-                        print(f"Warning: Selected child '{selected_child}' not in available children")
-                        current = None
-                else:
-                    print("No children found, ending chain")
-                    current = None
+            available_nodes = level_nodes[current_level]
+            if not available_nodes:
+                print(f"No nodes available at level {current_level}")
+                break
             
+            # Filter nodes based on previous selection
             if chain:
-                print(f"\nCompleted Chain {i}: {' -> '.join(reversed(chain))}")
-                self._chains.append(chain)
-                expanded_results.update(chain)
-
-        print("\n=== Retrieval Complete ===")
-        print(f"Found {len(self._chains)} chains:")
-        for i, chain in enumerate(self._chains, 1):
-            print(f"Chain {i}: {' -> '.join(reversed(chain))}")
-        print(f"Total unique nodes: {len(expanded_results)}")
+                previous_node = chain[-1]
+                filtered_nodes = [
+                    (n, d) for n, d in available_nodes
+                    if self.graph.has_edge(previous_node, n) and
+                    self.graph.edges[previous_node, n].get('relationship') == 'part_of'
+                ]
+                print(f"\nFiltered nodes under {previous_node}: {len(filtered_nodes)}")
+                for n, d in filtered_nodes:
+                    print(f"- {n} (Type: {d.get('type')}, Level: {d.get('level')})")
+                available_nodes = filtered_nodes
+            
+            if not available_nodes:
+                # Check if we've reached an object node
+                if chain and self.graph.nodes[chain[-1]].get('type') == 'object':
+                    print(f"Reached object node: {chain[-1]}")
+                    break
+                print(f"No valid nodes after filtering at level {current_level}")
+                break
+            
+            # Format nodes for LLM selection
+            nodes_for_selection = []
+            for node, data in available_nodes:
+                node_info = {
+                    'id': node,
+                    'summary': data.get('summary', 'No summary'),
+                    'level': current_level,
+                    'type': data.get('type', 'unknown'),
+                    'name': data.get('name', node)
+                }
+                nodes_for_selection.append(node_info)
+            
+            # Select best node
+            selection_start = time.time()
+            selected_node = await self.llm.select_best_node(
+                query=query,
+                nodes=nodes_for_selection,
+                context=await self.llm.generate_hierarchical_context(nodes_for_selection)
+            )
+            selection_time = time.time() - selection_start
+            logger.info(f"LLM Selection Time at Level {current_level}: {selection_time:.2f} seconds")
+            
+            if selected_node:
+                chain.append(selected_node)
+                node_data = self.graph.nodes[selected_node]
+                print(f"\nSelected node: {selected_node}")
+                print(f"Type: {node_data.get('type')}")
+                print(f"Level: {node_data.get('level')}")
+                expanded_results.add(selected_node)
+                
+                # If we've reached an object node, we can stop
+                if node_data.get('type') == 'object':
+                    print(f"Reached object node, stopping traversal")
+                    break
+            else:
+                print(f"No valid selection at level {current_level}")
+                break
+            
+            level_end_time = time.time()
+            level_time = level_end_time - level_start_time
+            level_times[current_level] = level_time
+            logger.info(f"Level {current_level} processing time: {level_time:.2f} seconds")
+            
+            current_level -= 1
         
-        return list(expanded_results)
+        # Verify we reached an object
+        if chain:
+            final_node = chain[-1]
+            final_node_type = self.graph.nodes[final_node].get('type')
+            if final_node_type != 'object':
+                print(f"\nWarning: Traversal ended at non-object node of type {final_node_type}")
+                # Try to find connected object nodes
+                for neighbor in self.graph.neighbors(final_node):
+                    if self.graph.nodes[neighbor].get('type') == 'object':
+                        print(f"Found connected object node: {neighbor}")
+                        chain.append(neighbor)
+                        expanded_results.add(neighbor)
+                        break
+        
+        logger.info("\n=== Retrieval Complete ===")
+        end_time = time.time()
+        total_time = end_time - start_time
+        logger.info(f"Total Retrieval Time: {total_time:.2f} seconds")
+        
+        if chain:
+            print("\nFinal path:")
+            for node in chain:
+                node_data = self.graph.nodes[node]
+                print(f"- {node} (Type: {node_data.get('type')}, Level: {node_data.get('level')})")
+        
+        # Log detailed timing statistics
+        logger.info("\n=== LLM Hierarchical Retrieval Statistics ===")
+        logger.info(f"Total Retrieval Time: {total_time:.2f} seconds")
+        logger.info("Time breakdown by level:")
+        for level, time_taken in level_times.items():
+            logger.info(f"- Level {level}: {time_taken:.2f} seconds ({(time_taken/total_time)*100:.1f}%)")
+        logger.info(f"Number of Retrieved Nodes: {len(expanded_results)}")
+        logger.info("Retrieved Nodes:")
+        for node in expanded_results:
+            logger.info(f"- {node}")
+        
+        return list(expanded_results)[:top_k]
 
     def get_hierarchical_chains(self):
         """Return the stored hierarchical chains from the last retrieval."""
@@ -164,10 +201,15 @@ Select the single most relevant object. Return only the exact object name:"""
             node_data = self.graph.nodes[node]
             context.append(f"\nObject: {node}")
             
-            # Position
+            # Position handling with proper type checking
             if 'position' in node_data:
                 pos = node_data['position']
-                context.append(f"Position: [{pos[0]:.2f}, {pos[1]:.2f}, {pos[2]:.2f}]")
+                if isinstance(pos, (list, tuple)) and len(pos) == 3:
+                    context.append(f"Position: [{pos[0]:.2f}, {pos[1]:.2f}, {pos[2]:.2f}]")
+                elif isinstance(pos, dict) and all(k in pos for k in ['x', 'y', 'z']):
+                    context.append(f"Position: [{pos['x']:.2f}, {pos['y']:.2f}, {pos['z']:.2f}]")
+                else:
+                    context.append(f"Position: {pos}")  # Fallback for other formats
             
             # Other properties
             props = {k: v for k, v in node_data.items() 
@@ -179,16 +221,33 @@ Select the single most relevant object. Return only the exact object name:"""
 
     async def generate_response(self, query, retrieved_nodes, query_type):
         """Generate response using context from retrieved nodes"""
-        context = self._build_context(retrieved_nodes)
-        return await self.llm.generate_navigation_response(query, context, query_type)
+        try:
+            context = self._build_context(retrieved_nodes)
+            print("\nContext for response generation:")
+            print(context)
+            return await self.llm.generate_navigation_response(query, context, query_type)
+        except Exception as e:
+            print(f"Error generating response: {str(e)}")
+            import traceback
+            print(traceback.format_exc())
+            return f"Error generating response: {str(e)}"
 
     def extract_target_position(self, response):
         """Extract target position from response"""
         import re
         object_name_match = re.search(r'<<(.+?)>>', response)
         if object_name_match:
-            object_name = object_name_match.group(1)
+            target_name = object_name_match.group(1)
+            # First try to find by name
             for node, data in self.graph.nodes(data=True):
-                if node == object_name and 'position' in data:
+                if data.get('name') == target_name and 'position' in data:
+                    print(f"Found position for {target_name}: {data['position']}")
                     return data['position']
+                
+            # If not found by name, try to find by node ID
+            if target_name in self.graph.nodes and 'position' in self.graph.nodes[target_name]:
+                print(f"Found position for node {target_name}: {self.graph.nodes[target_name]['position']}")
+                return self.graph.nodes[target_name]['position']
+                
+            print(f"No position found for {target_name}")
         return None
