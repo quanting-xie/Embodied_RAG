@@ -148,15 +148,15 @@ async def main():
         # Reset and set initial position
         client.reset()
         
-        # Define minimum height
-        MIN_HEIGHT = -2.0  # 2 meters above ground
+        # Define consistent heights
+        SAFE_HEIGHT = -1.0  # 1 meter above ground
         
         # Set initial pose with retry
         max_retries = 3
         for attempt in range(max_retries):
             try:
                 initial_pose = airsim.Pose(
-                    position_val=airsim.Vector3r(0, 0, MIN_HEIGHT),
+                    position_val=airsim.Vector3r(0, 0, SAFE_HEIGHT),
                     orientation_val=airsim.Quaternionr()
                 )
                 client.simSetVehiclePose(initial_pose, True)
@@ -165,10 +165,10 @@ async def main():
                 client.enableApiControl(True)
                 client.armDisarm(True)
                 
-                # Take off and maintain minimum height
+                # Take off and maintain safe height
                 logger.info("Taking off...")
                 client.takeoffAsync().join()
-                client.moveToZAsync(MIN_HEIGHT, 2).join()
+                client.moveToZAsync(SAFE_HEIGHT, 2).join()
                 logger.info("Ready to fly!")
                 break
             except Exception as e:
@@ -208,25 +208,7 @@ async def main():
         airsim_utils = AirSimUtils(client, graph=graph)
         _cached_rag.airsim_utils = airsim_utils
         
-        # Test navigation capability
-        print("\nTesting navigation capability...")
-        try:
-            # Get a sample object node from the graph
-            object_nodes = [n for n, d in graph.nodes(data=True) if d.get('type') == 'object']
-            if object_nodes:
-                test_node = object_nodes[0]
-                test_pos = graph.nodes[test_node]['position']
-                print(f"Testing navigation to {test_node} at position {test_pos}")
-                
-                # Try to navigate
-                success = airsim_utils.direct_to_waypoint(test_pos)
-                print(f"Navigation test {'successful' if success else 'failed'}")
-            else:
-                print("No object nodes found for navigation test")
-        except Exception as e:
-            print(f"Navigation test failed: {str(e)}")
-        
-        # Start interactive session
+        # Start interactive session directly without test
         await interactive_session(_cached_rag, airsim_utils, client, args.query_type, logger)
         
     except Exception as e:
