@@ -14,8 +14,8 @@
 ## Setup
 
 **Prerequisites:**
-- Python >= 3.9 (required by LightRAG)
-- AirSim simulator
+- Python >= 3.9
+- AirSim simulator (Docker setup below)
 - OpenAI API key for LLM functionality
 
 1. Clone the repository:
