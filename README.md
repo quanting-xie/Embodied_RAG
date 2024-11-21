@@ -1,5 +1,13 @@
 # Embodied RAG - Spatial Knowledge Graph Builder and Query System
 
+
+## News 📰
+- **[2024-11-20]** Released the first version of **Embodied RAG**!
+- **[2024-11-21]** Added new retrieval method: **Embedding-based Retrieval** for much faster retreival speed.
+- **[2024-11-21]** Added online semantic forest building during exploration, now can build the tree progressively.
+
+---
+
 ## Overview
 **Embodied RAG** is a system that builds and queries spatial knowledge graphs by extracting relationships between objects in 3D environments. It combines spatial, hierarchical, and proximity relationships to create a rich understanding of object arrangements.
 
@@ -92,7 +100,7 @@ python experiment.py --method llm_hierarchical --query-type implicit
 ```
 
 
-#### Retrieval Methods:
+### Retrieval Methods Explaination:
 1. **LLM-based Hierarchical Traversal(Original Method In Paper)**
    - BFS using LLM to traverse the semantic forest
    - Obtain a hierarchical chain of nodes to the context of answer generation
@@ -104,7 +112,7 @@ python experiment.py --method llm_hierarchical --query-type implicit
 
 
 
-### Citation
+## Citation
 If you like our work, please cite:
 
 ```bibtex
