@@ -3,7 +3,7 @@
 
 ## News 📰
 - **[2024-11-20]** Released the first version of **Embodied RAG**!
-- **[2024-11-21]** Added new retrieval method: **Embedding-based Retrieval** for much faster retreival speed, from 10s to 0.7s!!
+- **[2024-11-21]** Added new retrieval method: **Hierarchical and Spatial Boosted Embedding Retrieval** for much faster retreival speed, from 10s to 0.7s!!
 - **[2024-11-21]** Added online semantic forest building during exploration, now can build the tree progressively.
 
 ---
