@@ -42,15 +42,27 @@ cd AirSim/Unreal/Environments/Building99/LinuxNoEditor
 
 ```
 ## Usage
-### 1. Data Collection
+### 1. Data Collection (3 method)
 
+1. Offline Tele-operation Collection
 ```bash
 python embodied_nav/airsim_explorer.py
 ```
-- Explore the environment with a drone and object detector
-- Logs object positions and realtionships as nodes and edges to NanoDB
+- Logs object positions and realtionships as nodes and edges to a topological graph
 
-### 2. Semantic Forest Building
+2. Offline All object Collection
+```bash
+python embodied_nav/direct_scene_logger.py
+```
+- Logs all objects in the environment as nodes and edges to a topological graph
+
+3. Online Semantic Forest Collection
+```bash
+python embodied_nav/online_semantic_explorer.py
+```
+- Build the topological graph and semantic forest during exploration
+
+### 2. Semantic Forest Building (for offline data)
 
 ```bash
 python generate_semantic_forest.py
@@ -65,7 +77,7 @@ python generate_semantic_forest.py
 ### 3. Graph Visualization
 
 ```bash
-python graph_visualizer.py semantic_graphs/enhanced_semantic_graph_semantic_graph_Building99_20241118_160313.gml
+python graph_visualizer.py semantic_graphs/your_graph.gml
 ```
 
 Above is an example of the graph visualization, change to your own semantic graph file.
