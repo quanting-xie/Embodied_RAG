@@ -10,7 +10,7 @@ from datetime import datetime
 import keyboard
 import cv2
 
-from airsim_utils import AirSimUtils, DroneController, DetectionVisualizer, AirSimClientWrapper
+from .airsim_utils import AirSimUtils, DroneController, DetectionVisualizer, AirSimClientWrapper
 
 # Hyperparameters
 DETECTION_RADIUS = 5  # Distance threshold in meters

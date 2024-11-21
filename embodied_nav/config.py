@@ -84,3 +84,10 @@ class Config:
         'llm_hierarchical': 'LLM-guided hierarchical retrieval'
     }
 
+    # Online Semantic Forest Parameters
+    ONLINE_SEMANTIC = {
+        'forest_update_interval': 10,  # seconds between semantic forest updates
+        'max_update_timeout': 60,      # maximum seconds to wait for final update
+        'min_objects_for_update': 5    # minimum number of objects needed before updating
+    }
+
