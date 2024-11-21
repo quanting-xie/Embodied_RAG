@@ -104,5 +104,14 @@ python experiment.py --method llm_hierarchical --query-type implicit
 
 
 
+### Citation
+If you like our work, please cite:
 
+```bibtex
+@article{xie2024embodied,
+  title={Embodied-RAG: General Non-parametric Embodied Memory for Retrieval and Generation},
+  author={Xie, Quanting and Min, So Yeon and Zhang, Tianyi and Xu, Kedi and Bajaj, Aarav and Salakhutdinov, Ruslan and Johnson-Roberson, Matthew and Bisk, Yonatan},
+  journal={arXiv preprint arXiv:2409.18313},
+  year={2024}
+}
 
