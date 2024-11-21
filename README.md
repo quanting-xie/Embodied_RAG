@@ -7,8 +7,9 @@
 - **[2024-11-21]** Added online semantic forest building during exploration, now can build the tree progressively.
 
 ---
+![image](https://github.com/user-attachments/assets/d0dd0e9b-3d97-4df8-8f8e-f2b69ff39485)
 
-## Abstract
+## Overview
 **Embodied RAG** is a system that efficiently builds and queries spatial knowledge graphs from a hierarchical graph we call semantic forest. It uses the saved non-parametric embodied memory to boost the retrieval performance, and enableing question answering for global and implicit queries. 
 
 ## Setup
