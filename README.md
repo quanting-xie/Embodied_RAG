@@ -106,7 +106,7 @@ python experiment.py --method llm_hierarchical --query-type implicit
    - BFS using LLM to traverse the semantic forest
    - Obtain a hierarchical chain of nodes to the context of answer generation
 
-2. **Embedding-based Retrieval(New and Faster)**
+2. **Hierarchical and Spatial Boosted Embedding Retrieval(New and Faster)**
    - Computes semantic similarity between query and nodes
    - Updatet the scores with a hierarchy boost and a spatial boost
    - Retrieve the top k nodes with the highest scores after normalization
