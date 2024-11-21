@@ -94,30 +94,15 @@ python experiment.py --method llm_hierarchical --query-type implicit
 
 #### Retrieval Methods:
 1. **LLM-based Hierarchical Traversal(Original Method In Paper)**
-   - Intelligent node selection using LLM
-   - Hierarchical traversal through semantic forest
-   - Supports context-aware selection
-   - Maximum 3 parallel paths for diverse results
+   - BFS using LLM to traverse the semantic forest
+   - Obtain a hierarchical chain of nodes to the context of answer generation
 
 2. **Embedding-based Retrieval(New and Faster)**
    - Computes semantic similarity between query and nodes
-   - Retrieves top k nodes with highest similarity
-   - Customizable thresholds in config.py
+   - Updatet the scores with a hierarchy boost and a spatial boost
+   - Retrieve the top k nodes with the highest scores after normalization
 
 
 
-## Core Components
 
-### 1. SpatialRelationshipExtractor
-The main component for building spatial knowledge graphs. It extracts three types of relationships:
-
-- **Spatial (Cardinal) Relationships**: Directional relationships (north, south, east, west) with vertical components (above, below)
-- **Proximity Relationships**: "Near" relationships based on distance thresholds
-- **Hierarchical Relationships**: Part-of relationships forming a hierarchical structure of spaces
-
-### 2. EmbodiedRAG
-The main interface for the system that:
-- Manages the spatial knowledge graph
-- Handles queries about spatial relationships
-- Integrates with AirSim for physical navigation
 
