@@ -1,4 +1,4 @@
-# Embodied RAG - Spatial Knowledge Graph Builder and Query System
+# Embodied RAG: General Non-parametric Embodied Memory for Retrieval and Generation
 
 
 ## News 📰
