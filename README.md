@@ -8,8 +8,8 @@
 
 ---
 
-## Overview
-**Embodied RAG** is a system that builds and queries spatial knowledge graphs by extracting relationships between objects in 3D environments. It combines spatial, hierarchical, and proximity relationships to create a rich understanding of object arrangements.
+## Abstract
+**Embodied RAG** is a system that efficiently builds and queries spatial knowledge graphs from a hierarchical graph we call semantic forest. It uses the saved non-parametric embodied memory to boost the retrieval performance, and enableing question answering for global and implicit queries. 
 
 ## Setup
 
