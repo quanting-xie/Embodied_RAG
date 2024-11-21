@@ -245,7 +245,6 @@ class EmbodiedRetriever:
 
     def _build_context(self, nodes):
         """Build rich context for retrieved nodes"""
-        logger = logging.getLogger('experiment')
         context = []
         
         # 1. Hierarchical Structure
@@ -253,7 +252,7 @@ class EmbodiedRetriever:
         
         # Get all hierarchical parents for top K nodes
         hierarchy = {}
-        for node in self.top_k_nodes:  # Use stored top K nodes
+        for node in self.top_k_nodes:
             chain = self._get_hierarchical_chain(node)
             for area in chain:
                 level = self.graph.nodes[area].get('level', 0)
@@ -268,12 +267,15 @@ class EmbodiedRetriever:
             indent = "   " * level
             for area in sorted(hierarchy[level]):
                 data = self.graph.nodes[area]
-                context.append(f"{indent}{area}")
+                # Use name if available, fallback to ID
+                area_name = data.get('name', area)
+                context.append(f"{indent}{area_name}")
                 if 'summary' in data:
                     context.append(f"{indent}Summary: {data['summary']}")
                 
                 # Show contained objects that are in our top K
-                contained = [n for n in self.graph.neighbors(area)
+                contained = [self.graph.nodes[n].get('name', n) 
+                           for n in self.graph.neighbors(area)
                            if n in self.top_k_nodes]
                 if contained:
                     context.append(f"{indent}Contains: {', '.join(contained)}")
@@ -281,14 +283,19 @@ class EmbodiedRetriever:
         # 2. Object Information
         context.append("\n=== Object Information ===")
         
-        for node in self.top_k_nodes:  # Only show info for top K nodes
+        for node in self.top_k_nodes:
             data = self.graph.nodes[node]
-            context.append(f"\nObject: {node}")
+            # Use name if available, fallback to ID
+            obj_name = data.get('name', node)
+            context.append(f"\nObject: {obj_name}")
             
-            # Show hierarchical path
+            # Show hierarchical path using names
             chain = self._get_hierarchical_chain(node)
             if len(chain) > 1:
-                path = " → ".join(reversed(chain))
+                path = " → ".join(reversed([
+                    self.graph.nodes[n].get('name', n) 
+                    for n in chain
+                ]))
                 context.append(f"Located in: {path}")
             
             # Position
@@ -299,14 +306,15 @@ class EmbodiedRetriever:
                 elif isinstance(pos, (list, tuple)):
                     context.append(f"Position: [{pos[0]:.2f}, {pos[1]:.2f}, {pos[2]:.2f}]")
             
-            # Spatial relationships
+            # Spatial relationships using names
             spatial_relations = []
             for neighbor, edge_data in self.graph[node].items():
                 if ('relationship' in edge_data and 
                     edge_data['relationship'] not in ['part_of', 'contains']):
+                    neighbor_name = self.graph.nodes[neighbor].get('name', neighbor)
                     distance = edge_data.get('distance', 'unknown')
                     direction = edge_data.get('direction', '')
-                    rel_str = f"{neighbor} is {direction}"
+                    rel_str = f"{neighbor_name} is {direction}"
                     if isinstance(distance, (int, float)):
                         rel_str += f" ({distance:.1f}m away)"
                     spatial_relations.append(rel_str)

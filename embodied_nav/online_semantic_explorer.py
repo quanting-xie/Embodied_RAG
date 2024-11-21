@@ -11,6 +11,7 @@ import signal
 from datetime import datetime
 import threading
 from .config import Config
+from .frontier_explorer import FrontierExplorer
 
 class OnlineSemanticExplorer(AirSimExplorer):
     def __init__(self):
@@ -30,6 +31,9 @@ class OnlineSemanticExplorer(AirSimExplorer):
         # Add signal handlers
         signal.signal(signal.SIGINT, self.signal_handler)
         signal.signal(signal.SIGTERM, self.signal_handler)
+        
+        self.frontier_explorer = None
+        self.exploration_mode = 'manual'
 
     def signal_handler(self, signum, frame):
         """Handle shutdown signals"""
@@ -122,13 +126,25 @@ class OnlineSemanticExplorer(AirSimExplorer):
             await asyncio.sleep(1)
 
     def run(self):
-        """Override run to include async forest updates"""
+        """Override run to include both manual and auto modes"""
         try:
             # Start async update task
             self.loop.create_task(self.run_async())
             
             # Start the event loop
             threading.Thread(target=self.loop.run_forever, daemon=True).start()
+            
+            # Ask for exploration modee
+            mode = input("Choose exploration mode (auto/manual): ").lower()
+            self.exploration_mode = mode
+            
+            if mode == 'auto':
+                # Initialize and start frontier exploration
+                self.frontier_explorer = FrontierExplorer(self.client)
+                asyncio.run_coroutine_threadsafe(self.frontier_explorer.explore(), self.loop)
+            else:
+                # Start manual control
+                self.drone_controller.keyboard_control()
             
             # Call parent run method
             super().run()
@@ -138,33 +154,10 @@ class OnlineSemanticExplorer(AirSimExplorer):
             self.shutdown()
 
     def shutdown(self):
-        """Override shutdown to ensure forest is completed"""
-        print("\nInitiating shutdown sequence...")
-        try:
-            self.is_running = False
-            
-            # Ensure any pending async operations complete
-            if hasattr(self, 'loop') and self.loop.is_running():
-                try:
-                    # Run one final update if we haven't already
-                    if not hasattr(self, 'final_update_complete'):
-                        # Use timeout from config
-                        asyncio.run_coroutine_threadsafe(
-                            self.final_update(), 
-                            self.loop
-                        ).result(timeout=Config.ONLINE_SEMANTIC['max_update_timeout'])
-                except Exception as e:
-                    print(f"Error during final forest update: {str(e)}")
-                finally:
-                    self.loop.stop()
-            
-            if hasattr(self, 'loop') and not self.loop.is_closed():
-                self.loop.close()
-                
-        except Exception as e:
-            print(f"Error during shutdown: {str(e)}")
-        finally:
-            super().shutdown()
+        """Override shutdown to stop exploration"""
+        if self.frontier_explorer:
+            self.frontier_explorer.stop_exploration()
+        super().shutdown()
 
 if __name__ == "__main__":
     explorer = None
