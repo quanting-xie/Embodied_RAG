@@ -101,7 +101,7 @@ python experiment.py --method llm_hierarchical --query-type implicit
 ```
 
 
-### Retrieval Methods Explaination:
+## Retrieval Methods Explaination:
 1. **LLM-based Hierarchical Traversal(Original Method In Paper)**
    - BFS using LLM to traverse the semantic forest
    - Obtain a hierarchical chain of nodes to the context of answer generation
