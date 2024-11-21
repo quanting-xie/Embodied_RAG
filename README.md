@@ -12,7 +12,7 @@
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/Embodied_RAG.git
+git clone git@github.com:quanting-xie/Embodied_RAG.git
 cd Embodied_RAG
 pip install -r requirements.txt
 
