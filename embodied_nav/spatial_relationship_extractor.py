@@ -32,67 +32,57 @@ class SpatialRelationshipExtractor:
             
         positions = []
         print("\nDebug _get_leaf_positions:")
+        print(f"Processing {len(members)} members")
         
+        # Group similar objects
+        member_groups = {}
         for member in members:
             if isinstance(member, dict):
                 member_id = member.get('id')
-                print(f"Processing member dict: {member_id}, type: {member.get('type')}")
+                if member_id:
+                    # Extract base name without numbers
+                    base_name = re.sub(r'\d+$', '', member_id)
+                    if base_name not in member_groups:
+                        member_groups[base_name] = []
+                    member_groups[base_name].append(member)
+        
+        print(f"Found {len(member_groups)} object groups:")
+        for base_name, group in member_groups.items():
+            print(f"- {base_name}: {len(group)} objects")
+            
+        # Process each group
+        for base_name, group in member_groups.items():
+            print(f"\nProcessing group: {base_name}")
+            for member in group:
+                member_id = member.get('id')
+                member_type = member.get('type')
                 
                 if member_id is None or member_id in visited:
                     continue
                     
-                visited.add(member_id)  # Mark as visited
+                visited.add(member_id)
                 
-                # For cluster nodes, get their children
-                if member.get('type') == 'cluster':
+                if member_type == 'cluster':
                     print(f"Found cluster node: {member_id}")
                     if G and member_id in G:
-                        # Get all neighbors that are connected by 'part_of' relationship
-                        neighbors = []
-                        for neighbor in G.neighbors(member_id):
-                            edge_data = G.get_edge_data(member_id, neighbor)
-                            if edge_data.get('relationship') == 'part_of' and neighbor not in visited:
-                                neighbors.append(neighbor)
+                        neighbors = list(G.neighbors(member_id))
+                        print(f"Cluster {member_id} has neighbors: {neighbors}")
                         
-                        print(f"Cluster {member_id} has unvisited part_of neighbors: {neighbors}")
-                        
-                        # Process each neighbor
                         for neighbor in neighbors:
-                            node_data = G.nodes[neighbor]
-                            # Get position directly if it's a leaf node
-                            if node_data.get('type') != 'cluster':
-                                pos = self._get_position(node_data)
-                                if not np.all(pos == 0):
-                                    positions.append(pos)
-                                    print(f"Added leaf position from neighbor: {neighbor}")
-                            else:
-                                # Recursively get positions for cluster neighbors
-                                child_positions = self._get_leaf_positions([{'id': neighbor, **node_data}], G, visited)
+                            if neighbor not in visited:
+                                node_data = G.nodes[neighbor]
+                                child_positions = self._get_leaf_positions(
+                                    [{'id': neighbor, **node_data}], 
+                                    G, 
+                                    visited
+                                )
                                 positions.extend(child_positions)
-                                print(f"Added {len(child_positions)} positions from cluster neighbor: {neighbor}")
+                                print(f"Added {len(child_positions)} positions from {neighbor}")
                 else:
-                    # For leaf nodes, get position directly
-                    print(f"Found leaf node: {member_id}")
                     pos = self._get_position(member)
                     if not np.all(pos == 0):
                         positions.append(pos)
                         print(f"Added position for leaf node: {member_id}")
-            
-            elif isinstance(member, str):
-                print(f"Processing string member: {member}")
-                if member not in visited and G and member in G:
-                    visited.add(member)  # Mark as visited
-                    node_data = G.nodes[member]
-                    if node_data.get('type') != 'cluster':
-                        pos = self._get_position(node_data)
-                        if not np.all(pos == 0):
-                            positions.append(pos)
-                            print(f"Added position for string node: {member}")
-                    else:
-                        # Recursively get positions for cluster nodes
-                        child_positions = self._get_leaf_positions([{'id': member, **node_data}], G, visited)
-                        positions.extend(child_positions)
-                        print(f"Added {len(child_positions)} positions from string cluster: {member}")
         
         print(f"Total positions found: {len(positions)}")
         return positions
@@ -107,18 +97,29 @@ class SpatialRelationshipExtractor:
             if not (isinstance(obj.get('id', ''), str) and 'drone' in obj.get('id', '').lower())
         ]
         
-        print(f"Processing {len(filtered_objects)} objects")
+        print(f"\nProcessing {len(filtered_objects)} objects")
         
         # Get valid positions and add to graph
         valid_positions = []
         valid_objects = []
         
+        # Group similar objects by name pattern
+        object_groups = {}
         for obj in filtered_objects:
             pos = self._get_position(obj)
             if not np.all(pos == 0):
+                # Extract base name without numbers
+                base_name = re.sub(r'\d+$', '', obj['id'])
+                if base_name not in object_groups:
+                    object_groups[base_name] = []
+                object_groups[base_name].append(obj)
                 valid_positions.append(pos)
                 valid_objects.append(obj)
                 G.add_node(obj['id'], **obj, level=0)
+        
+        print("\nObject Groups Found:")
+        for base_name, group in object_groups.items():
+            print(f"{base_name}: {len(group)} objects")
         
         if len(valid_positions) < 2:
             print("Not enough objects with valid positions for clustering")

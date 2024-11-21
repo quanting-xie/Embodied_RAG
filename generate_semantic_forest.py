@@ -7,6 +7,7 @@ import os
 from tqdm import tqdm
 import numpy as np
 from sklearn.cluster import AgglomerativeClustering
+import argparse
 
 # Define paths relative to project root
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -91,6 +92,10 @@ async def generate_semantic_forest(initial_graph_file, enhanced_graph_file):
     print(f"Enhanced graph saved to: {enhanced_graph_file}")
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Generate Semantic Forest')
+    parser.add_argument('--input', type=str, required=True, help='Input GML file path')
+    args = parser.parse_args()
+    
     # Configure logging
     logging.basicConfig(
         level=logging.INFO,
@@ -98,18 +103,12 @@ if __name__ == "__main__":
     )
     
     try:
-        # Get the most recent semantic graph file
-        files = [f for f in os.listdir(SEMANTIC_GRAPHS_DIR) 
-                if f.startswith("final_semantic_graph") and f.endswith(".gml")]
-        if not files:
-            raise FileNotFoundError("No semantic graph files found")
+        initial_graph_file = args.input
+        # Generate enhanced filename from input filename
+        enhanced_graph_file = initial_graph_file.replace('direct_semantic_graph', 'enhanced_semantic_graph')
         
-        latest_file = sorted(files, reverse=True)[0]
-        initial_graph_file = os.path.join(SEMANTIC_GRAPHS_DIR, latest_file)
-        enhanced_graph_file = os.path.join(SEMANTIC_GRAPHS_DIR, 
-                                         f"enhanced_semantic_graph_{latest_file.split('_', 1)[1]}")
-        
-        print(f"Using most recent graph file: {latest_file}")
+        print(f"Using graph file: {initial_graph_file}")
+        print(f"Will save enhanced graph to: {enhanced_graph_file}")
         asyncio.run(generate_semantic_forest(initial_graph_file, enhanced_graph_file))
         
     except Exception as e:
