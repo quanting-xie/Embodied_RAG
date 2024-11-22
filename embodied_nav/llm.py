@@ -9,7 +9,16 @@ class LLMInterface:
         self.model = Config.LLM['model']
         self.temperature = Config.LLM['temperature']
         self.max_tokens = Config.LLM['max_tokens']
-        self.client = AsyncOpenAI()
+        self.vllm_settings = Config.LLM['vllm_settings']
+        
+        if self.vllm_settings['enabled']:
+            self.model = self.vllm_settings['model']
+            self.client = AsyncOpenAI(
+                base_url=self.vllm_settings['api_base'] + "/v1",
+                api_key=self.vllm_settings['api_key'],
+            )
+        else:
+            self.client = AsyncOpenAI()
 
     async def generate_response(self, prompt, system_prompt=None):
         """Base method for generating responses from the LLM"""
