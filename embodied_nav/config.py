@@ -35,7 +35,7 @@ class Config:
             'enabled': True,
             'model': 'meta-llama/Llama-3.2-3B-Instruct',
             'api_key': 'test-vllm',
-            'api_base': 'http://10.0.0.10:8000',
+            'api_base': 'http://localhost:8000',
             'swap_space': 4, 
             'max_num_seqs': 64,
             'tensor_parallel_size': 1,
