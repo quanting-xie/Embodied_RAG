@@ -39,15 +39,16 @@ export OPENAI_API_KEY=your_api_key_here
 4. Running AirSim with Docker:
 ```bash
 # get docker envs
-docker pull jinhuiye/airsim_binary:1.2
-UNREAL_ROOT_PATH=your path for AirSim
+docker pull jinhuiye/airsim_binary:last
 
-# enter docker
-bash run_with_docker.sh $UNREAL_ROOT_PATH
+
+# set up docker
+# PROJECT_ROOT_PATH: map your prject root to docker container
+bash run_with_docker.sh $PROJECT_ROOT_PATH
 
 # inside docker
-cd AirSim/Unreal/Environments/Building99/LinuxNoEditor
-./Building99.sh -windowed -ResX=1080 -ResY=720
+cd /home/airsim_user/Documents/AirSim/Unreal/Environments/Building_99/LinuxNoEditor
+bash ./Building_99.sh -windowed -ResX=1080 -ResY=720
 
 ```
 ## Usage
