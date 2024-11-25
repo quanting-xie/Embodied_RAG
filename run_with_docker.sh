@@ -36,13 +36,11 @@ fi
 # set the environment varible SDL_VIDEODRIVER to SDL_VIDEODRIVER_VALUE
 
 
-UNREAL_ROOT_PATH=$1
-AirSim_Setting=${UNREAL_ROOT_PATH}/docker/settings.json
+PROJECT_ROOT_PATH=$1
 
 
 sudo docker run --runtime=nvidia --gpus all -it \
-    -v ${AirSim_Setting}:/home/airsim_user/Documents/AirSim/settings.json \
-    -v $UNREAL_ROOT_PATH:$UNREAL_ROOT_PATH \
+    -v $PROJECT_ROOT_PATH:$PROJECT_ROOT_PATH \
     -e SDL_VIDEODRIVER='' \
     -e SDL_HINT_CUDA_DEVICE='0' \
     --net=host \
@@ -51,9 +49,9 @@ sudo docker run --runtime=nvidia --gpus all -it \
     --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
     --env="XAUTHORITY=/tmp/.docker.xauth" \
     --volume="/tmp/.docker.xauth:/tmp/.docker.xauth" \
-    --rm \
-    jinhuiye/airsim_binary:1.2 \
-    bash -c "cd $UNREAL_ROOT_PATH && /bin/bash"
+    --name airsim_container_ \
+    jinhuiye/airsim_binary:last \
+    bash -c "cd $PROJECT_ROOT_PATH && /bin/bash"
     
     
 
