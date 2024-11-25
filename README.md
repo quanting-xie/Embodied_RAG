@@ -50,7 +50,7 @@ bash run_with_docker.sh $PROJECT_ROOT_PATH
 cd /home/airsim_user/Documents/AirSim/Unreal/Environments/Building_99/LinuxNoEditor
 bash ./Building_99.sh -windowed -ResX=1080 -ResY=720
 
-# now the envs inside docker are ready, you might need more terminal windows to attach container envs
+# The environment inside the Docker container is now ready. You might need additional terminal windows to attach to the container's environment.
 docker ps
 docker attach <container-name-or-id>
 cd $PROJECT_ROOT_PATH
