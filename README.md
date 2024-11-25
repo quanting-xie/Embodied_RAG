@@ -51,6 +51,13 @@ cd /home/airsim_user/Documents/AirSim/Unreal/Environments/Building_99/LinuxNoEdi
 bash ./Building_99.sh -windowed -ResX=1080 -ResY=720
 
 ```
+
+4. Running AirSim without Docker:
+
+Follow the instruction here to download UE4 Engine and the environments: https://microsoft.github.io/AirSim/build_linux/
+
+
+
 ## Usage
 ### 1. Data Collection (3 method)
 
