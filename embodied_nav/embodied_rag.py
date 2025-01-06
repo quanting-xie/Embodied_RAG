@@ -5,6 +5,7 @@ import logging
 import numpy as np
 from openai import AsyncOpenAI
 import json
+import ipdb
 import os
 from .embodied_retriever import EmbodiedRetriever, RetrievalMethod
 from .config import Config
@@ -60,8 +61,27 @@ class EmbodiedRAG:
             input=texts
         )
         return [np.array(embedding.embedding) for embedding in response.data]
+    
+    async def concise_func(self, summary):
+        """Generate concise summaries using the OpenAI API."""
 
+        system_prompt = """You are an AI assistant that creates single-sentence summaries while preserving all key information from the original text. You maintain the original meaning, context, and critical details while expressing them concisely."""
 
+        prompt = f"""Rewrite the following scenario as one detailed sentence that captures all essential information. Your summary should:
+        - Include all key actors, actions, and outcomes
+        - Preserve important temporal relationships and causality
+        - Maintain crucial contextual details
+        - Use precise language to maximize information density
+        - Remain grammatically correct and readable
+
+        Scenario:
+        {summary}"""
+
+        response = await self.llm.generate_response(prompt, system_prompt)
+        
+        return response
+
+    
     def _normalize_graph_heights(self, graph, safe_height=-0.8):
         """Normalize Z coordinates and invert for AirSim's coordinate system"""
         print("\nAnalyzing and inverting node heights for AirSim:")
@@ -80,8 +100,6 @@ class EmbodiedRAG:
 
     async def load_graph_to_rag(self, enhanced_graph_file):
         """Load and enhance graph with embeddings"""
-        start_time = time.time()
-                
         # Verify file exists
         if not os.path.exists(enhanced_graph_file):
             raise FileNotFoundError(f"Graph file not found: {enhanced_graph_file}")
@@ -91,13 +109,12 @@ class EmbodiedRAG:
             EmbodiedRAG._cached_graph_path == enhanced_graph_file):
             self.graph = EmbodiedRAG._cached_graph
             return self.graph
-
         
         try:
             self.graph = nx.read_gml(enhanced_graph_file)
 
-                
             # Generate embeddings if needed
+            await self._ensure_concise_summaries(self.graph, enhanced_graph_file)
             await self._ensure_embeddings(self.graph, enhanced_graph_file)
             
             # Cache the loaded graph
@@ -134,6 +151,55 @@ class EmbodiedRAG:
                 self.embedding_func,
                 retrieval_method=self.retrieval_method
             )
+
+    async def _ensure_concise_summaries(self, graph, graph_file):
+        """Ensure all nodes have concise summaries"""
+        # Check if any node is missing a concise summary
+        needs_summaries = any('summary' in data and 'concise_summary' not in data for _, data in graph.nodes(data=True))
+        if needs_summaries:
+            print("Generating missing concise summaries...")
+            await self._generate_node_concise_summaries(graph)
+            nx.write_gml(graph, graph_file)
+            print("Saved graph with concise summaries")
+
+    async def _generate_node_concise_summaries(self, graph):
+        """Generate concise summaries for nodes in parallel batches"""
+        logger = logging.getLogger('EmbodiedRAG')
+        
+        # Identify the nodes that still need concise summaries
+        nodes_needing_concise_summaries = [
+            (node, data) for node, data in graph.nodes(data=True)
+            if 'summary' in data and 'concise_summary' not in data
+        ]
+        
+        logger.info(f"Generating concise summaries for {len(nodes_needing_concise_summaries)} nodes...")
+
+        async def process_single_node(node, data):
+            text = data.get('summary', '')
+            try:
+                concise_summary = await self.concise_func(text)
+                return node, concise_summary
+            except Exception as e:
+                logger.error(f"Error processing node {node}: {str(e)}")
+                return node, None
+
+        tasks = [
+            process_single_node(node, data)
+            for node, data in nodes_needing_concise_summaries
+        ]
+
+        results = []
+        with tqdm(total=len(tasks), desc="Generating concise summaries", unit="node") as pbar:
+            for coro in asyncio.as_completed(tasks):
+                node, concise_summary = await coro
+                results.append((node, concise_summary))
+                pbar.update(1)
+
+        for node, concise_summary in results:
+            if concise_summary is not None:
+                graph.nodes[node]['concise_summary'] = concise_summary
+
+        logger.info("Finished generating concise summaries")
 
     async def _ensure_embeddings(self, graph, graph_file):
         """Ensure all nodes have embeddings"""
@@ -224,7 +290,7 @@ class EmbodiedRAG:
         """Generate text representation of a node"""
         return f"{data.get('label', node)} {data.get('summary', '')}"
 
-    async def query(self, query_text, query_type="explicit", start_position=None, use_topological=False):
+    async def query(self, query_text, query_type="explicit", start_position=None, use_topological=False, data_construction=False):
         """Process queries and handle navigation"""
         self.logger.info(f"\n{'='*50}")
         self.logger.info(f"New Query: '{query_text}'")
@@ -232,18 +298,19 @@ class EmbodiedRAG:
         self.logger.info(f"{'='*50}\n")
         
         try:
-            retrieved_nodes = await self.retriever.retrieve(query_text, query_type=query_type)
+            retrieved_nodes = await self.retriever.retrieve(query_text, query_type=query_type, data_construction=data_construction)
+
             self.logger.info("\nRetrieved Nodes:")
             self.logger.info("-" * 30)
             for node in retrieved_nodes:
                 self.logger.info(f"- {node}")
 
-            response = await self.retriever.generate_response(query_text, retrieved_nodes, query_type)
+            response = await self.retriever.generate_response(query_text, retrieved_nodes, query_type, data_construction=data_construction)
             self.logger.info("\nGenerated Response:")
             self.logger.info("-" * 30)
             self.logger.info(response)
             
-            if query_type in ["explicit", "implicit"] and self.airsim_utils:
+            if query_type in ["explicit", "implicit"] and self.airsim_utils and not data_construction:
                 target_position = self.retriever.extract_target_position(response)
                 
                 if target_position:

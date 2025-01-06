@@ -5,6 +5,8 @@ from .llm import LLMInterface
 from .config import Config
 import time
 import logging
+import ipdb
+import json
 
 class LLMHierarchicalRetriever:
     def __init__(self, graph, llm_interface, max_parallel_paths=None):
@@ -14,7 +16,7 @@ class LLMHierarchicalRetriever:
                                  else Config.RETRIEVAL['max_parallel_paths'])
         print(f"Initialized LLMHierarchicalRetriever with {self.max_parallel_paths} parallel paths")
 
-    async def retrieve(self, query: str, query_type="global", top_k=None) -> List[str]:
+    async def retrieve(self, query: str, query_type="global", top_k=None, data_construction=False) -> List[str]:
         """Retrieve relevant nodes using parallel LLM-guided hierarchical traversal."""
         logger = logging.getLogger('experiment')
         start_time = time.time()
@@ -86,7 +88,7 @@ class LLMHierarchicalRetriever:
             for node, data in available_nodes:
                 node_info = {
                     'id': node,
-                    'summary': data.get('summary', 'No summary'),
+                    'summary': data.get('concise_summary', 'No summary') if current_level else data.get('summary', 'No summary'),
                     'level': current_level,
                     'type': data.get('type', 'unknown'),
                     'name': data.get('name', node)
@@ -98,7 +100,8 @@ class LLMHierarchicalRetriever:
             selected_node = await self.llm.select_best_node(
                 query=query,
                 nodes=nodes_for_selection,
-                context=await self.llm.generate_hierarchical_context(nodes_for_selection)
+                context=await self.llm.generate_hierarchical_context(nodes_for_selection) if current_level else await self.llm.generate_object_context(nodes_for_selection),
+                data_construction=data_construction
             )
             selection_time = time.time() - selection_start
             logger.info(f"LLM Selection Time at Level {current_level}: {selection_time:.2f} seconds")
@@ -116,8 +119,7 @@ class LLMHierarchicalRetriever:
                     print(f"Reached object node, stopping traversal")
                     break
             else:
-                print(f"No valid selection at level {current_level}")
-                break
+                raise ValueError("No valid node selected for traversal")
             
             level_end_time = time.time()
             level_time = level_end_time - level_start_time
@@ -125,7 +127,7 @@ class LLMHierarchicalRetriever:
             logger.info(f"Level {current_level} processing time: {level_time:.2f} seconds")
             
             current_level -= 1
-        
+            
         # Verify we reached an object
         if chain:
             final_node = chain[-1]
@@ -186,14 +188,16 @@ class LLMHierarchicalRetriever:
             level_nodes[level].append(node)
         
         # Display hierarchy from top down
+        nodes = []
         for level in sorted(level_nodes.keys(), reverse=True):
             context.append(f"\nLevel {level}:")
             for node in level_nodes[level]:
                 node_data = self.graph.nodes[node]
                 indent = "  " * (3 - level)
-                context.append(f"{indent}{node}")
-                if 'summary' in node_data:
-                    context.append(f"{indent}Summary: {node_data['summary']}")
+                context.append(f"{node}")
+                # if 'concise_summary' in node_data:
+                #     context.append(f"{indent}Summary: {node_data['concise_summary']}")
+                nodes.append(node)
                 
         # Object Information
         context.append("\n=== Object Information ===")
@@ -213,19 +217,26 @@ class LLMHierarchicalRetriever:
             
             # Other properties
             props = {k: v for k, v in node_data.items() 
-                    if k not in ['embedding', 'position', 'label']}
+                    if k not in ['embedding', 'position', 'label', 'summary']} # use concise summary as replace
             if props:
                 context.append(f"Properties: {props}")
         
         return "\n".join(context)
 
-    async def generate_response(self, query, retrieved_nodes, query_type):
+    async def generate_response(self, query, retrieved_nodes, query_type, data_construction=False):
         """Generate response using context from retrieved nodes"""
         try:
             context = self._build_context(retrieved_nodes)
             print("\nContext for response generation:")
             print(context)
-            return await self.llm.generate_navigation_response(query, context, query_type)
+            response = await self.llm.generate_navigation_response(query, context, query_type)
+            
+            if data_construction:
+                log_entry = {"query": query, "context": context, "response": response}
+                with open("benchmark/data/generation_qa.jsonl", "a") as file:
+                    file.write(json.dumps(log_entry) + "\n")
+
+            return response
         except Exception as e:
             print(f"Error generating response: {str(e)}")
             import traceback

@@ -3,6 +3,8 @@ from .config import Config
 import re
 import os
 import traceback
+import json
+import ipdb
 
 class LLMInterface:
     def __init__(self):
@@ -172,10 +174,11 @@ class LLMInterface:
         """
 
         response = await self.generate_response(prompt)
-        return response.strip()
+        return response
 
-    async def select_best_node(self, query, nodes, context):
+    async def select_best_node(self, query, nodes, context, data_construction=False):
         """Select the single most relevant node from a list of candidates based on the query."""
+        node_ids = [n['id'] for n in nodes]
         prompt = f"""Given the following navigation query and available nodes in a 3D environment, 
         select the SINGLE most relevant node that best matches the query's intent.
 
@@ -194,7 +197,7 @@ class LLMInterface:
         For example, if you see 'Node ID: cafeteria_table_1', respond with exactly 'cafeteria_table_1'.
         Do not add any explanation or additional text.
 
-        Your response must be one of these exact Node IDs: {[n['id'] for n in nodes]}"""
+        Your response must be one of these exact Node IDs: {node_ids}"""
 
         response = await self.generate_response(prompt)
         response = response.strip()
@@ -202,17 +205,34 @@ class LLMInterface:
         # Debug print
         print(f"\nLLM Selection Process:")
         print(f"Query: {query}")
-        print(f"Available Node IDs: {[n['id'] for n in nodes]}")
+        print(f"Available Node IDs: {node_ids}")
         print(f"Node Types: {[(n['id'], n['type']) for n in nodes]}")
         print(f"LLM Response: '{response}'")
-        
+
         # Verify response matches an available node
-        if response in [n['id'] for n in nodes]:
+        if response in node_ids:
             print(f"✓ Valid selection: {response}")
+            if data_construction:
+                log_entry = {"query": query, 
+                             "context": context, 
+                             "node_ids": node_ids,
+                             "response": response}
+                with open("benchmark/data/retrieval_qa.jsonl", "a") as file:
+                    file.write(json.dumps(log_entry) + "\n")
             return response
         else:
             print(f"✗ Invalid selection: '{response}' not in available nodes")
             return None
+    
+    async def generate_object_context(self, nodes):
+        """Generate a readable context for a list of nodes."""
+        context_parts = ["Available Locations for Selection:"]
+        
+        for i, node in enumerate(nodes, 1):
+            context_parts.extend([
+                f"\n{i}. {node['name']}",
+            ])
+        return "\n".join(context_parts)
 
     async def generate_hierarchical_context(self, nodes):
         """Generate a readable context for a list of nodes."""
@@ -222,8 +242,8 @@ class LLMInterface:
             context_parts.extend([
                 f"\n{i}. Location Details:",
                 f"   Name: {node['name']}",
-                f"   Type: {node['type']}",
-                f"   Level: {node['level']}",
+                # f"   Type: {node['type']}",
+                # f"   Level: {node['level']}",
                 f"   Summary: {node['summary']}",
                 "   ---"
             ])

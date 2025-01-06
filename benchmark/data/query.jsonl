@@ -1,0 +1,500 @@
+{"query": "Where is the recliner sofa in the area?", "type": "explicit"}
+{"query": "Where can someone go to have a casual conversation in a relaxing environment?", "type": "implicit"}
+{"query": "If I wanted to work alone but in a comfortable setting, what spot would you recommend here?", "type": "implicit"}
+{"query": "How does this space encourage both group socialization and solitary relaxation?", "type": "global"}
+{"query": "Where can I find the security scanner?", "type": "explicit"}
+{"query": "How can I pass through if I don\u2019t have a security clearance?", "type": "implicit"}
+{"query": "Where is a good place to relax and watch something after going through the checkpoint?", "type": "implicit"}
+{"query": "What functions do these spaces serve in the overall environment?", "type": "global"}
+{"query": "Where is the large TV located in this space?", "type": "explicit"}
+{"query": "Where can I sit if I want to work on something quietly but still enjoy the atmosphere?", "type": "implicit"}
+{"query": "If I wanted to have a casual conversation with someone or relax with a group, which area would be best suited for that?", "type": "implicit"}
+{"query": "What purpose does this space primarily serve, and how does its design support it?", "type": "global"}
+{"query": "Locate the recycle bin in the office workspace.", "type": "explicit"}
+{"query": "Where can I adjust my workspace for better ergonomic comfort?", "type": "implicit"}
+{"query": "How do individuals gain access to the secure area beyond the checkpoint?", "type": "implicit"}
+{"query": "What are the key functions of these two areas and how do they complement one another?", "type": "global"}
+{"query": "Where is the recycle bin located in the office workspace?", "type": "explicit"}
+{"query": "Where can I go to purchase a snack or drink?", "type": "implicit"}
+{"query": "Which area offers a comfortable spot to collaborate with others or take a break?", "type": "implicit"}
+{"query": "How do the office workspace and cafe lounge together support both productivity and relaxation within this environment?", "type": "global"}
+{"query": "Where is the security scanner located?", "type": "explicit"}
+{"query": "How do individuals ensure they are authorized to pass through the entry point?", "type": "implicit"}
+{"query": "Where can someone sit comfortably while waiting for someone else to pass through the security checkpoint?", "type": "implicit"}
+{"query": "What are the main purposes and functions of these two areas in this environment?", "type": "global"}
+{"query": "Where is the security scanner in the entry control zone?", "type": "explicit"}
+{"query": "How do I proceed if I don't have security clearance to access the secure area?", "type": "implicit"}
+{"query": "Where can I dispose of trash after finishing my meal in the cafeteria?", "type": "implicit"}
+{"query": "How are the security and dining areas designed to ensure a smooth and efficient flow of people and tasks?", "type": "global"}
+{"query": "Where is the recycle station in the cafeteria?", "type": "explicit"}
+{"query": "If I want a quiet spot to sit and relax, where should I go within the cafe lounge space?", "type": "implicit"}
+{"query": "Where can I buy a snack and quickly check out without needing assistance?", "type": "implicit"}
+{"query": "How do the cafeteria and cafe lounge areas support social interaction and relaxation for visitors?", "type": "global"}
+{"query": "Where is the security scanner located?", "type": "explicit"}
+{"query": "How can someone ensure they are authorized to pass through the security checkpoint?", "type": "implicit"}
+{"query": "Where can visitors relax while waiting for assistance?", "type": "implicit"}
+{"query": "How do the security checkpoint and reception lounge work together to manage entry and create a welcoming environment?", "type": "global"}
+{"query": "Where is the trashcan located?", "type": "explicit"}
+{"query": "Where can I sit comfortably to work on my tasks?", "type": "implicit"}
+{"query": "Which area would be suitable for keeping important documents safe and organized?", "type": "implicit"}
+{"query": "How does this space support productivity and organization in an office setting?", "type": "global"}
+{"query": "Where is the sliding solid door located?", "type": "explicit"}
+{"query": "If I need to focus on work without distractions, where should I go?", "type": "implicit"}
+{"query": "Where can I find a comfortable place to relax and watch TV?", "type": "implicit"}
+{"query": "How do the two spaces in this scene complement different types of activities?", "type": "global"}
+{"query": "Where is the TV located in the casual viewing space?", "type": "explicit"}
+{"query": "Where can I go to socialize or relax for a bit?", "type": "implicit"}
+{"query": "Which area would be better suited for quiet and focused work?", "type": "implicit"}
+{"query": "How are the spaces designed to serve both relaxation and productivity needs?", "type": "global"}
+{"query": "Where is the recycle bin located in the office workspace?", "type": "explicit"}
+{"query": "Where can I sit comfortably to work on tasks for a long time?", "type": "implicit"}
+{"query": "If I wanted to enjoy a meal with a small group, where would I go?", "type": "implicit"}
+{"query": "How are the office and cafeteria spaces designed to support their respective functions?", "type": "global"}
+{"query": "Where is the snack shop touchscreen register located?", "type": "explicit"}
+{"query": "Where can I find a comfortable place to sit and relax in this area?", "type": "implicit"}
+{"query": "If I need to evacuate quickly, how can I find the exit?", "type": "implicit"}
+{"query": "How do the two spaces balance social interaction and emergency preparedness in their design?", "type": "global"}
+{"query": "Can you show me where the recliner sofas are in the social hub?", "type": "explicit"}
+{"query": "Where can I sit comfortably to work on a personal project?", "type": "implicit"}
+{"query": "Where would be a good spot to watch TV while chatting with someone?", "type": "implicit"}
+{"query": "How do the social hub and casual viewing space support relaxation and interaction?", "type": "global"}
+{"query": "Where is the security scanner located?", "type": "explicit"}
+{"query": "Where would someone go if they needed to get screened before accessing a secure area?", "type": "implicit"}
+{"query": "Where can someone wait comfortably after passing through a security checkpoint?", "type": "implicit"}
+{"query": "How do the areas in this scene work together to support visitor entry and reception processes?", "type": "global"}
+{"query": "Where is the self-service snack shop located?", "type": "explicit"}
+{"query": "Where can I go if I want to relax and chat with friends in a lively environment?", "type": "implicit"}
+{"query": "Which area would be suitable for someone waiting and wanting access to entertainment options like TVs?", "type": "implicit"}
+{"query": "How do the design elements across both spaces encourage different forms of social interaction?", "type": "global"}
+{"query": "Where is the buffet table located in the cafeteria area?", "type": "explicit"}
+{"query": "If someone wanted a comfortable place to sit and chat with friends, which area would they choose?", "type": "implicit"}
+{"query": "Where can I find both food and entertainment in this space?", "type": "implicit"}
+{"query": "How does this environment support dining, social interactions, and relaxation?", "type": "global"}
+{"query": "Where is the trashcan in this workspace?", "type": "explicit"}
+{"query": "Where can I store my personal items while working in the office space?", "type": "implicit"}
+{"query": "If I\u2019ve just finished my meal at the cafeteria, where do I dispose of my waste?", "type": "implicit"}
+{"query": "How do the office workspace and cafeteria checkout zone cater to both functionality and user efficiency?", "type": "global"}
+{"query": "Show me where the recliners are located.", "type": "explicit"}
+{"query": "Where can someone comfortably relax while watching TV in this area?", "type": "implicit"}
+{"query": "Which spot would be ideal for a small group to gather and have a conversation?", "type": "implicit"}
+{"query": "What are the primary purposes of these subareas in the space?", "type": "global"}
+{"query": "Where is the security scanner located?", "type": "explicit"}
+{"query": "How can someone gain access to the secure area?", "type": "implicit"}
+{"query": "Where in the lounge area can I sit if I want a private and comfortable space?", "type": "implicit"}
+{"query": "What are the primary purposes of these spaces and how do they support their respective functions?", "type": "global"}
+{"query": "Where is the small TV located in the lounge zone?", "type": "explicit"}
+{"query": "If I want to host a casual discussion with others, where should I sit?", "type": "implicit"}
+{"query": "Is there a quiet, comfortable spot for someone to relax alone in this social lounge area?", "type": "implicit"}
+{"query": "How do these lounge spaces balance social engagement with individual relaxation?", "type": "global"}
+{"query": "Where is the touchscreen register for self-service purchases in the cafe lounge space?", "type": "explicit"}
+{"query": "Where can I sit comfortably while watching something on a large screen?", "type": "implicit"}
+{"query": "Which area is better for grabbing a quick snack and socializing with others at the same time?", "type": "implicit"}
+{"query": "How are these spaces designed to balance relaxation, social interaction, and functional use?", "type": "global"}
+{"query": "Where is the sliding door located?", "type": "explicit"}
+{"query": "Where can I store my personal items while working?", "type": "implicit"}
+{"query": "Is there a place nearby where I can relax and watch something on a screen?", "type": "implicit"}
+{"query": "How does the environment balance productivity and relaxation spaces?", "type": "global"}
+{"query": "Where is the recliner sofa located in the social interaction zone?", "type": "explicit"}
+{"query": "Where can I go to sit comfortably and have a casual conversation in this environment?", "type": "implicit"}
+{"query": "What should I do if I want to pass through the security checkpoint without interruption?", "type": "implicit"}
+{"query": "How do the spaces in the environment support both social interactions and controlled access needs?", "type": "global"}
+{"query": "Where are the napkin holders located in the cafeteria dining space?", "type": "explicit"}
+{"query": "If someone wanted a quiet spot to relax, which seating option would they likely choose in the social interaction zone?", "type": "implicit"}
+{"query": "Where could a group of friends gather comfortably for casual conversation in this environment?", "type": "implicit"}
+{"query": "How do the cafeteria dining space and social interaction zone support both individual and group activities?", "type": "global"}
+{"query": "Where can I find the recliner sofas in the social hub?", "type": "explicit"}
+{"query": "Where is a good place to have a collaborative meeting with a small group?", "type": "implicit"}
+{"query": "If I want to work in a quiet and focused setting, which part of the space should I go to?", "type": "implicit"}
+{"query": "How do the different subareas in this space support both social and productive activities?", "type": "global"}
+{"query": "Where is the trashcan in the office workspace?", "type": "explicit"}
+{"query": "Where can someone store important documents in an organized way?", "type": "implicit"}
+{"query": "How can an individual ensure they have clearance to pass through the security checkpoint?", "type": "implicit"}
+{"query": "How does the environment balance productivity and security across its subareas?", "type": "global"}
+{"query": "Where can I find the touchscreen register in the cafe lounge?", "type": "explicit"}
+{"query": "Where can I go to buy a snack and relax with others?", "type": "implicit"}
+{"query": "Is there a convenient place to sit and work on a laptop while enjoying a drink?", "type": "implicit"}
+{"query": "What are the primary purposes of these two areas and how do they complement each other?", "type": "global"}
+{"query": "Where is the small TV located in the casual viewing space?", "type": "explicit"}
+{"query": "Where can I sit comfortably to watch something and chat with others casually?", "type": "implicit"}
+{"query": "Where could I go to have a conversation while enjoying a nicely decorated and cozy atmosphere?", "type": "implicit"}
+{"query": "How do the two subareas support both social interaction and relaxation?", "type": "global"}
+{"query": "Where is the sliding solid door located?", "type": "explicit"}
+{"query": "Is there a comfortable spot where I can relax while watching TV?", "type": "implicit"}
+{"query": "If I need a space for a quiet study session, where should I go?", "type": "implicit"}
+{"query": "How are the different zones in this environment designed to balance productivity and leisure?", "type": "global"}
+{"query": "Where can I find the TV in the social lounge zone?", "type": "explicit"}
+{"query": "Where can someone sit comfortably to watch TV and chat with others?", "type": "implicit"}
+{"query": "What is the process for gaining access to the secure area?", "type": "implicit"}
+{"query": "How do the social lounge zone and the security checkpoint serve different purposes within the environment?", "type": "global"}
+{"query": "Where is the recycle station located in the cafeteria?", "type": "explicit"}
+{"query": "Where can I go to relax for a while and watch something?", "type": "implicit"}
+{"query": "If I want to have a group discussion in a comfortable setting, which area would be better?", "type": "implicit"}
+{"query": "How are these areas designed to support both social interactions and individual activities?", "type": "global"}
+{"query": "Where is the recycle bin located in the office workspace?", "type": "explicit"}
+{"query": "If I need to change my seating position for better posture, where can I find something suitable?", "type": "implicit"}
+{"query": "Where would be a good spot for a casual conversation with colleagues?", "type": "implicit"}
+{"query": "How do the subareas support both focused work and social interaction effectively?", "type": "global"}
+{"query": "Where can I find the recycle station in the cafeteria?", "type": "explicit"}
+{"query": "Where would be a quiet spot to sit and work with a laptop?", "type": "implicit"}
+{"query": "If I want to catch up with a friend over coffee, where is the best place to sit here?", "type": "implicit"}
+{"query": "How do these subareas together foster socializing and leisure activities?", "type": "global"}
+{"query": "Where is the recycle bin located?", "type": "explicit"}
+{"query": "Where can I find a comfortable place to work with adjustable furniture?", "type": "implicit"}
+{"query": "If I want to hold a casual team discussion, which part of the space should I go to?", "type": "implicit"}
+{"query": "How does this environment support both individual work and team collaboration?", "type": "global"}
+{"query": "Where is the touchscreen register located?", "type": "explicit"}
+{"query": "Where can I grab a quick snack and relax comfortably at the same time?", "type": "implicit"}
+{"query": "If I want to watch something while eating, where should I head to?", "type": "implicit"}
+{"query": "How are these spaces designed to encourage social interaction and relaxation?", "type": "global"}
+{"query": "Where is the touchscreen register located?", "type": "explicit"}
+{"query": "Where can someone sit to relax while watching the TV?", "type": "implicit"}
+{"query": "If I want to buy a snack and eat while chatting with friends, where should I go?", "type": "implicit"}
+{"query": "How is this space designed to encourage social interactions and relaxation?", "type": "global"}
+{"query": "Where can I find the fire extinguisher?", "type": "explicit"}
+{"query": "If someone needed to evacuate quickly, which direction should they follow?", "type": "implicit"}
+{"query": "Where in this space could people gather to watch something together?", "type": "implicit"}
+{"query": "How does this environment combine safety and social interaction features?", "type": "global"}
+{"query": "Where is the trashcan located?", "type": "explicit"}
+{"query": "Where can someone store personal items or documents securely?", "type": "implicit"}
+{"query": "How does someone gain access through the secure entry point?", "type": "implicit"}
+{"query": "What are the purposes of the two main subareas in this environment?", "type": "global"}
+{"query": "Where is the recycle bin located in the workspace?", "type": "explicit"}
+{"query": "Where can someone adjust their seating for comfortable work?", "type": "implicit"}
+{"query": "Which area would be better for casual discussion while watching TV?", "type": "implicit"}
+{"query": "How is this space organized to support both productivity and social interaction?", "type": "global"}
+{"query": "Where can I find the small TV and buffet table setup?", "type": "explicit"}
+{"query": "Where is a good spot to sit if I want to enjoy both a meal and a show?", "type": "implicit"}
+{"query": "Which area would be better for a quiet place to relax, away from dining activities?", "type": "implicit"}
+{"query": "How do the lounge and dining areas complement each other in this environment?", "type": "global"}
+{"query": "Where can I find a recliner sofa in this area?", "type": "explicit"}
+{"query": "If someone wanted a comfortable spot to relax, where would they likely go?", "type": "implicit"}
+{"query": "Is there a place here suited for group discussions or informal meetings?", "type": "implicit"}
+{"query": "How is this space designed to encourage both social interactions and individual relaxation?", "type": "global"}
+{"query": "Show me how to get to the door in the entertainment area.", "type": "explicit"}
+{"query": "Where can I set up my laptop to work comfortably in this environment?", "type": "implicit"}
+{"query": "Where could a group of people gather to watch something together?", "type": "implicit"}
+{"query": "How do the two areas combine to support socialization and relaxation in the overall space?", "type": "global"}
+{"query": "Where is the sliding solid door in the workstation zone?", "type": "explicit"}
+{"query": "Where could I find storage to organize my items in this environment?", "type": "implicit"}
+{"query": "How can someone gain access through the glass door in the entry control zone?", "type": "implicit"}
+{"query": "What are the main purposes of these areas, and how do they complement each other in functionality?", "type": "global"}
+{"query": "Where is the grey cabinet located in the workstation zone?", "type": "explicit"}
+{"query": "Where can I find a place to dispose of recyclable waste nearby?", "type": "implicit"}
+{"query": "If I want a workspace with noise reduction features, which area should I choose?", "type": "implicit"}
+{"query": "How do the features in these areas collectively support productivity and comfort?", "type": "global"}
+{"query": "Where can I find the tall standing light?", "type": "explicit"}
+{"query": "Where can someone sit comfortably to engage in conversation?", "type": "implicit"}
+{"query": "If I wanted to check for updates or information, where should I go?", "type": "implicit"}
+{"query": "What roles do these spaces play in supporting both leisure and community interaction?", "type": "global"}
+{"query": "Where is the large TV located in the social hub?", "type": "explicit"}
+{"query": "Which area would be ideal for having a quiet conversation over coffee?", "type": "implicit"}
+{"query": "Where can I find a space to watch something while comfortably seated?", "type": "implicit"}
+{"query": "How do the subareas in this space support social interaction and relaxation?", "type": "global"}
+{"query": "Where is the recycle bin in the office workspace?", "type": "explicit"}
+{"query": "Where can someone store their personal belongings in the office workspace?", "type": "implicit"}
+{"query": "Which area would be more suitable for hosting an informal group discussion?", "type": "implicit"}
+{"query": "What are the primary functions of these two spaces and how do they complement each other?", "type": "global"}
+{"query": "Where is the buffet table located?", "type": "explicit"}
+{"query": "Where can I go to enjoy my meal while staying entertained?", "type": "implicit"}
+{"query": "Is there a spot where I can sit and work on my laptop while enjoying a pleasant atmosphere?", "type": "implicit"}
+{"query": "What are the main purposes served by this environment?", "type": "global"}
+{"query": "Where can I find a tall chair to sit on?", "type": "explicit"}
+{"query": "Where could I get something to eat and also use the area to relax or work?", "type": "implicit"}
+{"query": "If I want to quickly settle my bill after getting food, where should I go?", "type": "implicit"}
+{"query": "How does this environment provide a balance between dining, socializing, and efficiency in food service?", "type": "global"}
+{"query": "Where can I find the fire extinguisher?", "type": "explicit"}
+{"query": "Where in the space would people likely gather to watch something together?", "type": "implicit"}
+{"query": "If someone needed to leave quickly during an emergency, where would they go?", "type": "implicit"}
+{"query": "What are the primary functions of the different subareas in this environment?", "type": "global"}
+{"query": "Where can I find napkins for dining?", "type": "explicit"}
+{"query": "Which area is best suited for a group of friends to sit and hang out?", "type": "implicit"}
+{"query": "Where would someone go to ensure they are authorized to enter a secured area?", "type": "implicit"}
+{"query": "What is the purpose of each of these subareas in this environment?", "type": "global"}
+{"query": "Where is the adjustable office table located?", "type": "explicit"}
+{"query": "Where can someone work quietly without interruptions?", "type": "implicit"}
+{"query": "Which area would be best for casual conversations with a group of friends?", "type": "implicit"}
+{"query": "What are the primary purposes served by the different zones in this environment?", "type": "global"}
+{"query": "Where are the recycling bins in the office workspace?", "type": "explicit"}
+{"query": "Where can I find a comfortable place to work for a few hours?", "type": "implicit"}
+{"query": "If I wanted to relax with others, where should I go?", "type": "implicit"}
+{"query": "How do the office workspace and social hub areas support different types of activities?", "type": "global"}
+{"query": "Where can I find the table with the laptop?", "type": "explicit"}
+{"query": "Where can I sit to comfortably work on a project with others?", "type": "implicit"}
+{"query": "Where would someone likely go to relax and watch something on a large screen?", "type": "implicit"}
+{"query": "How does the space support both social interactions and personal activities?", "type": "global"}
+{"query": "Where is the fire extinguisher located?", "type": "explicit"}
+{"query": "If someone needed to quickly exit in an emergency, which direction should they go?", "type": "implicit"}
+{"query": "Where would someone go to sit and relax while watching TV or chatting with friends?", "type": "implicit"}
+{"query": "How do the different subareas contribute to safety, relaxation, and social interaction in this environment?", "type": "global"}
+{"query": "Where is the security scanner in the checkpoint area?", "type": "explicit"}
+{"query": "How can someone gain access to the secure area?", "type": "implicit"}
+{"query": "Where is a good spot to relax and watch something on TV?", "type": "implicit"}
+{"query": "What are the functions of these two subareas in the overall environment?", "type": "global"}
+{"query": "Where can I find a cold beverage in this space?", "type": "explicit"}
+{"query": "Where could I prepare a drink if I wanted to mix or pour something for myself?", "type": "implicit"}
+{"query": "Where is a good spot to manage and organize waste while working or eating?", "type": "implicit"}
+{"query": "How do the different areas in this environment contribute to both dining and productivity needs?", "type": "global"}
+{"query": "Where is the large TV located in the social interaction zone?", "type": "explicit"}
+{"query": "Where can someone sit comfortably to watch the large TV and relax?", "type": "implicit"}
+{"query": "Which area offers a quick and convenient option to grab a snack and sit down?", "type": "implicit"}
+{"query": "How do these spaces contribute to supporting both social interactions and individual relaxation in this environment?", "type": "global"}
+{"query": "Can you show me where the TV is located?", "type": "explicit"}
+{"query": "Where can I sit and relax while watching something?", "type": "implicit"}
+{"query": "If I need a quiet and private spot to work, where should I go?", "type": "implicit"}
+{"query": "How are the spaces in this environment designed to balance relaxation and productivity?", "type": "global"}
+{"query": "Where can I find a cold beverage in this area?", "type": "explicit"}
+{"query": "Where should I go if I need a quiet place to work or study?", "type": "implicit"}
+{"query": "Is there a surface available where I can prepare my drink while I make a selection?", "type": "implicit"}
+{"query": "How does this environment support both dining convenience and focused productivity?", "type": "global"}
+{"query": "Where can I purchase a snack or drink here?", "type": "explicit"}
+{"query": "Which area would be best to relax and catch up with friends?", "type": "implicit"}
+{"query": "If I wanted to watch something while sitting, where should I go?", "type": "implicit"}
+{"query": "How are the spaces designed to cater to both social interaction and individual relaxation?", "type": "global"}
+{"query": "Where is the reception desk located?", "type": "explicit"}
+{"query": "Where can I sit and watch the news comfortably?", "type": "implicit"}
+{"query": "Is there a place where small groups can gather to relax or have a casual discussion?", "type": "implicit"}
+{"query": "How do these spaces support both social interaction and personal relaxation?", "type": "global"}
+{"query": "Show me where the touchscreen register is located.", "type": "explicit"}
+{"query": "Where can someone go to have a quick meal in a social setting?", "type": "implicit"}
+{"query": "Where is a good spot to store my personal items while working?", "type": "implicit"}
+{"query": "How are the spaces in this environment designed to balance social interaction and productivity?", "type": "global"}
+{"query": "Where can I find the recliner sofas in this space?", "type": "explicit"}
+{"query": "Where is the best place to sit and watch TV with friends?", "type": "implicit"}
+{"query": "Where might a person go if they just want to sit alone and relax?", "type": "implicit"}
+{"query": "How does this environment support both social interaction and personal relaxation?", "type": "global"}
+{"query": "Where is the laptop table located?", "type": "explicit"}
+{"query": "Where can I find a comfortable spot to relax and watch something?", "type": "implicit"}
+{"query": "Which area would be best for organizing files or getting office work done?", "type": "implicit"}
+{"query": "How are the spaces in this environment designed to balance work and leisure activities?", "type": "global"}
+{"query": "Where is the TV located in the lounge area?", "type": "explicit"}
+{"query": "Where can I sit comfortably to watch something and chat with others nearby?", "type": "implicit"}
+{"query": "If I need to get rid of some waste while working, where should I go?", "type": "implicit"}
+{"query": "How do the social lounge and productive workspace complement each other in terms of functionality?", "type": "global"}
+{"query": "Where is the security scanner located?", "type": "explicit"}
+{"query": "How would someone know if they have the clearance to pass through the barrier?", "type": "implicit"}
+{"query": "Where in the lounge can I find a comfortable spot for a longer stay?", "type": "implicit"}
+{"query": "What are the distinct purposes of the areas in this environment?", "type": "global"}
+{"query": "Where is the adjustable office table located?", "type": "explicit"}
+{"query": "Where can I store personal items while working in the office area?", "type": "implicit"}
+{"query": "If I want to relax and watch TV while eating, where should I go?", "type": "implicit"}
+{"query": "How do the different areas in this environment serve their respective purposes?", "type": "global"}
+{"query": "Where can I find a recliner sofa in the social hub?", "type": "explicit"}
+{"query": "Where is the best spot to sit if I want to work alone but still enjoy the ambiance?", "type": "implicit"}
+{"query": "If someone is looking to eat and chat with friends, where should they go?", "type": "implicit"}
+{"query": "How do the social hub and cafeteria complement each other in terms of fostering interaction and relaxation?", "type": "global"}
+{"query": "Where are the register checkouts located?", "type": "explicit"}
+{"query": "Where would someone dispose of waste after their meal?", "type": "implicit"}
+{"query": "If I need a workspace with storage and ergonomic seating, where should I go?", "type": "implicit"}
+{"query": "How do these areas cater to the needs of both dining and office activities?", "type": "global"}
+{"query": "Where is the fire extinguisher in the collaborative work area?", "type": "explicit"}
+{"query": "Where can I go if I want to work on a group presentation with minimal distractions?", "type": "implicit"}
+{"query": "What part of the environment would be best for a small group looking to relax and have casual conversations?", "type": "implicit"}
+{"query": "How do these two areas support different forms of interaction and activity?", "type": "global"}
+{"query": "Where is the trashcan located in the productive workspace?", "type": "explicit"}
+{"query": "Where can someone store files or supplies to keep their workspace organized?", "type": "implicit"}
+{"query": "If someone wants to relax while waiting, where should they go in this environment?", "type": "implicit"}
+{"query": "How is this space designed to balance productivity and visitor accommodation?", "type": "global"}
+{"query": "Where are the register touchscreens located?", "type": "explicit"}
+{"query": "Where can I find a spot to discard food packaging after my meal?", "type": "implicit"}
+{"query": "If someone wanted to enter this area securely, what would they need to do first?", "type": "implicit"}
+{"query": "How do these areas work together to balance dining convenience and security control?", "type": "global"}
+{"query": "Where can I sit near the TV in the casual interaction zone?", "type": "explicit"}
+{"query": "What is the best spot to have a casual conversation with others while keeping an eye on the TV?", "type": "implicit"}
+{"query": "If someone wanted to ensure only authorized people could enter the secure area, which object or mechanism would they use?", "type": "implicit"}
+{"query": "What are the primary functions of these two subareas in the space?", "type": "global"}
+{"query": "Where can I purchase a snack in the cafe lounge?", "type": "explicit"}
+{"query": "Where in this environment could someone go to relax and have a conversation?", "type": "implicit"}
+{"query": "What process do people go through to gain access to the secure area?", "type": "implicit"}
+{"query": "What are the different functions of this overall space, and how are they interconnected?", "type": "global"}
+{"query": "Where can I find the snack shop in the cafe lounge?", "type": "explicit"}
+{"query": "Where is a good spot to relax and watch something interesting?", "type": "implicit"}
+{"query": "If someone wanted a quiet corner to work, where would they go?", "type": "implicit"}
+{"query": "How do these spaces support both social interaction and individual activities?", "type": "global"}
+{"query": "Where is the large TV located in the social lounge area?", "type": "explicit"}
+{"query": "Where can I sit comfortably to have a private conversation?", "type": "implicit"}
+{"query": "Is there a place to grab a quick snack or drink nearby?", "type": "implicit"}
+{"query": "How do the lounge areas cater to both social and individual activities?", "type": "global"}
+{"query": "Where is the trashcan located in the productive_work_environment?", "type": "explicit"}
+{"query": "Where can I adjust my workspace for better comfort?", "type": "implicit"}
+{"query": "Which area in this environment would be best for taking a break and socializing with others?", "type": "implicit"}
+{"query": "How do the productive_work_environment and social_lounge_area cater to both work efficiency and relaxation needs?", "type": "global"}
+{"query": "Where can I purchase a snack or beverage?", "type": "explicit"}
+{"query": "Where would be the best place to sit if I want to work on my laptop comfortably?", "type": "implicit"}
+{"query": "If I wanted to casually watch something with friends, where should I go?", "type": "implicit"}
+{"query": "How does this space support relaxation and social interaction for visitors?", "type": "global"}
+{"query": "Where is the touchscreen register for purchasing refreshments?", "type": "explicit"}
+{"query": "If I want to sit and work for a while, where should I go?", "type": "implicit"}
+{"query": "Where can I dispose of my trash after finishing my meal?", "type": "implicit"}
+{"query": "How do these spaces support both dining and social interaction?", "type": "global"}
+{"query": "Where can I find the buffet table in the cafeteria?", "type": "explicit"}
+{"query": "Where could I sit to enjoy a meal while staying entertained?", "type": "implicit"}
+{"query": "How can someone keep the workspace organized and clutter-free?", "type": "implicit"}
+{"query": "What are the primary purposes of this environment as a whole?", "type": "global"}
+{"query": "Where is the security scanner located?", "type": "explicit"}
+{"query": "How can individuals gain access to the secure area?", "type": "implicit"}
+{"query": "Where in this space can someone relax and watch something on a TV?", "type": "implicit"}
+{"query": "What are the primary purposes of the two spaces in this environment?", "type": "global"}
+{"query": "Where is the large TV located in the lounge area?", "type": "explicit"}
+{"query": "Where could someone relax comfortably with a good view of the decorative elements?", "type": "implicit"}
+{"query": "If someone wants to work on a laptop, which seating and table combination would be most suitable?", "type": "implicit"}
+{"query": "How do the design features of these spaces promote both social interaction and personal relaxation?", "type": "global"}
+{"query": "Where is the laptop table located?", "type": "explicit"}
+{"query": "Where can I sit comfortably while watching TV and working on my laptop?", "type": "implicit"}
+{"query": "Where is a good spot for a small group to gather and have relaxed conversations?", "type": "implicit"}
+{"query": "How do these spaces support both individual relaxation and group interaction?", "type": "global"}
+{"query": "Where can I sit on a recliner sofa in the social area?", "type": "explicit"}
+{"query": "If I wanted to have a casual conversation, which area would be the most suitable?", "type": "implicit"}
+{"query": "Where can I find a place to dispose of waste while working on a project?", "type": "implicit"}
+{"query": "What are the primary purposes of the areas described in this environment?", "type": "global"}
+{"query": "Where can I find the recycle bin in this workspace?", "type": "explicit"}
+{"query": "If I need to store some personal belongings, where should I look?", "type": "implicit"}
+{"query": "What part of this workspace is best for setting up a comfortable and productive work area?", "type": "implicit"}
+{"query": "How does this space balance productivity, organization, and environmental responsibility?", "type": "global"}
+{"query": "Where is the fire extinguisher located in the collaborative work area?", "type": "explicit"}
+{"query": "If I want to present something to a group, where should I go?", "type": "implicit"}
+{"query": "Where can I sit comfortably to watch TV or enjoy a relaxed conversation?", "type": "implicit"}
+{"query": "How do these spaces facilitate collaboration and social interactions?", "type": "global"}
+{"query": "Where is the round metal table located?", "type": "explicit"}
+{"query": "If someone wanted to relax and watch TV, where should they go?", "type": "implicit"}
+{"query": "Where can people grab food and have something to watch while they eat?", "type": "implicit"}
+{"query": "What is the primary purpose of this space, considering the described subareas?", "type": "global"}
+{"query": "Locate the nearest glass door within this area.", "type": "explicit"}
+{"query": "Where would one go to enter another part of the building through a well-lit and open space?", "type": "implicit"}
+{"query": "If someone just finished a meal, where can they dispose of their trash?", "type": "implicit"}
+{"query": "How are these spaces organized to balance functionality with accessibility and user experience?", "type": "global"}
+{"query": "Where is the entry scanner located?", "type": "explicit"}
+{"query": "How can someone gain access past the secure door?", "type": "implicit"}
+{"query": "Where is a good place for small groups to sit and watch entertainment together?", "type": "implicit"}
+{"query": "What are the main functions or purposes of the areas in this space?", "type": "global"}
+{"query": "Where can I find the TV in the lounge area?", "type": "explicit"}
+{"query": "Is there a space where people can gather to have casual conversations and relax?", "type": "implicit"}
+{"query": "Which part of this environment provides both visual openness and ease of movement between spaces?", "type": "implicit"}
+{"query": "How do these spaces facilitate both social interaction and transitions between areas?", "type": "global"}
+{"query": "Where is the table with the laptop located?", "type": "explicit"}
+{"query": "Where can I sit if I want to have a casual conversation with someone?", "type": "implicit"}
+{"query": "If I need a quiet place to work, where should I go?", "type": "implicit"}
+{"query": "What are the different purposes served by the spaces in this environment?", "type": "global"}
+{"query": "Where are the trashcans in the cafeteria checkout zone located?", "type": "explicit"}
+{"query": "If someone wants to dispose of leftover food, where should they go?", "type": "implicit"}
+{"query": "Where can someone adjust their workspace for maximum comfort during a long work session?", "type": "implicit"}
+{"query": "How do the different areas in this environment contribute to a balance between productivity and convenience?", "type": "global"}
+{"query": "Where is the fire extinguisher located?", "type": "explicit"}
+{"query": "Where can I go to have a relaxed conversation with friends?", "type": "implicit"}
+{"query": "If there\u2019s an emergency, how can I quickly find where to exit?", "type": "implicit"}
+{"query": "How does this environment balance social interaction and safety considerations?", "type": "global"}
+{"query": "Where can I find a cold beverage to drink?", "type": "explicit"}
+{"query": "If someone wanted to prepare their drink before sitting down, where might they go?", "type": "implicit"}
+{"query": "Where is a good place to sit and chat with friends in this environment?", "type": "implicit"}
+{"query": "How do the beverage station and social interaction zone work together to enhance the overall experience of this space?", "type": "global"}
+{"query": "Can you point me to the security scanner in this area?", "type": "explicit"}
+{"query": "Where should someone go to verify their clearance before entering?", "type": "implicit"}
+{"query": "How do people without access authorization typically proceed in this location?", "type": "implicit"}
+{"query": "What is the main function of this security checkpoint and its components?", "type": "global"}
+{"query": "Where is the touchscreen register in the cafe lounge?", "type": "explicit"}
+{"query": "Where can I purchase a snack in this area?", "type": "implicit"}
+{"query": "Is there a comfortable place where I can relax and sip coffee while working?", "type": "implicit"}
+{"query": "What are the primary purposes of the spaces described in this environment?", "type": "global"}
+{"query": "Where is the security scanner located?", "type": "explicit"}
+{"query": "How can someone gain access to the secure area?", "type": "implicit"}
+{"query": "Where can I relax and watch something on TV?", "type": "implicit"}
+{"query": "What are the main purposes of these areas?", "type": "global"}
+{"query": "Where is the sliding solid door located?", "type": "explicit"}
+{"query": "Which area allows for the most natural light while maintaining separation between spaces?", "type": "implicit"}
+{"query": "Where would someone go for a quiet and private space to work on a computer?", "type": "implicit"}
+{"query": "How do these areas balance transparency, functionality, and privacy within this environment?", "type": "global"}
+{"query": "Where is the snack shop register located?", "type": "explicit"}
+{"query": "Where can I find a comfortable spot to relax and chat with friends?", "type": "implicit"}
+{"query": "If I need to store personal belongings, where should I go in this space?", "type": "implicit"}
+{"query": "How are these areas designed to balance relaxation, social interaction, and productivity?", "type": "global"}
+{"query": "Where can I find the napkin holders in the cafeteria dining space?", "type": "explicit"}
+{"query": "What is a comfortable seating option available for a group of three to dine together?", "type": "implicit"}
+{"query": "If I want to relax and have a casual conversation, where should I go?", "type": "implicit"}
+{"query": "How do the cafeteria dining space and the social_hub complement each other in terms of their purpose and design?", "type": "global"}
+{"query": "Where is the refrigerator for cold beverages in the dining area?", "type": "explicit"}
+{"query": "Where can I get something to drink on my own?", "type": "implicit"}
+{"query": "Where would I go to dispose of trash and recycling while working?", "type": "implicit"}
+{"query": "How do the beverage station and workspace areas collectively support user needs in this environment?", "type": "global"}
+{"query": "Where is the touchscreen register located?", "type": "explicit"}
+{"query": "Where can I sit if I want a comfortable place to relax while enjoying a snack?", "type": "implicit"}
+{"query": "If someone needs to focus on work without distractions, where should they go?", "type": "implicit"}
+{"query": "How do the different areas of this space cater to both social and productive activities?", "type": "global"}
+{"query": "Where can I find the blue tall chairs in this area?", "type": "explicit"}
+{"query": "Where is the best place to sit and have a conversation with a group of people?", "type": "implicit"}
+{"query": "If I wanted to relax and watch something on TV, where should I go?", "type": "implicit"}
+{"query": "How do these spaces encourage leisure and social interaction?", "type": "global"}
+{"query": "Where can I find the recycle bin in this space?", "type": "explicit"}
+{"query": "Where could someone store frequently used office supplies in this workspace?", "type": "implicit"}
+{"query": "Which area would be better for a person who needs privacy to focus on their work?", "type": "implicit"}
+{"query": "What is the overall purpose of this environment and how is it designed to meet those needs?", "type": "global"}
+{"query": "Where can I find a napkin holder in the cafeteria?", "type": "explicit"}
+{"query": "Where would someone go if they need a comfortable place to eat with a group of friends?", "type": "implicit"}
+{"query": "What area is suitable for storing work supplies like documents and stationery?", "type": "implicit"}
+{"query": "How do the different subareas in this environment cater to both social and professional needs?", "type": "global"}
+{"query": "Where can I find the touchscreen register for purchasing refreshments?", "type": "explicit"}
+{"query": "Where can I go to enjoy a quiet coffee while sitting on a comfortable sofa?", "type": "implicit"}
+{"query": "If I wanted to have an informal group discussion, where would be the best spot?", "type": "implicit"}
+{"query": "How do these spaces support both relaxation and active social interaction?", "type": "global"}
+{"query": "Where can I find the trashcan in the office workspace?", "type": "explicit"}
+{"query": "Where is the best place to focus on work tasks without distractions?", "type": "implicit"}
+{"query": "If someone wanted to take a break and eat lunch, where should they go?", "type": "implicit"}
+{"query": "How do these subareas support both productivity and relaxation within the environment?", "type": "global"}
+{"query": "Can you show me the location of the recycle bin in the productive work environment?", "type": "explicit"}
+{"query": "Where can I adjust my surroundings to maximize comfort and productivity?", "type": "implicit"}
+{"query": "Where would be a good place to relax and have a conversation with someone in this space?", "type": "implicit"}
+{"query": "How do the different areas here support both work and social activities?", "type": "global"}
+{"query": "Where is the exit located in the workspace area?", "type": "explicit"}
+{"query": "Where could I store my personal items to keep the workspace organized?", "type": "implicit"}
+{"query": "If I want to catch up with colleagues or grab a drink, which part of the environment should I head to?", "type": "implicit"}
+{"query": "How are the different areas in this environment designed to balance productivity and social interaction?", "type": "global"}
+{"query": "Where can I find the fire extinguisher in this environment?", "type": "explicit"}
+{"query": "Where in this space could people gather to work on a project together?", "type": "implicit"}
+{"query": "Which area here would be best for someone looking to relax alone but still be surrounded by others?", "type": "implicit"}
+{"query": "How do the spaces in this environment balance social interaction with focused collaboration?", "type": "global"}
+{"query": "Where is the small TV located in the dining area?", "type": "explicit"}
+{"query": "Where can I sit to relax and watch something while chatting with others?", "type": "implicit"}
+{"query": "Is there a place where I can get food and stay entertained at the same time?", "type": "implicit"}
+{"query": "How are these spaces structured to encourage both social interaction and relaxation?", "type": "global"}
+{"query": "Where can I find the recycle bin in this workspace?", "type": "explicit"}
+{"query": "What is a good spot to store important documents securely?", "type": "implicit"}
+{"query": "Is there a way to adjust the workspace setup for improved comfort?", "type": "implicit"}
+{"query": "How does this workspace prioritize both productivity and environmental responsibility?", "type": "global"}
+{"query": "Where is the touchscreen register in the cafe lounge space?", "type": "explicit"}
+{"query": "Where can I sit comfortably to work on my laptop while enjoying refreshments?", "type": "implicit"}
+{"query": "Why might glass doors be used in this area instead of solid walls or partitions?", "type": "implicit"}
+{"query": "How do the elements in this environment support both social interaction and movement between spaces?", "type": "global"}
+{"query": "Where is the sliding solid door located?", "type": "explicit"}
+{"query": "Which pathway would someone use to transition between spaces without feeling enclosed?", "type": "implicit"}
+{"query": "Where can I find a space designed for focused work or studying?", "type": "implicit"}
+{"query": "How do the different subareas contribute to the functionality and flow of the environment?", "type": "global"}
+{"query": "Where can I find a cold drink in this area?", "type": "explicit"}
+{"query": "If I want to prepare a drink, where should I go?", "type": "implicit"}
+{"query": "Where is a good spot to relax and have a conversation with someone?", "type": "implicit"}
+{"query": "How do the different areas in this space complement each other functionally?", "type": "global"}
+{"query": "Where can I find the recycle bin in this workspace?", "type": "explicit"}
+{"query": "What part of the space would be good for someone who needs to focus on digital work?", "type": "implicit"}
+{"query": "If someone wanted to keep the workspace clutter-free, where would they store their items?", "type": "implicit"}
+{"query": "How does this area support productivity and organization while ensuring user comfort?", "type": "global"}
+{"query": "Can you show me where the Cafeteria_roundmetaltable3 is located?", "type": "explicit"}
+{"query": "Where could I sit comfortably to work on a laptop?", "type": "implicit"}
+{"query": "Which area is better suited for group conversations and informal gatherings?", "type": "implicit"}
+{"query": "How does this environment balance relaxation, social interaction, and entertainment?", "type": "global"}
+{"query": "Where can I find a recliner sofa to relax in this space?", "type": "explicit"}
+{"query": "Where would someone likely go if they wanted to have a casual conversation with a group of friends?", "type": "implicit"}
+{"query": "If I want to focus on completing a work project, which area would be most suitable?", "type": "implicit"}
+{"query": "How do the different subareas in this environment balance leisure and productivity?", "type": "global"}
+{"query": "Where can I find the recliner sofas?", "type": "explicit"}
+{"query": "Which area would be best for a small group discussion?", "type": "implicit"}
+{"query": "If I wanted to have a meal while watching something, where should I go?", "type": "implicit"}
+{"query": "How do these spaces facilitate both leisure and social interaction?", "type": "global"}
+{"query": "Where is the trashcan located in the productive workspace?", "type": "explicit"}
+{"query": "Where can I adjust my seating and desk for better comfort while working?", "type": "implicit"}
+{"query": "If I need to store office supplies and keep the workspace organized, where should I look?", "type": "implicit"}
+{"query": "How does this environment prioritize productivity and organization for users?", "type": "global"}
+{"query": "Show me the fire extinguisher in the collaborative work area.", "type": "explicit"}
+{"query": "Where can I hold a meeting for a small team in this environment?", "type": "implicit"}
+{"query": "How can someone gain access to the secure area?", "type": "implicit"}
+{"query": "What functions do these spaces collectively serve in this environment?", "type": "global"}
+{"query": "Where is the sliding solid door located?", "type": "explicit"}
+{"query": "If I need a quiet and private place to work, where should I go?", "type": "implicit"}
+{"query": "Where can I dispose of items in an environmentally friendly way?", "type": "implicit"}
+{"query": "How do these spaces promote productivity, organization, and environmental responsibility?", "type": "global"}

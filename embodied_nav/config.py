@@ -32,7 +32,7 @@ class Config:
         'temperature': 0.7,
         'max_tokens': 500,
         'vllm_settings': {
-            'enabled': True,
+            'enabled': False,
             'model': 'meta-llama/Llama-3.2-3B-Instruct',
             'api_key': 'test-vllm',
             'api_base': 'http://localhost:8000',
