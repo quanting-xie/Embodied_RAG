@@ -19,7 +19,7 @@ docker_command = [
     "docker", "run", "--runtime", "nvidia", "--gpus", "all",
     "-v", os.path.expanduser("~/.cache/huggingface:/root/.cache/huggingface"),
     "--env", f"HUGGING_FACE_HUB_TOKEN={os.getenv('HF_TOKEN')}",
-    "--api-key", f"API_KEY={api_key}",
+    "--env", f"API_KEY={api_key}",
     "-p", "8000:8000",
     "--ipc=host",
     "vllm/vllm-openai:latest",
