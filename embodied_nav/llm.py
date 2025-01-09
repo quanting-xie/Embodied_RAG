@@ -201,7 +201,6 @@ class LLMInterface:
 
         response = await self.generate_response(prompt)
         response = response.strip()
-        
         # Debug print
         print(f"\nLLM Selection Process:")
         print(f"Query: {query}")
@@ -241,6 +240,7 @@ class LLMInterface:
         for i, node in enumerate(nodes, 1):
             context_parts.extend([
                 f"\n{i}. Location Details:",
+                f"   ID: {node['id']}",
                 f"   Name: {node['name']}",
                 # f"   Type: {node['type']}",
                 # f"   Level: {node['level']}",
